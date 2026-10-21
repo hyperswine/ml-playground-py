@@ -1,7 +1,0 @@
-NumPy
-Pandas
-Matplotlib
-Seaborn
-Scikit-Learn
-GraphViz
-torch

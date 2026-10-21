@@ -1,9 +1,0 @@
-[tool.poetry]
-name = "mlplaygrund"
-version = "0.2.0"
-description = "ML"
-authors = ["Jasen Qin"]
-readme = "README.md"
-
-[tool.autopep8]
-indent-size = 2
