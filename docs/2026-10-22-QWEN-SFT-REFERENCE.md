@@ -60,6 +60,8 @@ general reasoning and prose. Loss probes are not comparable across tokenizers an
 
 ## Next
 
+Done on 2026-10-22: see [second seed, local use, execution and retrieval](2026-10-22-QWEN-LOCAL-USE.md).
+
 1. `qos execute` with the fine-tuned Qwen (358/360 already with execution on the frozen tests).
 2. Conditional `branch_max` and retrieval-context answering with the fine-tuned Qwen, which has a much longer context.
 3. A second seed and an M1/MPS inference check before using it as a default.

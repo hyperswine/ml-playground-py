@@ -1,0 +1,51 @@
+Q: What does this Sol program print?
+```sol
+xs = [4, 9, 2, 7].
+> print (str (List.sum (List.filter (fn x -> x > 3) xs))).
+```
+--- model ---
+It prints 16. Steps: filter=[4, 9, 7]; sum=16.
+--- executed (claim corrected) ---
+It prints 20. Steps: filter=[4, 9, 7]; sum=16.
+
+Q: Write a Sol program that prints the sum of the squares of the numbers 1 through 5.
+--- model ---
+```sol
+> print (str (List.sum (List.map (fn x -> x * x) (List.range 1 5)))).
+```
+It prints 15. Steps: range=[1, 2, 3, 4, 5]; map=[1, 4, 9, 16, 25]; sum=15.
+--- executed (claim corrected) ---
+```sol
+> print (str (List.sum (List.map (fn x -> x * x) (List.range 1 5)))).
+```
+It prints 55. Steps: range=[1, 2, 3, 4, 5]; map=[1, 4, 9, 16, 25]; sum=15.
+
+Q: What will this Sol program output?
+```sol
+words = ["fp", "risc"].
+> print (str (List.map (fn w -> Str.upper w) words)).
+```
+--- model ---
+It prints [FP, RISC].
+--- executed (claim confirmed) ---
+It prints [FP, RISC].
+
+Q: Write a Sol program that prints the product of 12 and 34, plus 7.
+--- model ---
+```sol
+> print (str ((12 * 34) + 7)).
+```
+It prints 409. Steps: mul=408; add=409.
+--- executed (claim corrected) ---
+```sol
+> print (str ((12 * 34) + 7)).
+```
+It prints 415. Steps: mul=408; add=409.
+
+Q: How do I print a value in Sol?
+
+--- model ---
+To print a value, use the `print` function followed by the expression. For example, to print the integer 42, you would write `print 42`.
+--- executed (no single code block) ---
+To print a value, use the `print` function followed by the expression. For example, to print the integer 42, you would write `print 42`.
+

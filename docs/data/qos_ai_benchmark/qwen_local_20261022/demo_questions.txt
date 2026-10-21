@@ -1,0 +1,21 @@
+What does this Sol program print?
+```sol
+xs = [4, 9, 2, 7].
+> print (str (List.sum (List.filter (fn x -> x > 3) xs))).
+```
+---
+Write a Sol program that prints the sum of the squares of the numbers 1 through 5.
+---
+What will this Sol program output?
+```sol
+words = ["fp", "risc"].
+> print (str (List.map (fn w -> Str.upper w) words)).
+```
+---
+Write a Sol program that prints the product of 12 and 34, plus 7.
+---
+How do I print a value in Sol?
+---
+How do I read a command-line argument in a Sol script?
+---
+Is the Sol JSON parser strict about trailing text after a value?

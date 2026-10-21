@@ -6,7 +6,7 @@
 set -u
 export $(tr '\0' '\n' < /proc/1/environ | grep -E '^RUNPOD_(API_KEY|POD_ID)=' | xargs)
 cd "$(dirname "$0")"
-PILOT=/workspace/qos_ai_557m; VOL=/workspace/qos_ai_qwen_sft; LOCAL=/root/q
+PILOT=/workspace/qos_ai_557m; VOL=/workspace/qos_ai_qwen_sft${RUN_SUFFIX:-}; LOCAL=/root/q
 STAGE5_SFT_SHA=937452d144b39e99cbc0870e103d9948eb08444e101678319ea6e5f1b690a9ee
 HARD_CAP_MINUTES="${HARD_CAP_MINUTES:-120}"; WAIT_MINUTES="${WAIT_MINUTES:-30}"
 START=$(date +%s); export PYTHONUNBUFFERED=1 HF_HOME=/root/hf TOKENIZERS_PARALLELISM=false PIP_BREAK_SYSTEM_PACKAGES=1
@@ -35,12 +35,14 @@ python3 qos_ai_stage4_data.py mix --pools pools.pt --pretraining-data "$PILOT/pr
 python3 qos_ai_qwen_sft.py convert --sft "$LOCAL/mixture/sft.pt" --vocabulary vocabulary.pt --output "$LOCAL/qwen_sft.pt" \
   > "$LOCAL/convert.log" 2>&1 || fail "convert (convert.log)"
 
+if [ "${SKIP_BASE:-0}" != "1" ]; then
 phase generate_base
 python3 qos_ai_qwen_sft.py generate --model Qwen/Qwen3.5-0.8B --prompts prompts.jsonl --output "$LOCAL/base_answers.jsonl" \
   > "$LOCAL/generate_base.log" 2>&1 || fail "generate base (generate_base.log)"
 cp "$LOCAL/base_answers.jsonl" "$VOL/"
+fi
 phase train
-python3 qos_ai_qwen_sft.py train --data "$LOCAL/qwen_sft.pt" --output "$LOCAL/run" > "$LOCAL/train.log" 2>&1 || fail "train (train.log)"
+python3 qos_ai_qwen_sft.py train --data "$LOCAL/qwen_sft.pt" --output "$LOCAL/run" --seed "${SEED:-7}" > "$LOCAL/train.log" 2>&1 || fail "train (train.log)"
 cp "$LOCAL/run/result.json" "$VOL/train_result.json"
 phase generate_tuned
 python3 qos_ai_qwen_sft.py generate --model "$LOCAL/run/model" --prompts prompts.jsonl --output "$LOCAL/tuned_answers.jsonl" \

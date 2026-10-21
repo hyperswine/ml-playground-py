@@ -47,3 +47,4 @@ records its exact timestamp; original pages retain their own dates and recorded 
 | 2026-10-21 | [Repository migration](2026-10-21-REPOSITORY-MIGRATION.md) |
 | 2026-10-21 | [Running experiments](2026-10-21-RUNNING-EXPERIMENTS.md) |
 | 2026-10-22 | [Reference: Qwen3.5-0.8B fine-tuned on the Stage 5 data](2026-10-22-QWEN-SFT-REFERENCE.md) |
+| 2026-10-22 | [Fine-tuned Qwen: second seed, local M1 use, execution and retrieval](2026-10-22-QWEN-LOCAL-USE.md) |

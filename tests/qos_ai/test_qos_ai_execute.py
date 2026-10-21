@@ -36,6 +36,8 @@ class AugmentTest(unittest.TestCase):
     self.assertEqual(result['executed'], '65')
     self.assertEqual(stated(result['answer']), '65')
     self.assertIn('Steps:', result['answer'])
+    cleaned = augment('Write it.', answer, FPR, drop_wrong_steps=True)['answer']
+    self.assertTrue(cleaned.endswith('It prints 65.'), cleaned)
 
   @unittest.skipUnless(FPR.exists(), 'set QOS_FPR to the Sol compiler')
   def test_question_program_is_run_when_answer_has_no_code(self):

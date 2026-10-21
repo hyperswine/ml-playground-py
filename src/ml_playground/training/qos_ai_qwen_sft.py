@@ -72,9 +72,9 @@ def train(args):
   from torch.nn import functional as F
   from transformers import Qwen3_5ForConditionalGeneration
   from qos_ai_resume import optimizer_plan
-  torch.manual_seed(7)
+  torch.manual_seed(args.seed)
   data = torch.load(args.data, weights_only=True); examples = data['examples']
-  plan = optimizer_plan(len(examples), args.batch_size, args.accumulation, 1, 7)
+  plan = optimizer_plan(len(examples), args.batch_size, args.accumulation, 1, args.seed)
   model = Qwen3_5ForConditionalGeneration.from_pretrained(args.model, dtype=torch.float32).cuda()
   for p in model.model.visual.parameters(): p.requires_grad_(False)
   model.gradient_checkpointing_enable(gradient_checkpointing_kwargs={'use_reentrant': False})
@@ -111,7 +111,7 @@ def train(args):
   model.config.use_cache = True
   model.to(torch.bfloat16)  # generation runs in bf16; halves the artifact to pull
   model.save_pretrained(Path(args.output) / 'model', safe_serialization=True)
-  (Path(args.output) / 'result.json').write_text(json.dumps({'steps': len(plan), 'learning_rate': args.learning_rate,
+  (Path(args.output) / 'result.json').write_text(json.dumps({'steps': len(plan), 'seed': args.seed, 'learning_rate': args.learning_rate,
     'batch_size': args.batch_size, 'accumulation': args.accumulation, 'history': history}) + '\n')
 
 
@@ -180,6 +180,7 @@ if __name__ == '__main__':
   c = s.add_parser('train'); c.add_argument('--data', required=True); c.add_argument('--model', default=QWEN); c.add_argument('--output', required=True)
   c.add_argument('--learning-rate', type=float, default=1e-5); c.add_argument('--batch-size', type=int, default=4)
   c.add_argument('--accumulation', type=int, default=8); c.add_argument('--pad-id', type=int, default=248044)
+  c.add_argument('--seed', type=int, default=7, help='data order and initialization of the training run')
   c = s.add_parser('generate'); c.add_argument('--model', required=True); c.add_argument('--tokenizer', default=QWEN)
   c.add_argument('--prompts', required=True); c.add_argument('--output', required=True); c.add_argument('--batch-size', type=int, default=32)
   c = s.add_parser('assemble'); c.add_argument('--answers', required=True); c.add_argument('--output', required=True); c.add_argument('--label', required=True)

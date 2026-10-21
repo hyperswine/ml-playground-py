@@ -1,0 +1,20 @@
+== 2026-10-21T17:51:54Z (+0 min) verify
+qos_ai.py: OK
+qos_ai_data.py: OK
+qos_ai_pure_sol.py: OK
+qos_ai_qwen_sft.py: OK
+qos_ai_resume.py: OK
+qos_ai_stage4_data.py: OK
+qos_ai_stage4_eval.py: OK
+pools.pt: OK
+vocabulary.pt: OK
+prompts.jsonl: OK
+NVIDIA RTX PRO 4500 Blackwell, 32623 MiB
+== 2026-10-21T17:51:54Z (+0 min) install
+== 2026-10-21T17:52:49Z (+0 min) mix
+== 2026-10-21T17:53:55Z (+2 min) train
+== 2026-10-21T19:22:52Z (+90 min) generate_tuned
+== 2026-10-21T19:24:33Z (+92 min) wait_for_pulls
+== 2026-10-21T19:25:33Z (+93 min) stopping pod: complete
+Runpod config file not found, please run `runpodctl config` to create it
+pod "nd7k1xdgc2tkhq" stopped

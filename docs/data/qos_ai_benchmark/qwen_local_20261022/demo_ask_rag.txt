@@ -1,0 +1,79 @@
+Q: What does this Sol program print?
+```sol
+xs = [4, 9, 2, 7].
+> print (str (List.sum (List.filter (fn x -> x > 3) xs))).
+```
+--- model ---
+It prints 16. Steps: filter=[4, 9, 7]; sum=16.
+--- executed (claim corrected) ---
+It prints 20.
+
+Q: Write a Sol program that prints the sum of the squares of the numbers 1 through 5.
+--- model ---
+```sol
+> print (str (List.sum (List.map (fn x -> x * x) (List.range 1 5)))).
+```
+It prints 15. Steps: range=[1, 2, 3, 4, 5]; map=[1, 4, 9, 16, 25]; sum=15.
+--- executed (claim corrected) ---
+```sol
+> print (str (List.sum (List.map (fn x -> x * x) (List.range 1 5)))).
+```
+It prints 55.
+
+Q: What will this Sol program output?
+```sol
+words = ["fp", "risc"].
+> print (str (List.map (fn w -> Str.upper w) words)).
+```
+--- model ---
+It prints [FP, RISC].
+--- executed (claim confirmed) ---
+It prints [FP, RISC].
+
+Q: Write a Sol program that prints the product of 12 and 34, plus 7.
+--- model ---
+```sol
+> print (str ((12 * 34) + 7)).
+```
+It prints 409. Steps: mul=408; add=409.
+--- executed (claim corrected) ---
+```sol
+> print (str ((12 * 34) + 7)).
+```
+It prints 415.
+
+Q: How do I print a value in Sol?
+--- references: fprisc/std/json.fpr, fprisc/tests/std/store.fpr, fprisc/std/json.fpr ---
+--- model ---
+In Sol, you can print a value using the `print` function, which takes the value as an argument. For example, to print the integer 42, you would write `print 42`.
+--- executed (no single code block) ---
+In Sol, you can print a value using the `print` function, which takes the value as an argument. For example, to print the integer 42, you would write `print 42`.
+
+Q: How do I read a command-line argument in a Sol script?
+--- references: fprisc/docs/SCRIPTING.md, fprisc/NAMING.txt, fprisc/tests/args.sol ---
+--- model ---
+In Sol, you can read a command-line argument by passing the `args Unit` function to your script, which returns a list of strings containing the trailing arguments. You can then use these arguments directly within your logic. For example:
+```sol
+case args Unit of
+  a :: b :: c :: [] -> and (a == "a b") (and (b == "c*d") (c == ""))
+```
+--- executed (not executed: name case not admitted) ---
+In Sol, you can read a command-line argument by passing the `args Unit` function to your script, which returns a list of strings containing the trailing arguments. You can then use these arguments directly within your logic. For example:
+```sol
+case args Unit of
+  a :: b :: c :: [] -> and (a == "a b") (and (b == "c*d") (c == ""))
+```
+
+Q: Is the Sol JSON parser strict about trailing text after a value?
+--- references: fprisc/docs/STD.md, fprisc/sol/lib/json.sol, fprisc/std/json.fpr ---
+--- model ---
+The parser is strict and returns an error if trailing text follows a value. For example, attempting to parse a string containing a value followed by a space results in an error indicating the trailing characters.
+
+```sol
+parse "user {name} {age} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country}
+--- executed (no single code block) ---
+The parser is strict and returns an error if trailing text follows a value. For example, attempting to parse a string containing a value followed by a space results in an error indicating the trailing characters.
+
+```sol
+parse "user {name} {age} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country} {city} {country}
+

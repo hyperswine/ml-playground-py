@@ -1,0 +1,13 @@
+{
+  "model": "Qwen/Qwen3.5-0.8B",
+  "device": "mps",
+  "questions": 300,
+  "top1_source_file": 0.5633333333333334,
+  "reference_tokens": 1500,
+  "seconds": 4397,
+  "plain_answer_perplexity": 12.55207995894689,
+  "top1_fit512_answer_perplexity": 7.067862536122035,
+  "top1_answer_perplexity": 6.186871401942012,
+  "top3_answer_perplexity": 5.3968196637178725,
+  "oracle_file_answer_perplexity": 8.434820866768003
+}

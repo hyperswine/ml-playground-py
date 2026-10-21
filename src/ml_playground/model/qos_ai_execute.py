@@ -71,8 +71,11 @@ def stated(answer):
   return m.group(1).strip() if m else None
 
 
-def augment(question, answer, fpr):
-  """Return the answer with its stated output replaced by real execution where possible."""
+def augment(question, answer, fpr, drop_wrong_steps=False):
+  """Return the answer with its stated output replaced by real execution where possible.
+
+  With drop_wrong_steps, a corrected claim also loses its "Steps: ..." trace, which led to the wrong value. Scoring
+  keeps the trace (the default) so trace metrics stay comparable."""
   blocks = BLOCK.findall(answer)
   source, code = None, None
   if len(blocks) == 1:
@@ -91,6 +94,8 @@ def augment(question, answer, fpr):
   if claim is not None:
     m = STATED.search(answer)
     final = answer[:m.start(1)] + out + answer[m.end(1):] if claim != out else answer
+    if drop_wrong_steps and claim != out:
+      final = re.sub(r' ?Steps:[^\n]*', '', final, count=1)
   else:
     final = (answer.rstrip() + '\n' + line) if source == 'answer' else line
   return {'answer': final, 'executed': out, 'source': source, 'claimed': claim,

@@ -1,0 +1,24 @@
+{
+  "checkpoint_sha256": "qwen3.5-0.8b-stage5-sft-seed17",
+  "no_repeat": 0,
+  "dev_lexical_90": 41,
+  "dev_outputs_33": 24,
+  "working_generation_24": 24,
+  "applied_repairs_48": 48,
+  "repair_plus_output_48": 34,
+  "no_change_plus_output_24": 18,
+  "gen_wording_48": 34,
+  "gen_inputs_48": 37,
+  "gen_combinations_48": 34,
+  "strict_trace_120": 81,
+  "finished": {
+    "development": 87,
+    "coding": 96,
+    "generalization": 144
+  },
+  "severe_loops": {
+    "development": 0,
+    "coding": 0,
+    "generalization": 0
+  }
+}

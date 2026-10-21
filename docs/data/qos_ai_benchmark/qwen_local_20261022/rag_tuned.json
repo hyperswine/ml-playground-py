@@ -1,0 +1,13 @@
+{
+  "model": "/Users/jq/qos_ai_eval/experiments/qwen_sft_20261022/model",
+  "device": "mps",
+  "questions": 300,
+  "top1_source_file": 0.5633333333333334,
+  "reference_tokens": 1500,
+  "seconds": 2958,
+  "plain_answer_perplexity": 5.768718141352164,
+  "top1_fit512_answer_perplexity": 4.0399316776390375,
+  "top1_answer_perplexity": 3.6779553993185816,
+  "top3_answer_perplexity": 3.3874627607058905,
+  "oracle_file_answer_perplexity": 4.83878035892561
+}
