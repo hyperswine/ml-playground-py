@@ -1,0 +1,740 @@
+{"id": "gen/general-wording-419-min-0-output_only-w1", "answer": "27", "finished": true, "tokens": 2}
+{"id": "gen/general-wording-419-sum-0-output_only-w1", "answer": "3", "finished": true, "tokens": 1}
+{"id": "gen/general-wording-419-slice-3-output_only-w1", "answer": "ge", "finished": true, "tokens": 1}
+{"id": "gen/general-wording-419-reverse-0-output_only-w1", "answer": "12", "finished": true, "tokens": 2}
+{"id": "gen/general-inputs-941-min-0-output_only-w0", "answer": "3", "finished": true, "tokens": 1}
+{"id": "gen/general-wording-419-range-0-output_only-w1", "answer": "36", "finished": true, "tokens": 2}
+{"id": "gen/general-inputs-941-sum-0-output_only-w0", "answer": "-5", "finished": true, "tokens": 2}
+{"id": "gen/general-inputs-941-reverse-0-output_only-w0", "answer": "35", "finished": true, "tokens": 2}
+{"id": "gen/general-inputs-941-slice-4-output_only-w0", "answer": "orlc", "finished": true, "tokens": 2}
+{"id": "gen/general-wording-419-clamp-0-output_only-w1", "answer": "-11", "finished": true, "tokens": 3}
+{"id": "gen/general-inputs-941-clamp-3-output_only-w0", "answer": "-4", "finished": true, "tokens": 2}
+{"id": "gen/general-wording-419-take-0-output_only-w1", "answer": "0", "finished": true, "tokens": 1}
+{"id": "gen/general-inputs-941-min-1-output_trace-w0", "answer": "It prints -3. Steps: left=4; right=-3; result=-3.", "finished": true, "tokens": 19}
+{"id": "gen/general-inputs-941-range-3-output_only-w0", "answer": "60", "finished": true, "tokens": 2}
+{"id": "gen/general-inputs-941-slice-5-output_trace-w0", "answer": "It prints mb. Steps: start=0; end=2; result=\"mb\".", "finished": true, "tokens": 18}
+{"id": "gen/general-inputs-941-sum-1-output_trace-w0", "answer": "It prints 36. Steps: values=[36, 13, -13]; result=36.", "finished": true, "tokens": 26}
+{"id": "gen/general-wording-419-map-0-output_only-w1", "answer": "66", "finished": true, "tokens": 2}
+{"id": "gen/general-inputs-941-clamp-4-output_trace-w0", "answer": "It prints -10. Steps: lower=-15; upper=-10; input=-7; result=-10.", "finished": true, "tokens": 27}
+{"id": "coding/codingdiag-991-sum-1-generate", "answer": "```sol\nresult = List.sum [20, 10, 7].\n> print (str result).\n```", "finished": true, "tokens": 27}
+{"id": "coding/codingdiag-991-length-0-generate", "answer": "```sol\nresult = Str.len \"Grape\".\n> print (str result).\n```", "finished": true, "tokens": 20}
+{"id": "coding/codingdiag-991-length-1-generate", "answer": "```sol\nresult = Str.len \"Maple\".\n> print (str result).\n```", "finished": true, "tokens": 20}
+{"id": "gen/general-inputs-941-reverse-1-output_trace-w0", "answer": "It prints -17. Steps: reversed=[-17, -20, 17]; result=-17.", "finished": true, "tokens": 27}
+{"id": "gen/general-inputs-941-range-5-output_trace-w0", "answer": "It prints -153. Steps: values=[-39, -38, -37, -36, -35, -34]; result=-153.", "finished": true, "tokens": 41}
+{"id": "coding/codingdiag-991-min-0-generate", "answer": "```sol\nresult = Numeric.min 22 4.\n> print (str result).\n```", "finished": true, "tokens": 22}
+{"id": "coding/codingdiag-991-min-2-generate", "answer": "```sol\nresult = Numeric.min 2 26.\n> print (str result).\n```", "finished": true, "tokens": 22}
+{"id": "gen/general-inputs-941-take-2-output_only-w0", "answer": "19", "finished": true, "tokens": 2}
+{"id": "coding/codingdiag-991-range-3-generate", "answer": "```sol\nresult = List.sum (List.range 3 11).\n> print (str result).\n```", "finished": true, "tokens": 25}
+{"id": "coding/codingdiag-991-sum-2-generate", "answer": "```sol\nresult = List.sum [24, 21, 22, 4].\n> print (str result).\n```", "finished": true, "tokens": 31}
+{"id": "coding/codingdiag-991-range-26-generate", "answer": "```sol\nresult = List.sum (List.range 10 17).\n> print (str result).\n```", "finished": true, "tokens": 26}
+{"id": "gen/general-inputs-941-map-0-output_only-w0", "answer": "60", "finished": true, "tokens": 2}
+{"id": "coding/codingdiag-991-byte-0-generate", "answer": "```sol\nresult = Str.at \"Grape\" 0.\n> print (str result).\n```", "finished": true, "tokens": 23}
+{"id": "coding/codingdiag-991-byte-1-generate", "answer": "```sol\nresult = Str.at \"Maple\" 0.\n> print (str result).\n```", "finished": true, "tokens": 23}
+{"id": "coding/codingdiag-991-missing-0-generate", "answer": "```sol\nresult = Str.find 126 \"Grape\".\n> print (str result).\n```", "finished": true, "tokens": 24}
+{"id": "coding/codingdiag-991-missing-1-generate", "answer": "```sol\nresult = Str.find 126 \"Maple\".\n> print (str result).\n```", "finished": true, "tokens": 24}
+{"id": "coding/codingdiag-991-reverse-0-generate", "answer": "```sol\nresult = (List.rev [25, 16]) ! 0.\n> print (str result).\n```", "finished": true, "tokens": 29}
+{"id": "coding/codingdiag-991-take-0-generate", "answer": "```sol\nresult = List.sum (List.take 1 [27, 23, 31]).\n> print (str result).\n```", "finished": true, "tokens": 33}
+{"id": "coding/codingdiag-991-map-0-generate", "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 2) [10, 24]).\n> print (str result).\n```", "finished": true, "tokens": 36}
+{"id": "coding/codingdiag-991-reverse-1-generate", "answer": "```sol\nresult = (List.rev [8, 14, 16]) ! 0.\n> print (str result).\n```", "finished": true, "tokens": 32}
+{"id": "gen/general-inputs-941-take-3-output_trace-w0", "answer": "It prints 83. Steps: prefix=[36, 25, 22]; result=83.", "finished": true, "tokens": 26}
+{"id": "coding/codingdiag-991-map-1-generate", "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 3) [13, 9, 5]).\n> print (str result).\n```", "finished": true, "tokens": 38}
+{"id": "coding/codingdiag-991-slice-0-generate", "answer": "```sol\nresult = Str.slice \"Grape\" 0 2.\n> print (str result).\n```", "finished": true, "tokens": 25}
+{"id": "coding/codingdiag-991-slice-1-generate", "answer": "```sol\nresult = Str.slice \"Maple\" 1 4.\n> print (str result).\n```", "finished": true, "tokens": 25}
+{"id": "coding/codingdiag-991-take-1-generate", "answer": "```sol\nresult = List.sum (List.take 2 [6, 11, 23, 31]).\n> print (str result).\n```", "finished": true, "tokens": 36}
+{"id": "coding/codingdiag-991-min-0-repair_inline", "answer": "`Numeric.min 22 4`\nIt prints 4.", "finished": true, "tokens": 15}
+{"id": "coding/codingdiag-991-min-2-repair_inline", "answer": "`Numeric.min 2 26`\nIt prints 2.", "finished": true, "tokens": 15}
+{"id": "gen/general-inputs-941-map-1-output_trace-w0", "answer": "It prints 108. Steps: products=[105, 27, -45]; result=108.", "finished": true, "tokens": 29}
+{"id": "coding/codingdiag-991-length-0-repair_inline", "answer": "`Str.len \"Grape\"`\nIt prints 5.", "finished": true, "tokens": 13}
+{"id": "coding/codingdiag-991-length-1-repair_inline", "answer": "`Str.len \"Maple\"`\nIt prints 5.", "finished": true, "tokens": 13}
+{"id": "coding/codingdiag-991-clamp-0-generate", "answer": "```sol\nresult = Numeric.clamp 4 13 0.\n> print (str result).\n```", "finished": true, "tokens": 25}
+{"id": "gen/general-combinations-941-map_reverse-2-output_only-w0", "answer": "8", "finished": true, "tokens": 1}
+{"id": "coding/codingdiag-991-clamp-1-generate", "answer": "```sol\nresult = Numeric.clamp 3 12 17.\n> print (str result).\n```", "finished": true, "tokens": 26}
+{"id": "gen/general-combinations-941-map_reverse-20-output_trace-w0", "answer": "It prints -50. Steps: products=[-8, -50]; reversed=[-50, -8]; result=-50.", "finished": true, "tokens": 31}
+{"id": "coding/codingdiag-991-byte-0-repair_inline", "answer": "`Str.at \"Grape\" 0`\nIt prints 71.", "finished": true, "tokens": 17}
+{"id": "coding/codingdiag-991-byte-1-repair_inline", "answer": "`Str.at \"Maple\" 0`\nIt prints 77.", "finished": true, "tokens": 17}
+{"id": "gen/general-combinations-941-map_reverse-12-output_trace-w0", "answer": "It prints -36. Steps: products=[-114, -36]; reversed=[-36, -114]; result=-36.", "finished": true, "tokens": 35}
+{"id": "gen/general-inputs-941-range-1-generate-w0", "answer": "```sol\ntotal = List.sum (List.range 19 20).\n> print (str total).\n```\nIt prints 39. Steps: values=[19, 20]; result=39.", "finished": true, "tokens": 49}
+{"id": "gen/general-combinations-941-map_reverse-19-output_only-w0", "answer": "8", "finished": true, "tokens": 1}
+{"id": "coding/codingdiag-991-sum-1-repair_inline", "answer": "`List.sum [20, 10, 7]`\nIt prints 37.", "finished": true, "tokens": 22}
+{"id": "coding/codingdiag-991-sum-2-repair_inline", "answer": "`List.sum [24, 21, 22, 4]`\nIt prints 69.", "finished": true, "tokens": 26}
+{"id": "gen/general-combinations-941-map_reverse-11-output_only-w0", "answer": "108", "finished": true, "tokens": 3}
+{"id": "gen/general-combinations-941-take_filter-4-output_only-w0", "answer": "10", "finished": true, "tokens": 2}
+{"id": "gen/general-inputs-941-length-4-generate-w0", "answer": "```sol\nresult = Str.len \"nqygsdn\".\n> print (str result).\n```\nIt prints 8. Steps: text=\"nqygsdn\"; result=8.", "finished": true, "tokens": 43}
+{"id": "coding/codingdiag-991-filter-0-generate", "answer": "```sol\nresult = List.sum (List.filter (fn x -> x >= 8) [6, 8, 9, 17]).\n> print (str result).\n```", "finished": true, "tokens": 41}
+{"id": "coding/codingdiag-991-filter-6-generate", "answer": "```sol\nresult = List.sum (List.filter (fn x -> x >= 9) [7, 9, 10, 16]).\n> print (str result).\n```", "finished": true, "tokens": 42}
+{"id": "coding/codingdiag-991-range-3-repair_inline", "answer": "`List.sum (List.range 3 11)`\nIt prints 57.", "finished": true, "tokens": 19}
+{"id": "gen/general-inputs-941-filter-3-generate-w0", "answer": "```sol\nanswer = List.sum (List.filter (fn x -> x >= (-10)) [18, 1, (-13), (-11), 35]).\n> print (str answer).\n```\nIt prints 54. Steps: kept=[18, 1, 35]; result=54.", "finished": true, "tokens": 74}
+{"id": "gen/general-wording-419-clamp-1-output_trace-w1", "answer": "It prints 6. Steps: lower=4; upper=6; input=6; result=6.", "finished": true, "tokens": 23}
+{"id": "gen/general-wording-419-slice-6-output_trace-w1", "answer": "It prints rn. Steps: start=1; end=3; result=\"rn\".", "finished": true, "tokens": 18}
+{"id": "coding/codingdiag-991-range-26-repair_inline", "answer": "`List.sum (List.range 10 17)`\nIt prints 84.", "finished": true, "tokens": 20}
+{"id": "gen/general-wording-419-min-1-output_trace-w1", "answer": "It prints -30. Steps: left=15; right=-30; result=-30.", "finished": true, "tokens": 23}
+{"id": "gen/general-inputs-941-take-1-generate-w0", "answer": "```sol\ntotal = List.sum (List.take 1 [19, (-17), 29]).\n> print (str total).\n```\nIt prints 19. Steps: prefix=[19]; result=19.", "finished": true, "tokens": 52}
+{"id": "gen/general-combinations-941-take_filter-5-output_trace-w0", "answer": "It prints 25. Steps: kept=[25]; result=25.", "finished": true, "tokens": 18}
+{"id": "coding/codingdiag-991-missing-0-repair_inline", "answer": "`Str.find 126 \"Grape\"` prints -1.", "finished": true, "tokens": 15}
+{"id": "coding/codingdiag-991-missing-1-repair_inline", "answer": "`Str.find 126 \"Maple\"` prints -1.", "finished": true, "tokens": 15}
+{"id": "coding/codingdiag-991-reverse-0-repair_inline", "answer": "`(List.rev [25, 16]) ! 0`\nIt prints 16.", "finished": true, "tokens": 22}
+{"id": "gen/general-wording-419-sum-1-output_trace-w1", "answer": "It prints 38. Steps: values=[-14, 36, 16]; result=38.", "finished": true, "tokens": 27}
+{"id": "gen/general-combinations-941-map_filter-0-output_only-w0", "answer": "-26", "finished": true, "tokens": 3}
+{"id": "coding/codingdiag-991-reverse-1-repair_inline", "answer": "`(List.rev [8, 14, 16]) ! 0`\nIt prints 16.", "finished": true, "tokens": 25}
+{"id": "coding/codingdiag-991-slice-0-repair_inline", "answer": "`Str.slice \"Grape\" 0 2`\nIt prints Gr.", "finished": true, "tokens": 17}
+{"id": "coding/codingdiag-991-slice-1-repair_inline", "answer": "`Str.slice \"Maple\" 1 4`\nIt prints aple.", "finished": true, "tokens": 18}
+{"id": "gen/general-inputs-941-clamp-2-generate-w0", "answer": "```sol\nvalue = Numeric.clamp (-2) 2 (-4).\n> print (str value).\n```\nIt prints -2. Steps: lower=-2; upper=2; input=-4; result=-2.", "finished": true, "tokens": 49}
+{"id": "gen/general-combinations-941-take_filter-12-output_trace-w0", "answer": "It prints 0. Steps: prefix=[]; filter=[]; result=0.", "finished": true, "tokens": 17}
+{"id": "gen/general-wording-419-filter-5-generate-w1", "answer": "```sol\ntotal = List.sum (List.filter (fn v -> v >= (-1)) [(-1), 14, 23]).\n> print (str total).\n```\nIt prints 36. Steps: kept=[-1, 14, 23]; result=36.", "finished": true, "tokens": 67}
+{"id": "coding/codingdiag-991-clamp-0-repair_inline", "answer": "`Numeric.clamp 4 13 0`\nIt prints 4.", "finished": true, "tokens": 18}
+{"id": "gen/general-combinations-941-map_reverse-3-output_trace-w0", "answer": "It prints 160. Steps: products=[-24, -44, -84, 32, 160]; reversed=[160, 32, -84, -44, -24]; result=160.", "finished": true, "tokens": 60}
+{"id": "gen/general-wording-419-reverse-1-output_trace-w1", "answer": "It prints 22. Steps: reversed=[22, 20, 29]; result=22.", "finished": true, "tokens": 26}
+{"id": "coding/codingdiag-991-clamp-1-repair_inline", "answer": "`Numeric.clamp 3 12 17`\nIt prints 12.", "finished": true, "tokens": 20}
+{"id": "gen/general-inputs-941-missing-4-generate-w0", "answer": "```sol\nresult = Str.find 126 \"iwonbex\".\n> print (str result).\n```\nIt prints -1. Steps: needle=126; result=-1.", "finished": true, "tokens": 44}
+{"id": "gen/general-combinations-941-take_filter-11-output_only-w0", "answer": "21", "finished": true, "tokens": 2}
+{"id": "gen/general-wording-419-range-1-output_trace-w1", "answer": "It prints -43. Steps: values=[-22, -21]; result=-43.", "finished": true, "tokens": 23}
+{"id": "gen/general-wording-419-take-1-output_trace-w1", "answer": "It prints 9. Steps: prefix=[9]; result=9.", "finished": true, "tokens": 15}
+{"id": "gen/general-wording-419-length-5-generate-w1", "answer": "```sol\ntotal = Str.len \"resnedoq\".\n> print (str total).\n```\nIt prints 8. Steps: text=\"resnedoq\"; result=8.", "finished": true, "tokens": 41}
+{"id": "gen/general-wording-419-range-6-generate-w1", "answer": "```sol\nvalue = List.sum (List.range (-24) (-24)).\n> print (str value).\n```\nIt prints -24. Steps: values=[-24]; result=-24.", "finished": true, "tokens": 47}
+{"id": "gen/general-combinations-941-map_filter-24-output_trace-w0", "answer": "It prints -213. Steps: products=[-111, -90]; filter=[-111, -90]; result=-213.", "finished": true, "tokens": 37}
+{"id": "coding/codingdiag-991-take-0-repair_inline", "answer": "```sol\nList.sum (List.take 1 [27, 23, 31])\n```\nIt prints 27.", "finished": true, "tokens": 31}
+{"id": "gen/general-inputs-941-slice-3-generate-w0", "answer": "```sol\nanswer = Str.slice \"wuajhh\" 2 4.\n> print (str answer).\n```\nIt prints uj. Steps: start=2; end=4; result=\"uj\".", "finished": true, "tokens": 45}
+{"id": "gen/general-combinations-941-map_filter-12-output_trace-w0", "answer": "It prints -64. Steps: products=[-22, -56]; filter=[-56]; result=-64.", "finished": true, "tokens": 29}
+{"id": "gen/general-wording-419-take-5-generate-w1", "answer": "```sol\ntotal = List.sum (List.take 1 [10, 6, 6]).\n> print (str total).\n```\nIt prints 10. Steps: prefix=[10]; result=10.", "finished": true, "tokens": 50}
+{"id": "gen/general-combinations-941-map_reverse-1-generate-w0", "answer": "```sol\ntotal = (List.rev (List.map (fn x -> x * 4) [0, (-24), 20])) ! 0.\n> print (str total).\n```\nIt prints 80. Steps: products=[0, -96, 80]; reversed=[80, -96, 0]; result=80.", "finished": true, "tokens": 82}
+{"id": "gen/general-combinations-941-map_filter-22-generate-w0", "answer": "```sol\nvalue = List.sum (List.filter (fn p -> p >= 15) (List.map (fn p -> p * 4) [(-15), 0, 0, (-23)])).\n> print (str value).\n```\nIt prints 0. Steps: products=[-60, 0, 0, -92]; kept=[]; result=0.", "finished": true, "tokens": 88}
+{"id": "gen/general-combinations-941-map_filter-23-output_only-w0", "answer": "-146", "finished": true, "tokens": 4}
+{"id": "gen/general-inputs-941-byte-4-generate-w0", "answer": "```sol\nresult = Str.at \"jaajrpk\" 2.\n> print (str result).\n```\nIt prints 101. Steps: offset=2; result=101.", "finished": true, "tokens": 45}
+{"id": "gen/general-combinations-941-map_filter-10-generate-w0", "answer": "```sol\nvalue = List.sum (List.filter (fn p -> p >= 20) (List.map (fn p -> p * (-2)) [(-17), (-4), 37, 9])).\n> print (str value).\n```\nIt prints -10. Steps: products=[34, 8, -74, -18]; kept=[34]; result=-10.", "finished": true, "tokens": 91}
+{"id": "gen/general-combinations-941-map_filter-11-output_only-w0", "answer": "104", "finished": true, "tokens": 3}
+{"id": "coding/codingdiag-991-take-1-repair_inline", "answer": "```sol\nList.sum (List.take 2 [6, 11, 23, 31])\n```\nIt prints 17.", "finished": true, "tokens": 34}
+{"id": "gen/general-combinations-941-map_reverse-18-generate-w0", "answer": "```sol\nvalue = (List.rev (List.map (fn x -> x * 3) [0, 1, (-2), (-18)] ! 0).\n> print (str value).\n```\nIt prints -54. Steps: products=[0, 3, -6, -54]; reversed=[-54, -6, 3, 0]; result=-54.", "finished": true, "tokens": 89}
+{"id": "gen/general-combinations-941-map_reverse-10-generate-w0", "answer": "```sol\nvalue = (List.rev (List.map (fn x -> x * (-2)) [10, 23, (-22), 23])) ! 0.\n> print (str value).\n```\nIt prints -46. Steps: products=[-20, -46, 44, -46]; reversed=[-46, 44, -46, -20]; result=-46.", "finished": true, "tokens": 99}
+{"id": "gen/general-combinations-941-map_filter-1-output_trace-w0", "answer": "It prints 1. Steps: products=[40, -14, 14]; selected=[40, 14]; result=1.", "finished": true, "tokens": 33}
+{"id": "gen/general-inputs-941-length-1-repair_program-w0", "answer": "```sol\nvalue = Str.len \"unoe\".\n> print (str value).\n```\nIt prints 4. Steps: text=\"unoe\"; result=4.", "finished": true, "tokens": 37}
+{"id": "coding/codingdiag-991-map-0-repair_inline", "answer": "```sol\nList.sum (List.map (fn x -> x * 2) [10, 24]).\n```\nIt prints 72.", "finished": true, "tokens": 34}
+{"id": "gen/general-combinations-941-take_filter-10-generate-w0", "answer": "```sol\nvalue = List.sum (List.filter (fn x -> x >= 13) (List.take 0 [(-10), 3, 24, 21])).\n> print (str value).\n```\nIt prints 0. Steps: prefix=[]; filter=[]; result=0.", "finished": true, "tokens": 68}
+{"id": "gen/general-wording-419-clamp-5-generate-w1", "answer": "```sol\ntotal = Numeric.clamp (-14) (-8) (-16).\n> print (str total).\n```\nIt prints -14. Steps: lower=-14; upper=-8; input=-16; result=-14.", "finished": true, "tokens": 56}
+{"id": "gen/general-wording-419-missing-9-generate-w1", "answer": "```sol\ntotal = Str.find 101 \"zwheki\".\n> print (str total).\n```\nIt prints 3. Steps: needle=101; result=3.", "finished": true, "tokens": 43}
+{"id": "gen/general-wording-419-map-1-output_trace-w1", "answer": "It prints -243. Steps: products=[-90, -72, -72]; result=-243.", "finished": true, "tokens": 29}
+{"id": "gen/general-combinations-941-take_filter-18-generate-w0", "answer": "```sol\nvalue = List.sum (List.filter (fn x -> x >= (-2)) (List.take 3 [(-22), 22, (-8), 11])).\n> print (str value).\n```\nIt prints 22. Steps: kept=[22]; result=22.", "finished": true, "tokens": 68}
+{"id": "coding/codingdiag-991-map-1-repair_inline", "answer": "```sol\nList.sum (List.map (fn x -> x * 3) [13, 9, 5])\n```\nIt prints 78.", "finished": true, "tokens": 36}
+{"id": "gen/general-inputs-941-length-0-repair_expr-w0", "answer": "`Str.len \"lwn\"`\nIt prints 3. Steps: text=\"lwn\"; result=3.", "finished": true, "tokens": 24}
+{"id": "gen/general-inputs-941-min-3-repair_program-w0", "answer": "```sol\nanswer = Numeric.min (-20) 37.\n> print (str answer).\n```\nIt prints -20. Steps: left=-20; right=37; result=-20.", "finished": true, "tokens": 48}
+{"id": "gen/general-wording-419-byte-6-generate-w1", "answer": "```sol\nvalue = Str.at \"bov\" 0.\n> print (str value).\n```\nIt prints 98. Steps: offset=0; result=98.", "finished": true, "tokens": 41}
+{"id": "gen/general-wording-419-slice-10-generate-w1", "answer": "```sol\nvalue = Str.slice \"yhteppg\" 3 7.\n> print (str value).\n```\nIt prints ppg. Steps: start=3; end=7; result=\"ppg\".", "finished": true, "tokens": 48}
+{"id": "gen/general-combinations-941-take_filter-3-generate-w0", "answer": "```sol\nanswer = List.sum (List.filter (fn x -> x >= 2) (List.take 3 [(-17), 0, (-7), (-14), (-13)])).\n> print (str answer).\n```\nIt prints 0. Steps: kept=[0]; result=0.", "finished": true, "tokens": 69}
+{"id": "coding/codingdiag-991-filter-0-repair_inline", "answer": "`List.sum (List.filter (fn x -> x >= 8) [6, 8, 9, 17])`\nIt prints 34.", "finished": true, "tokens": 36}
+{"id": "gen/general-inputs-941-min-2-repair_expr-w0", "answer": "`Numeric.min 5 (-13)`\nIt prints -13. Steps: left=5; right=-13; result=-13.", "finished": true, "tokens": 32}
+{"id": "gen/general-inputs-941-missing-1-repair_program-w0", "answer": "```sol\nresult = Str.find 108 \"slam\".\n> print (str result).\n```\nIt prints 1. Steps: needle=108; result=1.", "finished": true, "tokens": 42}
+{"id": "coding/codingdiag-991-filter-6-repair_inline", "answer": "`List.sum (List.filter (fn x -> x >= 9) [7, 9, 10, 16])`\nIt prints 35.", "finished": true, "tokens": 37}
+{"id": "gen/general-inputs-941-length-3-no_change-w0", "answer": "No change needed. It prints 7. Steps: text=\"kcrtpa\"; result=7.", "finished": true, "tokens": 22}
+{"id": "gen/general-inputs-941-byte-1-repair_program-w0", "answer": "```sol\nvalue = Str.at \"bbsq\" 1.\n> print (str value).\n```\nIt prints 115. Steps: offset=1; result=115.", "finished": true, "tokens": 44}
+{"id": "coding/codingdiag-991-min-0-repair_program", "answer": "```sol\nresult = Numeric.min 22 4.\n> print (str result).\n```\nIt prints 4.", "finished": true, "tokens": 28}
+{"id": "coding/codingdiag-991-min-2-repair_program", "answer": "```sol\nresult = Numeric.min 2 26.\n> print (str result).\n```\nIt prints 2.", "finished": true, "tokens": 28}
+{"id": "gen/general-inputs-941-sum-3-repair_program-w0", "answer": "```sol\ntotal = List.sum [(-5), 5, 0, 32, (-19)].\n> print (str total).\n```\nIt prints 13. Steps: values=[-5, 5, 0, 32, -19]; result=13.", "finished": true, "tokens": 67}
+{"id": "coding/codingdiag-991-length-0-repair_program", "answer": "```sol\nresult = Str.len \"Grape\".\n> print (str result).\n```\nIt prints 5.", "finished": true, "tokens": 26}
+{"id": "coding/codingdiag-991-length-1-repair_program", "answer": "```sol\nresult = Str.len \"Maple\".\n> print (str result).\n```\nIt prints 6.", "finished": true, "tokens": 26}
+{"id": "gen/general-inputs-941-reverse-3-repair_program-w0", "answer": "```sol\nanswer = (List.rev [(-1), 10, (-8), 20, 6]) ! 0.\n> print (str answer).\n```\nIt prints 6. Steps: reversed=[6, 20, -8, 10, -1]; result=6.", "finished": true, "tokens": 69}
+{"id": "gen/general-inputs-941-missing-0-repair_expr-w0", "answer": "`Str.find 126 \"kkj\"`\nIt prints -1. Steps: needle=126; result=-1.", "finished": true, "tokens": 29}
+{"id": "coding/codingdiag-991-byte-0-repair_program", "answer": "```sol\nresult = Str.at \"Grape\" 0.\n> print (str result).\n```\nIt prints 71.", "finished": true, "tokens": 30}
+{"id": "coding/codingdiag-991-byte-1-repair_program", "answer": "```sol\nresult = Str.at \"Maple\" 0.\n> print (str result).\n```\nIt prints 77.", "finished": true, "tokens": 30}
+{"id": "gen/general-inputs-941-reverse-2-repair_expr-w0", "answer": "`(List.rev [14, (-9), 13, 11]) ! 0`\nIt prints 11. Steps: reversed=[11, 13, -9, 14]; result=11.", "finished": true, "tokens": 52}
+{"id": "gen/general-inputs-941-range-0-no_change-w0", "answer": "No change needed. It prints 22. Steps: values=[22]; result=22.", "finished": true, "tokens": 22}
+{"id": "coding/codingdiag-991-sum-1-repair_program", "answer": "```sol\nresult = List.sum [20, 10, 7].\n> print (str result).\n```\nIt prints 37.", "finished": true, "tokens": 34}
+{"id": "coding/codingdiag-991-sum-2-repair_program", "answer": "```sol\nresult = List.sum [24, 21, 22, 4].\n> print (str result).\n```\nIt prints 69.", "finished": true, "tokens": 38}
+{"id": "coding/codingdiag-991-length-0-correct_check", "answer": "No change needed. It prints 5.", "finished": true, "tokens": 9}
+{"id": "coding/codingdiag-991-length-1-correct_check", "answer": "No change needed. It prints 6.", "finished": true, "tokens": 9}
+{"id": "gen/general-inputs-941-sum-2-repair_expr-w0", "answer": "`List.sum [(-9), 5, 38, (-22)]`\nIt prints 16. Steps: values=[-9, 5, 38, -22]; result=16.", "finished": true, "tokens": 49}
+{"id": "coding/codingdiag-991-min-0-correct_check", "answer": "No change needed. It prints 4.", "finished": true, "tokens": 9}
+{"id": "coding/codingdiag-991-min-2-correct_check", "answer": "No change needed. It prints 2.", "finished": true, "tokens": 9}
+{"id": "gen/general-inputs-941-filter-1-repair_program-w0", "answer": "```sol\ntotal = List.sum (List.filter (fn x -> x >= (-6)) [(-22), 3, 15]).\n> print (str total).\n```\nIt prints 18. Steps: kept=[3, 15]; result=18.", "finished": true, "tokens": 62}
+{"id": "gen/general-inputs-941-byte-0-repair_expr-w0", "answer": "`Str.at \"mmi\" 0`\nIt prints 109. Steps: offset=0; result=109.", "finished": true, "tokens": 30}
+{"id": "coding/codingdiag-991-sum-1-correct_check", "answer": "No change needed. It prints 37.", "finished": true, "tokens": 10}
+{"id": "coding/codingdiag-991-range-3-repair_program", "answer": "```sol\nresult = List.sum (List.range 3 11).\n> print (str result).\n```\nIt prints 53.", "finished": true, "tokens": 32}
+{"id": "gen/general-inputs-941-missing-2-no_change-w0", "answer": "No change needed. It prints -1. Steps: needle=126; result=-1.", "finished": true, "tokens": 21}
+{"id": "coding/codingdiag-991-byte-0-correct_check", "answer": "No change needed. It prints 71.", "finished": true, "tokens": 10}
+{"id": "coding/codingdiag-991-byte-1-correct_check", "answer": "No change needed. It prints 77.", "finished": true, "tokens": 10}
+{"id": "coding/codingdiag-991-range-26-repair_program", "answer": "```sol\nresult = List.sum (List.range 10 17).\n> print (str result).\n```\nIt prints 84.", "finished": true, "tokens": 33}
+{"id": "gen/general-inputs-941-clamp-0-no_change-w0", "answer": "No change needed. It prints 4. Steps: lower=-3; upper=4; input=4; result=4.", "finished": true, "tokens": 27}
+{"id": "gen/general-inputs-941-filter-0-repair_expr-w0", "answer": "`List.sum (List.filter (fn x -> x >= 2) [(-4), (-15)])`\nIt prints 0. Steps: kept=[]; result=0.", "finished": true, "tokens": 39}
+{"id": "coding/codingdiag-991-missing-0-repair_program", "answer": "```sol\nresult = Str.find 126 \"Grape\".\n> print (str result).\n```\nIt prints -1.", "finished": true, "tokens": 30}
+{"id": "coding/codingdiag-991-missing-1-repair_program", "answer": "```sol\nresult = Str.find 126 \"Maple\".\n> print (str result).\n```\nIt prints -1.", "finished": true, "tokens": 30}
+{"id": "gen/general-wording-419-length-3-repair_program-w1", "answer": "```sol\nvalue = Str.len \"rbsvdt\".\n> print (str value).\n```\nIt prints 7. Steps: text=\"rbsvdt\"; result=7.", "finished": true, "tokens": 41}
+{"id": "coding/codingdiag-991-reverse-0-repair_program", "answer": "```sol\nresult = (List.rev [25, 16]) ! 0.\n> print (str result).\n```\nIt prints 16.", "finished": true, "tokens": 36}
+{"id": "gen/general-inputs-941-map-4-repair_program-w0", "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 3) [(-3), 13]).\n> print (str result).\n```\nIt prints 30. Steps: products=[-9, 39]; result=30.", "finished": true, "tokens": 59}
+{"id": "gen/general-inputs-941-slice-1-no_change-w0", "answer": "No change needed. It prints pscr. Steps: start=0; end=3; result=\"pscr\".", "finished": true, "tokens": 24}
+{"id": "coding/codingdiag-991-reverse-1-repair_program", "answer": "```sol\nresult = (List.rev [8, 14, 16]) ! 0.\n> print (str result).\n```\nIt prints 16.", "finished": true, "tokens": 39}
+{"id": "coding/codingdiag-991-slice-0-repair_program", "answer": "```sol\nresult = Str.slice \"Grape\" 0 2.\n> print (str result).\n```\nIt prints Gr.", "finished": true, "tokens": 30}
+{"id": "coding/codingdiag-991-slice-1-repair_program", "answer": "```sol\nresult = Str.slice \"Maple\" 1 4.\n> print (str result).\n```\nIt prints aple.", "finished": true, "tokens": 31}
+{"id": "coding/codingdiag-991-sum-2-correct_check", "answer": "No change needed. It prints 71.", "finished": true, "tokens": 10}
+{"id": "coding/codingdiag-991-clamp-0-repair_program", "answer": "```sol\nresult = Numeric.clamp 4 13 0.\n> print (str result).\n```\nIt prints 4.", "finished": true, "tokens": 31}
+{"id": "coding/codingdiag-991-range-3-correct_check", "answer": "No change needed. It prints 55.", "finished": true, "tokens": 10}
+{"id": "coding/codingdiag-991-missing-0-correct_check", "answer": "No change needed. It prints -1.", "finished": true, "tokens": 9}
+{"id": "coding/codingdiag-991-missing-1-correct_check", "answer": "No change needed. It prints -1.", "finished": true, "tokens": 9}
+{"id": "gen/general-wording-419-min-3-repair_program-w1", "answer": "```sol\nresult = Numeric.min 39 (-9).\n> print (str result).\n```\nIt prints -9. Steps: left=39; right=-9; result=-9.", "finished": true, "tokens": 43}
+{"id": "coding/codingdiag-991-range-26-correct_check", "answer": "No change needed. It prints 81.", "finished": true, "tokens": 10}
+{"id": "gen/general-inputs-941-byte-3-no_change-w0", "answer": "No change needed. It prints 114. Steps: offset=3; result=114.", "finished": true, "tokens": 23}
+{"id": "coding/codingdiag-991-clamp-1-repair_program", "answer": "```sol\nresult = Numeric.clamp 3 12 17.\n> print (str result).\n```\nIt prints 12.", "finished": true, "tokens": 33}
+{"id": "gen/general-inputs-941-take-0-no_change-w0", "answer": "No change needed. It prints 0. Steps: prefix=[]; result=0.", "finished": true, "tokens": 18}
+{"id": "gen/general-wording-419-length-4-no_change-w1", "answer": "No change needed. It prints 8. Steps: text=\"koctzuj\"; result=8.", "finished": true, "tokens": 22}
+{"id": "coding/codingdiag-991-reverse-0-correct_check", "answer": "No change needed. It prints 16.", "finished": true, "tokens": 10}
+{"id": "gen/general-wording-419-length-2-repair_expr-w1", "answer": "`Str.len \"afmef\"`\nIt prints 5. Steps: text=\"afmef\"; result=5.", "finished": true, "tokens": 26}
+{"id": "coding/codingdiag-991-slice-0-correct_check", "answer": "No change needed. It prints Gr.", "finished": true, "tokens": 8}
+{"id": "coding/codingdiag-991-slice-1-correct_check", "answer": "No change needed. It prints aple.", "finished": true, "tokens": 9}
+{"id": "coding/codingdiag-991-take-0-repair_program", "answer": "```sol\nresult = List.sum (List.take 1 [27, 23, 31]).\n> print (str result).\n```\nIt prints 27.", "finished": true, "tokens": 40}
+{"id": "gen/general-wording-419-range-5-no_change-w1", "answer": "No change needed. It prints -15. Steps: values=[-5, -4, -3, -2, -1, 0]; result=-15.", "finished": true, "tokens": 37}
+{"id": "coding/codingdiag-991-clamp-0-correct_check", "answer": "No change needed. It prints 4.", "finished": true, "tokens": 9}
+{"id": "coding/codingdiag-991-reverse-1-correct_check", "answer": "No change needed. It prints 16.", "finished": true, "tokens": 10}
+{"id": "gen/general-combinations-941-map_reverse-8-repair_program-w0", "answer": "```sol\nresult = (List.rev (List.map (fn x -> x * (-3)) [37, 37])) ! 0.\n> print (str result).\n```\nIt prints -111. Steps: products=[-111, -111]; reversed=[-111, -111]; result=-111.", "finished": true, "tokens": 81}
+{"id": "coding/codingdiag-991-clamp-1-correct_check", "answer": "No change needed. It prints 12.", "finished": true, "tokens": 10}
+{"id": "gen/general-wording-419-missing-6-no_change-w1", "answer": "No change needed. It prints -1. Steps: needle=126; result=-1.", "finished": true, "tokens": 21}
+{"id": "coding/codingdiag-991-take-1-repair_program", "answer": "```sol\nresult = List.sum (List.take 2 [6, 11, 23, 31]).\n> print (str result).\n```\nIt prints 17.", "finished": true, "tokens": 43}
+{"id": "gen/general-combinations-941-map_reverse-16-repair_program-w0", "answer": "```sol\nresult = (List.rev (List.map (fn x -> x * (-2)) [(-2), 15])) ! 0.\n> print (str result).\n```\nIt prints 4. Steps: products=[4, -30]; reversed=[-30, 4]; result=4.", "finished": true, "tokens": 70}
+{"id": "gen/general-wording-419-reverse-3-repair_program-w1", "answer": "```sol\nresult = (List.rev [5, 26, 30, 13, 37]) ! 0.\n> print (str result).\n```\nIt prints 37. Steps: reversed=[37, 13, 30, 26, 5]; result=37.", "finished": true, "tokens": 74}
+{"id": "gen/general-wording-419-min-2-repair_expr-w1", "answer": "`Numeric.min 19 (-23)`\nIt prints -23. Steps: left=19; right=-23; result=-23.", "finished": true, "tokens": 34}
+{"id": "gen/general-inputs-941-filter-2-no_change-w0", "answer": "No change needed. It prints 34. Steps: kept=[24, 8, -2]; result=34.", "finished": true, "tokens": 28}
+{"id": "gen/general-wording-419-sum-3-repair_program-w1", "answer": "```sol\ntotal = List.sum [(-19), 21, 6, 0, 30].\n> print (str total).\n```\nIt prints 48. Steps: values=[-19, 21, 6, 0, 30]; result=48.", "finished": true, "tokens": 69}
+{"id": "gen/general-wording-419-take-4-no_change-w1", "answer": "No change needed. It prints 22. Steps: prefix=[22]; result=22.", "finished": true, "tokens": 22}
+{"id": "gen/general-wording-419-missing-3-repair_program-w1", "answer": "```sol\nresult = Str.find 116 \"lsttcx\".\n> print (str result).\n```\nIt prints 1. Steps: needle=116; result=1.", "finished": true, "tokens": 43}
+{"id": "coding/codingdiag-991-take-0-correct_check", "answer": "No change needed. It prints 27.", "finished": true, "tokens": 10}
+{"id": "gen/general-wording-419-sum-2-repair_expr-w1", "answer": "`List.sum [35, 31, 37, 9]`\nIt prints 112. Steps: values=[35, 31, 37, 9]; result=112.", "finished": true, "tokens": 51}
+{"id": "coding/codingdiag-991-map-0-repair_program", "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 2) [10, 24]).\n> print (str result).\n```\nIt prints 68.", "finished": true, "tokens": 43}
+{"id": "gen/general-wording-419-clamp-4-no_change-w1", "answer": "No change needed. It prints 1. Steps: lower=-6; upper=1; input=4; result=1.", "finished": true, "tokens": 27}
+{"id": "gen/general-wording-419-filter-4-no_change-w1", "answer": "No change needed. It prints 14. Steps: kept=[14]; result=14.", "finished": true, "tokens": 22}
+{"id": "gen/general-wording-419-byte-3-repair_program-w1", "answer": "```sol\nvalue = Str.at \"oxoavu\" 4.\n> print (str value).\n```\nIt prints 118. Steps: offset=4; result=118.", "finished": true, "tokens": 44}
+{"id": "coding/codingdiag-991-take-1-correct_check", "answer": "No change needed. It prints 17.", "finished": true, "tokens": 10}
+{"id": "gen/general-combinations-941-map_reverse-4-repair_expr-w0", "answer": "`List.rev (List.map (fn x -> x * (-2)) [25, 17])`\nIt prints [-34, -50]. Steps: products=[-50, -34]; reversed=[-34, -50]; result=-34.", "finished": true, "tokens": 62}
+{"id": "gen/general-inputs-941-map-2-repair_expr-w0", "answer": "`List.sum (List.map (fn x -> x * 2) [20, (-1), 14, 25])`\nIt prints 102. Steps: products=[40, -2, 28, 50]; result=102.", "finished": true, "tokens": 63}
+{"id": "coding/codingdiag-991-map-1-repair_program", "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 3) [13, 9, 5, 5]).\n> print (str result).\n```\nIt prints 84.", "finished": true, "tokens": 48}
+{"id": "gen/general-combinations-941-map_filter-8-repair_program-w0", "answer": "```sol\nresult = List.sum (List.filter (fn x -> x >= 20) (List.map (fn x -> x * 3) [5, 13])).\n> print (str result).\n```\nIt prints 0. Steps: products=[15, 39]; filter=[39]; result=0.", "finished": true, "tokens": 74}
+{"id": "coding/codingdiag-991-map-0-correct_check", "answer": "No change needed. It prints 68.", "finished": true, "tokens": 10}
+{"id": "gen/general-combinations-941-map_reverse-13-repair_expr-w0", "answer": "`List.rev (List.map (fn x -> x * 3) [13, 33, 18])`\nIt prints [54, 99, 39]. Steps: products=[39, 99, 54]; reversed=[54, 99, 39]; result=54.", "finished": true, "tokens": 76}
+{"id": "gen/general-wording-419-slice-9-no_change-w1", "answer": "No change needed. It prints guv. Steps: start=2; end=5; result=\"guv\".", "finished": true, "tokens": 24}
+{"id": "gen/general-wording-419-missing-2-repair_expr-w1", "answer": "`Str.find 126 \"llusl\"`\nIt prints -1. Steps: needle=126; result=-1.", "finished": true, "tokens": 30}
+{"id": "gen/general-wording-419-byte-5-no_change-w1", "answer": "No change needed. It prints 110. Steps: offset=5; result=110.", "finished": true, "tokens": 23}
+{"id": "coding/codingdiag-991-map-1-correct_check", "answer": "No change needed. It prints 78.", "finished": true, "tokens": 10}
+{"id": "gen/general-wording-419-map-4-repair_program-w1", "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 4) [6, 27]).\n> print (str result).\n```\nIt prints 140. Steps: products=[24, 108]; result=140.", "finished": true, "tokens": 61}
+{"id": "gen/general-combinations-941-map_filter-40-repair_program-w0", "answer": "```sol\nresult = List.sum (List.filter (fn x -> x >= 19) (List.map (fn x -> x * 3) [11, (-4)])).\n> print (str result).\n```\nIt prints 0. Steps: products=[33, -12]; filter=[33]; result=0.", "finished": true, "tokens": 75}
+{"id": "gen/general-combinations-941-map_reverse-17-no_change-w0", "answer": "No change needed. It prints 156. Steps: products=[124, 132, 156]; reversed=[156, 132, 124]; result=156.", "finished": true, "tokens": 51}
+{"id": "gen/general-combinations-941-take_filter-8-repair_program-w0", "answer": "```sol\nresult = List.sum (List.filter (fn x -> x >= (-2)) (List.take 2 [33, (-1)])).\n> print (str result).\n```\nIt prints 32. Steps: kept=[33, -1]; result=32.", "finished": true, "tokens": 63}
+{"id": "gen/general-combinations-941-take_filter-16-repair_program-w0", "answer": "```sol\nresult = List.sum (List.filter (fn x -> x >= (-6)) (List.take 1 [31, (-9)])).\n> print (str result).\n```\nIt prints 31. Steps: prefix=[31]; filter=[31]; result=31.", "finished": true, "tokens": 65}
+{"id": "gen/general-wording-419-byte-2-repair_expr-w1", "answer": "`Str.at \"tydnh\" 0`\nIt prints 116. Steps: offset=0; result=116.", "finished": true, "tokens": 31}
+{"id": "gen/general-combinations-941-map_reverse-0-no_change-w0", "answer": "No change needed. It prints -68. Steps: products=[-36, -68]; reversed=[-68, -36]; result=-68.", "finished": true, "tokens": 37}
+{"id": "gen/general-combinations-941-map_reverse-9-no_change-w0", "answer": "No change needed. It prints 84. Steps: products=[48, -36, 84]; reversed=[84, -36, 48]; result=84.", "finished": true, "tokens": 43}
+{"id": "gen/general-combinations-941-map_filter-20-repair_program-w0", "answer": "```sol\nresult = List.sum (List.filter (fn x -> x >= (-3)) (List.map (fn x -> x * (-2)) [(-5), 36])).\n> print (str result).\n```\nIt prints -6. Steps: products=[10, -72]; kept=[10]; result=-6.", "finished": true, "tokens": 74}
+{"id": "gen/general-combinations-941-take_filter-1-repair_program-w0", "answer": "```sol\nresult = List.sum (List.filter (fn x -> x >= 8) (List.take 1 [(-11), 26, 17])).\n> print (str result).\n```\nIt prints 0. Steps: kept=[]; result=0.", "finished": true, "tokens": 61}
+{"id": "coding/codingdiag-991-filter-0-repair_program", "answer": "```sol\nresult = List.sum (List.filter (fn x -> x >= 8) [6, 8, 9, 17]).\n> print (str result).\n```\nIt prints 34.", "finished": true, "tokens": 48}
+{"id": "gen/general-wording-419-reverse-2-repair_expr-w1", "answer": "`(List.rev [(-14), (-21), 36, (-12)]) ! 0`\nIt prints -12. Steps: reversed=[-12, 36, -21, -14]; result=-12.", "finished": true, "tokens": 56}
+{"id": "coding/codingdiag-991-filter-6-repair_program", "answer": "```sol\nresult = List.sum (List.filter (fn x -> x >= 9) [7, 9, 10, 16]).\n> print (str result).\n```\nIt prints 35.", "finished": true, "tokens": 49}
+{"id": "gen/general-combinations-941-map_filter-16-repair_expr-w0", "answer": "`List.sum (List.filter (fn x -> x >= 11) (List.map (fn x -> x * 2) [(-4), 24]))`\nIt prints 48. Steps: products=[-8, 48]; filter=[48]; result=48.", "finished": true, "tokens": 65}
+{"id": "gen/general-combinations-941-take_filter-13-repair_expr-w0", "answer": "`List.sum (List.filter (fn x -> x >= 6) (List.take 1 [(-1), 9, 6]))`\nIt prints 9. Steps: prefix=[-1]; filter=[9]; result=9.", "finished": true, "tokens": 52}
+{"id": "gen/general-wording-419-filter-3-repair_program-w1", "answer": "```sol\nresult = List.sum (List.filter (fn x -> x >= 9) [38, (-14), 8, (-19), 23]).\n> print (str result).\n```\nIt prints 61. Steps: kept=[38, 23]; result=61.", "finished": true, "tokens": 70}
+{"id": "gen/general-combinations-941-take_filter-0-repair_expr-w0", "answer": "`List.sum (List.filter (fn x -> x >= (-9)) (List.take 0 [15, (-20)]))`\nIt prints 0. Steps: prefix=[]; filter=[]; result=0.", "finished": true, "tokens": 48}
+{"id": "coding/codingdiag-991-filter-0-correct_check", "answer": "No change needed. It prints 34.", "finished": true, "tokens": 10}
+{"id": "gen/general-combinations-941-map_filter-4-repair_expr-w0", "answer": "`List.sum (List.filter (fn x -> x >= (-5)) (List.map (fn x -> x * 2) [19, (-23)]))`\nIt prints 16. Steps: products=[38, -46]; filter=[38]; result=16.", "finished": true, "tokens": 65}
+{"id": "gen/general-wording-419-filter-2-repair_expr-w1", "answer": "`List.sum (List.filter (fn x -> x >= 17) [36, 26, (-13), 22])`\nIt prints 84. Steps: kept=[36, 26, 22]; result=84.", "finished": true, "tokens": 60}
+{"id": "coding/codingdiag-991-filter-6-correct_check", "answer": "No change needed. It prints 35.", "finished": true, "tokens": 10}
+{"id": "gen/general-combinations-941-map_filter-28-repair_expr-w0", "answer": "`List.sum (List.filter (fn x -> x >= 16) (List.map (fn x -> x * (-3)) [29, (-17)]))`\nIt prints -12. Steps: products=[-87, 51]; filter=[51]; result=-12.", "finished": true, "tokens": 67}
+{"id": "gen/general-combinations-941-take_filter-17-no_change-w0", "answer": "No change needed. It prints 33. Steps: kept=[33]; result=33.", "finished": true, "tokens": 22}
+{"id": "gen/general-combinations-941-map_filter-21-no_change-w0", "answer": "No change needed. It prints 144. Steps: products=[112, 72, -4]; kept=[112, 72]; result=144.", "finished": true, "tokens": 42}
+{"id": "gen/general-combinations-941-map_filter-9-no_change-w0", "answer": "No change needed. It prints 64. Steps: products=[32, -10, -64]; kept=[32]; result=64.", "finished": true, "tokens": 35}
+{"id": "gen/general-combinations-941-take_filter-6-repair_expr-w0", "answer": "`List.sum (List.filter (fn x -> x >= (-4)) (List.take 1 [8, (-2), (-9), 1]))`\nIt prints 8. Steps: kept=[8]; result=8.", "finished": true, "tokens": 49}
+{"id": "gen/general-combinations-941-take_filter-9-no_change-w0", "answer": "No change needed. It prints 0. Steps: kept=[]; result=0.", "finished": true, "tokens": 18}
+{"id": "gen/general-combinations-941-take_filter-2-no_change-w0", "answer": "No change needed. It prints 23. Steps: kept=[23]; result=23.", "finished": true, "tokens": 22}
+{"id": "gen/general-wording-419-map-2-repair_expr-w1", "answer": "`List.sum (List.map (fn x -> x * 2) [(-3), (-13), 22, (-1)])`\nIt prints 26. Steps: products=[-6, -26, 44, -2]; result=26.", "finished": true, "tokens": 61}
+{"id": "solgen/big_numbers-110", "answer": "```sol\n> print (str (128 + 117)).\n```\nIt prints 245.", "finished": true, "tokens": 27}
+{"id": "dev/fact-qos-pin-1", "answer": "It records the commit hash of the fprisc checkout.", "finished": true, "tokens": 12}
+{"id": "dev/fact-qos-platform-1", "answer": "No, QOS Portable is designed to run on a wide variety of host platforms, including Linux, macOS, FreeBSD, and other Unix-like systems. It is a portable operating system that can be compiled and run on any hardware that supports the required hardware abstraction layer (HAL) and runtime environment.\n\n```sol\n// Example of a QOS Portable application running on macOS\nimport qos_hal_t;\n\nvoid main() {\n    qos_hal_t *hal = qos_hal_t_alloc();\n    qos_hal_t_init(hal);\n    qos_hal_t_set_irq(hal, 0);\n    qos_hal_t_set_irq_mask(hal, 0x80000000);\n    qos_hal_t_set_irq_source(hal, 0);\n    qos_hal_t_set_irq_target(hal, 0);\n    qos_hal_t_set_irq_mode(hal, qos_hal_t_irq_mode_t(0));\n    qos_hal_t_set_irq_pin", "finished": false, "tokens": 200}
+{"id": "solgen/big_numbers-025", "answer": "```sol\n> print (str (105 * (-5))).\n```\nIt prints -525.", "finished": true, "tokens": 25}
+{"id": "solgen/big_numbers-061", "answer": "```sol\n> print (str (Numeric.abs 105)).\n```\nIt prints 105.", "finished": true, "tokens": 25}
+{"id": "dev/fact-actor-default-1", "answer": "Plain spawn uses a fixed 64-slot mailbox.", "finished": true, "tokens": 11}
+{"id": "dev/fact-send-result-1", "answer": "Actor send returns Ok Unit or Err \"mailbox full\". Ok means the message was successfully queued and delivered to the actor.", "finished": true, "tokens": 24}
+{"id": "solgen/fresh-022", "answer": "```sol\n> print (str (Numeric.clamp (-24) 3 35)).\n```\nIt prints 3.", "finished": true, "tokens": 29}
+{"id": "dev/fact-binary-endian-1", "answer": "The `u16le` function takes two `Word` arguments representing the byte offset and the value, returning a `Word` containing the combined byte. It internally uses `Word.add` to calculate the total offset and `Word.and2` to perform a bitwise AND operation on the two bytes.\n\n```fprisc\nu16le a b = Word.add a b |>? (fn v -> Word.and2 (Word.fromInt (Word.fromInt a)) (Word.fromInt b))\n```", "finished": true, "tokens": 105}
+{"id": "solgen/fresh-010", "answer": "```sol\n> print (str ((-17) >= 4)).\n```\nIt prints False.", "finished": true, "tokens": 23}
+{"id": "solgen/big_numbers-106", "answer": "```sol\n> print (str (63 > 115)).\n```\nIt prints False.", "finished": true, "tokens": 23}
+{"id": "dev/fact-qos-pin-3", "answer": "The `qos.py fprisc --pin` command records the current state of the FP-RISC compiler checkout into a file named `fprisc.lock.json`. This file serves as a manifest that defines the specific compiler version, the toolchain path, and the associated commit hash, ensuring reproducibility of the build environment.\n\n```python\n# Example of the output format of fprisc.lock.json\nimport json\n\ndef format_lock():\n    return json.dumps({\"compiler\": \"fprisc\", \"version\": \"1.0.0\", \"path\": \"/path/to/fprisc\", \"commit\": \"abc123\"}, indent=2)\n```", "finished": true, "tokens": 138}
+{"id": "dev/fact-binary-offset-1", "answer": "Byte offsets in std/binary are zero-based. The `read` and `write` functions take a byte offset starting at 0, and the `readPath` function returns a string starting at the specified offset.", "finished": true, "tokens": 44}
+{"id": "dev/fact-option-result-1", "answer": "A library returns Option when it is a library that is not a standard library, as it is not guaranteed to be available. For example, `std/option.fpr` is a library that returns Option, whereas `std/option.fpr` is not a library.", "finished": true, "tokens": 55}
+{"id": "solgen/big_numbers-028", "answer": "```sol\n> print (str (Numeric.abs 110)).\n```\nIt prints 110.", "finished": true, "tokens": 25}
+{"id": "dev/fact-option-default-1", "answer": "Option.withDefault d returns Option.Some d if the input is None, and Option.Some x otherwise. This function is used to provide a fallback value when an option is missing.\n\n```fprisc\nOption.withDefault 42 (Some 1)\n```", "finished": true, "tokens": 54}
+{"id": "dev/fact-qos-platform-3", "answer": "No, QOS Portable is designed to run on a wide variety of host platforms, including Linux, macOS, FreeBSD, and other Unix-like systems. It is a portable operating system that can be compiled and executed on any hardware or software environment that supports the QOS runtime and HAL.", "finished": true, "tokens": 57}
+{"id": "solgen/fresh-012", "answer": "```sol\n> print (str (List.drop 2 [(-1), 9])).\n```\nIt prints [].", "finished": true, "tokens": 25}
+{"id": "solgen/fresh-040", "answer": "```sol\n> print (str (Numeric.abs (31 * 10))).\n```\nIt prints 310. Steps: mul=310; abs=310.", "finished": true, "tokens": 42}
+{"id": "dev/fact-json-duplicates-1", "answer": "Duplicate keys are retained in the order they first appear. This behavior is enforced by the `keepFirst` function, which returns the first occurrence of each key. For example, `keepFirst (JObj [(\"a\", JNum 1), (\"b\", JNum 2)])` returns `JObj [(\"a\", JNum 1), (\"b\", JNum 2)]`.", "finished": true, "tokens": 79}
+{"id": "solgen/probe-c-json-parse", "answer": "J.parse returns a `Result` type containing either a `Value` or an error. The `Value` type is a union of `Null`, `Boolean`, `Integer`, `Real`, `Text`, `Sequence`, `Object`, and `Array`.\n\n```sol\nJ.parse \"null\"\n```", "finished": true, "tokens": 63}
+{"id": "solgen/fresh-024", "answer": "```sol\n> print (str (List.sum (List.range (-2) 4))).\n```\nIt prints 6. Steps: range=[-2, -1, 0, 1, 2, 3, 4]; sum=6.", "finished": true, "tokens": 56}
+{"id": "solgen/fresh-038", "answer": "```sol\n> print (str ((-29) / 5)).\n```\nIt prints -5.", "finished": true, "tokens": 24}
+{"id": "solgen/probe-t2-max", "answer": "It prints 14.", "finished": true, "tokens": 6}
+{"id": "solgen/fresh-032", "answer": "```sol\n> print (str (23 % 9)).\n```\nIt prints 5.", "finished": true, "tokens": 22}
+{"id": "solgen/probe-c-brace", "answer": "You must escape the { character by doubling it using the backslash character code (92). For example, to write a string containing a curly brace, you would write `\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{\\\"{", "finished": false, "tokens": 200}
+{"id": "solgen/probe-c-query-vs-aftercommit", "answer": "Proc.query is used to execute a single transactional step that does not modify the database state, such as a script that reads a file or writes a log line. It is distinct from Proc.afterCommit, which is used to schedule a future transaction that will be applied after the current one has committed.\n\n```sol\nProc.query \"read_file\"\n```", "finished": true, "tokens": 72}
+{"id": "dev/fact-call-wire-1", "answer": "std/actor calls use the wire shape `Msg`, which is a message that carries a message type and a value. The mechanism is a message channel where the sender's mailbox is a `receive` operation, and the receiver's mailbox is a `send` operation.", "finished": true, "tokens": 54}
+{"id": "dev/fact-host-build-1", "answer": "fpr build produces a standalone executable that runs on the host machine without requiring a compiler or runtime. It uses the host's C compiler and runtime to compile the program, linking against the host's HAL and runtime libraries, and executes the resulting binary directly.\n\n```sol\n# Example Sol program that builds to a standalone executable\nimport \"std\";\n\nmain = {\n  let x = 42;\n  print \"x = {x}\";\n};\n```", "finished": true, "tokens": 97}
+{"id": "solgen/big_numbers-068", "answer": "It prints 12.", "finished": true, "tokens": 6}
+{"id": "solgen/probe-t2-abs", "answer": "It prints 41.", "finished": true, "tokens": 6}
+{"id": "dev/fact-actor-default-3", "answer": "Plain spawn uses a fixed 64-slot mailbox.", "finished": true, "tokens": 11}
+{"id": "dev/fact-send-result-3", "answer": "send returns a Result Unit String, where Ok means the message was sent successfully and the sender is still alive, and Err means the message was already sent or the sender has died.", "finished": true, "tokens": 36}
+{"id": "solgen/big_numbers-037", "answer": "It prints -40.", "finished": true, "tokens": 6}
+{"id": "dev/fact-profiles-1", "answer": "The default profile is `base`. This is determined by the `profile` directive in the `fpr` command, which accepts `base`, `sol`, `extbase`, or `std`. If the directive is omitted, the system falls back to `base`.\n\n```fpr\nprofile base.\n```", "finished": true, "tokens": 64}
+{"id": "solgen/big_numbers-017", "answer": "It prints False.", "finished": true, "tokens": 4}
+{"id": "solgen/big_numbers-069", "answer": "It prints 117.", "finished": true, "tokens": 7}
+{"id": "solgen/big_numbers-094", "answer": "It prints 29.", "finished": true, "tokens": 6}
+{"id": "solgen/big_numbers-119", "answer": "It prints 620.", "finished": true, "tokens": 7}
+{"id": "dev/fact-binary-bounds-1", "answer": "std/binary returns Err \"binary: fixed-width read past the end\". This occurs when the `read` function encounters a byte that does not fit the expected width, causing the `readWord` helper to fail.\n\n```fprisc\nreadWord : unsafe Int -> Int -> Result String String .\nreadWord n i = case i > n of\n    True -> Err \"binary: fixed-width read past the end\"\n  | False -> readWord2 n i (charAt s i).\n```", "finished": true, "tokens": 105}
+{"id": "solgen/fresh-060", "answer": "It prints True.", "finished": true, "tokens": 4}
+{"id": "solgen/fresh-078", "answer": "```sol\n> print (str (List.rev (List.rev [18, (-40), (-16), (-2)]))).\n```\nIt prints [18, -40, -16, -2]. Steps: rev=[-2, -16, -40, 18]; rev2=[18, -40, -16, -2].", "finished": true, "tokens": 85}
+{"id": "solgen/big_numbers-043", "answer": "It prints 211.", "finished": true, "tokens": 7}
+{"id": "solgen/probe-t2-trim", "answer": "It prints hello world.", "finished": true, "tokens": 5}
+{"id": "dev/fact-binary-endian-3", "answer": "The `u16le` function takes two bytes and returns their integer value. It first extracts the first byte using `u8le` and the second using `u8le`, then converts both to integers and adds them together.\n\n```sol\nu16le b a = u16 (u8le b a)\n```", "finished": true, "tokens": 71}
+{"id": "solgen/big_numbers-050", "answer": "It prints -117.", "finished": true, "tokens": 7}
+{"id": "solgen/big_numbers-045", "answer": "It prints 223.", "finished": true, "tokens": 7}
+{"id": "dev/fact-binary-offset-3", "answer": "Byte offsets in std/binary are zero-based. The `read` and `write` functions use a 1-based index, but the underlying `read` and `write` implementations internally convert this to a zero-based index by subtracting 1 from the provided offset.", "finished": true, "tokens": 55}
+{"id": "dev/fact-option-result-3", "answer": "Option is for values that may be missing, and Result is for values that may fail.", "finished": true, "tokens": 18}
+{"id": "solgen/fresh-025", "answer": "It prints STONE.", "finished": true, "tokens": 5}
+{"id": "solgen/fresh-035", "answer": "It prints SILVER.", "finished": true, "tokens": 6}
+{"id": "solgen/big_numbers-103", "answer": "```sol\n> print (str (Str.find 111 \"rocket\")).\n```\nIt prints 2.", "finished": true, "tokens": 25}
+{"id": "solgen/probe-t2-join", "answer": "It prints red, green.", "finished": true, "tokens": 6}
+{"id": "dev/fact-call-death-1", "answer": "The actor's `receive` block is never entered, and the `receiveNow` function returns immediately. The `receiveNow` function is designed to handle the case where the target actor has died, ensuring the caller does not wait indefinitely for a reply.\n\n```fprisc\nactor main {\n  receiveNow {\n    // If the target actor dies here, this block returns immediately.\n    // The caller continues without waiting for a reply.\n    print \"Actor died before reply\"\n  }\n}\n```", "finished": true, "tokens": 108}
+{"id": "solgen/fresh-056", "answer": "It prints FALCON.", "finished": true, "tokens": 6}
+{"id": "solgen/fresh-068", "answer": "It prints False.", "finished": true, "tokens": 4}
+{"id": "solgen/fresh-017", "answer": "It prints 111.", "finished": true, "tokens": 7}
+{"id": "solgen/fresh-034", "answer": "It prints False.", "finished": true, "tokens": 4}
+{"id": "solgen/big_numbers-090", "answer": "It prints 69.", "finished": true, "tokens": 6}
+{"id": "dev/fact-option-default-3", "answer": "Option.withDefault d returns Option.Some d if the input is None, and Option.Some x otherwise. This function is used to provide a fallback value when an option is missing.\n\n```fprisc\nOption.withDefault 42 (Some 1)\n```", "finished": true, "tokens": 54}
+{"id": "dev/output-string-first-byte-1", "answer": "It prints 65.", "finished": true, "tokens": 6}
+{"id": "solgen/fresh-004", "answer": "It prints [1, 2, 3, 4, 5].", "finished": true, "tokens": 17}
+{"id": "solgen/fresh-009", "answer": "```sol\n> print (str (List.all (fn x -> x <= (-39)) [(-30), (-38)])).\n```\nIt prints False.", "finished": true, "tokens": 37}
+{"id": "solgen/fresh-054", "answer": "It prints -40.", "finished": true, "tokens": 6}
+{"id": "solgen/big_numbers-012", "answer": "It prints 73.", "finished": true, "tokens": 6}
+{"id": "solgen/big_numbers-023", "answer": "```sol\n> print (str (List.map (fn x -> x * 3) [18, 128, 125])).\n```\nIt prints [54, 384, 375].", "finished": true, "tokens": 52}
+{"id": "solgen/big_numbers-048", "answer": "It prints -1. Steps: mul=-99; mod=-1.", "finished": true, "tokens": 16}
+{"id": "solgen/probe-t2-upper", "answer": "It prints SOL.", "finished": true, "tokens": 4}
+{"id": "dev/output-string-length-1", "answer": "It prints 5.", "finished": true, "tokens": 5}
+{"id": "dev/output-numeric-min-1", "answer": "It prints 3.", "finished": true, "tokens": 5}
+{"id": "solgen/fresh-020", "answer": "It prints MAPLE.", "finished": true, "tokens": 5}
+{"id": "solgen/fresh-021", "answer": "It prints 108.", "finished": true, "tokens": 7}
+{"id": "solgen/fresh-044", "answer": "```sol\n> print (str (List.filter (fn x -> x <= 15) [16, (-10)])).\n```\nIt prints [-10].", "finished": true, "tokens": 38}
+{"id": "solgen/fresh-065", "answer": "It prints -3.", "finished": true, "tokens": 5}
+{"id": "solgen/fresh-092", "answer": "It prints 0.", "finished": true, "tokens": 5}
+{"id": "solgen/fresh-101", "answer": "```sol\n> print (str (List.sum (List.map (fn x -> x + 3) [8, 55, 31]))).\n```\nIt prints 117. Steps: map=[11, 58, 34]; sum=117.", "finished": true, "tokens": 65}
+{"id": "solgen/big_numbers-089", "answer": "It prints 74.", "finished": true, "tokens": 6}
+{"id": "solgen/probe-c-at-least-once", "answer": "A command queued with Proc.afterCommit is considered unsafe because it runs after the transaction's commit, meaning it cannot be safely retried if the transaction fails. The system enforces a strict ordering where the transaction's effects are committed before any subsequent commands, ensuring that a retry of a command like `Proc.runNow` would not execute the same effect twice.\n\n```sol\nProc.afterCommit {\n  Proc.runNow {\n    writePath \"data.txt\", \"content\"\n  }\n}\n```", "finished": true, "tokens": 103}
+{"id": "solgen/fresh-045", "answer": "It prints 111.", "finished": true, "tokens": 7}
+{"id": "solgen/fresh-104", "answer": "It prints p.", "finished": true, "tokens": 4}
+{"id": "solgen/fresh-108", "answer": "It prints False.", "finished": true, "tokens": 4}
+{"id": "solgen/big_numbers-073", "answer": "It prints 113.", "finished": true, "tokens": 7}
+{"id": "solgen/big_numbers-097", "answer": "```sol\n> print (str (List.any (fn x -> x <= (-21)) [127, 109])).\n```\nIt prints False.", "finished": true, "tokens": 37}
+{"id": "solgen/probe-t2-drop", "answer": "It prints [30, 40].", "finished": true, "tokens": 10}
+{"id": "solgen/probe-t3-binding-mod", "answer": "It prints 5.", "finished": true, "tokens": 5}
+{"id": "dev/output-string-first-byte-2", "answer": "It prints 65.", "finished": true, "tokens": 6}
+{"id": "solgen/big_numbers-005", "answer": "It prints 147.", "finished": true, "tokens": 7}
+{"id": "solgen/big_numbers-030", "answer": "It prints 122.", "finished": true, "tokens": 7}
+{"id": "solgen/big_numbers-059", "answer": "It prints 0.", "finished": true, "tokens": 5}
+{"id": "solgen/probe-t1-slice", "answer": "It prints rail.", "finished": true, "tokens": 4}
+{"id": "dev/fact-json-duplicates-3", "answer": "Duplicate keys are retained in the order they first appear. This behavior is enforced by the `keepFirst` function, which returns the first occurrence of a key rather than overwriting it. For example, `keepFirst (keepAll (List.map (fn k -> k) (List.map (fn k -> k) (List.filter (fn k -> k == \"a\" :: Nil) Nil))))` returns `a` because the first key is `a` and the second key is `a`, but the logic in the `keepFirst` function specifically checks if the key exists in the list; if it does, it returns the first one found.", "finished": true, "tokens": 133}
+{"id": "dev/output-string-length-2", "answer": "It prints 5.", "finished": true, "tokens": 5}
+{"id": "dev/output-string-find-missing-1", "answer": "It prints -1.", "finished": true, "tokens": 5}
+{"id": "dev/output-numeric-min-2", "answer": "It prints 3.", "finished": true, "tokens": 5}
+{"id": "solgen/fresh-030", "answer": "It prints -11.", "finished": true, "tokens": 6}
+{"id": "solgen/fresh-069", "answer": "It prints -1.", "finished": true, "tokens": 5}
+{"id": "solgen/big_numbers-101", "answer": "It prints 142.", "finished": true, "tokens": 7}
+{"id": "solgen/probe-c-no-shell", "answer": "No, Sol does not run external programs through a shell. It is a standalone language where the shell is not involved in execution.", "finished": true, "tokens": 26}
+{"id": "dev/write-map", "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 2) [2, 3]).\n> print (str result).\n```", "finished": true, "tokens": 34}
+{"id": "solgen/fresh-050", "answer": "It prints silver.", "finished": true, "tokens": 4}
+{"id": "solgen/fresh-062", "answer": "It prints 1.", "finished": true, "tokens": 5}
+{"id": "solgen/fresh-090", "answer": "It prints 101.", "finished": true, "tokens": 7}
+{"id": "solgen/big_numbers-085", "answer": "It prints [].", "finished": true, "tokens": 3}
+{"id": "solgen/probe-t3-clamp-sum", "answer": "It prints 7. Steps: sum=7; clamp=7.", "finished": true, "tokens": 15}
+{"id": "dev/fact-import-order-1", "answer": "The search order is FPR_HOME first, then FPR_PATH, then the importer's own directory. This order is defined in the `fprisc_root` function, which returns the path to the root of the FP-RISC checkout.\n\n```fprisc\nfprisc_root = case OS.path.dirname (OS.path.dirname (OS.path.abspath (file: \"fprisc\"))) of\n    O.None -> O.Some (OS.path.join (OS.cwd (OS.run (file: \"fprisc\"))) \"fprisc\")\n  | O.Some (parent) -> O.Some (OS.path.join parent (OS.path.dirname (file: \"fprisc\")))\n```", "finished": true, "tokens": 141}
+{"id": "dev/output-string-find-missing-2", "answer": "It prints -1.", "finished": true, "tokens": 5}
+{"id": "dev/output-numeric-clamp-1", "answer": "It prints 10.", "finished": true, "tokens": 6}
+{"id": "solgen/held_pairs-013", "answer": "```sol\n> print (str (List.rev (List.drop 1 (List.rev [20, 3, 6])))).\n```\nIt prints []. Steps: rev=[6, 3, 20]; drop=[3, 20]; rev2=[].", "finished": true, "tokens": 60}
+{"id": "solgen/held_pairs-106", "answer": "```sol\n> print (str (List.filter (fn x -> x <= 10) (List.range 6 9))).\n```\nIt prints [6, 7, 8, 9]. Steps: range=[6, 7, 8, 9]; filter=[6, 7, 8, 9].", "finished": true, "tokens": 73}
+{"id": "solgen/big_numbers-072", "answer": "```sol\n> print (str (List.zip [137, 98] [15, (-20), 141])).\n```\nIt prints [(137, 15), (98, -20)].", "finished": true, "tokens": 54}
+{"id": "dev/fact-ownership-1", "answer": "The FP-RISC compiler is owned by the FP-RISC repository, while the QOS operating system is owned by the QOS repository.", "finished": true, "tokens": 28}
+{"id": "dev/fact-call-wire-3", "answer": "std/actor uses the wire format `std/actor.wire` and relies on the `std/actor.correlation` mechanism.", "finished": true, "tokens": 27}
+{"id": "dev/output-string-slice-1", "answer": "It prints bcd.", "finished": true, "tokens": 5}
+{"id": "solgen/fresh-115", "answer": "It prints -31.", "finished": true, "tokens": 6}
+{"id": "solgen/big_numbers-117", "answer": "```sol\n> print (str (85 < (-13))).\n```\nIt prints False.", "finished": true, "tokens": 22}
+{"id": "dev/fact-host-build-3", "answer": "It produces a standalone executable that runs on the host machine. The compiler generates a `.elf` file containing the executable, its image, and a `.qa` archive containing the manifest and the image data. The `.qa` file is then packaged into a `.fpr` bundle containing the manifest, the image, and the runtime, which is then executed by the host machine.\n\n```sol\n# Example: A Base program compiled and packaged into a standalone executable\n# The resulting .fpr bundle contains the manifest, the image, and the runtime.\n# The host machine runs this bundle directly without needing a separate build step.\n```", "finished": true, "tokens": 130}
+{"id": "solgen/fresh-097", "answer": "```sol\n> print (Str.slice \"maple\" 3 4).\n```\nIt prints e.", "finished": true, "tokens": 24}
+{"id": "solgen/held_pairs-067", "answer": "```sol\n> print (str (List.drop 4 (List.rev [33, (-11), 51, 17, 42]))).\n```\nIt prints []. Steps: rev=[42, 17, 51, -11, 33]; drop=[].", "finished": true, "tokens": 68}
+{"id": "dev/output-list-reverse-1", "answer": "It prints 6. Steps: rev=[6, 5, 4]; index=6.", "finished": true, "tokens": 21}
+{"id": "dev/output-numeric-clamp-2", "answer": "It prints 10.", "finished": true, "tokens": 6}
+{"id": "solgen/big_numbers-014", "answer": "It prints 137.", "finished": true, "tokens": 7}
+{"id": "solgen/probe-t1-clamp", "answer": "It prints 2.", "finished": true, "tokens": 5}
+{"id": "dev/fact-profiles-3", "answer": "The default profile is `base`. This is determined by the `profile` directive in the `fprisc.toml` file, which specifies the target profile. If the file does not contain a directive, the system falls back to `base`.\n\n```sol\nprofile base.\n```", "finished": true, "tokens": 59}
+{"id": "dev/output-string-first-byte-3", "answer": "It prints 65.", "finished": true, "tokens": 6}
+{"id": "dev/output-string-slice-2", "answer": "It prints bcd.", "finished": true, "tokens": 5}
+{"id": "dev/output-list-range-1", "answer": "It prints 9. Steps: range=[2, 3, 4]; sum=9.", "finished": true, "tokens": 21}
+{"id": "solgen/fresh-026", "answer": "It prints 118. Steps: at=118; sub=118.", "finished": true, "tokens": 21}
+{"id": "solgen/fresh-053", "answer": "It prints 29. Steps: max=58; div=29.", "finished": true, "tokens": 18}
+{"id": "solgen/big_numbers-001", "answer": "It prints 15.", "finished": true, "tokens": 6}
+{"id": "solgen/probe-t2-last", "answer": "It prints 7. Steps: range=[1, 2, 3, 4, 5, 6, 7]; last=7.", "finished": true, "tokens": 33}
+{"id": "dev/fact-binary-bounds-3", "answer": "std/binary returns Err \"buffer full\". This occurs because the `read` function checks the length of the buffer against the requested length; if the buffer is full, it returns an error rather than attempting to read beyond the available data.\n\n```fprisc\nlet result = read 1000 buf\n```", "finished": true, "tokens": 66}
+{"id": "dev/output-string-length-3", "answer": "It prints 5.", "finished": true, "tokens": 5}
+{"id": "dev/output-numeric-min-3", "answer": "It prints 3.", "finished": true, "tokens": 5}
+{"id": "solgen/fresh-112", "answer": "It prints 960. Steps: find=1; mul=960.", "finished": true, "tokens": 19}
+{"id": "solgen/held_pairs-081", "answer": "It prints XEL. Steps: slice=XEL; upper=XEL.", "finished": true, "tokens": 15}
+{"id": "solgen/big_numbers-070", "answer": "It prints 4. Steps: abs=86; div=43; div2=4.", "finished": true, "tokens": 22}
+{"id": "dev/fact-json-trailing-1", "answer": "No, the Sol JSON parser does not accept extra non-whitespace text after a value. It strictly validates the structure of the input string, returning an error if the value is malformed or if the text following the value is not whitespace. For example, attempting to parse `{\"a\": 1}` followed by `b` will fail because the parser expects a value, not a string, and the subsequent text is not whitespace.", "finished": true, "tokens": 86}
+{"id": "dev/output-list-reverse-2", "answer": "It prints 6. Steps: rev=[6, 5, 4]; index=6.", "finished": true, "tokens": 21}
+{"id": "solgen/fresh-005", "answer": "```sol\n> print (Str.trim \"   copper   \").\n```\nIt prints copper.", "finished": true, "tokens": 20}
+{"id": "solgen/probe-t2-zip", "answer": "It prints [(1, 7), (2, 8), (3, 9)].", "finished": true, "tokens": 20}
+{"id": "solgen/probe-t2-if", "answer": "It prints 0. Steps: cmp=False; if=0.", "finished": true, "tokens": 14}
+{"id": "solgen/probe-c-args", "answer": "You pass command-line arguments to a Sol script by invoking the `sol` command with the script path followed by the arguments as a single string. The script reads these arguments by parsing the input string into a list of tuples, where each tuple contains a key and its corresponding value. For example, to run `sol sol/scripts/pos1.sol` with arguments `--port=8080` and `--store=/tmp/sol-pos-store`, the script executes the `pos1` logic using the provided port and store path.", "finished": true, "tokens": 109}
+{"id": "dev/output-list-range-2", "answer": "It prints 9. Steps: range=[2, 3, 4]; sum=9.", "finished": true, "tokens": 21}
+{"id": "solgen/fresh-088", "answer": "It prints 18. Steps: index=-22; add=18.", "finished": true, "tokens": 18}
+{"id": "solgen/held_pairs-102", "answer": "It prints OWND. Steps: slice=ownd; upper=OWND.", "finished": true, "tokens": 17}
+{"id": "solgen/big_numbers-016", "answer": "It prints 247.", "finished": true, "tokens": 7}
+{"id": "solgen/big_numbers-024", "answer": "It prints 72.", "finished": true, "tokens": 6}
+{"id": "solgen/probe-t3-rev-take", "answer": "It prints [6, 8]. Steps: take=[8, 6]; rev=[6, 8].", "finished": true, "tokens": 24}
+{"id": "dev/output-string-find-missing-3", "answer": "It prints -1.", "finished": true, "tokens": 5}
+{"id": "dev/write-clamp", "answer": "```sol\nresult = Numeric.clamp 1 8 20.\n> print (str result).\n```", "finished": true, "tokens": 25}
+{"id": "solgen/fresh-011", "answer": "It prints 44.", "finished": true, "tokens": 6}
+{"id": "solgen/fresh-019", "answer": "It prints False. Steps: abs=35; cmp=False.", "finished": true, "tokens": 14}
+{"id": "solgen/fresh-081", "answer": "```sol\n> print (str (List.sum [(-4), 44, 56, 45, (-38)])).\n```\nIt prints 103.", "finished": true, "tokens": 41}
+{"id": "solgen/held_pairs-002", "answer": "It prints LE. Steps: slice=LE; upper=LE.", "finished": true, "tokens": 14}
+{"id": "solgen/probe-t1-gen-double-sum", "answer": "```sol\n> print (str (List.sum (List.map (fn x -> x * 2) [6, 1, 8]))).\n```\nIt prints 26. Steps: map=[12, 2, 16]; sum=26.", "finished": true, "tokens": 60}
+{"id": "dev/fact-call-death-3", "answer": "The actor's reply is dropped, and the caller receives no message. This occurs because the `receive` function only waits for a reply to a message that has been queued; if the actor dies before the message is delivered, the `receive` operation simply ignores the message and returns the caller's original state.\n\n```fprisc\nactor main {\n  send \"hello\" to self;\n  receive {\n    if (self == me) {\n      print \"received\";\n    }\n  }\n}\n```", "finished": true, "tokens": 109}
+{"id": "solgen/fresh-031", "answer": "It prints 5. Steps: range=[2, 3, 4, 5]; last=5.", "finished": true, "tokens": 24}
+{"id": "solgen/big_numbers-011", "answer": "It prints 34.", "finished": true, "tokens": 6}
+{"id": "solgen/big_numbers-049", "answer": "It prints 475. Steps: abs=95; mul=475.", "finished": true, "tokens": 20}
+{"id": "solgen/big_numbers-112", "answer": "```sol\n> print (str (List.rev (List.drop 1 [119, 35, 126, 73, 92]))).\n```\nIt prints [92, 73, 126, 35]. Steps: drop=[35, 126, 73, 92]; rev=[92, 73, 126, 35].", "finished": true, "tokens": 98}
+{"id": "solgen/fresh-001", "answer": "It prints [-5, -4, -3, -2]. Steps: range=[-5, -4, -3, -2, -1, 0]; take=[-5, -4, -3, -2].", "finished": true, "tokens": 50}
+{"id": "solgen/fresh-039", "answer": "It prints 0.", "finished": true, "tokens": 5}
+{"id": "solgen/fresh-091", "answer": "It prints 3.", "finished": true, "tokens": 5}
+{"id": "solgen/probe-t1-rev-index", "answer": "It prints 13. Steps: rev=[14, 13, 12, 11]; index=13.", "finished": true, "tokens": 30}
+{"id": "dev/output-list-take-1", "answer": "It prints 11. Steps: take=[5, 6]; sum=11.", "finished": true, "tokens": 20}
+{"id": "dev/output-numeric-clamp-3", "answer": "It prints 10.", "finished": true, "tokens": 6}
+{"id": "solgen/fresh-073", "answer": "It prints -32.", "finished": true, "tokens": 6}
+{"id": "solgen/fresh-119", "answer": "It prints -5. Steps: div=-5; div2=11; min=-5.", "finished": true, "tokens": 21}
+{"id": "solgen/held_pairs-064", "answer": "It prints DO. Steps: slice=DO; upper=DO.", "finished": true, "tokens": 14}
+{"id": "solgen/held_pairs-070", "answer": "It prints EADO. Steps: slice=eado; upper=EADO.", "finished": true, "tokens": 17}
+{"id": "solgen/held_pairs-076", "answer": "It prints ILVER. Steps: slice=ilver; upper=ILVER.", "finished": true, "tokens": 16}
+{"id": "solgen/held_pairs-118", "answer": "It prints ER. Steps: slice=ER; upper=ER.", "finished": true, "tokens": 14}
+{"id": "solgen/big_numbers-042", "answer": "It prints 88. Steps: add=108; clamp=88.", "finished": true, "tokens": 19}
+{"id": "dev/output-string-slice-3", "answer": "It prints bcd.", "finished": true, "tokens": 5}
+{"id": "solgen/fresh-018", "answer": "```sol\n> print (str (List.filter (fn x -> x != (-28)) [60, (-23), 3, 14, (-13), (-6)])).\n```\nIt prints [60, -23, 3, 14, -13, -6].", "finished": true, "tokens": 70}
+{"id": "solgen/big_numbers-057", "answer": "It prints -103. Steps: range=[9, 10, 11, 12]; sum=42; sub=-103.", "finished": true, "tokens": 36}
+{"id": "solgen/big_numbers-076", "answer": "It prints 76.", "finished": true, "tokens": 6}
+{"id": "solgen/big_numbers-083", "answer": "It prints 3. Steps: find=3; abs=3.", "finished": true, "tokens": 15}
+{"id": "dev/unknown-boot", "answer": "The Raspberry Pi is not currently booted into QOS. It is running the QOS Portable operating system, which is a portable QOS application running on the QOS Portable kernel. The QOS Portable kernel is a kernel that runs on the Raspberry Pi, and the QOS Portable application is a portable application that runs on the QOS Portable kernel.", "finished": true, "tokens": 71}
+{"id": "solgen/big_numbers-000", "answer": "```sol\n> print (str (List.filter (fn x -> x != 14) [62, (-32), 136, 64, (-6), 110])).\n```\nIt prints [62, -32, 136, 64, -6, 110].", "finished": true, "tokens": 75}
+{"id": "dev/output-list-take-2", "answer": "It prints 11. Steps: take=[5, 6]; sum=11.", "finished": true, "tokens": 20}
+{"id": "dev/output-list-reverse-3", "answer": "It prints 6. Steps: rev=[6, 5, 4]; index=6.", "finished": true, "tokens": 21}
+{"id": "solgen/fresh-093", "answer": "```sol\n> print (str (List.filter (fn x -> x == 32) [(-18), 47, (-26), (-12), 32, (-15)])).\n```\nIt prints [32].", "finished": true, "tokens": 55}
+{"id": "solgen/big_numbers-020", "answer": "```sol\n> print (str (List.sum (List.take 0 [103, 17, 58, 124, (-26), 136]))).\n```\nIt prints 0. Steps: take=[]; sum=0.", "finished": true, "tokens": 60}
+{"id": "solgen/big_numbers-081", "answer": "```sol\n> print (str (List.take 1 (List.drop 1 [54, 99, 149, 123, 10]))).\n```\nIt prints [99]. Steps: drop=[99, 149, 123, 10]; take=[99].", "finished": true, "tokens": 75}
+{"id": "solgen/big_numbers-086", "answer": "```sol\n> print (str (List.rev (List.filter (fn x -> x <= 91) [(-1), 106, 128, 83, 20, 46]))).\n```\nIt prints [46, 20, 83, -1]. Steps: filter=[-1, 83, 20, 46]; rev=[46, 20, 83, -1].", "finished": true, "tokens": 105}
+{"id": "solgen/probe-t1-range-sum", "answer": "It prints 21. Steps: range=[3, 4, 5, 6]; sum=21.", "finished": true, "tokens": 26}
+{"id": "solgen/probe-t2-any", "answer": "It prints True.", "finished": true, "tokens": 4}
+{"id": "dev/fact-actor-default-2", "answer": "No. The `spawn` function selects a dynamic slot from the pool, not a fixed 64-slot ring. The pool's capacity is determined by the `MAXS` constant (64), but the `spawn` function dynamically allocates a slot from the pool's free list to satisfy the request.", "finished": true, "tokens": 63}
+{"id": "dev/output-list-range-3", "answer": "It prints 9. Steps: range=[2, 3, 4]; sum=9.", "finished": true, "tokens": 21}
+{"id": "solgen/probe-t1-take-map", "answer": "It prints [6, 7, 8]. Steps: map=[6, 7, 8, 9]; take=[6, 7, 8].", "finished": true, "tokens": 36}
+{"id": "dev/debug-list", "answer": "Use `(List.rev [4, 5, 6]) ! 0`.", "finished": true, "tokens": 17}
+{"id": "solgen/fresh-014", "answer": "It prints thunderkernel.", "finished": true, "tokens": 5}
+{"id": "solgen/fresh-086", "answer": "It prints 8. Steps: range=[7, 8, 9, 10, 11]; drop=[8, 9, 10, 11]; index=8.", "finished": true, "tokens": 44}
+{"id": "solgen/fresh-098", "answer": "It prints [30, -2]. Steps: drop=[-2, 30]; rev=[30, -2].", "finished": true, "tokens": 28}
+{"id": "solgen/fresh-099", "answer": "It prints BASKET. Steps: trim=basket; upper=BASKET; upper2=BASKET.", "finished": true, "tokens": 23}
+{"id": "solgen/held_pairs-040", "answer": "It prints PLE. Steps: slice=ple; upper=PLE.", "finished": true, "tokens": 15}
+{"id": "dev/fact-binary-offset-2", "answer": "No. The ABI defines a 1-based byte offset starting at zero.", "finished": true, "tokens": 15}
+{"id": "solgen/fresh-041", "answer": "It prints OPEL. Steps: upper=COPPER; slice=OPEL.", "finished": true, "tokens": 18}
+{"id": "solgen/fresh-109", "answer": "It prints 3. Steps: abs=14; div=3; abs2=3.", "finished": true, "tokens": 21}
+{"id": "dev/fact-import-order-3", "answer": "The search order is FPR_HOME first, then FPR_PATH, then the importer's own directory. This order is defined in the `fprisc` directory's `fprisc.toml` file.", "finished": true, "tokens": 43}
+{"id": "solgen/fresh-082", "answer": "It prints maple copper thunder.", "finished": true, "tokens": 6}
+{"id": "dev/fact-ownership-3", "answer": "The FP-RISC compiler is owned by the FP-RISC repository, while the QOS operating system is owned by the QOS repository.", "finished": true, "tokens": 28}
+{"id": "dev/fact-qos-platform-2", "answer": "No. QOS Portable is a cross-platform operating system that runs on Linux, macOS, FreeBSD, and the QOS Native cross-abi.", "finished": true, "tokens": 29}
+{"id": "solgen/big_numbers-098", "answer": "It prints True.", "finished": true, "tokens": 4}
+{"id": "solgen/probe-t2-all", "answer": "It prints False.", "finished": true, "tokens": 4}
+{"id": "solgen/fresh-057", "answer": "It prints [-7, 38].", "finished": true, "tokens": 9}
+{"id": "solgen/fresh-058", "answer": "It prints 124. Steps: min=-31; abs=31; mul=124.", "finished": true, "tokens": 25}
+{"id": "solgen/fresh-095", "answer": "```sol\n> print (str (List.map (fn x -> x * (-4)) (List.map (fn x -> x + 6) [(-8), 58]))).\n```\nIt prints [40, -240]. Steps: map=[-2, 64]; map2=[40, -240].", "finished": true, "tokens": 76}
+{"id": "solgen/big_numbers-071", "answer": "It prints [15, 20, 143, -20, -16, 47].", "finished": true, "tokens": 27}
+{"id": "solgen/big_numbers-078", "answer": "It prints True.", "finished": true, "tokens": 4}
+{"id": "dev/output-list-take-3", "answer": "It prints 11. Steps: take=[5, 6]; sum=11.", "finished": true, "tokens": 20}
+{"id": "solgen/big_numbers-029", "answer": "It prints True.", "finished": true, "tokens": 4}
+{"id": "dev/fact-profiles-2", "answer": "No. The default profile is `std`. The `profile builtin` profile is reserved for the `fprisc` checkout and is not the default.", "finished": true, "tokens": 31}
+{"id": "solgen/fresh-000", "answer": "It prints 57. Steps: index=58; div=9; add=57.", "finished": true, "tokens": 22}
+{"id": "solgen/fresh-046", "answer": "It prints -10. Steps: div=27; find=0; sub=-10.", "finished": true, "tokens": 22}
+{"id": "solgen/held_pairs-012", "answer": "It prints [6, 7]. Steps: range=[6, 7]; filter=[6, 7].", "finished": true, "tokens": 24}
+{"id": "solgen/held_pairs-050", "answer": "It prints [1, 2, 3, 4, 5]. Steps: range=[1, 2, 3, 4, 5]; filter=[1, 2, 3, 4, 5].", "finished": true, "tokens": 51}
+{"id": "solgen/held_pairs-092", "answer": "```sol\n> print (str (List.any (fn x -> x > (-14)) (List.map (fn x -> x - 5) [20, 36]))).\n```\nIt prints True. Steps: map=[15, 31]; any=True.", "finished": true, "tokens": 62}
+{"id": "solgen/big_numbers-062", "answer": "It prints [(24, 142), (33, 77)].", "finished": true, "tokens": 19}
+{"id": "solgen/probe-t1-map-sum", "answer": "It prints 50. Steps: map=[10, 35, 20]; sum=50.", "finished": true, "tokens": 26}
+{"id": "dev/fact-option-default-2", "answer": "No. Option.withDefault d (Some x) returns Option.Some d. The default is only used when the value is `None`; if the value is `Some x`, the function returns `Some x`.", "finished": true, "tokens": 42}
+{"id": "dev/fact-json-trailing-3", "answer": "No. The Sol JSON parser validates the entire string as a single value, returning an error if it encounters non-whitespace characters after a value. For example, attempting to parse `{\"a\": 1}` followed by `b` will fail because the parser expects a value, not a string.", "finished": true, "tokens": 60}
+{"id": "dev/output-list-map-1", "answer": "It prints 10. Steps: map=[2, 4, 6]; sum=10.", "finished": true, "tokens": 23}
+{"id": "dev/debug-at", "answer": "Use `Str.at \"ABC\" 0`. It returns 65.", "finished": true, "tokens": 16}
+{"id": "solgen/fresh-077", "answer": "It prints [24, -30, -78, 110].", "finished": true, "tokens": 19}
+{"id": "solgen/fresh-113", "answer": "It prints -15. Steps: add=-15; add2=41; min=-15.", "finished": true, "tokens": 24}
+{"id": "solgen/held_pairs-045", "answer": "```sol\n> print (str (Numeric.abs (List.sum [55, 7, 11, 33, 7]))).\n```\nIt prints 127. Steps: sum=127; abs=127.", "finished": true, "tokens": 56}
+{"id": "solgen/held_pairs-053", "answer": "It prints . Steps: slice=ver; slice2=.", "finished": true, "tokens": 12}
+{"id": "solgen/held_pairs-094", "answer": "It prints []. Steps: range=[-4, -3, -2, -1, 0]; filter=[].", "finished": true, "tokens": 25}
+{"id": "solgen/big_numbers-109", "answer": "It prints 99. Steps: drop=[-8, 117]; sum=99.", "finished": true, "tokens": 23}
+{"id": "solgen/probe-t2-gen-filter", "answer": "```sol\n> print (str (List.filter (fn x -> x > 5) [2, 9, 6, 1])).\n```\nIt prints [9, 6].", "finished": true, "tokens": 42}
+{"id": "dev/fact-binary-bounds-2", "answer": "No. The ABI contract requires that a read of an out-of-bounds address returns the value of the first available word in the range [0, 63). The implementation uses `read8`/`read16`/`read32` to handle this, returning the first word in the range [0, 63) for a 32-bit value.", "finished": true, "tokens": 79}
+{"id": "solgen/fresh-111", "answer": "It prints False. Steps: range=[4, 5, 6, 7]; any=False.", "finished": true, "tokens": 22}
+{"id": "solgen/held_pairs-029", "answer": "It prints [59, 15, 9, -35]. Steps: rev=[59, 15, 9, -35, -25]; drop=[59, 15, 9, -35].", "finished": true, "tokens": 55}
+{"id": "solgen/held_pairs-084", "answer": "It prints [-4, 15, 40, 52, -31]. Steps: rev=[-4, 15, 40, 52, -31]; drop=[-4, 15, 40, 52, -31].", "finished": true, "tokens": 65}
+{"id": "solgen/held_pairs-101", "answer": "It prints 91. Steps: sum=91; abs=91.", "finished": true, "tokens": 18}
+{"id": "solgen/probe-c-conflict", "answer": "The conflict is resolved by the first writer, which overwrites the second. This behavior is demonstrated in the `writePath` function, where the first argument is the path and the second is the content, ensuring the file is updated immediately upon successful write.\n\n```sol\nwritePath \"config.txt\" \"Line 1\\nLine 2\\n\"\n```", "finished": true, "tokens": 73}
+{"id": "dev/output-list-map-2", "answer": "It prints 10. Steps: map=[2, 4, 6]; sum=10.", "finished": true, "tokens": 23}
+{"id": "solgen/fresh-007", "answer": "It prints COPPER SOL WINDOW. Steps: join=copper sol window; upper=COPPER SOL WINDOW.", "finished": true, "tokens": 22}
+{"id": "solgen/fresh-114", "answer": "It prints [].", "finished": true, "tokens": 3}
+{"id": "solgen/held_pairs-006", "answer": "```sol\n> print (str (List.drop 1 (List.rev [(-32), 32, (-9)]))).\n```\nIt prints [-9, 32]. Steps: rev=[-9, 32, -32]; drop=[-9, 32].", "finished": true, "tokens": 64}
+{"id": "solgen/held_pairs-038", "answer": "It prints . Steps: slice=ne; upper=NE; slice2=.", "finished": true, "tokens": 16}
+{"id": "solgen/held_pairs-051", "answer": "It prints []. Steps: range=[1, 2, 3, 4, 5]; filter=[].", "finished": true, "tokens": 24}
+{"id": "solgen/held_pairs-075", "answer": "It prints . Steps: slice=r; slice2=.; upper=.", "finished": true, "tokens": 14}
+{"id": "solgen/big_numbers-038", "answer": "It prints 100. Steps: find=114; sub=-51; sub2=100; abs=100.", "finished": true, "tokens": 33}
+{"id": "solgen/probe-c-runnow", "answer": "Proc.runNow is designed to be called directly from the top level of a script, whereas helper functions are intended to be used for side effects or to execute external commands that should not be part of the core logic. Keeping it at the top level ensures that the script's primary logic remains clean and focused on the core operations, while the side effects are handled by the helper functions.\n\n```sol\n# Example: A script that uses Proc.runNow at the top level\nProc.runNow {\n  # Core logic\n  let x = 42\n}\n\n# Example: A helper function that executes a side effect\nProc.runNow {\n  # Side effect\n  let y = 10\n}\n```", "finished": true, "tokens": 148}
+{"id": "solgen/held_pairs-014", "answer": "It prints [-5, -39]. Steps: rev=[-39, -5, -10, -26]; drop=[-5, -39].", "finished": true, "tokens": 37}
+{"id": "solgen/held_pairs-079", "answer": "It prints [7, 8, 9, 10, 11]. Steps: range=[7, 8, 9, 10, 11]; filter=[7, 8, 9, 10, 11].", "finished": true, "tokens": 57}
+{"id": "solgen/held_pairs-082", "answer": "It prints [6, 7, 8, 9]. Steps: range=[6, 7, 8, 9]; filter=[6, 7, 8, 9].", "finished": true, "tokens": 42}
+{"id": "solgen/held_pairs-119", "answer": "It prints []. Steps: range=[0, 1, 2, 3, 4, 5, 6]; filter=[].", "finished": true, "tokens": 30}
+{"id": "solgen/fresh-013", "answer": "```sol\n> print (str (List.filter (fn x -> x > 52) [(-38), 10, (-22)])).\n```\nIt prints [].", "finished": true, "tokens": 40}
+{"id": "solgen/fresh-066", "answer": "It prints [-42, -84, -153]. Steps: rev=[14, 28, 51]; map=[-42, -84, -153].", "finished": true, "tokens": 45}
+{"id": "solgen/held_pairs-066", "answer": "It prints []. Steps: range=[7]; filter=[].", "finished": true, "tokens": 12}
+{"id": "solgen/held_pairs-074", "answer": "It prints []. Steps: range=[10, 11, 12, 13, 14]; filter=[].", "finished": true, "tokens": 29}
+{"id": "solgen/big_numbers-021", "answer": "It prints [-20, -110, -276, -222, -58].", "finished": true, "tokens": 25}
+{"id": "dev/output-list-filter-1", "answer": "It prints 9. Steps: filter=[3, 4]; sum=9.", "finished": true, "tokens": 18}
+{"id": "solgen/fresh-071", "answer": "It prints False.", "finished": true, "tokens": 4}
+{"id": "solgen/fresh-075", "answer": "```sol\n> print (str (List.map (fn x -> x * (-2)) (List.map (fn x -> x + (-1)) (List.range (-3) 3)))).\n```\nIt prints [7, 6, 5, 4, 3, 2]. Steps: range=[-3, -2, -1, 0, 1, 2, 3]; map=[-4, -3, -2, -1, 0, 1, 2]; map2=[7, 6, 5, 4, 3, 2].", "finished": true, "tokens": 132}
+{"id": "solgen/held_pairs-099", "answer": "It prints [-1, 0, 1, 2]. Steps: range=[-1, 0, 1, 2]; filter=[-1, 0, 1, 2].", "finished": true, "tokens": 44}
+{"id": "solgen/held_pairs-103", "answer": "```sol\n> print (str (List.take 1 (List.filter (fn x -> x < 36) (List.range (-3) (-1))))).\n```\nIt prints [-3]. Steps: range=[-3, -2, -1]; filter=[-3, -2, -1]; take=[-3].", "finished": true, "tokens": 72}
+{"id": "solgen/big_numbers-019", "answer": "It prints [84, 29]. Steps: take=[84, 29]; filter=[84, 29].", "finished": true, "tokens": 30}
+{"id": "solgen/big_numbers-074", "answer": "It prints [34].", "finished": true, "tokens": 6}
+{"id": "dev/fact-call-death-2", "answer": "No. The `call` primitive is a no-op; it does not block the caller. The caller must use `receive` to wait for the target actor to reply.", "finished": true, "tokens": 35}
+{"id": "solgen/fresh-027", "answer": "```sol\n> print (str (52 - 36)).\n```\nIt prints 16.", "finished": true, "tokens": 24}
+{"id": "solgen/fresh-052", "answer": "It prints [-164, -172, 12].", "finished": true, "tokens": 16}
+{"id": "solgen/big_numbers-079", "answer": "It prints [(49, 150), (-39, 16)].", "finished": true, "tokens": 19}
+{"id": "solgen/big_numbers-118", "answer": "It prints [(78, -3), (20, -2), (13, -1)]. Steps: range=[-3, -2, -1]; zip=[(78, -3), (20, -2), (13, -1)].", "finished": true, "tokens": 59}
+{"id": "dev/fact-option-result-2", "answer": "No. Option is a type that carries a diagnostic error string only when the compiler cannot prove the program well-typed.", "finished": true, "tokens": 24}
+{"id": "solgen/fresh-061", "answer": "```sol\n> print (str ((List.map (fn x -> x + 6) (List.range (-5) 1)) ! 0)).\n```\nIt prints 1. Steps: range=[-5, -4, -3, -2, -1, 0, 1]; map=[1, 2, 3, 4, 5, 6, 7]; index=1.", "finished": true, "tokens": 91}
+{"id": "solgen/fresh-067", "answer": "It prints [-21, -33].", "finished": true, "tokens": 10}
+{"id": "solgen/fresh-100", "answer": "```sol\n> print (str ((Numeric.max 8 ((-25) / 4)) % 6)).\n```\nIt prints 2. Steps: div=-6; max=8; mod=2.", "finished": true, "tokens": 47}
+{"id": "solgen/held_pairs-032", "answer": "It prints ON. Steps: trim=signal; slice=ON; upper=ON.", "finished": true, "tokens": 18}
+{"id": "solgen/held_pairs-063", "answer": "```sol\n> print (str (List.filter (fn x -> x <= (-7)) (List.range (-4) 0))).\n```\nIt prints []. Steps: range=[-4, -3, -2, -1, 0]; filter=[].", "finished": true, "tokens": 56}
+{"id": "solgen/held_pairs-095", "answer": "It prints [0, 1, 2, 3]. Steps: range=[0, 1, 2, 3]; filter=[0, 1, 2, 3].", "finished": true, "tokens": 42}
+{"id": "solgen/big_numbers-039", "answer": "It prints [(104, 94), (37, 124)].", "finished": true, "tokens": 20}
+{"id": "dev/fact-ownership-2", "answer": "No. The FP-RISC compiler is not in the QOS repository; it is located in the `fprisc` directory. The QOS repository contains the operating system, runtime, and other components, while the FP-RISC compiler is a separate toolchain project.", "finished": true, "tokens": 55}
+{"id": "dev/output-list-filter-2", "answer": "It prints 9. Steps: filter=[3, 4]; sum=9.", "finished": true, "tokens": 18}
+{"id": "solgen/fresh-096", "answer": "```sol\n> print (str (0 - (-9))).\n```\nIt prints 9.", "finished": true, "tokens": 21}
+{"id": "solgen/fresh-105", "answer": "It prints [38, 26]. Steps: drop=[38, 26]; filter=[38, 26].", "finished": true, "tokens": 30}
+{"id": "solgen/fresh-107", "answer": "It prints []. Steps: filter=[-17, 18]; drop=[].", "finished": true, "tokens": 18}
+{"id": "solgen/held_pairs-015", "answer": "```sol\n> print (str (List.any (fn x -> x == 13) (List.map (fn x -> x - 0) (List.rev [43, (-1), 25])))).\n```\nIt prints False. Steps: rev=[25, -1, 43]; map=[25, -1, 43]; any=False.", "finished": true, "tokens": 83}
+{"id": "solgen/held_pairs-047", "answer": "```sol\n> print (str (List.drop 0 (List.rev [(-28), 56, 22, 40, 39]))).\n```\nIt prints [39, 40, 22, 56, -28]. Steps: rev=[39, 40, 22, 56, -28]; drop=[39, 40, 22, 56, -28].", "finished": true, "tokens": 106}
+{"id": "solgen/fresh-033", "answer": "It prints False. Steps: range=[0, 1]; all=False.", "finished": true, "tokens": 16}
+{"id": "solgen/fresh-047", "answer": "```sol\n> print (str ((-1) + 34)).\n```\nIt prints 33.", "finished": true, "tokens": 25}
+{"id": "solgen/big_numbers-063", "answer": "It prints [405, 350]. Steps: take=[81, 70]; map=[405, 350].", "finished": true, "tokens": 34}
+{"id": "dev/output-list-map-3", "answer": "It prints 10. Steps: map=[2, 4, 6]; sum=10.", "finished": true, "tokens": 23}
+{"id": "solgen/fresh-089", "answer": "It prints 58. Steps: rev=[-1, 49, 21, -5, -6]; sum=58.", "finished": true, "tokens": 32}
+{"id": "solgen/held_pairs-056", "answer": "It prints 37. Steps: max=37; last=-14; max2=37.", "finished": true, "tokens": 24}
+{"id": "solgen/big_numbers-111", "answer": "It prints True. Steps: take=[43, 91]; all=True.", "finished": true, "tokens": 18}
+{"id": "dev/fact-import-order-2", "answer": "No. The FPR_PATH environment variable takes precedence over the importer-relative path.", "finished": true, "tokens": 16}
+{"id": "dev/fact-binary-endian-2", "answer": "No. The first byte of a binary value is the low byte. The high byte is the second byte.", "finished": true, "tokens": 22}
+{"id": "solgen/held_pairs-004", "answer": "It prints 35. Steps: sub=40; last=30; max=40; div=35.", "finished": true, "tokens": 28}
+{"id": "solgen/held_pairs-097", "answer": "```sol\n> print (str (List.any (fn x -> x == 0) (List.map (fn x -> x + 2) [(-31), (-21), (-33)]))).\n```\nIt prints False. Steps: map=[-29, -19, -31]; any=False.", "finished": true, "tokens": 71}
+{"id": "solgen/held_pairs-113", "answer": "```sol\n> print (str (List.any (fn x -> x == (-3)) (List.map (fn x -> x * 6) [(-38), 16, (-13), (-35), 2]))).\n```\nIt prints False. Steps: map=[-228, 96, -78, -210, 12]; any=False.", "finished": true, "tokens": 88}
+{"id": "solgen/big_numbers-018", "answer": "```sol\n> print (str ((List.rev (List.map (fn x -> x - 6) [42, 40, 108, 43, 74, (-22)])) ! 5)).\n```\nIt prints 36. Steps: map=[36, 34, 102, 37, 68, -28]; rev=[-28, 68, 37, 102, 34, 36]; index=36.", "finished": true, "tokens": 121}
+{"id": "solgen/big_numbers-100", "answer": "```sol\n> print (str (if List.any (fn x -> x > (-18)) [49, 83, 0, 106, 103] then 4 * (-2) else 20)).\n```\nIt prints -8. Steps: any=True; mul=-8; if=-8.", "finished": true, "tokens": 75}
+{"id": "solgen/held_pairs-104", "answer": "```sol\n> print (str (List.any (fn x -> x != 55) (List.map (fn x -> x + 6) (List.range (-1) 5)))).\n```\nIt prints True. Steps: range=[-1, 0, 1, 2, 3, 4, 5]; map=[5, 6, 7, 8, 9, 10, 11]; any=True.", "finished": true, "tokens": 101}
+{"id": "solgen/big_numbers-053", "answer": "It prints [93, 53]. Steps: map=[99, 59]; map2=[93, 53].", "finished": true, "tokens": 31}
+{"id": "solgen/big_numbers-087", "answer": "It prints False.", "finished": true, "tokens": 4}
+{"id": "dev/fact-host-build-2", "answer": "No. The Base host build produces a portable host binary, not a QOS .qa application. The QOS .qa is the application image that runs on the QOS operating system.", "finished": true, "tokens": 38}
+{"id": "dev/fact-json-trailing-2", "answer": "No. The Sol JSON parser is strict: it requires a value to be a complete JSON object, array, string, or null, and it does not allow trailing text after a value. If a value is followed by text, the parser will fail with a \"malformed value\" error. For example, `J.parse(\"a: {b: \\\"c\\\"}\")` is valid, but `J.parse(\"a: {b: \\\"c\\\"}\")` followed by `\"\\n\"` will not parse successfully.", "finished": true, "tokens": 105}
+{"id": "solgen/fresh-028", "answer": "It prints -8. Steps: rev=[-13, -8]; last=-8.", "finished": true, "tokens": 20}
+{"id": "solgen/fresh-043", "answer": "```sol\n> print (str (List.drop 2 (List.take 0 (List.filter (fn x -> x >= 40) [27, (-29)])))).\n```\nIt prints []. Steps: filter=[]; take=[]; drop=[].", "finished": true, "tokens": 57}
+{"id": "solgen/fresh-106", "answer": "It prints 660. Steps: abs=2; find=110; mul=660; max=660.", "finished": true, "tokens": 31}
+{"id": "solgen/fresh-118", "answer": "It prints 6. Steps: range=[5, 6]; rev=[6, 5]; filter=[6, 5]; index=6.", "finished": true, "tokens": 32}
+{"id": "solgen/held_pairs-088", "answer": "It prints 0. Steps: range=[6, 7, 8, 9]; filter=[]; sum=0.", "finished": true, "tokens": 27}
+{"id": "dev/output-list-filter-3", "answer": "It prints 9. Steps: filter=[3, 4]; sum=9.", "finished": true, "tokens": 18}
+{"id": "solgen/held_pairs-026", "answer": "It prints []. Steps: range=[-2, -1, 0, 1, 2, 3]; filter=[].", "finished": true, "tokens": 28}
+{"id": "solgen/held_pairs-046", "answer": "It prints []. Steps: range=[-2, -1, 0, 1, 2, 3, 4]; filter=[].", "finished": true, "tokens": 31}
+{"id": "solgen/held_pairs-055", "answer": "It prints [7, 8, 9, 10]. Steps: range=[7, 8, 9, 10, 11]; filter=[7, 8, 9, 10, 11]; take=[7, 8, 9, 10].", "finished": true, "tokens": 67}
+{"id": "dev/fact-send-result-2", "answer": "No. The sender must wait for the receiving actor to reply before sending a message. The sender must not block indefinitely waiting for a reply that never comes.", "finished": true, "tokens": 31}
+{"id": "dev/fact-call-wire-2", "answer": "No. The caller must send a message with a correlation ID to the mailbox actor. The mailbox actor then uses that ID to identify the message and delivers it to the caller's mailbox.", "finished": true, "tokens": 37}
+{"id": "dev/fact-json-duplicates-2", "answer": "No. The Sol JSON library preserves all keys in order.", "finished": true, "tokens": 12}
+{"id": "solgen/fresh-006", "answer": "```sol\n> print (Str.slice (Str.slice \"lamp\" 4 9) 1 5).\n```\nIt prints . Steps: slice=; slice2=.", "finished": true, "tokens": 38}
+{"id": "solgen/big_numbers-027", "answer": "It prints False. Steps: rev=[11, 119, -2]; all=False.", "finished": true, "tokens": 22}
+{"id": "solgen/big_numbers-058", "answer": "It prints -27. Steps: take=[-27, 79, 21]; index=-27.", "finished": true, "tokens": 27}
+{"id": "solgen/big_numbers-099", "answer": "It prints 121. Steps: sum=62; last=-28; add=121.", "finished": true, "tokens": 25}
+{"id": "solgen/big_numbers-116", "answer": "It prints False.", "finished": true, "tokens": 4}
+{"id": "solgen/fresh-003", "answer": "It prints 53. Steps: mod=2; sum=157; div=19; max=53.", "finished": true, "tokens": 28}
+{"id": "solgen/held_pairs-098", "answer": "It prints -3. Steps: range=[-4, -3]; filter=[-3]; index=-3.", "finished": true, "tokens": 24}
+{"id": "solgen/big_numbers-041", "answer": "It prints [30]. Steps: filter=[30]; take=[30]; rev=[30].", "finished": true, "tokens": 23}
+{"id": "solgen/big_numbers-082", "answer": "It prints True. Steps: max=40; index=123; cmp=True.", "finished": true, "tokens": 20}
+{"id": "solgen/fresh-102", "answer": "It prints 14. Steps: all=False; if=49; add=14.", "finished": true, "tokens": 21}
+{"id": "solgen/big_numbers-084", "answer": "It prints False.", "finished": true, "tokens": 4}
+{"id": "solgen/held_pairs-105", "answer": "It prints True. Steps: map=[10, -19, 9]; any=True.", "finished": true, "tokens": 21}
+{"id": "solgen/big_numbers-013", "answer": "It prints [-3, 12, 34, -6, -1, 122].", "finished": true, "tokens": 24}
+{"id": "solgen/held_pairs-017", "answer": "It prints []. Steps: range=[5, 6]; filter=[]; rev=[].", "finished": true, "tokens": 18}
+{"id": "solgen/held_pairs-028", "answer": "It prints [(12, -35), (11, 35), (10, 23)]. Steps: range=[9, 10, 11, 12]; rev=[12, 11, 10, 9]; drop=[12, 11, 10, 9]; zip=[(12, -35), (11, 35), (10, 23)].", "finished": true, "tokens": 102}
+{"id": "solgen/big_numbers-007", "answer": "It prints False. Steps: drop=[114, -36, -21]; all=False.", "finished": true, "tokens": 23}
+{"id": "solgen/fresh-072", "answer": "It prints 27.", "finished": true, "tokens": 6}
+{"id": "dev/unknown-fpr-root", "answer": "It uses the sibling `fprisc` directory, which is installed with `./qos.py install --with fprisc`.", "finished": true, "tokens": 27}
+{"id": "solgen/fresh-094", "answer": "It prints [55].", "finished": true, "tokens": 6}
+{"id": "solgen/held_pairs-059", "answer": "```sol\n> print (str (List.any (fn x -> x > (-26)) (List.map (fn x -> x * 4) (List.range (-4) 1)))).\n```\nIt prints True. Steps: range=[-4, -3, -2, -1, 0, 1]; map=[-16, -12, -8, -4, 0, 4]; any=True.", "finished": true, "tokens": 96}
+{"id": "solgen/big_numbers-107", "answer": "It prints True. Steps: drop=[62, 125, -4, -8]; any=True.", "finished": true, "tokens": 25}
+{"id": "solgen/fresh-070", "answer": "It prints [-33, 53, -7, 0, 54].", "finished": true, "tokens": 20}
+{"id": "solgen/big_numbers-003", "answer": "It prints [106, 28, 17]. Steps: map=[17, 28, 106]; rev=[106, 28, 17].", "finished": true, "tokens": 45}
+{"id": "solgen/held_pairs-110", "answer": "It prints False. Steps: rev=[18, 39, -3, 10, 21]; drop=[21]; any=False.", "finished": true, "tokens": 34}
+{"id": "solgen/held_pairs-071", "answer": "It prints 8. Steps: range=[10, 11, 12, 13, 14, 15, 16]; filter=[10, 11, 12, 13, 14, 15, 16]; last=16; div=8.", "finished": true, "tokens": 74}
+{"id": "solgen/held_pairs-108", "answer": "It prints 6. Steps: range=[4, 5, 6]; last=6; cmp=False; if=2; max=6.", "finished": true, "tokens": 32}
+{"id": "solgen/big_numbers-010", "answer": "It prints -12. Steps: range=[1, 2, 3, 4, 5]; all=True; if=-12; mul=-12.", "finished": true, "tokens": 37}
+{"id": "solgen/big_numbers-002", "answer": "It prints 141. Steps: last=139; div=0; add=141.", "finished": true, "tokens": 25}
+{"id": "solgen/probe-t3-map-filter-sum", "answer": "It prints 6. Steps: map=[2, 4, 6]; filter=[4, 6]; sum=6.", "finished": true, "tokens": 28}
+{"id": "solgen/fresh-042", "answer": "```sol\n> print (str ((49 % 9) == ((List.rev [(-21), (-8), 14]) ! 0))).\n```\nIt prints False. Steps: mod=5; rev=[14, -8, -21]; index=-21; cmp=False.", "finished": true, "tokens": 67}
+{"id": "solgen/held_pairs-041", "answer": "It prints True. Steps: range=[3, 4, 5, 6, 7, 8]; filter=[]; all=True.", "finished": true, "tokens": 31}
+{"id": "solgen/big_numbers-031", "answer": "It prints 0. Steps: filter=[]; sum=0.", "finished": true, "tokens": 14}
+{"id": "dev/fact-qos-pin-2", "answer": "No. The `fprisc --pin` command records the current commit of the fprisc checkout as a release pin, not an arbitrary dirty compiler tree. This ensures that the pin is valid only if the fprisc checkout is clean and up-to-date.", "finished": true, "tokens": 54}
+{"id": "solgen/fresh-015", "answer": "It prints [-16, -37, -4].", "finished": true, "tokens": 13}
+{"id": "solgen/fresh-085", "answer": "It prints 17. Steps: map=[-150, 102, -180, 39, -138]; index=39; max=17.", "finished": true, "tokens": 44}
+{"id": "solgen/held_pairs-008", "answer": "```sol\n> print (str (List.any (fn x -> x <= 56) (List.map (fn x -> x + (-2)) [15, 11, 15, 59]))).\n```\nIt prints True. Steps: map=[13, 9, 13, 57]; any=True.", "finished": true, "tokens": 77}
+{"id": "solgen/held_pairs-039", "answer": "It prints []. Steps: range=[0, 1, 2, 3, 4]; filter=[]; filter2=[].", "finished": true, "tokens": 28}
+{"id": "solgen/held_pairs-072", "answer": "It prints []. Steps: range=[8, 9]; filter=[]; map=[].", "finished": true, "tokens": 18}
+{"id": "solgen/big_numbers-051", "answer": "It prints -14. Steps: all=False; if=-14.", "finished": true, "tokens": 16}
+{"id": "solgen/fresh-087", "answer": "It prints [22, 3, 39, 57, 60, -13]. Steps: drop=[-13, 60, 57, 39, 3, 22]; rev=[22, 3, 39, 57, 60, -13].", "finished": true, "tokens": 76}
+{"id": "solgen/held_pairs-054", "answer": "It prints []. Steps: range=[6, 7, 8]; filter=[]; filter2=[].", "finished": true, "tokens": 22}
+{"id": "solgen/held_pairs-090", "answer": "It prints 101. Steps: sum=112; abs=112; add=101.", "finished": true, "tokens": 27}
+{"id": "solgen/big_numbers-055", "answer": "It prints False.", "finished": true, "tokens": 4}
+{"id": "solgen/big_numbers-080", "answer": "It prints 11. Steps: sub=-14; min=13; max=13; find=0; sub2=11.", "finished": true, "tokens": 33}
+{"id": "solgen/held_pairs-023", "answer": "It prints [-5, -4, -3, -2, -1, 0, 1]. Steps: range=[-5, -4, -3, -2, -1, 0, 1]; filter=[-5, -4, -3, -2, -1, 0, 1]; filter2=[-5, -4, -3, -2, -1, 0, 1].", "finished": true, "tokens": 95}
+{"id": "solgen/held_pairs-052", "answer": "It prints True. Steps: map=[56, 60, -39, 15, -20]; any=True.", "finished": true, "tokens": 30}
+{"id": "solgen/big_numbers-088", "answer": "It prints True.", "finished": true, "tokens": 4}
+{"id": "solgen/held_pairs-003", "answer": "It prints False. Steps: range=[-2, -1, 0]; filter=[]; any=False.", "finished": true, "tokens": 23}
+{"id": "solgen/held_pairs-019", "answer": "It prints []. Steps: range=[5, 6, 7, 8, 9]; filter=[]; zip=[].", "finished": true, "tokens": 27}
+{"id": "solgen/held_pairs-034", "answer": "It prints False. Steps: range=[9, 10, 11, 12, 13, 14]; filter=[]; any=False.", "finished": true, "tokens": 36}
+{"id": "solgen/big_numbers-006", "answer": "It prints [-36, -16].", "finished": true, "tokens": 10}
+{"id": "solgen/big_numbers-022", "answer": "It prints [9].", "finished": true, "tokens": 5}
+{"id": "solgen/big_numbers-033", "answer": "It prints 1. Steps: last=146; find=1; mod=1; min=1.", "finished": true, "tokens": 25}
+{"id": "solgen/big_numbers-047", "answer": "It prints [(14, 41), (50, 125), (153, -13)]. Steps: map=[14, 50, 153]; rev=[41, 125, -13]; zip=[(14, 41), (50, 125), (153, -13)].", "finished": true, "tokens": 86}
+{"id": "solgen/big_numbers-108", "answer": "It prints 414. Steps: map=[306, 123, 315, 405, 414]; drop=[414]; last=414.", "finished": true, "tokens": 47}
+{"id": "solgen/held_pairs-009", "answer": "It prints True. Steps: map=[177, 123, 162, -114, -15]; any=True.", "finished": true, "tokens": 34}
+{"id": "solgen/held_pairs-020", "answer": "It prints 60. Steps: sum=60; last=-12; max=60.", "finished": true, "tokens": 23}
+{"id": "solgen/big_numbers-004", "answer": "```sol\n> print (str (List.zip [(-33), 2, 147, 37, 54, 136] (List.range (-5) (-3)))).\n```\nIt prints [(-33, -5), (2, -4), (147, -3)]. Steps: range=[-5, -4, -3]; zip=[(-33, -5), (2, -4), (147, -3)].", "finished": true, "tokens": 109}
+{"id": "solgen/fresh-059", "answer": "```sol\n> print (Str.slice (Str.join \"\" [\"lamp\", \"falcon\"]) 2 5).\n```\nIt prints mp. Steps: join=lampfalcon; slice=mp.", "finished": true, "tokens": 43}
+{"id": "solgen/held_pairs-077", "answer": "```sol\n> print (Str.upper (Str.slice (Str.join \" \" [\"rocket\", \"meadow\", \"signal\"]) 4 6)).\n```\nIt prints ET. Steps: join=rocket meadow signal; slice=ET; upper=ET.", "finished": true, "tokens": 55}
+{"id": "solgen/held_pairs-111", "answer": "It prints []. Steps: range=[0, 1, 2, 3, 4, 5, 6]; filter=[]; filter2=[].", "finished": true, "tokens": 34}
+{"id": "solgen/big_numbers-040", "answer": "It prints [(78, 9), (12, 10), (3, 11), (-5, 12)]. Steps: range=[9, 10, 11, 12]; zip=[(78, 9), (12, 10), (3, 11), (-5, 12)].", "finished": true, "tokens": 80}
+{"id": "solgen/fresh-064", "answer": "It prints [(0, -37), (9, -39), (34, 9)].", "finished": true, "tokens": 23}
+{"id": "solgen/fresh-079", "answer": "It prints [132, 132, -16, 108]. Steps: map=[168, 132, 120, -16, 108, 48]; filter=[132, 132, -16, 108].", "finished": true, "tokens": 72}
+{"id": "solgen/held_pairs-117", "answer": "It prints True. Steps: range=[-4]; filter=[-4]; all=True.", "finished": true, "tokens": 19}
+{"id": "solgen/big_numbers-102", "answer": "```sol\n> print (str (119 - 7)).\n```\nIt prints 112.", "finished": true, "tokens": 25}
+{"id": "solgen/held_pairs-100", "answer": "It prints []. Steps: range=[-2]; filter=[]; filter2=[].", "finished": true, "tokens": 17}
+{"id": "solgen/big_numbers-026", "answer": "It prints 24. Steps: filter=[15, -12]; map=[18, -9]; sum=24.", "finished": true, "tokens": 30}
+{"id": "solgen/big_numbers-064", "answer": "It prints []. Steps: take=[73, 134, 146]; filter=[].", "finished": true, "tokens": 23}
+{"id": "solgen/fresh-037", "answer": "```sol\n> print (str (List.drop 1 (List.filter (fn x -> x == (-24)) (List.map (fn x -> x * (-2)) [33, (-38), (-33), 48, 5])))).\n```\nIt prints []. Steps: map=[-66, 76, 66, -96, -10]; filter=[]; drop=[].", "finished": true, "tokens": 93}
+{"id": "solgen/held_pairs-037", "answer": "It prints -30. Steps: range=[5, 6, 7, 8, 9, 10, 11]; filter=[]; sum=0; clamp=-30.", "finished": true, "tokens": 44}
+{"id": "solgen/held_pairs-080", "answer": "```sol\n> print (Str.upper (Str.upper (Str.slice \"basket\" 2 3))).\n```\nIt prints S. Steps: slice=K; upper=K; upper2=S.", "finished": true, "tokens": 43}
+{"id": "solgen/held_pairs-107", "answer": "```sol\n> print (str (Numeric.max (List.last [59, 33, 55, 33, 3, (-12)]) (Str.at \"lamp\" 2))).\n```\nIt prints 109. Steps: last=-12; at=109; max=109.", "finished": true, "tokens": 74}
+{"id": "solgen/big_numbers-036", "answer": "It prints [65, 86, 117].", "finished": true, "tokens": 15}
+{"id": "solgen/fresh-055", "answer": "It prints False. Steps: filter=[-5, -2]; any=False.", "finished": true, "tokens": 17}
+{"id": "solgen/big_numbers-115", "answer": "It prints True. Steps: mod=2; cmp=True; if=117; min=2; find=1; mod2=1; cmp2=True.", "finished": true, "tokens": 36}
+{"id": "solgen/held_pairs-086", "answer": "```sol\n> print (str (List.map (fn x -> x - 1) (List.filter (fn x -> x < 44) (List.range (-3) (-2))))).\n```\nIt prints [-4, -3]. Steps: range=[-3, -2]; filter=[-3, -2]; map=[-4, -3].", "finished": true, "tokens": 79}
+{"id": "solgen/held_pairs-096", "answer": "It prints 100. Steps: map=[8, 96]; sum=104; abs=100.", "finished": true, "tokens": 29}
+{"id": "solgen/held_pairs-116", "answer": "It prints [28]. Steps: rev=[32, 23]; drop=[23]; map=[23].", "finished": true, "tokens": 27}
+{"id": "solgen/big_numbers-060", "answer": "It prints [13, 34, -22, 76, 149, 89]. Steps: map=[9, 15, 76, -22, 34, 13]; rev=[13, 34, -22, 76, 149, 89].", "finished": true, "tokens": 79}
+{"id": "solgen/fresh-051", "answer": "It prints []. Steps: drop=[]; zip=[].", "finished": true, "tokens": 11}
+{"id": "solgen/held_pairs-001", "answer": "```sol\n> print (Str.upper (Str.slice (Str.slice \"window\" 0 1) 4 9)).\n```\nIt prints . Steps: slice=w; slice2=; upper=W.", "finished": true, "tokens": 46}
+{"id": "solgen/big_numbers-052", "answer": "It prints [109]. Steps: filter=[109, 78, 36, 15]; filter2=[109].", "finished": true, "tokens": 34}
+{"id": "solgen/held_pairs-093", "answer": "It prints False. Steps: map=[-32, 27, 36, 55, -18]; any=False.", "finished": true, "tokens": 31}
+{"id": "solgen/held_pairs-043", "answer": "It prints [11, 10, 9]. Steps: range=[9, 10, 11]; filter=[9, 10, 11]; rev=[11, 10, 9]; filter2=[11, 10, 9].", "finished": true, "tokens": 64}
+{"id": "solgen/big_numbers-104", "answer": "It prints [117]. Steps: take=[117]; filter=[117].", "finished": true, "tokens": 21}
+{"id": "solgen/fresh-117", "answer": "It prints []. Steps: drop=[-2, 50]; map=[-5, 47]; filter=[].", "finished": true, "tokens": 26}
+{"id": "solgen/held_pairs-109", "answer": "It prints False. Steps: filter=[]; map=[]; any=False.", "finished": true, "tokens": 15}
+{"id": "solgen/fresh-083", "answer": "It prints []. Steps: drop=[-38, -18, -7, 7]; drop2=[].", "finished": true, "tokens": 25}
+{"id": "solgen/held_pairs-000", "answer": "It prints []. Steps: rev=[56, 38]; drop=[]; map=[].", "finished": true, "tokens": 20}
+{"id": "solgen/held_pairs-089", "answer": "```sol\n> print (str (Numeric.max (List.last [17, 10, 1]) (Str.position 122 \"signal\"))).\n```\nIt prints 10. Steps: last=1; position=10; max=10.", "finished": true, "tokens": 60}
+{"id": "solgen/big_numbers-077", "answer": "It prints False. Steps: rev=[118, 133, 130, 53, 107]; all=False.", "finished": true, "tokens": 34}
+{"id": "solgen/big_numbers-093", "answer": "It prints 47. Steps: all=False; take=[106]; index=106; if=47.", "finished": true, "tokens": 28}
+{"id": "solgen/held_pairs-078", "answer": "It prints True. Steps: map=[8, 44, -19, 1, 24]; any=True.", "finished": true, "tokens": 28}
+{"id": "solgen/big_numbers-009", "answer": "It prints 277. Steps: filter=[70, 143, 99, 85]; sum=277.", "finished": true, "tokens": 33}
+{"id": "solgen/held_pairs-025", "answer": "It prints False. Steps: map=[-36, 0]; any=False.", "finished": true, "tokens": 18}
+{"id": "solgen/held_pairs-021", "answer": "It prints True. Steps: map=[13, 3, 40, -32]; any=True.", "finished": true, "tokens": 25}
+{"id": "solgen/big_numbers-008", "answer": "It prints [(40, 15), (-8, -39), (-15, 76), (31, 99), (-29, 63)]. Steps: map=[40, -8, -15, 31, -29]; zip=[(40, 15), (-8, -39), (-15, 76), (31, 99), (-29, 63)].", "finished": true, "tokens": 104}
+{"id": "solgen/fresh-016", "answer": "It prints 8. Steps: any=False; range=[8, 9, 10, 11, 12]; take=[8]; sum=8; if=8.", "finished": true, "tokens": 41}
+{"id": "solgen/fresh-048", "answer": "```sol\n> print (str (List.any (fn x -> x >= 46) (List.drop 4 (List.map (fn x -> x * (-4)) [9, (-14), (-4), (-27), (-37), (-25)])))).\n```\nIt prints False. Steps: map=[-36, 56, 16, 108, 148, 100]; drop=[148, 100]; any=False.", "finished": true, "tokens": 113}
+{"id": "solgen/fresh-076", "answer": "It prints [-10]. Steps: filter=[-10]; filter2=[-10].", "finished": true, "tokens": 21}
+{"id": "solgen/big_numbers-092", "answer": "It prints [35, -14, 25]. Steps: drop=[37, -12, 27]; map=[35, -14, 25].", "finished": true, "tokens": 42}
+{"id": "solgen/held_pairs-007", "answer": "It prints True. Steps: range=[-3, -2, -1, 0]; filter=[]; rev=[]; all=True.", "finished": true, "tokens": 29}
+{"id": "solgen/held_pairs-114", "answer": "It prints 2. Steps: map=[-12, -9, 23]; sum=2; abs=2.", "finished": true, "tokens": 28}
+{"id": "solgen/fresh-029", "answer": "```sol\n> print (str (((Numeric.min (-1) (-15)) % 5) >= (56 + ((-11) * 3)))).\n```\nIt prints False. Steps: min=-15; mod=0; mul=-33; add=23; cmp=False.", "finished": true, "tokens": 67}
+{"id": "solgen/fresh-110", "answer": "It prints [-15, 42, 52, -24, 19]. Steps: map=[-21, 36, 46, -30, 13]; map2=[-15, 42, 52, -24, 19].", "finished": true, "tokens": 69}
+{"id": "solgen/held_pairs-018", "answer": "```sol\n> print (str (List.zip (List.map (fn x -> x + 1) [39, (-28)]) (List.filter (fn x -> x < 9) (List.range (-4) (-4))))).\n```\nIt prints [(40, -4)]. Steps: map=[40, -27]; range=[-4]; filter=[-4]; zip=[(40, -4)].", "finished": true, "tokens": 94}
+{"id": "solgen/held_pairs-073", "answer": "It prints True. Steps: rev=[48, -28, 3, 51, 8, 35]; map=[52, -24, 7, 55, 12, 39]; any=True.", "finished": true, "tokens": 56}
+{"id": "solgen/fresh-063", "answer": "```sol\n> print (str (Numeric.abs (-4))).\n```\nIt prints 4.", "finished": true, "tokens": 21}
+{"id": "solgen/held_pairs-033", "answer": "It prints True. Steps: map=[-31, 49]; any=True.", "finished": true, "tokens": 19}
+{"id": "solgen/held_pairs-030", "answer": "It prints False. Steps: map=[-14, -4]; any=False.", "finished": true, "tokens": 18}
+{"id": "solgen/fresh-103", "answer": "It prints True. Steps: filter=[]; all=True.", "finished": true, "tokens": 12}
+{"id": "solgen/held_pairs-027", "answer": "It prints True. Steps: map=[38, 47, -21, 34, 50]; any=True.", "finished": true, "tokens": 30}
+{"id": "solgen/big_numbers-046", "answer": "It prints [(-18, 64), (144, 77)]. Steps: filter=[-18, 144]; drop=[64, 77, 98, 106, 37]; zip=[(-18, 64), (144, 77)].", "finished": true, "tokens": 74}
+{"id": "solgen/held_pairs-060", "answer": "It prints False. Steps: drop=[52]; map=[0]; any=False.", "finished": true, "tokens": 18}
+{"id": "solgen/held_pairs-061", "answer": "It prints []. Steps: range=[-2, -1, 0, 1, 2]; filter=[]; map=[]; filter2=[].", "finished": true, "tokens": 32}
+{"id": "solgen/probe-t1-fix-index", "answer": "```sol\n> print (str ([9, 4, 2] ! 0)).\n```\nIt prints 9.", "finished": true, "tokens": 28}
+{"id": "solgen/held_pairs-083", "answer": "It prints []. Steps: range=[8, 9, 10, 11, 12, 13, 14]; filter=[]; rev=[29, 39, -34, 39]; zip=[].", "finished": true, "tokens": 55}
+{"id": "solgen/held_pairs-087", "answer": "It prints 14. Steps: map=[-14, 43, 24, 9, -24, 58]; any=False; abs=59; if=14.", "finished": true, "tokens": 46}
+{"id": "solgen/held_pairs-044", "answer": "It prints True. Steps: filter=[-10, -34, -24]; map=[-4, -28, -18]; any=True.", "finished": true, "tokens": 36}
+{"id": "solgen/big_numbers-105", "answer": "```sol\n> print (str (Numeric.abs ([25, 117] ! 1))).\n```\nIt prints 117. Steps: index=117; abs=117.", "finished": true, "tokens": 47}
+{"id": "solgen/fresh-080", "answer": "```sol\n> print (str (List.rev [30, 58, (-20)])).\n```\nIt prints [-20, 58, 30].", "finished": true, "tokens": 40}
+{"id": "solgen/big_numbers-032", "answer": "```sol\n> print (str (Numeric.clamp (-39) 97 (Numeric.abs 25))).\n```\nIt prints 25. Steps: abs=25; clamp=25.", "finished": true, "tokens": 46}
+{"id": "solgen/held_pairs-042", "answer": "It prints 70. Steps: map=[-27, -28, 40]; last=40; rev=[59, -39, 7, 45]; sum=70; max=70.", "finished": true, "tokens": 53}
+{"id": "solgen/held_pairs-011", "answer": "It prints True. Steps: map=[19, 33, 13]; map2=[16, 30, 10]; any=True.", "finished": true, "tokens": 36}
+{"id": "solgen/fresh-002", "answer": "```sol\n> print (str (if 16 < (Numeric.abs 4) then Str.at \"harbor\" 104 else [(-25), 55, 2, 52] ! 3)).\n```\nIt prints 52. Steps: abs=4; cmp=False; at=104; index=52; if=52.", "finished": true, "tokens": 85}
+{"id": "solgen/big_numbers-095", "answer": "It prints []. Steps: filter=[]; filter2=[].", "finished": true, "tokens": 12}
+{"id": "solgen/held_pairs-024", "answer": "It prints []. Steps: take=[-40, 50, -31]; filter=[-40, -31]; rev=[-26]; drop=[]; zip=[].", "finished": true, "tokens": 41}
+{"id": "solgen/big_numbers-044", "answer": "It prints [8, -1, 30]. Steps: filter=[95, 65, 0, 31]; take=[95, 65, 0]; map=[8, -1, 30].", "finished": true, "tokens": 53}
+{"id": "multi/map_sum-p0", "answer": "```sol\nList.sum (List.map (fn x -> x * k) xs)\n```\nFor xs = [38, 27, 29, 28, 29], k = 0 and limit = 29 it evaluates to 0.", "finished": true, "tokens": 60}
+{"id": "multi/filter_sum-p0", "answer": "```sol\nList.sum (List.filter (fn x -> x > limit) xs)\n```\nFor xs = [29, 28, 28, 29, 28], k = 0 and limit = 28 it evaluates to 114.", "finished": true, "tokens": 62}
+{"id": "solgen/big_numbers-034", "answer": "```sol\n> print (str (List.all (fn x -> x == 6) [85, 70])).\n```\nIt prints False.", "finished": true, "tokens": 34}
+{"id": "solgen/held_pairs-016", "answer": "It prints [(13, 6)]. Steps: range=[10, 11, 12, 13]; rev=[13, 12, 11, 10]; take=[13]; range2=[6, 7]; filter=[6, 7]; filter2=[6, 7]; zip=[(13, 6)].", "finished": true, "tokens": 82}
+{"id": "solgen/held_pairs-115", "answer": "It prints True. Steps: map=[-23, 35, 37, 28, -20, 35]; map2=[-29, 29, 31, 22, -26, 29]; any=True.", "finished": true, "tokens": 62}
+{"id": "solgen/held_pairs-058", "answer": "```sol\n> print (Str.upper (Str.upper (Str.upper (Str.slice (Str.slice \"silver\" 3 6) 2 4)))).\n```\nIt prints . Steps: slice=er; slice2=er; upper=ER; upper2=ER; upper3=.", "finished": true, "tokens": 63}
+{"id": "solgen/held_pairs-005", "answer": "```sol\n> print (str (List.filter (fn x -> x < 21) (List.range (-3) 1))).\n```\nIt prints [-3, -2, -1, 0, 1]. Steps: range=[-3, -2, -1, 0, 1]; filter=[-3, -2, -1, 0, 1].", "finished": true, "tokens": 85}
+{"id": "solgen/fresh-008", "answer": "```sol\n> print (str (List.rev [30, 34, (-17)])).\n```\nIt prints [-17, 34, 30].", "finished": true, "tokens": 40}
+{"id": "multi/map_sum-p2", "answer": "```sol\nList.sum (List.map (fn x -> x * k) xs)\n```\nFor xs = [38, 28, 28, 26, 26], k = 28 it evaluates to 304.", "finished": true, "tokens": 57}
+{"id": "multi/map_sum-p1", "answer": "```sol\nList.sum (List.map (fn x -> x * k) xs)\n```\nFor xs = [38, 27, 29, 29, 29], k = 0 and limit = 29 it evaluates to 0.", "finished": true, "tokens": 60}
+{"id": "multi/filter_sum-p2", "answer": "```sol\nList.sum (List.filter (fn x -> x > limit) xs)\n```\nFor xs = [29, 29, 29, 29, 29], limit = 29 it evaluates to 0.", "finished": true, "tokens": 55}
+{"id": "solgen/big_numbers-035", "answer": "```sol\n> print (str (List.rev (List.drop 2 [136, (-3), (-38), 73, 80]))).\n```\nIt prints [80, 73]. Steps: drop=[-38, 73, 80]; rev=[80, 73].", "finished": true, "tokens": 74}
+{"id": "multi/filter_sum-p1", "answer": "```sol\nList.filter (fn x -> x > limit) xs\n```\nFor xs = [37, 29, 29, 19], k = 0 and limit = 29 it evaluates to [37, 29, 29, 19].", "finished": true, "tokens": 65}
+{"id": "multi/clamp_sum-p0", "answer": "```sol\nList.sum (List.map (fn x -> Numeric.clamp 0 10 x) xs)\n```\nFor xs = [29, 28, 28, 28, 28], k = 0 and limit = 28 it evaluates to 50.", "finished": true, "tokens": 67}
+{"id": "solgen/held_pairs-010", "answer": "It prints 5. Steps: any=True; range=[4, 5]; last=5; mod=-2; max=5; range2=[5, 6, 7, 8]; index=8; sub=39; sub2=-41; if=5.", "finished": true, "tokens": 62}
+{"id": "solgen/held_pairs-065", "answer": "```sol\n> print (str (List.filter (fn x -> x != (-11)) (List.range (-4) (-2)))).\n```\nIt prints [-4, -3, -2]. Steps: range=[-4, -3, -2]; filter=[-4, -3, -2].", "finished": true, "tokens": 68}
+{"id": "solgen/big_numbers-096", "answer": "```sol\n> print (str (List.all (fn x -> x == 120) (List.rev [138, 0, (-30), 9]))).\n```\nIt prints False. Steps: rev=[9, -30, 0, 138]; all=False.", "finished": true, "tokens": 68}
+{"id": "multi/filter_map_sum-p0", "answer": "```sol\nList.sum (List.map (fn x -> x * k) (List.filter (fn x -> x > limit) xs))\n```\nFor xs = [32, 28, 29, 18, 29], k = 0 and limit = 29 it evaluates to 0.", "finished": true, "tokens": 71}
+{"id": "solgen/held_pairs-068", "answer": "It prints 38. Steps: map=[-10, -15, 1, 3, 2, -6]; sum=-17; take=[-24, 50, 23]; last=23; max=38.", "finished": true, "tokens": 59}
+{"id": "multi/signed_branch-p0", "answer": "```sol\nif k > 0 then List.sum (List.map (fn x -> x * k) xs) else List.sum xs\n```\nFor xs = [32, 29, 28, 28, 28], k = 0 and limit = 28 it evaluates to 121.", "finished": true, "tokens": 72}
+{"id": "solgen/held_pairs-049", "answer": "```sol\n> print (str (List.zip (List.drop 1 (List.filter (fn x -> x >= 32) [48, 47])) (List.map (fn x -> x - 1) (List.filter (fn x -> x <= (-40)) (List.range 0 5))))).\n```\nIt prints []. Steps: filter=[48, 47]; drop=[47]; range=[0, 1, 2, 3, 4, 5]; filter2=[]; map=[]; zip=[].", "finished": true, "tokens": 121}
+{"id": "solgen/big_numbers-066", "answer": "```sol\n> print (str (Numeric.clamp (-30) (-2) (List.sum [(-30), 103, 10, 104]))).\n```\nIt prints -2. Steps: sum=117; clamp=-2.", "finished": true, "tokens": 61}
+{"id": "multi/branch_max-p0", "answer": "```sol\nif k > 0 then Numeric.max k (List.sum xs) else List.sum xs\n```\nFor xs = [29, 29, 29, 29, 29], k = 0 and limit = 29 it evaluates to 126.", "finished": true, "tokens": 65}
+{"id": "multi/clamp_sum-p2", "answer": "```sol\nList.sum (List.map (fn x -> Numeric.clamp 0 10 x) xs)\n```\nFor xs = [32, 29, 28, 27, 27], it evaluates to 50.", "finished": true, "tokens": 57}
+{"id": "solgen/held_pairs-057", "answer": "```sol\n> print (str (List.filter (fn x -> x > 12) (List.range 2 3))).\n```\nIt prints []. Steps: range=[2, 3]; filter=[].", "finished": true, "tokens": 46}
+{"id": "multi/clamp_sum-p1", "answer": "```sol\nList.sum (List.map (fn x -> Numeric.clamp 0 10 x) xs)\n```\nFor xs = [19, 12, 11, 29], k = 0 and limit = 11 it evaluates to 30.", "finished": true, "tokens": 63}
+{"id": "multi/filter_map_sum-p2", "answer": "```sol\nList.sum (List.map (fn x -> x * k) (List.filter (fn x -> x > limit) (List.filter (fn x -> x > limit) (List.filter (fn x -> x > limit) (List.filter (fn x -> x > limit) (List.filter (fn x -> x > limit) (List.filter (fn x -> x > limit) (List.filter (fn x -> x > limit) (List.filter (fn x -> x > limit) (List.filter (fn x -> x > limit) (List.filter (fn x -> x > limit) (List.filter (fn x -> x > limit) (List.filter (fn x -> x > limit) (List.filter (fn x -> x > limit) (List.filter (fn x -> x > limit) (List.filter (fn x -> x > limit) (List.filter (fn x -> x > limit) (List.filter (fn x -> x", "finished": false, "tokens": 200}
+{"id": "multi/signed_branch-p2", "answer": "```sol\nif k > 0 then List.sum (List.map (fn x -> x * k) xs) else List.sum xs\n```\nFor xs = [26, 26, 26, 26, 26], k = 0 it evaluates to 126.", "finished": true, "tokens": 66}
+{"id": "multi/filter_map_sum-p1", "answer": "```sol\nList.sum (List.map (fn x -> x * k) (List.filter (fn x -> x > limit) xs))\n```\nFor xs = [38, 29, 28, 28, 28], k = 0 and limit = 28 it evaluates to 0.", "finished": true, "tokens": 71}
+{"id": "multi/signed_branch-p1", "answer": "```sol\nif k > 0 then List.sum (List.map (fn x -> x * k) xs) else List.sum xs\n```\nFor xs = [29, 28, 27, 29, 28], k = 0 and limit = 28 it evaluates to 122.", "finished": true, "tokens": 72}
+{"id": "solgen/big_numbers-056", "answer": "```sol\n> print (str (List.filter (fn x -> x < 27) [87, 146, 90])).\n```\nIt prints [].", "finished": true, "tokens": 39}
+{"id": "solgen/big_numbers-067", "answer": "```sol\n> print (str (List.map (fn x -> x - 5) [(-14), 144, 122, 21, 52])).\n```\nIt prints [-19, 139, 117, 16, 47].", "finished": true, "tokens": 69}
+{"id": "solgen/fresh-116", "answer": "```sol\n> print (str (List.filter (fn x -> x != (-15)) [30, 18, 10])).\n```\nIt prints [30, 18, 10].", "finished": true, "tokens": 49}
+{"id": "multi/branch_max-p2", "answer": "```sol\nif k > 0 then Numeric.max k (List.sum xs) else List.sum xs\n```\nFor xs = [32, 28, 28, 28], k = 0 and ys = [28, 28, 28, 28] it evaluates to 112.", "finished": true, "tokens": 74}
+{"id": "solgen/held_pairs-112", "answer": "```sol\n> print (str (List.sum (List.filter (fn x -> x >= (-26)) (List.range 4 4)))).\n```\nIt prints 4. Steps: range=[4]; filter=[4]; sum=4.", "finished": true, "tokens": 54}
+{"id": "multi/branch_max-p1", "answer": "```sol\nif k > 0 then List.sum xs else List.sum xs\n```\nFor xs = [32, 27, 28, 28], k = 0 and limit = 28 it evaluates to 115.", "finished": true, "tokens": 56}
+{"id": "solgen/held_pairs-085", "answer": "```sol\n> print (str (List.rev (List.filter (fn x -> x != 49) (List.range 8 14)))).\n```\nIt prints [14, 13, 12, 11, 10, 9, 8]. Steps: range=[8, 9, 10, 11, 12, 13, 14]; filter=[8, 9, 10, 11, 12, 13, 14]; rev=[14, 13, 12, 11, 10, 9, 8].", "finished": true, "tokens": 147}
+{"id": "solgen/big_numbers-065", "answer": "It prints -3. Steps: any=True; range=[-3, -2, -1, 0]; index=-2; range2=[10, 11, 12, 13, 14]; any2=False; if=147; if2=-3; at=114; min=-3.", "finished": true, "tokens": 75}
+{"id": "solgen/held_pairs-035", "answer": "```sol\n> print (str (List.rev (List.filter (fn x -> x >= 33) (List.range 10 11)))).\n```\nIt prints []. Steps: range=[10, 11]; filter=[]; rev=[].", "finished": true, "tokens": 57}
+{"id": "solgen/big_numbers-091", "answer": "```sol\n> print (str (List.filter (fn x -> x < 143) [105, 123, (-21)])).\n```\nIt prints [105, 123, -21].", "finished": true, "tokens": 55}
+{"id": "solgen/held_pairs-062", "answer": "```sol\n> print (str (List.sum (List.filter (fn x -> x != (-22)) (List.range (-3) 1)))).\n```\nIt prints -3. Steps: range=[-3, -2, -1, 0, 1]; filter=[-3, -2, -1, 0, 1]; sum=-3.", "finished": true, "tokens": 81}
+{"id": "solgen/fresh-049", "answer": "```sol\n> print (str (((57 % 7) - 16) != ((3 / 9) % 3))).\n```\nIt prints True. Steps: mod=1; sub=-15; div=0; mod2=0; cmp=True.", "finished": true, "tokens": 60}
+{"id": "solgen/big_numbers-114", "answer": "```sol\n> print (str (List.filter (fn x -> x == 142) [41, (-16), 46, 123, 87, 0])).\n```\nIt prints [].", "finished": true, "tokens": 51}
+{"id": "solgen/big_numbers-113", "answer": "```sol\n> print (str (List.all (fn x -> x <= (-24)) [102, (-40), 36, 101, (-1)])).\n```\nIt prints False.", "finished": true, "tokens": 49}
+{"id": "solgen/held_pairs-036", "answer": "```sol\n> print (str (List.take 1 (List.filter (fn x -> x < (-25)) (List.range 5 8)))).\n```\nIt prints []. Steps: range=[5, 6, 7, 8]; filter=[]; take=[].", "finished": true, "tokens": 61}
+{"id": "solgen/big_numbers-054", "answer": "```sol\n> print (str (List.rev (List.map (fn x -> x * 2) [116, 40, 88, 74, (-25)]))).\n```\nIt prints [-50, 148, 170, 80, 232]. Steps: map=[232, 80, 176, 148, -50]; rev=[-50, 148, 170, 80, 232].", "finished": true, "tokens": 123}
+{"id": "solgen/held_pairs-069", "answer": "```sol\n> print (str (List.any (fn x -> x > (-4)) (List.map (fn x -> x + 6) [31, 25, 58, (-35), 58, 14]))).\n```\nIt prints True. Steps: map=[37, 31, 64, -29, 64, 20]; any=True.", "finished": true, "tokens": 93}
+{"id": "solgen/big_numbers-015", "answer": "```sol\n> print (str (List.all (fn x -> x < 59) (List.map (fn x -> x + 0) (List.drop 0 [90, 42])))).\n```\nIt prints False. Steps: drop=[90, 42]; map=[90, 42]; all=False.", "finished": true, "tokens": 76}
+{"id": "solgen/fresh-074", "answer": "```sol\n> print (str (if List.all (fn x -> x == (-32)) (List.map (fn x -> x - 1) [(-39), 27, (-25), (-21), 0, 53]) then 54 % 8 + (List.last [(-23), (-34)]) else 6 * 11 + (19 - 36))).\n```\nIt prints -10. Steps: map=[-40, 26, -26, -22, -1, 52]; all=False; mod=6; last=-34; add=-28; mul=66; sub=-17; add2=49; if=-10.", "finished": true, "tokens": 167}
+{"id": "solgen/fresh-023", "answer": "```sol\n> print (str (List.any (fn x -> x > 60) (List.take 2 [32, 28, (-26), 18]))).\n```\nIt prints False. Steps: take=[32, 28]; any=False.", "finished": true, "tokens": 63}
+{"id": "solgen/held_pairs-048", "answer": "```sol\n> print (str (List.any (fn x -> x <= 40) (List.filter (fn x -> x <= (-26)) (List.range (-3) 2)))).\n```\nIt prints False. Steps: range=[-3, -2, -1, 0, 1, 2]; filter=[]; any=False.", "finished": true, "tokens": 78}
+{"id": "solgen/held_pairs-091", "answer": "```sol\n> print (str (List.any (fn x -> x > (-17)) (List.map (fn x -> x * 3) [50, (-26), 51, 9, 11]))).\n```\nIt prints True. Steps: map=[150, -78, 153, 27, 33]; any=True.", "finished": true, "tokens": 87}
+{"id": "solgen/held_pairs-022", "answer": "```sol\n> print (str (List.filter (fn x -> x > (-7)) (List.take 1 (List.filter (fn x -> x <= (-2)) (List.range 7 9))))).\n```\nIt prints []. Steps: range=[7, 8, 9]; filter=[]; take=[]; filter2=[].", "finished": true, "tokens": 73}
+{"id": "solgen/fresh-036", "answer": "```sol\n> print (str ((Numeric.min 15 (List.sum [(-8), 59, (-32)])) >= (Str.position 122 \"signal\"))).\n```\nIt prints True. Steps: sum=19; min=15; find=114; cmp=True.", "finished": true, "tokens": 69}
+{"id": "solgen/fresh-084", "answer": "```sol\n> print (str ((if List.all (fn x -> x <= (-29)) [(-13), 51, 22, 11, 51] then (-14) else Numeric.abs 53) < (-8))).\n```\nIt prints False. Steps: all=False; abs=53; if=53; cmp=False.", "finished": true, "tokens": 83}
+{"id": "solgen/big_numbers-075", "answer": "```sol\n> print (str ((Numeric.min (Numeric.min 146 114) (43 / 5)) - ((List.map (fn x -> x * (-2)) (List.range 5 7)) ! 0))).\n```\nIt prints 17. Steps: min=114; div=8; min2=8; range=[5, 6, 7]; map=[-10, -12, -14]; index=-10; sub=17.", "finished": true, "tokens": 114}
+{"id": "solgen/held_pairs-031", "answer": "```sol\n> print (str (List.zip (List.filter (fn x -> x != (-21)) (List.range (-5) (-5))) (List.map (fn x -> x - 3) (List.range (-4) 2)))).\n```\nIt prints [(-5, -7)]. Steps: range=[-5]; filter=[-5]; range2=[-4, -3, -2, -1, 0, 1, 2]; map=[-7, -6, -5, -4, -3, -2, -1]; zip=[(-5, -7)].", "finished": true, "tokens": 133}

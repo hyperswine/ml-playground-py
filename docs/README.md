@@ -46,3 +46,4 @@ records its exact timestamp; original pages retain their own dates and recorded 
 | 2026-10-21 | [Next steps 1-6: execution, compiler-verified self-training, wording, Stage 4 evaluation, retrieval](2026-10-21-NEXT-STEPS-PROGRESS.md) |
 | 2026-10-21 | [Repository migration](2026-10-21-REPOSITORY-MIGRATION.md) |
 | 2026-10-21 | [Running experiments](2026-10-21-RUNNING-EXPERIMENTS.md) |
+| 2026-10-22 | [Reference: Qwen3.5-0.8B fine-tuned on the Stage 5 data](2026-10-22-QWEN-SFT-REFERENCE.md) |

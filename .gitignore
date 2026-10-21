@@ -41,3 +41,5 @@ artifacts/qos_ai/rft_20261021/samples_partial.jsonl
 artifacts/qos_ai/stage5_20261021/rag_train.jsonl
 artifacts/qos_ai/stage5_20261021/s5.tar.xz
 artifacts/qos_ai/stage5_20261021/bundle/
+artifacts/qos_ai/qwen_sft_20261022/bundle/
+artifacts/qos_ai/qwen_sft_20261022/q.tar.xz

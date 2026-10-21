@@ -1,0 +1,21 @@
+== 2026-10-21T16:33:22Z (+0 min) verify
+qos_ai.py: OK
+qos_ai_data.py: OK
+qos_ai_pure_sol.py: OK
+qos_ai_qwen_sft.py: OK
+qos_ai_resume.py: OK
+qos_ai_stage4_data.py: OK
+qos_ai_stage4_eval.py: OK
+pools.pt: OK
+vocabulary.pt: OK
+prompts.jsonl: OK
+NVIDIA GeForce RTX 4090, 24564 MiB
+== 2026-10-21T16:33:22Z (+0 min) install
+== 2026-10-21T16:34:02Z (+0 min) mix
+== 2026-10-21T16:34:41Z (+1 min) generate_base
+== 2026-10-21T16:36:12Z (+2 min) train
+== 2026-10-21T17:25:20Z (+51 min) generate_tuned
+== 2026-10-21T17:26:05Z (+52 min) wait_for_pulls
+== 2026-10-21T17:36:45Z (+63 min) stopping pod: complete
+Runpod config file not found, please run `runpodctl config` to create it
+pod "pj3dj7cgwgjgz0" stopped

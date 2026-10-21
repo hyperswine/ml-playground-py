@@ -1,0 +1,128 @@
+[
+ {
+  "id": "map_sum-p0",
+  "answer": "```sol\ndef multiply_by_k(limit: Int, k: Int): Sol =\n  let\n    xs = List.of\n      [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]\n    prod = List.fold_left(0, 0, List.map(_ * k))\n  in\n    List.map xs (fun x -> prod + x)\n```",
+  "finished": true,
+  "tokens": 95,
+  "severe_loop": false
+ },
+ {
+  "id": "filter_sum-p0",
+  "answer": "```sol\ndef addOnlyGreaterThan(limit: Int, xs: List[Int]): List[Int] =\n  xs.filter(_ > limit)\n```",
+  "finished": true,
+  "tokens": 30,
+  "severe_loop": false
+ },
+ {
+  "id": "map_sum-p2",
+  "answer": "```sol\nmultiply xs k, add (multiply xs k, xs)\n```",
+  "finished": true,
+  "tokens": 17,
+  "severe_loop": false
+ },
+ {
+  "id": "map_sum-p1",
+  "answer": "```sol\nlet xs = [1, 2, 3];\nlet k = 2;\nlet limit = 10;\n\nlet result = xs.map (fun x -> x * k) + (xs.map (fun x -> x * k) * limit);\n```",
+  "finished": true,
+  "tokens": 61,
+  "severe_loop": false
+ },
+ {
+  "id": "filter_sum-p2",
+  "answer": "```sol\nadd xs [i | i > limit]\n```",
+  "finished": true,
+  "tokens": 14,
+  "severe_loop": false
+ },
+ {
+  "id": "filter_sum-p1",
+  "answer": "```sol\nlimit < xs ? xs : []\n```",
+  "finished": true,
+  "tokens": 12,
+  "severe_loop": false
+ },
+ {
+  "id": "clamp_sum-p0",
+  "answer": "```sol\ndef clamp(xs, k, limit):\n  return xs.map(x -> if x < 0 then 0 else if x > limit then limit else x)\n\ndef sum(clamped):\n  return sum(clamped)\n```",
+  "finished": true,
+  "tokens": 52,
+  "severe_loop": false
+ },
+ {
+  "id": "filter_map_sum-p0",
+  "answer": "```sol\ndef sumAbove(limit: Int, k: Int): Sol =\n  let\n    [x, y] = xs\n    [a, b] = [x, y]\n    [c, d] = [a, b]\n    [e, f] = [c, d]\n    [g, h] = [e, f]\n    [i, j] = [g, h]\n    [k, l] = [i, j]\n    [m, n] = [k, l]\n    [o, p] = [m, n]\n    [q, r] = [o, p]\n    [s, t] = [q, r]\n    [u, v] = [s, t]\n    [w, x] = [u, v]\n    [y, z] = [w, x]\n    [",
+  "finished": false,
+  "tokens": 200,
+  "severe_loop": false
+ },
+ {
+  "id": "signed_branch-p0",
+  "answer": "```sol\ndef sum_with_k(xs: List, k: Int, limit: Int): List =\n  if k > 0 then\n    xs * k\n  else\n    xs\n```",
+  "finished": true,
+  "tokens": 42,
+  "severe_loop": false
+ },
+ {
+  "id": "branch_max-p0",
+  "answer": "```sol\nif k > 0 then\n  if k > sum xs then\n    k\n  else\n    sum xs\nelse\n  abs sum xs\n```",
+  "finished": true,
+  "tokens": 36,
+  "severe_loop": false
+ },
+ {
+  "id": "clamp_sum-p2",
+  "answer": "```sol\nclamp xs 0..10, then add xs\n```",
+  "finished": true,
+  "tokens": 16,
+  "severe_loop": false
+ },
+ {
+  "id": "clamp_sum-p1",
+  "answer": "```sol\nclamp xs 0..10,\n 0..10,\n 0..10,\n 0..10,\n 0..10,\n 0..10,\n 0..10,\n 0..10,\n 0..10,\n 0..10,\n 0..10,\n 0..10,\n 0..10,\n 0..10,\n 0..10,\n 0..10,\n 0..10,\n 0..10,\n 0..10,\n 0..10,\n 0..10,\n 0..10,\n 0..10,\n 0..10,\n 0..10,\n 0..10,\n 0..10,\n 0..10,",
+  "finished": false,
+  "tokens": 200,
+  "severe_loop": false
+ },
+ {
+  "id": "filter_map_sum-p2",
+  "answer": "```sol\nlet limit = 10;\nlet k = 2;\nlet elements = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];\nlet retained = [x for x in elements if x > limit];\nlet result = k * retained;\n```",
+  "finished": true,
+  "tokens": 77,
+  "severe_loop": false
+ },
+ {
+  "id": "signed_branch-p2",
+  "answer": "```sol\nsum xs * if k > 0 then k else 1\n```",
+  "finished": true,
+  "tokens": 18,
+  "severe_loop": false
+ },
+ {
+  "id": "filter_map_sum-p1",
+  "answer": "```sol\nlet xs = [1, 2, 3, 4, 5];\nlet k = 2;\nlet limit = 3;\n\nlet result = xs\n  |> filter (fun x -> x > limit)\n  |> map (fun x -> x * k)\n  |> add;\n\nresult\n```",
+  "finished": true,
+  "tokens": 73,
+  "severe_loop": false
+ },
+ {
+  "id": "signed_branch-p1",
+  "answer": "```sol\nlet xs, k, limit = 1, 1, 100;\nlet sum = function(x, k) when k > 0 then x * k else x;\nreturn sum xs;\n```",
+  "finished": true,
+  "tokens": 49,
+  "severe_loop": false
+ },
+ {
+  "id": "branch_max-p2",
+  "answer": "```sol\nif k > 0 then\n  max(k, xs + xs)\nelse\n  abs(xs + xs)\n```",
+  "finished": true,
+  "tokens": 29,
+  "severe_loop": false
+ },
+ {
+  "id": "branch_max-p1",
+  "answer": "```sol\nif k > 0 then\n  max k, xs + xs\nelse\n  abs xs\n```",
+  "finished": true,
+  "tokens": 25,
+  "severe_loop": false
+ }
+]
