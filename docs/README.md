@@ -42,5 +42,6 @@ records its exact timestamp; original pages retain their own dates and recorded 
 | 2026-10-21 | [Stage 1: give the 557M the domain training the 168M had](2026-10-21-RUNPOD-STAGE1.md) |
 | 2026-10-21 | [Stage 4 runbook](2026-10-21-RUNPOD-STAGE4.md) |
 | 2026-10-21 | [Stage 4 preparation: retain language while strengthening Sol behavior](2026-10-21-STAGE4-PREPARATION.md) |
+| 2026-10-21 | [Next steps 1-6: execution, compiler-verified self-training, wording, Stage 4 evaluation, retrieval](2026-10-21-NEXT-STEPS-PROGRESS.md) |
 | 2026-10-21 | [Repository migration](2026-10-21-REPOSITORY-MIGRATION.md) |
 | 2026-10-21 | [Running experiments](2026-10-21-RUNNING-EXPERIMENTS.md) |

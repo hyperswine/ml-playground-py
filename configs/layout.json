@@ -30,6 +30,7 @@
     "qos_ai_compare_followup.py": "src/ml_playground/evaluation/qos_ai_compare_followup.py",
     "qos_ai_curriculum.py": "src/ml_playground/data/qos_ai_curriculum.py",
     "qos_ai_data.py": "src/ml_playground/data/qos_ai_data.py",
+    "qos_ai_execute.py": "src/ml_playground/model/qos_ai_execute.py",
     "qos_ai_finetune.py": "src/ml_playground/training/qos_ai_finetune.py",
     "qos_ai_generalization.py": "src/ml_playground/data/qos_ai_generalization.py",
     "qos_ai_generalization_compare.py": "src/ml_playground/evaluation/qos_ai_generalization_compare.py",
@@ -53,6 +54,8 @@
     "qos_ai_probe.py": "src/ml_playground/evaluation/qos_ai_probe.py",
     "qos_ai_pure_sol.py": "src/ml_playground/evaluation/qos_ai_pure_sol.py",
     "qos_ai_resume.py": "src/ml_playground/training/qos_ai_resume.py",
+    "qos_ai_retrieval.py": "src/ml_playground/evaluation/qos_ai_retrieval.py",
+    "qos_ai_rft.py": "src/ml_playground/workflows/qos_ai_rft.py",
     "qos_ai_runpod_backup.py": "src/ml_playground/cloud/qos_ai_runpod_backup.py",
     "qos_ai_runpod_data.py": "src/ml_playground/data/qos_ai_runpod_data.py",
     "qos_ai_runpod_finalize.py": "src/ml_playground/cloud/qos_ai_runpod_finalize.py",
@@ -75,13 +78,16 @@
     "qos_ai_stage4_probe.py": "src/ml_playground/evaluation/qos_ai_stage4_probe.py",
     "qos_ai_stage4_recovery.py": "src/ml_playground/cloud/qos_ai_stage4_recovery.py",
     "qos_ai_stage4_train.py": "src/ml_playground/training/qos_ai_stage4_train.py",
+    "qos_ai_stage5_param.py": "src/ml_playground/data/qos_ai_stage5_param.py",
     "qwen08.py": "src/ml_playground/examples/qwen08.py"
   },
   "tests": {
+    "test_layout.py": "tests/test_layout.py",
     "test_qos_ai_balanced.py": "tests/qos_ai/test_qos_ai_balanced.py",
     "test_qos_ai_compare.py": "tests/qos_ai/test_qos_ai_compare.py",
     "test_qos_ai_curriculum.py": "tests/qos_ai/test_qos_ai_curriculum.py",
     "test_qos_ai_data.py": "tests/qos_ai/test_qos_ai_data.py",
+    "test_qos_ai_execute.py": "tests/qos_ai/test_qos_ai_execute.py",
     "test_qos_ai_finetune.py": "tests/qos_ai/test_qos_ai_finetune.py",
     "test_qos_ai_generalization.py": "tests/qos_ai/test_qos_ai_generalization.py",
     "test_qos_ai_generalization_recovery.py": "tests/qos_ai/test_qos_ai_generalization_recovery.py",
@@ -93,8 +99,7 @@
     "test_qos_ai_resume.py": "tests/qos_ai/test_qos_ai_resume.py",
     "test_qos_ai_runpod.py": "tests/qos_ai/test_qos_ai_runpod.py",
     "test_qos_ai_scale.py": "tests/qos_ai/test_qos_ai_scale.py",
-    "test_qos_ai_stage4.py": "tests/qos_ai/test_qos_ai_stage4.py",
-    "test_layout.py": "tests/test_layout.py"
+    "test_qos_ai_stage4.py": "tests/qos_ai/test_qos_ai_stage4.py"
   },
   "scripts": {
     "runpod/morepretrain_run.sh": "scripts/runpod/morepretrain_run.sh",

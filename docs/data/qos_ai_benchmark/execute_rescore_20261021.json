@@ -1,0 +1,102 @@
+{
+ "m557_sol": {
+  "without_execution": {
+   "correct": 179,
+   "by_kind": {
+    "output": 119,
+    "generate": 33,
+    "repair": 27
+   }
+  },
+  "with_execution": {
+   "correct": 352,
+   "by_kind": {
+    "output": 249,
+    "generate": 65,
+    "repair": 38
+   }
+  },
+  "n": 360,
+  "kinds": {
+   "output": 249,
+   "generate": 72,
+   "repair": 39
+  },
+  "notes": {
+   "claim corrected (question code)": 130,
+   "claim corrected (answer code)": 44,
+   "claim confirmed (question code)": 119,
+   "claim confirmed (answer code)": 60,
+   "compiler error (answer code)": 7
+  }
+ },
+ "m557_1b_pilot": {
+  "without_execution": {
+   "correct": 12,
+   "by_kind": {
+    "output": 12,
+    "generate": 0,
+    "repair": 0
+   }
+  },
+  "with_execution": {
+   "correct": 246,
+   "by_kind": {
+    "output": 240,
+    "generate": 2,
+    "repair": 4
+   }
+  },
+  "n": 360,
+  "kinds": {
+   "output": 249,
+   "generate": 72,
+   "repair": 39
+  },
+  "notes": {
+   "claim corrected (question code)": 59,
+   "output added (question code)": 199,
+   "no single code block": 7,
+   "not executed (answer code)": 12,
+   "compiler error (answer code)": 18,
+   "output added (answer code)": 52,
+   "claim confirmed (question code)": 3,
+   "claim confirmed (answer code)": 2,
+   "claim corrected (answer code)": 8
+  }
+ },
+ "m168_coding_parent": {
+  "without_execution": {
+   "correct": 12,
+   "by_kind": {
+    "output": 12,
+    "generate": 0,
+    "repair": 0
+   }
+  },
+  "with_execution": {
+   "correct": 259,
+   "by_kind": {
+    "output": 247,
+    "generate": 5,
+    "repair": 7
+   }
+  },
+  "n": 360,
+  "kinds": {
+   "output": 249,
+   "generate": 72,
+   "repair": 39
+  },
+  "notes": {
+   "output added (question code)": 247,
+   "no single code block": 15,
+   "not executed (answer code)": 6,
+   "compiler error (answer code)": 18,
+   "claim corrected (answer code)": 15,
+   "output added (answer code)": 43,
+   "claim confirmed (answer code)": 3,
+   "claim corrected (question code)": 13
+  }
+ }
+}

@@ -1,0 +1,11 @@
+{
+  "kept": 4000,
+  "candidates_checked": 8000,
+  "excluded_suite_skeletons": 159,
+  "wording_rejected_suite_ngrams": 167,
+  "suite_hash": "dc5b215065faf0418990c371419bddef2d1e668ad0978f34fe41bfe47de3a94e",
+  "compiler_sha256": "9987da491a791af853300f38ad3e73c52a243dbfd1422379a8dbe437369b776e",
+  "cases_per_task": 6,
+  "train_sha256": "8e5dbfdb01cadf560d98c09ca5e0bf843802b15d35db43f3e15bdb867461d28e",
+  "step_share": 0.29
+}

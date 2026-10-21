@@ -1,0 +1,10 @@
+{
+  "tasks": 2683,
+  "kinds": {
+    "param": 1183,
+    "generate": 1027,
+    "repair": 473
+  },
+  "reference_failures": 317,
+  "compiler_sha256": "9987da491a791af853300f38ad3e73c52a243dbfd1422379a8dbe437369b776e"
+}
