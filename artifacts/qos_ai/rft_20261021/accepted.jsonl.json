@@ -1,0 +1,11 @@
+{
+  "samples": 21464,
+  "correct_samples": 6039,
+  "tasks_solved": {
+    "param": "341/1183",
+    "generate": "607/1027",
+    "repair": "301/473"
+  },
+  "accepted": 2043,
+  "per_task_limit": 2
+}

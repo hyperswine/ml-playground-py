@@ -113,7 +113,8 @@
     "runpod/stage1/job.sh": "scripts/runpod/stage1/job.sh",
     "runpod/stage2/job.sh": "scripts/runpod/stage2/job.sh",
     "runpod/stage3/job.sh": "scripts/runpod/stage3/job.sh",
-    "runpod/stage4/job.sh": "scripts/runpod/stage4/job.sh"
+    "runpod/stage4/job.sh": "scripts/runpod/stage4/job.sh",
+    "runpod/stage5/job.sh": "scripts/runpod/stage5/job.sh"
   },
   "files": {
     "qos_ai_557m.json": "configs/qos_ai_557m.json",

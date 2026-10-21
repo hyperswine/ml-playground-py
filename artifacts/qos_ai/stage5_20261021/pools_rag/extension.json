@@ -1,0 +1,11 @@
+{
+  "base_pools_sha256": "6895f6cd036b2010f51972dd529ee85b185ecdb50b0374b9efaa8ef676f743d4",
+  "param_train_sha256": "20b834b993849c6ab8f0d3b41e3e4ce19bc706ce6420027f804c4e555c2ea3ae",
+  "added": 4000,
+  "dropped_unknown_or_long": 0,
+  "added_target_tokens": 525730,
+  "verified_examples": 75017,
+  "verified_target_tokens": 3061187,
+  "pools_hash": "5e6ba0a30bf83c9b7bbc8d83390e7344163be2ef28c72a39c7b1cf9dada27e55",
+  "pools_file_sha256": "94abd4c03284a3edef52418f358f89c7bdd0a493609893cbc8ffcf493f0b5386"
+}

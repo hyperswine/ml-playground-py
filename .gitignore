@@ -35,3 +35,9 @@ artifacts/qos_ai/setup.log
 !artifacts/qos_ai/pod_4b_v2/pod.log
 !artifacts/qos_ai/pod_4b_v2/qa.jsonl
 !artifacts/qos_ai/pod_4b_v2/setup.log
+artifacts/toolchain/
+artifacts/qos_ai/rft_20261021/samples.jsonl
+artifacts/qos_ai/rft_20261021/samples_partial.jsonl
+artifacts/qos_ai/stage5_20261021/rag_train.jsonl
+artifacts/qos_ai/stage5_20261021/s5.tar.xz
+artifacts/qos_ai/stage5_20261021/bundle/

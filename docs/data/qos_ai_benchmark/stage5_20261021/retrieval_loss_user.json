@@ -1,0 +1,7 @@
+{
+  "questions": 300,
+  "top1_source_file": 0.5633333333333334,
+  "plain_answer_perplexity": 11.872944200278155,
+  "retrieved_answer_perplexity": 10.560098706578485,
+  "oracle_file_answer_perplexity": 11.313921655894116
+}
