@@ -1,0 +1,12 @@
+{
+  "raw_records": 696,
+  "accepted_records": 696,
+  "discarded_retry_records": 0,
+  "resets": [],
+  "raw_log_sha256": "04bbf29193a492eb4305ed77c63d5003ca87310ad8321462c8c7bf87f213b985",
+  "accepted_log_sha256": "04bbf29193a492eb4305ed77c63d5003ca87310ad8321462c8c7bf87f213b985",
+  "successful_segments_sha256": "70d11586161d7aaf021f7598779c9233a638b77e9e85b23e6626983f40c00af5",
+  "saved_optimizer_step": 688,
+  "code_sha256": "a9b25cdd452b84f8e8351bc28d0aa2feef1662103c0b2755e011c9653f05136d",
+  "policy": "Keep raw logs unchanged; retain final attempt per update, only for resets inside a documented successful save interval; bind to saved optimizer token counts."
+}

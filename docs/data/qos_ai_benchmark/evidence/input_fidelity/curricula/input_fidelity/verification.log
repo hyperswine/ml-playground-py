@@ -1,0 +1,11 @@
+{
+  "verified_data_hash": "937d8f564e64df4a08efe710c8d544a862e54d7b873942d2549c1cfbd954a351",
+  "benchmark_data_hash": "6eb10d79e8f084c31601c923494b2e057ef56d8672c3e5170654924ad5fc0c4e",
+  "host": "JQs-Mac-mini.local",
+  "machine": "arm64",
+  "fpr_sha256": "c41c6ab9377e59be4d9bccedf1d6dd33f188bad0453046660650c6982fbc2f36",
+  "passed": 1364,
+  "total": 1364,
+  "distinct_executions": 706
+}
+{"focused_prepared_examples": 566, "input_contracts_verified": 464}

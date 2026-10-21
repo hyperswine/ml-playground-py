@@ -1,0 +1,54 @@
+{
+  "accepted_steps": 56060,
+  "accumulation": 2,
+  "batch_size": 8,
+  "bf16": true,
+  "budget_created_unix": 1792357761.427,
+  "budget_stop": false,
+  "checkpoint_sha256": "f7c9d03107c7532608fc6dca81120a62753c2e06e0f18f22193e9a5b1579fdc7",
+  "code_sha256": {
+    "qos_ai.py": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+    "qos_ai_runpod_data.py": "37a495695747dfd7007a75c3d9a51ed68cda8068da995dc1dc9fc5b29cd00912",
+    "qos_ai_runpod_train.py": "546e721ab192983e5c9dc64d5ca0ac1bc59579fafe62de12d5fdd3f0df4f40da"
+  },
+  "config": {
+    "context_length": 512,
+    "embedding_size": 1280,
+    "head_count": 20,
+    "layer_count": 24,
+    "vocabulary_size": 65536
+  },
+  "dataset_hash": "84e61e87b22ec26d80c81bcaf8891570a39f921ce35a0e49d58ea821541887cc",
+  "estimated_tokens_per_second": 25400.163426659845,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "known_tokens": 458631047,
+  "learning_rate": 0.0003,
+  "optimizer": "fused AdamW",
+  "pretrain_deadline_unix": 1792381161.427,
+  "processed_tokens": 459243520,
+  "progress_sha256": "3293c17a48e14ce0fbf498c33984124f2a7c1ded0d05d74e5f5e4cd8393f7f92",
+  "scope": "pretraining from random weights; no teacher embedding initialization",
+  "seed": 7,
+  "sequence_length": 512,
+  "source_tokens": {
+    "english": 366866432,
+    "python": 92377088
+  },
+  "target_tokens": 459243520,
+  "torch": "2.8.0+cu128",
+  "total_steps": 56060,
+  "validation": {
+    "english": {
+      "cross_entropy": 3.8304317753603123,
+      "known_target_tokens": 8183,
+      "windows": 16
+    },
+    "python": {
+      "cross_entropy": 2.43324738740921,
+      "known_target_tokens": 8192,
+      "windows": 16
+    }
+  },
+  "warmup_steps": 128,
+  "weight_decay": 0.1
+}

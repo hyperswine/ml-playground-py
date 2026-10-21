@@ -1,0 +1,247 @@
+
+COMMAND ["qos_ai_generalization_recovery_step.py", "--data", "curricula/generalization_20261019", "--experiment", "experiments/generalization_20261019_seed17", "--chunk-steps", "16"]
+{"step": 385, "epoch": 1, "loss": 0.409837768191383, "learning_rate": 4.797055281139703e-06, "seconds": 713.6882347929641, "supervised_tokens": 53451, "recovery_chunk": 16}
+{"step": 390, "epoch": 1, "loss": 0.10114412042829725, "learning_rate": 4.696206400636501e-06, "seconds": 720.6683061269723, "supervised_tokens": 54294, "recovery_chunk": 16}
+{"step": 395, "epoch": 1, "loss": 0.09808479904369184, "learning_rate": 4.595772865625005e-06, "seconds": 727.6860202929674, "supervised_tokens": 55092, "recovery_chunk": 16}
+{"step": 400, "epoch": 1, "loss": 0.1242315608299583, "learning_rate": 4.495806573278839e-06, "seconds": 734.8283616269619, "supervised_tokens": 55751, "recovery_chunk": 16}
+{"recovery_saved_step": 400}
+
+COMMAND ["qos_ai_generalization_recovery_step.py", "--data", "curricula/generalization_20261019", "--experiment", "experiments/generalization_20261019_seed17", "--chunk-steps", "16"]
+{"step": 401, "epoch": 1, "loss": 0.12654570515236158, "learning_rate": 4.475873934184527e-06, "seconds": 736.2819739179686, "supervised_tokens": 55929, "recovery_chunk": 16}
+{"step": 405, "epoch": 1, "loss": 0.17735965216337746, "learning_rate": 4.396359179332613e-06, "seconds": 741.8550056259701, "supervised_tokens": 56370, "recovery_chunk": 16}
+{"step": 410, "epoch": 1, "loss": 0.262237143009267, "learning_rate": 4.297482071389775e-06, "seconds": 748.9792893349659, "supervised_tokens": 57032, "recovery_chunk": 16}
+{"step": 415, "epoch": 1, "loss": 0.22902500935089895, "learning_rate": 4.1992263423690146e-06, "seconds": 756.0005410009617, "supervised_tokens": 57629, "recovery_chunk": 16}
+{"recovery_saved_step": 416}
+
+COMMAND ["qos_ai_generalization_recovery_step.py", "--data", "curricula/generalization_20261019", "--experiment", "experiments/generalization_20261019_seed17", "--chunk-steps", "16"]
+{"step": 417, "epoch": 1, "loss": 0.1389085533272507, "learning_rate": 4.160109421138379e-06, "seconds": 758.8316722089658, "supervised_tokens": 58050, "recovery_chunk": 16}
+{"step": 420, "epoch": 1, "loss": 0.1959396243095398, "learning_rate": 4.101642764102946e-06, "seconds": 763.2286797089619, "supervised_tokens": 58478, "recovery_chunk": 16}
+{"step": 425, "epoch": 1, "loss": 0.23683892709237558, "learning_rate": 4.0047817611027015e-06, "seconds": 770.0777117929683, "supervised_tokens": 59182, "recovery_chunk": 16}
+{"step": 430, "epoch": 1, "loss": 0.05698726381574358, "learning_rate": 3.908693384501992e-06, "seconds": 777.0652027089673, "supervised_tokens": 59937, "recovery_chunk": 16}
+{"recovery_saved_step": 432}
+
+COMMAND ["qos_ai_generalization_recovery_step.py", "--data", "curricula/generalization_20261019", "--experiment", "experiments/generalization_20261019_seed17", "--chunk-steps", "16"]
+{"step": 433, "epoch": 1, "loss": 0.36122764671705043, "learning_rate": 3.851431891779326e-06, "seconds": 781.5282200839574, "supervised_tokens": 60306, "recovery_chunk": 16}
+{"step": 435, "epoch": 1, "loss": 0.16813695923355984, "learning_rate": 3.81342728619411e-06, "seconds": 784.2663099179626, "supervised_tokens": 60535, "recovery_chunk": 16}
+{"step": 440, "epoch": 1, "loss": 0.37085586457740605, "learning_rate": 3.7190326931752374e-06, "seconds": 791.2664823759696, "supervised_tokens": 61182, "recovery_chunk": 16}
+{"step": 445, "epoch": 1, "loss": 0.18126613188554896, "learning_rate": 3.625558382107298e-06, "seconds": 798.4302170839655, "supervised_tokens": 61961, "recovery_chunk": 16}
+{"recovery_saved_step": 448}
+
+COMMAND ["qos_ai_generalization_recovery_step.py", "--data", "curricula/generalization_20261019", "--experiment", "experiments/generalization_20261019_seed17", "--chunk-steps", "16"]
+{"step": 449, "epoch": 1, "loss": 0.24367331701611716, "learning_rate": 3.5514740112291703e-06, "seconds": 804.5734883339755, "supervised_tokens": 62527, "recovery_chunk": 16}
+{"step": 450, "epoch": 1, "loss": 0.12613640454682437, "learning_rate": 3.5330526541135156e-06, "seconds": 805.9198500009807, "supervised_tokens": 62703, "recovery_chunk": 16}
+{"step": 455, "epoch": 1, "loss": 0.3053289737701416, "learning_rate": 3.4415633098197136e-06, "seconds": 812.8961770839815, "supervised_tokens": 63384, "recovery_chunk": 16}
+{"step": 460, "epoch": 1, "loss": 0.1404287537863088, "learning_rate": 3.3511376246542115e-06, "seconds": 819.9856052089744, "supervised_tokens": 64035, "recovery_chunk": 16}
+{"recovery_saved_step": 464}
+
+COMMAND ["qos_ai_generalization_recovery_step.py", "--data", "curricula/generalization_20261019", "--experiment", "experiments/generalization_20261019_seed17", "--chunk-steps", "16"]
+{"step": 465, "epoch": 1, "loss": 0.37004866725520086, "learning_rate": 3.2618223244191283e-06, "seconds": 826.9814779589797, "supervised_tokens": 64762, "recovery_chunk": 16}
+{"step": 470, "epoch": 1, "loss": 0.11246911379007193, "learning_rate": 3.1736635611456846e-06, "seconds": 834.0063189169741, "supervised_tokens": 65466, "recovery_chunk": 16}
+{"step": 475, "epoch": 1, "loss": 0.1674685770815069, "learning_rate": 3.0867068892459944e-06, "seconds": 840.9965372919833, "supervised_tokens": 66208, "recovery_chunk": 16}
+{"step": 480, "epoch": 1, "loss": 0.15395427930473102, "learning_rate": 3.0009972419736654e-06, "seconds": 848.2499712089775, "supervised_tokens": 66916, "recovery_chunk": 16}
+{"recovery_saved_step": 480}
+
+COMMAND ["qos_ai_generalization_recovery_step.py", "--data", "curricula/generalization_20261019", "--experiment", "experiments/generalization_20261019_seed17", "--chunk-steps", "16"]
+{"step": 481, "epoch": 1, "loss": 0.11991708245995926, "learning_rate": 2.9840088644955957e-06, "seconds": 849.670970874984, "supervised_tokens": 67062, "recovery_chunk": 16}
+{"step": 485, "epoch": 1, "loss": 0.26241257077171687, "learning_rate": 2.9165789082053685e-06, "seconds": 855.2190794169874, "supervised_tokens": 67735, "recovery_chunk": 16}
+{"step": 490, "epoch": 1, "loss": 0.6202906649163429, "learning_rate": 2.8334955095553764e-06, "seconds": 862.2174642499886, "supervised_tokens": 68548, "recovery_chunk": 16}
+{"step": 495, "epoch": 1, "loss": 0.11293737195495866, "learning_rate": 2.7517899778349056e-06, "seconds": 869.3381753749854, "supervised_tokens": 69228, "recovery_chunk": 16}
+{"recovery_saved_step": 496}
+
+COMMAND ["qos_ai_generalization_recovery_step.py", "--data", "curricula/generalization_20261019", "--experiment", "experiments/generalization_20261019_seed17", "--chunk-steps", "16"]
+{"step": 497, "epoch": 1, "loss": 0.07078743836154108, "learning_rate": 2.719503049551062e-06, "seconds": 872.1585930409929, "supervised_tokens": 69411, "recovery_chunk": 16}
+{"step": 500, "epoch": 1, "loss": 0.14199478315270464, "learning_rate": 2.671504532867896e-06, "seconds": 876.3174936249852, "supervised_tokens": 69785, "recovery_chunk": 16}
+{"step": 505, "epoch": 1, "loss": 0.09103950799680223, "learning_rate": 2.5926806606746913e-06, "seconds": 883.4693739159848, "supervised_tokens": 70595, "recovery_chunk": 16}
+{"step": 510, "epoch": 1, "loss": 0.07315495324461427, "learning_rate": 2.5153590920349112e-06, "seconds": 890.4155416659924, "supervised_tokens": 71175, "recovery_chunk": 16}
+{"recovery_saved_step": 512}
+
+COMMAND ["qos_ai_generalization_recovery_step.py", "--data", "curricula/generalization_20261019", "--experiment", "experiments/generalization_20261019_seed17", "--chunk-steps", "16"]
+{"step": 513, "epoch": 1, "loss": 0.1432949701944987, "learning_rate": 2.469703910540164e-06, "seconds": 894.6780964159989, "supervised_tokens": 71669, "recovery_chunk": 16}
+{"step": 515, "epoch": 1, "loss": 0.15720577382329684, "learning_rate": 2.43957978144057e-06, "seconds": 897.4387814579968, "supervised_tokens": 71995, "recovery_chunk": 16}
+{"step": 520, "epoch": 1, "loss": 0.24741759065721855, "learning_rate": 2.3653818864503293e-06, "seconds": 905.5309919159918, "supervised_tokens": 72555, "recovery_chunk": 16}
+{"step": 525, "epoch": 1, "loss": 0.5898567325664017, "learning_rate": 2.292803747455559e-06, "seconds": 912.5307518739864, "supervised_tokens": 73280, "recovery_chunk": 16}
+{"recovery_saved_step": 528}
+
+COMMAND ["qos_ai_generalization_recovery_step.py", "--data", "curricula/generalization_20261019", "--experiment", "experiments/generalization_20261019_seed17", "--chunk-steps", "16"]
+{"step": 529, "epoch": 1, "loss": 0.10628752244843377, "learning_rate": 2.235932691489204e-06, "seconds": 918.4050156659941, "supervised_tokens": 73866, "recovery_chunk": 16}
+{"step": 530, "epoch": 1, "loss": 0.3236541063357622, "learning_rate": 2.221882867868638e-06, "seconds": 919.7654347909993, "supervised_tokens": 74061, "recovery_chunk": 16}
+{"step": 535, "epoch": 1, "loss": 0.1249689228680669, "learning_rate": 2.1526558947437737e-06, "seconds": 926.7779302069976, "supervised_tokens": 74529, "recovery_chunk": 16}
+{"step": 540, "epoch": 1, "loss": 0.3305359301359757, "learning_rate": 2.0851585998403005e-06, "seconds": 934.0501056659996, "supervised_tokens": 75212, "recovery_chunk": 16}
+{"recovery_saved_step": 544}
+
+COMMAND ["qos_ai_generalization_recovery_step.py", "--data", "curricula/generalization_20261019", "--experiment", "experiments/generalization_20261019_seed17", "--chunk-steps", "16"]
+{"step": 545, "epoch": 1, "loss": 0.17089092409288562, "learning_rate": 2.0194258611382898e-06, "seconds": 940.9339253330108, "supervised_tokens": 75995, "recovery_chunk": 16}
+{"step": 550, "epoch": 1, "loss": 0.12063964029376427, "learning_rate": 1.955491644816e-06, "seconds": 947.8658823330043, "supervised_tokens": 76679, "recovery_chunk": 16}
+{"step": 555, "epoch": 1, "loss": 0.14590054980957706, "learning_rate": 1.8933889876984751e-06, "seconds": 955.7984347080055, "supervised_tokens": 77553, "recovery_chunk": 16}
+{"step": 560, "epoch": 1, "loss": 0.0633536030848821, "learning_rate": 1.8331499801863834e-06, "seconds": 962.7966877910076, "supervised_tokens": 78220, "recovery_chunk": 16}
+{"recovery_saved_step": 560}
+
+COMMAND ["qos_ai_generalization_recovery_step.py", "--data", "curricula/generalization_20261019", "--experiment", "experiments/generalization_20261019_seed17", "--chunk-steps", "16"]
+{"step": 561, "epoch": 1, "loss": 0.10709554787838098, "learning_rate": 1.8213285729790927e-06, "seconds": 964.2179415830033, "supervised_tokens": 78385, "recovery_chunk": 16}
+{"step": 565, "epoch": 1, "loss": 0.1234196765082223, "learning_rate": 1.7748057496738913e-06, "seconds": 969.9112135830073, "supervised_tokens": 78978, "recovery_chunk": 16}
+{"step": 570, "epoch": 1, "loss": 0.09418635519724043, "learning_rate": 1.718386444464154e-06, "seconds": 976.8816405420075, "supervised_tokens": 79726, "recovery_chunk": 16}
+{"step": 575, "epoch": 1, "loss": 0.10716414913054435, "learning_rate": 1.6639212181907467e-06, "seconds": 983.882127667006, "supervised_tokens": 80389, "recovery_chunk": 16}
+{"recovery_saved_step": 576}
+
+COMMAND ["qos_ai_generalization_recovery_step.py", "--data", "curricula/generalization_20261019", "--experiment", "experiments/generalization_20261019_seed17", "--chunk-steps", "16"]
+{"step": 577, "epoch": 1, "loss": 0.21394049467110052, "learning_rate": 1.6426886082795678e-06, "seconds": 986.9634764579969, "supervised_tokens": 80583, "recovery_chunk": 16}
+Error: command buffer exited with error status.
+	The Metal Performance Shaders operations encoded on it may not have completed.
+	Error: 
+	(null)
+	Ignored (for causing prior/excessive GPU errors) (00000004:kIOGPUCommandBufferCallbackErrorSubmissionsIgnored)
+	<AGXG13GFamilyCommandBuffer: 0x7b63ae0000>
+    label = <none> 
+    device = <AGXG13GDevice: 0x104813a10>
+        name = Apple M1 
+    commandQueue = <AGXG13GFamilyCommandQueue: 0x104816210>
+        label = <none> 
+        device = <AGXG13GDevice: 0x104813a10>
+            name = Apple M1 
+    retainedReferences = 1
+Traceback (most recent call last):
+  File "/Users/jq/qos_ai_eval/qos_ai_generalization_recovery_step.py", line 77, in <module>
+    p=argparse.ArgumentParser();p.add_argument('--data',type=Path,required=True);p.add_argument('--experiment',type=Path,required=True);p.add_argument('--chunk-steps',type=int,default=16);main(p.parse_args())
+                                                                                                                                                                                            ~~~~^^^^^^^^^^^^^^^^
+  File "/Users/jq/qos_ai_eval/qos_ai_generalization_recovery_step.py", line 51, in main
+    step+=1;r=apply_update(model,optimizer,examples,group,settings,step,len(plan),parent['pad_id'],device)
+              ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jq/qos_ai_eval/qos_ai_generalization_recovery_step.py", line 23, in apply_update
+    if device_count.item()!=sum(sum(examples[i][1][1:]) for i in ids):raise ValueError('Device target count mismatch; recovery update rejected')
+                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Device target count mismatch; recovery update rejected
+
+COMMAND ["qos_ai_generalization_recovery_step.py", "--data", "curricula/generalization_20261019", "--experiment", "experiments/generalization_20261019_seed17", "--chunk-steps", "16"]
+{"step": 577, "epoch": 1, "loss": 0.21394049467110052, "learning_rate": 1.6426886082795678e-06, "seconds": 986.9573900830001, "supervised_tokens": 80583, "recovery_chunk": 16}
+{"step": 580, "epoch": 1, "loss": 0.13891121028929718, "learning_rate": 1.6114382147530545e-06, "seconds": 991.106039708, "supervised_tokens": 81056, "recovery_chunk": 16}
+{"step": 585, "epoch": 1, "loss": 0.13181144893169403, "learning_rate": 1.5609645537734364e-06, "seconds": 998.1141184159933, "supervised_tokens": 81775, "recovery_chunk": 16}
+{"step": 590, "epoch": 1, "loss": 0.4082196588101594, "learning_rate": 1.5125263165836606e-06, "seconds": 1005.2172449999925, "supervised_tokens": 82449, "recovery_chunk": 16}
+{"recovery_saved_step": 592}
+
+COMMAND ["qos_ai_generalization_recovery_step.py", "--data", "curricula/generalization_20261019", "--experiment", "experiments/generalization_20261019_seed17", "--chunk-steps", "16"]
+{"step": 593, "epoch": 1, "loss": 0.13417228451975577, "learning_rate": 1.484450834132347e-06, "seconds": 1009.4342106249969, "supervised_tokens": 82876, "recovery_chunk": 16}
+{"step": 595, "epoch": 1, "loss": 0.3184746512531364, "learning_rate": 1.4661485327478578e-06, "seconds": 1012.1829328330059, "supervised_tokens": 83110, "recovery_chunk": 16}
+{"step": 600, "epoch": 1, "loss": 0.28183547737672154, "learning_rate": 1.4218551671289557e-06, "seconds": 1019.4039917920018, "supervised_tokens": 83780, "recovery_chunk": 16}
+{"step": 605, "epoch": 1, "loss": 0.21711241814397997, "learning_rate": 1.3796691075052828e-06, "seconds": 1026.2560207080096, "supervised_tokens": 84478, "recovery_chunk": 16}
+{"recovery_saved_step": 608}
+
+COMMAND ["qos_ai_generalization_recovery_step.py", "--data", "curricula/generalization_20261019", "--experiment", "experiments/generalization_20261019_seed17", "--chunk-steps", "16"]
+{"step": 609, "epoch": 1, "loss": 0.2895777841632286, "learning_rate": 1.3474522058394158e-06, "seconds": 1031.8786333330063, "supervised_tokens": 84926, "recovery_chunk": 16}
+{"step": 610, "epoch": 1, "loss": 0.16841508121025273, "learning_rate": 1.3396121527437236e-06, "seconds": 1033.2290642080043, "supervised_tokens": 85090, "recovery_chunk": 16}
+{"step": 615, "epoch": 1, "loss": 0.09615257740020752, "learning_rate": 1.301705001535567e-06, "seconds": 1040.350833998993, "supervised_tokens": 85724, "recovery_chunk": 16}
+{"step": 620, "epoch": 1, "loss": 0.3593624248061069, "learning_rate": 1.2659672417008328e-06, "seconds": 1047.3659320409934, "supervised_tokens": 86510, "recovery_chunk": 16}
+{"recovery_saved_step": 624}
+
+COMMAND ["qos_ai_generalization_recovery_step.py", "--data", "curricula/generalization_20261019", "--experiment", "experiments/generalization_20261019_seed17", "--chunk-steps", "16"]
+{"step": 625, "epoch": 1, "loss": 0.26190878826638925, "learning_rate": 1.2324173400666304e-06, "seconds": 1054.6516899579874, "supervised_tokens": 87310, "recovery_chunk": 16}
+{"step": 630, "epoch": 1, "loss": 0.07790480719672309, "learning_rate": 1.2010726329247671e-06, "seconds": 1061.6144824169896, "supervised_tokens": 88115, "recovery_chunk": 16}
+{"step": 635, "epoch": 1, "loss": 0.18911962272707095, "learning_rate": 1.1719493170735381e-06, "seconds": 1068.6093199999887, "supervised_tokens": 88839, "recovery_chunk": 16}
+{"step": 640, "epoch": 1, "loss": 0.1457623058987647, "learning_rate": 1.145062441448332e-06, "seconds": 1075.726458457997, "supervised_tokens": 89582, "recovery_chunk": 16}
+{"recovery_saved_step": 640}
+
+COMMAND ["qos_ai_generalization_recovery_step.py", "--data", "curricula/generalization_20261019", "--experiment", "experiments/generalization_20261019_seed17", "--chunk-steps", "16"]
+{"step": 641, "epoch": 1, "loss": 0.2007943577849107, "learning_rate": 1.1399546821826218e-06, "seconds": 1077.1351327089797, "supervised_tokens": 89755, "recovery_chunk": 16}
+{"step": 645, "epoch": 1, "loss": 0.10612908056226827, "learning_rate": 1.1204258993453704e-06, "seconds": 1082.7057274589897, "supervised_tokens": 90392, "recovery_chunk": 16}
+{"step": 650, "epoch": 1, "loss": 0.34040239640882797, "learning_rate": 1.0980524212426044e-06, "seconds": 1089.836107333991, "supervised_tokens": 91100, "recovery_chunk": 16}
+{"step": 655, "epoch": 1, "loss": 0.13769718941221845, "learning_rate": 1.0779535682214746e-06, "seconds": 1096.842803541993, "supervised_tokens": 91725, "recovery_chunk": 16}
+{"recovery_saved_step": 656}
+
+COMMAND ["qos_ai_generalization_recovery_step.py", "--data", "curricula/generalization_20261019", "--experiment", "experiments/generalization_20261019_seed17", "--chunk-steps", "16"]
+{"step": 657, "epoch": 1, "loss": 0.156922561781747, "learning_rate": 1.0705532880539104e-06, "seconds": 1099.6573902089876, "supervised_tokens": 92099, "recovery_chunk": 16}
+{"step": 660, "epoch": 1, "loss": 0.16577378148617952, "learning_rate": 1.0601397259929359e-06, "seconds": 1104.0699242509872, "supervised_tokens": 92575, "recovery_chunk": 16}
+{"step": 665, "epoch": 1, "loss": 0.2937863625135998, "learning_rate": 1.0446200995308342e-06, "seconds": 1110.8980427089846, "supervised_tokens": 93236, "recovery_chunk": 16}
+{"step": 670, "epoch": 1, "loss": 0.11878475320750269, "learning_rate": 1.031402708315407e-06, "seconds": 1117.891352541992, "supervised_tokens": 93956, "recovery_chunk": 16}
+{"recovery_saved_step": 672}
+
+COMMAND ["qos_ai_generalization_recovery_step.py", "--data", "curricula/generalization_20261019", "--experiment", "experiments/generalization_20261019_seed17", "--chunk-steps", "16"]
+{"step": 673, "epoch": 1, "loss": 0.21973177821365827, "learning_rate": 1.0245802373180525e-06, "seconds": 1122.3626437919738, "supervised_tokens": 94339, "recovery_chunk": 16}
+{"step": 675, "epoch": 1, "loss": 0.17648679123827693, "learning_rate": 1.020494382189361e-06, "seconds": 1125.098469124976, "supervised_tokens": 94629, "recovery_chunk": 16}
+{"step": 680, "epoch": 1, "loss": 0.1865870071494061, "learning_rate": 1.0119007578286814e-06, "seconds": 1143.6034248749784, "supervised_tokens": 95369, "recovery_chunk": 16}
+{"step": 685, "epoch": 1, "loss": 0.3673388978354951, "learning_rate": 1.005626275829983e-06, "seconds": 1150.769541749978, "supervised_tokens": 96041, "recovery_chunk": 16}
+Error: command buffer exited with error status.
+	The Metal Performance Shaders operations encoded on it may not have completed.
+	Error: 
+	(null)
+	Ignored (for causing prior/excessive GPU errors) (00000004:kIOGPUCommandBufferCallbackErrorSubmissionsIgnored)
+	<AGXG13GFamilyCommandBuffer: 0x770e4c4000>
+    label = <none> 
+    device = <AGXG13GDevice: 0x1066d5a20>
+        name = Apple M1 
+    commandQueue = <AGXG13GFamilyCommandQueue: 0x1066d8220>
+        label = <none> 
+        device = <AGXG13GDevice: 0x1066d5a20>
+            name = Apple M1 
+    retainedReferences = 1
+Traceback (most recent call last):
+  File "/Users/jq/qos_ai_eval/qos_ai_generalization_recovery_step.py", line 77, in <module>
+    p=argparse.ArgumentParser();p.add_argument('--data',type=Path,required=True);p.add_argument('--experiment',type=Path,required=True);p.add_argument('--chunk-steps',type=int,default=16);main(p.parse_args())
+                                                                                                                                                                                            ~~~~^^^^^^^^^^^^^^^^
+  File "/Users/jq/qos_ai_eval/qos_ai_generalization_recovery_step.py", line 51, in main
+    step+=1;r=apply_update(model,optimizer,examples,group,settings,step,len(plan),parent['pad_id'],device)
+              ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jq/qos_ai_eval/qos_ai_generalization_recovery_step.py", line 23, in apply_update
+    if device_count.item()!=sum(sum(examples[i][1][1:]) for i in ids):raise ValueError('Device target count mismatch; recovery update rejected')
+                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Device target count mismatch; recovery update rejected
+
+COMMAND ["qos_ai_generalization_recovery_step.py", "--data", "curricula/generalization_20261019", "--experiment", "experiments/generalization_20261019_seed17", "--chunk-steps", "16"]
+{"step": 673, "epoch": 1, "loss": 0.21973177821365827, "learning_rate": 1.0245802373180525e-06, "seconds": 1122.3617405839905, "supervised_tokens": 94339, "recovery_chunk": 16}
+{"step": 675, "epoch": 1, "loss": 0.17648679123827693, "learning_rate": 1.020494382189361e-06, "seconds": 1125.1241303749848, "supervised_tokens": 94629, "recovery_chunk": 16}
+{"step": 680, "epoch": 1, "loss": 0.18643301984538202, "learning_rate": 1.0119007578286814e-06, "seconds": 1132.1226660419925, "supervised_tokens": 95369, "recovery_chunk": 16}
+{"step": 685, "epoch": 1, "loss": 0.36842726030920303, "learning_rate": 1.005626275829983e-06, "seconds": 1140.3644350839895, "supervised_tokens": 96041, "recovery_chunk": 16}
+{"recovery_saved_step": 688}
+
+COMMAND ["qos_ai_generalization_recovery_step.py", "--data", "curricula/generalization_20261019", "--experiment", "experiments/generalization_20261019_seed17", "--chunk-steps", "16"]
+{"step": 689, "epoch": 1, "loss": 0.19159363508224486, "learning_rate": 1.002278691816582e-06, "seconds": 1145.9415987919929, "supervised_tokens": 96628, "recovery_chunk": 16}
+{"step": 690, "epoch": 1, "loss": 0.33113638254312366, "learning_rate": 1.0016741784159118e-06, "seconds": 1147.2888149999926, "supervised_tokens": 96654, "recovery_chunk": 16}
+{"step": 695, "epoch": 1, "loss": 0.3878216994436164, "learning_rate": 1.000046507759788e-06, "seconds": 1154.2829353339912, "supervised_tokens": 97544, "recovery_chunk": 16}
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+  "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+  "data_sha256": "65f6bc6f624f5c44986754ed0bf0117e7871ae9dd8bbfc52c9d261e15dca51ab",
+  "split_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 1,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 60.0,
+  "seed": 17,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 2784,
+  "training_code_sha256": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+  "answer_tokens": 97693,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 192,
+  "pad_multiple": 32,
+  "mps_cache_interval": 12,
+  "segment_steps": 48,
+  "optimizer_plan_hash": "88cc33141eb203c8d5a674aaf706348547a23d5f684f91e057732f9c5bdc9f57",
+  "resume_code_sha256": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "fixed_padding": true,
+  "padding_width": 192,
+  "selection_sha256": "cb79cfae005db03d66cf3cb3eda232e6f0ad8c41b1fc308b80359cecaf6afac4",
+  "selection_hash": "0231f9038db3302da8b8f1d64f4b6a6c0ad298b98faaa032fbb78e1c82c68d12",
+  "selection_policy": "2400 distinct broader cases with scalar-verified traces plus 384 replay; one epoch, identical data for two seeds",
+  "optimizer_steps": 696,
+  "epochs_completed": 1,
+  "examples_seen": 2784,
+  "supervised_tokens": 97693,
+  "initial_training_loss": 2.146795089423076,
+  "final_training_loss": null,
+  "final_training_loss_deferred": true,
+  "elapsed_seconds": 1155.9359636249865,
+  "budget_stop": false,
+  "segments_completed": 28,
+  "resumed_final_segment_from_step": 688,
+  "recovery_code_sha256": "82de15255949a490ec814ae6e5643292073f682d1ccc7ace827b8068195ed0a9",
+  "recovery_operational_chunk_steps": 16,
+  "checkpoint_sha256": "ce30025d311c210b68d4f323f4a3c5a23d78904ed9d1e27bdd1ea67350e2d1cf"
+}

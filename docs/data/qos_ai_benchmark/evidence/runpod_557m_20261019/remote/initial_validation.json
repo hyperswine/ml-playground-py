@@ -1,0 +1,12 @@
+{
+  "english": {
+    "cross_entropy": 11.401735054285561,
+    "known_target_tokens": 8183,
+    "windows": 16
+  },
+  "python": {
+    "cross_entropy": 11.346119701862335,
+    "known_target_tokens": 8192,
+    "windows": 16
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "checkpoint_sha256": "8290a83c43a5555dbe58ea1c79610df34c7fd7822bef97607c8c04ba7a74f58b",
+  "diagnostic_hash": "97c4f5c14160362307c0a51b2693ddbb100345d45811f4d355913cf56bcd24df",
+  "diagnostic_sha256": "5328ff3c3cf01b132322349ef1830959b325a302926b437c78d32edaef8d59ce",
+  "seed": 7,
+  "temperature": 0,
+  "top_k": 20,
+  "no_repeat": 3,
+  "max_new_tokens": 128,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "machine": "arm64",
+  "torch": "2.13.0",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "generation_code_sha256": "e4e1cf111bc85249a721df58d942de5ebbddc92d857ded48bafa5e6ccc28d348",
+  "ancestry": "legacy_or_unknown",
+  "scope": "auxiliary familiar-source novel-input diagnostic; no clean legacy pretraining exposure claim"
+}

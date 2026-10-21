@@ -1,0 +1,17 @@
+{
+  "seeds": [
+    7,
+    17
+  ],
+  "epochs": 1,
+  "learning_rate": 1e-05,
+  "batch_size": 2,
+  "gradient_accumulation": 2,
+  "segment_steps": 48,
+  "intermediate_step": 336,
+  "final_step": 696,
+  "examples": 2784,
+  "max_training_minutes_per_seed": 60,
+  "checkpoint_selection": "report both seeds and fixed intermediate/final checkpoints; no adaptive choice from new diagnostic",
+  "scope": "coverage and trace curriculum changed together; this is not a trace-only causal ablation; all checkpoints retain legacy_or_unknown ancestry"
+}

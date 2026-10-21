@@ -1,0 +1,16 @@
+{
+  "verified_data_hash": "358df61e8915a83afa069bc2be5a0445a04b0032536e12f13fde8b4b2e85b346",
+  "benchmark_data_hash": "6eb10d79e8f084c31601c923494b2e057ef56d8672c3e5170654924ad5fc0c4e",
+  "host": "JQs-Mac-mini.local",
+  "machine": "arm64",
+  "fpr_sha256": "c41c6ab9377e59be4d9bccedf1d6dd33f188bad0453046660650c6982fbc2f36",
+  "passed": 2972,
+  "total": 2972,
+  "distinct_executions": 1037
+}
+{
+  "complete_calculation_contracts": 576,
+  "contrast_pairs": 48,
+  "prepared_examples": 768,
+  "diagnostic_bytes_preserved": true
+}

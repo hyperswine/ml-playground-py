@@ -1,0 +1,128 @@
+[
+  {
+    "id": "map_sum-p0",
+    "answer": "The `pI` function in Sol performs a single expression on the input list `xs` by first checking if the list is empty; if so, it returns the current list `xs` unchanged. Otherwise, it extracts the head element `x` and recursively calls itself with the tail `x` and the result of `pI r x`. The `pI` function then extracts the second element `x` and the remainder `r` from the tail `r` to produce the result `r`.\n\n```sol\npI 5 3 = x :: r = xs; r.\npI 5 3 = x :: r = xs; r.\n```",
+    "finished": true,
+    "tokens": 141,
+    "severe_loop": false
+  },
+  {
+    "id": "map_sum-p1",
+    "answer": "The rule defines `print` as a function that outputs the string \"one\" to the standard output stream. In Sol, this is expressed as: `print (x)`.",
+    "finished": true,
+    "tokens": 36,
+    "severe_loop": false
+  },
+  {
+    "id": "map_sum-p2",
+    "answer": "The `lZeros3` function in Sol performs a division operation by taking the second argument `x` and the first argument `y` and returning the result. In Sol, this is expressed as:\n\n```sol\nlZeros3 x y z | y == 0 = lZeros 3.\nlZeros3 x y z = lZeros 3 :: lZeros3 (x + y).\n```",
+    "finished": true,
+    "tokens": 91,
+    "severe_loop": false
+  },
+  {
+    "id": "filter_sum-p0",
+    "answer": "The `print` function outputs a string to the standard output. In Sol, this is achieved by calling the `print` function with the argument `1` and the result of `print (x + 1)`.\n\n```sol\nprint 1\nprint 2\nprint 3\n```",
+    "finished": true,
+    "tokens": 62,
+    "severe_loop": false
+  },
+  {
+    "id": "filter_sum-p1",
+    "answer": "The rule defines a function `add` that takes two arguments and returns their sum. In Sol, this is expressed as:\n```sol\nfn add(x, y) {\n    return x + y;\n}\n```",
+    "finished": true,
+    "tokens": 47,
+    "severe_loop": false
+  },
+  {
+    "id": "filter_sum-p2",
+    "answer": "The `add` function in Sol performs a logical operation on a list of values, returning the result of the first argument if the list is empty, or recursively adding the head element to the result of the tail if the list is non-empty. In Sol, this is expressed as:\n\n```sol\nadd xs ys = case xs of\n  [] -> ys\n| x :: r -> add r (x + 1) r.\n```",
+    "finished": true,
+    "tokens": 91,
+    "severe_loop": false
+  },
+  {
+    "id": "clamp_sum-p0",
+    "answer": "The `pI` function in Sol performs a conditional check on the result of `pI` to determine if the current index `i` is within bounds. If `i` is greater than or equal to `lim`, the function returns the current index `i` immediately. Otherwise, it calculates the next index `i` using `lim - i` and recursively calls itself with `i + 1`.\n\n```sol\npI 0 = 0.\npI n = 1 + pI (n - 1).\n```",
+    "finished": true,
+    "tokens": 114,
+    "severe_loop": false
+  },
+  {
+    "id": "clamp_sum-p1",
+    "answer": "The rule defines a function `f` that takes two arguments `a` and `b` and returns their sum. In Sol, this is expressed as:\n```sol\nf x y = case x of True -> (case y of True -> 10 | False -> 0) | False -> 10\n```",
+    "finished": true,
+    "tokens": 68,
+    "severe_loop": false
+  },
+  {
+    "id": "clamp_sum-p2",
+    "answer": "The `clamp` function in Sol performs a conditional operation on the lower bound of the range, returning the lower bound if the lower bound is less than or equal to the upper bound, or the original value otherwise. In Sol, this is expressed as:\n```sol\nfn clamp(x: Int) -> Int {\n    if x < 0 { return 0 }\n    else if x < 10 { return 10 }\n    else { return 0 }\n}\n```",
+    "finished": true,
+    "tokens": 103,
+    "severe_loop": false
+  },
+  {
+    "id": "signed_branch-p0",
+    "answer": "The `pI` function in Sol performs a case analysis on the input `xs`. If `xs` is positive, it returns a tuple containing the result of `pI` applied to `x` and `y`; otherwise, it returns a tuple with the result of `pI` applied to `x` and `y`. The `pI` function is defined as `pI a b = case a > b of True -> pI a b | False -> (a, b)`.\n\n```sol\npI a b = case a > b of True -> pI a b | False -> (a, b)\n```",
+    "finished": true,
+    "tokens": 134,
+    "severe_loop": true
+  },
+  {
+    "id": "signed_branch-p1",
+    "answer": "The rule defines a function `f` that takes two arguments `a` and `b` and returns their sum. In Sol, this is expressed as:\n\n```sol\nf x y = case x of True -> (case y of True -> 1 - y | False -> 0) | False -> 1.\n```",
+    "finished": true,
+    "tokens": 69,
+    "severe_loop": false
+  },
+  {
+    "id": "signed_branch-p2",
+    "answer": "The `sum` function recursively sums integers from 1 to k by adding each element to an accumulator until k is less than or equal to zero. In Sol, this is expressed as:\n\n```sol\n> print \"sum {sum 1 2 3 4 5 6} {sum 2 3 4 5 6} {sum 3 4 5 6} {sum 5 5 6} {sum 6 6} {sum 7 6} {sum 8 6} {sum 9 6} {sum 10 6} {sum 11 6} {sum 12 6} {sum 13 6} {sum 14 6} {sum 15 6} {sum 16 6} {sum 17 6} {sum 18 6} {sum 19",
+    "finished": false,
+    "tokens": 200,
+    "severe_loop": true
+  },
+  {
+    "id": "filter_map_sum-p0",
+    "answer": "The `print` function outputs a string to the standard output. In Sol, this is expressed as:\n\n```sol\nprint \"Hello, World!\"\nprint \"World!\"\nprint \"World!\"\nprint \"World!\"\nprint \"World!\"\nprint \"World!\"\nprint \"World!\"\nprint \"World!\"\nprint \"World!\"\nprint \"World!\"\nprint \"World!\"\nprint \"World!\"\nprint \"World!\"\nprint \"World!\"\nprint \"World!\"\nprint \"World!\"\nprint \"World!\"\nprint \"World!\"\nprint \"World!\"\nprint \"World!\"\nprint \"World!\"\nprint \"World!\"\nprint \"World!\"\nprint \"World!\"\nprint \"World!\"\nprint \"World!\"\nprint \"World!\"\nprint \"World!\"\nprint \"World!\"\nprint \"World!\"\nprint \"World!\"\nprint \"World!\"\nprint \"World!\"\nprint \"World!\"\nprint \"World",
+    "finished": false,
+    "tokens": 200,
+    "severe_loop": true
+  },
+  {
+    "id": "filter_map_sum-p1",
+    "answer": "The rule defines a function `f` that takes two arguments `a` and `b` and returns their sum. In Sol, this is expressed as:\n```sol\nf x y = case x of True -> (case y of True -> 1 - y | False -> 0) | False -> 1.\n```",
+    "finished": true,
+    "tokens": 69,
+    "severe_loop": false
+  },
+  {
+    "id": "filter_map_sum-p2",
+    "answer": "The `keep` function in Sol performs a left-associative operation on a list of values, returning a new list with the elements in the original order. In Sol, this is expressed as:\n\n```sol\nkeep xs = case xs of\n    [] -> []\n  | x :: r -> print (keep x)\n```",
+    "finished": true,
+    "tokens": 69,
+    "severe_loop": false
+  },
+  {
+    "id": "branch_max-p0",
+    "answer": "The `print` function outputs a string to the standard output. In Sol, this is expressed as:\n\n```sol\nprint \"hello from a Sol expression\"\n```",
+    "finished": true,
+    "tokens": 35,
+    "severe_loop": false
+  },
+  {
+    "id": "branch_max-p1",
+    "answer": "The rule defines a function `f` that takes two arguments `a` and `b` and returns their sum. If `a` is positive, the function returns the integer 1. If `a` is negative, it returns the integer 0. The following Sol code demonstrates this by defining `f a b = a + b` and then using `case` to print the result:\n\n```sol\nf x y = case x > 0 of True -> 1.\nmain = print (str (f True True)).\n```",
+    "finished": true,
+    "tokens": 113,
+    "severe_loop": false
+  },
+  {
+    "id": "branch_max-p2",
+    "answer": "The expression `k * 5` returns the integer 5. The expression `5 * 5` returns the integer 15. The expression `5 * 5` returns the integer 10. The expression `5 * 5` returns the integer 10.\n\n```sol\nk = 5\nresult = k * 5\nprint result\n```",
+    "finished": true,
+    "tokens": 79,
+    "severe_loop": true
+  }
+]

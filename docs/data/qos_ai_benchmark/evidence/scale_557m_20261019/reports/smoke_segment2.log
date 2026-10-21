@@ -1,0 +1,26 @@
+{"phase": "initial", "step": 1, "validation": {"loss": 11.340697765350342, "known_target_tokens": 256, "scope": "four fixed internal-validation windows; infrastructure diagnostic only"}, "host": "JQs-Mac-mini.local", "config": {"vocabulary_size": 65536, "context_length": 512, "embedding_size": 1280, "head_count": 20, "layer_count": 24}, "unique_parameters": 556526080, "fp32_weight_bytes": 2226104320, "fp32_sgd_weights_gradients_bytes": 4452208640, "fp32_adam_weights_gradients_moments_bytes": 8904417280, "memory_estimate_excludes": "activations, logits, kernel workspaces, allocator and other processes", "initialization": "random weights; existing tokenizer mapping only; no teacher or 168M weights"}
+{"step": 2, "loss": 11.30088996887207, "known_target_tokens": 64, "tokens": 64, "learning_rate": 0.0001, "gradient_norm": 20.201337814331055, "elapsed_segment_seconds": 1.9037272500136169}
+{
+  "step": 2,
+  "complete": true,
+  "segment_start_step": 1,
+  "parameter_count": 556526080,
+  "initial_validation": {
+    "loss": 11.340697765350342,
+    "known_target_tokens": 256,
+    "scope": "four fixed internal-validation windows; infrastructure diagnostic only"
+  },
+  "final_validation": {
+    "loss": 11.340590715408325,
+    "known_target_tokens": 256,
+    "scope": "four fixed internal-validation windows; infrastructure diagnostic only"
+  },
+  "total_tokens": 128,
+  "known_target_tokens": 128,
+  "segment_seconds": 4.309414291012217,
+  "checkpoint_sha256": "a37ead18408207a93af76dc6aaf870fa705c42c327d98ae833fe9eeea9c6fb14",
+  "settings_hash": "13355bcb558dcd69d1d52e8124723caadeb518be1e85cb2071d298ec706319c7",
+  "scope": "infrastructure pilot; not a capability comparison",
+  "mps_allocated_bytes": 2226104320,
+  "mps_driver_bytes": 3261759488
+}

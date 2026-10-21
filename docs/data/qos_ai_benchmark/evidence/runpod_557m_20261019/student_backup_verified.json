@@ -1,0 +1,17 @@
+{
+  "verified_at_utc": "2026-10-19T04:57:29.602335+00:00",
+  "checkpoint_sha256": "430915b08ee981d6efa32bca2aafdeeb4d33d4b18c093b82c16373ea0b7b0a63",
+  "bytes": 2226707862,
+  "parameter_count": 556526080,
+  "native_step": 56234,
+  "config": {
+    "vocabulary_size": 65536,
+    "context_length": 512,
+    "embedding_size": 1280,
+    "head_count": 20,
+    "layer_count": 24
+  },
+  "tied_embeddings_verified": true,
+  "vocabulary_mapping_verified": true,
+  "parent_pretraining_sha256": "f7c9d03107c7532608fc6dca81120a62753c2e06e0f18f22193e9a5b1579fdc7"
+}

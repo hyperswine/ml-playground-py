@@ -1,0 +1,99 @@
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/verified_expanded_sft2_retry/student.pt",
+  "parent_sha256": "0707da88d15ea674ebbf1395ad948e9dad5438a9f308e7611b07fde53e80d83d",
+  "data_sha256": "14ee569fb0ba7006481716ae7c32b7a8d3ab15b397c2ccc38600dc0e150b3de1",
+  "split_hash": "2d2878212aae9f37cecb5feb40c74f7c3aae2c7ebef96869db36a4d142925f73",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 2,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 3e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 10.0,
+  "seed": 7,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 598,
+  "training_code_sha256": "8fa40decc646acdf167148398cdd067ba0eca2f880f02fe287404fe2e803d420",
+  "answer_tokens": 24090,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 185,
+  "pad_multiple": 32,
+  "mps_cache_interval": 20,
+  "selection_sha256": "ba247481e0d5439e45c59e5f362535f805e2b2a24c7f2ee18508d28c4b9e42fb",
+  "selection_hash": "d7ddbaa1b639e177d45ae095b02321bd2771d9f7e7ebe3fd64b02e96d7fa1ce8",
+  "selection_policy": "all new input-contract examples plus all previous source-only facts; omit older program templates from this focused pass"
+}
+{"step": 1, "epoch": 1, "loss": 2.161323500842583, "learning_rate": 6e-06, "seconds": 26.974600582849234, "supervised_tokens": 164}
+{"step": 5, "epoch": 1, "loss": 0.8665898640950521, "learning_rate": 3e-05, "seconds": 31.853670832933858, "supervised_tokens": 732}
+{"step": 10, "epoch": 1, "loss": 0.6688592396085224, "learning_rate": 2.9980866391636288e-05, "seconds": 38.26320541696623, "supervised_tokens": 1591}
+{"step": 15, "epoch": 1, "loss": 0.13746683132013626, "learning_rate": 2.9923519802836853e-05, "seconds": 44.528966791927814, "supervised_tokens": 2328}
+{"step": 20, "epoch": 1, "loss": 0.15302340811993703, "learning_rate": 2.9828122788738154e-05, "seconds": 50.992188832955435, "supervised_tokens": 3100}
+{"step": 25, "epoch": 1, "loss": 0.32097191210614134, "learning_rate": 2.96949457625412e-05, "seconds": 57.07766612479463, "supervised_tokens": 3880}
+{"step": 30, "epoch": 1, "loss": 0.08625655876178491, "learning_rate": 2.9524366228995966e-05, "seconds": 63.17059841682203, "supervised_tokens": 4674}
+{"step": 35, "epoch": 1, "loss": 0.011350888138016066, "learning_rate": 2.9316867714323146e-05, "seconds": 69.23877424979582, "supervised_tokens": 5404}
+{"step": 40, "epoch": 1, "loss": 0.23375378608703612, "learning_rate": 2.907303839560657e-05, "seconds": 75.83784795785323, "supervised_tokens": 6273}
+{"step": 45, "epoch": 1, "loss": 0.07949198866790196, "learning_rate": 2.879356943354133e-05, "seconds": 82.11726762494072, "supervised_tokens": 7084}
+{"step": 50, "epoch": 1, "loss": 0.06980076193172026, "learning_rate": 2.8479253013263714e-05, "seconds": 88.35776233300567, "supervised_tokens": 7985}
+{"step": 55, "epoch": 1, "loss": 0.08331292402659747, "learning_rate": 2.8130980098816382e-05, "seconds": 94.84254666697234, "supervised_tokens": 8812}
+{"step": 60, "epoch": 1, "loss": 0.0038137771638042956, "learning_rate": 2.774973790761395e-05, "seconds": 101.43676658300683, "supervised_tokens": 9714}
+{"step": 65, "epoch": 1, "loss": 0.1648366634782992, "learning_rate": 2.733660711206801e-05, "seconds": 107.68674883292988, "supervised_tokens": 10418}
+{"step": 70, "epoch": 1, "loss": 0.045336761967889196, "learning_rate": 2.6892758776303734e-05, "seconds": 114.0390039999038, "supervised_tokens": 11255}
+{"step": 75, "epoch": 1, "loss": 0.05953421098429982, "learning_rate": 2.6419451036651406e-05, "seconds": 120.34483987488784, "supervised_tokens": 12028}
+{"step": 80, "epoch": 1, "loss": 0.047117721212321315, "learning_rate": 2.59180255353223e-05, "seconds": 126.92734179180115, "supervised_tokens": 12881}
+{"step": 85, "epoch": 1, "loss": 0.04471680415528161, "learning_rate": 2.5389903617378026e-05, "seconds": 132.99793091695756, "supervised_tokens": 13608}
+{"step": 90, "epoch": 1, "loss": 0.0455567202010712, "learning_rate": 2.4836582301773593e-05, "seconds": 139.186217749957, "supervised_tokens": 14431}
+{"step": 95, "epoch": 1, "loss": 0.0015864160854414285, "learning_rate": 2.425963003789449e-05, "seconds": 145.49148841691203, "supervised_tokens": 15199}
+{"step": 100, "epoch": 1, "loss": 0.039958971611996914, "learning_rate": 2.3660682259616523e-05, "seconds": 152.03271120786667, "supervised_tokens": 16022}
+{"step": 105, "epoch": 1, "loss": 0.00604002375702758, "learning_rate": 2.304143674949078e-05, "seconds": 158.14987966697663, "supervised_tokens": 16792}
+{"step": 110, "epoch": 1, "loss": 0.012742319660729142, "learning_rate": 2.240364882619455e-05, "seconds": 164.62312616687268, "supervised_tokens": 17655}
+{"step": 115, "epoch": 1, "loss": 0.16776753071718994, "learning_rate": 2.174912636888983e-05, "seconds": 170.85767083289102, "supervised_tokens": 18468}
+{"step": 120, "epoch": 1, "loss": 0.04254369472348413, "learning_rate": 2.107972469259341e-05, "seconds": 177.58217683294788, "supervised_tokens": 19367}
+{"step": 125, "epoch": 1, "loss": 0.019167261072463054, "learning_rate": 2.0397341289084885e-05, "seconds": 183.73957137484103, "supervised_tokens": 20155}
+{"step": 130, "epoch": 1, "loss": 0.08301385075208687, "learning_rate": 1.970391044826005e-05, "seconds": 190.18019362492487, "supervised_tokens": 21018}
+{"step": 135, "epoch": 1, "loss": 0.039483562759731125, "learning_rate": 1.9001397775176045e-05, "seconds": 196.5080935829319, "supervised_tokens": 21791}
+{"step": 140, "epoch": 1, "loss": 0.051172669104167394, "learning_rate": 1.8291794618330247e-05, "seconds": 202.98202441679314, "supervised_tokens": 22603}
+{"step": 145, "epoch": 1, "loss": 0.03777546696848683, "learning_rate": 1.7577112424966622e-05, "seconds": 209.2142185419798, "supervised_tokens": 23403}
+{"step": 150, "epoch": 1, "loss": 0.03453637872423444, "learning_rate": 1.6859377039409963e-05, "seconds": 215.31218462483957, "supervised_tokens": 24090}
+{"step": 155, "epoch": 2, "loss": 0.015864474127689997, "learning_rate": 1.6140622960590043e-05, "seconds": 221.36049199989066, "supervised_tokens": 24859}
+{"step": 160, "epoch": 2, "loss": 0.004695287449606534, "learning_rate": 1.5422887575033377e-05, "seconds": 227.96177929197438, "supervised_tokens": 25662}
+{"step": 165, "epoch": 2, "loss": 0.001295293907861452, "learning_rate": 1.4708205381669754e-05, "seconds": 234.12661537481472, "supervised_tokens": 26431}
+{"step": 170, "epoch": 2, "loss": 0.007209565381557621, "learning_rate": 1.399860222482396e-05, "seconds": 240.4829378328286, "supervised_tokens": 27328}
+{"step": 175, "epoch": 2, "loss": 0.019210521732607195, "learning_rate": 1.3296089551739948e-05, "seconds": 246.9559548748657, "supervised_tokens": 28158}
+{"step": 180, "epoch": 2, "loss": 0.0015666935106982355, "learning_rate": 1.260265871091512e-05, "seconds": 253.31663133297116, "supervised_tokens": 28922}
+{"step": 185, "epoch": 2, "loss": 0.007345068584946753, "learning_rate": 1.1920275307406591e-05, "seconds": 259.4766193749383, "supervised_tokens": 29663}
+{"step": 190, "epoch": 2, "loss": 0.024146898133414134, "learning_rate": 1.1250873631110172e-05, "seconds": 265.80369783286005, "supervised_tokens": 30475}
+{"step": 195, "epoch": 2, "loss": 0.004897769410293419, "learning_rate": 1.0596351173805453e-05, "seconds": 272.5436346249189, "supervised_tokens": 31254}
+{"step": 200, "epoch": 2, "loss": 0.002366695747089883, "learning_rate": 9.958563250509224e-06, "seconds": 278.86509691691026, "supervised_tokens": 32065}
+{"step": 205, "epoch": 2, "loss": 0.008963629375306927, "learning_rate": 9.339317740383478e-06, "seconds": 285.9150899169035, "supervised_tokens": 32859}
+{"step": 210, "epoch": 2, "loss": 0.015452002301628206, "learning_rate": 8.740369962105508e-06, "seconds": 292.29796974989586, "supervised_tokens": 33664}
+{"step": 215, "epoch": 2, "loss": 0.0067109256619360385, "learning_rate": 8.163417698226411e-06, "seconds": 298.6294569999445, "supervised_tokens": 34498}
+{"step": 220, "epoch": 2, "loss": 0.006872426814983546, "learning_rate": 7.61009638262198e-06, "seconds": 305.27162716700695, "supervised_tokens": 35421}
+Error: command buffer exited with error status.
+	The Metal Performance Shaders operations encoded on it may not have completed.
+	Error: 
+	(null)
+	Ignored (for causing prior/excessive GPU errors) (00000004:kIOGPUCommandBufferCallbackErrorSubmissionsIgnored)
+	<AGXG13GFamilyCommandBuffer: 0x7ae4e88000>
+    label = <none> 
+    device = <AGXG13GDevice: 0x10468e6b0>
+        name = Apple M1 
+    commandQueue = <AGXG13GFamilyCommandQueue: 0x1046911a0>
+        label = <none> 
+        device = <AGXG13GDevice: 0x10468e6b0>
+            name = Apple M1 
+    retainedReferences = 1
+Traceback (most recent call last):
+  File "/Users/jq/qos_ai_eval/qos_ai_finetune.py", line 241, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jq/qos_ai_eval/qos_ai_finetune.py", line 237, in main
+    fine_tune(p.parse_args())
+    ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/jq/qos_ai_eval/qos_ai_finetune.py", line 177, in fine_tune
+    raise ValueError('Device target count mismatch; no checkpoint saved')
+ValueError: Device target count mismatch; no checkpoint saved

@@ -1,0 +1,111 @@
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/verified_sft5/student.pt",
+  "parent_sha256": "f12076f64ad8c04336ddfca35e0ccc828e86ee4cd23608b0f0e026cd11eb107f",
+  "data_sha256": "3ff36819709183239290968e5c5dfdeedf0cb7e38a70d81c017a6926eaae0ff6",
+  "split_hash": "10b314ad4e484922399e1a1b3980763786065da32838d501ceeb60edd69094b0",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 2,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 3e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 10.0,
+  "seed": 7,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 664,
+  "training_code_sha256": "737231390a4558d3ef75c982ae2ffcca10937b0f6c882e50708d6f8d789ff460",
+  "answer_tokens": 16514,
+  "unknown_answer_tokens_skipped": 3,
+  "longest_example": 166
+}
+{"step": 1, "epoch": 1, "loss": 2.127600008553832, "learning_rate": 6e-06, "seconds": 26.453846332849935, "supervised_tokens": 137}
+{"step": 5, "epoch": 1, "loss": 0.6767202558971587, "learning_rate": 3e-05, "seconds": 31.69569724984467, "supervised_tokens": 609}
+{"step": 10, "epoch": 1, "loss": 0.8906348322478819, "learning_rate": 2.9984427278806574e-05, "seconds": 37.752442416967824, "supervised_tokens": 1063}
+{"step": 15, "epoch": 1, "loss": 1.0966979229088984, "learning_rate": 2.993774504258116e-05, "seconds": 43.538182666990906, "supervised_tokens": 1541}
+{"step": 20, "epoch": 1, "loss": 0.5126407807131848, "learning_rate": 2.986006099050146e-05, "seconds": 49.38063620799221, "supervised_tokens": 2107}
+{"step": 25, "epoch": 1, "loss": 0.5745315394125694, "learning_rate": 2.9751554345098457e-05, "seconds": 55.18129829200916, "supervised_tokens": 2601}
+{"step": 30, "epoch": 1, "loss": 0.8809298238446636, "learning_rate": 2.9612475438777564e-05, "seconds": 60.99851454189047, "supervised_tokens": 3088}
+{"step": 35, "epoch": 1, "loss": 0.6961149165504857, "learning_rate": 2.9443145136284266e-05, "seconds": 66.88967670802958, "supervised_tokens": 3482}
+{"step": 40, "epoch": 1, "loss": 0.3944002319784725, "learning_rate": 2.924395409444676e-05, "seconds": 72.66496224980801, "supervised_tokens": 3914}
+{"step": 45, "epoch": 1, "loss": 0.12796665041634206, "learning_rate": 2.9015361860903376e-05, "seconds": 78.39047699980438, "supervised_tokens": 4438}
+{"step": 50, "epoch": 1, "loss": 0.204762864821028, "learning_rate": 2.8757895813894112e-05, "seconds": 84.62673991685733, "supervised_tokens": 4965}
+{"step": 55, "epoch": 1, "loss": 0.28895221539397736, "learning_rate": 2.8472149945562207e-05, "seconds": 90.24691866687499, "supervised_tokens": 5450}
+{"step": 60, "epoch": 1, "loss": 0.30934773958646333, "learning_rate": 2.8158783491572795e-05, "seconds": 95.86864437488839, "supervised_tokens": 5878}
+{"step": 65, "epoch": 1, "loss": 0.08917747571216367, "learning_rate": 2.781851941021023e-05, "seconds": 101.54103933298029, "supervised_tokens": 6368}
+{"step": 70, "epoch": 1, "loss": 0.12613930613906296, "learning_rate": 2.7452142714462834e-05, "seconds": 107.09796949988231, "supervised_tokens": 6810}
+{"step": 75, "epoch": 1, "loss": 0.11196751215241173, "learning_rate": 2.706049866094315e-05, "seconds": 112.95137074985541, "supervised_tokens": 7404}
+{"step": 80, "epoch": 1, "loss": 0.34512046531394674, "learning_rate": 2.664449079982192e-05, "seconds": 118.59072170802392, "supervised_tokens": 7850}
+{"step": 85, "epoch": 1, "loss": 0.3822321424297258, "learning_rate": 2.6205078890274786e-05, "seconds": 123.96797320782207, "supervised_tokens": 8152}
+{"step": 90, "epoch": 1, "loss": 0.3329504086421086, "learning_rate": 2.5743276686250833e-05, "seconds": 129.5301517918706, "supervised_tokens": 8553}
+{"step": 95, "epoch": 1, "loss": 0.3133380646799125, "learning_rate": 2.526014959767152e-05, "seconds": 135.23815491702408, "supervised_tokens": 9094}
+{"step": 100, "epoch": 1, "loss": 0.0730708822791959, "learning_rate": 2.4756812232455578e-05, "seconds": 140.9389730419498, "supervised_tokens": 9587}
+{"step": 105, "epoch": 1, "loss": 0.4976142112244951, "learning_rate": 2.423442582504075e-05, "seconds": 146.6132982079871, "supervised_tokens": 9975}
+{"step": 110, "epoch": 1, "loss": 0.1822727639624413, "learning_rate": 2.3694195557334866e-05, "seconds": 152.46161358291283, "supervised_tokens": 10450}
+{"step": 115, "epoch": 1, "loss": 0.11070967268669742, "learning_rate": 2.3137367778277077e-05, "seconds": 158.11786704184487, "supervised_tokens": 10909}
+{"step": 120, "epoch": 1, "loss": 0.16718967970427093, "learning_rate": 2.2565227128423828e-05, "seconds": 164.0394949580077, "supervised_tokens": 11474}
+{"step": 125, "epoch": 1, "loss": 0.13828116695897108, "learning_rate": 2.197909357619343e-05, "seconds": 169.62861854187213, "supervised_tokens": 12068}
+{"step": 130, "epoch": 1, "loss": 0.04965933042543906, "learning_rate": 2.138031937260678e-05, "seconds": 175.32764333300292, "supervised_tokens": 12644}
+{"step": 135, "epoch": 1, "loss": 0.19946916898091635, "learning_rate": 2.077028593154983e-05, "seconds": 181.34981858287938, "supervised_tokens": 13283}
+{"step": 140, "epoch": 1, "loss": 0.15650720416374928, "learning_rate": 2.0150400642755356e-05, "seconds": 187.16660925000906, "supervised_tokens": 13816}
+{"step": 145, "epoch": 1, "loss": 0.06380332956711451, "learning_rate": 1.9522093624856603e-05, "seconds": 192.74843658297323, "supervised_tokens": 14270}
+{"step": 150, "epoch": 1, "loss": 0.12903517263906975, "learning_rate": 1.8886814426003727e-05, "seconds": 198.66399070783518, "supervised_tokens": 14764}
+{"step": 155, "epoch": 1, "loss": 0.08502707196705377, "learning_rate": 1.8246028679655057e-05, "seconds": 204.4962382079102, "supervised_tokens": 15276}
+{"step": 160, "epoch": 1, "loss": 0.11814983991476205, "learning_rate": 1.7601214723258383e-05, "seconds": 210.20307270786725, "supervised_tokens": 15762}
+Error: command buffer exited with error status.
+	The Metal Performance Shaders operations encoded on it may not have completed.
+	Error: 
+	(null)
+	Ignored (for causing prior/excessive GPU errors) (00000004:kIOGPUCommandBufferCallbackErrorSubmissionsIgnored)
+	<AGXG13GFamilyCommandBuffer: 0x7770240000>
+    label = <none> 
+    device = <AGXG13GDevice: 0x1021389f0>
+        name = Apple M1 
+    commandQueue = <AGXG13GFamilyCommandQueue: 0x10213b470>
+        label = <none> 
+        device = <AGXG13GDevice: 0x1021389f0>
+            name = Apple M1 
+    retainedReferences = 1
+Error: command buffer exited with error status.
+	The Metal Performance Shaders operations encoded on it may not have completed.
+	Error: 
+	(null)
+	Ignored (for causing prior/excessive GPU errors) (00000004:kIOGPUCommandBufferCallbackErrorSubmissionsIgnored)
+	<AGXG13GFamilyCommandBuffer: 0x7770240700>
+    label = <none> 
+    device = <AGXG13GDevice: 0x1021389f0>
+        name = Apple M1 
+    commandQueue = <AGXG13GFamilyCommandQueue: 0x10213b470>
+        label = <none> 
+        device = <AGXG13GDevice: 0x1021389f0>
+            name = Apple M1 
+    retainedReferences = 1
+Error: command buffer exited with error status.
+	The Metal Performance Shaders operations encoded on it may not have completed.
+	Error: 
+	(null)
+	Ignored (for causing prior/excessive GPU errors) (00000004:kIOGPUCommandBufferCallbackErrorSubmissionsIgnored)
+	<AGXG13GFamilyCommandBuffer: 0x7770240700>
+    label = <none> 
+    device = <AGXG13GDevice: 0x1021389f0>
+        name = Apple M1 
+    commandQueue = <AGXG13GFamilyCommandQueue: 0x10213b470>
+        label = <none> 
+        device = <AGXG13GDevice: 0x1021389f0>
+            name = Apple M1 
+    retainedReferences = 1
+Traceback (most recent call last):
+  File "/Users/jq/qos_ai_eval/qos_ai_finetune.py", line 207, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jq/qos_ai_eval/qos_ai_finetune.py", line 203, in main
+    fine_tune(p.parse_args())
+    ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/jq/qos_ai_eval/qos_ai_finetune.py", line 158, in fine_tune
+    record = {'step': step, 'epoch': epoch + 1, 'loss': numerator / count, 'learning_rate': lr,
+                                                        ~~~~~~~~~~^~~~~~~
+ZeroDivisionError: float division by zero

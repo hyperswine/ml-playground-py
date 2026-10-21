@@ -1,0 +1,1570 @@
+[
+ {
+  "id": "fresh-000",
+  "question": "Work out what this Sol program prints.\n```sol\n> print (str (57 + (([15, 37, 57, 58, (-40)] ! 3) / 6))).\n```"
+ },
+ {
+  "id": "fresh-001",
+  "question": "What will this Sol program output?\n```sol\n> print (str (List.take 4 (List.range (-5) 0))).\n```"
+ },
+ {
+  "id": "fresh-002",
+  "question": "In Sol, compute and print (the position of byte 104 in the string \"harbor\") if (whether 16 is less than (the absolute value of 4)), otherwise (the element at index 3 of [(-25), 55, 2, 52])."
+ },
+ {
+  "id": "fresh-003",
+  "question": "What is printed by the following Sol script?\n```sol\n> print (str (Numeric.max (44 % 3) ((List.sum [50, 38, 35, 34]) / 8))).\n```"
+ },
+ {
+  "id": "fresh-004",
+  "question": "What will this Sol program output?\n```sol\n> print (str (List.range 1 5)).\n```"
+ },
+ {
+  "id": "fresh-005",
+  "question": "Write a Sol program that prints the string \"   copper   \" with surrounding spaces removed."
+ },
+ {
+  "id": "fresh-006",
+  "question": "Implement in Sol: print the characters 1 to 5 (end exclusive) of (the characters 4 to 9 (end exclusive) of the string \"lamp\")."
+ },
+ {
+  "id": "fresh-007",
+  "question": "Predict the stdout of this Sol file.\n```sol\n> print (Str.upper (Str.join \" \" [\"copper\", \"sol\", \"window\"])).\n```"
+ },
+ {
+  "id": "fresh-008",
+  "question": "This Sol program should print [30, 34, (-17)] reversed, but it prints [-20, 34, 30]. Fix it and state what the fixed program prints.\n```sol\nnums = [30, 34, (-20)].\ntotal = List.rev nums.\n> print (str total).\n```"
+ },
+ {
+  "id": "fresh-009",
+  "question": "Implement in Sol: print whether every value of [(-30), (-38)] is at most -39."
+ },
+ {
+  "id": "fresh-010",
+  "question": "In Sol, compute and print whether (-17) is at least 4."
+ },
+ {
+  "id": "fresh-011",
+  "question": "What is printed by the following Sol script?\n```sol\n> print (str (Numeric.max 44 (-6))).\n```"
+ },
+ {
+  "id": "fresh-012",
+  "question": "Implement in Sol: print [(-1), 9] without its first 2 values."
+ },
+ {
+  "id": "fresh-013",
+  "question": "Write Sol code that outputs the values of [(-38), 10, (-22)] that are greater than 52. Then state what it prints."
+ },
+ {
+  "id": "fresh-014",
+  "question": "What is printed by the following Sol script?\n```sol\n> print (Str.join \"\" [\"thunder\", \"kernel\"]).\n```"
+ },
+ {
+  "id": "fresh-015",
+  "question": "Work out what this Sol program prints.\n```sol\nxs = [(-13), (-34), (-1)].\nresult = List.map (fn x -> x + (-3)) xs.\n> print (str result).\n```"
+ },
+ {
+  "id": "fresh-016",
+  "question": "Work out what this Sol program prints.\n```sol\n> print (str (if List.any (fn x -> x == 18) [35, (-13)] then 59 else List.sum (List.take 1 (List.range 8 12)))).\n```"
+ },
+ {
+  "id": "fresh-017",
+  "question": "What does this Sol program print?\n```sol\n> print (str (Str.at \"sol\" 1)).\n```"
+ },
+ {
+  "id": "fresh-018",
+  "question": "Implement in Sol: print the values of [60, (-23), 3, 14, (-13), (-6)] that are not equal to -28."
+ },
+ {
+  "id": "fresh-019",
+  "question": "Predict the stdout of this Sol file.\n```sol\n> print (str ((Numeric.abs (-35)) < (-19))).\n```"
+ },
+ {
+  "id": "fresh-020",
+  "question": "Work out what this Sol program prints.\n```sol\n> print (Str.upper \"maple\").\n```"
+ },
+ {
+  "id": "fresh-021",
+  "question": "What will this Sol program output?\n```sol\n> print (str (Str.at \"lamp\" 0)).\n```"
+ },
+ {
+  "id": "fresh-022",
+  "question": "In Sol, compute and print 35 clamped into [-24, 3]."
+ },
+ {
+  "id": "fresh-023",
+  "question": "This Sol program should print whether any value of (the first 2 values of [32, 28, (-26), 18]) is greater than 60, but it prints True. Fix it and state what the fixed program prints.\n```sol\ndata = [32, 28, (-26), 18].\ntotal = List.any (fn x -> x < 60) (List.take 2 data).\n> print (str total).\n```"
+ },
+ {
+  "id": "fresh-024",
+  "question": "In Sol, compute and print the sum of (the numbers from -2 to 4)."
+ },
+ {
+  "id": "fresh-025",
+  "question": "What will this Sol program output?\n```sol\n> print (Str.upper \"stone\").\n```"
+ },
+ {
+  "id": "fresh-026",
+  "question": "Predict the stdout of this Sol file.\n```sol\n> print (str ((Str.at \"violet\" 0) - 0)).\n```"
+ },
+ {
+  "id": "fresh-027",
+  "question": "A Sol script is meant to print 52 minus 36. It currently prints 18. Correct it.\n```sol\n> print (str (54 - 36)).\n```"
+ },
+ {
+  "id": "fresh-028",
+  "question": "Give the output of this Sol code.\n```sol\nnums = [(-8), (-13)].\nresult = List.last (List.rev nums).\n> print (str result).\n```"
+ },
+ {
+  "id": "fresh-029",
+  "question": "Write Sol code that outputs whether (the remainder of (the smaller of (-1) and (-15)) divided by 5) is at least (56 plus ((-11) times 3)). Then state what it prints."
+ },
+ {
+  "id": "fresh-030",
+  "question": "What is printed by the following Sol script?\n```sol\n> print (str ((-9) - 2)).\n```"
+ },
+ {
+  "id": "fresh-031",
+  "question": "Work out what this Sol program prints.\n```sol\n> print (str (List.last (List.range 2 5))).\n```"
+ },
+ {
+  "id": "fresh-032",
+  "question": "Write a Sol program that prints the remainder of 23 divided by 9."
+ },
+ {
+  "id": "fresh-033",
+  "question": "What is printed by the following Sol script?\n```sol\n> print (str (List.all (fn x -> x < (-22)) (List.range 0 1))).\n```"
+ },
+ {
+  "id": "fresh-034",
+  "question": "Work out what this Sol program prints.\n```sol\n> print (str (37 < (-3))).\n```"
+ },
+ {
+  "id": "fresh-035",
+  "question": "What does this Sol program print?\n```sol\n> print (Str.upper \"silver\").\n```"
+ },
+ {
+  "id": "fresh-036",
+  "question": "This Sol program should print whether (the smaller of 15 and (the sum of [(-8), 59, (-32)])) is at least (the position of byte 122 in the string \"signal\"), but it prints False. Fix it and state what the fixed program prints.\n```sol\nvalues = [(-8), 59, (-32)].\nanswer = (Numeric.min 15 (List.sum values)) < (Str.find 122 \"signal\").\n> print (str answer).\n```"
+ },
+ {
+  "id": "fresh-037",
+  "question": "Implement in Sol: print (the values of (each value of [33, (-38), (-33), 48, 5] multiplied by -2) that are equal to -24) without its first 1 values."
+ },
+ {
+  "id": "fresh-038",
+  "question": "In Sol, compute and print (-29) divided by 5 (integer division)."
+ },
+ {
+  "id": "fresh-039",
+  "question": "What is printed by the following Sol script?\n```sol\n> print (str (Str.find 107 \"basket\")).\n```"
+ },
+ {
+  "id": "fresh-040",
+  "question": "In Sol, compute and print the absolute value of (31 times 10)."
+ },
+ {
+  "id": "fresh-041",
+  "question": "What is printed by the following Sol script?\n```sol\n> print (Str.slice (Str.upper \"copper\") 1 6).\n```"
+ },
+ {
+  "id": "fresh-042",
+  "question": "In Sol, compute and print whether (the remainder of 49 divided by 9) is equal to (the element at index 0 of ([(-21), (-8), 14] reversed))."
+ },
+ {
+  "id": "fresh-043",
+  "question": "Implement in Sol: print (the first 0 values of (the values of [27, (-29)] that are at least 40)) without its first 2 values."
+ },
+ {
+  "id": "fresh-044",
+  "question": "Write a Sol program that prints the values of [16, (-10)] that are at most 15."
+ },
+ {
+  "id": "fresh-045",
+  "question": "What will this Sol program output?\n```sol\n> print (str (Str.at \"orbit\" 0)).\n```"
+ },
+ {
+  "id": "fresh-046",
+  "question": "What is printed by the following Sol script?\n```sol\n> print (str ((55 / 2) - (Str.find 114 \"rocket\"))).\n```"
+ },
+ {
+  "id": "fresh-047",
+  "question": "A Sol script is meant to print (-1) plus 34. It currently prints 34. Correct it.\n```sol\n> print (str ((-1) + 35)).\n```"
+ },
+ {
+  "id": "fresh-048",
+  "question": "In Sol, compute and print whether any value of ((each value of [9, (-14), (-4), (-27), (-37), (-25)] multiplied by -4) without its first 4 values) is at least 46."
+ },
+ {
+  "id": "fresh-049",
+  "question": "A Sol script is meant to print whether ((the remainder of 57 divided by 7) minus 16) is not equal to (the remainder of (3 divided by 9 (integer division)) divided by 3). It currently prints False. Correct it.\n```sol\n> print (str (((57 % 7) - 16) > ((3 / 9) % 3))).\n```"
+ },
+ {
+  "id": "fresh-050",
+  "question": "Work out what this Sol program prints.\n```sol\n> print (Str.trim \"   silver \").\n```"
+ },
+ {
+  "id": "fresh-051",
+  "question": "Give the output of this Sol code.\n```sol\nnums = [49, (-19), 17, 39].\nanswer = List.zip (List.drop 4 nums) [34, 14, 11, 3, 39].\n> print (str answer).\n```"
+ },
+ {
+  "id": "fresh-052",
+  "question": "What is printed by the following Sol script?\n```sol\n> print (str (List.map (fn x -> x * (-4)) [41, 43, (-3)])).\n```"
+ },
+ {
+  "id": "fresh-053",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str ((Numeric.max 58 (-31)) / 2)).\n```"
+ },
+ {
+  "id": "fresh-054",
+  "question": "Work out what this Sol program prints.\n```sol\n> print (str ((-21) - 19)).\n```"
+ },
+ {
+  "id": "fresh-055",
+  "question": "Predict the stdout of this Sol file.\n```sol\n> print (str (List.any (fn x -> x < (-10)) (List.filter (fn x -> x < 27) [41, 48, (-5), 37, (-2)]))).\n```"
+ },
+ {
+  "id": "fresh-056",
+  "question": "What will this Sol program output?\n```sol\n> print (Str.upper \"falcon\").\n```"
+ },
+ {
+  "id": "fresh-057",
+  "question": "What does this Sol program print?\n```sol\n> print (str (List.filter (fn x -> x < 44) [(-7), 38, 50])).\n```"
+ },
+ {
+  "id": "fresh-058",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str ((Numeric.abs (Numeric.min (-31) 40)) * (-4))).\n```"
+ },
+ {
+  "id": "fresh-059",
+  "question": "Write Sol code that outputs the characters 2 to 5 (end exclusive) of (the strings [\"lamp\", \"falcon\"] joined with \"\"). Then state what it prints."
+ },
+ {
+  "id": "fresh-060",
+  "question": "What does this Sol program print?\n```sol\n> print (str (47 > (-1))).\n```"
+ },
+ {
+  "id": "fresh-061",
+  "question": "Write a Sol program that prints the element at index 0 of (each value of (the numbers from -5 to 1) increased by 6)."
+ },
+ {
+  "id": "fresh-062",
+  "question": "What does this Sol program print?\n```sol\n> print (str (Str.find 101 \"violet\")).\n```"
+ },
+ {
+  "id": "fresh-063",
+  "question": "This Sol program should print the absolute value of (-4), but it prints 3. Fix it and state what the fixed program prints.\n```sol\n> print (str (Numeric.abs (-3))).\n```"
+ },
+ {
+  "id": "fresh-064",
+  "question": "Predict the stdout of this Sol file.\n```sol\nitems = [0, 9, 34, (-4), (-15)].\nanswer = List.zip items [(-37), (-39), 9].\n> print (str answer).\n```"
+ },
+ {
+  "id": "fresh-065",
+  "question": "Predict the stdout of this Sol file.\n```sol\n> print (str ((-39) - (-36))).\n```"
+ },
+ {
+  "id": "fresh-066",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str (List.map (fn x -> x * (-3)) (List.rev [51, 28, 14]))).\n```"
+ },
+ {
+  "id": "fresh-067",
+  "question": "What is printed by the following Sol script?\n```sol\n> print (str (List.filter (fn x -> x < 14) [(-21), (-33)])).\n```"
+ },
+ {
+  "id": "fresh-068",
+  "question": "Work out what this Sol program prints.\n```sol\n> print (str (20 >= 24)).\n```"
+ },
+ {
+  "id": "fresh-069",
+  "question": "What will this Sol program output?\n```sol\n> print (str (Str.find 122 \"sol\")).\n```"
+ },
+ {
+  "id": "fresh-070",
+  "question": "Give the output of this Sol code.\n```sol\nnums = [(-33), 53, (-7), 0, 54].\nout = List.map (fn x -> x + 0) nums.\n> print (str out).\n```"
+ },
+ {
+  "id": "fresh-071",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str (List.all (fn x -> x <= 34) [31, (-14), 2, 3, 25, 60])).\n```"
+ },
+ {
+  "id": "fresh-072",
+  "question": "What is printed by the following Sol script?\n```sol\ndata = [55, (-20), (-15), 7].\nanswer = List.sum data.\n> print (str answer).\n```"
+ },
+ {
+  "id": "fresh-073",
+  "question": "Work out what this Sol program prints.\n```sol\n> print (str (Numeric.clamp (-32) 33 (-35))).\n```"
+ },
+ {
+  "id": "fresh-074",
+  "question": "Write Sol code that outputs ((the remainder of 54 divided by 8) plus (the last element of [(-23), (-34)])) if (whether every value of (each value of [(-39), 27, (-25), (-21), 0, 53] decreased by 1) is equal to -32), otherwise ((6 times 11) plus (19 minus 36)). Then state what it prints."
+ },
+ {
+  "id": "fresh-075",
+  "question": "Implement in Sol: print each value of (each value of (the numbers from -3 to 3) increased by -1) multiplied by -2."
+ },
+ {
+  "id": "fresh-076",
+  "question": "What will this Sol program output?\n```sol\nxs = [36, 23, (-10)].\nanswer = List.filter (fn x -> x != 6) (List.filter (fn x -> x <= 17) xs).\n> print (str answer).\n```"
+ },
+ {
+  "id": "fresh-077",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str (List.map (fn x -> x * 2) [12, (-15), (-39), 55])).\n```"
+ },
+ {
+  "id": "fresh-078",
+  "question": "In Sol, compute and print ([18, (-40), (-16), (-2)] reversed) reversed."
+ },
+ {
+  "id": "fresh-079",
+  "question": "What does this Sol program print?\n```sol\n> print (str (List.filter (fn x -> x <= 37) (List.map (fn x -> x * 4) [42, 33, 30, (-4), 27, 12]))).\n```"
+ },
+ {
+  "id": "fresh-080",
+  "question": "This Sol program should print [30, 58, (-20)] reversed, but it prints [-20, 58, 27]. Fix it and state what the fixed program prints.\n```sol\n> print (str (List.rev [27, 58, (-20)])).\n```"
+ },
+ {
+  "id": "fresh-081",
+  "question": "Write Sol code that outputs the sum of [(-4), 44, 56, 45, (-38)]. Then state what it prints."
+ },
+ {
+  "id": "fresh-082",
+  "question": "Predict the stdout of this Sol file.\n```sol\n> print (Str.join \" \" [\"maple\", \"copper\", \"thunder\"]).\n```"
+ },
+ {
+  "id": "fresh-083",
+  "question": "What is printed by the following Sol script?\n```sol\ndata = [(-22), (-38), (-18), (-7), 7].\nanswer = List.drop 4 (List.drop 1 data).\n> print (str answer).\n```"
+ },
+ {
+  "id": "fresh-084",
+  "question": "This Sol program should print whether ((-14) if (whether every value of [(-13), 51, 22, 11, 51] is at most -29), otherwise (the absolute value of 53)) is less than (-8), but it prints True. Fix it and state what the fixed program prints.\n```sol\ndata = [(-13), 51, 22, 11, 51].\nresult = (if List.all (fn x -> x <= (-29)) data then (-14) else Numeric.abs 53) > (-8).\n> print (str result).\n```"
+ },
+ {
+  "id": "fresh-085",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str (Numeric.max ((List.map (fn x -> x * (-3)) [50, (-34), 60, (-13), 46]) ! 3) 17)).\n```"
+ },
+ {
+  "id": "fresh-086",
+  "question": "Predict the stdout of this Sol file.\n```sol\n> print (str ((List.drop 1 (List.range 7 11)) ! 1)).\n```"
+ },
+ {
+  "id": "fresh-087",
+  "question": "Work out what this Sol program prints.\n```sol\nxs = [(-13), 60, 57, 39, 3, 22].\nresult = List.rev (List.drop 0 xs).\n> print (str result).\n```"
+ },
+ {
+  "id": "fresh-088",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str (40 + ([12, (-22), (-24)] ! 1))).\n```"
+ },
+ {
+  "id": "fresh-089",
+  "question": "What is printed by the following Sol script?\n```sol\n> print (str (List.sum (List.rev [(-6), (-5), 21, 49, (-1)]))).\n```"
+ },
+ {
+  "id": "fresh-090",
+  "question": "Work out what this Sol program prints.\n```sol\n> print (str (Str.at \"pixel\" 2)).\n```"
+ },
+ {
+  "id": "fresh-091",
+  "question": "What is printed by the following Sol script?\n```sol\n> print (str (Str.find 110 \"window\")).\n```"
+ },
+ {
+  "id": "fresh-092",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str (Numeric.min 0 39)).\n```"
+ },
+ {
+  "id": "fresh-093",
+  "question": "In Sol, compute and print the values of [(-18), 47, (-26), (-12), 32, (-15)] that are equal to 32."
+ },
+ {
+  "id": "fresh-094",
+  "question": "Work out what this Sol program prints.\n```sol\nitems = [55, (-12)].\nout = List.filter (fn x -> x >= 47) items.\n> print (str out).\n```"
+ },
+ {
+  "id": "fresh-095",
+  "question": "Write a Sol program that prints each value of (each value of [(-8), 58] increased by 6) multiplied by -4."
+ },
+ {
+  "id": "fresh-096",
+  "question": "A Sol script is meant to print 0 minus (-9). It currently prints 11. Correct it.\n```sol\n> print (str (2 - (-9))).\n```"
+ },
+ {
+  "id": "fresh-097",
+  "question": "In Sol, compute and print the characters 3 to 4 (end exclusive) of the string \"maple\"."
+ },
+ {
+  "id": "fresh-098",
+  "question": "What will this Sol program output?\n```sol\n> print (str (List.rev (List.drop 1 [40, (-2), 30]))).\n```"
+ },
+ {
+  "id": "fresh-099",
+  "question": "Give the output of this Sol code.\n```sol\n> print (Str.upper (Str.upper (Str.trim \"  basket \"))).\n```"
+ },
+ {
+  "id": "fresh-100",
+  "question": "Implement in Sol: print the remainder of (the larger of 8 and ((-25) divided by 4 (integer division))) divided by 6."
+ },
+ {
+  "id": "fresh-101",
+  "question": "Implement in Sol: print the sum of (each value of [8, 55, 31] increased by 3)."
+ },
+ {
+  "id": "fresh-102",
+  "question": "What does this Sol program print?\n```sol\n> print (str ((if List.all (fn x -> x > 42) [(-28), 20] then 50 else 49) + (-35))).\n```"
+ },
+ {
+  "id": "fresh-103",
+  "question": "What will this Sol program output?\n```sol\ndata = [20, 49, (-9), 39].\nresult = List.all (fn x -> x == 5) (List.filter (fn x -> x < (-27)) data).\n> print (str result).\n```"
+ },
+ {
+  "id": "fresh-104",
+  "question": "What will this Sol program output?\n```sol\n> print (Str.slice \"copper\" 2 3).\n```"
+ },
+ {
+  "id": "fresh-105",
+  "question": "What will this Sol program output?\n```sol\n> print (str (List.filter (fn x -> x > 3) (List.drop 1 [41, 38, 26]))).\n```"
+ },
+ {
+  "id": "fresh-106",
+  "question": "Work out what this Sol program prints.\n```sol\n> print (str (Numeric.max (Numeric.abs 2) ((Str.find 110 \"garden\") * 6))).\n```"
+ },
+ {
+  "id": "fresh-107",
+  "question": "What does this Sol program print?\n```sol\n> print (str (List.drop 4 (List.filter (fn x -> x <= 45) [(-17), 18]))).\n```"
+ },
+ {
+  "id": "fresh-108",
+  "question": "Work out what this Sol program prints.\n```sol\n> print (str ((-27) > (-8))).\n```"
+ },
+ {
+  "id": "fresh-109",
+  "question": "Work out what this Sol program prints.\n```sol\n> print (str (Numeric.abs ((Numeric.abs 14) / 4))).\n```"
+ },
+ {
+  "id": "fresh-110",
+  "question": "Give the output of this Sol code.\n```sol\ndata = [(-25), 32, 42, (-34), 9].\ntotal = List.map (fn x -> x + 6) (List.map (fn x -> x + 4) data).\n> print (str total).\n```"
+ },
+ {
+  "id": "fresh-111",
+  "question": "Work out what this Sol program prints.\n```sol\n> print (str (List.any (fn x -> x >= 52) (List.range 4 7))).\n```"
+ },
+ {
+  "id": "fresh-112",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str ((Str.find 120 \"kernel\") * 8)).\n```"
+ },
+ {
+  "id": "fresh-113",
+  "question": "What is printed by the following Sol script?\n```sol\n> print (str (Numeric.min (6 + (-21)) ((-18) + 59))).\n```"
+ },
+ {
+  "id": "fresh-114",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str (List.filter (fn x -> x <= (-39)) [4, 9, (-5), 32])).\n```"
+ },
+ {
+  "id": "fresh-115",
+  "question": "Predict the stdout of this Sol file.\n```sol\n> print (str (Numeric.min (-31) 34)).\n```"
+ },
+ {
+  "id": "fresh-116",
+  "question": "This Sol program should print the values of [30, 18, 10] that are not equal to -15, but it prints []. Fix it and state what the fixed program prints.\n```sol\nvalues = [30, 18, 10].\nanswer = List.filter (fn x -> x < (-15)) values.\n> print (str answer).\n```"
+ },
+ {
+  "id": "fresh-117",
+  "question": "Predict the stdout of this Sol file.\n```sol\n> print (str (List.filter (fn x -> x == (-3)) (List.map (fn x -> x - 3) (List.drop 1 [(-12), (-2), 50])))).\n```"
+ },
+ {
+  "id": "fresh-118",
+  "question": "What does this Sol program print?\n```sol\n> print (str ((List.filter (fn x -> x < 40) (List.rev (List.range 5 6))) ! 0)).\n```"
+ },
+ {
+  "id": "fresh-119",
+  "question": "What will this Sol program output?\n```sol\n> print (str (Numeric.min ((-25) / 5) (44 / 4))).\n```"
+ },
+ {
+  "id": "held_pairs-000",
+  "question": "Work out what this Sol program prints.\n```sol\nvalues = [38, 56].\nresult = List.map (fn x -> x + 2) (List.drop 2 (List.rev values)).\n> print (str result).\n```"
+ },
+ {
+  "id": "held_pairs-001",
+  "question": "Write a Sol program that prints (the characters 4 to 9 (end exclusive) of (the characters 0 to 1 (end exclusive) of the string \"window\")) in upper case."
+ },
+ {
+  "id": "held_pairs-002",
+  "question": "Predict the stdout of this Sol file.\n```sol\n> print (Str.upper (Str.slice \"maple\" 4 6)).\n```"
+ },
+ {
+  "id": "held_pairs-003",
+  "question": "Work out what this Sol program prints.\n```sol\n> print (str (List.any (fn x -> x > 24) (List.filter (fn x -> x > 7) (List.range (-2) 0)))).\n```"
+ },
+ {
+  "id": "held_pairs-004",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str ((Numeric.max (18 - (-22)) (List.last [(-12), 60, 30])) / 2)).\n```"
+ },
+ {
+  "id": "held_pairs-005",
+  "question": "A Sol script is meant to print the values of (the numbers from -3 to 1) that are less than 21. It currently prints []. Correct it.\n```sol\n> print (str (List.filter (fn x -> x == 21) (List.range (-3) 1))).\n```"
+ },
+ {
+  "id": "held_pairs-006",
+  "question": "Write Sol code that outputs ([(-32), 32, (-9)] reversed) without its first 1 values. Then state what it prints."
+ },
+ {
+  "id": "held_pairs-007",
+  "question": "What is printed by the following Sol script?\n```sol\n> print (str (List.all (fn x -> x >= (-6)) (List.rev (List.filter (fn x -> x >= 14) (List.range (-3) 0))))).\n```"
+ },
+ {
+  "id": "held_pairs-008",
+  "question": "Write Sol code that outputs whether any value of (each value of [15, 11, 15, 59] increased by -2) is at most 56. Then state what it prints."
+ },
+ {
+  "id": "held_pairs-009",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str (List.any (fn x -> x >= (-9)) (List.map (fn x -> x * 3) [59, 41, 54, (-38), (-5)]))).\n```"
+ },
+ {
+  "id": "held_pairs-010",
+  "question": "Predict the stdout of this Sol file.\n```sol\n> print (str (if List.any (fn x -> x <= 17) [(-14), (-26), 46, 12] then Numeric.max (List.last (List.range 4 5)) ((-14) % 6) else ((List.range 5 8) ! 3) - (23 - (-16)))).\n```"
+ },
+ {
+  "id": "held_pairs-011",
+  "question": "What is printed by the following Sol script?\n```sol\nnums = [21, 35, 15].\nout = List.any (fn x -> x != 60) (List.map (fn x -> x - 3) (List.map (fn x -> x - 2) nums)).\n> print (str out).\n```"
+ },
+ {
+  "id": "held_pairs-012",
+  "question": "What does this Sol program print?\n```sol\n> print (str (List.filter (fn x -> x < 47) (List.range 6 7))).\n```"
+ },
+ {
+  "id": "held_pairs-013",
+  "question": "Implement in Sol: print (([20, 3, 6] reversed) without its first 1 values) reversed."
+ },
+ {
+  "id": "held_pairs-014",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str (List.drop 2 (List.rev [(-26), (-10), (-5), (-39)]))).\n```"
+ },
+ {
+  "id": "held_pairs-015",
+  "question": "Implement in Sol: print whether any value of (each value of ([43, (-1), 25] reversed) decreased by 0) is equal to 13."
+ },
+ {
+  "id": "held_pairs-016",
+  "question": "What will this Sol program output?\n```sol\n> print (str (List.zip (List.take 1 (List.rev (List.range 10 13))) (List.filter (fn x -> x != (-14)) (List.filter (fn x -> x >= (-27)) (List.range 6 7))))).\n```"
+ },
+ {
+  "id": "held_pairs-017",
+  "question": "What is printed by the following Sol script?\n```sol\n> print (str (List.rev (List.filter (fn x -> x >= 51) (List.range 5 6)))).\n```"
+ },
+ {
+  "id": "held_pairs-018",
+  "question": "In Sol, compute and print (each value of [39, (-28)] increased by 1) paired element by element with (the values of (the numbers from -4 to -4) that are less than 9)."
+ },
+ {
+  "id": "held_pairs-019",
+  "question": "Work out what this Sol program prints.\n```sol\n> print (str (List.zip [(-17), 14, (-4)] (List.filter (fn x -> x >= 39) (List.range 5 9)))).\n```"
+ },
+ {
+  "id": "held_pairs-020",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str (Numeric.max (List.sum [(-15), 32, 22, (-7), (-3), 48]) (List.last [(-17), (-12)]))).\n```"
+ },
+ {
+  "id": "held_pairs-021",
+  "question": "What will this Sol program output?\n```sol\nxs = [11, 1, 38, (-34)].\nanswer = List.any (fn x -> x < (-7)) (List.map (fn x -> x + 2) xs).\n> print (str answer).\n```"
+ },
+ {
+  "id": "held_pairs-022",
+  "question": "This Sol program should print the values of (the first 1 values of (the values of (the numbers from 7 to 9) that are at most -2)) that are greater than -7, but it prints [7]. Fix it and state what the fixed program prints.\n```sol\n> print (str (List.filter (fn x -> x > (-7)) (List.take 1 (List.filter (fn x -> x > (-2)) (List.range 7 9))))).\n```"
+ },
+ {
+  "id": "held_pairs-023",
+  "question": "What will this Sol program output?\n```sol\n> print (str (List.filter (fn x -> x <= 4) (List.filter (fn x -> x < 5) (List.range (-5) 1)))).\n```"
+ },
+ {
+  "id": "held_pairs-024",
+  "question": "What will this Sol program output?\n```sol\n> print (str (List.zip (List.filter (fn x -> x <= (-15)) (List.take 3 [(-40), 50, (-31), 44, (-10)])) (List.drop 2 (List.rev [(-12), (-26)])))).\n```"
+ },
+ {
+  "id": "held_pairs-025",
+  "question": "Predict the stdout of this Sol file.\n```sol\nnums = [(-35), 1].\nanswer = List.any (fn x -> x > 14) (List.map (fn x -> x + (-1)) nums).\n> print (str answer).\n```"
+ },
+ {
+  "id": "held_pairs-026",
+  "question": "What is printed by the following Sol script?\n```sol\n> print (str (List.filter (fn x -> x <= (-19)) (List.range (-2) 3))).\n```"
+ },
+ {
+  "id": "held_pairs-027",
+  "question": "Give the output of this Sol code.\n```sol\nvalues = [38, 47, (-21), 34, 50].\nanswer = List.any (fn x -> x <= 26) (List.map (fn x -> x * 1) values).\n> print (str answer).\n```"
+ },
+ {
+  "id": "held_pairs-028",
+  "question": "What will this Sol program output?\n```sol\n> print (str (List.zip (List.drop 4 (List.rev (List.range 9 12))) [(-35), 35, 23])).\n```"
+ },
+ {
+  "id": "held_pairs-029",
+  "question": "What does this Sol program print?\n```sol\n> print (str (List.drop 1 (List.rev [(-25), (-35), 9, 15, 59]))).\n```"
+ },
+ {
+  "id": "held_pairs-030",
+  "question": "What is printed by the following Sol script?\n```sol\nxs = [(-17), (-7)].\ntotal = List.any (fn x -> x <= (-20)) (List.map (fn x -> x - (-3)) xs).\n> print (str total).\n```"
+ },
+ {
+  "id": "held_pairs-031",
+  "question": "This Sol program should print (the values of (the numbers from -5 to -5) that are not equal to -21) paired element by element with (each value of (the numbers from -4 to 2) decreased by 3), but it prints [(-5, -12)]. Fix it and state what the fixed program prints.\n```sol\n> print (str (List.zip (List.filter (fn x -> x != (-21)) (List.range (-5) (-5))) (List.map (fn x -> x * 3) (List.range (-4) 2)))).\n```"
+ },
+ {
+  "id": "held_pairs-032",
+  "question": "What is printed by the following Sol script?\n```sol\n> print (Str.upper (Str.slice (Str.trim \"  signal  \") 4 9)).\n```"
+ },
+ {
+  "id": "held_pairs-033",
+  "question": "Work out what this Sol program prints.\n```sol\nvalues = [(-28), 52].\ntotal = List.any (fn x -> x >= (-9)) (List.map (fn x -> x + (-3)) values).\n> print (str total).\n```"
+ },
+ {
+  "id": "held_pairs-034",
+  "question": "What will this Sol program output?\n```sol\n> print (str (List.any (fn x -> x != 52) (List.filter (fn x -> x <= (-39)) (List.range 9 14)))).\n```"
+ },
+ {
+  "id": "held_pairs-035",
+  "question": "This Sol program should print (the values of (the numbers from 10 to 11) that are at least 33) reversed, but it prints [11, 10]. Fix it and state what the fixed program prints.\n```sol\n> print (str (List.rev (List.filter (fn x -> x <= 33) (List.range 10 11)))).\n```"
+ },
+ {
+  "id": "held_pairs-036",
+  "question": "This Sol program should print the first 1 values of (the values of (the numbers from 5 to 8) that are less than -25), but it prints [5]. Fix it and state what the fixed program prints.\n```sol\n> print (str (List.take 1 (List.filter (fn x -> x >= (-25)) (List.range 5 8)))).\n```"
+ },
+ {
+  "id": "held_pairs-037",
+  "question": "What will this Sol program output?\n```sol\n> print (str (Numeric.clamp (-30) 56 (List.sum (List.filter (fn x -> x < (-11)) (List.range 5 11))))).\n```"
+ },
+ {
+  "id": "held_pairs-038",
+  "question": "Work out what this Sol program prints.\n```sol\n> print (Str.slice (Str.upper (Str.slice \"kernel\" 2 3)) 1 5).\n```"
+ },
+ {
+  "id": "held_pairs-039",
+  "question": "What does this Sol program print?\n```sol\n> print (str (List.filter (fn x -> x == 38) (List.filter (fn x -> x > 30) (List.range 0 4)))).\n```"
+ },
+ {
+  "id": "held_pairs-040",
+  "question": "What is printed by the following Sol script?\n```sol\n> print (Str.upper (Str.slice \"maple\" 2 7)).\n```"
+ },
+ {
+  "id": "held_pairs-041",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str (List.all (fn x -> x >= (-4)) (List.filter (fn x -> x > 54) (List.range 3 8)))).\n```"
+ },
+ {
+  "id": "held_pairs-042",
+  "question": "What is printed by the following Sol script?\n```sol\n> print (str (Numeric.max (List.last (List.map (fn x -> x + (-1)) [(-26), (-27), 41])) (List.sum (List.rev [45, 7, (-39), 59])))).\n```"
+ },
+ {
+  "id": "held_pairs-043",
+  "question": "Predict the stdout of this Sol file.\n```sol\n> print (str (List.filter (fn x -> x < 59) (List.rev (List.filter (fn x -> x != 45) (List.range 9 11))))).\n```"
+ },
+ {
+  "id": "held_pairs-044",
+  "question": "What is printed by the following Sol script?\n```sol\n> print (str (List.any (fn x -> x != (-11)) (List.map (fn x -> x + 6) (List.filter (fn x -> x != 48) [(-10), (-34), (-24)])))).\n```"
+ },
+ {
+  "id": "held_pairs-045",
+  "question": "Write Sol code that outputs the absolute value of (the sum of [55, 7, 11, 33, 7]). Then state what it prints."
+ },
+ {
+  "id": "held_pairs-046",
+  "question": "What is printed by the following Sol script?\n```sol\n> print (str (List.filter (fn x -> x == (-23)) (List.range (-2) 4))).\n```"
+ },
+ {
+  "id": "held_pairs-047",
+  "question": "Write Sol code that outputs ([(-28), 56, 22, 40, 39] reversed) without its first 0 values. Then state what it prints."
+ },
+ {
+  "id": "held_pairs-048",
+  "question": "This Sol program should print whether any value of (the values of (the numbers from -3 to 2) that are at most -26) is at most 40, but it prints True. Fix it and state what the fixed program prints.\n```sol\n> print (str (List.any (fn x -> x <= 40) (List.filter (fn x -> x >= (-26)) (List.range (-3) 2)))).\n```"
+ },
+ {
+  "id": "held_pairs-049",
+  "question": "Write a Sol program that prints ((the values of [48, 47] that are at least 32) without its first 1 values) paired element by element with (each value of (the values of (the numbers from 0 to 5) that are at most -40) decreased by 1)."
+ },
+ {
+  "id": "held_pairs-050",
+  "question": "What does this Sol program print?\n```sol\n> print (str (List.filter (fn x -> x < 30) (List.range 1 5))).\n```"
+ },
+ {
+  "id": "held_pairs-051",
+  "question": "What will this Sol program output?\n```sol\n> print (str (List.filter (fn x -> x <= (-7)) (List.range 1 5))).\n```"
+ },
+ {
+  "id": "held_pairs-052",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str (List.any (fn x -> x > 48) (List.map (fn x -> x + 1) [55, 59, (-40), 14, (-21)]))).\n```"
+ },
+ {
+  "id": "held_pairs-053",
+  "question": "Predict the stdout of this Sol file.\n```sol\n> print (Str.upper (Str.slice (Str.slice \"silver\" 3 6) 3 8)).\n```"
+ },
+ {
+  "id": "held_pairs-054",
+  "question": "What will this Sol program output?\n```sol\n> print (str (List.filter (fn x -> x <= 48) (List.filter (fn x -> x > 31) (List.range 6 8)))).\n```"
+ },
+ {
+  "id": "held_pairs-055",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str (List.take 4 (List.filter (fn x -> x > (-37)) (List.range 7 11)))).\n```"
+ },
+ {
+  "id": "held_pairs-056",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str (Numeric.max (Numeric.max (-27) 37) (List.last [9, (-14)]))).\n```"
+ },
+ {
+  "id": "held_pairs-057",
+  "question": "This Sol program should print the values of (the numbers from 2 to 3) that are greater than 12, but it prints [2, 3]. Fix it and state what the fixed program prints.\n```sol\n> print (str (List.filter (fn x -> x <= 12) (List.range 2 3))).\n```"
+ },
+ {
+  "id": "held_pairs-058",
+  "question": "Write Sol code that outputs ((the characters 2 to 4 (end exclusive) of ((the characters 3 to 6 (end exclusive) of the string \"silver\") in upper case)) in upper case) in upper case. Then state what it prints."
+ },
+ {
+  "id": "held_pairs-059",
+  "question": "Write a Sol program that prints whether any value of (each value of (the numbers from -4 to 1) multiplied by 4) is greater than -26."
+ },
+ {
+  "id": "held_pairs-060",
+  "question": "What will this Sol program output?\n```sol\ndata = [5, 16, 52].\nanswer = List.any (fn x -> x < (-16)) (List.map (fn x -> x * 0) (List.drop 2 data)).\n> print (str answer).\n```"
+ },
+ {
+  "id": "held_pairs-061",
+  "question": "What does this Sol program print?\n```sol\n> print (str (List.filter (fn x -> x > (-39)) (List.map (fn x -> x - 2) (List.filter (fn x -> x >= 35) (List.range (-2) 2))))).\n```"
+ },
+ {
+  "id": "held_pairs-062",
+  "question": "This Sol program should print the sum of (the values of (the numbers from -3 to 1) that are not equal to -22), but it prints 0. Fix it and state what the fixed program prints.\n```sol\n> print (str (List.sum (List.filter (fn x -> x < (-22)) (List.range (-3) 1)))).\n```"
+ },
+ {
+  "id": "held_pairs-063",
+  "question": "Write Sol code that outputs the values of (the numbers from -4 to 0) that are at most -7. Then state what it prints."
+ },
+ {
+  "id": "held_pairs-064",
+  "question": "Work out what this Sol program prints.\n```sol\n> print (Str.upper (Str.slice \"meadow\" 3 5)).\n```"
+ },
+ {
+  "id": "held_pairs-065",
+  "question": "A Sol script is meant to print the values of (the numbers from -4 to -2) that are not equal to -11. It currently prints []. Correct it.\n```sol\n> print (str (List.filter (fn x -> x < (-11)) (List.range (-4) (-2)))).\n```"
+ },
+ {
+  "id": "held_pairs-066",
+  "question": "Predict the stdout of this Sol file.\n```sol\n> print (str (List.filter (fn x -> x < (-38)) (List.range 7 7))).\n```"
+ },
+ {
+  "id": "held_pairs-067",
+  "question": "Implement in Sol: print ([33, (-11), 51, 17, 42] reversed) without its first 4 values."
+ },
+ {
+  "id": "held_pairs-068",
+  "question": "Predict the stdout of this Sol file.\n```sol\nitems = [(-13), (-18), (-2), 0, (-1), (-9)].\nanswer = Numeric.max (List.sum (List.map (fn x -> x - (-3)) items)) (List.last (List.take 3 [(-24), 50, 23])).\n> print (str answer).\n```"
+ },
+ {
+  "id": "held_pairs-069",
+  "question": "A Sol script is meant to print whether any value of (each value of [31, 25, 58, (-35), 58, 14] increased by 6) is greater than -4. It currently prints False. Correct it.\n```sol\n> print (str (List.any (fn x -> x == (-4)) (List.map (fn x -> x + 6) [31, 25, 58, (-35), 58, 14]))).\n```"
+ },
+ {
+  "id": "held_pairs-070",
+  "question": "Work out what this Sol program prints.\n```sol\n> print (Str.upper (Str.slice \"meadow\" 1 4)).\n```"
+ },
+ {
+  "id": "held_pairs-071",
+  "question": "Work out what this Sol program prints.\n```sol\n> print (str ((List.last (List.filter (fn x -> x != (-10)) (List.range 10 16))) / 2)).\n```"
+ },
+ {
+  "id": "held_pairs-072",
+  "question": "What will this Sol program output?\n```sol\n> print (str (List.map (fn x -> x - (-3)) (List.filter (fn x -> x >= 36) (List.range 8 9)))).\n```"
+ },
+ {
+  "id": "held_pairs-073",
+  "question": "What is printed by the following Sol script?\n```sol\n> print (str (List.any (fn x -> x >= (-16)) (List.map (fn x -> x + 4) (List.rev [35, 8, 51, 3, (-28), 48])))).\n```"
+ },
+ {
+  "id": "held_pairs-074",
+  "question": "What will this Sol program output?\n```sol\n> print (str (List.filter (fn x -> x <= (-5)) (List.range 10 14))).\n```"
+ },
+ {
+  "id": "held_pairs-075",
+  "question": "Work out what this Sol program prints.\n```sol\n> print (Str.upper (Str.slice (Str.slice \"kernel\" 2 3) 3 8)).\n```"
+ },
+ {
+  "id": "held_pairs-076",
+  "question": "Work out what this Sol program prints.\n```sol\n> print (Str.upper (Str.slice \"silver\" 1 6)).\n```"
+ },
+ {
+  "id": "held_pairs-077",
+  "question": "In Sol, compute and print (the characters 4 to 6 (end exclusive) of (the strings [\"rocket\", \"meadow\", \"signal\"] joined with \" \")) in upper case."
+ },
+ {
+  "id": "held_pairs-078",
+  "question": "Give the output of this Sol code.\n```sol\ndata = [7, 43, (-20), 0, 23].\nout = List.any (fn x -> x <= 3) (List.map (fn x -> x + 1) data).\n> print (str out).\n```"
+ },
+ {
+  "id": "held_pairs-079",
+  "question": "What will this Sol program output?\n```sol\n> print (str (List.filter (fn x -> x > (-18)) (List.range 7 11))).\n```"
+ },
+ {
+  "id": "held_pairs-080",
+  "question": "Write Sol code that outputs ((the characters 2 to 3 (end exclusive) of the string \"basket\") in upper case) in upper case. Then state what it prints."
+ },
+ {
+  "id": "held_pairs-081",
+  "question": "Give the output of this Sol code.\n```sol\n> print (Str.upper (Str.slice \"pixel\" 2 5)).\n```"
+ },
+ {
+  "id": "held_pairs-082",
+  "question": "What will this Sol program output?\n```sol\n> print (str (List.filter (fn x -> x != (-16)) (List.range 6 9))).\n```"
+ },
+ {
+  "id": "held_pairs-083",
+  "question": "Give the output of this Sol code.\n```sol\ndata = [39, (-34), 39, 29].\ntotal = List.zip (List.filter (fn x -> x > 31) (List.range 8 14)) (List.rev data).\n> print (str total).\n```"
+ },
+ {
+  "id": "held_pairs-084",
+  "question": "What does this Sol program print?\n```sol\n> print (str (List.drop 0 (List.rev [(-31), 52, 40, 15, (-4)]))).\n```"
+ },
+ {
+  "id": "held_pairs-085",
+  "question": "This Sol program should print (the values of (the numbers from 8 to 14) that are not equal to 49) reversed, but it prints []. Fix it and state what the fixed program prints.\n```sol\n> print (str (List.rev (List.filter (fn x -> x >= 49) (List.range 8 14)))).\n```"
+ },
+ {
+  "id": "held_pairs-086",
+  "question": "Write Sol code that outputs each value of (the values of (the numbers from -3 to -2) that are less than 44) decreased by 1. Then state what it prints."
+ },
+ {
+  "id": "held_pairs-087",
+  "question": "Predict the stdout of this Sol file.\n```sol\n> print (str (if List.any (fn x -> x < (-37)) (List.map (fn x -> x - 2) [(-12), 45, 26, 11, (-22), 60]) then Numeric.abs 59 else 14)).\n```"
+ },
+ {
+  "id": "held_pairs-088",
+  "question": "Predict the stdout of this Sol file.\n```sol\n> print (str (List.sum (List.filter (fn x -> x <= (-7)) (List.range 6 9)))).\n```"
+ },
+ {
+  "id": "held_pairs-089",
+  "question": "Write Sol code that outputs the larger of (the last element of [17, 10, 1]) and (the position of byte 122 in the string \"signal\"). Then state what it prints."
+ },
+ {
+  "id": "held_pairs-090",
+  "question": "What does this Sol program print?\n```sol\nvalues = [2, 43, 32, 55].\ntotal = (Numeric.abs (List.sum values)) + (-29).\n> print (str total).\n```"
+ },
+ {
+  "id": "held_pairs-091",
+  "question": "This Sol program should print whether any value of (each value of [50, (-26), 51, 9, 11] multiplied by 3) is greater than -17, but it prints False. Fix it and state what the fixed program prints.\n```sol\nvalues = [50, (-26), 51, 9, 11].\nout = List.any (fn x -> x == (-17)) (List.map (fn x -> x * 3) values).\n> print (str out).\n```"
+ },
+ {
+  "id": "held_pairs-092",
+  "question": "In Sol, compute and print whether any value of (each value of [20, 36] decreased by 5) is greater than -14."
+ },
+ {
+  "id": "held_pairs-093",
+  "question": "What is printed by the following Sol script?\n```sol\n> print (str (List.any (fn x -> x == 19) (List.map (fn x -> x - 5) [(-27), 32, 41, 60, (-13)]))).\n```"
+ },
+ {
+  "id": "held_pairs-094",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str (List.filter (fn x -> x > 9) (List.range (-4) 0))).\n```"
+ },
+ {
+  "id": "held_pairs-095",
+  "question": "Work out what this Sol program prints.\n```sol\n> print (str (List.filter (fn x -> x >= (-32)) (List.range 0 3))).\n```"
+ },
+ {
+  "id": "held_pairs-096",
+  "question": "Predict the stdout of this Sol file.\n```sol\nnums = [4, 48].\nanswer = Numeric.abs (List.sum (List.map (fn x -> x * 2) nums)).\n> print (str answer).\n```"
+ },
+ {
+  "id": "held_pairs-097",
+  "question": "Write a Sol program that prints whether any value of (each value of [(-31), (-21), (-33)] increased by 2) is equal to 0."
+ },
+ {
+  "id": "held_pairs-098",
+  "question": "Work out what this Sol program prints.\n```sol\n> print (str ((List.filter (fn x -> x >= (-3)) (List.range (-4) (-3))) ! 0)).\n```"
+ },
+ {
+  "id": "held_pairs-099",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str (List.filter (fn x -> x >= (-38)) (List.range (-1) 2))).\n```"
+ },
+ {
+  "id": "held_pairs-100",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str (List.filter (fn x -> x == 18) (List.filter (fn x -> x == 38) (List.range (-2) (-2))))).\n```"
+ },
+ {
+  "id": "held_pairs-101",
+  "question": "Work out what this Sol program prints.\n```sol\n> print (str (Numeric.abs (List.sum [58, (-9), 47, (-3)]))).\n```"
+ },
+ {
+  "id": "held_pairs-102",
+  "question": "What will this Sol program output?\n```sol\n> print (Str.upper (Str.slice \"window\" 3 8)).\n```"
+ },
+ {
+  "id": "held_pairs-103",
+  "question": "In Sol, compute and print the first 1 values of (the values of (the numbers from -3 to -1) that are less than 36)."
+ },
+ {
+  "id": "held_pairs-104",
+  "question": "Implement in Sol: print whether any value of (each value of (the numbers from -1 to 5) increased by 6) is not equal to 55."
+ },
+ {
+  "id": "held_pairs-105",
+  "question": "What does this Sol program print?\n```sol\n> print (str (List.any (fn x -> x != 31) (List.map (fn x -> x + 6) [4, (-25), 3]))).\n```"
+ },
+ {
+  "id": "held_pairs-106",
+  "question": "Implement in Sol: print the values of (the numbers from 6 to 9) that are at most 10."
+ },
+ {
+  "id": "held_pairs-107",
+  "question": "Write a Sol program that prints the larger of (the last element of [59, 33, 55, 33, 3, (-12)]) and (the byte value at index 2 of the string \"lamp\")."
+ },
+ {
+  "id": "held_pairs-108",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str (Numeric.max (List.last (List.range 4 6)) (if (-12) < (-40) then 50 else 2))).\n```"
+ },
+ {
+  "id": "held_pairs-109",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str (List.any (fn x -> x <= 47) (List.map (fn x -> x - 4) (List.filter (fn x -> x >= 40) [7, 31])))).\n```"
+ },
+ {
+  "id": "held_pairs-110",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str (List.any (fn x -> x > 42) (List.drop 4 (List.rev [21, 10, (-3), 39, 18])))).\n```"
+ },
+ {
+  "id": "held_pairs-111",
+  "question": "Predict the stdout of this Sol file.\n```sol\n> print (str (List.filter (fn x -> x > 3) (List.filter (fn x -> x <= (-18)) (List.range 0 6)))).\n```"
+ },
+ {
+  "id": "held_pairs-112",
+  "question": "This Sol program should print the sum of (the values of (the numbers from 4 to 4) that are at least -26), but it prints 0. Fix it and state what the fixed program prints.\n```sol\n> print (str (List.sum (List.filter (fn x -> x < (-26)) (List.range 4 4)))).\n```"
+ },
+ {
+  "id": "held_pairs-113",
+  "question": "Implement in Sol: print whether any value of (each value of [(-38), 16, (-13), (-35), 2] multiplied by 6) is equal to -3."
+ },
+ {
+  "id": "held_pairs-114",
+  "question": "Predict the stdout of this Sol file.\n```sol\nvalues = [(-12), (-9), 23].\nanswer = Numeric.abs (List.sum (List.map (fn x -> x + 0) values)).\n> print (str answer).\n```"
+ },
+ {
+  "id": "held_pairs-115",
+  "question": "Predict the stdout of this Sol file.\n```sol\nxs = [(-26), 32, 34, 25, (-23), 32].\nanswer = List.any (fn x -> x != 5) (List.map (fn x -> x - 6) (List.map (fn x -> x - (-3)) xs)).\n> print (str answer).\n```"
+ },
+ {
+  "id": "held_pairs-116",
+  "question": "Predict the stdout of this Sol file.\n```sol\nitems = [23, 32].\nout = List.map (fn x -> x + (-4)) (List.drop 1 (List.rev items)).\n> print (str out).\n```"
+ },
+ {
+  "id": "held_pairs-117",
+  "question": "Predict the stdout of this Sol file.\n```sol\n> print (str (List.all (fn x -> x == 0) (List.filter (fn x -> x <= 25) (List.range (-4) (-4))))).\n```"
+ },
+ {
+  "id": "held_pairs-118",
+  "question": "Work out what this Sol program prints.\n```sol\n> print (Str.upper (Str.slice \"garden\" 4 9)).\n```"
+ },
+ {
+  "id": "held_pairs-119",
+  "question": "Work out what this Sol program prints.\n```sol\n> print (str (List.filter (fn x -> x >= 9) (List.range 0 6))).\n```"
+ },
+ {
+  "id": "big_numbers-000",
+  "question": "In Sol, compute and print the values of [62, (-32), 136, 64, (-6), 110] that are not equal to 14."
+ },
+ {
+  "id": "big_numbers-001",
+  "question": "What does this Sol program print?\n```sol\n> print (str (Numeric.clamp (-28) 124 15)).\n```"
+ },
+ {
+  "id": "big_numbers-002",
+  "question": "Give the output of this Sol code.\n```sol\nnums = [69, 80, 115, (-25), 139].\nresult = (List.last nums) + (2 / 6).\n> print (str result).\n```"
+ },
+ {
+  "id": "big_numbers-003",
+  "question": "What will this Sol program output?\n```sol\nnums = [15, 26, 104].\nout = List.rev (List.map (fn x -> x + 2) nums).\n> print (str out).\n```"
+ },
+ {
+  "id": "big_numbers-004",
+  "question": "Write Sol code that outputs [(-33), 2, 147, 37, 54, 136] paired element by element with (the numbers from -5 to -3). Then state what it prints."
+ },
+ {
+  "id": "big_numbers-005",
+  "question": "Predict the stdout of this Sol file.\n```sol\n> print (str (Numeric.abs 147)).\n```"
+ },
+ {
+  "id": "big_numbers-006",
+  "question": "Predict the stdout of this Sol file.\n```sol\nitems = [(-36), (-16), 134].\nanswer = List.filter (fn x -> x < 3) items.\n> print (str answer).\n```"
+ },
+ {
+  "id": "big_numbers-007",
+  "question": "Predict the stdout of this Sol file.\n```sol\n> print (str (List.all (fn x -> x > 140) (List.drop 1 [142, 114, (-36), (-21)]))).\n```"
+ },
+ {
+  "id": "big_numbers-008",
+  "question": "Predict the stdout of this Sol file.\n```sol\n> print (str (List.zip (List.map (fn x -> x + (-4)) [44, (-4), (-11), 35, (-25)]) [15, (-39), 76, 99, 63, 12])).\n```"
+ },
+ {
+  "id": "big_numbers-009",
+  "question": "Give the output of this Sol code.\n```sol\nvalues = [0, 70, 143, 99, 85, 14].\nanswer = List.sum (List.filter (fn x -> x > 61) values).\n> print (str answer).\n```"
+ },
+ {
+  "id": "big_numbers-010",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str ((if List.all (fn x -> x >= (-31)) (List.range 1 5) then (-12) else 64) * 1)).\n```"
+ },
+ {
+  "id": "big_numbers-011",
+  "question": "What will this Sol program output?\n```sol\n> print (str (List.last [64, 76, 75, 49, 34])).\n```"
+ },
+ {
+  "id": "big_numbers-012",
+  "question": "What will this Sol program output?\n```sol\n> print (str (Numeric.abs 73)).\n```"
+ },
+ {
+  "id": "big_numbers-013",
+  "question": "Work out what this Sol program prints.\n```sol\n> print (str (List.filter (fn x -> x <= 133) [(-3), 12, 34, (-6), (-1), 122])).\n```"
+ },
+ {
+  "id": "big_numbers-014",
+  "question": "What does this Sol program print?\n```sol\n> print (str (Numeric.clamp 137 150 135)).\n```"
+ },
+ {
+  "id": "big_numbers-015",
+  "question": "A Sol script is meant to print whether every value of (each value of ([90, 42] without its first 0 values) increased by 0) is less than 59. It currently prints True. Correct it.\n```sol\n> print (str (List.all (fn x -> x < 59) (List.map (fn x -> x * 0) (List.drop 0 [90, 42])))).\n```"
+ },
+ {
+  "id": "big_numbers-016",
+  "question": "Predict the stdout of this Sol file.\n```sol\n> print (str (List.sum [66, 115, 71, 94])).\n```"
+ },
+ {
+  "id": "big_numbers-017",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str (3 >= 103)).\n```"
+ },
+ {
+  "id": "big_numbers-018",
+  "question": "Implement in Sol: print the element at index 5 of ((each value of [42, 40, 108, 43, 74, (-22)] decreased by 6) reversed)."
+ },
+ {
+  "id": "big_numbers-019",
+  "question": "What does this Sol program print?\n```sol\n> print (str (List.filter (fn x -> x != 73) (List.take 4 [84, 29]))).\n```"
+ },
+ {
+  "id": "big_numbers-020",
+  "question": "Write a Sol program that prints the sum of (the first 0 values of [103, 17, 58, 124, (-26), 136])."
+ },
+ {
+  "id": "big_numbers-021",
+  "question": "What will this Sol program output?\n```sol\n> print (str (List.map (fn x -> x * (-2)) [10, 55, 138, 111, 29])).\n```"
+ },
+ {
+  "id": "big_numbers-022",
+  "question": "Predict the stdout of this Sol file.\n```sol\nnums = [9, 135, 124, 47, 45].\ntotal = List.filter (fn x -> x <= 85) nums.\n> print (str total).\n```"
+ },
+ {
+  "id": "big_numbers-023",
+  "question": "Write a Sol program that prints each value of [18, 128, 125] multiplied by 3."
+ },
+ {
+  "id": "big_numbers-024",
+  "question": "Predict the stdout of this Sol file.\n```sol\n> print (str (Numeric.clamp (-34) 72 140)).\n```"
+ },
+ {
+  "id": "big_numbers-025",
+  "question": "Write a Sol program that prints 105 times (-5)."
+ },
+ {
+  "id": "big_numbers-026",
+  "question": "Predict the stdout of this Sol file.\n```sol\n> print (str (List.sum (List.map (fn x -> x - (-3)) (List.filter (fn x -> x <= 66) [15, (-12)])))).\n```"
+ },
+ {
+  "id": "big_numbers-027",
+  "question": "What is printed by the following Sol script?\n```sol\n> print (str (List.all (fn x -> x <= 65) (List.rev [(-2), 119, 11]))).\n```"
+ },
+ {
+  "id": "big_numbers-028",
+  "question": "Write a Sol program that prints the absolute value of 110."
+ },
+ {
+  "id": "big_numbers-029",
+  "question": "What does this Sol program print?\n```sol\n> print (str (List.all (fn x -> x != 72) [132, 104, 4, 68])).\n```"
+ },
+ {
+  "id": "big_numbers-030",
+  "question": "What is printed by the following Sol script?\n```sol\n> print (str (122 * 1)).\n```"
+ },
+ {
+  "id": "big_numbers-031",
+  "question": "What is printed by the following Sol script?\n```sol\n> print (str (List.sum (List.filter (fn x -> x > 144) [(-40), 112, (-27), 100]))).\n```"
+ },
+ {
+  "id": "big_numbers-032",
+  "question": "A Sol script is meant to print (the absolute value of 25) clamped into [-39, 97]. It currently prints 24. Correct it.\n```sol\n> print (str (Numeric.clamp (-39) 97 (Numeric.abs 24))).\n```"
+ },
+ {
+  "id": "big_numbers-033",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str (Numeric.min (List.last [73, 93, 120, 148, 42, 146]) ((Str.find 101 \"stone\") % 9))).\n```"
+ },
+ {
+  "id": "big_numbers-034",
+  "question": "A Sol script is meant to print whether every value of [85, 70] is equal to 6. It currently prints True. Correct it.\n```sol\ndata = [85, 70].\nout = List.all (fn x -> x >= 6) data.\n> print (str out).\n```"
+ },
+ {
+  "id": "big_numbers-035",
+  "question": "A Sol script is meant to print ([136, (-3), (-38), 73, 80] without its first 2 values) reversed. It currently prints [80, 73]. Correct it.\n```sol\n> print (str (List.rev (List.drop 3 [136, (-3), (-38), 73, 80]))).\n```"
+ },
+ {
+  "id": "big_numbers-036",
+  "question": "What is printed by the following Sol script?\n```sol\nvalues = [65, 86, (-4), 117].\nout = List.filter (fn x -> x >= 16) values.\n> print (str out).\n```"
+ },
+ {
+  "id": "big_numbers-037",
+  "question": "What does this Sol program print?\n```sol\n> print (str (41 - 81)).\n```"
+ },
+ {
+  "id": "big_numbers-038",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str (Numeric.abs ((Str.find 114 \"copper\") - (26 - 77)))).\n```"
+ },
+ {
+  "id": "big_numbers-039",
+  "question": "Give the output of this Sol code.\n```sol\nvalues = [104, 37].\nout = List.zip values [94, 124].\n> print (str out).\n```"
+ },
+ {
+  "id": "big_numbers-040",
+  "question": "Work out what this Sol program prints.\n```sol\nxs = [78, 12, 3, (-5), 66, 143].\nanswer = List.zip xs (List.range 9 12).\n> print (str answer).\n```"
+ },
+ {
+  "id": "big_numbers-041",
+  "question": "What will this Sol program output?\n```sol\n> print (str (List.rev (List.take 3 (List.filter (fn x -> x <= 93) [30, 106])))).\n```"
+ },
+ {
+  "id": "big_numbers-042",
+  "question": "What does this Sol program print?\n```sol\n> print (str (Numeric.clamp 12 90 (134 + (-26)))).\n```"
+ },
+ {
+  "id": "big_numbers-043",
+  "question": "What will this Sol program output?\n```sol\n> print (str (146 + 65)).\n```"
+ },
+ {
+  "id": "big_numbers-044",
+  "question": "What is printed by the following Sol script?\n```sol\nxs = [95, 65, 0, 31, 77].\nanswer = List.map (fn x -> x + (-1)) (List.take 3 (List.filter (fn x -> x <= 71) xs)).\n> print (str answer).\n```"
+ },
+ {
+  "id": "big_numbers-045",
+  "question": "Predict the stdout of this Sol file.\n```sol\n> print (str (132 + 91)).\n```"
+ },
+ {
+  "id": "big_numbers-046",
+  "question": "What is printed by the following Sol script?\n```sol\n> print (str (List.zip (List.filter (fn x -> x > (-21)) [(-18), 144, (-22)]) (List.drop 0 [64, 77, 98, 106, 37]))).\n```"
+ },
+ {
+  "id": "big_numbers-047",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str (List.zip (List.map (fn x -> x - (-3)) [11, 47, 150]) (List.rev [(-13), 125, 41]))).\n```"
+ },
+ {
+  "id": "big_numbers-048",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str ((99 * (-1)) % 4)).\n```"
+ },
+ {
+  "id": "big_numbers-049",
+  "question": "What is printed by the following Sol script?\n```sol\n> print (str ((Numeric.abs 95) * 5)).\n```"
+ },
+ {
+  "id": "big_numbers-050",
+  "question": "Predict the stdout of this Sol file.\n```sol\n> print (str (9 - 126)).\n```"
+ },
+ {
+  "id": "big_numbers-051",
+  "question": "Work out what this Sol program prints.\n```sol\n> print (str (if List.all (fn x -> x == 102) [108, 11, 144, (-27)] then 139 else (-14))).\n```"
+ },
+ {
+  "id": "big_numbers-052",
+  "question": "What will this Sol program output?\n```sol\n> print (str (List.filter (fn x -> x > 84) (List.filter (fn x -> x > 8) [109, 78, (-4), (-25), 36, 15]))).\n```"
+ },
+ {
+  "id": "big_numbers-053",
+  "question": "What does this Sol program print?\n```sol\n> print (str (List.map (fn x -> x - 6) (List.map (fn x -> x - 3) [102, 62]))).\n```"
+ },
+ {
+  "id": "big_numbers-054",
+  "question": "A Sol script is meant to print (each value of [116, 40, 88, 74, (-25)] multiplied by 2) reversed. It currently prints [-50, 148, 170, 80, 232]. Correct it.\n```sol\nvalues = [116, 40, 85, 74, (-25)].\nresult = List.rev (List.map (fn x -> x * 2) values).\n> print (str result).\n```"
+ },
+ {
+  "id": "big_numbers-055",
+  "question": "What will this Sol program output?\n```sol\nxs = [47, (-33), 107, 83, 105].\nresult = List.all (fn x -> x >= 104) xs.\n> print (str result).\n```"
+ },
+ {
+  "id": "big_numbers-056",
+  "question": "This Sol program should print the values of [87, 146, 90] that are less than 27, but it prints [87, 146, 90]. Fix it and state what the fixed program prints.\n```sol\ndata = [87, 146, 90].\nout = List.filter (fn x -> x > 27) data.\n> print (str out).\n```"
+ },
+ {
+  "id": "big_numbers-057",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str ((List.sum (List.range 9 12)) - 127)).\n```"
+ },
+ {
+  "id": "big_numbers-058",
+  "question": "What will this Sol program output?\n```sol\nitems = [(-27), 79, 21].\nresult = (List.take 4 items) ! 0.\n> print (str result).\n```"
+ },
+ {
+  "id": "big_numbers-059",
+  "question": "What is printed by the following Sol script?\n```sol\n> print (str (108 % 4)).\n```"
+ },
+ {
+  "id": "big_numbers-060",
+  "question": "Give the output of this Sol code.\n```sol\ndata = [86, 146, 73, (-25), 31, 10].\nout = List.rev (List.map (fn x -> x - (-3)) data).\n> print (str out).\n```"
+ },
+ {
+  "id": "big_numbers-061",
+  "question": "Implement in Sol: print the absolute value of 105."
+ },
+ {
+  "id": "big_numbers-062",
+  "question": "Predict the stdout of this Sol file.\n```sol\n> print (str (List.zip [24, 33, 116, 130, 110] [142, 77])).\n```"
+ },
+ {
+  "id": "big_numbers-063",
+  "question": "What does this Sol program print?\n```sol\n> print (str (List.map (fn x -> x * 5) (List.take 2 [81, 70, 97, 130]))).\n```"
+ },
+ {
+  "id": "big_numbers-064",
+  "question": "What does this Sol program print?\n```sol\nnums = [73, 134, 146].\nanswer = List.filter (fn x -> x < 64) (List.take 4 nums).\n> print (str answer).\n```"
+ },
+ {
+  "id": "big_numbers-065",
+  "question": "Predict the stdout of this Sol file.\n```sol\n> print (str (Numeric.min (if List.any (fn x -> x < 128) [(-28), 135, (-22), 77, 127] then (List.range (-3) 0) ! 1 else if List.any (fn x -> x > 126) (List.range 10 14) then (-39) else 147) (Str.at \"garden\" 2))).\n```"
+ },
+ {
+  "id": "big_numbers-066",
+  "question": "This Sol program should print (the sum of [(-30), 103, 10, 104]) clamped into [-30, -2], but it prints 1. Fix it and state what the fixed program prints.\n```sol\n> print (str (Numeric.clamp (-30) 1 (List.sum [(-30), 103, 10, 104]))).\n```"
+ },
+ {
+  "id": "big_numbers-067",
+  "question": "This Sol program should print each value of [(-14), 144, 122, 21, 52] decreased by 5, but it prints [-19, 142, 117, 16, 47]. Fix it and state what the fixed program prints.\n```sol\n> print (str (List.map (fn x -> x - 5) [(-14), 147, 122, 21, 52])).\n```"
+ },
+ {
+  "id": "big_numbers-068",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str (84 / 7)).\n```"
+ },
+ {
+  "id": "big_numbers-069",
+  "question": "What will this Sol program output?\n```sol\n> print (str (114 + 3)).\n```"
+ },
+ {
+  "id": "big_numbers-070",
+  "question": "What will this Sol program output?\n```sol\n> print (str (((Numeric.abs 86) / 2) / 8)).\n```"
+ },
+ {
+  "id": "big_numbers-071",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str (List.drop 0 [15, 20, 143, (-20), (-16), 47])).\n```"
+ },
+ {
+  "id": "big_numbers-072",
+  "question": "In Sol, compute and print [137, 98] paired element by element with [15, (-20), 141]."
+ },
+ {
+  "id": "big_numbers-073",
+  "question": "What does this Sol program print?\n```sol\n> print (str (List.sum [3, 110])).\n```"
+ },
+ {
+  "id": "big_numbers-074",
+  "question": "What is printed by the following Sol script?\n```sol\n> print (str (List.filter (fn x -> x < 88) [34, 93, 98])).\n```"
+ },
+ {
+  "id": "big_numbers-075",
+  "question": "This Sol program should print (the smaller of (the smaller of 146 and 114) and (43 divided by 5 (integer division))) minus (the element at index 0 of (each value of (the numbers from 5 to 7) multiplied by -2)), but it prints 17. Fix it and state what the fixed program prints.\n```sol\n> print (str ((Numeric.min (Numeric.min 146 114) (43 / 6)) - ((List.map (fn x -> x * (-2)) (List.range 5 7)) ! 0))).\n```"
+ },
+ {
+  "id": "big_numbers-076",
+  "question": "What will this Sol program output?\n```sol\n> print (str (List.last [(-38), 117, (-19), 76])).\n```"
+ },
+ {
+  "id": "big_numbers-077",
+  "question": "Work out what this Sol program prints.\n```sol\nnums = [107, 53, 130, 133, 118].\nresult = List.all (fn x -> x > 100) (List.rev nums).\n> print (str result).\n```"
+ },
+ {
+  "id": "big_numbers-078",
+  "question": "Work out what this Sol program prints.\n```sol\n> print (str (List.any (fn x -> x >= 55) [(-36), 88])).\n```"
+ },
+ {
+  "id": "big_numbers-079",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str (List.zip [49, (-39)] [150, 16, 12, (-23), (-2), (-4)])).\n```"
+ },
+ {
+  "id": "big_numbers-080",
+  "question": "What is printed by the following Sol script?\n```sol\n> print (str ((Numeric.max (11 - 25) (Numeric.min 40 137)) - (Str.find 122 \"qos\"))).\n```"
+ },
+ {
+  "id": "big_numbers-081",
+  "question": "Implement in Sol: print the first 1 values of ([54, 99, 149, 123, 10] without its first 1 values)."
+ },
+ {
+  "id": "big_numbers-082",
+  "question": "Work out what this Sol program prints.\n```sol\nxs = [45, 102, 123].\nout = (Numeric.max 40 18) > (xs ! 2).\n> print (str out).\n```"
+ },
+ {
+  "id": "big_numbers-083",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str (Numeric.abs (Str.find 121 \"cedar\"))).\n```"
+ },
+ {
+  "id": "big_numbers-084",
+  "question": "What does this Sol program print?\n```sol\nitems = [145, 5].\nanswer = List.all (fn x -> x >= 150) items.\n> print (str answer).\n```"
+ },
+ {
+  "id": "big_numbers-085",
+  "question": "What does this Sol program print?\n```sol\n> print (str (List.drop 2 [102, 57])).\n```"
+ },
+ {
+  "id": "big_numbers-086",
+  "question": "Implement in Sol: print (the values of [(-1), 106, 128, 83, 20, 46] that are at most 91) reversed."
+ },
+ {
+  "id": "big_numbers-087",
+  "question": "What is printed by the following Sol script?\n```sol\n> print (str (List.all (fn x -> x > 16) [75, 0, 99, 135, 70, 85])).\n```"
+ },
+ {
+  "id": "big_numbers-088",
+  "question": "What will this Sol program output?\n```sol\nitems = [142, 34, 1, (-34)].\nresult = List.any (fn x -> x > (-40)) items.\n> print (str result).\n```"
+ },
+ {
+  "id": "big_numbers-089",
+  "question": "Predict the stdout of this Sol file.\n```sol\n> print (str ([125, 74] ! 1)).\n```"
+ },
+ {
+  "id": "big_numbers-090",
+  "question": "What does this Sol program print?\n```sol\n> print (str (Numeric.abs 69)).\n```"
+ },
+ {
+  "id": "big_numbers-091",
+  "question": "This Sol program should print the values of [105, 123, (-21)] that are less than 143, but it prints [105, 126, -21]. Fix it and state what the fixed program prints.\n```sol\nitems = [105, 126, (-21)].\nout = List.filter (fn x -> x < 143) items.\n> print (str out).\n```"
+ },
+ {
+  "id": "big_numbers-092",
+  "question": "What is printed by the following Sol script?\n```sol\nxs = [112, 33, 37, (-12), 27].\nanswer = List.map (fn x -> x + (-2)) (List.drop 2 xs).\n> print (str answer).\n```"
+ },
+ {
+  "id": "big_numbers-093",
+  "question": "What does this Sol program print?\n```sol\n> print (str (if List.all (fn x -> x <= 18) [(-19), 121, 83, 138, 2] then (List.take 1 [106, 69]) ! 0 else 47)).\n```"
+ },
+ {
+  "id": "big_numbers-094",
+  "question": "What will this Sol program output?\n```sol\n> print (str (149 / 5)).\n```"
+ },
+ {
+  "id": "big_numbers-095",
+  "question": "What is printed by the following Sol script?\n```sol\nitems = [145, (-3), (-22), 148, 32, 83].\nout = List.filter (fn x -> x != 35) (List.filter (fn x -> x == 7) items).\n> print (str out).\n```"
+ },
+ {
+  "id": "big_numbers-096",
+  "question": "A Sol script is meant to print whether every value of ([138, 0, (-30), 9] reversed) is equal to 120. It currently prints True. Correct it.\n```sol\n> print (str (List.all (fn x -> x != 120) (List.rev [138, 0, (-30), 9]))).\n```"
+ },
+ {
+  "id": "big_numbers-097",
+  "question": "Write a Sol program that prints whether any value of [127, 109] is at most -21."
+ },
+ {
+  "id": "big_numbers-098",
+  "question": "Give the output of this Sol code.\n```sol\n> print (str (List.all (fn x -> x != 64) [(-26), 5, 54])).\n```"
+ },
+ {
+  "id": "big_numbers-099",
+  "question": "What does this Sol program print?\n```sol\n> print (str ((List.sum [(-40), 102]) + (List.last [63, 132, 112, 116, (-28)]))).\n```"
+ },
+ {
+  "id": "big_numbers-100",
+  "question": "Implement in Sol: print (4 times (-2)) if (whether any value of [49, 83, 0, 106, 103] is greater than -18), otherwise 20."
+ },
+ {
+  "id": "big_numbers-101",
+  "question": "What will this Sol program output?\n```sol\n> print (str ([142, 56, 146] ! 0)).\n```"
+ },
+ {
+  "id": "big_numbers-102",
+  "question": "This Sol program should print 119 minus 7, but it prints 113. Fix it and state what the fixed program prints.\n```sol\n> print (str (119 - 6)).\n```"
+ },
+ {
+  "id": "big_numbers-103",
+  "question": "In Sol, compute and print the position of byte 111 in the string \"rocket\"."
+ },
+ {
+  "id": "big_numbers-104",
+  "question": "What does this Sol program print?\n```sol\nvalues = [117, (-21), 107, 26].\nout = List.filter (fn x -> x != 102) (List.take 1 values).\n> print (str out).\n```"
+ },
+ {
+  "id": "big_numbers-105",
+  "question": "A Sol script is meant to print the absolute value of (the element at index 1 of [25, 117]). It currently prints 25. Correct it.\n```sol\n> print (str (Numeric.abs ([25, 117] ! 0))).\n```"
+ },
+ {
+  "id": "big_numbers-106",
+  "question": "Implement in Sol: print whether 63 is greater than 115."
+ },
+ {
+  "id": "big_numbers-107",
+  "question": "What will this Sol program output?\n```sol\n> print (str (List.any (fn x -> x >= 71) (List.drop 1 [(-33), 62, 125, (-4), (-8)]))).\n```"
+ },
+ {
+  "id": "big_numbers-108",
+  "question": "Work out what this Sol program prints.\n```sol\n> print (str (List.last (List.drop 4 (List.map (fn x -> x * 3) [102, 41, 105, 135, 138])))).\n```"
+ },
+ {
+  "id": "big_numbers-109",
+  "question": "Work out what this Sol program prints.\n```sol\n> print (str (List.sum (List.drop 2 [104, 4, (-8), 117]))).\n```"
+ },
+ {
+  "id": "big_numbers-110",
+  "question": "Implement in Sol: print 128 plus 117."
+ },
+ {
+  "id": "big_numbers-111",
+  "question": "What will this Sol program output?\n```sol\n> print (str (List.all (fn x -> x > (-38)) (List.take 2 [43, 91, 132]))).\n```"
+ },
+ {
+  "id": "big_numbers-112",
+  "question": "Write a Sol program that prints ([119, 35, 126, 73, 92] without its first 1 values) reversed."
+ },
+ {
+  "id": "big_numbers-113",
+  "question": "This Sol program should print whether every value of [102, (-40), 36, 101, (-1)] is at most -24, but it prints True. Fix it and state what the fixed program prints.\n```sol\nxs = [102, (-40), 36, 101, (-1)].\nresult = List.all (fn x -> x != (-24)) xs.\n> print (str result).\n```"
+ },
+ {
+  "id": "big_numbers-114",
+  "question": "This Sol program should print the values of [41, (-16), 46, 123, 87, 0] that are equal to 142, but it prints [41, -16, 46, 123, 87, 0]. Fix it and state what the fixed program prints.\n```sol\n> print (str (List.filter (fn x -> x != 142) [41, (-16), 46, 123, 87, 0])).\n```"
+ },
+ {
+  "id": "big_numbers-115",
+  "question": "What will this Sol program output?\n```sol\n> print (str ((Numeric.min (141 % 6) (if 150 > 71 then 117 else 138)) < ((Str.find 99 \"copper\") % 6))).\n```"
+ },
+ {
+  "id": "big_numbers-116",
+  "question": "Work out what this Sol program prints.\n```sol\n> print (str (List.all (fn x -> x >= 106) [101, 61, (-14), 141, 133, 138])).\n```"
+ },
+ {
+  "id": "big_numbers-117",
+  "question": "Write Sol code that outputs whether 85 is less than (-13). Then state what it prints."
+ },
+ {
+  "id": "big_numbers-118",
+  "question": "What will this Sol program output?\n```sol\n> print (str (List.zip [78, 20, 13, 49, 91] (List.range (-3) (-1)))).\n```"
+ },
+ {
+  "id": "big_numbers-119",
+  "question": "What will this Sol program output?\n```sol\n> print (str (62 * 10)).\n```"
+ },
+ {
+  "id": "probe-t1-map-sum",
+  "question": "What does this Sol program print?\n```sol\n> print (str (List.sum (List.map (fn x -> x * 5) [2, 7, 4]))).\n```"
+ },
+ {
+  "id": "probe-t1-range-sum",
+  "question": "What is printed by the following Sol script?\n```sol\n> print (str (List.sum (List.range 3 6))).\n```"
+ },
+ {
+  "id": "probe-t1-clamp",
+  "question": "Tell me the output of this Sol code:\n```sol\n> print (str (Numeric.clamp 2 9 (-3))).\n```"
+ },
+ {
+  "id": "probe-t1-rev-index",
+  "question": "What will this Sol program output?\n```sol\n> print (str ((List.rev [11, 12, 13, 14]) ! 1)).\n```"
+ },
+ {
+  "id": "probe-t1-gen-double-sum",
+  "question": "Write a Sol program that doubles each number in [6, 1, 8] and prints the sum of the results."
+ },
+ {
+  "id": "probe-t1-slice",
+  "question": "What does this print in Sol?\n```sol\n> print (str (Str.slice \"railway\" 0 4)).\n```"
+ },
+ {
+  "id": "probe-t1-take-map",
+  "question": "What is the output?\n```sol\n> print (str (List.take 3 (List.map (fn x -> x + 1) [5, 6, 7, 8]))).\n```"
+ },
+ {
+  "id": "probe-t1-fix-index",
+  "question": "This Sol program is supposed to print the first element of [9, 4, 2], but it prints 4. Fix it and say what the fixed program prints.\n```sol\n> print (str ([9, 4, 2] ! 1)).\n```"
+ },
+ {
+  "id": "probe-t2-upper",
+  "question": "What does this Sol program print?\n```sol\n> print (str (Str.upper \"sol\")).\n```"
+ },
+ {
+  "id": "probe-t2-max",
+  "question": "What is printed?\n```sol\n> print (str (Numeric.max 14 (-2))).\n```"
+ },
+ {
+  "id": "probe-t2-abs",
+  "question": "What does this output?\n```sol\n> print (str (Numeric.abs (-41))).\n```"
+ },
+ {
+  "id": "probe-t2-any",
+  "question": "What does this Sol program print?\n```sol\n> print (str (List.any (fn x -> x > 10) [3, 12, 5])).\n```"
+ },
+ {
+  "id": "probe-t2-all",
+  "question": "What is the output of this Sol code?\n```sol\n> print (str (List.all (fn x -> x % 2 == 0) [2, 4, 7])).\n```"
+ },
+ {
+  "id": "probe-t2-join",
+  "question": "What does this print?\n```sol\n> print (Str.join \", \" [\"red\", \"green\"]).\n```"
+ },
+ {
+  "id": "probe-t2-zip",
+  "question": "What does this Sol program print?\n```sol\n> print (str (List.zip [1, 2, 3] [7, 8, 9])).\n```"
+ },
+ {
+  "id": "probe-t2-if",
+  "question": "What is printed by this Sol expression?\n```sol\n> print (str (if 4 > 9 then 1 else 0)).\n```"
+ },
+ {
+  "id": "probe-t2-drop",
+  "question": "What does this output?\n```sol\n> print (str (List.drop 2 [10, 20, 30, 40])).\n```"
+ },
+ {
+  "id": "probe-t2-last",
+  "question": "What does this Sol program print?\n```sol\n> print (str (List.last (List.range 1 7))).\n```"
+ },
+ {
+  "id": "probe-t2-trim",
+  "question": "What does this print?\n```sol\n> print (Str.trim \"   hello world  \").\n```"
+ },
+ {
+  "id": "probe-t2-gen-filter",
+  "question": "Write a Sol program that keeps only the numbers greater than 5 in [2, 9, 6, 1] and prints the resulting list."
+ },
+ {
+  "id": "probe-t3-map-filter-sum",
+  "question": "What does this Sol program print?\n```sol\n> print (str (List.sum (List.filter (fn x -> x > 3) (List.map (fn x -> x * 2) [1, 2, 3])))).\n```"
+ },
+ {
+  "id": "probe-t3-clamp-sum",
+  "question": "What is the output?\n```sol\n> print (str (Numeric.clamp 0 5 (List.sum [4, 3]))).\n```"
+ },
+ {
+  "id": "probe-t3-rev-take",
+  "question": "What does this Sol code print?\n```sol\n> print (str (List.rev (List.take 2 [8, 6, 4]))).\n```"
+ },
+ {
+  "id": "probe-t3-binding-mod",
+  "question": "What does this Sol program print?\n```sol\nx = 17 % 5.\n> print (str (x * 3)).\n```"
+ },
+ {
+  "id": "probe-c-args",
+  "question": "How do you pass command-line arguments to a Sol script, and how does the script read them?"
+ },
+ {
+  "id": "probe-c-conflict",
+  "question": "If two Sol scripts write the same file at once, what happens to the buffered writes of the one that conflicts?"
+ },
+ {
+  "id": "probe-c-query-vs-aftercommit",
+  "question": "In Sol, when would you use Proc.query instead of Proc.afterCommit?"
+ },
+ {
+  "id": "probe-c-at-least-once",
+  "question": "Why must a command queued with Proc.afterCommit be safe to run more than once?"
+ },
+ {
+  "id": "probe-c-runnow",
+  "question": "Why should a Sol script keep Proc.runNow calls at its top level instead of hiding them inside helper functions?"
+ },
+ {
+  "id": "probe-c-brace",
+  "question": "How do you put a literal { character inside a Sol string literal?"
+ },
+ {
+  "id": "probe-c-json-parse",
+  "question": "What kind of value does J.parse from Sol's JSON library return?"
+ },
+ {
+  "id": "probe-c-no-shell",
+  "question": "Does Sol run external programs through a shell with pipelines and glob expansion?"
+ }
+]

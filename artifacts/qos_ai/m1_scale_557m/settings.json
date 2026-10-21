@@ -1,0 +1,28 @@
+{
+  "batch_size": 1,
+  "benchmark_ancestry": "pilot train partition only; no inherited model weights",
+  "bf16": false,
+  "checkpoint_blocks": true,
+  "code": {
+    "qos_ai.py": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+    "qos_ai_scale.py": "d595cd9f41475d3fce785099ed6545a7d68f740fdc14b255aa58c5c0bc2e987c"
+  },
+  "config": {
+    "context_length": 512,
+    "embedding_size": 1280,
+    "head_count": 20,
+    "layer_count": 24,
+    "vocabulary_size": 65536
+  },
+  "dataset_hash": "227501e433783a1cd6b46deeff280603548dd6c108abc0fb5eb9ecd29cf058cf",
+  "device": "mps",
+  "gradient_accumulation": 1,
+  "initialization": "random; tokenizer mapping only",
+  "learning_rate": 0.01,
+  "optimizer": "adafactor",
+  "seed": 7,
+  "sequence_length": 512,
+  "torch": "2.13.0",
+  "total_steps": 64,
+  "warmup_steps": 8
+}

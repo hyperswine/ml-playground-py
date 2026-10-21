@@ -1,0 +1,1155 @@
+{
+  "training": {
+    "method": "answer-only supervised cross-entropy",
+    "parent": "/Users/jq/qos_ai_eval/qos_ai/pod_pt15/student.pt",
+    "parent_sha256": "2db239f619ce87ac330b201c0c61c7aa76ea87b086a7326f86faf3b3bffe7a3d",
+    "data_sha256": "11c9062dd487440d5c6717b3c84b79e0b578b42d6a501e597cc5b78f155fe324",
+    "split_hash": "cd57f4a7b5c2b02b40c6b8679c39a82712535c33254385a9139cfe8504529be3",
+    "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+    "epochs_requested": 5,
+    "batch_size": 2,
+    "grad_accumulation": 2,
+    "learning_rate": 5e-05,
+    "weight_decay": 0.01,
+    "warmup_steps": 5,
+    "gradient_clip": 1.0,
+    "max_minutes": 10,
+    "seed": 7,
+    "device": "mps",
+    "host": "JQs-Mac-mini.local",
+    "torch": "2.13.0",
+    "examples": 65,
+    "training_code_sha256": "345f0a6770baeb5e6410a7e217ab8d6a193629a0624c1e04de7ad3e9b75c0352",
+    "answer_tokens": 2043,
+    "unknown_answer_tokens_skipped": 1,
+    "longest_example": 101,
+    "optimizer_steps": 85,
+    "epochs_completed": 5,
+    "examples_seen": 325,
+    "supervised_tokens": 10210,
+    "initial_training_loss": 3.035958599273652,
+    "final_training_loss": 0.03404703275250393,
+    "elapsed_seconds": 103.9555017920211,
+    "budget_stop": false,
+    "checkpoint_sha256": "f12076f64ad8c04336ddfca35e0ccc828e86ee4cd23608b0f0e026cd11eb107f",
+    "metadata_repair": {
+      "reason": "plain version string for restricted loader; shared tied-weight storage",
+      "previous_file_sha256": "0f042feb51a361254f5409b26a22f367d4939d0c97eaf89be30ce3bfc427cda5",
+      "weights_before_sha256": "77896446c4cdb8351266f8755f9e238af5fe52f95c133c084462db884e6bbb53",
+      "weights_after_sha256": "77896446c4cdb8351266f8755f9e238af5fe52f95c133c084462db884e6bbb53",
+      "repair_code_sha256": "56f095e4185fb31dd678b815d4cc1d34d07dc266b49815e2bbad4e61f08a38de"
+    }
+  },
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "scope": "complete development partition; no model evaluation of test partition",
+  "comparison_code_sha256": "0e672dca935a8ba0f76333dc599b1c4009ec4da286dde3f8cb73a435b5943b7e",
+  "accuracy_note": "Rubric matching is a lexical proxy. Factual judgments are separate, with explicit reviewer coverage.",
+  "runs": {
+    "raw": {
+      "no_repeat": 0,
+      "max_new_tokens": 200,
+      "parent": {
+        "checkpoint_sha256": "2db239f619ce87ac330b201c0c61c7aa76ea87b086a7326f86faf3b3bffe7a3d",
+        "ancestry": "legacy_or_unknown",
+        "count": 90,
+        "concept_groups": 34,
+        "rubric_proxy_pass_rate": 0.07777777777777778,
+        "finished_rate": 0.5666666666666667,
+        "severe_loop_rate": 0.5444444444444444,
+        "mean_tokens": 135.04444444444445,
+        "context_limited_count": 0
+      },
+      "tuned": {
+        "checkpoint_sha256": "f12076f64ad8c04336ddfca35e0ccc828e86ee4cd23608b0f0e026cd11eb107f",
+        "ancestry": "legacy_or_unknown",
+        "count": 90,
+        "concept_groups": 34,
+        "rubric_proxy_pass_rate": 0.2222222222222222,
+        "finished_rate": 1.0,
+        "severe_loop_rate": 0.07777777777777778,
+        "mean_tokens": 22.733333333333334,
+        "context_limited_count": 0
+      },
+      "explicit_output_diagnostic": {
+        "count": 33,
+        "parent_matches": 1,
+        "tuned_matches": 7,
+        "parent_parseable": 13,
+        "tuned_parseable": 33,
+        "note": "Post-hoc diagnostic of explicitly stated output literals; code echoes excluded. Ambiguous answers are unmatched. Not full factual accuracy.",
+        "details": [
+          {
+            "id": "output-string-length-1",
+            "expected": "5",
+            "parent_stated": "hello",
+            "tuned_stated": "2",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-string-length-2",
+            "expected": "5",
+            "parent_stated": null,
+            "tuned_stated": "18",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-string-length-3",
+            "expected": "5",
+            "parent_stated": null,
+            "tuned_stated": "2",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-string-first-byte-1",
+            "expected": "65",
+            "parent_stated": "ABC",
+            "tuned_stated": "7",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-string-first-byte-2",
+            "expected": "65",
+            "parent_stated": null,
+            "tuned_stated": "76",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-string-first-byte-3",
+            "expected": "65",
+            "parent_stated": null,
+            "tuned_stated": "76",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-string-slice-1",
+            "expected": "bcd",
+            "parent_stated": "abcdef",
+            "tuned_stated": "1",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-string-slice-2",
+            "expected": "bcd",
+            "parent_stated": null,
+            "tuned_stated": "cde",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-string-slice-3",
+            "expected": "bcd",
+            "parent_stated": null,
+            "tuned_stated": "cde",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-string-find-missing-1",
+            "expected": "-1",
+            "parent_stated": "abc",
+            "tuned_stated": "9",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-string-find-missing-2",
+            "expected": "-1",
+            "parent_stated": null,
+            "tuned_stated": "ab",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-string-find-missing-3",
+            "expected": "-1",
+            "parent_stated": null,
+            "tuned_stated": "-1",
+            "parent_match": false,
+            "tuned_match": true
+          },
+          {
+            "id": "output-list-map-1",
+            "expected": "12",
+            "parent_stated": null,
+            "tuned_stated": "13",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-map-2",
+            "expected": "12",
+            "parent_stated": null,
+            "tuned_stated": "3",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-map-3",
+            "expected": "12",
+            "parent_stated": null,
+            "tuned_stated": "3",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-filter-1",
+            "expected": "7",
+            "parent_stated": null,
+            "tuned_stated": "3",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-filter-2",
+            "expected": "7",
+            "parent_stated": null,
+            "tuned_stated": "3",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-filter-3",
+            "expected": "7",
+            "parent_stated": "defined",
+            "tuned_stated": "3",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-range-1",
+            "expected": "9",
+            "parent_stated": null,
+            "tuned_stated": "18",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-range-2",
+            "expected": "9",
+            "parent_stated": null,
+            "tuned_stated": "18",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-range-3",
+            "expected": "9",
+            "parent_stated": null,
+            "tuned_stated": "18",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-take-1",
+            "expected": "11",
+            "parent_stated": null,
+            "tuned_stated": "18",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-take-2",
+            "expected": "11",
+            "parent_stated": null,
+            "tuned_stated": "18",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-take-3",
+            "expected": "11",
+            "parent_stated": null,
+            "tuned_stated": "18",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-reverse-1",
+            "expected": "6",
+            "parent_stated": "4,5,6",
+            "tuned_stated": "6",
+            "parent_match": false,
+            "tuned_match": true
+          },
+          {
+            "id": "output-list-reverse-2",
+            "expected": "6",
+            "parent_stated": "10",
+            "tuned_stated": "6",
+            "parent_match": false,
+            "tuned_match": true
+          },
+          {
+            "id": "output-list-reverse-3",
+            "expected": "6",
+            "parent_stated": null,
+            "tuned_stated": "6",
+            "parent_match": false,
+            "tuned_match": true
+          },
+          {
+            "id": "output-numeric-clamp-1",
+            "expected": "10",
+            "parent_stated": "of",
+            "tuned_stated": "15",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-numeric-clamp-2",
+            "expected": "10",
+            "parent_stated": "1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "tuned_stated": "15",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-numeric-clamp-3",
+            "expected": "10",
+            "parent_stated": "10",
+            "tuned_stated": "15",
+            "parent_match": true,
+            "tuned_match": false
+          },
+          {
+            "id": "output-numeric-min-1",
+            "expected": "3",
+            "parent_stated": "of",
+            "tuned_stated": "3",
+            "parent_match": false,
+            "tuned_match": true
+          },
+          {
+            "id": "output-numeric-min-2",
+            "expected": "3",
+            "parent_stated": "10",
+            "tuned_stated": "3",
+            "parent_match": false,
+            "tuned_match": true
+          },
+          {
+            "id": "output-numeric-min-3",
+            "expected": "3",
+            "parent_stated": "1",
+            "tuned_stated": "3",
+            "parent_match": false,
+            "tuned_match": true
+          }
+        ]
+      },
+      "proxy_improved": 15,
+      "proxy_regressed": 2,
+      "categories": {
+        "architecture": {
+          "count": 4,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 1
+        },
+        "false_premise": {
+          "count": 17,
+          "parent_proxy_passes": 1,
+          "tuned_proxy_passes": 3
+        },
+        "language": {
+          "count": 2,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "tooling": {
+          "count": 4,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 3
+        },
+        "modules": {
+          "count": 2,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "actors": {
+          "count": 8,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 2
+        },
+        "binary": {
+          "count": 6,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "types": {
+          "count": 4,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "parsing": {
+          "count": 4,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 1
+        },
+        "output_prediction": {
+          "count": 33,
+          "parent_proxy_passes": 5,
+          "tuned_proxy_passes": 10
+        },
+        "debugging": {
+          "count": 2,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "code_generation": {
+          "count": 2,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "insufficient_information": {
+          "count": 2,
+          "parent_proxy_passes": 1,
+          "tuned_proxy_passes": 0
+        }
+      },
+      "tracks": {
+        "familiar": {
+          "count": 75,
+          "parent_proxy_passes": 6,
+          "tuned_proxy_passes": 20
+        },
+        "generalization": {
+          "count": 15,
+          "parent_proxy_passes": 1,
+          "tuned_proxy_passes": 0
+        }
+      },
+      "concept_groups": {
+        "ownership": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "profiles": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "host-build": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 2
+        },
+        "import-order": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "qos-pin": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 1
+        },
+        "qos-platform": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 2
+        },
+        "actor-default": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "send-result": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 2
+        },
+        "call-wire": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "call-death": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 1
+        },
+        "binary-bounds": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "binary-offset": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "binary-endian": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "option-result": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "option-default": {
+          "count": 3,
+          "parent_proxy_passes": 1,
+          "tuned_proxy_passes": 0
+        },
+        "json-trailing": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 1
+        },
+        "json-duplicates": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 1
+        },
+        "string-length": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "string-first-byte": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "string-slice": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "string-find-missing": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 1
+        },
+        "list-map": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "list-filter": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "list-range": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "list-take": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "list-reverse": {
+          "count": 3,
+          "parent_proxy_passes": 2,
+          "tuned_proxy_passes": 3
+        },
+        "numeric-clamp": {
+          "count": 3,
+          "parent_proxy_passes": 2,
+          "tuned_proxy_passes": 3
+        },
+        "numeric-min": {
+          "count": 3,
+          "parent_proxy_passes": 1,
+          "tuned_proxy_passes": 3
+        },
+        "debug-at": {
+          "count": 1,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "debug-list": {
+          "count": 1,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "write-map": {
+          "count": 1,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "write-clamp": {
+          "count": 1,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "unknown-boot": {
+          "count": 1,
+          "parent_proxy_passes": 1,
+          "tuned_proxy_passes": 0
+        },
+        "unknown-fpr-root": {
+          "count": 1,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        }
+      }
+    },
+    "guard": {
+      "no_repeat": 3,
+      "max_new_tokens": 200,
+      "parent": {
+        "checkpoint_sha256": "2db239f619ce87ac330b201c0c61c7aa76ea87b086a7326f86faf3b3bffe7a3d",
+        "ancestry": "legacy_or_unknown",
+        "count": 90,
+        "concept_groups": 34,
+        "rubric_proxy_pass_rate": 0.13333333333333333,
+        "finished_rate": 0.8222222222222222,
+        "severe_loop_rate": 0.0,
+        "mean_tokens": 109.82222222222222,
+        "context_limited_count": 0
+      },
+      "tuned": {
+        "checkpoint_sha256": "f12076f64ad8c04336ddfca35e0ccc828e86ee4cd23608b0f0e026cd11eb107f",
+        "ancestry": "legacy_or_unknown",
+        "count": 90,
+        "concept_groups": 34,
+        "rubric_proxy_pass_rate": 0.2222222222222222,
+        "finished_rate": 1.0,
+        "severe_loop_rate": 0.0,
+        "mean_tokens": 22.022222222222222,
+        "context_limited_count": 0
+      },
+      "explicit_output_diagnostic": {
+        "count": 33,
+        "parent_matches": 1,
+        "tuned_matches": 8,
+        "parent_parseable": 13,
+        "tuned_parseable": 33,
+        "note": "Post-hoc diagnostic of explicitly stated output literals; code echoes excluded. Ambiguous answers are unmatched. Not full factual accuracy.",
+        "details": [
+          {
+            "id": "output-string-length-1",
+            "expected": "5",
+            "parent_stated": "hello",
+            "tuned_stated": "2",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-string-length-2",
+            "expected": "5",
+            "parent_stated": null,
+            "tuned_stated": "2",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-string-length-3",
+            "expected": "5",
+            "parent_stated": null,
+            "tuned_stated": "2",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-string-first-byte-1",
+            "expected": "65",
+            "parent_stated": "ABC",
+            "tuned_stated": "7",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-string-first-byte-2",
+            "expected": "65",
+            "parent_stated": null,
+            "tuned_stated": "76",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-string-first-byte-3",
+            "expected": "65",
+            "parent_stated": null,
+            "tuned_stated": "76",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-string-slice-1",
+            "expected": "bcd",
+            "parent_stated": "abcdef",
+            "tuned_stated": "4",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-string-slice-2",
+            "expected": "bcd",
+            "parent_stated": null,
+            "tuned_stated": "cde",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-string-slice-3",
+            "expected": "bcd",
+            "parent_stated": null,
+            "tuned_stated": "7",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-string-find-missing-1",
+            "expected": "-1",
+            "parent_stated": "abc",
+            "tuned_stated": "9",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-string-find-missing-2",
+            "expected": "-1",
+            "parent_stated": null,
+            "tuned_stated": "-1",
+            "parent_match": false,
+            "tuned_match": true
+          },
+          {
+            "id": "output-string-find-missing-3",
+            "expected": "-1",
+            "parent_stated": null,
+            "tuned_stated": "-1",
+            "parent_match": false,
+            "tuned_match": true
+          },
+          {
+            "id": "output-list-map-1",
+            "expected": "12",
+            "parent_stated": null,
+            "tuned_stated": "13",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-map-2",
+            "expected": "12",
+            "parent_stated": null,
+            "tuned_stated": "3",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-map-3",
+            "expected": "12",
+            "parent_stated": null,
+            "tuned_stated": "3",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-filter-1",
+            "expected": "7",
+            "parent_stated": null,
+            "tuned_stated": "3",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-filter-2",
+            "expected": "7",
+            "parent_stated": null,
+            "tuned_stated": "3",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-filter-3",
+            "expected": "7",
+            "parent_stated": "defined",
+            "tuned_stated": "3",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-range-1",
+            "expected": "9",
+            "parent_stated": null,
+            "tuned_stated": "18",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-range-2",
+            "expected": "9",
+            "parent_stated": null,
+            "tuned_stated": "18",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-range-3",
+            "expected": "9",
+            "parent_stated": null,
+            "tuned_stated": "18",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-take-1",
+            "expected": "11",
+            "parent_stated": null,
+            "tuned_stated": "18",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-take-2",
+            "expected": "11",
+            "parent_stated": null,
+            "tuned_stated": "18",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-take-3",
+            "expected": "11",
+            "parent_stated": null,
+            "tuned_stated": "18",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-reverse-1",
+            "expected": "6",
+            "parent_stated": "4,5,6",
+            "tuned_stated": "6",
+            "parent_match": false,
+            "tuned_match": true
+          },
+          {
+            "id": "output-list-reverse-2",
+            "expected": "6",
+            "parent_stated": "10",
+            "tuned_stated": "6",
+            "parent_match": false,
+            "tuned_match": true
+          },
+          {
+            "id": "output-list-reverse-3",
+            "expected": "6",
+            "parent_stated": null,
+            "tuned_stated": "6",
+            "parent_match": false,
+            "tuned_match": true
+          },
+          {
+            "id": "output-numeric-clamp-1",
+            "expected": "10",
+            "parent_stated": "of",
+            "tuned_stated": "15",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-numeric-clamp-2",
+            "expected": "10",
+            "parent_stated": "1000",
+            "tuned_stated": "15",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-numeric-clamp-3",
+            "expected": "10",
+            "parent_stated": "10",
+            "tuned_stated": "15",
+            "parent_match": true,
+            "tuned_match": false
+          },
+          {
+            "id": "output-numeric-min-1",
+            "expected": "3",
+            "parent_stated": "of",
+            "tuned_stated": "3",
+            "parent_match": false,
+            "tuned_match": true
+          },
+          {
+            "id": "output-numeric-min-2",
+            "expected": "3",
+            "parent_stated": "10",
+            "tuned_stated": "3",
+            "parent_match": false,
+            "tuned_match": true
+          },
+          {
+            "id": "output-numeric-min-3",
+            "expected": "3",
+            "parent_stated": "1",
+            "tuned_stated": "3",
+            "parent_match": false,
+            "tuned_match": true
+          }
+        ]
+      },
+      "proxy_improved": 11,
+      "proxy_regressed": 3,
+      "categories": {
+        "architecture": {
+          "count": 4,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "false_premise": {
+          "count": 17,
+          "parent_proxy_passes": 1,
+          "tuned_proxy_passes": 3
+        },
+        "language": {
+          "count": 2,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "tooling": {
+          "count": 4,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 3
+        },
+        "modules": {
+          "count": 2,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "actors": {
+          "count": 8,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 2
+        },
+        "binary": {
+          "count": 6,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "types": {
+          "count": 4,
+          "parent_proxy_passes": 1,
+          "tuned_proxy_passes": 0
+        },
+        "parsing": {
+          "count": 4,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 1
+        },
+        "output_prediction": {
+          "count": 33,
+          "parent_proxy_passes": 9,
+          "tuned_proxy_passes": 11
+        },
+        "debugging": {
+          "count": 2,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "code_generation": {
+          "count": 2,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "insufficient_information": {
+          "count": 2,
+          "parent_proxy_passes": 1,
+          "tuned_proxy_passes": 0
+        }
+      },
+      "tracks": {
+        "familiar": {
+          "count": 75,
+          "parent_proxy_passes": 10,
+          "tuned_proxy_passes": 20
+        },
+        "generalization": {
+          "count": 15,
+          "parent_proxy_passes": 2,
+          "tuned_proxy_passes": 0
+        }
+      },
+      "concept_groups": {
+        "ownership": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "profiles": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "host-build": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 2
+        },
+        "import-order": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "qos-pin": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 1
+        },
+        "qos-platform": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 1
+        },
+        "actor-default": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "send-result": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 2
+        },
+        "call-wire": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "call-death": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 1
+        },
+        "binary-bounds": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "binary-offset": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "binary-endian": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "option-result": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "option-default": {
+          "count": 3,
+          "parent_proxy_passes": 2,
+          "tuned_proxy_passes": 0
+        },
+        "json-trailing": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 1
+        },
+        "json-duplicates": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 1
+        },
+        "string-length": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "string-first-byte": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "string-slice": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "string-find-missing": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 2
+        },
+        "list-map": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "list-filter": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "list-range": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "list-take": {
+          "count": 3,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "list-reverse": {
+          "count": 3,
+          "parent_proxy_passes": 3,
+          "tuned_proxy_passes": 3
+        },
+        "numeric-clamp": {
+          "count": 3,
+          "parent_proxy_passes": 3,
+          "tuned_proxy_passes": 3
+        },
+        "numeric-min": {
+          "count": 3,
+          "parent_proxy_passes": 3,
+          "tuned_proxy_passes": 3
+        },
+        "debug-at": {
+          "count": 1,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "debug-list": {
+          "count": 1,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "write-map": {
+          "count": 1,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "write-clamp": {
+          "count": 1,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        },
+        "unknown-boot": {
+          "count": 1,
+          "parent_proxy_passes": 1,
+          "tuned_proxy_passes": 0
+        },
+        "unknown-fpr-root": {
+          "count": 1,
+          "parent_proxy_passes": 0,
+          "tuned_proxy_passes": 0
+        }
+      }
+    }
+  }
+}

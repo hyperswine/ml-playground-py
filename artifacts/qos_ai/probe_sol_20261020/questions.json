@@ -1,0 +1,246 @@
+[
+ {
+  "id": "t1-map-sum",
+  "tier": "familiar",
+  "question": "What does this Sol program print?\n```sol\n> print (str (List.sum (List.map (fn x -> x * 5) [2, 7, 4]))).\n```",
+  "reference_code": "> print (str (List.sum (List.map (fn x -> x * 5) [2, 7, 4]))).",
+  "expected": "65"
+ },
+ {
+  "id": "t1-range-sum",
+  "tier": "familiar",
+  "question": "What is printed by the following Sol script?\n```sol\n> print (str (List.sum (List.range 3 6))).\n```",
+  "reference_code": "> print (str (List.sum (List.range 3 6))).",
+  "expected": "18"
+ },
+ {
+  "id": "t1-clamp",
+  "tier": "familiar",
+  "question": "Tell me the output of this Sol code:\n```sol\n> print (str (Numeric.clamp 2 9 (-3))).\n```",
+  "reference_code": "> print (str (Numeric.clamp 2 9 (-3))).",
+  "expected": "2"
+ },
+ {
+  "id": "t1-rev-index",
+  "tier": "familiar",
+  "question": "What will this Sol program output?\n```sol\n> print (str ((List.rev [11, 12, 13, 14]) ! 1)).\n```",
+  "reference_code": "> print (str ((List.rev [11, 12, 13, 14]) ! 1)).",
+  "expected": "13"
+ },
+ {
+  "id": "t1-gen-double-sum",
+  "tier": "familiar",
+  "question": "Write a Sol program that doubles each number in [6, 1, 8] and prints the sum of the results.",
+  "reference_code": "> print (str (List.sum (List.map (fn x -> x * 2) [6, 1, 8]))).",
+  "expected": "30"
+ },
+ {
+  "id": "t1-slice",
+  "tier": "familiar",
+  "question": "What does this print in Sol?\n```sol\n> print (str (Str.slice \"railway\" 0 4)).\n```",
+  "reference_code": "> print (str (Str.slice \"railway\" 0 4)).",
+  "expected": "rail"
+ },
+ {
+  "id": "t1-take-map",
+  "tier": "familiar",
+  "question": "What is the output?\n```sol\n> print (str (List.take 3 (List.map (fn x -> x + 1) [5, 6, 7, 8]))).\n```",
+  "reference_code": "> print (str (List.take 3 (List.map (fn x -> x + 1) [5, 6, 7, 8]))).",
+  "expected": "[6, 7, 8]"
+ },
+ {
+  "id": "t1-fix-index",
+  "tier": "familiar",
+  "question": "This Sol program is supposed to print the first element of [9, 4, 2], but it prints 4. Fix it and say what the fixed program prints.\n```sol\n> print (str ([9, 4, 2] ! 1)).\n```",
+  "reference_code": "> print (str ([9, 4, 2] ! 0)).",
+  "expected": "9"
+ },
+ {
+  "id": "t2-upper",
+  "tier": "new-op",
+  "question": "What does this Sol program print?\n```sol\n> print (str (Str.upper \"sol\")).\n```",
+  "reference_code": "> print (str (Str.upper \"sol\")).",
+  "expected": "SOL"
+ },
+ {
+  "id": "t2-max",
+  "tier": "new-op",
+  "question": "What is printed?\n```sol\n> print (str (Numeric.max 14 (-2))).\n```",
+  "reference_code": "> print (str (Numeric.max 14 (-2))).",
+  "expected": "14"
+ },
+ {
+  "id": "t2-abs",
+  "tier": "new-op",
+  "question": "What does this output?\n```sol\n> print (str (Numeric.abs (-41))).\n```",
+  "reference_code": "> print (str (Numeric.abs (-41))).",
+  "expected": "41"
+ },
+ {
+  "id": "t2-any",
+  "tier": "new-op",
+  "question": "What does this Sol program print?\n```sol\n> print (str (List.any (fn x -> x > 10) [3, 12, 5])).\n```",
+  "reference_code": "> print (str (List.any (fn x -> x > 10) [3, 12, 5])).",
+  "expected": "True"
+ },
+ {
+  "id": "t2-all",
+  "tier": "new-op",
+  "question": "What is the output of this Sol code?\n```sol\n> print (str (List.all (fn x -> x % 2 == 0) [2, 4, 7])).\n```",
+  "reference_code": "> print (str (List.all (fn x -> x % 2 == 0) [2, 4, 7])).",
+  "expected": "False"
+ },
+ {
+  "id": "t2-join",
+  "tier": "new-op",
+  "question": "What does this print?\n```sol\n> print (Str.join \", \" [\"red\", \"green\"]).\n```",
+  "reference_code": "> print (Str.join \", \" [\"red\", \"green\"]).",
+  "expected": "red, green"
+ },
+ {
+  "id": "t2-zip",
+  "tier": "new-op",
+  "question": "What does this Sol program print?\n```sol\n> print (str (List.zip [1, 2, 3] [7, 8, 9])).\n```",
+  "reference_code": "> print (str (List.zip [1, 2, 3] [7, 8, 9])).",
+  "expected": "[(1, 7), (2, 8), (3, 9)]"
+ },
+ {
+  "id": "t2-if",
+  "tier": "new-op",
+  "question": "What is printed by this Sol expression?\n```sol\n> print (str (if 4 > 9 then 1 else 0)).\n```",
+  "reference_code": "> print (str (if 4 > 9 then 1 else 0)).",
+  "expected": "0"
+ },
+ {
+  "id": "t2-drop",
+  "tier": "new-op",
+  "question": "What does this output?\n```sol\n> print (str (List.drop 2 [10, 20, 30, 40])).\n```",
+  "reference_code": "> print (str (List.drop 2 [10, 20, 30, 40])).",
+  "expected": "[30, 40]"
+ },
+ {
+  "id": "t2-last",
+  "tier": "new-op",
+  "question": "What does this Sol program print?\n```sol\n> print (str (List.last (List.range 1 7))).\n```",
+  "reference_code": "> print (str (List.last (List.range 1 7))).",
+  "expected": "7"
+ },
+ {
+  "id": "t2-trim",
+  "tier": "new-op",
+  "question": "What does this print?\n```sol\n> print (Str.trim \"   hello world  \").\n```",
+  "reference_code": "> print (Str.trim \"   hello world  \").",
+  "expected": "hello world"
+ },
+ {
+  "id": "t2-gen-filter",
+  "tier": "new-op",
+  "question": "Write a Sol program that keeps only the numbers greater than 5 in [2, 9, 6, 1] and prints the resulting list.",
+  "reference_code": "> print (str (List.filter (fn x -> x > 5) [2, 9, 6, 1])).",
+  "expected": "[9, 6]"
+ },
+ {
+  "id": "t3-map-filter-sum",
+  "tier": "composition",
+  "question": "What does this Sol program print?\n```sol\n> print (str (List.sum (List.filter (fn x -> x > 3) (List.map (fn x -> x * 2) [1, 2, 3])))).\n```",
+  "reference_code": "> print (str (List.sum (List.filter (fn x -> x > 3) (List.map (fn x -> x * 2) [1, 2, 3])))).",
+  "expected": "10"
+ },
+ {
+  "id": "t3-clamp-sum",
+  "tier": "composition",
+  "question": "What is the output?\n```sol\n> print (str (Numeric.clamp 0 5 (List.sum [4, 3]))).\n```",
+  "reference_code": "> print (str (Numeric.clamp 0 5 (List.sum [4, 3]))).",
+  "expected": "5"
+ },
+ {
+  "id": "t3-rev-take",
+  "tier": "composition",
+  "question": "What does this Sol code print?\n```sol\n> print (str (List.rev (List.take 2 [8, 6, 4]))).\n```",
+  "reference_code": "> print (str (List.rev (List.take 2 [8, 6, 4]))).",
+  "expected": "[6, 8]"
+ },
+ {
+  "id": "t3-binding-mod",
+  "tier": "composition",
+  "question": "What does this Sol program print?\n```sol\nx = 17 % 5.\n> print (str (x * 3)).\n```",
+  "reference_code": "x = 17 % 5.\n> print (str (x * 3)).",
+  "expected": "6"
+ },
+ {
+  "id": "c-args",
+  "tier": "concept",
+  "question": "How do you pass command-line arguments to a Sol script, and how does the script read them?",
+  "reference_code": null,
+  "expected": [
+   "after the script path|trailing|after its path",
+   "args Unit|args"
+  ]
+ },
+ {
+  "id": "c-conflict",
+  "tier": "concept",
+  "question": "If two Sol scripts write the same file at once, what happens to the buffered writes of the one that conflicts?",
+  "reference_code": null,
+  "expected": [
+   "rerun|re-run|retr",
+   "commit"
+  ]
+ },
+ {
+  "id": "c-query-vs-aftercommit",
+  "tier": "concept",
+  "question": "In Sol, when would you use Proc.query instead of Proc.afterCommit?",
+  "reference_code": null,
+  "expected": [
+   "read-only|read only|observ",
+   "after.*commit|mutat"
+  ]
+ },
+ {
+  "id": "c-at-least-once",
+  "tier": "concept",
+  "question": "Why must a command queued with Proc.afterCommit be safe to run more than once?",
+  "reference_code": null,
+  "expected": [
+   "at-least-once|at least once|recover|redo|journal"
+  ]
+ },
+ {
+  "id": "c-runnow",
+  "tier": "concept",
+  "question": "Why should a Sol script keep Proc.runNow calls at its top level instead of hiding them inside helper functions?",
+  "reference_code": null,
+  "expected": [
+   "rollback|transaction|atomic|commit",
+   "realtime|real-time|immediate|visible"
+  ]
+ },
+ {
+  "id": "c-brace",
+  "tier": "concept",
+  "question": "How do you put a literal { character inside a Sol string literal?",
+  "reference_code": null,
+  "expected": [
+   "\\\\\\{"
+  ]
+ },
+ {
+  "id": "c-json-parse",
+  "tier": "concept",
+  "question": "What kind of value does J.parse from Sol's JSON library return?",
+  "reference_code": null,
+  "expected": [
+   "Result"
+  ]
+ },
+ {
+  "id": "c-no-shell",
+  "tier": "concept",
+  "question": "Does Sol run external programs through a shell with pipelines and glob expansion?",
+  "reference_code": null,
+  "expected": [
+   "\\bno\\b|not|explicit argument|Proc\\.spec|argument vector"
+  ]
+ }
+]

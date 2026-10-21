@@ -1,0 +1,3 @@
+
+COMMAND ["qos_ai_generalization_controls.py", "--data", "curricula/generalization_20261019"]
+All 144 authored diagnostic answers passed, including required canonical traces.

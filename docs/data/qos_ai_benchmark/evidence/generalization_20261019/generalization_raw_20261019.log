@@ -1,0 +1,17 @@
+{"phase": "waiting for primary experiment; no concurrent model execution", "unix_time": 1792331814.034558}
+{"phase": "failed: Primary experiment failed: failed: Command failed; see reports/generalization_20261019/seed17_training.log", "unix_time": 1792334375.579458}
+Traceback (most recent call last):
+  File "/Users/jq/qos_ai_eval/qos_ai_generalization_raw_workflow.py", line 47, in <module>
+    try:main()
+        ~~~~^^
+  File "/Users/jq/qos_ai_eval/qos_ai_generalization_raw_workflow.py", line 30, in main
+    if phase.startswith('failed:'):raise ValueError('Primary experiment failed: '+phase)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Primary experiment failed: failed: Command failed; see reports/generalization_20261019/seed17_training.log
+{"phase": "waiting for primary experiment; no concurrent model execution", "unix_time": 1792334645.038841}
+{"phase": "unguarded diagnostic parent", "unix_time": 1792335725.767145}
+{"phase": "unguarded diagnostic seed7_step0336", "unix_time": 1792335798.2992299}
+{"phase": "unguarded diagnostic seed7_final", "unix_time": 1792335939.142884}
+{"phase": "unguarded diagnostic seed17_step0336", "unix_time": 1792336080.995887}
+{"phase": "unguarded diagnostic seed17_final", "unix_time": 1792336231.28048}
+{"phase": "complete", "unix_time": 1792336371.103853}

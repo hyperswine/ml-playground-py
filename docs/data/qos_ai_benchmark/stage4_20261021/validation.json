@@ -1,0 +1,25 @@
+{
+  "date_utc": "2026-10-21T00:15:04.098158+00:00",
+  "command": "QOS_FPR=/Users/jasonqin/Documents/GitHub/fprisc/fpr .venv/bin/python -m unittest discover -p 'test_qos_ai*.py'",
+  "tests_run": 122,
+  "skipped": 1,
+  "skip_reason": "MPS unavailable in the local test process",
+  "exit_code": 0,
+  "source_sha256": {
+    "qos_ai_stage4_curriculum.py": "307e4a4d804660de62ca760de3fab85cd0f3ff67e0656122397af117d6ceb44d",
+    "qos_ai_stage4_data.py": "1bfb05fd5a186f2408089f95f38fb3e826940ec7dbf2411034a6dba2f6cf115e",
+    "qos_ai_stage4_eval.py": "02f90af83080fa0b1e03334411400b7722e49116a9b53cb29e5d6e883d9d8696",
+    "qos_ai_stage4_recovery.py": "2d9da40884ed2d011459251359b7385c9f53af80019f556e29d8b363959c0cbd",
+    "qos_ai_stage4_train.py": "deeb7105c6c174209dc88ead71879704e40d4a1333e8a31d55f1874930b43501",
+    "test_qos_ai_stage4.py": "59b22c05c443844337e48365b63da3f7d3b5a1c934deedef6b8944c15bfc1c00"
+  },
+  "compiler_sha256": "9987da491a791af853300f38ad3e73c52a243dbfd1422379a8dbe437369b776e",
+  "suite_sha256": "ddde87eb744c2e7ecf89152139e0cf7d12f09455410ee9ec0408166d96146f14",
+  "prompt_encoding": {
+    "prompts": 18,
+    "max_prompt_tokens": 69,
+    "unknown_tokens": 0,
+    "new_tokens_budget": 200
+  },
+  "scope": "local CPU tests and pinned compiler reference/adversarial execution; no 557M training or generation run"
+}

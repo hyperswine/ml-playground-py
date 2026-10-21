@@ -1,0 +1,31 @@
+{
+  "old_examples_retained": 664,
+  "candidates": 512,
+  "new_examples": 464,
+  "rejected": 48,
+  "canonical_examples": 1128,
+  "training_examples": 566,
+  "factual_replay": 102,
+  "training_categories": {
+    "code_generation": 232,
+    "debugging": 232,
+    "original_fact": 17,
+    "domain_contract": 85
+  },
+  "contrast_groups": 58,
+  "families": {
+    "map": 64,
+    "clamp": 64,
+    "byte": 64,
+    "reverse": 48,
+    "slice": 32,
+    "filter": 64,
+    "sum": 64,
+    "take": 64
+  },
+  "base_split_hash": "10b314ad4e484922399e1a1b3980763786065da32838d501ceeb60edd69094b0",
+  "split_hash": "730525e104b08584252e624e7a7227117f4ca8415f533a39c2cfddfbea36d21f",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "generator_sha256": "82f46feca4a4e980c77d2fc523bcf3df2ca8f63d05ea76cfe1af09124c094208",
+  "seed": 83
+}

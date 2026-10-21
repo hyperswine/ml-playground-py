@@ -1,0 +1,44 @@
+{
+  "new_cases": 2400,
+  "training_examples": 2784,
+  "families": {
+    "map": 160,
+    "clamp": 160,
+    "byte": 160,
+    "reverse": 160,
+    "slice": 160,
+    "filter": 160,
+    "sum": 160,
+    "take": 160,
+    "length": 160,
+    "min": 160,
+    "range": 160,
+    "missing": 160,
+    "map_take": 160,
+    "filter_reverse": 160,
+    "clamp_sum": 160
+  },
+  "modes": {
+    "output_only": 405,
+    "output_trace": 405,
+    "repair_expr": 404,
+    "repair_program": 405,
+    "no_change": 391,
+    "generate": 390
+  },
+  "strata": {
+    "inputs": 48,
+    "combinations": 48,
+    "wording": 48
+  },
+  "generalization_hash": "49dae923a5d69a252c786162b9048fd3cb3566abc47eb876d2fe80238a9aface",
+  "diagnostic_hash": "97c4f5c14160362307c0a51b2693ddbb100345d45811f4d355913cf56bcd24df",
+  "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+  "base_split_hash": "54346de3d687868ce0213138c5d5004e37f8bbcc2f6a396dd9ee065f01c75d2f",
+  "split_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "context_cap": 192,
+  "unknown_tokens": 0,
+  "generator_sha256": "2f3dbb990496415f5b37849936302d7b2f1947f8bc5d26bb071604e89178be1b",
+  "old_diagnostic_hash": "97c4f5c14160362307c0a51b2693ddbb100345d45811f4d355913cf56bcd24df"
+}

@@ -1,0 +1,7 @@
+
+COMMAND ["-m", "unittest", "test_qos_ai_generalization_recovery"]
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.568s
+
+OK

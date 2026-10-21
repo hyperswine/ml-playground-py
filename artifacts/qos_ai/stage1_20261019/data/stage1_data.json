@@ -1,0 +1,35 @@
+{
+  "splits_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "corpus_fingerprint": "0779001c487ac4c683b6e1c46a7078adfcdce7d20c31eb58c8f956926e04cd16",
+  "qa_fingerprint": "4a9a12f77f08ba5218a26a53530eb99b5f645dedaa06be9393095ad1c2cee5c0",
+  "vocabulary_sha256": "74138be221701ca868b413cf711642fc2abde19687ff7f3af37de475f817dcf7",
+  "pad_id": 65531,
+  "epochs": 2,
+  "window": 513,
+  "train_doc_pieces": 2302,
+  "train_qa_pairs": 107364,
+  "qa_split_counts": {
+    "train": 107364,
+    "exclude": 490,
+    "dev": 7702,
+    "test": 2637
+  },
+  "oversized_qa_dropped": 0,
+  "unknown_token_rate": 0.0,
+  "domain_rows": 91094,
+  "domain_tokens": 46731222,
+  "domain_target_tokens": 30021201,
+  "domain_nonpad_tokens": 38171910,
+  "probe_doc_windows": 94,
+  "probe_qa_pairs": 512,
+  "probe_qa_target_tokens": 64883,
+  "sha256": {
+    "domain_rows": "9c447f7ef7dc03af0a8f45a51d4281d47e5420256d20d02226f5afdd2567a598",
+    "domain_mask": "8ed0410a1faa6eb582797f0cfc800be7f368473fd61eebf2cac1e6bf5b34218a",
+    "probe_docs": "2380225c5a7e3e5deecf6dc320f99decb7319f728e062e1634ef78a420d98bdb",
+    "probe_qa_rows": "f263fd01295a550ea20abe64ce08ae3bddf7f4b641519a7ff9542906b89e2b66",
+    "probe_qa_mask": "9285575621691f2d3fe39085072129257077c83ff0d4bc22514e59de3ce47ee1"
+  },
+  "scope": "training-partition sources and 4B Q&A only; dev partition used only as loss probes; test partition unused",
+  "hash": "7bb324d34e95147755bdc3f40034e69fd09944e4733bdb4973f13f353e43edd8"
+}

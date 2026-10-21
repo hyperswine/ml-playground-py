@@ -1,0 +1,18 @@
+{
+  "parent_sha256": "168cc5ee00d1c54b559c84fc26c7063013c319b8202e22b7d6b116bcd91781e7",
+  "data_hash": "7bb324d34e95147755bdc3f40034e69fd09944e4733bdb4973f13f353e43edd8",
+  "learning_rate": 0.0001,
+  "warmup_steps": 100,
+  "batch_size": 8,
+  "accumulation": 2,
+  "replay_fraction": 0.25,
+  "replay_mix": {
+    "english": 0.8,
+    "python": 0.2
+  },
+  "total_steps": 7592,
+  "tokens_per_update": 8192,
+  "weight_decay": 0.1,
+  "optimizer": "AdamW betas (0.9, 0.95), fresh state",
+  "bf16": true
+}

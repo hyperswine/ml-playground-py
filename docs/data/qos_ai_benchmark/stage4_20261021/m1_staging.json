@@ -1,0 +1,9 @@
+{
+  "checked_utc": "2026-10-21T00:16:08.269503+00:00",
+  "host": "JQs-Mac-mini.local",
+  "directory": "/Users/jq/qos_ai_eval/experiments/stage4_20261021/preparation",
+  "archive_sha256": "9c5b4a9915ddb4f10eb1fe440270b9af25441a0f32c5b6050ce63961625af583",
+  "verified_files": 89,
+  "tests_exit_code": 0,
+  "test_log": "test_effects_free_functions_and_hidden_list_growth_rejected (test_qos_ai_stage4.AdmissionTests.test_effects_free_functions_and_hidden_list_growth_rejected) ... ok\ntest_frozen_prompts_fit_known_vocabulary_and_generation_budget (test_qos_ai_stage4.AdmissionTests.test_frozen_prompts_fit_known_vocabulary_and_generation_budget) ... ok\ntest_references_pass_and_adversarial_answers_fail (test_qos_ai_stage4.AdmissionTests.test_references_pass_and_adversarial_answers_fail) ... ok\ntest_tampered_suite_and_incomplete_answers_refused (test_qos_ai_stage4.AdmissionTests.test_tampered_suite_and_incomplete_answers_refused) ... ok\ntest_arithmetic_groups_and_intermediate_calculations (test_qos_ai_stage4.DataTests.test_arithmetic_groups_and_intermediate_calculations) ... ok\ntest_mixer_uses_only_hash_checked_training_stream (test_qos_ai_stage4.DataTests.test_mixer_uses_only_hash_checked_training_stream) ... ok\ntest_replay_accounting_uses_targets_and_preserves_examples (test_qos_ai_stage4.DataTests.test_replay_accounting_uses_targets_and_preserves_examples) ... ok\ntest_disk_guard_requires_full_replacement_alongside_old_file (test_qos_ai_stage4.RecoveryTests.test_disk_guard_requires_full_replacement_alongside_old_file) ... ok\ntest_missing_or_bad_backup_cannot_report_complete (test_qos_ai_stage4.RecoveryTests.test_missing_or_bad_backup_cannot_report_complete) ... ok\ntest_short_training_resume_matches_uninterrupted (test_qos_ai_stage4.RecoveryTests.test_short_training_resume_matches_uninterrupted) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 17.541s\n\nOK\n"
+}

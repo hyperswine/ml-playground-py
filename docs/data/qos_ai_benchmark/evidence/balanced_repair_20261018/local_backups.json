@@ -1,0 +1,17 @@
+{
+  "models": {
+    "broad": {
+      "local_path": "qos_ai/m1_balanced_broad/student.pt",
+      "m1_path": "/Users/jq/qos_ai_eval/experiments/balanced_from_broad_20261018/student.pt",
+      "sha256": "8290a83c43a5555dbe58ea1c79610df34c7fd7822bef97607c8c04ba7a74f58b",
+      "bytes": 673874604
+    },
+    "codegen": {
+      "local_path": "qos_ai/m1_balanced_codegen/student.pt",
+      "m1_path": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+      "sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+      "bytes": 673874540
+    }
+  },
+  "report_sha256": "b884919481ba414887660434cdd2eeb337657d88b12c99383ad738fb4fc64bc1"
+}

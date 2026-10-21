@@ -1,0 +1,18 @@
+{
+  "verified_data_hash": "f66d1cf0e45ab6addec64dbda4b67df2e6e3820ec3ec7b914db13e190b73b664",
+  "benchmark_data_hash": "6eb10d79e8f084c31601c923494b2e057ef56d8672c3e5170654924ad5fc0c4e",
+  "host": "JQs-Mac-mini.local",
+  "machine": "arm64",
+  "fpr_sha256": "c41c6ab9377e59be4d9bccedf1d6dd33f188bad0453046660650c6982fbc2f36",
+  "passed": 2204,
+  "total": 2204,
+  "distinct_executions": 866
+}
+{
+  "diagnostic_hash": "97c4f5c14160362307c0a51b2693ddbb100345d45811f4d355913cf56bcd24df",
+  "compiler_sha256": "c41c6ab9377e59be4d9bccedf1d6dd33f188bad0453046660650c6982fbc2f36",
+  "host": "JQs-Mac-mini.local",
+  "passed": 144,
+  "total": 144,
+  "distinct_executions": 48
+}

@@ -1,0 +1,378 @@
+{
+  "reviewer": "Codex/source-and-execution review",
+  "scope": "All primary-passing diagnostic repair and no-change answers only; supplementary prose review, leaving fixed benchmark scores unchanged.",
+  "runs": {
+    "before": {
+      "answers_sha256": "240b714d13e88a34e279258ba2b2c524164df5f8c95ad934df3c98d4eb5b076b",
+      "reviewed": 5,
+      "categories": {
+        "debugging": {
+          "reviewed": 1,
+          "fully_correct": 1
+        },
+        "no_change": {
+          "reviewed": 4,
+          "fully_correct": 4
+        }
+      },
+      "details": [
+        {
+          "id": "codingdiag-991-clamp-1-correct_check",
+          "category": "no_change",
+          "answer_hash": "a79da88f608ebe491628c99e9a08e30f9afc12b864fab65a48aa586fdb91b630",
+          "answer": "No change needed. It prints 12.",
+          "reference_program": {
+            "code": "result = Numeric.clamp 3 12 17.\n> print (str result).\n",
+            "stdout": "12\n",
+            "exit_code": 0
+          },
+          "sources": [
+            {
+              "path": "fprisc/compiler/Sol/Preamble.hs",
+              "sha256": "d9c5ef74c2d1656433677a52da5bee3a479c294cbbc89c955dfe8482705dff80",
+              "revision": "4c57c0f17e2566e2f7b65cf7c77b7edd6223dfbf",
+              "line_start": 198,
+              "line_end": 198,
+              "evidence": "      \"  clamp = fn lo hi a -> Numeric.min hi (Numeric.max lo a),\","
+            }
+          ],
+          "answer_fully_correct": true,
+          "evidence": "Correct code and stdout; no false additional claim."
+        },
+        {
+          "id": "codingdiag-991-reverse-1-correct_check",
+          "category": "no_change",
+          "answer_hash": "2f25a937d4278ddd0ec1880692c6d599ffc6baac2dd2c4cc76e741b22c16ae07",
+          "answer": "No change needed. It prints 16.",
+          "reference_program": {
+            "code": "result = (List.rev [8, 14, 16]) ! 0.\n> print (str result).\n",
+            "stdout": "16\n",
+            "exit_code": 0
+          },
+          "sources": [
+            {
+              "path": "fprisc/compiler/Sol/Preamble.hs",
+              "sha256": "d9c5ef74c2d1656433677a52da5bee3a479c294cbbc89c955dfe8482705dff80",
+              "revision": "4c57c0f17e2566e2f7b65cf7c77b7edd6223dfbf",
+              "line_start": 330,
+              "line_end": 330,
+              "evidence": "      \"  rev = fn xs -> foldl (fn acc x -> x :: acc) [] xs,\","
+            }
+          ],
+          "answer_fully_correct": true,
+          "evidence": "Correct code and stdout; no false additional claim."
+        },
+        {
+          "id": "codingdiag-991-length-0-correct_check",
+          "category": "no_change",
+          "answer_hash": "718e5c904e9e15fda9040ec638854b8e95cbe12f6fa4e45b4f9d93a65846957b",
+          "answer": "No change needed. It prints 5.",
+          "reference_program": {
+            "code": "result = Str.len \"Grape\".\n> print (str result).\n",
+            "stdout": "5\n",
+            "exit_code": 0
+          },
+          "sources": [
+            {
+              "path": "fprisc/compiler/Sol/Preamble.hs",
+              "sha256": "d9c5ef74c2d1656433677a52da5bee3a479c294cbbc89c955dfe8482705dff80",
+              "revision": "4c57c0f17e2566e2f7b65cf7c77b7edd6223dfbf",
+              "line_start": 221,
+              "line_end": 221,
+              "evidence": "      \"  len = fn s -> strlen s,\","
+            }
+          ],
+          "answer_fully_correct": true,
+          "evidence": "Correct code and stdout; no false additional claim."
+        },
+        {
+          "id": "codingdiag-991-length-1-repair_inline",
+          "category": "debugging",
+          "answer_hash": "6248d1e394c5938475f868d1bfa1843650927ef26bb4b5421050d83aada4b9e1",
+          "answer": "`Str.len \"Maple\"`\nIt prints 5.",
+          "reference_program": {
+            "code": "result = Str.len \"Maple\".\n> print (str result).\n",
+            "stdout": "5\n",
+            "exit_code": 0
+          },
+          "sources": [
+            {
+              "path": "fprisc/compiler/Sol/Preamble.hs",
+              "sha256": "d9c5ef74c2d1656433677a52da5bee3a479c294cbbc89c955dfe8482705dff80",
+              "revision": "4c57c0f17e2566e2f7b65cf7c77b7edd6223dfbf",
+              "line_start": 221,
+              "line_end": 221,
+              "evidence": "      \"  len = fn s -> strlen s,\","
+            }
+          ],
+          "answer_fully_correct": true,
+          "evidence": "Correct code and stdout; no false additional claim."
+        },
+        {
+          "id": "codingdiag-991-length-1-correct_check",
+          "category": "no_change",
+          "answer_hash": "718e5c904e9e15fda9040ec638854b8e95cbe12f6fa4e45b4f9d93a65846957b",
+          "answer": "No change needed. It prints 5.",
+          "reference_program": {
+            "code": "result = Str.len \"Maple\".\n> print (str result).\n",
+            "stdout": "5\n",
+            "exit_code": 0
+          },
+          "sources": [
+            {
+              "path": "fprisc/compiler/Sol/Preamble.hs",
+              "sha256": "d9c5ef74c2d1656433677a52da5bee3a479c294cbbc89c955dfe8482705dff80",
+              "revision": "4c57c0f17e2566e2f7b65cf7c77b7edd6223dfbf",
+              "line_start": 221,
+              "line_end": 221,
+              "evidence": "      \"  len = fn s -> strlen s,\","
+            }
+          ],
+          "answer_fully_correct": true,
+          "evidence": "Correct code and stdout; no false additional claim."
+        }
+      ]
+    },
+    "after": {
+      "answers_sha256": "7f808aa5a76a7863a956814af2b6b15f4283bfd4dec43faae41fe56523111e65",
+      "reviewed": 9,
+      "categories": {
+        "debugging": {
+          "reviewed": 3,
+          "fully_correct": 1
+        },
+        "no_change": {
+          "reviewed": 6,
+          "fully_correct": 0
+        }
+      },
+      "details": [
+        {
+          "id": "codingdiag-991-clamp-0-repair_inline",
+          "category": "debugging",
+          "answer_hash": "9620312616bcdf7e0603c400a1af4fc62d8df0ca80cb1f6b16c619447146ca0a",
+          "answer": "```sol\nresult = Numeric.clamp 4 13 0.\n> print (str result).\n```\nIt prints 4. 0 < 4, so choose the lower bound 4",
+          "reference_program": {
+            "code": "result = Numeric.clamp 4 13 0.\n> print (str result).\n",
+            "stdout": "4\n",
+            "exit_code": 0
+          },
+          "sources": [
+            {
+              "path": "fprisc/compiler/Sol/Preamble.hs",
+              "sha256": "d9c5ef74c2d1656433677a52da5bee3a479c294cbbc89c955dfe8482705dff80",
+              "revision": "4c57c0f17e2566e2f7b65cf7c77b7edd6223dfbf",
+              "line_start": 198,
+              "line_end": 198,
+              "evidence": "      \"  clamp = fn lo hi a -> Numeric.min hi (Numeric.max lo a),\","
+            }
+          ],
+          "answer_fully_correct": true,
+          "evidence": "0 < 4, so clamping 0 to [4,13] returns and prints 4."
+        },
+        {
+          "id": "codingdiag-991-clamp-0-correct_check",
+          "category": "no_change",
+          "answer_hash": "ab22930a909fa01f34a17e62d63583b6928f9a1b13948a960198ef9804e6b431",
+          "answer": "No change needed. It prints 4. 4 + 13 = 4, so the upper bound is 4",
+          "reference_program": {
+            "code": "result = Numeric.clamp 4 13 0.\n> print (str result).\n",
+            "stdout": "4\n",
+            "exit_code": 0
+          },
+          "sources": [
+            {
+              "path": "fprisc/compiler/Sol/Preamble.hs",
+              "sha256": "d9c5ef74c2d1656433677a52da5bee3a479c294cbbc89c955dfe8482705dff80",
+              "revision": "4c57c0f17e2566e2f7b65cf7c77b7edd6223dfbf",
+              "line_start": 198,
+              "line_end": 198,
+              "evidence": "      \"  clamp = fn lo hi a -> Numeric.min hi (Numeric.max lo a),\","
+            }
+          ],
+          "answer_fully_correct": false,
+          "evidence": "4 + 13 does not equal 4; the upper bound in the supplied program is 13, not 4."
+        },
+        {
+          "id": "codingdiag-991-clamp-1-correct_check",
+          "category": "no_change",
+          "answer_hash": "6444a0f5858c04599624ef0156a3b66b5eeab59f88e999c31b822cc073c22cef",
+          "answer": "No change needed. It prints 12. 17 > 13, so choose the upper bound 11.",
+          "reference_program": {
+            "code": "result = Numeric.clamp 3 12 17.\n> print (str result).\n",
+            "stdout": "12\n",
+            "exit_code": 0
+          },
+          "sources": [
+            {
+              "path": "fprisc/compiler/Sol/Preamble.hs",
+              "sha256": "d9c5ef74c2d1656433677a52da5bee3a479c294cbbc89c955dfe8482705dff80",
+              "revision": "4c57c0f17e2566e2f7b65cf7c77b7edd6223dfbf",
+              "line_start": 198,
+              "line_end": 198,
+              "evidence": "      \"  clamp = fn lo hi a -> Numeric.min hi (Numeric.max lo a),\","
+            }
+          ],
+          "answer_fully_correct": false,
+          "evidence": "The supplied upper bound is 12, not 13 or 11; the claimed calculation selects 11 while stating stdout 12."
+        },
+        {
+          "id": "codingdiag-991-reverse-0-correct_check",
+          "category": "no_change",
+          "answer_hash": "353bdbcd921934dba50ff69d9a7486c84a6aa5f2a2a20cdb48be3b717f83f929",
+          "answer": "No change needed. It prints 16. Reversing gives [16, 25]; index zero is 1.",
+          "reference_program": {
+            "code": "result = (List.rev [25, 16]) ! 0.\n> print (str result).\n",
+            "stdout": "16\n",
+            "exit_code": 0
+          },
+          "sources": [
+            {
+              "path": "fprisc/compiler/Sol/Preamble.hs",
+              "sha256": "d9c5ef74c2d1656433677a52da5bee3a479c294cbbc89c955dfe8482705dff80",
+              "revision": "4c57c0f17e2566e2f7b65cf7c77b7edd6223dfbf",
+              "line_start": 330,
+              "line_end": 330,
+              "evidence": "      \"  rev = fn xs -> foldl (fn acc x -> x :: acc) [] xs,\","
+            }
+          ],
+          "answer_fully_correct": false,
+          "evidence": "The shown reversed list [16,25] is correct, but its element at index zero is 16, not 1."
+        },
+        {
+          "id": "codingdiag-991-reverse-1-correct_check",
+          "category": "no_change",
+          "answer_hash": "56e6b975c66d562bab024f9e4489aea539492aed2318e98c3cb7b89d7a2ea4da",
+          "answer": "No change needed. It prints 16. Reversing gives [16, 32, 48]; index zero is 17.",
+          "reference_program": {
+            "code": "result = (List.rev [8, 14, 16]) ! 0.\n> print (str result).\n",
+            "stdout": "16\n",
+            "exit_code": 0
+          },
+          "sources": [
+            {
+              "path": "fprisc/compiler/Sol/Preamble.hs",
+              "sha256": "d9c5ef74c2d1656433677a52da5bee3a479c294cbbc89c955dfe8482705dff80",
+              "revision": "4c57c0f17e2566e2f7b65cf7c77b7edd6223dfbf",
+              "line_start": 330,
+              "line_end": 330,
+              "evidence": "      \"  rev = fn xs -> foldl (fn acc x -> x :: acc) [] xs,\","
+            }
+          ],
+          "answer_fully_correct": false,
+          "evidence": "The supplied [8,14,16] reverses to [16,14,8], not [16,32,48]; the element at index zero is 16, not 17."
+        },
+        {
+          "id": "codingdiag-991-length-0-repair_program",
+          "category": "debugging",
+          "answer_hash": "f767bd406ada71b5dd27c9a71538fce28b61798e42512161d752e4aa7a8b76ca",
+          "answer": "```sol\nresult = Str.len \"Grape\".\n> print (str result).\n```\nIt prints 5. Count the ASCII bytes: G, e, a, n; total 5; end offset 5",
+          "reference_program": {
+            "code": "result = Str.len \"Grape\".\n> print (str result).\n",
+            "stdout": "5\n",
+            "exit_code": 0
+          },
+          "sources": [
+            {
+              "path": "fprisc/compiler/Sol/Preamble.hs",
+              "sha256": "d9c5ef74c2d1656433677a52da5bee3a479c294cbbc89c955dfe8482705dff80",
+              "revision": "4c57c0f17e2566e2f7b65cf7c77b7edd6223dfbf",
+              "line_start": 221,
+              "line_end": 221,
+              "evidence": "      \"  len = fn s -> strlen s,\","
+            }
+          ],
+          "answer_fully_correct": false,
+          "evidence": "The byte list G, e, a, n is not G, r, a, p, e and has four entries, contradicting the stated count of five."
+        },
+        {
+          "id": "codingdiag-991-length-0-correct_check",
+          "category": "no_change",
+          "answer_hash": "11aef59943cb49df71e371f2a268256a2a72b81bd576319b2f7b3ba901e25bc7",
+          "answer": "No change needed. It prints 5. Count the ASCII bytes: G, e, a, n; total 5; end offset 5",
+          "reference_program": {
+            "code": "result = Str.len \"Grape\".\n> print (str result).\n",
+            "stdout": "5\n",
+            "exit_code": 0
+          },
+          "sources": [
+            {
+              "path": "fprisc/compiler/Sol/Preamble.hs",
+              "sha256": "d9c5ef74c2d1656433677a52da5bee3a479c294cbbc89c955dfe8482705dff80",
+              "revision": "4c57c0f17e2566e2f7b65cf7c77b7edd6223dfbf",
+              "line_start": 221,
+              "line_end": 221,
+              "evidence": "      \"  len = fn s -> strlen s,\","
+            }
+          ],
+          "answer_fully_correct": false,
+          "evidence": "The listed G, e, a, n bytes are incorrect and count four; Grape is G, r, a, p, e."
+        },
+        {
+          "id": "codingdiag-991-length-1-repair_inline",
+          "category": "debugging",
+          "answer_hash": "755bf82a20f50bcae1c8b11450be865096ed41613ff7c876ba872b2f1237090e",
+          "answer": "Use `Str.len \"Maple\"`. It prints 5. Count the ASCII bytes: L, i, l, n; total 5",
+          "reference_program": {
+            "code": "result = Str.len \"Maple\".\n> print (str result).\n",
+            "stdout": "5\n",
+            "exit_code": 0
+          },
+          "sources": [
+            {
+              "path": "fprisc/compiler/Sol/Preamble.hs",
+              "sha256": "d9c5ef74c2d1656433677a52da5bee3a479c294cbbc89c955dfe8482705dff80",
+              "revision": "4c57c0f17e2566e2f7b65cf7c77b7edd6223dfbf",
+              "line_start": 221,
+              "line_end": 221,
+              "evidence": "      \"  len = fn s -> strlen s,\","
+            }
+          ],
+          "answer_fully_correct": false,
+          "evidence": "The byte list L, i, l, n is not M, a, p, l, e and has four entries, contradicting the stated count of five."
+        },
+        {
+          "id": "codingdiag-991-length-1-correct_check",
+          "category": "no_change",
+          "answer_hash": "b334459e0fdec6a2a1cdab5206942f88be768b5c07fc474620974a95622f365e",
+          "answer": "No change needed. It prints 5. Count the ASCII bytes: L, i, l, n; total 5; end offset 5",
+          "reference_program": {
+            "code": "result = Str.len \"Maple\".\n> print (str result).\n",
+            "stdout": "5\n",
+            "exit_code": 0
+          },
+          "sources": [
+            {
+              "path": "fprisc/compiler/Sol/Preamble.hs",
+              "sha256": "d9c5ef74c2d1656433677a52da5bee3a479c294cbbc89c955dfe8482705dff80",
+              "revision": "4c57c0f17e2566e2f7b65cf7c77b7edd6223dfbf",
+              "line_start": 221,
+              "line_end": 221,
+              "evidence": "      \"  len = fn s -> strlen s,\","
+            }
+          ],
+          "answer_fully_correct": false,
+          "evidence": "The listed L, i, l, n bytes are incorrect and count four; Maple is M, a, p, l, e."
+        }
+      ]
+    }
+  },
+  "extra_heldout_lexical_match": {
+    "id": "fact-option-default-2",
+    "answer_hash": "02cec5058282f798eb9a723488330c866a93967177ed85dcaf2bed8d90dccb2f",
+    "answer": "No. It prints 1. It tries \"Some x\" and then \"None\".",
+    "reference": "No. It returns d for None and x for Some x.",
+    "sources": [
+      {
+        "path": "fprisc/std/option.fpr",
+        "sha256": "5a7c8ccc3141a70cf6e7d202d634fa0a908bda87650546fd8d1ab45eaea30ad7",
+        "revision": "4c57c0f17e2566e2f7b65cf7c77b7edd6223dfbf",
+        "line_start": 19,
+        "line_end": 19,
+        "evidence": "withDefault d o = case o of None -> d | Some x -> x."
+      }
+    ],
+    "answer_fully_correct": false,
+    "evidence": "No supplied program has stdout 1. The answer does not state that withDefault returns d for None and x for Some x, and invents a print claim."
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "completed_at": "2026-10-21T13:39:07+11:00",
+  "tests": {
+    "count": 127,
+    "failures": 0,
+    "skips": 0,
+    "log": "standalone-environment-tests.log"
+  },
+  "layout": {
+    "catalog_missing": [],
+    "local_links_checked": 104,
+    "broken_links": [],
+    "artifact_hashes_checked": 0,
+    "artifact_mismatches": [],
+    "ok": true
+  },
+  "environment_and_file_safety": {
+    "common_packages": 69,
+    "version_changes": {},
+    "transformers_source": {
+      "git": "https://github.com/huggingface/transformers.git?rev=80a79d1bef2bacfa10b1b543669eebffa3f0ec36#80a79d1bef2bacfa10b1b543669eebffa3f0ec36"
+    },
+    "credentials": [
+      {
+        "path": ".env",
+        "mode": "0o600",
+        "ignored": true,
+        "tracked": false
+      },
+      {
+        "path": ".secrets/runpod_api_key",
+        "mode": "0o600",
+        "ignored": true,
+        "tracked": false
+      }
+    ],
+    "untracked_nonignored_count": 1064,
+    "large_unignored_files": []
+  },
+  "smoke_commands": [
+    {
+      "command": [
+        "uv",
+        "lock",
+        "--check"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "python",
+        "scripts/check_layout.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "qos",
+        "--help"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "qos",
+        "paths"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "qos",
+        "model",
+        "--help"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "qos",
+        "stage4_eval",
+        "--help"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "qos",
+        "stage4_train",
+        "--help"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "qos",
+        "stage4_data",
+        "--help"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "qos",
+        "qwen08",
+        "--help"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "qos",
+        "neural-lite-transformer",
+        "--help"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "artifact_verification": "file-verification.json",
+  "remote_changes": false,
+  "committed": false,
+  "pushed": false
+}

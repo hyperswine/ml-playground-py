@@ -1,0 +1,157 @@
+1/96 codingdiag-991-map-0-repair_inline
+2/96 codingdiag-991-map-0-repair_program
+3/96 codingdiag-991-map-0-generate
+4/96 codingdiag-991-map-0-correct_check
+5/96 codingdiag-991-map-1-repair_inline
+6/96 codingdiag-991-map-1-repair_program
+7/96 codingdiag-991-map-1-generate
+8/96 codingdiag-991-map-1-correct_check
+9/96 codingdiag-991-clamp-0-repair_inline
+10/96 codingdiag-991-clamp-0-repair_program
+11/96 codingdiag-991-clamp-0-generate
+12/96 codingdiag-991-clamp-0-correct_check
+13/96 codingdiag-991-clamp-1-repair_inline
+14/96 codingdiag-991-clamp-1-repair_program
+15/96 codingdiag-991-clamp-1-generate
+16/96 codingdiag-991-clamp-1-correct_check
+17/96 codingdiag-991-byte-0-repair_inline
+18/96 codingdiag-991-byte-0-repair_program
+19/96 codingdiag-991-byte-0-generate
+20/96 codingdiag-991-byte-0-correct_check
+21/96 codingdiag-991-byte-1-repair_inline
+22/96 codingdiag-991-byte-1-repair_program
+23/96 codingdiag-991-byte-1-generate
+24/96 codingdiag-991-byte-1-correct_check
+25/96 codingdiag-991-reverse-0-repair_inline
+26/96 codingdiag-991-reverse-0-repair_program
+27/96 codingdiag-991-reverse-0-generate
+28/96 codingdiag-991-reverse-0-correct_check
+29/96 codingdiag-991-reverse-1-repair_inline
+30/96 codingdiag-991-reverse-1-repair_program
+31/96 codingdiag-991-reverse-1-generate
+32/96 codingdiag-991-reverse-1-correct_check
+33/96 codingdiag-991-slice-0-repair_inline
+34/96 codingdiag-991-slice-0-repair_program
+35/96 codingdiag-991-slice-0-generate
+36/96 codingdiag-991-slice-0-correct_check
+37/96 codingdiag-991-slice-1-repair_inline
+38/96 codingdiag-991-slice-1-repair_program
+39/96 codingdiag-991-slice-1-generate
+40/96 codingdiag-991-slice-1-correct_check
+41/96 codingdiag-991-filter-0-repair_inline
+42/96 codingdiag-991-filter-0-repair_program
+43/96 codingdiag-991-filter-0-generate
+44/96 codingdiag-991-filter-0-correct_check
+45/96 codingdiag-991-filter-6-repair_inline
+46/96 codingdiag-991-filter-6-repair_program
+47/96 codingdiag-991-filter-6-generate
+48/96 codingdiag-991-filter-6-correct_check
+49/96 codingdiag-991-sum-1-repair_inline
+50/96 codingdiag-991-sum-1-repair_program
+51/96 codingdiag-991-sum-1-generate
+52/96 codingdiag-991-sum-1-correct_check
+53/96 codingdiag-991-sum-2-repair_inline
+54/96 codingdiag-991-sum-2-repair_program
+55/96 codingdiag-991-sum-2-generate
+56/96 codingdiag-991-sum-2-correct_check
+57/96 codingdiag-991-take-0-repair_inline
+58/96 codingdiag-991-take-0-repair_program
+59/96 codingdiag-991-take-0-generate
+60/96 codingdiag-991-take-0-correct_check
+61/96 codingdiag-991-take-1-repair_inline
+62/96 codingdiag-991-take-1-repair_program
+63/96 codingdiag-991-take-1-generate
+64/96 codingdiag-991-take-1-correct_check
+65/96 codingdiag-991-length-0-repair_inline
+66/96 codingdiag-991-length-0-repair_program
+67/96 codingdiag-991-length-0-generate
+68/96 codingdiag-991-length-0-correct_check
+69/96 codingdiag-991-length-1-repair_inline
+70/96 codingdiag-991-length-1-repair_program
+71/96 codingdiag-991-length-1-generate
+72/96 codingdiag-991-length-1-correct_check
+73/96 codingdiag-991-min-0-repair_inline
+74/96 codingdiag-991-min-0-repair_program
+75/96 codingdiag-991-min-0-generate
+76/96 codingdiag-991-min-0-correct_check
+77/96 codingdiag-991-min-2-repair_inline
+78/96 codingdiag-991-min-2-repair_program
+79/96 codingdiag-991-min-2-generate
+80/96 codingdiag-991-min-2-correct_check
+81/96 codingdiag-991-range-3-repair_inline
+82/96 codingdiag-991-range-3-repair_program
+83/96 codingdiag-991-range-3-generate
+84/96 codingdiag-991-range-3-correct_check
+85/96 codingdiag-991-range-26-repair_inline
+86/96 codingdiag-991-range-26-repair_program
+87/96 codingdiag-991-range-26-generate
+88/96 codingdiag-991-range-26-correct_check
+89/96 codingdiag-991-missing-0-repair_inline
+90/96 codingdiag-991-missing-0-repair_program
+91/96 codingdiag-991-missing-0-generate
+92/96 codingdiag-991-missing-0-correct_check
+93/96 codingdiag-991-missing-1-repair_inline
+94/96 codingdiag-991-missing-1-repair_program
+95/96 codingdiag-991-missing-1-generate
+96/96 codingdiag-991-missing-1-correct_check
+{
+  "checkpoint_sha256": "70e1fa8b26391b16156170ce121706c2abd4e187f2f12b7037630c10d43f42db",
+  "diagnostic_hash": "97c4f5c14160362307c0a51b2693ddbb100345d45811f4d355913cf56bcd24df",
+  "diagnostic_sha256": "5328ff3c3cf01b132322349ef1830959b325a302926b437c78d32edaef8d59ce",
+  "seed": 7,
+  "temperature": 0,
+  "top_k": 20,
+  "no_repeat": 3,
+  "max_new_tokens": 128,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "machine": "arm64",
+  "torch": "2.13.0",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "generation_code_sha256": "e4e1cf111bc85249a721df58d942de5ebbddc92d857ded48bafa5e6ccc28d348",
+  "ancestry": "legacy_or_unknown",
+  "scope": "auxiliary familiar-source novel-input diagnostic; no clean legacy pretraining exposure claim",
+  "count": 96,
+  "finished": 96,
+  "severe_loops": 0,
+  "mean_tokens": 44.854166666666664
+}
+{
+  "checkpoint_sha256": "70e1fa8b26391b16156170ce121706c2abd4e187f2f12b7037630c10d43f42db",
+  "diagnostic_hash": "97c4f5c14160362307c0a51b2693ddbb100345d45811f4d355913cf56bcd24df",
+  "answers_sha256": "12f6997f4e7700a978104507a1d0fd2bfcf31578d2d73519567641dc5e1c51f4",
+  "grader_sha256": "e4e1cf111bc85249a721df58d942de5ebbddc92d857ded48bafa5e6ccc28d348",
+  "parser_sha256": "b64fa21c1553e92fa5f482a4a67dd4cbdd08a24da33adb7274cf0981ed76b187",
+  "compiler_sha256": "c41c6ab9377e59be4d9bccedf1d6dd33f188bad0453046660650c6982fbc2f36",
+  "output_parser_sha256": "5b36d9f618c7ff643c4b1b45205bd4abc7738bd1c40d34dfc691d5866da279ff",
+  "coverage_note": "Restricted structural contract plus executed stdout; unsupported or different algorithms are unmatched. No-change prose uses verified reference proof, not generated execution.",
+  "categories": {
+    "code_generation": {
+      "count": 24,
+      "contract_match": 14,
+      "executed": 14,
+      "behavior_pass": 14,
+      "stated_output_match": 0,
+      "complete_pass": 14
+    },
+    "debugging": {
+      "count": 48,
+      "contract_match": 18,
+      "executed": 18,
+      "behavior_pass": 18,
+      "stated_output_match": 0,
+      "complete_pass": 0
+    },
+    "no_change": {
+      "count": 24,
+      "contract_match": 17,
+      "executed": 17,
+      "behavior_pass": 17,
+      "stated_output_match": 0,
+      "complete_pass": 0
+    }
+  },
+  "count": 96,
+  "complete_pass": 14,
+  "distinct_executions": 19
+}

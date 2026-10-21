@@ -1,0 +1,25 @@
+{
+  "verified_at_utc": "2026-10-19T05:04:25Z",
+  "requested_action": "Terminate experiment pods to stop further charges",
+  "termination_executed": false,
+  "approval_failure": "Selected model is at capacity; action not executed",
+  "attempts_per_pod": 2,
+  "pods": [
+    {
+      "id": "xt9r2a1n5xij1r",
+      "status": "EXITED"
+    },
+    {
+      "id": "kgeowatenfhc4t",
+      "status": "EXITED"
+    }
+  ],
+  "network_volume": {
+    "id": "xewpn3z8za",
+    "size_gb": 40,
+    "retained": true,
+    "reason": "Sole pretraining checkpoint, optimizer recovery state and corpus ledger are not yet backed up"
+  },
+  "serverless_endpoints": [],
+  "student_model_backed_up": true
+}

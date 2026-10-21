@@ -1,0 +1,16 @@
+{
+  "accumulation": 4,
+  "batch_size": 8,
+  "bf16": true,
+  "encoded_hash": "b2c8cccaca99c5e9c9b2f09e7c7044d0e3d4b0c95c7f29032521574787324352",
+  "epochs": 2,
+  "fixed_padding": 192,
+  "learning_rate": 5e-05,
+  "loss": "answer-only known-token weighted cross entropy",
+  "parent_sha256": "f7c9d03107c7532608fc6dca81120a62753c2e06e0f18f22193e9a5b1579fdc7",
+  "plan_hash": "e7fb6b0d74b30b36a9c478bec4a4dd40c76a9abac4c0e62db71f056b523007a9",
+  "sft_data_sha256": "85f259c362923e7b006c2db39199bd1b6ed67b261cdaf0e9a9b680c86efc06ed",
+  "split_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "steps": 174,
+  "warmup_steps": 8
+}

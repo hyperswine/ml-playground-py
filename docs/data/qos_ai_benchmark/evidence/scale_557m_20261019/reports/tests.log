@@ -1,0 +1,11 @@
+test_accumulation_is_weighted_by_known_targets (test_qos_ai_scale.ScalingTests.test_accumulation_is_weighted_by_known_targets) ... ok
+test_activation_checkpointing_preserves_logits_and_gradients (test_qos_ai_scale.ScalingTests.test_activation_checkpointing_preserves_logits_and_gradients) ... ok
+test_actual_557m_shape_and_tied_parameters (test_qos_ai_scale.ScalingTests.test_actual_557m_shape_and_tied_parameters) ... ok
+test_case_and_source_groups_are_disjoint_and_exact_copies_removed (test_qos_ai_scale.ScalingTests.test_case_and_source_groups_are_disjoint_and_exact_copies_removed) ... ok
+test_complete_runner_exports_loadable_model_and_resumes_without_schedule_reset (test_qos_ai_scale.ScalingTests.test_complete_runner_exports_loadable_model_and_resumes_without_schedule_reset) ... ok
+test_resume_matches_weights_moments_schedule_and_data (test_qos_ai_scale.ScalingTests.test_resume_matches_weights_moments_schedule_and_data) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.700s
+
+OK

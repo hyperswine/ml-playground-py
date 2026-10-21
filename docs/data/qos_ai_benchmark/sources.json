@@ -1,0 +1,74 @@
+{
+  "fprisc/README.md": {
+    "path": "fprisc/README.md",
+    "sha256": "d8ee1849e68625fbff5886fa34562ea7d40335afbb6cd0098a80dbeff9dcb799",
+    "revision": "4c57c0f17e2566e2f7b65cf7c77b7edd6223dfbf",
+    "line_start": 85,
+    "line_end": 86,
+    "evidence": "Importer-relative resolution takes\npriority, then the home, then the extra roots in order."
+  },
+  "qos/README.md": {
+    "path": "qos/README.md",
+    "sha256": "cae9e2a493e6e5411eb497197f228ab1618c3eef163760a3602ada9536db7786",
+    "revision": "f0bf99a97fa4d0951eb4929b55d3671aade6b676",
+    "line_start": 51,
+    "line_end": 51,
+    "evidence": "it builds and runs on FreeBSD/arm64"
+  },
+  "fprisc/std/actor.fpr": {
+    "path": "fprisc/std/actor.fpr",
+    "sha256": "440515569c5cfa50fdceeb1371dfb8c164ca1b0746c934288638c90aab23f611",
+    "revision": "4c57c0f17e2566e2f7b65cf7c77b7edd6223dfbf",
+    "line_start": 121,
+    "line_end": 121,
+    "evidence": "Err \"dead actor\" once `a` has"
+  },
+  "fprisc/std/binary.fpr": {
+    "path": "fprisc/std/binary.fpr",
+    "sha256": "5ffbbdfb16210a0269533eb6c1ed03f55dfeb5a406d2aee1076ca6090c340466",
+    "revision": "4c57c0f17e2566e2f7b65cf7c77b7edd6223dfbf",
+    "line_start": 18,
+    "line_end": 18,
+    "evidence": "u16le at s = case at >= 0 and at + 1 < strlen s of"
+  },
+  "fprisc/std/option.fpr": {
+    "path": "fprisc/std/option.fpr",
+    "sha256": "5a7c8ccc3141a70cf6e7d202d634fa0a908bda87650546fd8d1ab45eaea30ad7",
+    "revision": "4c57c0f17e2566e2f7b65cf7c77b7edd6223dfbf",
+    "line_start": 19,
+    "line_end": 19,
+    "evidence": "withDefault d o = case o of None -> d | Some x -> x."
+  },
+  "fprisc/std/order.fpr": {
+    "path": "fprisc/std/order.fpr",
+    "sha256": "69e16095ebfbc6399b4d5056c691e5bfee8f8516ca242b2e4d8536e3f7521bf7",
+    "revision": "4c57c0f17e2566e2f7b65cf7c77b7edd6223dfbf",
+    "line_start": 24,
+    "line_end": 24,
+    "evidence": "reverse cmp a b = cmp b a."
+  },
+  "fprisc/sol/lib/json.sol": {
+    "path": "fprisc/sol/lib/json.sol",
+    "sha256": "2511e0b22faa0dfa1acf6eb58ad55f2e8c02c3b41a617fc6322353d0569dde09",
+    "revision": "4c57c0f17e2566e2f7b65cf7c77b7edd6223dfbf",
+    "line_start": 8,
+    "line_end": 9,
+    "evidence": "Duplicate object keys are retained\n# in input order; get returns the first occurrence."
+  },
+  "fprisc/std/string.fpr": {
+    "path": "fprisc/std/string.fpr",
+    "sha256": "43a8c7baa37e9b0fdd78e1b204822a19e44ac597a8addd2da07de34bf432cf9f",
+    "revision": "4c57c0f17e2566e2f7b65cf7c77b7edd6223dfbf",
+    "line_start": 198,
+    "line_end": 198,
+    "evidence": "toInt : String -> Result Int String ."
+  },
+  "fprisc/compiler/Sol/Preamble.hs": {
+    "path": "fprisc/compiler/Sol/Preamble.hs",
+    "sha256": "d9c5ef74c2d1656433677a52da5bee3a479c294cbbc89c955dfe8482705dff80",
+    "revision": "4c57c0f17e2566e2f7b65cf7c77b7edd6223dfbf",
+    "line_start": 197,
+    "line_end": 197,
+    "evidence": "  min = fn a b -> case a < b of True -> a | False -> b,"
+  }
+}

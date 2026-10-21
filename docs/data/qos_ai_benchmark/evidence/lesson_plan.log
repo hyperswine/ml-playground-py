@@ -1,0 +1,199 @@
+Packing rejected 0 oversized examples; details in /Users/jq/qos_ai_eval/clean_benchmark_v2/packing_rejections.jsonl
+{
+  "docs_train": {
+    "signature": "692b777123793a1fcc46635142cb95a779739c19a26483bf1387018db88a36fe",
+    "windows": 1490
+  },
+  "docs_dev": {
+    "signature": "5f0e0b3400d3d99d4e3f747e56182e17eaf574e732a9a7d401f8f70c7c3fb590",
+    "windows": 95
+  },
+  "docs_test": {
+    "signature": "adacb4d5569297b9e296bb52c9dc625f566e587aa3fc4bdf2433b7449048e82e",
+    "windows": 33
+  },
+  "qa_train_r001": {
+    "signature": "9386e0fc4b7995bea22fd401beb6b051c53997846af2f86a602380aa03ab8bb1",
+    "windows": 2973
+  },
+  "qa_dev_r001": {
+    "signature": "c5877c56f7791c1400febdbddc2d837a60b230cd6f4d731be643dd7cc8672a77",
+    "windows": 206
+  },
+  "qa_test_r001": {
+    "signature": "0945fc21fdf2bb6d35ba96cac287bc99c51ee0dc7031f611fa51e8c54defcef2",
+    "windows": 74
+  },
+  "qa_train_r002": {
+    "signature": "d1fec71690e91c181d55b6477fc382d78f2ddb742eb949db7243e470490ee748",
+    "windows": 2919
+  },
+  "qa_dev_r002": {
+    "signature": "c75c981e2583b4288ddf616e0e64c20d159fc8f2ac372cb5bd430249f2f58372",
+    "windows": 199
+  },
+  "qa_test_r002": {
+    "signature": "5b90ce97973f2ff6dbee067f49fd3307afec2801c618f9226b836338dd9969da",
+    "windows": 70
+  },
+  "qa_train_r003": {
+    "signature": "1f8787cf09b871e2d348381fae579a74f7fe2be9d7f01c0a7ba1fcbe54f10f66",
+    "windows": 2866
+  },
+  "qa_dev_r003": {
+    "signature": "6e1a793e09461fa57c7447805dc2e3e0208601bd03725c5b5579d91cc8fc3617",
+    "windows": 203
+  },
+  "qa_test_r003": {
+    "signature": "a28cd5b663291f3766588e0690c0573b6740eca0294a9e199dc4792de6fcfe88",
+    "windows": 71
+  },
+  "qa_train_r004": {
+    "signature": "9b2d8f2eea1580bb84a4df16e93744d21b6380842a4b83b7bd82c1d95e77ab74",
+    "windows": 2972
+  },
+  "qa_dev_r004": {
+    "signature": "dd11695811da6710a1e20cafb72838a3a63701737837b24d7b7c08ea7ffe8302",
+    "windows": 212
+  },
+  "qa_test_r004": {
+    "signature": "fe682fca2372d0b119e87d1aa0bd571b46f9b06c0cfc290f2be56c7fa2dfc258",
+    "windows": 73
+  },
+  "qa_train_r005": {
+    "signature": "5b06dee31462e93cb42fb79c0d2af55ab414b2ad5fce5a4b2e97eaa6a7ccefe8",
+    "windows": 2805
+  },
+  "qa_dev_r005": {
+    "signature": "b9650d4ad2081a86f0e15e24288f5a0e5de7be05777f139e0a9522cdd6a20f98",
+    "windows": 206
+  },
+  "qa_test_r005": {
+    "signature": "d1f4ca4e83b800a302f77ed61c77ccae593d7c8a88357cdd536f280f72e6e3ae",
+    "windows": 68
+  },
+  "qa_train_r006": {
+    "signature": "c433dbb6a1498e4b32282d26d31d5aa6a4ce4fa81d4a9c33f2415e9fb74e8006",
+    "windows": 3098
+  },
+  "qa_dev_r006": {
+    "signature": "f95d6f6213ac3aaf5cb6018bbcdd6dbc49f8c2a3d23b9b32357dacc0164e10fe",
+    "windows": 216
+  },
+  "qa_test_r006": {
+    "signature": "e16689c8f732d52f4b47ca0f617824f23407fcfe614d1a219d1f41aaf646d966",
+    "windows": 79
+  },
+  "qa_train_r007": {
+    "signature": "2aa3aa9f9321ae6142a6b363aab31689347cd26406e71c4cf61d6e424762f1c7",
+    "windows": 2703
+  },
+  "qa_dev_r007": {
+    "signature": "4973e8de5e7462a882791b2fedc8502a153d9dd563c8f93e6c211644d86dcef3",
+    "windows": 191
+  },
+  "qa_test_r007": {
+    "signature": "54400ab4eacec4dd82ef4805898c1c811e122dd51461a7d9d4dda6280a4419e6",
+    "windows": 65
+  },
+  "qa_train_r008": {
+    "signature": "0609fcf8d2a41210262ee0888d33404b68f80fc6a63229b95f77089d2114df8d",
+    "windows": 3050
+  },
+  "qa_dev_r008": {
+    "signature": "96751b3853903aa8c1106bdd96528ab8cb6a18d560ccbe9d1bc0f932d3f9b2ae",
+    "windows": 211
+  },
+  "qa_test_r008": {
+    "signature": "f7b1512fec249ce8a889d78243afdd32479eda3a7e664ba6af2de08b367e9b41",
+    "windows": 78
+  },
+  "qa_train_r009": {
+    "signature": "a8a74478913d55cb98029bd9b1b400c2c2c24b4f9dca31360f6b5f450ee1220e",
+    "windows": 2732
+  },
+  "qa_dev_r009": {
+    "signature": "44721d4ad73def1a943cd6bfe8bee49d0e3a3c2871393d838630317e4df03cb2",
+    "windows": 197
+  },
+  "qa_test_r009": {
+    "signature": "7a68eb5f83d933c02c5e9a976fcb895475700d3012d026ef3bfddd4197f0fcb1",
+    "windows": 70
+  },
+  "qa_train_r010": {
+    "signature": "3627a68a1d5cb17dd604883e8de5a2ca31498ee8b4b2b44d7ea028ad84b11bdc",
+    "windows": 3104
+  },
+  "qa_dev_r010": {
+    "signature": "72bae199fd6371678dad34d286d21b4619ab9dd7106c8401ee70d005be05bfd1",
+    "windows": 211
+  },
+  "qa_test_r010": {
+    "signature": "34970e1db7d1bf1fde0f591b1084b8a51362f20c505ea6c23510af1618355b03",
+    "windows": 79
+  },
+  "qa_train_r011": {
+    "signature": "55b24d818bccb7b2977bf1d507b69078ba35223bc85e51ee4cf10664426ebdb7",
+    "windows": 2765
+  },
+  "qa_dev_r011": {
+    "signature": "70aa44fbcb9e627787399e0511398351af4908c0163f96d37d0cb78be890569a",
+    "windows": 196
+  },
+  "qa_test_r011": {
+    "signature": "953f959babe6fcde5d7adfa6c09263862a96f779aebbf3499c5dc5410853a20f",
+    "windows": 71
+  },
+  "qa_train_r012": {
+    "signature": "d6e1dba344f3dbc602fd5a53dc45b98e27b2764856ac610d62ab6c0ae463e0a8",
+    "windows": 3009
+  },
+  "qa_dev_r012": {
+    "signature": "ce19541c6d4c4f2fa81c5d2ec109f43f96570288789bea05fec49fbef35b4250",
+    "windows": 206
+  },
+  "qa_test_r012": {
+    "signature": "9bb71c2f9d46ae89c8739b190c4e96c3aa4ddddd59ae983485d565fee2e3000e",
+    "windows": 79
+  },
+  "qa_train_r013": {
+    "signature": "68160173383db123d02b426e36ac027462460c623d885ea2219a281bb6fbaf53",
+    "windows": 2889
+  },
+  "qa_dev_r013": {
+    "signature": "b7bb506bc401dd074870c22b9e9959b7fdbd5790bd2cab090d44b449144e579c",
+    "windows": 202
+  },
+  "qa_test_r013": {
+    "signature": "8e5cacf0b186f2b8755ce47e2eaaeb2fc8381cb6b6b657e4ff34b3d742ea59dc",
+    "windows": 73
+  },
+  "qa_train_r014": {
+    "signature": "360ee2a86a0a47af1e882abeb93d19ea251b683dfa5f0b0279d776530143385e",
+    "windows": 2807
+  },
+  "qa_dev_r014": {
+    "signature": "729ac35bdfdeac3f7716da872bbd761b24464900367e05958273c979fb8c6a9b",
+    "windows": 198
+  },
+  "qa_test_r014": {
+    "signature": "d0c36bb2d6581c43d132bc413a9f031fa310e31bf8a1eedecd4591e03ed43152",
+    "windows": 72
+  },
+  "qa_train_r015": {
+    "signature": "81ce8d84e2bc6f6261bf591b9fbba2f81ca22b595c5d38e1ff7b4d7f8eb89aa6",
+    "windows": 3016
+  },
+  "qa_dev_r015": {
+    "signature": "8dd0c2b0b0ff77e329e36561e6b2db3d5090ee302235979658fcd16542994cf0",
+    "windows": 209
+  },
+  "qa_test_r015": {
+    "signature": "117f51f83a4405bc7c99d1e51d63cbba88ceed9c1fc4ca02de744a49e9a8d4f8",
+    "windows": 74
+  },
+  "qa_train_r000": {
+    "signature": "7c8a01afb0b5826c8ed8ffd36482ba3be1c13cdddf70c89d0b84825605351c8b",
+    "windows": 10
+  }
+}

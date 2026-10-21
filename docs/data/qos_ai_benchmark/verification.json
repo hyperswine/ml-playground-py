@@ -1,0 +1,739 @@
+{
+  "verified_data_hash": "74afe9913b3dd3ffba7c386897a8acda374cc3291082606896602de09b0091b4",
+  "benchmark_data_hash": "6eb10d79e8f084c31601c923494b2e057ef56d8672c3e5170654924ad5fc0c4e",
+  "fpr_sha256": "c41c6ab9377e59be4d9bccedf1d6dd33f188bad0453046660650c6982fbc2f36",
+  "host": "JQs-Mac-mini.local",
+  "machine": "arm64",
+  "passed": 104,
+  "total": 104,
+  "results": [
+    {
+      "id": "output-string-length-1",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-string-length-2",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-string-length-3",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-string-first-byte-1",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "65\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-string-first-byte-2",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "65\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-string-first-byte-3",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "65\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-string-substring-1",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "cd\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-string-substring-2",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "cd\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-string-substring-3",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "cd\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-string-slice-1",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "bcd\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-string-slice-2",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "bcd\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-string-slice-3",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "bcd\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-string-find-missing-1",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-string-find-missing-2",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-string-find-missing-3",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-list-sum-1",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "12\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-list-sum-2",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "12\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-list-sum-3",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "12\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-list-map-1",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "12\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-list-map-2",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "12\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-list-map-3",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "12\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-list-filter-1",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "7\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-list-filter-2",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "7\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-list-filter-3",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "7\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-list-fold-1",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "16\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-list-fold-2",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "16\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-list-fold-3",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "16\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-list-range-1",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-list-range-2",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-list-range-3",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-list-take-1",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "11\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-list-take-2",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "11\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-list-take-3",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "11\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-list-drop-1",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "7\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-list-drop-2",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "7\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-list-drop-3",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "7\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-list-reverse-1",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "6\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-list-reverse-2",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "6\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-list-reverse-3",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "6\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-numeric-clamp-1",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "10\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-numeric-clamp-2",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "10\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-numeric-clamp-3",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "10\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-numeric-abs-1",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "7\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-numeric-abs-2",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "7\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-numeric-abs-3",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "7\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-numeric-min-1",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "3\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-numeric-min-2",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "3\n",
+      "stderr": ""
+    },
+    {
+      "id": "output-numeric-min-3",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "3\n",
+      "stderr": ""
+    },
+    {
+      "id": "debug-at",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "65\n",
+      "stderr": ""
+    },
+    {
+      "id": "debug-slice",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "bcd\n",
+      "stderr": ""
+    },
+    {
+      "id": "debug-list",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "6\n",
+      "stderr": ""
+    },
+    {
+      "id": "debug-range",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "3\n",
+      "stderr": ""
+    },
+    {
+      "id": "write-map",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "10\n",
+      "stderr": ""
+    },
+    {
+      "id": "write-filter",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "12\n",
+      "stderr": ""
+    },
+    {
+      "id": "write-clamp",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "8\n",
+      "stderr": ""
+    },
+    {
+      "id": "write-slice",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "ab\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-string-length-1",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-string-length-2",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-string-length-3",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-string-first-byte-1",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "74\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-string-first-byte-2",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "75\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-string-first-byte-3",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "76\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-string-substring-1",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "ab\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-string-substring-2",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "bc\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-string-substring-3",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "cd\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-string-slice-1",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "cde\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-string-slice-2",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "def\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-string-slice-3",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "efg\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-string-find-missing-1",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-string-find-missing-2",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-string-find-missing-3",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-sum-1",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-sum-2",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "18\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-sum-3",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "30\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-map-1",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "15\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-map-2",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "33\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-map-3",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "57\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-filter-1",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "7\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-filter-2",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "13\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-filter-3",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "21\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-fold-1",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-fold-2",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "18\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-fold-3",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "30\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-range-1",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-range-2",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "18\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-range-3",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "30\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-take-1",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-take-2",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-take-3",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-drop-1",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "7\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-drop-2",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "13\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-drop-3",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "21\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-reverse-1",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-reverse-2",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "7\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-reverse-3",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "11\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-numeric-clamp-1",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-numeric-clamp-2",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-numeric-clamp-3",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-numeric-abs-1",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "6\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-numeric-abs-2",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-numeric-abs-3",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "13\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-numeric-min-1",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-numeric-min-2",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-numeric-min-3",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "parent_sha256": "5879f9c385158e1b679e8fda9c6fc53f8f15919e109d25c05c7a332f5d6df730",
+  "preserved_stage3_sha256": "ea62b00586637abd2d16f70f9d45de9dcdd1f9b806ed6dfb25721b9c8f4619b0",
+  "variants": [
+    {
+      "name": "half_2e5",
+      "epoch_fraction": 0.5,
+      "learning_rate": 2e-05
+    },
+    {
+      "name": "one_2e5",
+      "epoch_fraction": 1,
+      "learning_rate": 2e-05
+    },
+    {
+      "name": "one_1e5",
+      "epoch_fraction": 1,
+      "learning_rate": 1e-05
+    }
+  ],
+  "seed": 7,
+  "effective_batch": 32,
+  "warmup_steps": 20,
+  "weight_decay": 0.1,
+  "optimizer": "fresh AdamW (0.9, 0.95)",
+  "target_token_shares": {
+    "verified": 0.65,
+    "english": 0.14,
+    "docs": 0.14,
+    "qa": 0.07
+  },
+  "steps": "computed from complete prepared examples; half run rounds up to an optimizer update; actual target tokens recorded",
+  "training_status": "not started; real English replay stream not assembled locally",
+  "selection": "Use the separate arithmetic validation and fixed loss probes for selection. Report all three variants on unchanged development diagnostics and the separate multi-input suite. Do not use the reserved final test.",
+  "retention_gate": {
+    "fineweb_english_max_parent_ratio": 1.25,
+    "dev_docs_max_parent_ratio": 1.25,
+    "dev_qa_max_parent_ratio": 1.25,
+    "status": "prospective experiment thresholds, not measured results"
+  },
+  "promotion": "No automatic promotion. Require stronger multi-input and complete-answer behavior versus Stage 3, review regressions, and repeat a promising variant with another seed.",
+  "compiler_sha256": "9987da491a791af853300f38ad3e73c52a243dbfd1422379a8dbe437369b776e"
+}

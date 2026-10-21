@@ -1,0 +1,232 @@
+{
+  "raw": {
+    "parent": {
+      "checkpoint_sha256": "0707da88d15ea674ebbf1395ad948e9dad5438a9f308e7611b07fde53e80d83d",
+      "ancestry": "legacy_or_unknown",
+      "count": 90,
+      "concept_groups": 34,
+      "rubric_proxy_pass_rate": 0.4777777777777778,
+      "finished_rate": 1.0,
+      "severe_loop_rate": 0.0,
+      "mean_tokens": 14.3,
+      "context_limited_count": 0
+    },
+    "tuned": {
+      "checkpoint_sha256": "70e1fa8b26391b16156170ce121706c2abd4e187f2f12b7037630c10d43f42db",
+      "ancestry": "legacy_or_unknown",
+      "count": 90,
+      "concept_groups": 34,
+      "rubric_proxy_pass_rate": 0.4444444444444444,
+      "finished_rate": 1.0,
+      "severe_loop_rate": 0.022222222222222223,
+      "mean_tokens": 29.6,
+      "context_limited_count": 0
+    },
+    "no_repeat": 0,
+    "max_new_tokens": 200,
+    "proxy_improved": 3,
+    "proxy_regressed": 6,
+    "category": {
+      "architecture": {
+        "count": 4,
+        "parent_proxy": 4,
+        "tuned_proxy": 4
+      },
+      "false_premise": {
+        "count": 17,
+        "parent_proxy": 9,
+        "tuned_proxy": 10
+      },
+      "language": {
+        "count": 2,
+        "parent_proxy": 2,
+        "tuned_proxy": 2
+      },
+      "tooling": {
+        "count": 4,
+        "parent_proxy": 4,
+        "tuned_proxy": 4
+      },
+      "modules": {
+        "count": 2,
+        "parent_proxy": 2,
+        "tuned_proxy": 2
+      },
+      "actors": {
+        "count": 8,
+        "parent_proxy": 6,
+        "tuned_proxy": 6
+      },
+      "binary": {
+        "count": 6,
+        "parent_proxy": 0,
+        "tuned_proxy": 0
+      },
+      "types": {
+        "count": 4,
+        "parent_proxy": 0,
+        "tuned_proxy": 0
+      },
+      "parsing": {
+        "count": 4,
+        "parent_proxy": 4,
+        "tuned_proxy": 4
+      },
+      "output_prediction": {
+        "count": 33,
+        "parent_proxy": 11,
+        "tuned_proxy": 6
+      },
+      "debugging": {
+        "count": 2,
+        "parent_proxy": 0,
+        "tuned_proxy": 0
+      },
+      "code_generation": {
+        "count": 2,
+        "parent_proxy": 1,
+        "tuned_proxy": 2
+      },
+      "insufficient_information": {
+        "count": 2,
+        "parent_proxy": 0,
+        "tuned_proxy": 0
+      }
+    },
+    "track": {
+      "familiar": {
+        "count": 75,
+        "parent_proxy": 43,
+        "tuned_proxy": 40
+      },
+      "generalization": {
+        "count": 15,
+        "parent_proxy": 0,
+        "tuned_proxy": 0
+      }
+    },
+    "output_matches": {
+      "count": 33,
+      "parent_matches": 11,
+      "tuned_matches": 1,
+      "parent_parseable": 33,
+      "tuned_parseable": 3,
+      "note": "Post-hoc diagnostic of explicitly stated output literals; code echoes excluded. Ambiguous answers are unmatched. Not full factual accuracy."
+    }
+  },
+  "guard": {
+    "parent": {
+      "checkpoint_sha256": "0707da88d15ea674ebbf1395ad948e9dad5438a9f308e7611b07fde53e80d83d",
+      "ancestry": "legacy_or_unknown",
+      "count": 90,
+      "concept_groups": 34,
+      "rubric_proxy_pass_rate": 0.4777777777777778,
+      "finished_rate": 1.0,
+      "severe_loop_rate": 0.0,
+      "mean_tokens": 14.28888888888889,
+      "context_limited_count": 0
+    },
+    "tuned": {
+      "checkpoint_sha256": "70e1fa8b26391b16156170ce121706c2abd4e187f2f12b7037630c10d43f42db",
+      "ancestry": "legacy_or_unknown",
+      "count": 90,
+      "concept_groups": 34,
+      "rubric_proxy_pass_rate": 0.4444444444444444,
+      "finished_rate": 1.0,
+      "severe_loop_rate": 0.0,
+      "mean_tokens": 28.755555555555556,
+      "context_limited_count": 0
+    },
+    "no_repeat": 3,
+    "max_new_tokens": 200,
+    "proxy_improved": 3,
+    "proxy_regressed": 6,
+    "category": {
+      "architecture": {
+        "count": 4,
+        "parent_proxy": 4,
+        "tuned_proxy": 4
+      },
+      "false_premise": {
+        "count": 17,
+        "parent_proxy": 9,
+        "tuned_proxy": 10
+      },
+      "language": {
+        "count": 2,
+        "parent_proxy": 2,
+        "tuned_proxy": 2
+      },
+      "tooling": {
+        "count": 4,
+        "parent_proxy": 4,
+        "tuned_proxy": 4
+      },
+      "modules": {
+        "count": 2,
+        "parent_proxy": 2,
+        "tuned_proxy": 2
+      },
+      "actors": {
+        "count": 8,
+        "parent_proxy": 6,
+        "tuned_proxy": 6
+      },
+      "binary": {
+        "count": 6,
+        "parent_proxy": 0,
+        "tuned_proxy": 0
+      },
+      "types": {
+        "count": 4,
+        "parent_proxy": 0,
+        "tuned_proxy": 0
+      },
+      "parsing": {
+        "count": 4,
+        "parent_proxy": 4,
+        "tuned_proxy": 4
+      },
+      "output_prediction": {
+        "count": 33,
+        "parent_proxy": 11,
+        "tuned_proxy": 6
+      },
+      "debugging": {
+        "count": 2,
+        "parent_proxy": 0,
+        "tuned_proxy": 0
+      },
+      "code_generation": {
+        "count": 2,
+        "parent_proxy": 1,
+        "tuned_proxy": 2
+      },
+      "insufficient_information": {
+        "count": 2,
+        "parent_proxy": 0,
+        "tuned_proxy": 0
+      }
+    },
+    "track": {
+      "familiar": {
+        "count": 75,
+        "parent_proxy": 43,
+        "tuned_proxy": 40
+      },
+      "generalization": {
+        "count": 15,
+        "parent_proxy": 0,
+        "tuned_proxy": 0
+      }
+    },
+    "output_matches": {
+      "count": 33,
+      "parent_matches": 11,
+      "tuned_matches": 1,
+      "parent_parseable": 33,
+      "tuned_parseable": 3,
+      "note": "Post-hoc diagnostic of explicitly stated output literals; code echoes excluded. Ambiguous answers are unmatched. Not full factual accuracy."
+    }
+  }
+}

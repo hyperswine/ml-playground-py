@@ -1,0 +1,10 @@
+{
+  "raw_tokens": 796523,
+  "original_unknown_tokens": 36529,
+  "unrepresentable_tokens": 462,
+  "fallback_tokens": 36067,
+  "documents": 311,
+  "exact_decoded_documents": 306,
+  "code_sha256": "37a495695747dfd7007a75c3d9a51ed68cda8068da995dc1dc9fc5b29cd00912",
+  "unix_time": 1792359085.8909218
+}

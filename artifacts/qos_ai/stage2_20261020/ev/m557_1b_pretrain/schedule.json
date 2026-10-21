@@ -1,0 +1,21 @@
+{
+  "config": {
+    "vocabulary_size": 65536,
+    "context_length": 512,
+    "embedding_size": 1280,
+    "head_count": 20,
+    "layer_count": 24
+  },
+  "parent_progress": "/workspace/qos_ai_557m/experiment/progress_pretrain.pt",
+  "parent_step": 56060,
+  "seed": 20261020,
+  "batch_size": 8,
+  "accumulation": 2,
+  "learning_rate": 0.00015,
+  "warmup_steps": 500,
+  "target_tokens": 541000000,
+  "total_steps": 66041,
+  "frozen": true,
+  "data": "second pass over the pilot English/Python training streams, new random windows",
+  "measured_tokens_per_second": 27105.533718369603
+}

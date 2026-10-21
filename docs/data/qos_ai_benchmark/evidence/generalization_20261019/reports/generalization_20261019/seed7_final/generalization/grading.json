@@ -1,0 +1,3388 @@
+{
+  "checkpoint_sha256": "f51187bc5176b2711f22b4c1f631b75c134951fc12cd25c4441a6ea9a5b51de2",
+  "diagnostic_hash": "49dae923a5d69a252c786162b9048fd3cb3566abc47eb876d2fe80238a9aface",
+  "answers_sha256": "2700bebd52e35ff453d5f9a1c449732c9eb4c06d5eaadaf9771beb5d67295edb",
+  "compiler_sha256": "c41c6ab9377e59be4d9bccedf1d6dd33f188bad0453046660650c6982fbc2f36",
+  "grader_sha256": "e9cceff554e8687429f14c04c47614881b9c25f4a29deec88f3fed2bc30faed6",
+  "scope": "Exact input/operation structure plus execution; canonical trace-field matching is strict and does not judge all free prose. Wording items deliberately share training cases; remaining strata exclude known canonical programs, not unknown legacy exposure.",
+  "overall": {
+    "count": 144,
+    "complete_pass": 34,
+    "behavior_pass": 44,
+    "stated_output_match": 42,
+    "canonical_trace_match": 9,
+    "complete_with_canonical_trace": 15
+  },
+  "strata": {
+    "combinations": {
+      "count": 48,
+      "complete_pass": 5,
+      "behavior_pass": 3,
+      "stated_output_match": 7,
+      "canonical_trace_match": 0,
+      "complete_with_canonical_trace": 2
+    },
+    "inputs": {
+      "count": 48,
+      "complete_pass": 13,
+      "behavior_pass": 22,
+      "stated_output_match": 14,
+      "canonical_trace_match": 3,
+      "complete_with_canonical_trace": 5
+    },
+    "wording": {
+      "count": 48,
+      "complete_pass": 16,
+      "behavior_pass": 19,
+      "stated_output_match": 21,
+      "canonical_trace_match": 6,
+      "complete_with_canonical_trace": 8
+    }
+  },
+  "categories": {
+    "code_generation": {
+      "count": 24,
+      "complete_pass": 3,
+      "behavior_pass": 13,
+      "stated_output_match": 7,
+      "canonical_trace_match": 2,
+      "complete_with_canonical_trace": 0
+    },
+    "debugging": {
+      "count": 48,
+      "complete_pass": 8,
+      "behavior_pass": 31,
+      "stated_output_match": 11,
+      "canonical_trace_match": 2,
+      "complete_with_canonical_trace": 2
+    },
+    "no_change": {
+      "count": 24,
+      "complete_pass": 5,
+      "behavior_pass": 0,
+      "stated_output_match": 6,
+      "canonical_trace_match": 3,
+      "complete_with_canonical_trace": 2
+    },
+    "output_prediction": {
+      "count": 48,
+      "complete_pass": 18,
+      "behavior_pass": 0,
+      "stated_output_match": 18,
+      "canonical_trace_match": 2,
+      "complete_with_canonical_trace": 11
+    }
+  },
+  "results": [
+    {
+      "expected_stdout": "72",
+      "stated_output": "-112",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": false,
+      "complete_pass": false,
+      "id": "general-inputs-941-map-0-output_only-w0",
+      "family": "map",
+      "category": "output_prediction",
+      "mode": "output_only",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "87",
+      "stated_output": "15",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": false,
+      "complete_pass": false,
+      "id": "general-inputs-941-map-1-output_trace-w0",
+      "family": "map",
+      "category": "output_prediction",
+      "mode": "output_trace",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-inputs-941-map-2-repair_expr-w0",
+      "category": "debugging",
+      "family": "map",
+      "expected_stdout": "116",
+      "stated_output": "108",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "expression wrapped only for printing",
+      "code": "> print (str (List.sum (List.map (fn x -> x * 2) [20, (-1), 14, 25]))).\n",
+      "execution": {
+        "returncode": 0,
+        "stdout": "116\n",
+        "stderr": ""
+      },
+      "mode": "repair_expr",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-inputs-941-map-4-repair_program-w0",
+      "category": "debugging",
+      "family": "map",
+      "expected_stdout": "30",
+      "stated_output": "102",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "program",
+      "code": "result = List.sum (List.map (fn x -> x * 3) [(-3), 13]).\n> print (str result).",
+      "execution": {
+        "returncode": 0,
+        "stdout": "30\n",
+        "stderr": ""
+      },
+      "mode": "repair_program",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-inputs-941-clamp-0-no_change-w0",
+      "category": "no_change",
+      "family": "clamp",
+      "expected_stdout": "4",
+      "stated_output": "4",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": true,
+      "stated_output_match": true,
+      "no_change_claim": true,
+      "mode": "no_change",
+      "stratum": "inputs",
+      "canonical_trace_match": true,
+      "trace_fields": {
+        "lower": true,
+        "upper": true,
+        "input": true,
+        "result": true
+      },
+      "complete_with_canonical_trace": true
+    },
+    {
+      "id": "general-inputs-941-clamp-2-generate-w0",
+      "category": "code_generation",
+      "family": "clamp",
+      "expected_stdout": "-2",
+      "stated_output": "-2",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": true,
+      "extraction": "program",
+      "code": "value = Numeric.clamp (-2) (-2).\n> print (str value).",
+      "reason": "supported syntax but reference operation/input structure differs",
+      "mode": "generate",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "lower": true,
+        "upper": false,
+        "input": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "-4",
+      "stated_output": "-4",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": true,
+      "complete_pass": true,
+      "id": "general-inputs-941-clamp-3-output_only-w0",
+      "family": "clamp",
+      "category": "output_prediction",
+      "mode": "output_only",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "lower": false,
+        "upper": false,
+        "input": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": true
+    },
+    {
+      "expected_stdout": "-10",
+      "stated_output": "-15",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": false,
+      "complete_pass": false,
+      "id": "general-inputs-941-clamp-4-output_trace-w0",
+      "family": "clamp",
+      "category": "output_prediction",
+      "mode": "output_trace",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "lower": true,
+        "upper": true,
+        "input": true,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-inputs-941-byte-0-repair_expr-w0",
+      "category": "debugging",
+      "family": "byte",
+      "expected_stdout": "109",
+      "stated_output": "100",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "expression wrapped only for printing",
+      "code": "> print (str (Str.at \"mmi\" 0)).\n",
+      "execution": {
+        "returncode": 0,
+        "stdout": "109\n",
+        "stderr": ""
+      },
+      "mode": "repair_expr",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "offset": true,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-inputs-941-byte-1-repair_program-w0",
+      "category": "debugging",
+      "family": "byte",
+      "expected_stdout": "98",
+      "stated_output": "110",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "program",
+      "code": "result = Str.at \"bbsq\" 1.\n> print (str result).",
+      "execution": {
+        "returncode": 0,
+        "stdout": "98\n",
+        "stderr": ""
+      },
+      "mode": "repair_program",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "offset": true,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-inputs-941-byte-3-no_change-w0",
+      "category": "no_change",
+      "family": "byte",
+      "expected_stdout": "99",
+      "stated_output": "110",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "no_change_claim": true,
+      "mode": "no_change",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "offset": true,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-inputs-941-byte-4-generate-w0",
+      "category": "code_generation",
+      "family": "byte",
+      "expected_stdout": "97",
+      "stated_output": "110",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "program",
+      "code": "result = Str.at \"jaajrpk\" 2.\n> print (str result).",
+      "execution": {
+        "returncode": 0,
+        "stdout": "97\n",
+        "stderr": ""
+      },
+      "mode": "generate",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "offset": true,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "35",
+      "stated_output": "35",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": true,
+      "complete_pass": true,
+      "id": "general-inputs-941-reverse-0-output_only-w0",
+      "family": "reverse",
+      "category": "output_prediction",
+      "mode": "output_only",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "reversed": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": true
+    },
+    {
+      "expected_stdout": "-17",
+      "stated_output": "-17",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": true,
+      "complete_pass": true,
+      "id": "general-inputs-941-reverse-1-output_trace-w0",
+      "family": "reverse",
+      "category": "output_prediction",
+      "mode": "output_trace",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "reversed": false,
+        "result": true
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-inputs-941-reverse-2-repair_expr-w0",
+      "category": "debugging",
+      "family": "reverse",
+      "expected_stdout": "11",
+      "stated_output": "1",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "expression wrapped only for printing",
+      "code": "> print (str ((List.rev [14, (-9), 13, 11]) ! 0)).\n",
+      "execution": {
+        "returncode": 0,
+        "stdout": "11\n",
+        "stderr": ""
+      },
+      "mode": "repair_expr",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "reversed": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-inputs-941-reverse-3-repair_program-w0",
+      "category": "debugging",
+      "family": "reverse",
+      "expected_stdout": "6",
+      "stated_output": "6",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": true,
+      "stated_output_match": true,
+      "extraction": "program",
+      "code": "answer = (List.rev [(-1), 10, (-8), 20, 6]) ! 0.\n> print (str answer).",
+      "execution": {
+        "returncode": 0,
+        "stdout": "6\n",
+        "stderr": ""
+      },
+      "mode": "repair_program",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "reversed": false,
+        "result": true
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-inputs-941-slice-1-no_change-w0",
+      "category": "no_change",
+      "family": "slice",
+      "expected_stdout": "psc",
+      "stated_output": "cr",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "no_change_claim": true,
+      "mode": "no_change",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "start": true,
+        "end": true,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-inputs-941-slice-3-generate-w0",
+      "category": "code_generation",
+      "family": "slice",
+      "expected_stdout": "aj",
+      "stated_output": "hh",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "program",
+      "code": "answer = Str.slice \"wuajhh\" 2 4.\n> print (str answer).",
+      "execution": {
+        "returncode": 0,
+        "stdout": "aj\n",
+        "stderr": ""
+      },
+      "mode": "generate",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "start": true,
+        "end": true,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "orlc",
+      "stated_output": "fprisc",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": false,
+      "complete_pass": false,
+      "id": "general-inputs-941-slice-4-output_only-w0",
+      "family": "slice",
+      "category": "output_prediction",
+      "mode": "output_only",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "start": false,
+        "end": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "mb",
+      "stated_output": "mb",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": true,
+      "complete_pass": true,
+      "id": "general-inputs-941-slice-5-output_trace-w0",
+      "family": "slice",
+      "category": "output_prediction",
+      "mode": "output_trace",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "start": true,
+        "end": true,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-inputs-941-filter-0-repair_expr-w0",
+      "category": "debugging",
+      "family": "filter",
+      "expected_stdout": "0",
+      "stated_output": "15",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "expression wrapped only for printing",
+      "code": "> print (str (List.sum (List.filter (fn x -> x >= 2) [(-4), (-15)]))).\n",
+      "execution": {
+        "returncode": 0,
+        "stdout": "0\n",
+        "stderr": ""
+      },
+      "mode": "repair_expr",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "kept": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-inputs-941-filter-1-repair_program-w0",
+      "category": "debugging",
+      "family": "filter",
+      "expected_stdout": "18",
+      "stated_output": "16",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "program",
+      "code": "result = List.sum (List.filter (fn x -> x >= (-6)) [(-22), 3, 15]).\n> print (str result).",
+      "execution": {
+        "returncode": 0,
+        "stdout": "18\n",
+        "stderr": ""
+      },
+      "mode": "repair_program",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "kept": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-inputs-941-filter-2-no_change-w0",
+      "category": "no_change",
+      "family": "filter",
+      "expected_stdout": "30",
+      "stated_output": "24",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "no_change_claim": true,
+      "mode": "no_change",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "kept": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-inputs-941-filter-3-generate-w0",
+      "category": "code_generation",
+      "family": "filter",
+      "expected_stdout": "54",
+      "stated_output": "18",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "program",
+      "code": "answer = List.sum (List.filter (fn x -> x >= (-10)) [18, 1, (-13), (-11), 35]).\n> print (str answer).",
+      "execution": {
+        "returncode": 0,
+        "stdout": "54\n",
+        "stderr": ""
+      },
+      "mode": "generate",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "kept": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "-5",
+      "stated_output": "-1",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": false,
+      "complete_pass": false,
+      "id": "general-inputs-941-sum-0-output_only-w0",
+      "family": "sum",
+      "category": "output_prediction",
+      "mode": "output_only",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "values": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "36",
+      "stated_output": "36",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": true,
+      "complete_pass": true,
+      "id": "general-inputs-941-sum-1-output_trace-w0",
+      "family": "sum",
+      "category": "output_prediction",
+      "mode": "output_trace",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "values": false,
+        "result": true
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-inputs-941-sum-2-repair_expr-w0",
+      "category": "debugging",
+      "family": "sum",
+      "expected_stdout": "12",
+      "stated_output": "10",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "expression wrapped only for printing",
+      "code": "> print (str (List.sum [(-9), 5, 38, (-22)])).\n",
+      "execution": {
+        "returncode": 0,
+        "stdout": "12\n",
+        "stderr": ""
+      },
+      "mode": "repair_expr",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "values": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-inputs-941-sum-3-repair_program-w0",
+      "category": "debugging",
+      "family": "sum",
+      "expected_stdout": "13",
+      "stated_output": "10",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "reason": "restricted harness: unknown/free function or variable: answer",
+      "mode": "repair_program",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "values": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-inputs-941-take-0-no_change-w0",
+      "category": "no_change",
+      "family": "take",
+      "expected_stdout": "0",
+      "stated_output": "-21",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "no_change_claim": true,
+      "mode": "no_change",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "prefix": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-inputs-941-take-1-generate-w0",
+      "category": "code_generation",
+      "family": "take",
+      "expected_stdout": "19",
+      "stated_output": "19",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": true,
+      "stated_output_match": true,
+      "extraction": "program",
+      "code": "total = List.sum (List.take 1 [19, (-17), 29]).\n> print (str total).",
+      "execution": {
+        "returncode": 0,
+        "stdout": "19\n",
+        "stderr": ""
+      },
+      "mode": "generate",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "prefix": true,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "19",
+      "stated_output": "21",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": false,
+      "complete_pass": false,
+      "id": "general-inputs-941-take-2-output_only-w0",
+      "family": "take",
+      "category": "output_prediction",
+      "mode": "output_only",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "prefix": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "83",
+      "stated_output": "36",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": false,
+      "complete_pass": false,
+      "id": "general-inputs-941-take-3-output_trace-w0",
+      "family": "take",
+      "category": "output_prediction",
+      "mode": "output_trace",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "prefix": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-inputs-941-length-0-repair_expr-w0",
+      "category": "debugging",
+      "family": "length",
+      "expected_stdout": "3",
+      "stated_output": "3",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": true,
+      "stated_output_match": true,
+      "extraction": "expression wrapped only for printing",
+      "code": "> print (str (Str.len \"lwn\")).\n",
+      "execution": {
+        "returncode": 0,
+        "stdout": "3\n",
+        "stderr": ""
+      },
+      "mode": "repair_expr",
+      "stratum": "inputs",
+      "canonical_trace_match": true,
+      "trace_fields": {
+        "text": true,
+        "result": true
+      },
+      "complete_with_canonical_trace": true
+    },
+    {
+      "id": "general-inputs-941-length-1-repair_program-w0",
+      "category": "debugging",
+      "family": "length",
+      "expected_stdout": "4",
+      "stated_output": "3",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "program",
+      "code": "result = Str.len \"unoe\".\n> print (str result).",
+      "execution": {
+        "returncode": 0,
+        "stdout": "4\n",
+        "stderr": ""
+      },
+      "mode": "repair_program",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "text": true,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-inputs-941-length-3-no_change-w0",
+      "category": "no_change",
+      "family": "length",
+      "expected_stdout": "6",
+      "stated_output": "3",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "no_change_claim": true,
+      "mode": "no_change",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "text": true,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-inputs-941-length-4-generate-w0",
+      "category": "code_generation",
+      "family": "length",
+      "expected_stdout": "7",
+      "stated_output": "3",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "program",
+      "code": "result = Str.len \"nqygsdn\".\n> print (str result).",
+      "execution": {
+        "returncode": 0,
+        "stdout": "7\n",
+        "stderr": ""
+      },
+      "mode": "generate",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "text": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "3",
+      "stated_output": "37",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": false,
+      "complete_pass": false,
+      "id": "general-inputs-941-min-0-output_only-w0",
+      "family": "min",
+      "category": "output_prediction",
+      "mode": "output_only",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "left": false,
+        "right": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "-3",
+      "stated_output": "-3",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": true,
+      "complete_pass": true,
+      "id": "general-inputs-941-min-1-output_trace-w0",
+      "family": "min",
+      "category": "output_prediction",
+      "mode": "output_trace",
+      "stratum": "inputs",
+      "canonical_trace_match": true,
+      "trace_fields": {
+        "left": true,
+        "right": true,
+        "result": true
+      },
+      "complete_with_canonical_trace": true
+    },
+    {
+      "id": "general-inputs-941-min-2-repair_expr-w0",
+      "category": "debugging",
+      "family": "min",
+      "expected_stdout": "-13",
+      "stated_output": "-13",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": true,
+      "stated_output_match": true,
+      "extraction": "expression wrapped only for printing",
+      "code": "> print (str (Numeric.min 5 (-13))).\n",
+      "execution": {
+        "returncode": 0,
+        "stdout": "-13\n",
+        "stderr": ""
+      },
+      "mode": "repair_expr",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "left": true,
+        "right": true,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-inputs-941-min-3-repair_program-w0",
+      "category": "debugging",
+      "family": "min",
+      "expected_stdout": "-20",
+      "stated_output": "-20",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": true,
+      "stated_output_match": true,
+      "extraction": "program",
+      "code": "total = Numeric.min (-20) 37.\n> print (str total).",
+      "execution": {
+        "returncode": 0,
+        "stdout": "-20\n",
+        "stderr": ""
+      },
+      "mode": "repair_program",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "left": true,
+        "right": true,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-inputs-941-range-0-no_change-w0",
+      "category": "no_change",
+      "family": "range",
+      "expected_stdout": "22",
+      "stated_output": "144",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "no_change_claim": true,
+      "mode": "no_change",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "values": true,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-inputs-941-range-1-generate-w0",
+      "category": "code_generation",
+      "family": "range",
+      "expected_stdout": "39",
+      "stated_output": "112",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "program",
+      "code": "total = List.sum (List.range 19 20).\n> print (str total).",
+      "execution": {
+        "returncode": 0,
+        "stdout": "39\n",
+        "stderr": ""
+      },
+      "mode": "generate",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "values": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "70",
+      "stated_output": "19",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": false,
+      "complete_pass": false,
+      "id": "general-inputs-941-range-3-output_only-w0",
+      "family": "range",
+      "category": "output_prediction",
+      "mode": "output_only",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "values": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "-219",
+      "stated_output": "-33",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": false,
+      "complete_pass": false,
+      "id": "general-inputs-941-range-5-output_trace-w0",
+      "family": "range",
+      "category": "output_prediction",
+      "mode": "output_trace",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "values": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-inputs-941-missing-0-repair_expr-w0",
+      "category": "debugging",
+      "family": "missing",
+      "expected_stdout": "-1",
+      "stated_output": "3",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "expression wrapped only for printing",
+      "code": "> print (str (Str.find 126 \"kkj\")).\n",
+      "execution": {
+        "returncode": 0,
+        "stdout": "-1\n",
+        "stderr": ""
+      },
+      "mode": "repair_expr",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "needle": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-inputs-941-missing-1-repair_program-w0",
+      "category": "debugging",
+      "family": "missing",
+      "expected_stdout": "1",
+      "stated_output": "1",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": true,
+      "stated_output_match": true,
+      "extraction": "program",
+      "code": "answer = Str.find 108 \"slam\".\n> print (str answer).",
+      "execution": {
+        "returncode": 0,
+        "stdout": "1\n",
+        "stderr": ""
+      },
+      "mode": "repair_program",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "needle": false,
+        "result": true
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-inputs-941-missing-2-no_change-w0",
+      "category": "no_change",
+      "family": "missing",
+      "expected_stdout": "-1",
+      "stated_output": "1",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "no_change_claim": true,
+      "mode": "no_change",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "needle": true,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-inputs-941-missing-4-generate-w0",
+      "category": "code_generation",
+      "family": "missing",
+      "expected_stdout": "-1",
+      "stated_output": "1",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "program",
+      "code": "result = Str.find 126 \"iwonbex\".\n> print (str result).",
+      "execution": {
+        "returncode": 0,
+        "stdout": "-1\n",
+        "stderr": ""
+      },
+      "mode": "generate",
+      "stratum": "inputs",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "needle": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "0",
+      "stated_output": "112",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": false,
+      "complete_pass": false,
+      "id": "general-combinations-941-map_filter-0-output_only-w0",
+      "family": "map_filter",
+      "category": "output_prediction",
+      "mode": "output_only",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "kept": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "54",
+      "stated_output": "10",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": false,
+      "complete_pass": false,
+      "id": "general-combinations-941-map_filter-1-output_trace-w0",
+      "family": "map_filter",
+      "category": "output_prediction",
+      "mode": "output_trace",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "kept": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-combinations-941-map_filter-4-repair_expr-w0",
+      "category": "debugging",
+      "family": "map_filter",
+      "expected_stdout": "38",
+      "stated_output": "108",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "expression wrapped only for printing",
+      "code": "> print (str (List.sum (List.filter (fn x -> x >= (-5)) [19, (-23)]))).\n",
+      "reason": "supported syntax but reference operation/input structure differs",
+      "mode": "repair_expr",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "kept": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-combinations-941-map_filter-8-repair_program-w0",
+      "category": "debugging",
+      "family": "map_filter",
+      "expected_stdout": "39",
+      "stated_output": "108",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "reason": "restricted harness: unknown/free function or variable: result",
+      "mode": "repair_program",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "kept": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-combinations-941-map_filter-9-no_change-w0",
+      "category": "no_change",
+      "family": "map_filter",
+      "expected_stdout": "32",
+      "stated_output": "120",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "no_change_claim": true,
+      "mode": "no_change",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "kept": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-combinations-941-map_filter-10-generate-w0",
+      "category": "code_generation",
+      "family": "map_filter",
+      "expected_stdout": "34",
+      "stated_output": "10",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "program",
+      "code": "value = List.sum (List.take 2 (List.filter (fn x -> x >= 2) [(-17), (-4), 37, 9])).\n> print (str value).",
+      "reason": "supported syntax but reference operation/input structure differs",
+      "mode": "generate",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "kept": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "112",
+      "stated_output": "112",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": true,
+      "complete_pass": true,
+      "id": "general-combinations-941-map_filter-11-output_only-w0",
+      "family": "map_filter",
+      "category": "output_prediction",
+      "mode": "output_only",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "kept": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": true
+    },
+    {
+      "expected_stdout": "0",
+      "stated_output": "11",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": false,
+      "complete_pass": false,
+      "id": "general-combinations-941-map_filter-12-output_trace-w0",
+      "family": "map_filter",
+      "category": "output_prediction",
+      "mode": "output_trace",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "kept": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-combinations-941-map_filter-16-repair_expr-w0",
+      "category": "debugging",
+      "family": "map_filter",
+      "expected_stdout": "48",
+      "stated_output": "102",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "reason": "restricted harness: no unambiguous supported program/expression",
+      "mode": "repair_expr",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "kept": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-combinations-941-map_filter-20-repair_program-w0",
+      "category": "debugging",
+      "family": "map_filter",
+      "expected_stdout": "10",
+      "stated_output": "108",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "reason": "restricted harness: unknown/free function or variable: result",
+      "mode": "repair_program",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "kept": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-combinations-941-map_filter-21-no_change-w0",
+      "category": "no_change",
+      "family": "map_filter",
+      "expected_stdout": "184",
+      "stated_output": "14",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "no_change_claim": true,
+      "mode": "no_change",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "kept": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-combinations-941-map_filter-22-generate-w0",
+      "category": "code_generation",
+      "family": "map_filter",
+      "expected_stdout": "0",
+      "stated_output": "15",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "program",
+      "code": "value = List.sum (List.take 1 (List.filter (fn x -> x >= 1) [(-15), 0, (-23)])).\n> print (str value).",
+      "reason": "supported syntax but reference operation/input structure differs",
+      "mode": "generate",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "kept": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "0",
+      "stated_output": "112",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": false,
+      "complete_pass": false,
+      "id": "general-combinations-941-map_filter-23-output_only-w0",
+      "family": "map_filter",
+      "category": "output_prediction",
+      "mode": "output_only",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "kept": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "0",
+      "stated_output": "108",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": false,
+      "complete_pass": false,
+      "id": "general-combinations-941-map_filter-24-output_trace-w0",
+      "family": "map_filter",
+      "category": "output_prediction",
+      "mode": "output_trace",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "kept": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-combinations-941-map_filter-28-repair_expr-w0",
+      "category": "debugging",
+      "family": "map_filter",
+      "expected_stdout": "51",
+      "stated_output": "108",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "expression wrapped only for printing",
+      "code": "> print (str (List.sum (List.filter (fn x -> x >= 16) [29, (-17)]))).\n",
+      "reason": "supported syntax but reference operation/input structure differs",
+      "mode": "repair_expr",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "kept": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-combinations-941-map_filter-40-repair_program-w0",
+      "category": "debugging",
+      "family": "map_filter",
+      "expected_stdout": "33",
+      "stated_output": "11",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "program",
+      "code": "result = List.sum (List.filter (fn x -> x >= 19) [11, (-4)]).\n> print (str result).",
+      "reason": "supported syntax but reference operation/input structure differs",
+      "mode": "repair_program",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "kept": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-combinations-941-map_reverse-0-no_change-w0",
+      "category": "no_change",
+      "family": "map_reverse",
+      "expected_stdout": "-68",
+      "stated_output": "-17",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "reason": "restricted harness: no unambiguous supported program/expression",
+      "mode": "no_change",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "reversed": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-combinations-941-map_reverse-1-generate-w0",
+      "category": "code_generation",
+      "family": "map_reverse",
+      "expected_stdout": "80",
+      "stated_output": "144",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "program",
+      "code": "total = List.sum (List.map (fn x -> x * 4) [0, (-24), 20]).\n> print (str total).",
+      "reason": "supported syntax but reference operation/input structure differs",
+      "mode": "generate",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "reversed": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "8",
+      "stated_output": "-42",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": false,
+      "complete_pass": false,
+      "id": "general-combinations-941-map_reverse-2-output_only-w0",
+      "family": "map_reverse",
+      "category": "output_prediction",
+      "mode": "output_only",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "reversed": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "160",
+      "stated_output": "8",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": false,
+      "complete_pass": false,
+      "id": "general-combinations-941-map_reverse-3-output_trace-w0",
+      "family": "map_reverse",
+      "category": "output_prediction",
+      "mode": "output_trace",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "reversed": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-combinations-941-map_reverse-4-repair_expr-w0",
+      "category": "debugging",
+      "family": "map_reverse",
+      "expected_stdout": "-34",
+      "stated_output": "-2",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "expression wrapped only for printing",
+      "code": "> print (str ((List.rev (List.map (fn x -> x * (-2)) [25, 17])) ! 0)).\n",
+      "execution": {
+        "returncode": 0,
+        "stdout": "-34\n",
+        "stderr": ""
+      },
+      "mode": "repair_expr",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "reversed": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-combinations-941-map_reverse-8-repair_program-w0",
+      "category": "debugging",
+      "family": "map_reverse",
+      "expected_stdout": "-111",
+      "stated_output": "-11",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "program",
+      "code": "result = (List.rev (List.map (fn x -> x * (-3)) [37, 37]) ! 0) ! 1.\n> print (str result).",
+      "reason": "supported syntax but reference operation/input structure differs",
+      "mode": "repair_program",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "reversed": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-combinations-941-map_reverse-9-no_change-w0",
+      "category": "no_change",
+      "family": "map_reverse",
+      "expected_stdout": "84",
+      "stated_output": "21",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "no_change_claim": true,
+      "mode": "no_change",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "reversed": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-combinations-941-map_reverse-10-generate-w0",
+      "category": "code_generation",
+      "family": "map_reverse",
+      "expected_stdout": "-46",
+      "stated_output": "-26",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "reason": "restricted harness: unknown/free function or variable: value",
+      "mode": "generate",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "reversed": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "108",
+      "stated_output": "-4",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": false,
+      "complete_pass": false,
+      "id": "general-combinations-941-map_reverse-11-output_only-w0",
+      "family": "map_reverse",
+      "category": "output_prediction",
+      "mode": "output_only",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "reversed": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "-36",
+      "stated_output": "12",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": false,
+      "complete_pass": false,
+      "id": "general-combinations-941-map_reverse-12-output_trace-w0",
+      "family": "map_reverse",
+      "category": "output_prediction",
+      "mode": "output_trace",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "reversed": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-combinations-941-map_reverse-13-repair_expr-w0",
+      "category": "debugging",
+      "family": "map_reverse",
+      "expected_stdout": "54",
+      "stated_output": "18",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "expression wrapped only for printing",
+      "code": "> print (str (List.rev (List.map (fn x -> x * 3) [13, 33,18]) ! 0)).\n",
+      "execution": {
+        "returncode": 0,
+        "stdout": "54\n",
+        "stderr": ""
+      },
+      "mode": "repair_expr",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "reversed": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-combinations-941-map_reverse-16-repair_program-w0",
+      "category": "debugging",
+      "family": "map_reverse",
+      "expected_stdout": "-30",
+      "stated_output": "-2",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "program",
+      "code": "result = (List.rev (List.map (fn x -> x * (-2)) [(-2), 15]) ! 0).\n> print (str result).",
+      "execution": {
+        "returncode": 0,
+        "stdout": "-30\n",
+        "stderr": ""
+      },
+      "mode": "repair_program",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "reversed": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-combinations-941-map_reverse-17-no_change-w0",
+      "category": "no_change",
+      "family": "map_reverse",
+      "expected_stdout": "156",
+      "stated_output": "39",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "no_change_claim": true,
+      "mode": "no_change",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "reversed": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-combinations-941-map_reverse-18-generate-w0",
+      "category": "code_generation",
+      "family": "map_reverse",
+      "expected_stdout": "-54",
+      "stated_output": "-18",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "program",
+      "code": "value = (List.rev [0, 1, (-2), (-18)]) ! 0.\n> print (str value).",
+      "reason": "supported syntax but reference operation/input structure differs",
+      "mode": "generate",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "reversed": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "8",
+      "stated_output": "-38",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": false,
+      "complete_pass": false,
+      "id": "general-combinations-941-map_reverse-19-output_only-w0",
+      "family": "map_reverse",
+      "category": "output_prediction",
+      "mode": "output_only",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "reversed": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "-50",
+      "stated_output": "25",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": false,
+      "complete_pass": false,
+      "id": "general-combinations-941-map_reverse-20-output_trace-w0",
+      "family": "map_reverse",
+      "category": "output_prediction",
+      "mode": "output_trace",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "reversed": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-combinations-941-take_filter-0-repair_expr-w0",
+      "category": "debugging",
+      "family": "take_filter",
+      "expected_stdout": "0",
+      "stated_output": "15",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "expression wrapped only for printing",
+      "code": "> print (str (List.sum (List.filter (fn x -> x >= (-9)) [15, (-20)]))).\n",
+      "reason": "supported syntax but reference operation/input structure differs",
+      "mode": "repair_expr",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "prefix": false,
+        "kept": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-combinations-941-take_filter-1-repair_program-w0",
+      "category": "debugging",
+      "family": "take_filter",
+      "expected_stdout": "0",
+      "stated_output": "11",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "reason": "restricted harness: unknown/free function or variable: result",
+      "mode": "repair_program",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "prefix": false,
+        "kept": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-combinations-941-take_filter-2-no_change-w0",
+      "category": "no_change",
+      "family": "take_filter",
+      "expected_stdout": "23",
+      "stated_output": "23",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": true,
+      "stated_output_match": true,
+      "no_change_claim": true,
+      "mode": "no_change",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "prefix": false,
+        "kept": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-combinations-941-take_filter-3-generate-w0",
+      "category": "code_generation",
+      "family": "take_filter",
+      "expected_stdout": "0",
+      "stated_output": "17",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "reason": "restricted harness: unknown/free function or variable: answer",
+      "mode": "generate",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "prefix": false,
+        "kept": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "10",
+      "stated_output": "10",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": true,
+      "complete_pass": true,
+      "id": "general-combinations-941-take_filter-4-output_only-w0",
+      "family": "take_filter",
+      "category": "output_prediction",
+      "mode": "output_only",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "prefix": false,
+        "kept": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": true
+    },
+    {
+      "expected_stdout": "25",
+      "stated_output": "25",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": true,
+      "complete_pass": true,
+      "id": "general-combinations-941-take_filter-5-output_trace-w0",
+      "family": "take_filter",
+      "category": "output_prediction",
+      "mode": "output_trace",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "prefix": false,
+        "kept": true,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-combinations-941-take_filter-6-repair_expr-w0",
+      "category": "debugging",
+      "family": "take_filter",
+      "expected_stdout": "8",
+      "stated_output": "10",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "expression wrapped only for printing",
+      "code": "> print (str (List.sum (List.filter (fn x -> x >= (-4)) [8, (-2), (-9), 1]))).\n",
+      "reason": "supported syntax but reference operation/input structure differs",
+      "mode": "repair_expr",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "prefix": false,
+        "kept": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-combinations-941-take_filter-8-repair_program-w0",
+      "category": "debugging",
+      "family": "take_filter",
+      "expected_stdout": "32",
+      "stated_output": "33",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "program",
+      "code": "result = List.sum (List.filter (fn x -> x >= (-2)) [33, (-1)]).\n> print (str result).",
+      "reason": "supported syntax but reference operation/input structure differs",
+      "mode": "repair_program",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "prefix": false,
+        "kept": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-combinations-941-take_filter-9-no_change-w0",
+      "category": "no_change",
+      "family": "take_filter",
+      "expected_stdout": "0",
+      "stated_output": "10",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "no_change_claim": true,
+      "mode": "no_change",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "prefix": false,
+        "kept": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-combinations-941-take_filter-10-generate-w0",
+      "category": "code_generation",
+      "family": "take_filter",
+      "expected_stdout": "0",
+      "stated_output": "0",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": true,
+      "extraction": "program",
+      "code": "value = List.sum (List.take 0 [(-10), 3, 24, 11]).\n> print (str value).",
+      "reason": "supported syntax but reference operation/input structure differs",
+      "mode": "generate",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "prefix": false,
+        "kept": false,
+        "result": true
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "21",
+      "stated_output": "-11",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": false,
+      "complete_pass": false,
+      "id": "general-combinations-941-take_filter-11-output_only-w0",
+      "family": "take_filter",
+      "category": "output_prediction",
+      "mode": "output_only",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "prefix": false,
+        "kept": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "0",
+      "stated_output": "12",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": false,
+      "complete_pass": false,
+      "id": "general-combinations-941-take_filter-12-output_trace-w0",
+      "family": "take_filter",
+      "category": "output_prediction",
+      "mode": "output_trace",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "prefix": false,
+        "kept": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-combinations-941-take_filter-13-repair_expr-w0",
+      "category": "debugging",
+      "family": "take_filter",
+      "expected_stdout": "0",
+      "stated_output": "10",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "reason": "restricted harness: no unambiguous supported program/expression",
+      "mode": "repair_expr",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "prefix": false,
+        "kept": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-combinations-941-take_filter-16-repair_program-w0",
+      "category": "debugging",
+      "family": "take_filter",
+      "expected_stdout": "31",
+      "stated_output": "31",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": true,
+      "extraction": "program",
+      "code": "result = List.sum (List.filter (fn x -> x >= (-6)) [31, (-9)]).\n> print (str result).",
+      "reason": "supported syntax but reference operation/input structure differs",
+      "mode": "repair_program",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "prefix": false,
+        "kept": true,
+        "result": true
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-combinations-941-take_filter-17-no_change-w0",
+      "category": "no_change",
+      "family": "take_filter",
+      "expected_stdout": "33",
+      "stated_output": "33",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": true,
+      "stated_output_match": true,
+      "no_change_claim": true,
+      "mode": "no_change",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "prefix": false,
+        "kept": true,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-combinations-941-take_filter-18-generate-w0",
+      "category": "code_generation",
+      "family": "take_filter",
+      "expected_stdout": "22",
+      "stated_output": "10",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "program",
+      "code": "value = List.sum (List.take 3 [(-22), 22, (-8), 11]).\n> print (str value).",
+      "reason": "supported syntax but reference operation/input structure differs",
+      "mode": "generate",
+      "stratum": "combinations",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "prefix": false,
+        "kept": true,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "60",
+      "stated_output": "13",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": false,
+      "complete_pass": false,
+      "id": "general-wording-419-map-0-output_only-w1",
+      "family": "map",
+      "category": "output_prediction",
+      "mode": "output_only",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "-234",
+      "stated_output": "104",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": false,
+      "complete_pass": false,
+      "id": "general-wording-419-map-1-output_trace-w1",
+      "family": "map",
+      "category": "output_prediction",
+      "mode": "output_trace",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-wording-419-map-2-repair_expr-w1",
+      "category": "debugging",
+      "family": "map",
+      "expected_stdout": "10",
+      "stated_output": "-12",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "expression wrapped only for printing",
+      "code": "> print (str (List.sum (List.map (fn x -> x * 2) [(-3), (-13), 22, (-1)]))).\n",
+      "execution": {
+        "returncode": 0,
+        "stdout": "10\n",
+        "stderr": ""
+      },
+      "mode": "repair_expr",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-wording-419-map-4-repair_program-w1",
+      "category": "debugging",
+      "family": "map",
+      "expected_stdout": "132",
+      "stated_output": "108",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "program",
+      "code": "result = List.sum (List.map (fn x -> x * 4) [6, 27]).\n> print (str result).",
+      "execution": {
+        "returncode": 0,
+        "stdout": "132\n",
+        "stderr": ""
+      },
+      "mode": "repair_program",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "products": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-wording-419-clamp-4-no_change-w1",
+      "category": "no_change",
+      "family": "clamp",
+      "expected_stdout": "1",
+      "stated_output": "1",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": true,
+      "stated_output_match": true,
+      "no_change_claim": true,
+      "mode": "no_change",
+      "stratum": "wording",
+      "canonical_trace_match": true,
+      "trace_fields": {
+        "lower": true,
+        "upper": true,
+        "input": true,
+        "result": true
+      },
+      "complete_with_canonical_trace": true
+    },
+    {
+      "id": "general-wording-419-clamp-5-generate-w1",
+      "category": "code_generation",
+      "family": "clamp",
+      "expected_stdout": "-14",
+      "stated_output": "-14",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": true,
+      "stated_output_match": true,
+      "extraction": "program",
+      "code": "total = Numeric.clamp (-14) (-8) (-16).\n> print (str total).",
+      "execution": {
+        "returncode": 0,
+        "stdout": "-14\n",
+        "stderr": ""
+      },
+      "mode": "generate",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "lower": true,
+        "upper": true,
+        "input": true,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "-11",
+      "stated_output": "-11",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": true,
+      "complete_pass": true,
+      "id": "general-wording-419-clamp-0-output_only-w1",
+      "family": "clamp",
+      "category": "output_prediction",
+      "mode": "output_only",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "lower": false,
+        "upper": false,
+        "input": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": true
+    },
+    {
+      "expected_stdout": "6",
+      "stated_output": "6",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": true,
+      "complete_pass": true,
+      "id": "general-wording-419-clamp-1-output_trace-w1",
+      "family": "clamp",
+      "category": "output_prediction",
+      "mode": "output_trace",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "lower": true,
+        "upper": true,
+        "input": true,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-wording-419-byte-2-repair_expr-w1",
+      "category": "debugging",
+      "family": "byte",
+      "expected_stdout": "116",
+      "stated_output": "100",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "expression wrapped only for printing",
+      "code": "> print (str (Str.at \"tydnh\" 0)).\n",
+      "execution": {
+        "returncode": 0,
+        "stdout": "116\n",
+        "stderr": ""
+      },
+      "mode": "repair_expr",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "offset": true,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-wording-419-byte-3-repair_program-w1",
+      "category": "debugging",
+      "family": "byte",
+      "expected_stdout": "118",
+      "stated_output": "110",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "program",
+      "code": "result = Str.at \"oxoavu\" 4.\n> print (str result).",
+      "execution": {
+        "returncode": 0,
+        "stdout": "118\n",
+        "stderr": ""
+      },
+      "mode": "repair_program",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "offset": true,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-wording-419-byte-5-no_change-w1",
+      "category": "no_change",
+      "family": "byte",
+      "expected_stdout": "110",
+      "stated_output": "110",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": true,
+      "stated_output_match": true,
+      "no_change_claim": true,
+      "mode": "no_change",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "offset": true,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-wording-419-byte-6-generate-w1",
+      "category": "code_generation",
+      "family": "byte",
+      "expected_stdout": "98",
+      "stated_output": "110",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "program",
+      "code": "value = Str.at \"bov\" 0.\n> print (str value).",
+      "execution": {
+        "returncode": 0,
+        "stdout": "98\n",
+        "stderr": ""
+      },
+      "mode": "generate",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "offset": true,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "12",
+      "stated_output": "12",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": true,
+      "complete_pass": true,
+      "id": "general-wording-419-reverse-0-output_only-w1",
+      "family": "reverse",
+      "category": "output_prediction",
+      "mode": "output_only",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "reversed": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": true
+    },
+    {
+      "expected_stdout": "22",
+      "stated_output": "22",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": true,
+      "complete_pass": true,
+      "id": "general-wording-419-reverse-1-output_trace-w1",
+      "family": "reverse",
+      "category": "output_prediction",
+      "mode": "output_trace",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "reversed": false,
+        "result": true
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-wording-419-reverse-2-repair_expr-w1",
+      "category": "debugging",
+      "family": "reverse",
+      "expected_stdout": "-12",
+      "stated_output": "-12",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": true,
+      "reason": "restricted harness: no unambiguous supported program/expression",
+      "mode": "repair_expr",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "reversed": false,
+        "result": true
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-wording-419-reverse-3-repair_program-w1",
+      "category": "debugging",
+      "family": "reverse",
+      "expected_stdout": "37",
+      "stated_output": "37",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": true,
+      "extraction": "program",
+      "code": "result = (List.rev [5, 26, 30, 13, 4]) ! 0.\n> print (str result).",
+      "reason": "supported syntax but reference operation/input structure differs",
+      "mode": "repair_program",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "reversed": false,
+        "result": true
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-wording-419-slice-9-no_change-w1",
+      "category": "no_change",
+      "family": "slice",
+      "expected_stdout": "uvu",
+      "stated_output": "uv",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "no_change_claim": true,
+      "mode": "no_change",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "start": false,
+        "end": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-wording-419-slice-10-generate-w1",
+      "category": "code_generation",
+      "family": "slice",
+      "expected_stdout": "eppg",
+      "stated_output": "ppg",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "program",
+      "code": "value = Str.slice \"yhteppg\" 3 7.\n> print (str value).",
+      "execution": {
+        "returncode": 0,
+        "stdout": "eppg\n",
+        "stderr": ""
+      },
+      "mode": "generate",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "start": true,
+        "end": true,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "ge",
+      "stated_output": "yey",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": false,
+      "complete_pass": false,
+      "id": "general-wording-419-slice-3-output_only-w1",
+      "family": "slice",
+      "category": "output_prediction",
+      "mode": "output_only",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "start": false,
+        "end": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "rn",
+      "stated_output": "ar",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": false,
+      "complete_pass": false,
+      "id": "general-wording-419-slice-6-output_trace-w1",
+      "family": "slice",
+      "category": "output_prediction",
+      "mode": "output_trace",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "start": true,
+        "end": true,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-wording-419-filter-2-repair_expr-w1",
+      "category": "debugging",
+      "family": "filter",
+      "expected_stdout": "84",
+      "stated_output": "36",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "expression wrapped only for printing",
+      "code": "> print (str (List.sum (List.filter (fn x -> x >= 17) [36, 26, (-13), 22]))).\n",
+      "execution": {
+        "returncode": 0,
+        "stdout": "84\n",
+        "stderr": ""
+      },
+      "mode": "repair_expr",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "kept": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-wording-419-filter-3-repair_program-w1",
+      "category": "debugging",
+      "family": "filter",
+      "expected_stdout": "61",
+      "stated_output": "108",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "program",
+      "code": "result = List.sum (List.filter (fn x -> x >= 9) [38, (-14), 8, -19, 23]).\n> print (str result).",
+      "execution": {
+        "returncode": 0,
+        "stdout": "61\n",
+        "stderr": ""
+      },
+      "mode": "repair_program",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "kept": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-wording-419-filter-4-no_change-w1",
+      "category": "no_change",
+      "family": "filter",
+      "expected_stdout": "14",
+      "stated_output": "11",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "no_change_claim": true,
+      "mode": "no_change",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "kept": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-wording-419-filter-5-generate-w1",
+      "category": "code_generation",
+      "family": "filter",
+      "expected_stdout": "36",
+      "stated_output": "13",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "program",
+      "code": "result = List.sum (List.filter (fn x -> x >= (-1)) [(-1), 14, 23]).\n> print (str result).",
+      "execution": {
+        "returncode": 0,
+        "stdout": "36\n",
+        "stderr": ""
+      },
+      "mode": "generate",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "kept": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "3",
+      "stated_output": "19",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": false,
+      "complete_pass": false,
+      "id": "general-wording-419-sum-0-output_only-w1",
+      "family": "sum",
+      "category": "output_prediction",
+      "mode": "output_only",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "values": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "38",
+      "stated_output": "16",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": false,
+      "complete_pass": false,
+      "id": "general-wording-419-sum-1-output_trace-w1",
+      "family": "sum",
+      "category": "output_prediction",
+      "mode": "output_trace",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "values": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-wording-419-sum-2-repair_expr-w1",
+      "category": "debugging",
+      "family": "sum",
+      "expected_stdout": "112",
+      "stated_output": "35",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "expression wrapped only for printing",
+      "code": "> print (str (List.sum [35, 31, 9])).\n",
+      "reason": "supported syntax but reference operation/input structure differs",
+      "mode": "repair_expr",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "values": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-wording-419-sum-3-repair_program-w1",
+      "category": "debugging",
+      "family": "sum",
+      "expected_stdout": "38",
+      "stated_output": "10",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "program",
+      "code": "result = List.sum [(-19), 21, 6, 0, 30].\n> print (str result).",
+      "execution": {
+        "returncode": 0,
+        "stdout": "38\n",
+        "stderr": ""
+      },
+      "mode": "repair_program",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "values": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-wording-419-take-4-no_change-w1",
+      "category": "no_change",
+      "family": "take",
+      "expected_stdout": "22",
+      "stated_output": "22",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": true,
+      "reason": "restricted harness: no unambiguous supported program/expression",
+      "mode": "no_change",
+      "stratum": "wording",
+      "canonical_trace_match": true,
+      "trace_fields": {
+        "prefix": true,
+        "result": true
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-wording-419-take-5-generate-w1",
+      "category": "code_generation",
+      "family": "take",
+      "expected_stdout": "10",
+      "stated_output": "10",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": true,
+      "extraction": "program",
+      "code": "total = List.sum (List.take 1 [10, 6, 7]).\n> print (str total).",
+      "reason": "supported syntax but reference operation/input structure differs",
+      "mode": "generate",
+      "stratum": "wording",
+      "canonical_trace_match": true,
+      "trace_fields": {
+        "prefix": true,
+        "result": true
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "0",
+      "stated_output": "0",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": true,
+      "complete_pass": true,
+      "id": "general-wording-419-take-0-output_only-w1",
+      "family": "take",
+      "category": "output_prediction",
+      "mode": "output_only",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "prefix": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": true
+    },
+    {
+      "expected_stdout": "9",
+      "stated_output": "9",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": true,
+      "complete_pass": true,
+      "id": "general-wording-419-take-1-output_trace-w1",
+      "family": "take",
+      "category": "output_prediction",
+      "mode": "output_trace",
+      "stratum": "wording",
+      "canonical_trace_match": true,
+      "trace_fields": {
+        "prefix": true,
+        "result": true
+      },
+      "complete_with_canonical_trace": true
+    },
+    {
+      "id": "general-wording-419-length-2-repair_expr-w1",
+      "category": "debugging",
+      "family": "length",
+      "expected_stdout": "5",
+      "stated_output": "5",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": true,
+      "stated_output_match": true,
+      "extraction": "expression wrapped only for printing",
+      "code": "> print (str (Str.len \"afmef\")).\n",
+      "execution": {
+        "returncode": 0,
+        "stdout": "5\n",
+        "stderr": ""
+      },
+      "mode": "repair_expr",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "text": false,
+        "result": true
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-wording-419-length-3-repair_program-w1",
+      "category": "debugging",
+      "family": "length",
+      "expected_stdout": "6",
+      "stated_output": "3",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "program",
+      "code": "result = Str.len \"rbsvdt\".\n> print (str result).",
+      "execution": {
+        "returncode": 0,
+        "stdout": "6\n",
+        "stderr": ""
+      },
+      "mode": "repair_program",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "text": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-wording-419-length-4-no_change-w1",
+      "category": "no_change",
+      "family": "length",
+      "expected_stdout": "7",
+      "stated_output": "5",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "no_change_claim": true,
+      "mode": "no_change",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "text": true,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-wording-419-length-5-generate-w1",
+      "category": "code_generation",
+      "family": "length",
+      "expected_stdout": "8",
+      "stated_output": "3",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "program",
+      "code": "total = Str.len \"resnedoq\".\n> print (str total).",
+      "execution": {
+        "returncode": 0,
+        "stdout": "8\n",
+        "stderr": ""
+      },
+      "mode": "generate",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "text": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "27",
+      "stated_output": "27",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": true,
+      "complete_pass": true,
+      "id": "general-wording-419-min-0-output_only-w1",
+      "family": "min",
+      "category": "output_prediction",
+      "mode": "output_only",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "left": false,
+        "right": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": true
+    },
+    {
+      "expected_stdout": "-30",
+      "stated_output": "-30",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": true,
+      "complete_pass": true,
+      "id": "general-wording-419-min-1-output_trace-w1",
+      "family": "min",
+      "category": "output_prediction",
+      "mode": "output_trace",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "left": true,
+        "right": true,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-wording-419-min-2-repair_expr-w1",
+      "category": "debugging",
+      "family": "min",
+      "expected_stdout": "-23",
+      "stated_output": "-23",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": true,
+      "stated_output_match": true,
+      "extraction": "expression wrapped only for printing",
+      "code": "> print (str (Numeric.min 19 (-23))).\n",
+      "execution": {
+        "returncode": 0,
+        "stdout": "-23\n",
+        "stderr": ""
+      },
+      "mode": "repair_expr",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "left": true,
+        "right": true,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-wording-419-min-3-repair_program-w1",
+      "category": "debugging",
+      "family": "min",
+      "expected_stdout": "-9",
+      "stated_output": "-9",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": true,
+      "stated_output_match": true,
+      "extraction": "program",
+      "code": "result = Numeric.min 39 (-9).\n> print (str result).",
+      "execution": {
+        "returncode": 0,
+        "stdout": "-9\n",
+        "stderr": ""
+      },
+      "mode": "repair_program",
+      "stratum": "wording",
+      "canonical_trace_match": true,
+      "trace_fields": {
+        "left": true,
+        "right": true,
+        "result": true
+      },
+      "complete_with_canonical_trace": true
+    },
+    {
+      "id": "general-wording-419-range-5-no_change-w1",
+      "category": "no_change",
+      "family": "range",
+      "expected_stdout": "-15",
+      "stated_output": "-5",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "no_change_claim": true,
+      "mode": "no_change",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "values": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-wording-419-range-6-generate-w1",
+      "category": "code_generation",
+      "family": "range",
+      "expected_stdout": "-24",
+      "stated_output": "-24",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": true,
+      "extraction": "program",
+      "code": "result = List.sum (List.range (-24) (-23)).\n> print (str result).",
+      "reason": "supported syntax but reference operation/input structure differs",
+      "mode": "generate",
+      "stratum": "wording",
+      "canonical_trace_match": true,
+      "trace_fields": {
+        "values": true,
+        "result": true
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "expected_stdout": "36",
+      "stated_output": "36",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": true,
+      "complete_pass": true,
+      "id": "general-wording-419-range-0-output_only-w1",
+      "family": "range",
+      "category": "output_prediction",
+      "mode": "output_only",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "values": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": true
+    },
+    {
+      "expected_stdout": "-43",
+      "stated_output": "-22",
+      "behavior_pass": false,
+      "executed": false,
+      "stated_output_match": false,
+      "complete_pass": false,
+      "id": "general-wording-419-range-1-output_trace-w1",
+      "family": "range",
+      "category": "output_prediction",
+      "mode": "output_trace",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "values": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-wording-419-missing-2-repair_expr-w1",
+      "category": "debugging",
+      "family": "missing",
+      "expected_stdout": "-1",
+      "stated_output": "1",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "expression wrapped only for printing",
+      "code": "> print (str (Str.find 126 \"llusl\")).\n",
+      "execution": {
+        "returncode": 0,
+        "stdout": "-1\n",
+        "stderr": ""
+      },
+      "mode": "repair_expr",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "needle": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-wording-419-missing-3-repair_program-w1",
+      "category": "debugging",
+      "family": "missing",
+      "expected_stdout": "2",
+      "stated_output": "3",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "extraction": "program",
+      "code": "result = Str.find 116 \"lsttcx\".\n> print (str result).",
+      "execution": {
+        "returncode": 0,
+        "stdout": "2\n",
+        "stderr": ""
+      },
+      "mode": "repair_program",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "needle": false,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-wording-419-missing-6-no_change-w1",
+      "category": "no_change",
+      "family": "missing",
+      "expected_stdout": "-1",
+      "stated_output": "1",
+      "contract_match": false,
+      "executed": false,
+      "behavior_pass": false,
+      "complete_pass": false,
+      "stated_output_match": false,
+      "no_change_claim": true,
+      "mode": "no_change",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "needle": true,
+        "result": false
+      },
+      "complete_with_canonical_trace": false
+    },
+    {
+      "id": "general-wording-419-missing-9-generate-w1",
+      "category": "code_generation",
+      "family": "missing",
+      "expected_stdout": "3",
+      "stated_output": "3",
+      "contract_match": true,
+      "executed": true,
+      "behavior_pass": true,
+      "complete_pass": true,
+      "stated_output_match": true,
+      "extraction": "program",
+      "code": "total = Str.find 101 \"zwheki\".\n> print (str total).",
+      "execution": {
+        "returncode": 0,
+        "stdout": "3\n",
+        "stderr": ""
+      },
+      "mode": "generate",
+      "stratum": "wording",
+      "canonical_trace_match": false,
+      "trace_fields": {
+        "needle": false,
+        "result": true
+      },
+      "complete_with_canonical_trace": false
+    }
+  ]
+}

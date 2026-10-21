@@ -1,0 +1,24 @@
+{
+  "checkpoint_sha256": "ea62b00586637abd2d16f70f9d45de9dcdd1f9b806ed6dfb25721b9c8f4619b0",
+  "no_repeat": 0,
+  "dev_lexical_90": 24,
+  "dev_outputs_33": 12,
+  "working_generation_24": 18,
+  "applied_repairs_48": 36,
+  "repair_plus_output_48": 11,
+  "no_change_plus_output_24": 6,
+  "gen_wording_48": 17,
+  "gen_inputs_48": 18,
+  "gen_combinations_48": 10,
+  "strict_trace_120": 29,
+  "finished": {
+    "development": 89,
+    "coding": 95,
+    "generalization": 144
+  },
+  "severe_loops": {
+    "development": 4,
+    "coding": 0,
+    "generalization": 1
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "budget_stop": false,
+  "message": "Weights and raw development outputs ready; GPU release controlled externally",
+  "phase": "complete",
+  "pretrained_sha256": "f7c9d03107c7532608fc6dca81120a62753c2e06e0f18f22193e9a5b1579fdc7",
+  "processed_pretraining_tokens": 459243520,
+  "student_sha256": "430915b08ee981d6efa32bca2aafdeeb4d33d4b18c093b82c16373ea0b7b0a63",
+  "unix_time": 1792377372.9002542
+}

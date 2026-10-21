@@ -1,0 +1,31 @@
+{
+  "reason": "Network-volume write overhead",
+  "original_probe_seconds": 6.2392461015842855,
+  "buffered_probe_seconds": 0.019475623965263367,
+  "binary_bytes_identical": true,
+  "changed_file": "qos_ai_runpod_data.py",
+  "sha256": "ce58d9d8b88364d839d0cd047fd5553a698e930bbd708cd1bcfbae7314080e7d",
+  "unix_time": 1792358092.8387995,
+  "encoding_fix": {
+    "raw_tokens": 796523,
+    "original_unknown_tokens": 36529,
+    "unrepresentable_tokens": 462,
+    "fallback_tokens": 36067,
+    "documents": 311,
+    "exact_decoded_documents": 306,
+    "code_sha256": "37a495695747dfd7007a75c3d9a51ed68cda8068da995dc1dc9fc5b29cd00912",
+    "unix_time": 1792359085.8909218
+  },
+  "current_code_sha256": "37a495695747dfd7007a75c3d9a51ed68cda8068da995dc1dc9fc5b29cd00912",
+  "focused_tests_passed": 13,
+  "english_replay_identical": {
+    "train": {
+      "sha256": "520068a12af869ca405191b951fec23f6d70bb39ef50e8502f4f30baf229d2e9",
+      "bytes": 1600001588
+    },
+    "validation": {
+      "sha256": "55a217d3452ea4ec7811a6cf23ee9c6e21809d34ff7a0a260d213e9ab2df1200",
+      "bytes": 4002492
+    }
+  }
+}

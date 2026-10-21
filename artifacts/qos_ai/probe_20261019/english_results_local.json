@@ -1,0 +1,38 @@
+{
+  "qos_ai/pod_pt/pretrained.pt": {
+    "cross_entropy": 3.3003446196204322,
+    "perplexity": 27.121984078161468,
+    "parameters": 168331264,
+    "target_tokens": 32728
+  },
+  "qos_ai/pod_pt15/pretrained.pt": {
+    "cross_entropy": 3.1550662670820855,
+    "perplexity": 23.454591307261218,
+    "parameters": 168331264,
+    "target_tokens": 32728
+  },
+  "qos_ai/pod_pt30/pretrained.pt": {
+    "cross_entropy": 3.1090346890945826,
+    "perplexity": 22.39941156496144,
+    "parameters": 168331264,
+    "target_tokens": 32728
+  },
+  "qos_ai/pod_pt15/student.pt": {
+    "cross_entropy": 7.2097484259464375,
+    "perplexity": 1352.5519575908706,
+    "parameters": 168331264,
+    "target_tokens": 32728
+  },
+  "qos_ai/m1_generalization_seed7/student.pt": {
+    "cross_entropy": 7.359049041531716,
+    "perplexity": 1570.3425221653786,
+    "parameters": 168331264,
+    "target_tokens": 32728
+  },
+  "qos_ai/runpod_557m_20261019/student.pt": {
+    "cross_entropy": 3.800652406292013,
+    "perplexity": 44.73035734256514,
+    "parameters": 556526080,
+    "target_tokens": 32728
+  }
+}

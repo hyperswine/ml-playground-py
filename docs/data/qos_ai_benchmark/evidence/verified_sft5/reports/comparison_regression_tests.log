@@ -1,0 +1,13 @@
+test_code_echo_is_not_a_stated_output (test_qos_ai_compare.OutputDiagnosticTests.test_code_echo_is_not_a_stated_output) ... ok
+test_conflicting_stated_outputs_are_ambiguous (test_qos_ai_compare.OutputDiagnosticTests.test_conflicting_stated_outputs_are_ambiguous) ... ok
+test_plain_and_quoted_values_are_parsed (test_qos_ai_compare.OutputDiagnosticTests.test_plain_and_quoted_values_are_parsed) ... ok
+test_wrong_claim_is_not_rescued_by_number_in_code (test_qos_ai_compare.OutputDiagnosticTests.test_wrong_claim_is_not_rescued_by_number_in_code) ... ok
+test_changed_decoding_settings_are_refused (test_qos_ai_compare.PairedComparisonTests.test_changed_decoding_settings_are_refused) ... ok
+test_missing_development_questions_are_refused (test_qos_ai_compare.PairedComparisonTests.test_missing_development_questions_are_refused) ... ok
+test_same_complete_development_prompts_are_paired (test_qos_ai_compare.PairedComparisonTests.test_same_complete_development_prompts_are_paired) ... ok
+test_same_stale_prompt_in_both_runs_is_refused (test_qos_ai_compare.PairedComparisonTests.test_same_stale_prompt_in_both_runs_is_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.006s
+
+OK

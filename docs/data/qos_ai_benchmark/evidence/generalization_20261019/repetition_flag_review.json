@@ -1,0 +1,59 @@
+{
+  "scope": "Manual inspection of all nine no-guard repetition flags; seven repetitive truncations and two finite answers. Raw detector flags do not by themselves establish an endless loop.",
+  "answers": [
+    {
+      "checkpoint": "seed7_step0336",
+      "id": "general-wording-419-range-5-no_change-w1",
+      "finished": false,
+      "review": "repetitive output truncated at token cap"
+    },
+    {
+      "checkpoint": "seed7_final",
+      "id": "general-combinations-941-map_reverse-8-repair_program-w0",
+      "finished": false,
+      "review": "repetitive output truncated at token cap"
+    },
+    {
+      "checkpoint": "seed7_final",
+      "id": "general-combinations-941-map_reverse-10-generate-w0",
+      "finished": false,
+      "review": "repetitive output truncated at token cap"
+    },
+    {
+      "checkpoint": "seed17_final",
+      "id": "general-combinations-941-map_reverse-10-generate-w0",
+      "finished": true,
+      "review": "finite answer with repeated token patterns; not an unbounded-loop observation"
+    },
+    {
+      "checkpoint": "seed17_step0336",
+      "id": "general-combinations-941-map_reverse-8-repair_program-w0",
+      "finished": true,
+      "review": "finite answer with repeated token patterns; not an unbounded-loop observation"
+    },
+    {
+      "checkpoint": "seed17_step0336",
+      "id": "general-combinations-941-map_reverse-16-repair_program-w0",
+      "finished": false,
+      "review": "repetitive output truncated at token cap"
+    },
+    {
+      "checkpoint": "seed17_step0336",
+      "id": "general-wording-419-map-2-repair_expr-w1",
+      "finished": false,
+      "review": "repetitive output truncated at token cap"
+    },
+    {
+      "checkpoint": "seed17_step0336",
+      "id": "general-wording-419-range-5-no_change-w1",
+      "finished": false,
+      "review": "repetitive output truncated at token cap"
+    },
+    {
+      "checkpoint": "seed17_step0336",
+      "id": "general-wording-419-range-1-output_trace-w1",
+      "finished": false,
+      "review": "repetitive output truncated at token cap"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+Using device mps; 1690 training + 64 validation windows of 512 tokens
+Student has 60,976,128 parameters
+step     1/2000: loss=27.042 hard=11.286 soft=33.795 lr=6.00e-06 (2353 tokens/s)
+step    50/2000: loss=19.179 hard=7.271 soft=24.282 lr=3.00e-04 (2984 tokens/s)
+step   100/2000: loss=13.846 hard=7.686 soft=16.487 lr=6.00e-04 (2999 tokens/s)
+step   150/2000: loss=13.067 hard=7.538 soft=15.437 lr=5.99e-04 (3006 tokens/s)
+step   200/2000: loss=11.838 hard=6.693 soft=14.044 lr=5.96e-04 (3006 tokens/s)
+  validation: loss=12.262 hard=7.164 soft=14.447
+  What is FP-RISC? -> 'The the a a `c-umption.\n\n# `pr\n# the a `k` and the the a a a a the `fv/pr.\n\n#\n\n# `-60, the `c, the `c, the the the the the a 10'
+step   250/2000: loss=10.646 hard=6.516 soft=12.416 lr=5.92e-04 (2959 tokens/s)
+step   300/2000: loss=10.608 hard=6.057 soft=12.558 lr=5.85e-04 (2960 tokens/s)
+step   350/2000: loss=10.801 hard=6.221 soft=12.764 lr=5.77e-04 (2963 tokens/s)
+step   400/2000: loss=11.241 hard=6.758 soft=13.162 lr=5.67e-04 (2970 tokens/s)
+  validation: loss=10.938 hard=6.570 soft=12.810
+  What is FP-RISC? -> '<think> `fpr` in a `fpr` `b` `fpr` `fpr` (`a` `fpr` `f1` (11` (a` `fpr`` `c` `231` `f2` `e`'
+step   450/2000: loss=10.913 hard=6.368 soft=12.862 lr=5.56e-04 (2949 tokens/s)
+step   500/2000: loss=9.109 hard=5.218 soft=10.777 lr=5.43e-04 (2951 tokens/s)
+step   550/2000: loss=9.181 hard=5.300 soft=10.844 lr=5.29e-04 (2953 tokens/s)
+step   600/2000: loss=9.865 hard=5.778 soft=11.616 lr=5.13e-04 (2954 tokens/s)
+  validation: loss=10.144 hard=6.303 soft=11.791
+  What is FP-RISC? -> '<think> `f` `f` `q` `v` `p` `v` `2` `v` `2` `str` `a` `q` `1` `V`` `2` `v` `V` `F` `1` `'
+step   650/2000: loss=9.083 hard=5.529 soft=10.606 lr=4.96e-04 (2941 tokens/s)
+step   700/2000: loss=8.732 hard=5.480 soft=10.126 lr=4.78e-04 (2941 tokens/s)
+step   750/2000: loss=9.311 hard=5.442 soft=10.970 lr=4.59e-04 (2942 tokens/s)
+step   800/2000: loss=8.794 hard=5.535 soft=10.191 lr=4.38e-04 (2944 tokens/s)
+  validation: loss=9.407 hard=5.873 soft=10.921
+  What is FP-RISC? -> '<think> `QOS-RISC-RISC-RISC-RISCISC-RISCISC-RISC.\n\n```'
+step   850/2000: loss=8.946 hard=5.539 soft=10.406 lr=4.18e-04 (2933 tokens/s)
+step   900/2000: loss=8.804 hard=5.119 soft=10.383 lr=3.96e-04 (2934 tokens/s)
+step   950/2000: loss=8.811 hard=5.624 soft=10.177 lr=3.74e-04 (2936 tokens/s)
+step  1000/2000: loss=8.491 hard=5.037 soft=9.971 lr=3.52e-04 (2938 tokens/s)
+  validation: loss=8.816 hard=5.628 soft=10.182
+  What is FP-RISC? -> '<think> `@d`, `c`, `v` `v`, `v`, `v` `v`, `v`.` `v` (v` and `v`, `v`, `v` and `r` function in `f` `f`, `v` and `'
+step  1050/2000: loss=7.698 hard=4.950 soft=8.876 lr=3.30e-04 (2931 tokens/s)
+step  1100/2000: loss=8.423 hard=5.523 soft=9.665 lr=3.08e-04 (2932 tokens/s)
+step  1150/2000: loss=8.213 hard=5.456 soft=9.395 lr=2.86e-04 (2933 tokens/s)
+step  1200/2000: loss=8.284 hard=5.135 soft=9.634 lr=2.64e-04 (2934 tokens/s)
+  validation: loss=8.424 hard=5.444 soft=9.702
+  What is FP-RISC? -> '<think> **The `py` function is a `` function for the `OS` function to the `std` function from the `fpf` function to the `f` and `f` and `f` and `f` and `v` and `f` (f` for'
+step  1250/2000: loss=7.727 hard=4.694 soft=9.027 lr=2.42e-04 (2927 tokens/s)
+step  1300/2000: loss=7.059 hard=4.504 soft=8.153 lr=2.22e-04 (2928 tokens/s)
+step  1350/2000: loss=7.194 hard=4.158 soft=8.496 lr=2.01e-04 (2929 tokens/s)
+step  1400/2000: loss=6.480 hard=3.871 soft=7.598 lr=1.82e-04 (2930 tokens/s)
+  validation: loss=8.153 hard=5.279 soft=9.385
+  What is FP-RISC? -> '<think> `v` function that `v` function `v` function `v` represents an integer, `v` function using `v` and `v`.'
+step  1450/2000: loss=6.977 hard=4.600 soft=7.995 lr=1.64e-04 (2925 tokens/s)
+step  1500/2000: loss=6.935 hard=4.104 soft=8.148 lr=1.47e-04 (2926 tokens/s)
+step  1550/2000: loss=7.188 hard=4.223 soft=8.459 lr=1.31e-04 (2927 tokens/s)
+step  1600/2000: loss=6.590 hard=3.856 soft=7.762 lr=1.17e-04 (2927 tokens/s)
+  validation: loss=7.912 hard=5.169 soft=9.087
+  What is FP-RISC? -> '<think> **The `#` function to `sol` function to `fp` and `sol` function to the underlying `sol` function, you can use `solc` that allows `f` and `b` to the standard `f` function in the `f` or `f'
+step  1650/2000: loss=6.022 hard=3.416 soft=7.139 lr=1.04e-04 (2922 tokens/s)
+step  1700/2000: loss=6.201 hard=3.902 soft=7.186 lr=9.25e-05 (2923 tokens/s)
+step  1750/2000: loss=6.366 hard=4.054 soft=7.357 lr=8.27e-05 (2923 tokens/s)
+step  1800/2000: loss=6.353 hard=3.843 soft=7.429 lr=7.46e-05 (2922 tokens/s)
+  validation: loss=7.762 hard=5.081 soft=8.912
+  What is FP-RISC? -> '<think> **` function that are provided **The `__` function to the `f` function to the `f` function to the `f` and `f` and `f` with a `f` and `` and `f` and `f` (f` and `f'
+step  1850/2000: loss=7.501 hard=4.241 soft=8.897 lr=6.83e-05 (2918 tokens/s)
+step  1900/2000: loss=6.529 hard=4.187 soft=7.532 lr=6.37e-05 (2919 tokens/s)
+step  1950/2000: loss=6.678 hard=3.997 soft=7.827 lr=6.09e-05 (2920 tokens/s)
+step  2000/2000: loss=6.177 hard=3.632 soft=7.268 lr=6.00e-05 (2920 tokens/s)
+  validation: loss=7.677 hard=5.030 soft=8.812
+  What is FP-RISC? -> '<think> **The `` function in a `solversating a `lib` function of the `sol` function, which is a specific code is the standard implementation.\n\n```solc102\n```f022f223220000000'
+Saved student to qos_ai/student_small.pt

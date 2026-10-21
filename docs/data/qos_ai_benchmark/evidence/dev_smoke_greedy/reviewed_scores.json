@@ -1,0 +1,24 @@
+{
+  "answers_sha256": "563cd2c3eb94e9b2377fc3fb99a54aeb8ad5632484163360557905e40c58361c",
+  "judgments_sha256": "5f5da7fc849b423f20e1973ad095bf6c7be73d9b5e05e0483b187fdee3712e2a",
+  "metrics": {
+    "factual_correct": {
+      "reviewed": 12,
+      "correct": 0,
+      "rate_on_reviewed": 0.0,
+      "coverage": 1.0
+    },
+    "generated_code_compiles": {
+      "reviewed": 0,
+      "correct": 0,
+      "rate_on_reviewed": null,
+      "coverage": 0.0
+    },
+    "generated_code_behavior_correct": {
+      "reviewed": 0,
+      "correct": 0,
+      "rate_on_reviewed": null,
+      "coverage": 0.0
+    }
+  }
+}

@@ -1,0 +1,1394 @@
+{
+  "schema": 1,
+  "compiler_sha256": "9987da491a791af853300f38ad3e73c52a243dbfd1422379a8dbe437369b776e",
+  "rows": [
+    {
+      "id": "map_sum-p0",
+      "family": "map_sum",
+      "wording": 0,
+      "question": "Return a reusable Sol expression over xs, k and limit to multiply each element of xs by k and add the products. Return one expression in a sol code block, without bindings or print statements.",
+      "reference": "List.sum (List.map (fn x -> x * k) xs)",
+      "cases": [
+        {
+          "inputs": {
+            "xs": [
+              2,
+              7,
+              4
+            ],
+            "k": 5,
+            "limit": 4
+          },
+          "expected": "65"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -3,
+              0,
+              8
+            ],
+            "k": -2,
+            "limit": 0
+          },
+          "expected": "-10"
+        },
+        {
+          "inputs": {
+            "xs": [],
+            "k": 0,
+            "limit": 0
+          },
+          "expected": "0"
+        },
+        {
+          "inputs": {
+            "xs": [
+              4,
+              4,
+              5
+            ],
+            "k": 0,
+            "limit": 4
+          },
+          "expected": "0"
+        },
+        {
+          "inputs": {
+            "xs": [
+              61,
+              73,
+              -5
+            ],
+            "k": 2,
+            "limit": 61
+          },
+          "expected": "258"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -8,
+              -2,
+              -1
+            ],
+            "k": -1,
+            "limit": -2
+          },
+          "expected": "11"
+        }
+      ]
+    },
+    {
+      "id": "map_sum-p1",
+      "family": "map_sum",
+      "wording": 1,
+      "question": "The bindings xs, k and limit will vary between calls. Express this rule in Sol: multiply each element of xs by k and add the products. Return one expression in a sol code block, without bindings or print statements.",
+      "reference": "List.sum (List.map (fn x -> x * k) xs)",
+      "cases": [
+        {
+          "inputs": {
+            "xs": [
+              2,
+              7,
+              4
+            ],
+            "k": 5,
+            "limit": 4
+          },
+          "expected": "65"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -3,
+              0,
+              8
+            ],
+            "k": -2,
+            "limit": 0
+          },
+          "expected": "-10"
+        },
+        {
+          "inputs": {
+            "xs": [],
+            "k": 0,
+            "limit": 0
+          },
+          "expected": "0"
+        },
+        {
+          "inputs": {
+            "xs": [
+              4,
+              4,
+              5
+            ],
+            "k": 0,
+            "limit": 4
+          },
+          "expected": "0"
+        },
+        {
+          "inputs": {
+            "xs": [
+              61,
+              73,
+              -5
+            ],
+            "k": 2,
+            "limit": 61
+          },
+          "expected": "258"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -8,
+              -2,
+              -1
+            ],
+            "k": -1,
+            "limit": -2
+          },
+          "expected": "11"
+        }
+      ]
+    },
+    {
+      "id": "map_sum-p2",
+      "family": "map_sum",
+      "wording": 2,
+      "question": "Write this computation as a Sol expression using the supplied variable names: multiply each element of xs by k and add the products. Return one expression in a sol code block, without bindings or print statements.",
+      "reference": "List.sum (List.map (fn x -> x * k) xs)",
+      "cases": [
+        {
+          "inputs": {
+            "xs": [
+              2,
+              7,
+              4
+            ],
+            "k": 5,
+            "limit": 4
+          },
+          "expected": "65"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -3,
+              0,
+              8
+            ],
+            "k": -2,
+            "limit": 0
+          },
+          "expected": "-10"
+        },
+        {
+          "inputs": {
+            "xs": [],
+            "k": 0,
+            "limit": 0
+          },
+          "expected": "0"
+        },
+        {
+          "inputs": {
+            "xs": [
+              4,
+              4,
+              5
+            ],
+            "k": 0,
+            "limit": 4
+          },
+          "expected": "0"
+        },
+        {
+          "inputs": {
+            "xs": [
+              61,
+              73,
+              -5
+            ],
+            "k": 2,
+            "limit": 61
+          },
+          "expected": "258"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -8,
+              -2,
+              -1
+            ],
+            "k": -1,
+            "limit": -2
+          },
+          "expected": "11"
+        }
+      ]
+    },
+    {
+      "id": "filter_sum-p0",
+      "family": "filter_sum",
+      "wording": 0,
+      "question": "Return a reusable Sol expression over xs, k and limit to add only the elements of xs strictly greater than limit. Return one expression in a sol code block, without bindings or print statements.",
+      "reference": "List.sum (List.filter (fn x -> x > limit) xs)",
+      "cases": [
+        {
+          "inputs": {
+            "xs": [
+              2,
+              7,
+              4
+            ],
+            "k": 5,
+            "limit": 4
+          },
+          "expected": "7"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -3,
+              0,
+              8
+            ],
+            "k": -2,
+            "limit": 0
+          },
+          "expected": "8"
+        },
+        {
+          "inputs": {
+            "xs": [],
+            "k": 0,
+            "limit": 0
+          },
+          "expected": "0"
+        },
+        {
+          "inputs": {
+            "xs": [
+              4,
+              4,
+              5
+            ],
+            "k": 0,
+            "limit": 4
+          },
+          "expected": "5"
+        },
+        {
+          "inputs": {
+            "xs": [
+              61,
+              73,
+              -5
+            ],
+            "k": 2,
+            "limit": 61
+          },
+          "expected": "73"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -8,
+              -2,
+              -1
+            ],
+            "k": -1,
+            "limit": -2
+          },
+          "expected": "-1"
+        }
+      ]
+    },
+    {
+      "id": "filter_sum-p1",
+      "family": "filter_sum",
+      "wording": 1,
+      "question": "The bindings xs, k and limit will vary between calls. Express this rule in Sol: add only the elements of xs strictly greater than limit. Return one expression in a sol code block, without bindings or print statements.",
+      "reference": "List.sum (List.filter (fn x -> x > limit) xs)",
+      "cases": [
+        {
+          "inputs": {
+            "xs": [
+              2,
+              7,
+              4
+            ],
+            "k": 5,
+            "limit": 4
+          },
+          "expected": "7"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -3,
+              0,
+              8
+            ],
+            "k": -2,
+            "limit": 0
+          },
+          "expected": "8"
+        },
+        {
+          "inputs": {
+            "xs": [],
+            "k": 0,
+            "limit": 0
+          },
+          "expected": "0"
+        },
+        {
+          "inputs": {
+            "xs": [
+              4,
+              4,
+              5
+            ],
+            "k": 0,
+            "limit": 4
+          },
+          "expected": "5"
+        },
+        {
+          "inputs": {
+            "xs": [
+              61,
+              73,
+              -5
+            ],
+            "k": 2,
+            "limit": 61
+          },
+          "expected": "73"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -8,
+              -2,
+              -1
+            ],
+            "k": -1,
+            "limit": -2
+          },
+          "expected": "-1"
+        }
+      ]
+    },
+    {
+      "id": "filter_sum-p2",
+      "family": "filter_sum",
+      "wording": 2,
+      "question": "Write this computation as a Sol expression using the supplied variable names: add only the elements of xs strictly greater than limit. Return one expression in a sol code block, without bindings or print statements.",
+      "reference": "List.sum (List.filter (fn x -> x > limit) xs)",
+      "cases": [
+        {
+          "inputs": {
+            "xs": [
+              2,
+              7,
+              4
+            ],
+            "k": 5,
+            "limit": 4
+          },
+          "expected": "7"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -3,
+              0,
+              8
+            ],
+            "k": -2,
+            "limit": 0
+          },
+          "expected": "8"
+        },
+        {
+          "inputs": {
+            "xs": [],
+            "k": 0,
+            "limit": 0
+          },
+          "expected": "0"
+        },
+        {
+          "inputs": {
+            "xs": [
+              4,
+              4,
+              5
+            ],
+            "k": 0,
+            "limit": 4
+          },
+          "expected": "5"
+        },
+        {
+          "inputs": {
+            "xs": [
+              61,
+              73,
+              -5
+            ],
+            "k": 2,
+            "limit": 61
+          },
+          "expected": "73"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -8,
+              -2,
+              -1
+            ],
+            "k": -1,
+            "limit": -2
+          },
+          "expected": "-1"
+        }
+      ]
+    },
+    {
+      "id": "clamp_sum-p0",
+      "family": "clamp_sum",
+      "wording": 0,
+      "question": "Return a reusable Sol expression over xs, k and limit to clamp each element of xs to the inclusive interval 0 through 10, then add them. Return one expression in a sol code block, without bindings or print statements.",
+      "reference": "List.sum (List.map (fn x -> Numeric.clamp 0 10 x) xs)",
+      "cases": [
+        {
+          "inputs": {
+            "xs": [
+              2,
+              7,
+              4
+            ],
+            "k": 5,
+            "limit": 4
+          },
+          "expected": "13"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -3,
+              0,
+              8
+            ],
+            "k": -2,
+            "limit": 0
+          },
+          "expected": "8"
+        },
+        {
+          "inputs": {
+            "xs": [],
+            "k": 0,
+            "limit": 0
+          },
+          "expected": "0"
+        },
+        {
+          "inputs": {
+            "xs": [
+              4,
+              4,
+              5
+            ],
+            "k": 0,
+            "limit": 4
+          },
+          "expected": "13"
+        },
+        {
+          "inputs": {
+            "xs": [
+              61,
+              73,
+              -5
+            ],
+            "k": 2,
+            "limit": 61
+          },
+          "expected": "20"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -8,
+              -2,
+              -1
+            ],
+            "k": -1,
+            "limit": -2
+          },
+          "expected": "0"
+        }
+      ]
+    },
+    {
+      "id": "clamp_sum-p1",
+      "family": "clamp_sum",
+      "wording": 1,
+      "question": "The bindings xs, k and limit will vary between calls. Express this rule in Sol: clamp each element of xs to the inclusive interval 0 through 10, then add them. Return one expression in a sol code block, without bindings or print statements.",
+      "reference": "List.sum (List.map (fn x -> Numeric.clamp 0 10 x) xs)",
+      "cases": [
+        {
+          "inputs": {
+            "xs": [
+              2,
+              7,
+              4
+            ],
+            "k": 5,
+            "limit": 4
+          },
+          "expected": "13"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -3,
+              0,
+              8
+            ],
+            "k": -2,
+            "limit": 0
+          },
+          "expected": "8"
+        },
+        {
+          "inputs": {
+            "xs": [],
+            "k": 0,
+            "limit": 0
+          },
+          "expected": "0"
+        },
+        {
+          "inputs": {
+            "xs": [
+              4,
+              4,
+              5
+            ],
+            "k": 0,
+            "limit": 4
+          },
+          "expected": "13"
+        },
+        {
+          "inputs": {
+            "xs": [
+              61,
+              73,
+              -5
+            ],
+            "k": 2,
+            "limit": 61
+          },
+          "expected": "20"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -8,
+              -2,
+              -1
+            ],
+            "k": -1,
+            "limit": -2
+          },
+          "expected": "0"
+        }
+      ]
+    },
+    {
+      "id": "clamp_sum-p2",
+      "family": "clamp_sum",
+      "wording": 2,
+      "question": "Write this computation as a Sol expression using the supplied variable names: clamp each element of xs to the inclusive interval 0 through 10, then add them. Return one expression in a sol code block, without bindings or print statements.",
+      "reference": "List.sum (List.map (fn x -> Numeric.clamp 0 10 x) xs)",
+      "cases": [
+        {
+          "inputs": {
+            "xs": [
+              2,
+              7,
+              4
+            ],
+            "k": 5,
+            "limit": 4
+          },
+          "expected": "13"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -3,
+              0,
+              8
+            ],
+            "k": -2,
+            "limit": 0
+          },
+          "expected": "8"
+        },
+        {
+          "inputs": {
+            "xs": [],
+            "k": 0,
+            "limit": 0
+          },
+          "expected": "0"
+        },
+        {
+          "inputs": {
+            "xs": [
+              4,
+              4,
+              5
+            ],
+            "k": 0,
+            "limit": 4
+          },
+          "expected": "13"
+        },
+        {
+          "inputs": {
+            "xs": [
+              61,
+              73,
+              -5
+            ],
+            "k": 2,
+            "limit": 61
+          },
+          "expected": "20"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -8,
+              -2,
+              -1
+            ],
+            "k": -1,
+            "limit": -2
+          },
+          "expected": "0"
+        }
+      ]
+    },
+    {
+      "id": "signed_branch-p0",
+      "family": "signed_branch",
+      "wording": 0,
+      "question": "Return a reusable Sol expression over xs, k and limit to when k is positive, sum the elements of xs multiplied by k; otherwise sum xs unchanged. Return one expression in a sol code block, without bindings or print statements.",
+      "reference": "if k > 0 then List.sum (List.map (fn x -> x * k) xs) else List.sum xs",
+      "cases": [
+        {
+          "inputs": {
+            "xs": [
+              2,
+              7,
+              4
+            ],
+            "k": 5,
+            "limit": 4
+          },
+          "expected": "65"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -3,
+              0,
+              8
+            ],
+            "k": -2,
+            "limit": 0
+          },
+          "expected": "5"
+        },
+        {
+          "inputs": {
+            "xs": [],
+            "k": 0,
+            "limit": 0
+          },
+          "expected": "0"
+        },
+        {
+          "inputs": {
+            "xs": [
+              4,
+              4,
+              5
+            ],
+            "k": 0,
+            "limit": 4
+          },
+          "expected": "13"
+        },
+        {
+          "inputs": {
+            "xs": [
+              61,
+              73,
+              -5
+            ],
+            "k": 2,
+            "limit": 61
+          },
+          "expected": "258"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -8,
+              -2,
+              -1
+            ],
+            "k": -1,
+            "limit": -2
+          },
+          "expected": "-11"
+        }
+      ]
+    },
+    {
+      "id": "signed_branch-p1",
+      "family": "signed_branch",
+      "wording": 1,
+      "question": "The bindings xs, k and limit will vary between calls. Express this rule in Sol: when k is positive, sum the elements of xs multiplied by k; otherwise sum xs unchanged. Return one expression in a sol code block, without bindings or print statements.",
+      "reference": "if k > 0 then List.sum (List.map (fn x -> x * k) xs) else List.sum xs",
+      "cases": [
+        {
+          "inputs": {
+            "xs": [
+              2,
+              7,
+              4
+            ],
+            "k": 5,
+            "limit": 4
+          },
+          "expected": "65"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -3,
+              0,
+              8
+            ],
+            "k": -2,
+            "limit": 0
+          },
+          "expected": "5"
+        },
+        {
+          "inputs": {
+            "xs": [],
+            "k": 0,
+            "limit": 0
+          },
+          "expected": "0"
+        },
+        {
+          "inputs": {
+            "xs": [
+              4,
+              4,
+              5
+            ],
+            "k": 0,
+            "limit": 4
+          },
+          "expected": "13"
+        },
+        {
+          "inputs": {
+            "xs": [
+              61,
+              73,
+              -5
+            ],
+            "k": 2,
+            "limit": 61
+          },
+          "expected": "258"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -8,
+              -2,
+              -1
+            ],
+            "k": -1,
+            "limit": -2
+          },
+          "expected": "-11"
+        }
+      ]
+    },
+    {
+      "id": "signed_branch-p2",
+      "family": "signed_branch",
+      "wording": 2,
+      "question": "Write this computation as a Sol expression using the supplied variable names: when k is positive, sum the elements of xs multiplied by k; otherwise sum xs unchanged. Return one expression in a sol code block, without bindings or print statements.",
+      "reference": "if k > 0 then List.sum (List.map (fn x -> x * k) xs) else List.sum xs",
+      "cases": [
+        {
+          "inputs": {
+            "xs": [
+              2,
+              7,
+              4
+            ],
+            "k": 5,
+            "limit": 4
+          },
+          "expected": "65"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -3,
+              0,
+              8
+            ],
+            "k": -2,
+            "limit": 0
+          },
+          "expected": "5"
+        },
+        {
+          "inputs": {
+            "xs": [],
+            "k": 0,
+            "limit": 0
+          },
+          "expected": "0"
+        },
+        {
+          "inputs": {
+            "xs": [
+              4,
+              4,
+              5
+            ],
+            "k": 0,
+            "limit": 4
+          },
+          "expected": "13"
+        },
+        {
+          "inputs": {
+            "xs": [
+              61,
+              73,
+              -5
+            ],
+            "k": 2,
+            "limit": 61
+          },
+          "expected": "258"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -8,
+              -2,
+              -1
+            ],
+            "k": -1,
+            "limit": -2
+          },
+          "expected": "-11"
+        }
+      ]
+    },
+    {
+      "id": "filter_map_sum-p0",
+      "family": "filter_map_sum",
+      "wording": 0,
+      "question": "Return a reusable Sol expression over xs, k and limit to keep elements strictly above limit, multiply the retained elements by k, and sum them. Return one expression in a sol code block, without bindings or print statements.",
+      "reference": "List.sum (List.map (fn x -> x * k) (List.filter (fn x -> x > limit) xs))",
+      "cases": [
+        {
+          "inputs": {
+            "xs": [
+              2,
+              7,
+              4
+            ],
+            "k": 5,
+            "limit": 4
+          },
+          "expected": "35"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -3,
+              0,
+              8
+            ],
+            "k": -2,
+            "limit": 0
+          },
+          "expected": "-16"
+        },
+        {
+          "inputs": {
+            "xs": [],
+            "k": 0,
+            "limit": 0
+          },
+          "expected": "0"
+        },
+        {
+          "inputs": {
+            "xs": [
+              4,
+              4,
+              5
+            ],
+            "k": 0,
+            "limit": 4
+          },
+          "expected": "0"
+        },
+        {
+          "inputs": {
+            "xs": [
+              61,
+              73,
+              -5
+            ],
+            "k": 2,
+            "limit": 61
+          },
+          "expected": "146"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -8,
+              -2,
+              -1
+            ],
+            "k": -1,
+            "limit": -2
+          },
+          "expected": "1"
+        }
+      ]
+    },
+    {
+      "id": "filter_map_sum-p1",
+      "family": "filter_map_sum",
+      "wording": 1,
+      "question": "The bindings xs, k and limit will vary between calls. Express this rule in Sol: keep elements strictly above limit, multiply the retained elements by k, and sum them. Return one expression in a sol code block, without bindings or print statements.",
+      "reference": "List.sum (List.map (fn x -> x * k) (List.filter (fn x -> x > limit) xs))",
+      "cases": [
+        {
+          "inputs": {
+            "xs": [
+              2,
+              7,
+              4
+            ],
+            "k": 5,
+            "limit": 4
+          },
+          "expected": "35"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -3,
+              0,
+              8
+            ],
+            "k": -2,
+            "limit": 0
+          },
+          "expected": "-16"
+        },
+        {
+          "inputs": {
+            "xs": [],
+            "k": 0,
+            "limit": 0
+          },
+          "expected": "0"
+        },
+        {
+          "inputs": {
+            "xs": [
+              4,
+              4,
+              5
+            ],
+            "k": 0,
+            "limit": 4
+          },
+          "expected": "0"
+        },
+        {
+          "inputs": {
+            "xs": [
+              61,
+              73,
+              -5
+            ],
+            "k": 2,
+            "limit": 61
+          },
+          "expected": "146"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -8,
+              -2,
+              -1
+            ],
+            "k": -1,
+            "limit": -2
+          },
+          "expected": "1"
+        }
+      ]
+    },
+    {
+      "id": "filter_map_sum-p2",
+      "family": "filter_map_sum",
+      "wording": 2,
+      "question": "Write this computation as a Sol expression using the supplied variable names: keep elements strictly above limit, multiply the retained elements by k, and sum them. Return one expression in a sol code block, without bindings or print statements.",
+      "reference": "List.sum (List.map (fn x -> x * k) (List.filter (fn x -> x > limit) xs))",
+      "cases": [
+        {
+          "inputs": {
+            "xs": [
+              2,
+              7,
+              4
+            ],
+            "k": 5,
+            "limit": 4
+          },
+          "expected": "35"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -3,
+              0,
+              8
+            ],
+            "k": -2,
+            "limit": 0
+          },
+          "expected": "-16"
+        },
+        {
+          "inputs": {
+            "xs": [],
+            "k": 0,
+            "limit": 0
+          },
+          "expected": "0"
+        },
+        {
+          "inputs": {
+            "xs": [
+              4,
+              4,
+              5
+            ],
+            "k": 0,
+            "limit": 4
+          },
+          "expected": "0"
+        },
+        {
+          "inputs": {
+            "xs": [
+              61,
+              73,
+              -5
+            ],
+            "k": 2,
+            "limit": 61
+          },
+          "expected": "146"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -8,
+              -2,
+              -1
+            ],
+            "k": -1,
+            "limit": -2
+          },
+          "expected": "1"
+        }
+      ]
+    },
+    {
+      "id": "branch_max-p0",
+      "family": "branch_max",
+      "wording": 0,
+      "question": "Return a reusable Sol expression over xs, k and limit to if k is positive, choose the larger of k and the sum of xs; otherwise take the absolute sum of xs. Return one expression in a sol code block, without bindings or print statements.",
+      "reference": "if k > 0 then Numeric.max k (List.sum xs) else Numeric.abs (List.sum xs)",
+      "cases": [
+        {
+          "inputs": {
+            "xs": [
+              2,
+              7,
+              4
+            ],
+            "k": 5,
+            "limit": 4
+          },
+          "expected": "13"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -3,
+              0,
+              8
+            ],
+            "k": -2,
+            "limit": 0
+          },
+          "expected": "5"
+        },
+        {
+          "inputs": {
+            "xs": [],
+            "k": 0,
+            "limit": 0
+          },
+          "expected": "0"
+        },
+        {
+          "inputs": {
+            "xs": [
+              4,
+              4,
+              5
+            ],
+            "k": 0,
+            "limit": 4
+          },
+          "expected": "13"
+        },
+        {
+          "inputs": {
+            "xs": [
+              61,
+              73,
+              -5
+            ],
+            "k": 2,
+            "limit": 61
+          },
+          "expected": "129"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -8,
+              -2,
+              -1
+            ],
+            "k": -1,
+            "limit": -2
+          },
+          "expected": "11"
+        }
+      ]
+    },
+    {
+      "id": "branch_max-p1",
+      "family": "branch_max",
+      "wording": 1,
+      "question": "The bindings xs, k and limit will vary between calls. Express this rule in Sol: if k is positive, choose the larger of k and the sum of xs; otherwise take the absolute sum of xs. Return one expression in a sol code block, without bindings or print statements.",
+      "reference": "if k > 0 then Numeric.max k (List.sum xs) else Numeric.abs (List.sum xs)",
+      "cases": [
+        {
+          "inputs": {
+            "xs": [
+              2,
+              7,
+              4
+            ],
+            "k": 5,
+            "limit": 4
+          },
+          "expected": "13"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -3,
+              0,
+              8
+            ],
+            "k": -2,
+            "limit": 0
+          },
+          "expected": "5"
+        },
+        {
+          "inputs": {
+            "xs": [],
+            "k": 0,
+            "limit": 0
+          },
+          "expected": "0"
+        },
+        {
+          "inputs": {
+            "xs": [
+              4,
+              4,
+              5
+            ],
+            "k": 0,
+            "limit": 4
+          },
+          "expected": "13"
+        },
+        {
+          "inputs": {
+            "xs": [
+              61,
+              73,
+              -5
+            ],
+            "k": 2,
+            "limit": 61
+          },
+          "expected": "129"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -8,
+              -2,
+              -1
+            ],
+            "k": -1,
+            "limit": -2
+          },
+          "expected": "11"
+        }
+      ]
+    },
+    {
+      "id": "branch_max-p2",
+      "family": "branch_max",
+      "wording": 2,
+      "question": "Write this computation as a Sol expression using the supplied variable names: if k is positive, choose the larger of k and the sum of xs; otherwise take the absolute sum of xs. Return one expression in a sol code block, without bindings or print statements.",
+      "reference": "if k > 0 then Numeric.max k (List.sum xs) else Numeric.abs (List.sum xs)",
+      "cases": [
+        {
+          "inputs": {
+            "xs": [
+              2,
+              7,
+              4
+            ],
+            "k": 5,
+            "limit": 4
+          },
+          "expected": "13"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -3,
+              0,
+              8
+            ],
+            "k": -2,
+            "limit": 0
+          },
+          "expected": "5"
+        },
+        {
+          "inputs": {
+            "xs": [],
+            "k": 0,
+            "limit": 0
+          },
+          "expected": "0"
+        },
+        {
+          "inputs": {
+            "xs": [
+              4,
+              4,
+              5
+            ],
+            "k": 0,
+            "limit": 4
+          },
+          "expected": "13"
+        },
+        {
+          "inputs": {
+            "xs": [
+              61,
+              73,
+              -5
+            ],
+            "k": 2,
+            "limit": 61
+          },
+          "expected": "129"
+        },
+        {
+          "inputs": {
+            "xs": [
+              -8,
+              -2,
+              -1
+            ],
+            "k": -1,
+            "limit": -2
+          },
+          "expected": "11"
+        }
+      ]
+    }
+  ],
+  "scope": "prospective development diagnostic; shared concepts, new variable-input contract; not a final test",
+  "hash": "dc5b215065faf0418990c371419bddef2d1e668ad0978f34fe41bfe47de3a94e"
+}

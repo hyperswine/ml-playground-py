@@ -1,0 +1,32 @@
+{
+  "accumulation": 2,
+  "batch_size": 8,
+  "bf16": true,
+  "budget_created_unix": 1792357761.427,
+  "code_sha256": {
+    "qos_ai.py": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+    "qos_ai_runpod_data.py": "37a495695747dfd7007a75c3d9a51ed68cda8068da995dc1dc9fc5b29cd00912",
+    "qos_ai_runpod_train.py": "546e721ab192983e5c9dc64d5ca0ac1bc59579fafe62de12d5fdd3f0df4f40da"
+  },
+  "config": {
+    "context_length": 512,
+    "embedding_size": 1280,
+    "head_count": 20,
+    "layer_count": 24,
+    "vocabulary_size": 65536
+  },
+  "dataset_hash": "84e61e87b22ec26d80c81bcaf8891570a39f921ce35a0e49d58ea821541887cc",
+  "estimated_tokens_per_second": 25400.163426659845,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "learning_rate": 0.0003,
+  "optimizer": "fused AdamW",
+  "pretrain_deadline_unix": 1792381161.427,
+  "scope": "pretraining from random weights; no teacher embedding initialization",
+  "seed": 7,
+  "sequence_length": 512,
+  "target_tokens": 459243520,
+  "torch": "2.8.0+cu128",
+  "total_steps": 56060,
+  "warmup_steps": 128,
+  "weight_decay": 0.1
+}

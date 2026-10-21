@@ -1,0 +1,137 @@
+{
+  "benchmark_sha256": {
+    "benchmarks/benchmark.jsonl": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+    "benchmarks/coding_diagnostic.jsonl": "5328ff3c3cf01b132322349ef1830959b325a302926b437c78d32edaef8d59ce",
+    "benchmarks/generalization_diagnostic.jsonl": "67b2155a65688599b10d79d77413fec8061bc2c3a73948fee13f0dd9fc4c4cda"
+  },
+  "document_ledger_sha256": "5bce07ef4d1afd87b04628e6c7118410f6848b97cfdadaaf746ffa5b6361328f",
+  "downloads": [
+    {
+      "bytes": 2152819114,
+      "filename": "sample/10BT/000_00000.parquet",
+      "sha256": "b1ba7b2ce4cb5ea6ef42dca40263eabb85f37700d01693a68e9b30a31d78e871",
+      "source": "english"
+    },
+    {
+      "bytes": 246127841,
+      "filename": "file-000000000001.json.gz",
+      "sha256": "3726a0239b5cb7d0ef3ea36886c533d0becc7404217763015559edb546d53c94",
+      "source": "python"
+    }
+  ],
+  "excluded_literal_questions": 372,
+  "exposure_limit": "literal question and named-domain screening; no semantic decontamination claim",
+  "hash": "84e61e87b22ec26d80c81bcaf8891570a39f921ce35a0e49d58ea821541887cc",
+  "preparation_code_sha256": "37a495695747dfd7007a75c3d9a51ed68cda8068da995dc1dc9fc5b29cd00912",
+  "python_encoding": "Uncovered Qwen BPE tokens are split into existing student pieces with identical byte-level spelling; vocabulary and benchmark encoding unchanged",
+  "results": {
+    "english": {
+      "documents": {
+        "train": 388190,
+        "validation": 1006
+      },
+      "files": {
+        "train": {
+          "path": "english_train.bin",
+          "sha256": "520068a12af869ca405191b951fec23f6d70bb39ef50e8502f4f30baf229d2e9"
+        },
+        "validation": {
+          "path": "english_validation.bin",
+          "sha256": "55a217d3452ea4ec7811a6cf23ee9c6e21809d34ff7a0a260d213e9ab2df1200"
+        }
+      },
+      "licenses": {
+        "ODC-BY; underlying web-content rights vary": 389196
+      },
+      "python_qwen_tokens_split_into_existing_pieces": {
+        "train": 0,
+        "validation": 0
+      },
+      "rejected": {
+        "duplicate_text": 356,
+        "length": 64,
+        "unknown_over_one_percent": 20176
+      },
+      "tokens": {
+        "train": 400000397,
+        "validation": 1000623
+      },
+      "unknown_tokens": {
+        "train": 665269,
+        "validation": 1575
+      }
+    },
+    "python": {
+      "documents": {
+        "train": 38414,
+        "validation": 400
+      },
+      "files": {
+        "train": {
+          "path": "python_train.bin",
+          "sha256": "6ff6ea34e1cfea90affcd77d8d3a2c6586d7ec2ffa1aae020325f95880ff0e96"
+        },
+        "validation": {
+          "path": "python_validation.bin",
+          "sha256": "60c5b0ede88499c595c7e995da6446bc2cb8f2699a2eb9112b3f0f5416952e02"
+        }
+      },
+      "licenses": {
+        "apache-2.0": 14896,
+        "bsd-2-clause": 1087,
+        "bsd-3-clause": 10696,
+        "cc0-1.0": 104,
+        "isc": 100,
+        "mit": 11409,
+        "unlicense": 522
+      },
+      "python_qwen_tokens_split_into_existing_pieces": {
+        "train": 4406612,
+        "validation": 43871
+      },
+      "rejected": {
+        "length": 67,
+        "license_or_generated": 41066,
+        "unknown_over_one_percent": 991
+      },
+      "tokens": {
+        "train": 100002642,
+        "validation": 1000658
+      },
+      "unknown_tokens": {
+        "train": 2090,
+        "validation": 10
+      }
+    }
+  },
+  "schema": 1,
+  "sources": {
+    "english": {
+      "files": [
+        "sample/10BT/000_00000.parquet",
+        "sample/10BT/001_00000.parquet"
+      ],
+      "license": "ODC-BY; underlying web-content rights vary",
+      "repo": "HuggingFaceFW/fineweb-edu",
+      "revision": "87f09149ef4734204d70ed1d046ddc9ca3f2b8f9",
+      "weight": 0.8
+    },
+    "python": {
+      "files": [
+        "file-000000000001.json.gz",
+        "file-000000000002.json.gz",
+        "file-000000000003.json.gz",
+        "file-000000000004.json.gz",
+        "file-000000000005.json.gz",
+        "file-000000000006.json.gz"
+      ],
+      "license": "per-file permissive allowlist",
+      "repo": "codeparrot/codeparrot-clean",
+      "revision": "35a59fb025bc0a102f7d96eac09d145b896d487b",
+      "weight": 0.2
+    }
+  },
+  "split_policy": "whole web-host or code-repository groups hashed 1 percent to validation; exact text dedup globally",
+  "tokenizer_sha256": "06b9509352d2af50381ab2247e083b80d32d5c0aba91c272ca9ff729b6a0e523",
+  "vocabulary_sha256": "74138be221701ca868b413cf711642fc2abde19687ff7f3af37de475f817dcf7"
+}

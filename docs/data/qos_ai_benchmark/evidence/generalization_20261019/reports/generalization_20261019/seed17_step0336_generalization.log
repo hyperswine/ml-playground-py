@@ -1,0 +1,92 @@
+
+COMMAND ["qos_ai_generalization_eval.py", "run", "--data", "curricula/generalization_20261019", "--load", "experiments/generalization_20261019_seed17/step_0336.pt", "--output", "reports/generalization_20261019/seed17_step0336/generalization"]
+12 / 144
+24 / 144
+36 / 144
+48 / 144
+60 / 144
+72 / 144
+84 / 144
+96 / 144
+108 / 144
+120 / 144
+132 / 144
+144 / 144
+
+COMMAND ["qos_ai_generalization_eval.py", "grade", "--data", "curricula/generalization_20261019", "--output", "reports/generalization_20261019/seed17_step0336/generalization"]
+{
+  "checkpoint_sha256": "ad4f7447bc611e470646d834acd45bef9e8a8e2f98fd2951943a4c3a069e6d3a",
+  "diagnostic_hash": "49dae923a5d69a252c786162b9048fd3cb3566abc47eb876d2fe80238a9aface",
+  "answers_sha256": "ad8f770e39732d450c7fa113c30a46dc513edd9a3289d9862206f6a1dd6b105f",
+  "compiler_sha256": "c41c6ab9377e59be4d9bccedf1d6dd33f188bad0453046660650c6982fbc2f36",
+  "grader_sha256": "e9cceff554e8687429f14c04c47614881b9c25f4a29deec88f3fed2bc30faed6",
+  "scope": "Exact input/operation structure plus execution; canonical trace-field matching is strict and does not judge all free prose. Wording items deliberately share training cases; remaining strata exclude known canonical programs, not unknown legacy exposure.",
+  "overall": {
+    "count": 144,
+    "complete_pass": 25,
+    "behavior_pass": 40,
+    "stated_output_match": 29,
+    "canonical_trace_match": 5,
+    "complete_with_canonical_trace": 10
+  },
+  "strata": {
+    "combinations": {
+      "count": 48,
+      "complete_pass": 1,
+      "behavior_pass": 2,
+      "stated_output_match": 1,
+      "canonical_trace_match": 0,
+      "complete_with_canonical_trace": 0
+    },
+    "inputs": {
+      "count": 48,
+      "complete_pass": 10,
+      "behavior_pass": 21,
+      "stated_output_match": 11,
+      "canonical_trace_match": 2,
+      "complete_with_canonical_trace": 4
+    },
+    "wording": {
+      "count": 48,
+      "complete_pass": 14,
+      "behavior_pass": 17,
+      "stated_output_match": 17,
+      "canonical_trace_match": 3,
+      "complete_with_canonical_trace": 6
+    }
+  },
+  "categories": {
+    "code_generation": {
+      "count": 24,
+      "complete_pass": 3,
+      "behavior_pass": 11,
+      "stated_output_match": 5,
+      "canonical_trace_match": 2,
+      "complete_with_canonical_trace": 1
+    },
+    "debugging": {
+      "count": 48,
+      "complete_pass": 7,
+      "behavior_pass": 29,
+      "stated_output_match": 9,
+      "canonical_trace_match": 1,
+      "complete_with_canonical_trace": 1
+    },
+    "no_change": {
+      "count": 24,
+      "complete_pass": 4,
+      "behavior_pass": 0,
+      "stated_output_match": 4,
+      "canonical_trace_match": 1,
+      "complete_with_canonical_trace": 1
+    },
+    "output_prediction": {
+      "count": 48,
+      "complete_pass": 11,
+      "behavior_pass": 0,
+      "stated_output_match": 11,
+      "canonical_trace_match": 1,
+      "complete_with_canonical_trace": 7
+    }
+  }
+}

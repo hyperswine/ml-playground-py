@@ -1,0 +1,462 @@
+{
+  "original_raw": {
+    "before": {
+      "checkpoint_sha256": "2db239f619ce87ac330b201c0c61c7aa76ea87b086a7326f86faf3b3bffe7a3d",
+      "ancestry": "legacy_or_unknown",
+      "count": 90,
+      "concept_groups": 34,
+      "rubric_proxy_pass_rate": 0.07777777777777778,
+      "finished_rate": 0.5666666666666667,
+      "severe_loop_rate": 0.5444444444444444,
+      "mean_tokens": 135.04444444444445,
+      "context_limited_count": 0
+    },
+    "after": {
+      "checkpoint_sha256": "0707da88d15ea674ebbf1395ad948e9dad5438a9f308e7611b07fde53e80d83d",
+      "ancestry": "legacy_or_unknown",
+      "count": 90,
+      "concept_groups": 34,
+      "rubric_proxy_pass_rate": 0.4777777777777778,
+      "finished_rate": 1.0,
+      "severe_loop_rate": 0.0,
+      "mean_tokens": 14.3,
+      "context_limited_count": 0
+    },
+    "no_repeat": 0,
+    "max_new_tokens": 200,
+    "proxy_improved": 40,
+    "proxy_regressed": 4,
+    "categories": {
+      "architecture": {
+        "count": 4,
+        "before_proxy": 0,
+        "after_proxy": 4
+      },
+      "false_premise": {
+        "count": 17,
+        "before_proxy": 1,
+        "after_proxy": 9
+      },
+      "language": {
+        "count": 2,
+        "before_proxy": 0,
+        "after_proxy": 2
+      },
+      "tooling": {
+        "count": 4,
+        "before_proxy": 0,
+        "after_proxy": 4
+      },
+      "modules": {
+        "count": 2,
+        "before_proxy": 0,
+        "after_proxy": 2
+      },
+      "actors": {
+        "count": 8,
+        "before_proxy": 0,
+        "after_proxy": 6
+      },
+      "binary": {
+        "count": 6,
+        "before_proxy": 0,
+        "after_proxy": 0
+      },
+      "types": {
+        "count": 4,
+        "before_proxy": 0,
+        "after_proxy": 0
+      },
+      "parsing": {
+        "count": 4,
+        "before_proxy": 0,
+        "after_proxy": 4
+      },
+      "output_prediction": {
+        "count": 33,
+        "before_proxy": 5,
+        "after_proxy": 11
+      },
+      "debugging": {
+        "count": 2,
+        "before_proxy": 0,
+        "after_proxy": 0
+      },
+      "code_generation": {
+        "count": 2,
+        "before_proxy": 0,
+        "after_proxy": 1
+      },
+      "insufficient_information": {
+        "count": 2,
+        "before_proxy": 1,
+        "after_proxy": 0
+      }
+    },
+    "tracks": {
+      "familiar": {
+        "count": 75,
+        "before_proxy": 6,
+        "after_proxy": 43
+      },
+      "generalization": {
+        "count": 15,
+        "before_proxy": 1,
+        "after_proxy": 0
+      }
+    },
+    "output_matches": {
+      "count": 33,
+      "parent_matches": 1,
+      "tuned_matches": 11,
+      "parent_parseable": 13,
+      "tuned_parseable": 33,
+      "note": "Post-hoc diagnostic of explicitly stated output literals; code echoes excluded. Ambiguous answers are unmatched. Not full factual accuracy."
+    }
+  },
+  "original_guard": {
+    "before": {
+      "checkpoint_sha256": "2db239f619ce87ac330b201c0c61c7aa76ea87b086a7326f86faf3b3bffe7a3d",
+      "ancestry": "legacy_or_unknown",
+      "count": 90,
+      "concept_groups": 34,
+      "rubric_proxy_pass_rate": 0.13333333333333333,
+      "finished_rate": 0.8222222222222222,
+      "severe_loop_rate": 0.0,
+      "mean_tokens": 109.82222222222222,
+      "context_limited_count": 0
+    },
+    "after": {
+      "checkpoint_sha256": "0707da88d15ea674ebbf1395ad948e9dad5438a9f308e7611b07fde53e80d83d",
+      "ancestry": "legacy_or_unknown",
+      "count": 90,
+      "concept_groups": 34,
+      "rubric_proxy_pass_rate": 0.4777777777777778,
+      "finished_rate": 1.0,
+      "severe_loop_rate": 0.0,
+      "mean_tokens": 14.28888888888889,
+      "context_limited_count": 0
+    },
+    "no_repeat": 3,
+    "max_new_tokens": 200,
+    "proxy_improved": 38,
+    "proxy_regressed": 7,
+    "categories": {
+      "architecture": {
+        "count": 4,
+        "before_proxy": 0,
+        "after_proxy": 4
+      },
+      "false_premise": {
+        "count": 17,
+        "before_proxy": 1,
+        "after_proxy": 9
+      },
+      "language": {
+        "count": 2,
+        "before_proxy": 0,
+        "after_proxy": 2
+      },
+      "tooling": {
+        "count": 4,
+        "before_proxy": 0,
+        "after_proxy": 4
+      },
+      "modules": {
+        "count": 2,
+        "before_proxy": 0,
+        "after_proxy": 2
+      },
+      "actors": {
+        "count": 8,
+        "before_proxy": 0,
+        "after_proxy": 6
+      },
+      "binary": {
+        "count": 6,
+        "before_proxy": 0,
+        "after_proxy": 0
+      },
+      "types": {
+        "count": 4,
+        "before_proxy": 1,
+        "after_proxy": 0
+      },
+      "parsing": {
+        "count": 4,
+        "before_proxy": 0,
+        "after_proxy": 4
+      },
+      "output_prediction": {
+        "count": 33,
+        "before_proxy": 9,
+        "after_proxy": 11
+      },
+      "debugging": {
+        "count": 2,
+        "before_proxy": 0,
+        "after_proxy": 0
+      },
+      "code_generation": {
+        "count": 2,
+        "before_proxy": 0,
+        "after_proxy": 1
+      },
+      "insufficient_information": {
+        "count": 2,
+        "before_proxy": 1,
+        "after_proxy": 0
+      }
+    },
+    "tracks": {
+      "familiar": {
+        "count": 75,
+        "before_proxy": 10,
+        "after_proxy": 43
+      },
+      "generalization": {
+        "count": 15,
+        "before_proxy": 2,
+        "after_proxy": 0
+      }
+    },
+    "output_matches": {
+      "count": 33,
+      "parent_matches": 1,
+      "tuned_matches": 11,
+      "parent_parseable": 13,
+      "tuned_parseable": 33,
+      "note": "Post-hoc diagnostic of explicitly stated output literals; code echoes excluded. Ambiguous answers are unmatched. Not full factual accuracy."
+    }
+  },
+  "previous_sft_raw": {
+    "before": {
+      "checkpoint_sha256": "f12076f64ad8c04336ddfca35e0ccc828e86ee4cd23608b0f0e026cd11eb107f",
+      "ancestry": "legacy_or_unknown",
+      "count": 90,
+      "concept_groups": 34,
+      "rubric_proxy_pass_rate": 0.2222222222222222,
+      "finished_rate": 1.0,
+      "severe_loop_rate": 0.07777777777777778,
+      "mean_tokens": 22.733333333333334,
+      "context_limited_count": 0
+    },
+    "after": {
+      "checkpoint_sha256": "0707da88d15ea674ebbf1395ad948e9dad5438a9f308e7611b07fde53e80d83d",
+      "ancestry": "legacy_or_unknown",
+      "count": 90,
+      "concept_groups": 34,
+      "rubric_proxy_pass_rate": 0.4777777777777778,
+      "finished_rate": 1.0,
+      "severe_loop_rate": 0.0,
+      "mean_tokens": 14.3,
+      "context_limited_count": 0
+    },
+    "no_repeat": 0,
+    "max_new_tokens": 200,
+    "proxy_improved": 27,
+    "proxy_regressed": 4,
+    "categories": {
+      "architecture": {
+        "count": 4,
+        "before_proxy": 1,
+        "after_proxy": 4
+      },
+      "false_premise": {
+        "count": 17,
+        "before_proxy": 3,
+        "after_proxy": 9
+      },
+      "language": {
+        "count": 2,
+        "before_proxy": 0,
+        "after_proxy": 2
+      },
+      "tooling": {
+        "count": 4,
+        "before_proxy": 3,
+        "after_proxy": 4
+      },
+      "modules": {
+        "count": 2,
+        "before_proxy": 0,
+        "after_proxy": 2
+      },
+      "actors": {
+        "count": 8,
+        "before_proxy": 2,
+        "after_proxy": 6
+      },
+      "binary": {
+        "count": 6,
+        "before_proxy": 0,
+        "after_proxy": 0
+      },
+      "types": {
+        "count": 4,
+        "before_proxy": 0,
+        "after_proxy": 0
+      },
+      "parsing": {
+        "count": 4,
+        "before_proxy": 1,
+        "after_proxy": 4
+      },
+      "output_prediction": {
+        "count": 33,
+        "before_proxy": 10,
+        "after_proxy": 11
+      },
+      "debugging": {
+        "count": 2,
+        "before_proxy": 0,
+        "after_proxy": 0
+      },
+      "code_generation": {
+        "count": 2,
+        "before_proxy": 0,
+        "after_proxy": 1
+      },
+      "insufficient_information": {
+        "count": 2,
+        "before_proxy": 0,
+        "after_proxy": 0
+      }
+    },
+    "tracks": {
+      "familiar": {
+        "count": 75,
+        "before_proxy": 20,
+        "after_proxy": 43
+      },
+      "generalization": {
+        "count": 15,
+        "before_proxy": 0,
+        "after_proxy": 0
+      }
+    },
+    "output_matches": {
+      "count": 33,
+      "parent_matches": 7,
+      "tuned_matches": 11,
+      "parent_parseable": 33,
+      "tuned_parseable": 33,
+      "note": "Post-hoc diagnostic of explicitly stated output literals; code echoes excluded. Ambiguous answers are unmatched. Not full factual accuracy."
+    }
+  },
+  "previous_sft_guard": {
+    "before": {
+      "checkpoint_sha256": "f12076f64ad8c04336ddfca35e0ccc828e86ee4cd23608b0f0e026cd11eb107f",
+      "ancestry": "legacy_or_unknown",
+      "count": 90,
+      "concept_groups": 34,
+      "rubric_proxy_pass_rate": 0.2222222222222222,
+      "finished_rate": 1.0,
+      "severe_loop_rate": 0.0,
+      "mean_tokens": 22.022222222222222,
+      "context_limited_count": 0
+    },
+    "after": {
+      "checkpoint_sha256": "0707da88d15ea674ebbf1395ad948e9dad5438a9f308e7611b07fde53e80d83d",
+      "ancestry": "legacy_or_unknown",
+      "count": 90,
+      "concept_groups": 34,
+      "rubric_proxy_pass_rate": 0.4777777777777778,
+      "finished_rate": 1.0,
+      "severe_loop_rate": 0.0,
+      "mean_tokens": 14.28888888888889,
+      "context_limited_count": 0
+    },
+    "no_repeat": 3,
+    "max_new_tokens": 200,
+    "proxy_improved": 27,
+    "proxy_regressed": 4,
+    "categories": {
+      "architecture": {
+        "count": 4,
+        "before_proxy": 0,
+        "after_proxy": 4
+      },
+      "false_premise": {
+        "count": 17,
+        "before_proxy": 3,
+        "after_proxy": 9
+      },
+      "language": {
+        "count": 2,
+        "before_proxy": 0,
+        "after_proxy": 2
+      },
+      "tooling": {
+        "count": 4,
+        "before_proxy": 3,
+        "after_proxy": 4
+      },
+      "modules": {
+        "count": 2,
+        "before_proxy": 0,
+        "after_proxy": 2
+      },
+      "actors": {
+        "count": 8,
+        "before_proxy": 2,
+        "after_proxy": 6
+      },
+      "binary": {
+        "count": 6,
+        "before_proxy": 0,
+        "after_proxy": 0
+      },
+      "types": {
+        "count": 4,
+        "before_proxy": 0,
+        "after_proxy": 0
+      },
+      "parsing": {
+        "count": 4,
+        "before_proxy": 1,
+        "after_proxy": 4
+      },
+      "output_prediction": {
+        "count": 33,
+        "before_proxy": 11,
+        "after_proxy": 11
+      },
+      "debugging": {
+        "count": 2,
+        "before_proxy": 0,
+        "after_proxy": 0
+      },
+      "code_generation": {
+        "count": 2,
+        "before_proxy": 0,
+        "after_proxy": 1
+      },
+      "insufficient_information": {
+        "count": 2,
+        "before_proxy": 0,
+        "after_proxy": 0
+      }
+    },
+    "tracks": {
+      "familiar": {
+        "count": 75,
+        "before_proxy": 20,
+        "after_proxy": 43
+      },
+      "generalization": {
+        "count": 15,
+        "before_proxy": 0,
+        "after_proxy": 0
+      }
+    },
+    "output_matches": {
+      "count": 33,
+      "parent_matches": 8,
+      "tuned_matches": 11,
+      "parent_parseable": 33,
+      "tuned_parseable": 33,
+      "note": "Post-hoc diagnostic of explicitly stated output literals; code echoes excluded. Ambiguous answers are unmatched. Not full factual accuracy."
+    }
+  }
+}

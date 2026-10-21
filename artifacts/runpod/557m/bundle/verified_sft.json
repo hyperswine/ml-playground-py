@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "encoded_hash": "b2c8cccaca99c5e9c9b2f09e7c7044d0e3d4b0c95c7f29032521574787324352",
+  "stats": {
+    "answer_tokens": 97693,
+    "unknown_answer_tokens_skipped": 0,
+    "longest_example": 192
+  },
+  "split_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "verification_sha256": "a2dbf7f7d1d2a555c1697842912b7095148d6f0b918e2e6b90a0ed3890a8e9df",
+  "selection_sha256": "cb79cfae005db03d66cf3cb3eda232e6f0ad8c41b1fc308b80359cecaf6afac4",
+  "vocabulary_sha256": "74138be221701ca868b413cf711642fc2abde19687ff7f3af37de475f817dcf7"
+}

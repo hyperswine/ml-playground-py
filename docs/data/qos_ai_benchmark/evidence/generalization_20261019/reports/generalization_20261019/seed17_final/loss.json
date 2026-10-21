@@ -1,0 +1,26 @@
+{
+  "checkpoint_sha256": "ce30025d311c210b68d4f323f4a3c5a23d78904ed9d1e27bdd1ea67350e2d1cf",
+  "diagnostic_hash": "49dae923a5d69a252c786162b9048fd3cb3566abc47eb876d2fe80238a9aface",
+  "train_probe_hash": "8b91df9a751913a9ea9816ff495830a2ea283a76888acbf84e0bbd10a7de73fe",
+  "loss_code_sha256": "e9cceff554e8687429f14c04c47614881b9c25f4a29deec88f3fed2bc30faed6",
+  "train_probe": {
+    "examples": 96,
+    "answer_tokens": 3580,
+    "answer_cross_entropy": 0.16877555916262738
+  },
+  "wording": {
+    "examples": 48,
+    "answer_tokens": 1633,
+    "answer_cross_entropy": 0.15182288687286097
+  },
+  "inputs": {
+    "examples": 48,
+    "answer_tokens": 1599,
+    "answer_cross_entropy": 0.19733058921689908
+  },
+  "combinations": {
+    "examples": 48,
+    "answer_tokens": 2346,
+    "answer_cross_entropy": 0.6143358918407079
+  }
+}

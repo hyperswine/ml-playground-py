@@ -1,0 +1,116 @@
+{
+  "files_checked": 1099,
+  "byte_identical_files": 1081,
+  "byte_identical_bytes": 20726708939,
+  "adapted_files": [
+    {
+      "old": "qos_ai_benchmark/GENERALIZATION_2026-10-19.md",
+      "new": "docs/2026-10-19-GENERALIZATION.md",
+      "before": "41d4da174375dd924138ada1986565598b6fc93dab82f92b5ac2a7c3feff52fa",
+      "after": "e064e645338ed93febb95938f64908f6d7071e01d4f32354805352bd6f2a541b"
+    },
+    {
+      "old": "qos_ai_benchmark/NEXT_STEPS_557M_2026-10-19.md",
+      "new": "docs/2026-10-19-NEXT-STEPS-557M.md",
+      "before": "7a6914f99df7eea459e8c2924fd68754f22af89374d25574948be1e1cc4b42d1",
+      "after": "d9836a1927e729e425d4c0a793b82a6c81b5d5f44dcfd6c9ca226c2e0a929bad"
+    },
+    {
+      "old": "qos_ai_benchmark/README.md",
+      "new": "docs/2026-10-17-QOS-AI-BENCHMARK.md",
+      "before": "99c84db42a675ac7d6a6f1ecf64ce17ac9750f4583f0d636b44c24589f50224e",
+      "after": "ebd2323961e0de6c45550e5426e52d8f97dc5f5ac69603ffc1ab5993946a5e25"
+    },
+    {
+      "old": "qos_ai_benchmark/RUNPOD_557M_2026-10-19.md",
+      "new": "docs/2026-10-19-RUNPOD-557M.md",
+      "before": "7971c805faef6e9ac7648bf564bba3a6298de8347e04db79b81998d99c93ee49",
+      "after": "f87c8ec4a02b80b387affab5e98b95ccdacd2a2e6205697a4256fb8251b98167"
+    },
+    {
+      "old": "qos_ai_benchmark/RUNPOD_557M_2026-10-19_HISTORY.md",
+      "new": "docs/2026-10-19-RUNPOD-557M-HISTORY.md",
+      "before": "b6b6bc53c1e23497946d7fe6bd3aa639d14af388b0960fbae54b14b5515a341f",
+      "after": "fd5565e7d2d9adf8c523e5da9fdd315f96635959c9db43413c0dbe071771c6fb"
+    },
+    {
+      "old": "qos_ai_benchmark/SCALE_557M_2026-10-19.md",
+      "new": "docs/2026-10-19-SCALE-557M.md",
+      "before": "522998628f91609348a327c7adc3bcf91e0f5fdf7f6b63e1ef183b707721ff6c",
+      "after": "14d59c0871113431c6d39f9ab7871cf71ab1431839093b7cf404909c1decaca5"
+    },
+    {
+      "old": "qos_ai_benchmark/SOL_PROBE_2026-10-20.md",
+      "new": "docs/2026-10-20-SOL-PROBE.md",
+      "before": "30737a3bda7c0e08750a903efc3786a543c1cd713d3feeb3ad3dc944d32eb0bb",
+      "after": "6fe8af82e6ab646528f940e506d30e280b9a58bb4de5a910379dd76245f99ea2"
+    },
+    {
+      "old": "qos_ai_benchmark/STAGE1_557M_2026-10-20.md",
+      "new": "docs/2026-10-20-STAGE1-557M.md",
+      "before": "0da981f7e5b0f6ccdf583d16e0cfcb8801c5f49a17192d6e154926e0268a9b40",
+      "after": "92a93a6290257afc3261486f480669ca66dc1770eea04e00adabd50095f35179"
+    },
+    {
+      "old": "qos_ai_benchmark/STAGE2_557M_2026-10-20.md",
+      "new": "docs/2026-10-20-STAGE2-557M.md",
+      "before": "2a1e20f8ed0bc9e71a4acf9b04098e1e9fe97d51d477dc7315c20157597ef424",
+      "after": "e713a3db36fc3641df86e0b5f4cf458f10e8981466f58db11fee946aecda5c21"
+    },
+    {
+      "old": "qos_ai_benchmark/STAGE3_SOL_PROGRAMS_2026-10-20.md",
+      "new": "docs/2026-10-20-STAGE3-SOL-PROGRAMS.md",
+      "before": "31e1e8a8aa2a81ad88b7dc6f9ae90f81d887c21bb27cc818c91bdef27c9d482f",
+      "after": "2f3b4d26a59fd8c4436da6342d4df7ef1c6c580273f288fa0878c00a41400c64"
+    },
+    {
+      "old": "qos_ai_benchmark/STAGE4_PREPARATION_2026-10-21.md",
+      "new": "docs/2026-10-21-STAGE4-PREPARATION.md",
+      "before": "e8c78d9158a553988e6d8fbafd95bcd45a199de570f196caa8b5f2de5e02fc89",
+      "after": "4a22be6cf0f8114458dc86f30f90ef74ee0f7c7bc3b16fdc9b2264e11784030c"
+    },
+    {
+      "old": "qos_ai_improvement_plan_2026-10-16.md",
+      "new": "docs/2026-10-16-QOS-AI-IMPROVEMENT-PLAN.md",
+      "before": "8bb48f7f5f9bb2d504e8bd49b104c0b47d83abd01e568885e6b67c67619d3bef",
+      "after": "400033290b78fc803645da22db04912307382cec07b563b663ef076e58d591a6"
+    },
+    {
+      "old": "qos_ai_runpod_backup.py",
+      "new": "src/ml_playground/cloud/qos_ai_runpod_backup.py",
+      "before": "480ec708adff3802e17f8b8394fa18363b398254e0b2d98739f445c465088515",
+      "after": "c915f2b9a16504b6ea42d58809e2f7b67383d57fc0e8dafb1f1a6a6042e20008"
+    },
+    {
+      "old": "qos_ai_runpod_finalize.py",
+      "new": "src/ml_playground/cloud/qos_ai_runpod_finalize.py",
+      "before": "c93069fe8c8a7a42031f629db36fc979a7e9ba429c4244bfdfd7201715d87559",
+      "after": "2177f7cb47675f369397fab25b9d61e6e356658e4ff514de5569df5a515d2b90"
+    },
+    {
+      "old": "qos_ai_samples/2026-10-18/GALLERY.md",
+      "new": "docs/2026-10-18-QOS-AI-SAMPLE-GALLERY.md",
+      "before": "1438380664ccae13ad0983815eb4b7eb958af57e7056fd0207bd60ee9863d40c",
+      "after": "85f80a8ec348be0d02c294dd0d977cac5c51a74bbbb379d6f9ff06e18ce78b26"
+    },
+    {
+      "old": "runpod/push.sh",
+      "new": "scripts/runpod/push.sh",
+      "before": "ade3b2aaffe1d2feda5da897cebfd440af631e65f864c8adb3205be60c77254d",
+      "after": "98f8f1a7fcd0e40b4b984712657fc87da11f3fd9bc70ef5fee61772d4e03cd9f"
+    },
+    {
+      "old": "runpod/stage1/README.md",
+      "new": "docs/2026-10-21-RUNPOD-STAGE1.md",
+      "before": "c918bbeeb7c8baf23cfc5ea60f175c75b75d1b7820389a9c19f788c3cb233edf",
+      "after": "f981ae57cf568d41366248a28307b9ed74651a82105f64073c6edbfc2b76a14f"
+    },
+    {
+      "old": "runpod/stage4/README.md",
+      "new": "docs/2026-10-21-RUNPOD-STAGE4.md",
+      "before": "f83c664a3c1fe7a85c848075b0109236557691e1a7e4d36ff1e62bd19efd124e",
+      "after": "5d9c0c58e9b05ca10ff2cc87ff6065cf756476bed79fdc5af7b0d00f218ee17e"
+    }
+  ],
+  "credential_files_unchanged_by_inode_and_size": 2
+}

@@ -1,0 +1,5 @@
+{
+  "training_wall_seconds_including_segments_failure_and_recovery": 590.4838888645172,
+  "successful_training_cumulative_seconds": 322.8875448750041,
+  "gpu_recovery_attempts": 1
+}

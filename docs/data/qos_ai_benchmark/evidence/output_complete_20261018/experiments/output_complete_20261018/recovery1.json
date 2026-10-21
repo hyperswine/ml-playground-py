@@ -1,0 +1,26 @@
+{
+  "attempt": 1,
+  "saved_step": 128,
+  "discarded_unsaved_steps": [
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145
+  ],
+  "reason": "Metal command-buffer failure and device target-count guard; no checkpoint published",
+  "treatment_change": false,
+  "code_sha256": "80ab721aabf6e35a46272a4c090b6a21cf5bdad90aeed3be38a9b2693a448b40"
+}

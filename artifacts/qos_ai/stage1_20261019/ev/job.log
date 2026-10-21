@@ -1,0 +1,20 @@
+== 2026-10-19T12:59:30Z (+0 min) hard cap watchdog armed: 130 min (pid 542)
+== 2026-10-19T12:59:30Z (+0 min) checking runpodctl can see this pod
+WARNING: runpodctl could not read this pod; self-stop may not work
+== 2026-10-19T12:59:31Z (+0 min) verifying inputs
+qos_ai.py: OK
+qos_ai_data.py: OK
+qos_ai_finetune.py: OK
+qos_ai_resume.py: OK
+qos_ai_stage1_train.py: OK
+verified_sft.pt: OK
+english_probe.npy: OK
+pretrained_168m_pod_pt.pt: OK
+/workspace/qos_ai_557m/experiment/pretrained.pt: OK
+stage-1 data verified 7bb324d34e95147755bdc3f40034e69fd09944e4733bdb4973f13f353e43edd8
+NVIDIA GeForce RTX 4090, 24564 MiB
+== 2026-10-19T12:59:35Z (+0 min) 557M domain stage + SFT
+== 2026-10-19T13:37:51Z (+38 min) 168M control domain stage + SFT
+== 2026-10-19T13:52:18Z (+52 min) done
+== 2026-10-19T13:52:18Z (+52 min) stopping pod hz3mytm7i1iu46: complete
+pod "hz3mytm7i1iu46" stopped

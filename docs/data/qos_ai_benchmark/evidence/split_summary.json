@@ -1,0 +1,33 @@
+{
+  "schema": 2,
+  "policy": "whole-file+exclude-cross-split-exact-and-trigram-jaccard-0.75",
+  "hash": "cd57f4a7b5c2b02b40c6b8679c39a82712535c33254385a9139cfe8504529be3",
+  "inputs": {
+    "benchmark": "6eb10d79e8f084c31601c923494b2e057ef56d8672c3e5170654924ad5fc0c4e",
+    "corpus": "0779001c487ac4c683b6e1c46a7078adfcdce7d20c31eb58c8f956926e04cd16",
+    "qa": "4a9a12f77f08ba5218a26a53530eb99b5f645dedaa06be9393095ad1c2cee5c0",
+    "verified": "74afe9913b3dd3ffba7c386897a8acda374cc3291082606896602de09b0091b4"
+  },
+  "counts": {
+    "excluded_copied_source_chunks": 0,
+    "excluded_unique_question_reasons": {
+      "benchmark_or_near_duplicate": 132,
+      "cross_partition_duplicate": 225
+    },
+    "files": {
+      "dev": 34,
+      "test": 19,
+      "train": 444
+    },
+    "near_duplicate_links": 4034,
+    "qa": {
+      "dev": 7702,
+      "exclude": 490,
+      "test": 2637,
+      "train": 107364
+    },
+    "verified": {
+      "train": 65
+    }
+  }
+}

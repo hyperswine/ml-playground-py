@@ -1,0 +1,24 @@
+{
+  "checkpoint_sha256": "8bf7f780446bece7bca798f3dc736274c8f3cffc59bdc2a2b9911d43ae678d67",
+  "complete": false,
+  "final_validation": {
+    "known_target_tokens": 2048,
+    "loss": 7.259952783584595,
+    "scope": "four fixed internal-validation windows; infrastructure diagnostic only"
+  },
+  "initial_validation": {
+    "known_target_tokens": 2048,
+    "loss": 10.42970085144043,
+    "scope": "four fixed internal-validation windows; infrastructure diagnostic only"
+  },
+  "known_target_tokens": 9216,
+  "mps_allocated_bytes": 2228846592,
+  "mps_driver_bytes": 3381297152,
+  "parameter_count": 556526080,
+  "scope": "infrastructure pilot; not a capability comparison",
+  "segment_seconds": 124.7002488750004,
+  "segment_start_step": 2,
+  "settings_hash": "78b4ba09b43b807147058ee8170d68b31aa22eb04487ad10f53cef5af106316a",
+  "step": 18,
+  "total_tokens": 9216
+}

@@ -1,0 +1,1346 @@
+{
+  "diagnostic_hash": "49dae923a5d69a252c786162b9048fd3cb3566abc47eb876d2fe80238a9aface",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "no_repeat": 3,
+  "blocked": 94,
+  "total": 144,
+  "by_mode": {
+    "output_trace": 17,
+    "repair_expr": 20,
+    "repair_program": 21,
+    "no_change": 15,
+    "generate": 21
+  },
+  "results": [
+    {
+      "id": "general-inputs-941-map-0-output_only-w0",
+      "mode": "output_only",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-inputs-941-map-1-output_trace-w0",
+      "mode": "output_trace",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        26
+      ]
+    },
+    {
+      "id": "general-inputs-941-map-2-repair_expr-w0",
+      "mode": "repair_expr",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        50,
+        61,
+        62
+      ]
+    },
+    {
+      "id": "general-inputs-941-map-4-repair_program-w0",
+      "mode": "repair_program",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        58
+      ]
+    },
+    {
+      "id": "general-inputs-941-clamp-0-no_change-w0",
+      "mode": "no_change",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        22
+      ]
+    },
+    {
+      "id": "general-inputs-941-clamp-2-generate-w0",
+      "mode": "generate",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-inputs-941-clamp-3-output_only-w0",
+      "mode": "output_only",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-inputs-941-clamp-4-output_trace-w0",
+      "mode": "output_trace",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        25,
+        26
+      ]
+    },
+    {
+      "id": "general-inputs-941-byte-0-repair_expr-w0",
+      "mode": "repair_expr",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        28,
+        29
+      ]
+    },
+    {
+      "id": "general-inputs-941-byte-1-repair_program-w0",
+      "mode": "repair_program",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        41
+      ]
+    },
+    {
+      "id": "general-inputs-941-byte-3-no_change-w0",
+      "mode": "no_change",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        20
+      ]
+    },
+    {
+      "id": "general-inputs-941-byte-4-generate-w0",
+      "mode": "generate",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        42
+      ]
+    },
+    {
+      "id": "general-inputs-941-reverse-0-output_only-w0",
+      "mode": "output_only",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-inputs-941-reverse-1-output_trace-w0",
+      "mode": "output_trace",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        26
+      ]
+    },
+    {
+      "id": "general-inputs-941-reverse-2-repair_expr-w0",
+      "mode": "repair_expr",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        27,
+        37,
+        38,
+        39,
+        44,
+        51
+      ]
+    },
+    {
+      "id": "general-inputs-941-reverse-3-repair_program-w0",
+      "mode": "repair_program",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        53,
+        54,
+        60,
+        61,
+        62
+      ]
+    },
+    {
+      "id": "general-inputs-941-slice-1-no_change-w0",
+      "mode": "no_change",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-inputs-941-slice-3-generate-w0",
+      "mode": "generate",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-inputs-941-slice-4-output_only-w0",
+      "mode": "output_only",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-inputs-941-slice-5-output_trace-w0",
+      "mode": "output_trace",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-inputs-941-filter-0-repair_expr-w0",
+      "mode": "repair_expr",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-inputs-941-filter-1-repair_program-w0",
+      "mode": "repair_program",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        53,
+        54,
+        55,
+        61
+      ]
+    },
+    {
+      "id": "general-inputs-941-filter-2-no_change-w0",
+      "mode": "no_change",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        27
+      ]
+    },
+    {
+      "id": "general-inputs-941-filter-3-generate-w0",
+      "mode": "generate",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        61,
+        62,
+        63,
+        64,
+        67,
+        73
+      ]
+    },
+    {
+      "id": "general-inputs-941-sum-0-output_only-w0",
+      "mode": "output_only",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-inputs-941-sum-1-output_trace-w0",
+      "mode": "output_trace",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        25
+      ]
+    },
+    {
+      "id": "general-inputs-941-sum-2-repair_expr-w0",
+      "mode": "repair_expr",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        48
+      ]
+    },
+    {
+      "id": "general-inputs-941-sum-3-repair_program-w0",
+      "mode": "repair_program",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        48,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        66
+      ]
+    },
+    {
+      "id": "general-inputs-941-take-0-no_change-w0",
+      "mode": "no_change",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-inputs-941-take-1-generate-w0",
+      "mode": "generate",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        51
+      ]
+    },
+    {
+      "id": "general-inputs-941-take-2-output_only-w0",
+      "mode": "output_only",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-inputs-941-take-3-output_trace-w0",
+      "mode": "output_trace",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        18,
+        25
+      ]
+    },
+    {
+      "id": "general-inputs-941-length-0-repair_expr-w0",
+      "mode": "repair_expr",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-inputs-941-length-1-repair_program-w0",
+      "mode": "repair_program",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-inputs-941-length-3-no_change-w0",
+      "mode": "no_change",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-inputs-941-length-4-generate-w0",
+      "mode": "generate",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        35,
+        36,
+        37
+      ]
+    },
+    {
+      "id": "general-inputs-941-min-0-output_only-w0",
+      "mode": "output_only",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-inputs-941-min-1-output_trace-w0",
+      "mode": "output_trace",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-inputs-941-min-2-repair_expr-w0",
+      "mode": "repair_expr",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        30,
+        31
+      ]
+    },
+    {
+      "id": "general-inputs-941-min-3-repair_program-w0",
+      "mode": "repair_program",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        46,
+        47
+      ]
+    },
+    {
+      "id": "general-inputs-941-range-0-no_change-w0",
+      "mode": "no_change",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        21
+      ]
+    },
+    {
+      "id": "general-inputs-941-range-1-generate-w0",
+      "mode": "generate",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        42,
+        48
+      ]
+    },
+    {
+      "id": "general-inputs-941-range-3-output_only-w0",
+      "mode": "output_only",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-inputs-941-range-5-output_trace-w0",
+      "mode": "output_trace",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        20,
+        24,
+        28,
+        32,
+        39,
+        40
+      ]
+    },
+    {
+      "id": "general-inputs-941-missing-0-repair_expr-w0",
+      "mode": "repair_expr",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        23
+      ]
+    },
+    {
+      "id": "general-inputs-941-missing-1-repair_program-w0",
+      "mode": "repair_program",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        36
+      ]
+    },
+    {
+      "id": "general-inputs-941-missing-2-no_change-w0",
+      "mode": "no_change",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-inputs-941-missing-4-generate-w0",
+      "mode": "generate",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        38
+      ]
+    },
+    {
+      "id": "general-combinations-941-map_filter-0-output_only-w0",
+      "mode": "output_only",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-combinations-941-map_filter-1-output_trace-w0",
+      "mode": "output_trace",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        24,
+        25,
+        27,
+        28,
+        29,
+        34
+      ]
+    },
+    {
+      "id": "general-combinations-941-map_filter-4-repair_expr-w0",
+      "mode": "repair_expr",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        20,
+        21,
+        22,
+        58,
+        64
+      ]
+    },
+    {
+      "id": "general-combinations-941-map_filter-8-repair_program-w0",
+      "mode": "repair_program",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        25,
+        26,
+        27,
+        62,
+        64,
+        70,
+        75
+      ]
+    },
+    {
+      "id": "general-combinations-941-map_filter-9-no_change-w0",
+      "mode": "no_change",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        28,
+        34
+      ]
+    },
+    {
+      "id": "general-combinations-941-map_filter-10-generate-w0",
+      "mode": "generate",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        25,
+        26,
+        27,
+        84,
+        90
+      ]
+    },
+    {
+      "id": "general-combinations-941-map_filter-11-output_only-w0",
+      "mode": "output_only",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-combinations-941-map_filter-12-output_trace-w0",
+      "mode": "output_trace",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-combinations-941-map_filter-16-repair_expr-w0",
+      "mode": "repair_expr",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        21,
+        22,
+        23,
+        53,
+        59,
+        64
+      ]
+    },
+    {
+      "id": "general-combinations-941-map_filter-20-repair_program-w0",
+      "mode": "repair_program",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        24,
+        25,
+        26,
+        69,
+        75
+      ]
+    },
+    {
+      "id": "general-combinations-941-map_filter-21-no_change-w0",
+      "mode": "no_change",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        40,
+        41
+      ]
+    },
+    {
+      "id": "general-combinations-941-map_filter-22-generate-w0",
+      "mode": "generate",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        25,
+        26,
+        27,
+        42,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76
+      ]
+    },
+    {
+      "id": "general-combinations-941-map_filter-23-output_only-w0",
+      "mode": "output_only",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-combinations-941-map_filter-24-output_trace-w0",
+      "mode": "output_trace",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-combinations-941-map_filter-28-repair_expr-w0",
+      "mode": "repair_expr",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        21,
+        22,
+        23,
+        55,
+        61,
+        66
+      ]
+    },
+    {
+      "id": "general-combinations-941-map_filter-40-repair_program-w0",
+      "mode": "repair_program",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        25,
+        26,
+        27,
+        70,
+        76
+      ]
+    },
+    {
+      "id": "general-combinations-941-map_reverse-0-no_change-w0",
+      "mode": "no_change",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        20,
+        36
+      ]
+    },
+    {
+      "id": "general-combinations-941-map_reverse-1-generate-w0",
+      "mode": "generate",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        63,
+        70,
+        71,
+        72,
+        73,
+        74,
+        81
+      ]
+    },
+    {
+      "id": "general-combinations-941-map_reverse-2-output_only-w0",
+      "mode": "output_only",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-combinations-941-map_reverse-3-output_trace-w0",
+      "mode": "output_trace",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        19,
+        29,
+        30,
+        36,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        58,
+        59
+      ]
+    },
+    {
+      "id": "general-combinations-941-map_reverse-4-repair_expr-w0",
+      "mode": "repair_expr",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        44,
+        60
+      ]
+    },
+    {
+      "id": "general-combinations-941-map_reverse-8-repair_program-w0",
+      "mode": "repair_program",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        56,
+        60,
+        61,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        79,
+        80
+      ]
+    },
+    {
+      "id": "general-combinations-941-map_reverse-9-no_change-w0",
+      "mode": "no_change",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        23,
+        31,
+        32,
+        33,
+        34,
+        42
+      ]
+    },
+    {
+      "id": "general-combinations-941-map_reverse-10-generate-w0",
+      "mode": "generate",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        34,
+        66,
+        73,
+        74,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        98
+      ]
+    },
+    {
+      "id": "general-combinations-941-map_reverse-11-output_only-w0",
+      "mode": "output_only",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-combinations-941-map_reverse-12-output_trace-w0",
+      "mode": "output_trace",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        17,
+        28,
+        34
+      ]
+    },
+    {
+      "id": "general-combinations-941-map_reverse-13-repair_expr-w0",
+      "mode": "repair_expr",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        23,
+        49,
+        51,
+        59,
+        60,
+        61,
+        62,
+        63,
+        70
+      ]
+    },
+    {
+      "id": "general-combinations-941-map_reverse-16-repair_program-w0",
+      "mode": "repair_program",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        56,
+        71
+      ]
+    },
+    {
+      "id": "general-combinations-941-map_reverse-17-no_change-w0",
+      "mode": "no_change",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        25,
+        26,
+        27,
+        33,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        43,
+        49,
+        50
+      ]
+    },
+    {
+      "id": "general-combinations-941-map_reverse-18-generate-w0",
+      "mode": "generate",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        60,
+        68,
+        77,
+        78,
+        80,
+        81,
+        89
+      ]
+    },
+    {
+      "id": "general-combinations-941-map_reverse-19-output_only-w0",
+      "mode": "output_only",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-combinations-941-map_reverse-20-output_trace-w0",
+      "mode": "output_trace",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        15,
+        30
+      ]
+    },
+    {
+      "id": "general-combinations-941-take_filter-0-repair_expr-w0",
+      "mode": "repair_expr",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-combinations-941-take_filter-1-repair_program-w0",
+      "mode": "repair_program",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-combinations-941-take_filter-2-no_change-w0",
+      "mode": "no_change",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        18,
+        24,
+        29
+      ]
+    },
+    {
+      "id": "general-combinations-941-take_filter-3-generate-w0",
+      "mode": "generate",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        40,
+        69
+      ]
+    },
+    {
+      "id": "general-combinations-941-take_filter-4-output_only-w0",
+      "mode": "output_only",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-combinations-941-take_filter-5-output_trace-w0",
+      "mode": "output_trace",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        16,
+        17,
+        22
+      ]
+    },
+    {
+      "id": "general-combinations-941-take_filter-6-repair_expr-w0",
+      "mode": "repair_expr",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        48
+      ]
+    },
+    {
+      "id": "general-combinations-941-take_filter-8-repair_program-w0",
+      "mode": "repair_program",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        54,
+        61,
+        62,
+        63,
+        64,
+        65,
+        70
+      ]
+    },
+    {
+      "id": "general-combinations-941-take_filter-9-no_change-w0",
+      "mode": "no_change",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-combinations-941-take_filter-10-generate-w0",
+      "mode": "generate",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        38
+      ]
+    },
+    {
+      "id": "general-combinations-941-take_filter-11-output_only-w0",
+      "mode": "output_only",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-combinations-941-take_filter-12-output_trace-w0",
+      "mode": "output_trace",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-combinations-941-take_filter-13-repair_expr-w0",
+      "mode": "repair_expr",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-combinations-941-take_filter-16-repair_program-w0",
+      "mode": "repair_program",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        58,
+        59,
+        64
+      ]
+    },
+    {
+      "id": "general-combinations-941-take_filter-17-no_change-w0",
+      "mode": "no_change",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        20,
+        21,
+        26
+      ]
+    },
+    {
+      "id": "general-combinations-941-take_filter-18-generate-w0",
+      "mode": "generate",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        54,
+        63,
+        66,
+        67,
+        80
+      ]
+    },
+    {
+      "id": "general-wording-419-map-0-output_only-w1",
+      "mode": "output_only",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-wording-419-map-1-output_trace-w1",
+      "mode": "output_trace",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        20,
+        21,
+        27,
+        28
+      ]
+    },
+    {
+      "id": "general-wording-419-map-2-repair_expr-w1",
+      "mode": "repair_expr",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        54,
+        60
+      ]
+    },
+    {
+      "id": "general-wording-419-map-4-repair_program-w1",
+      "mode": "repair_program",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        59,
+        60
+      ]
+    },
+    {
+      "id": "general-wording-419-clamp-4-no_change-w1",
+      "mode": "no_change",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-wording-419-clamp-5-generate-w1",
+      "mode": "generate",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        54,
+        55
+      ]
+    },
+    {
+      "id": "general-wording-419-clamp-0-output_only-w1",
+      "mode": "output_only",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-wording-419-clamp-1-output_trace-w1",
+      "mode": "output_trace",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        18
+      ]
+    },
+    {
+      "id": "general-wording-419-byte-2-repair_expr-w1",
+      "mode": "repair_expr",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        29,
+        30
+      ]
+    },
+    {
+      "id": "general-wording-419-byte-3-repair_program-w1",
+      "mode": "repair_program",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        42,
+        43
+      ]
+    },
+    {
+      "id": "general-wording-419-byte-5-no_change-w1",
+      "mode": "no_change",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        21,
+        22
+      ]
+    },
+    {
+      "id": "general-wording-419-byte-6-generate-w1",
+      "mode": "generate",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        40
+      ]
+    },
+    {
+      "id": "general-wording-419-reverse-0-output_only-w1",
+      "mode": "output_only",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-wording-419-reverse-1-output_trace-w1",
+      "mode": "output_trace",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        18,
+        25
+      ]
+    },
+    {
+      "id": "general-wording-419-reverse-2-repair_expr-w1",
+      "mode": "repair_expr",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        41,
+        42,
+        55
+      ]
+    },
+    {
+      "id": "general-wording-419-reverse-3-repair_program-w1",
+      "mode": "repair_program",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        24,
+        45,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        73
+      ]
+    },
+    {
+      "id": "general-wording-419-slice-9-no_change-w1",
+      "mode": "no_change",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-wording-419-slice-10-generate-w1",
+      "mode": "generate",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-wording-419-slice-3-output_only-w1",
+      "mode": "output_only",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-wording-419-slice-6-output_trace-w1",
+      "mode": "output_trace",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-wording-419-filter-2-repair_expr-w1",
+      "mode": "repair_expr",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        59
+      ]
+    },
+    {
+      "id": "general-wording-419-filter-3-repair_program-w1",
+      "mode": "repair_program",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        30,
+        31,
+        60,
+        63,
+        69
+      ]
+    },
+    {
+      "id": "general-wording-419-filter-4-no_change-w1",
+      "mode": "no_change",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        21
+      ]
+    },
+    {
+      "id": "general-wording-419-filter-5-generate-w1",
+      "mode": "generate",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        56,
+        57,
+        58,
+        59,
+        60,
+        66
+      ]
+    },
+    {
+      "id": "general-wording-419-sum-0-output_only-w1",
+      "mode": "output_only",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-wording-419-sum-1-output_trace-w1",
+      "mode": "output_trace",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        26
+      ]
+    },
+    {
+      "id": "general-wording-419-sum-2-repair_expr-w1",
+      "mode": "repair_expr",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        12,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        49,
+        50
+      ]
+    },
+    {
+      "id": "general-wording-419-sum-3-repair_program-w1",
+      "mode": "repair_program",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        68
+      ]
+    },
+    {
+      "id": "general-wording-419-take-4-no_change-w1",
+      "mode": "no_change",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        21
+      ]
+    },
+    {
+      "id": "general-wording-419-take-5-generate-w1",
+      "mode": "generate",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        20,
+        49
+      ]
+    },
+    {
+      "id": "general-wording-419-take-0-output_only-w1",
+      "mode": "output_only",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-wording-419-take-1-output_trace-w1",
+      "mode": "output_trace",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-wording-419-length-2-repair_expr-w1",
+      "mode": "repair_expr",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        20
+      ]
+    },
+    {
+      "id": "general-wording-419-length-3-repair_program-w1",
+      "mode": "repair_program",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        34,
+        35
+      ]
+    },
+    {
+      "id": "general-wording-419-length-4-no_change-w1",
+      "mode": "no_change",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-wording-419-length-5-generate-w1",
+      "mode": "generate",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        34,
+        35
+      ]
+    },
+    {
+      "id": "general-wording-419-min-0-output_only-w1",
+      "mode": "output_only",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-wording-419-min-1-output_trace-w1",
+      "mode": "output_trace",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        21,
+        22
+      ]
+    },
+    {
+      "id": "general-wording-419-min-2-repair_expr-w1",
+      "mode": "repair_expr",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        32,
+        33
+      ]
+    },
+    {
+      "id": "general-wording-419-min-3-repair_program-w1",
+      "mode": "repair_program",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-wording-419-range-5-no_change-w1",
+      "mode": "no_change",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        36
+      ]
+    },
+    {
+      "id": "general-wording-419-range-6-generate-w1",
+      "mode": "generate",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        16,
+        46
+      ]
+    },
+    {
+      "id": "general-wording-419-range-0-output_only-w1",
+      "mode": "output_only",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-wording-419-range-1-output_trace-w1",
+      "mode": "output_trace",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        22
+      ]
+    },
+    {
+      "id": "general-wording-419-missing-2-repair_expr-w1",
+      "mode": "repair_expr",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        24
+      ]
+    },
+    {
+      "id": "general-wording-419-missing-3-repair_program-w1",
+      "mode": "repair_program",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        37
+      ]
+    },
+    {
+      "id": "general-wording-419-missing-6-no_change-w1",
+      "mode": "no_change",
+      "canonical_answer_blocked": false,
+      "blocked_positions": []
+    },
+    {
+      "id": "general-wording-419-missing-9-generate-w1",
+      "mode": "generate",
+      "canonical_answer_blocked": true,
+      "blocked_positions": [
+        37
+      ]
+    }
+  ],
+  "scope": "Feasibility of the exact authored response under the existing token guard; other correct wording may sometimes avoid a repeated trigram."
+}

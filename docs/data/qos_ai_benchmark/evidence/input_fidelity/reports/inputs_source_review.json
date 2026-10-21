@@ -1,0 +1,8 @@
+{
+  "sample": "same 12 preselected raw development questions as prior experiments",
+  "parent_correct": 6,
+  "tuned_correct": 6,
+  "reviewed_per_model": 12,
+  "dev_count": 90,
+  "note": "Agent source review, not independent human review or an accuracy estimate on all development questions. Slice-output correctness regressed; clamp-code correctness improved."
+}

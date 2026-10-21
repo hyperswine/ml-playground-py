@@ -1,0 +1,88 @@
+12 / 144
+24 / 144
+36 / 144
+48 / 144
+60 / 144
+72 / 144
+84 / 144
+96 / 144
+108 / 144
+120 / 144
+132 / 144
+144 / 144
+{
+  "checkpoint_sha256": "f51187bc5176b2711f22b4c1f631b75c134951fc12cd25c4441a6ea9a5b51de2",
+  "diagnostic_hash": "49dae923a5d69a252c786162b9048fd3cb3566abc47eb876d2fe80238a9aface",
+  "answers_sha256": "b6eb4def730749ac4e4a69b146884f4efc642cf7aef63733806fd65a294a44da",
+  "compiler_sha256": "c41c6ab9377e59be4d9bccedf1d6dd33f188bad0453046660650c6982fbc2f36",
+  "grader_sha256": "e9cceff554e8687429f14c04c47614881b9c25f4a29deec88f3fed2bc30faed6",
+  "scope": "Exact input/operation structure plus execution; canonical trace-field matching is strict and does not judge all free prose. Wording items deliberately share training cases; remaining strata exclude known canonical programs, not unknown legacy exposure.",
+  "overall": {
+    "count": 144,
+    "complete_pass": 39,
+    "behavior_pass": 48,
+    "stated_output_match": 43,
+    "canonical_trace_match": 20,
+    "complete_with_canonical_trace": 29
+  },
+  "strata": {
+    "combinations": {
+      "count": 48,
+      "complete_pass": 5,
+      "behavior_pass": 3,
+      "stated_output_match": 7,
+      "canonical_trace_match": 0,
+      "complete_with_canonical_trace": 2
+    },
+    "inputs": {
+      "count": 48,
+      "complete_pass": 14,
+      "behavior_pass": 22,
+      "stated_output_match": 15,
+      "canonical_trace_match": 7,
+      "complete_with_canonical_trace": 9
+    },
+    "wording": {
+      "count": 48,
+      "complete_pass": 20,
+      "behavior_pass": 23,
+      "stated_output_match": 21,
+      "canonical_trace_match": 13,
+      "complete_with_canonical_trace": 18
+    }
+  },
+  "categories": {
+    "code_generation": {
+      "count": 24,
+      "complete_pass": 5,
+      "behavior_pass": 15,
+      "stated_output_match": 7,
+      "canonical_trace_match": 5,
+      "complete_with_canonical_trace": 5
+    },
+    "debugging": {
+      "count": 48,
+      "complete_pass": 10,
+      "behavior_pass": 33,
+      "stated_output_match": 12,
+      "canonical_trace_match": 7,
+      "complete_with_canonical_trace": 7
+    },
+    "no_change": {
+      "count": 24,
+      "complete_pass": 6,
+      "behavior_pass": 0,
+      "stated_output_match": 6,
+      "canonical_trace_match": 4,
+      "complete_with_canonical_trace": 4
+    },
+    "output_prediction": {
+      "count": 48,
+      "complete_pass": 18,
+      "behavior_pass": 0,
+      "stated_output_match": 18,
+      "canonical_trace_match": 4,
+      "complete_with_canonical_trace": 13
+    }
+  }
+}

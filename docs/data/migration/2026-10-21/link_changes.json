@@ -1,0 +1,317 @@
+[
+  {
+    "document": "docs/2026-10-16-QOS-AI-IMPROVEMENT-PLAN.md",
+    "old": "qos_ai_benchmark/IMPLEMENTATION_2026-10-16.md",
+    "new": "2026-10-16-IMPLEMENTATION.md"
+  },
+  {
+    "document": "docs/2026-10-16-QOS-AI-IMPROVEMENT-PLAN.md",
+    "old": "qos_ai_benchmark/README.md",
+    "new": "2026-10-17-QOS-AI-BENCHMARK.md"
+  },
+  {
+    "document": "docs/2026-10-16-QOS-AI-IMPROVEMENT-PLAN.md",
+    "old": "qos_ai_benchmark/FINETUNE_2026-10-16.md",
+    "new": "2026-10-16-FINETUNE.md"
+  },
+  {
+    "document": "docs/2026-10-16-QOS-AI-IMPROVEMENT-PLAN.md",
+    "old": "qos_ai_benchmark/EXPANDED_FINETUNE_2026-10-16.md",
+    "new": "2026-10-16-EXPANDED-FINETUNE.md"
+  },
+  {
+    "document": "docs/2026-10-16-QOS-AI-IMPROVEMENT-PLAN.md",
+    "old": "qos_ai_benchmark/INPUTS_FINETUNE_2026-10-16.md",
+    "new": "2026-10-16-INPUTS-FINETUNE.md"
+  },
+  {
+    "document": "docs/2026-10-16-QOS-AI-IMPROVEMENT-PLAN.md",
+    "old": "qos_ai_benchmark/BALANCED_REPAIR_2026-10-18.md",
+    "new": "2026-10-18-BALANCED-REPAIR.md"
+  },
+  {
+    "document": "docs/2026-10-16-QOS-AI-IMPROVEMENT-PLAN.md",
+    "old": "qos_ai_benchmark/OUTPUT_COMPLETE_2026-10-18.md",
+    "new": "2026-10-18-OUTPUT-COMPLETE.md"
+  },
+  {
+    "document": "docs/2026-10-20-STAGE2-557M.md",
+    "old": "STAGE1_557M_2026-10-20.md",
+    "new": "2026-10-20-STAGE1-557M.md"
+  },
+  {
+    "document": "docs/2026-10-19-RUNPOD-557M-HISTORY.md",
+    "old": "../qos_ai_runpod_data.py",
+    "new": "../src/ml_playground/data/qos_ai_runpod_data.py"
+  },
+  {
+    "document": "docs/2026-10-19-RUNPOD-557M-HISTORY.md",
+    "old": "../qos_ai_runpod_train.py",
+    "new": "../src/ml_playground/training/qos_ai_runpod_train.py"
+  },
+  {
+    "document": "docs/2026-10-19-RUNPOD-557M-HISTORY.md",
+    "old": "../qos_ai_runpod_job.py",
+    "new": "../src/ml_playground/cloud/qos_ai_runpod_job.py"
+  },
+  {
+    "document": "docs/2026-10-19-RUNPOD-557M-HISTORY.md",
+    "old": "../runpod/557m/controller.js",
+    "new": "../artifacts/runpod/557m/controller.js"
+  },
+  {
+    "document": "docs/2026-10-19-RUNPOD-557M-HISTORY.md",
+    "old": "evidence/runpod_557m_20261019/tests.log",
+    "new": "data/qos_ai_benchmark/evidence/runpod_557m_20261019/tests.log"
+  },
+  {
+    "document": "docs/2026-10-19-RUNPOD-557M-HISTORY.md",
+    "old": "evidence/runpod_557m_20261019/upload_review.json",
+    "new": "data/qos_ai_benchmark/evidence/runpod_557m_20261019/upload_review.json"
+  },
+  {
+    "document": "docs/2026-10-19-SCALE-557M.md",
+    "old": "../qos_ai_557m.json",
+    "new": "../configs/qos_ai_557m.json"
+  },
+  {
+    "document": "docs/2026-10-19-SCALE-557M.md",
+    "old": "../qos_ai_scale.py",
+    "new": "../src/ml_playground/training/qos_ai_scale.py"
+  },
+  {
+    "document": "docs/2026-10-19-SCALE-557M.md",
+    "old": "evidence/scale_557m_20261019/data/dataset.json",
+    "new": "data/qos_ai_benchmark/evidence/scale_557m_20261019/data/dataset.json"
+  },
+  {
+    "document": "docs/2026-10-19-SCALE-557M.md",
+    "old": "evidence/scale_557m_20261019/reports/final_audit/audit.json",
+    "new": "data/qos_ai_benchmark/evidence/scale_557m_20261019/reports/final_audit/audit.json"
+  },
+  {
+    "document": "docs/2026-10-20-STAGE1-557M.md",
+    "old": "../runpod/stage1/README.md",
+    "new": "2026-10-21-RUNPOD-STAGE1.md"
+  },
+  {
+    "document": "docs/2026-10-21-STAGE4-PREPARATION.md",
+    "old": "stage4_20261021/multi_input.json",
+    "new": "data/qos_ai_benchmark/stage4_20261021/multi_input.json"
+  },
+  {
+    "document": "docs/2026-10-21-STAGE4-PREPARATION.md",
+    "old": "stage4_20261021/experiments.json",
+    "new": "data/qos_ai_benchmark/stage4_20261021/experiments.json"
+  },
+  {
+    "document": "docs/2026-10-21-STAGE4-PREPARATION.md",
+    "old": "stage4_20261021/pools/preparation.json",
+    "new": "data/qos_ai_benchmark/stage4_20261021/pools/preparation.json"
+  },
+  {
+    "document": "docs/2026-10-21-STAGE4-PREPARATION.md",
+    "old": "stage4_20261021/arithmetic/verification.json",
+    "new": "data/qos_ai_benchmark/stage4_20261021/arithmetic/verification.json"
+  },
+  {
+    "document": "docs/2026-10-21-STAGE4-PREPARATION.md",
+    "old": "stage4_20261021/recovery_inventory.json",
+    "new": "data/qos_ai_benchmark/stage4_20261021/recovery_inventory.json"
+  },
+  {
+    "document": "docs/2026-10-21-STAGE4-PREPARATION.md",
+    "old": "../runpod/stage4/README.md",
+    "new": "2026-10-21-RUNPOD-STAGE4.md"
+  },
+  {
+    "document": "docs/2026-10-19-NEXT-STEPS-557M.md",
+    "old": "STAGE1_557M_2026-10-20.md",
+    "new": "2026-10-20-STAGE1-557M.md"
+  },
+  {
+    "document": "docs/2026-10-19-NEXT-STEPS-557M.md",
+    "old": "STAGE2_557M_2026-10-20.md",
+    "new": "2026-10-20-STAGE2-557M.md"
+  },
+  {
+    "document": "docs/2026-10-19-NEXT-STEPS-557M.md",
+    "old": "STAGE3_SOL_PROGRAMS_2026-10-20.md",
+    "new": "2026-10-20-STAGE3-SOL-PROGRAMS.md"
+  },
+  {
+    "document": "docs/2026-10-19-NEXT-STEPS-557M.md",
+    "old": "STAGE4_PREPARATION_2026-10-21.md",
+    "new": "2026-10-21-STAGE4-PREPARATION.md"
+  },
+  {
+    "document": "docs/2026-10-19-GENERALIZATION.md",
+    "old": "evidence/generalization_20261019/reports/generalization_20261019/comparison.json",
+    "new": "data/qos_ai_benchmark/evidence/generalization_20261019/reports/generalization_20261019/comparison.json"
+  },
+  {
+    "document": "docs/2026-10-17-QOS-AI-BENCHMARK.md",
+    "old": "STAGE4_PREPARATION_2026-10-21.md",
+    "new": "2026-10-21-STAGE4-PREPARATION.md"
+  },
+  {
+    "document": "docs/2026-10-17-QOS-AI-BENCHMARK.md",
+    "old": "STAGE3_SOL_PROGRAMS_2026-10-20.md",
+    "new": "2026-10-20-STAGE3-SOL-PROGRAMS.md"
+  },
+  {
+    "document": "docs/2026-10-17-QOS-AI-BENCHMARK.md",
+    "old": "STAGE2_557M_2026-10-20.md",
+    "new": "2026-10-20-STAGE2-557M.md"
+  },
+  {
+    "document": "docs/2026-10-17-QOS-AI-BENCHMARK.md",
+    "old": "STAGE1_557M_2026-10-20.md",
+    "new": "2026-10-20-STAGE1-557M.md"
+  },
+  {
+    "document": "docs/2026-10-17-QOS-AI-BENCHMARK.md",
+    "old": "RUNPOD_557M_2026-10-19.md",
+    "new": "2026-10-19-RUNPOD-557M.md"
+  },
+  {
+    "document": "docs/2026-10-17-QOS-AI-BENCHMARK.md",
+    "old": "SCALE_557M_2026-10-19.md",
+    "new": "2026-10-19-SCALE-557M.md"
+  },
+  {
+    "document": "docs/2026-10-17-QOS-AI-BENCHMARK.md",
+    "old": "GENERALIZATION_2026-10-19.md",
+    "new": "2026-10-19-GENERALIZATION.md"
+  },
+  {
+    "document": "docs/2026-10-17-QOS-AI-BENCHMARK.md",
+    "old": "BALANCED_REPAIR_2026-10-18.md",
+    "new": "2026-10-18-BALANCED-REPAIR.md"
+  },
+  {
+    "document": "docs/2026-10-17-QOS-AI-BENCHMARK.md",
+    "old": "FINETUNE_2026-10-16.md",
+    "new": "2026-10-16-FINETUNE.md"
+  },
+  {
+    "document": "docs/2026-10-17-QOS-AI-BENCHMARK.md",
+    "old": "EXPANDED_FINETUNE_2026-10-16.md",
+    "new": "2026-10-16-EXPANDED-FINETUNE.md"
+  },
+  {
+    "document": "docs/2026-10-17-QOS-AI-BENCHMARK.md",
+    "old": "INPUTS_FINETUNE_2026-10-16.md",
+    "new": "2026-10-16-INPUTS-FINETUNE.md"
+  },
+  {
+    "document": "docs/2026-10-17-QOS-AI-BENCHMARK.md",
+    "old": "GENERALIZATION_2026-10-19.md",
+    "new": "2026-10-19-GENERALIZATION.md"
+  },
+  {
+    "document": "docs/2026-10-17-QOS-AI-BENCHMARK.md",
+    "old": "SCALE_557M_2026-10-19.md",
+    "new": "2026-10-19-SCALE-557M.md"
+  },
+  {
+    "document": "docs/2026-10-17-QOS-AI-BENCHMARK.md",
+    "old": "RUNPOD_557M_2026-10-19.md",
+    "new": "2026-10-19-RUNPOD-557M.md"
+  },
+  {
+    "document": "docs/2026-10-17-QOS-AI-BENCHMARK.md",
+    "old": "NEXT_STEPS_557M_2026-10-19.md",
+    "new": "2026-10-19-NEXT-STEPS-557M.md"
+  },
+  {
+    "document": "docs/2026-10-20-SOL-PROBE.md",
+    "old": "STAGE3_SOL_PROGRAMS_2026-10-20.md",
+    "new": "2026-10-20-STAGE3-SOL-PROGRAMS.md"
+  },
+  {
+    "document": "docs/2026-10-20-STAGE3-SOL-PROGRAMS.md",
+    "old": "STAGE2_557M_2026-10-20.md",
+    "new": "2026-10-20-STAGE2-557M.md"
+  },
+  {
+    "document": "docs/2026-10-20-STAGE3-SOL-PROGRAMS.md",
+    "old": "SOL_PROBE_2026-10-20.md",
+    "new": "2026-10-20-SOL-PROBE.md"
+  },
+  {
+    "document": "docs/2026-10-20-STAGE3-SOL-PROGRAMS.md",
+    "old": "STAGE4_PREPARATION_2026-10-21.md",
+    "new": "2026-10-21-STAGE4-PREPARATION.md"
+  },
+  {
+    "document": "docs/2026-10-19-RUNPOD-557M.md",
+    "old": "../qos_ai/runpod_557m_20261019/student.pt",
+    "new": "../artifacts/qos_ai/runpod_557m_20261019/student.pt"
+  },
+  {
+    "document": "docs/2026-10-19-RUNPOD-557M.md",
+    "old": "evidence/runpod_557m_20261019/student_backup_verified.json",
+    "new": "data/qos_ai_benchmark/evidence/runpod_557m_20261019/student_backup_verified.json"
+  },
+  {
+    "document": "docs/2026-10-19-RUNPOD-557M.md",
+    "old": "evidence/runpod_557m_20261019/m1_grading_console_summary.json",
+    "new": "data/qos_ai_benchmark/evidence/runpod_557m_20261019/m1_grading_console_summary.json"
+  },
+  {
+    "document": "docs/2026-10-19-RUNPOD-557M.md",
+    "old": "evidence/runpod_557m_20261019/local_output_trace_audit.json",
+    "new": "data/qos_ai_benchmark/evidence/runpod_557m_20261019/local_output_trace_audit.json"
+  },
+  {
+    "document": "docs/2026-10-19-RUNPOD-557M.md",
+    "old": "evidence/runpod_557m_20261019/remote/evaluation/",
+    "new": "data/qos_ai_benchmark/evidence/runpod_557m_20261019/remote/evaluation"
+  },
+  {
+    "document": "docs/2026-10-19-RUNPOD-557M.md",
+    "old": "evidence/runpod_557m_20261019/cleanup_20261019.json",
+    "new": "data/qos_ai_benchmark/evidence/runpod_557m_20261019/cleanup_20261019.json"
+  },
+  {
+    "document": "docs/2026-10-19-RUNPOD-557M.md",
+    "old": "RUNPOD_557M_2026-10-19_HISTORY.md",
+    "new": "2026-10-19-RUNPOD-557M-HISTORY.md"
+  },
+  {
+    "document": "docs/2026-10-21-RUNPOD-STAGE1.md",
+    "old": "../../qos_ai_benchmark/STAGE1_557M_2026-10-20.md",
+    "new": "2026-10-20-STAGE1-557M.md"
+  },
+  {
+    "document": "docs/2026-10-21-RUNPOD-STAGE4.md",
+    "old": "../../qos_ai_benchmark/STAGE4_PREPARATION_2026-10-21.md",
+    "new": "2026-10-21-STAGE4-PREPARATION.md"
+  },
+  {
+    "document": "docs/2026-10-18-QOS-AI-SAMPLE-GALLERY.md",
+    "old": "run/answers.jsonl",
+    "new": "data/samples/2026-10-18/run/answers.jsonl"
+  },
+  {
+    "document": "docs/2026-10-18-QOS-AI-SAMPLE-GALLERY.md",
+    "old": "prompts.jsonl",
+    "new": "data/samples/2026-10-18/prompts.jsonl"
+  },
+  {
+    "document": "docs/2026-10-18-QOS-AI-SAMPLE-GALLERY.md",
+    "old": "run/settings.json",
+    "new": "data/samples/2026-10-18/run/settings.json"
+  },
+  {
+    "document": "docs/2026-10-18-QOS-AI-SAMPLE-GALLERY.md",
+    "old": "run/reference_execution.json",
+    "new": "data/samples/2026-10-18/run/reference_execution.json"
+  },
+  {
+    "document": "docs/2026-10-18-QOS-AI-SAMPLE-GALLERY.md",
+    "old": "review.json",
+    "new": "data/samples/2026-10-18/review.json"
+  }
+]

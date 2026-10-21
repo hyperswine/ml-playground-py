@@ -1,0 +1,9 @@
+{
+  "sample": "same 12 preselected development IDs reviewed in the earlier experiment",
+  "original_correct": 0,
+  "previous_sft_correct": 2,
+  "expanded_correct": 6,
+  "reviewed_per_model": 12,
+  "dev_count": 90,
+  "note": "Agent source review with answer hashes. Coverage is 12/90; this is not an accuracy estimate on all development questions."
+}

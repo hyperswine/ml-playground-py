@@ -1,0 +1,17 @@
+{
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "results": [
+    {
+      "batch_size": 4,
+      "peak_allocated_bytes": 11872204800,
+      "success": true,
+      "tokens_per_second": 20131.63444064326
+    },
+    {
+      "batch_size": 8,
+      "peak_allocated_bytes": 15678175232,
+      "success": true,
+      "tokens_per_second": 25400.163426659845
+    }
+  ]
+}

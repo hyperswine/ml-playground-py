@@ -1,0 +1,8 @@
+{
+  "canonical_hash": "d9f8805e230e5947add2d446e87ac715454a03e5166c02ff92883e2ae9529c35",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "benchmark_reference_expressions": 54,
+  "new_examples": 496,
+  "collisions": [],
+  "method": "whitespace-free benchmark print-expression substring search in every new correct and broken program; literal check, not semantic independence proof"
+}

@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "pools_hash": "27124d70433227dcd773ec9a731ceb068449f427e3b3a9eeda5bf7519f8c0266",
+  "counts": {
+    "verified": {
+      "examples": 65017,
+      "target_tokens": 2158102
+    },
+    "qa_pool": {
+      "examples": 20000,
+      "target_tokens": 2636899
+    },
+    "docs": {
+      "examples": 2302,
+      "target_tokens": 762183
+    }
+  },
+  "arithmetic_training": 899,
+  "arithmetic_validation": 125,
+  "arithmetic_validation_target_tokens": 5957,
+  "docs_rejected_short_or_unknown": 8,
+  "unknown_tokens_in_accepted_examples": 0,
+  "max_length": 512,
+  "sources": {
+    "qos_ai/stage3_20261020/sft_sol.pt": "d5071a4fe265dfa9d98ea03223250ca9f3927d111c14ecf73e712d492327ea0c",
+    "qos_ai_benchmark/evidence/generalization_20261019/curricula/generalization_20261019/splits.json": "c209b5c7fbb4523f8a152176c8bdd87c5884d2634d0287337f239e43191626ae",
+    "qos_ai/corpus.jsonl": "1631e945bde3f3fdcf0f44f301db3b0c31ca84af186a3c9e32656f6d05604fca",
+    "runpod/557m/bundle/vocabulary.pt": "74138be221701ca868b413cf711642fc2abde19687ff7f3af37de475f817dcf7",
+    "runpod/557m/bundle/tokenizer/tokenizer.json": "06b9509352d2af50381ab2247e083b80d32d5c0aba91c272ca9ff729b6a0e523",
+    "qos_ai_benchmark/stage4_20261021/arithmetic/verification.json": "c5861e5d1f65ef613599c847e35b8a8237c533aef519b1b41949ae7e0df6ae98"
+  },
+  "scope": "training pools only; arithmetic validation encoded separately; English replay still required",
+  "pools_file_sha256": "21f95d3ea249bd8fa176a5dffe6d39fa4228902f8a7d5ab7e48135384ff80ddc",
+  "arithmetic_validation_sha256": "a2513cc50cbe58910b05f4529fd20c7b908a4fa726e82fb03ad7cb5e91aac322"
+}

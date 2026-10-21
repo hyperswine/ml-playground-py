@@ -1,0 +1,63 @@
+{
+  "test_fresh": {
+    "kept": 120,
+    "fpr_disagreed": 0
+  },
+  "test_held_pairs": {
+    "kept": 120,
+    "fpr_disagreed": 0
+  },
+  "test_big_numbers": {
+    "kept": 120,
+    "fpr_disagreed": 0
+  },
+  "train": {
+    "kept": 60000,
+    "fpr_disagreed": 0
+  },
+  "op_counts": {
+    "abs": 2259,
+    "add": 3325,
+    "all": 4866,
+    "any": 4727,
+    "at": 1643,
+    "clamp": 3395,
+    "cmp": 4474,
+    "div": 2870,
+    "drop": 5620,
+    "filter": 10722,
+    "if": 3232,
+    "index": 3352,
+    "join": 1744,
+    "last": 3081,
+    "map": 10467,
+    "max": 3314,
+    "min": 3166,
+    "mod": 2925,
+    "mul": 3157,
+    "range": 5177,
+    "rev": 5455,
+    "slice": 1347,
+    "sub": 3254,
+    "sum": 6761,
+    "take": 5552,
+    "trim": 629,
+    "upper": 767,
+    "zip": 2770
+  },
+  "held_pairs": [
+    "abs>sum",
+    "any>map",
+    "drop>rev",
+    "filter>range",
+    "max>last",
+    "upper>slice"
+  ],
+  "fpr_sha256": "9987da491a791af853300f38ad3e73c52a243dbfd1422379a8dbe437369b776e",
+  "protected_programs": 209,
+  "kinds": {
+    "output": 42713,
+    "generate": 12027,
+    "repair": 5260
+  }
+}

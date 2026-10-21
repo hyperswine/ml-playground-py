@@ -1,0 +1,124 @@
+
+COMMAND ["qos_ai_bench.py", "run", "--data", "qos_ai_benchmark", "--load", "experiments/generalization_20261019_seed17/student.pt", "--splits", "curricula/generalization_20261019/splits.json", "--split", "dev", "--seed", "7", "--temperature", "0", "--top-k", "20", "--no-repeat", "3", "--max-new-tokens", "200", "--device", "mps", "--output", "reports/generalization_20261019/seed17_final/dev_guard"]
+1/90 fact-ownership-1: proxy=True finished=True
+2/90 fact-ownership-2: proxy=True finished=True
+3/90 fact-ownership-3: proxy=True finished=True
+4/90 fact-profiles-1: proxy=False finished=True
+5/90 fact-profiles-2: proxy=True finished=True
+6/90 fact-profiles-3: proxy=True finished=True
+7/90 fact-host-build-1: proxy=True finished=True
+8/90 fact-host-build-2: proxy=True finished=True
+9/90 fact-host-build-3: proxy=True finished=True
+10/90 fact-import-order-1: proxy=True finished=True
+11/90 fact-import-order-2: proxy=False finished=True
+12/90 fact-import-order-3: proxy=True finished=True
+13/90 fact-qos-pin-1: proxy=True finished=True
+14/90 fact-qos-pin-2: proxy=True finished=True
+15/90 fact-qos-pin-3: proxy=True finished=True
+16/90 fact-qos-platform-1: proxy=True finished=True
+17/90 fact-qos-platform-2: proxy=True finished=True
+18/90 fact-qos-platform-3: proxy=True finished=True
+19/90 fact-actor-default-1: proxy=True finished=True
+20/90 fact-actor-default-2: proxy=True finished=True
+21/90 fact-actor-default-3: proxy=True finished=True
+22/90 fact-send-result-1: proxy=True finished=True
+23/90 fact-send-result-2: proxy=False finished=True
+24/90 fact-send-result-3: proxy=True finished=True
+25/90 fact-call-wire-1: proxy=False finished=True
+26/90 fact-call-wire-2: proxy=False finished=True
+27/90 fact-call-wire-3: proxy=False finished=True
+28/90 fact-call-death-1: proxy=True finished=True
+29/90 fact-call-death-2: proxy=True finished=True
+30/90 fact-call-death-3: proxy=True finished=True
+31/90 fact-binary-bounds-1: proxy=False finished=True
+32/90 fact-binary-bounds-2: proxy=False finished=True
+33/90 fact-binary-bounds-3: proxy=False finished=True
+34/90 fact-binary-offset-1: proxy=False finished=True
+35/90 fact-binary-offset-2: proxy=False finished=True
+36/90 fact-binary-offset-3: proxy=False finished=True
+37/90 fact-binary-endian-1: proxy=False finished=True
+38/90 fact-binary-endian-2: proxy=False finished=True
+39/90 fact-binary-endian-3: proxy=False finished=True
+40/90 fact-option-result-1: proxy=False finished=True
+41/90 fact-option-result-2: proxy=False finished=True
+42/90 fact-option-result-3: proxy=False finished=True
+43/90 fact-option-default-1: proxy=False finished=True
+44/90 fact-option-default-2: proxy=False finished=True
+45/90 fact-option-default-3: proxy=False finished=True
+46/90 fact-json-trailing-1: proxy=True finished=True
+47/90 fact-json-trailing-2: proxy=True finished=True
+48/90 fact-json-trailing-3: proxy=True finished=True
+49/90 fact-json-duplicates-1: proxy=True finished=True
+50/90 fact-json-duplicates-2: proxy=True finished=True
+51/90 fact-json-duplicates-3: proxy=True finished=True
+52/90 output-string-length-1: proxy=True finished=True
+53/90 output-string-length-2: proxy=True finished=True
+54/90 output-string-length-3: proxy=True finished=True
+55/90 output-string-first-byte-1: proxy=False finished=True
+56/90 output-string-first-byte-2: proxy=False finished=True
+57/90 output-string-first-byte-3: proxy=False finished=True
+58/90 output-string-slice-1: proxy=True finished=True
+59/90 output-string-slice-2: proxy=False finished=True
+60/90 output-string-slice-3: proxy=True finished=True
+61/90 output-string-find-missing-1: proxy=True finished=True
+62/90 output-string-find-missing-2: proxy=True finished=True
+63/90 output-string-find-missing-3: proxy=True finished=True
+64/90 output-list-map-1: proxy=False finished=True
+65/90 output-list-map-2: proxy=False finished=True
+66/90 output-list-map-3: proxy=False finished=True
+67/90 output-list-filter-1: proxy=False finished=True
+68/90 output-list-filter-2: proxy=False finished=True
+69/90 output-list-filter-3: proxy=False finished=True
+70/90 output-list-range-1: proxy=False finished=True
+71/90 output-list-range-2: proxy=False finished=True
+72/90 output-list-range-3: proxy=False finished=True
+73/90 output-list-take-1: proxy=False finished=True
+74/90 output-list-take-2: proxy=False finished=True
+75/90 output-list-take-3: proxy=False finished=True
+76/90 output-list-reverse-1: proxy=True finished=True
+77/90 output-list-reverse-2: proxy=True finished=True
+78/90 output-list-reverse-3: proxy=True finished=True
+79/90 output-numeric-clamp-1: proxy=False finished=True
+80/90 output-numeric-clamp-2: proxy=True finished=True
+81/90 output-numeric-clamp-3: proxy=True finished=True
+82/90 output-numeric-min-1: proxy=True finished=True
+83/90 output-numeric-min-2: proxy=True finished=True
+84/90 output-numeric-min-3: proxy=True finished=True
+85/90 debug-at: proxy=False finished=True
+86/90 debug-list: proxy=True finished=True
+87/90 write-map: proxy=True finished=True
+88/90 write-clamp: proxy=True finished=True
+89/90 unknown-boot: proxy=False finished=True
+90/90 unknown-fpr-root: proxy=False finished=True
+{
+  "checkpoint": "experiments/generalization_20261019_seed17/student.pt",
+  "checkpoint_sha256": "ce30025d311c210b68d4f323f4a3c5a23d78904ed9d1e27bdd1ea67350e2d1cf",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "split_manifest_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "checkpoint_split_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "ancestry": "legacy_or_unknown",
+  "split": "dev",
+  "seed": 7,
+  "temperature": 0.0,
+  "top_k": 20,
+  "no_repeat": 3,
+  "requested_max_new_tokens": 200,
+  "device": "mps",
+  "torch": "2.13.0",
+  "host": "JQs-Mac-mini.local",
+  "machine": "arm64",
+  "code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "evaluator_sha256": "9ddd564b605264ee4dc8a2620b3aed3828b8bb8822491c85e0a7746720086160",
+  "split_policy_code_sha256": "37eb78c7661f52aa277a18889c7c88fb312feadc808f0315eb3636ffe5a0d0de",
+  "clean_test_claim": false,
+  "exposure_note": "Legacy checkpoints are not made clean by new splits. Ancestry and source overlap require review.",
+  "count": 90,
+  "concept_groups": 34,
+  "rubric_proxy_pass_rate": 0.5444444444444444,
+  "finished_rate": 1.0,
+  "severe_loop_rate": 0.0,
+  "mean_tokens": 14.311111111111112,
+  "context_limited_count": 0,
+  "factual_accuracy": null,
+  "human_review_required": true
+}

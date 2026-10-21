@@ -1,0 +1,43 @@
+{
+  "wording": {
+    "count": 48,
+    "modes": {
+      "output_only": 8,
+      "output_trace": 8,
+      "repair_expr": 8,
+      "repair_program": 8,
+      "no_change": 8,
+      "generate": 8
+    },
+    "known_program_overlap": 48,
+    "known_operation_shape_overlap": 48
+  },
+  "inputs": {
+    "count": 48,
+    "modes": {
+      "output_only": 8,
+      "output_trace": 8,
+      "repair_expr": 8,
+      "repair_program": 8,
+      "no_change": 8,
+      "generate": 8
+    },
+    "known_program_overlap": 0,
+    "known_operation_shape_overlap": 48
+  },
+  "combinations": {
+    "count": 48,
+    "modes": {
+      "output_only": 8,
+      "output_trace": 8,
+      "repair_expr": 8,
+      "repair_program": 8,
+      "no_change": 8,
+      "generate": 8
+    },
+    "known_program_overlap": 0,
+    "known_operation_shape_overlap": 0
+  },
+  "diagnostic_hash": "49dae923a5d69a252c786162b9048fd3cb3566abc47eb876d2fe80238a9aface",
+  "scope": "Known canonical programs only; wording overlap is intentional; unknown historical teacher/pretraining exposure is not excluded."
+}

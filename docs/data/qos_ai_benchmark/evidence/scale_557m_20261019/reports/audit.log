@@ -1,0 +1,39 @@
+{
+  "parameter_count": 556526080,
+  "optimizer": "adafactor",
+  "optimizer_state_tensor_bytes": 2743056,
+  "updates": 64,
+  "training_tokens": 32768,
+  "known_target_tokens": 32768,
+  "progress_sha256": "7a7c1f3bb6e233634bd3ba686a37eac48e570ac195b11fa930b1f12ef13bfe36",
+  "student_sha256": "be61753dc7eb9a5f4049ff7adfd0d182ed67e8a19bf6e4339b2422b540cae4ad",
+  "settings_hash": "78b4ba09b43b807147058ee8170d68b31aa22eb04487ad10f53cef5af106316a",
+  "dataset_hash": "227501e433783a1cd6b46deeff280603548dd6c108abc0fb5eb9ecd29cf058cf",
+  "frozen_benchmarks_verified": {
+    "curricula/generalization_20261019/benchmark.jsonl": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+    "curricula/generalization_20261019/coding_diagnostic.jsonl": "5328ff3c3cf01b132322349ef1830959b325a302926b437c78d32edaef8d59ce",
+    "curricula/generalization_20261019/generalization_diagnostic.jsonl": "67b2155a65688599b10d79d77413fec8061bc2c3a73948fee13f0dd9fc4c4cda"
+  },
+  "all_exported_weights_finite_and_match_progress": true,
+  "samples": [
+    {
+      "prompt": "The purpose of a compiler is",
+      "answer": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+      "finished": false,
+      "generated_tokens": 32
+    },
+    {
+      "prompt": "What is Sol?",
+      "answer": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+      "finished": false,
+      "generated_tokens": 32
+    },
+    {
+      "prompt": "Write a Sol function that adds two numbers.",
+      "answer": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+      "finished": false,
+      "generated_tokens": 32
+    }
+  ],
+  "sample_scope": "three short smoke prompts, greedy decoding, no repetition guard; no capability score"
+}

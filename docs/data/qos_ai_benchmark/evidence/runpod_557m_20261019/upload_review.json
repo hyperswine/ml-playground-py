@@ -1,0 +1,28 @@
+{
+  "status": "upload blocked by automatic approval review; no payload transferred",
+  "archive_sha256": "ac229705e7c518884c5f7ea972f8fa2c7e97ffb94d8a3c38ef78e9a8ca974ff6",
+  "files": {
+    "qos_ai_557m.json": "557edcaae667fe1a6f4d6b49b25ae420ae46e4c9ee13e73d23de773efac75188",
+    "qos_ai_runpod_job.py": "30aaeec6d346b494f498233bfb11ffdec2d06bbcbc07cc2acde481cecfad04f5",
+    "qos_ai_data.py": "37eb78c7661f52aa277a18889c7c88fb312feadc808f0315eb3636ffe5a0d0de",
+    "test_qos_ai_runpod.py": "37c25576fbecb6cea2b2362df1cf0e9cfaa22333a80ae033927800b509fcb035",
+    "qos_ai_runpod_train.py": "546e721ab192983e5c9dc64d5ca0ac1bc59579fafe62de12d5fdd3f0df4f40da",
+    "qos_ai_scale.py": "d595cd9f41475d3fce785099ed6545a7d68f740fdc14b255aa58c5c0bc2e987c",
+    "vocabulary.pt": "74138be221701ca868b413cf711642fc2abde19687ff7f3af37de475f817dcf7",
+    "qos_ai_finetune.py": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+    "verified_sft.pt": "85f259c362923e7b006c2db39199bd1b6ed67b261cdaf0e9a9b680c86efc06ed",
+    "qos_ai_resume.py": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+    "test_qos_ai_scale.py": "d0933c942c8542f8c66c9cb8c084d76efa6c6646c540da9f24830856d22c0477",
+    "qos_ai_runpod_data.py": "704330176c5ee9106be328516c5cc06f324c252a4b1f9559ef63be7b3ef8987e",
+    "verified_sft.json": "93d6384937f8a5a69e105939903591c029b74deed704e484b2de8cf5f8184291",
+    "qos_ai.py": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+    "tokenizer/tokenizer_config.json": "f842671db16546726c2818d71390d4b7cd2f7761b208818476473499e03e9883",
+    "tokenizer/tokenizer.json": "06b9509352d2af50381ab2247e083b80d32d5c0aba91c272ca9ff729b6a0e523",
+    "tokenizer/chat_template.jinja": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80",
+    "benchmarks/benchmark.jsonl": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+    "benchmarks/coding_diagnostic.jsonl": "5328ff3c3cf01b132322349ef1830959b325a302926b437c78d32edaef8d59ce",
+    "benchmarks/generalization_diagnostic.jsonl": "67b2155a65688599b10d79d77413fec8061bc2c3a73948fee13f0dd9fc4c4cda"
+  },
+  "credential_files_included": false,
+  "contents": "custom model/training code, frozen tokenizer and vocabulary mapping, encoded verified examples, benchmarks, tests; no pretrained model weights"
+}

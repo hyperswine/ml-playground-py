@@ -1,0 +1,164 @@
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+  "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+  "data_sha256": "6b90494b12090d3c96ebb78d4680b7eda3d5dfce119ecd854bc7d16a5243898b",
+  "split_hash": "54346de3d687868ce0213138c5d5004e37f8bbcc2f6a396dd9ee065f01c75d2f",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 1,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 2e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 10.0,
+  "seed": 7,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 768,
+  "training_code_sha256": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+  "answer_tokens": 26051,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 176,
+  "pad_multiple": 32,
+  "mps_cache_interval": 20,
+  "segment_steps": 64,
+  "optimizer_plan_hash": "bef60b4fff69347afd21aa699f67c59b60d6a33beab4c614dc23b2e2be668b79",
+  "resume_code_sha256": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "fixed_padding": true,
+  "padding_width": 192,
+  "selection_sha256": "bcdc4451881d3ea96f256323e42912740332977128a1228039daac9afced86cf",
+  "selection_hash": "7093c26ae5dfb74fbbe597894e9318ca3e675b5afb6b2715ecbcb3de4a3b086d",
+  "selection_policy": "576 new paired calculation/complete-answer examples plus 96 generation and 96 factual replay"
+}
+{"step": 1, "epoch": 1, "loss": 1.8620227520282453, "learning_rate": 4.000000000000001e-06, "seconds": 46.5930159999989, "supervised_tokens": 195}
+{"step": 5, "epoch": 1, "loss": 1.2943616014845827, "learning_rate": 2e-05, "seconds": 52.24688999999489, "supervised_tokens": 796}
+{"step": 10, "epoch": 1, "loss": 1.5487421168837436, "learning_rate": 1.996826681411021e-05, "seconds": 59.303461999996216, "supervised_tokens": 1446}
+{"step": 15, "epoch": 1, "loss": 0.539219159038127, "learning_rate": 1.9873291033126775e-05, "seconds": 66.34533762499632, "supervised_tokens": 2043}
+{"step": 20, "epoch": 1, "loss": 0.42436092957518157, "learning_rate": 1.9715742409074806e-05, "seconds": 73.64465141600522, "supervised_tokens": 2641}
+{"step": 25, "epoch": 1, "loss": 0.2829413470099954, "learning_rate": 1.9496731946348455e-05, "seconds": 80.56061662500724, "supervised_tokens": 3312}
+{"step": 30, "epoch": 1, "loss": 0.16119871078393397, "learning_rate": 1.9217804067108952e-05, "seconds": 89.41719820800063, "supervised_tokens": 3860}
+{"step": 35, "epoch": 1, "loss": 0.14025923221007638, "learning_rate": 1.8880925720298904e-05, "seconds": 96.43962445799843, "supervised_tokens": 4572}
+{"step": 40, "epoch": 1, "loss": 0.3307935386553578, "learning_rate": 1.8488472511074216e-05, "seconds": 103.75401108300139, "supervised_tokens": 5146}
+{"step": 45, "epoch": 1, "loss": 0.14600098993360383, "learning_rate": 1.8043211948466305e-05, "seconds": 110.66108187500504, "supervised_tokens": 5949}
+{"step": 50, "epoch": 1, "loss": 0.4392519139531833, "learning_rate": 1.7548283929409093e-05, "seconds": 117.7375939580088, "supervised_tokens": 6667}
+{"step": 55, "epoch": 1, "loss": 0.3871607694539938, "learning_rate": 1.7007178596753863e-05, "seconds": 124.78320058299869, "supervised_tokens": 7293}
+{"step": 60, "epoch": 1, "loss": 0.17113666112910317, "learning_rate": 1.6423711727413308e-05, "seconds": 132.09495770800277, "supervised_tokens": 8116}
+{"segment_saved": "experiments/output_complete_20261018/progress_latest.pt", "optimizer_step": 64, "total_steps": 192}
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+  "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+  "data_sha256": "6b90494b12090d3c96ebb78d4680b7eda3d5dfce119ecd854bc7d16a5243898b",
+  "split_hash": "54346de3d687868ce0213138c5d5004e37f8bbcc2f6a396dd9ee065f01c75d2f",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 1,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 2e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 10.0,
+  "seed": 7,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 768,
+  "training_code_sha256": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+  "answer_tokens": 26051,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 176,
+  "pad_multiple": 32,
+  "mps_cache_interval": 20,
+  "segment_steps": 64,
+  "optimizer_plan_hash": "bef60b4fff69347afd21aa699f67c59b60d6a33beab4c614dc23b2e2be668b79",
+  "resume_code_sha256": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "fixed_padding": true,
+  "padding_width": 192,
+  "selection_sha256": "bcdc4451881d3ea96f256323e42912740332977128a1228039daac9afced86cf",
+  "selection_hash": "7093c26ae5dfb74fbbe597894e9318ca3e675b5afb6b2715ecbcb3de4a3b086d",
+  "selection_policy": "576 new paired calculation/complete-answer examples plus 96 generation and 96 factual replay"
+}
+{"step": 65, "epoch": 1, "loss": 0.5142105228298313, "learning_rate": 1.5801997824193057e-05, "seconds": 139.72152825001103, "supervised_tokens": 8697}
+{"step": 70, "epoch": 1, "loss": 0.28871047496795654, "learning_rate": 1.5146421101062252e-05, "seconds": 146.66269120801007, "supervised_tokens": 9400}
+{"step": 75, "epoch": 1, "loss": 0.14095435020598499, "learning_rate": 1.446160456646981e-05, "seconds": 153.68752108300396, "supervised_tokens": 10204}
+{"step": 80, "epoch": 1, "loss": 0.1797965380771101, "learning_rate": 1.3752377422725209e-05, "seconds": 160.93053000001237, "supervised_tokens": 10820}
+{"step": 85, "epoch": 1, "loss": 0.06894190200252237, "learning_rate": 1.3023741011337452e-05, "seconds": 167.74806391600578, "supervised_tokens": 11570}
+{"step": 90, "epoch": 1, "loss": 0.041105481740590685, "learning_rate": 1.228083354445957e-05, "seconds": 174.75270479101164, "supervised_tokens": 12305}
+{"step": 95, "epoch": 1, "loss": 0.06582127351027268, "learning_rate": 1.1528893871146083e-05, "seconds": 181.73829491600918, "supervised_tokens": 13084}
+{"step": 100, "epoch": 1, "loss": 0.20199686242628467, "learning_rate": 1.077322453393725e-05, "seconds": 189.02050170801522, "supervised_tokens": 13794}
+{"step": 105, "epoch": 1, "loss": 0.12755858612060547, "learning_rate": 1.0019154376288376e-05, "seconds": 199.7242825410067, "supervised_tokens": 14488}
+{"step": 110, "epoch": 1, "loss": 0.15987209386603776, "learning_rate": 9.27200096452982e-06, "seconds": 206.72687225001573, "supervised_tokens": 15012}
+{"step": 115, "epoch": 1, "loss": 0.09285328501746767, "learning_rate": 8.537033089351256e-06, "seconds": 213.7651432910061, "supervised_tokens": 15713}
+{"step": 120, "epoch": 1, "loss": 0.1614254050784641, "learning_rate": 7.819433611242917e-06, "seconds": 221.0220221250056, "supervised_tokens": 16557}
+{"step": 125, "epoch": 1, "loss": 0.17419645088870508, "learning_rate": 7.1242629119010766e-06, "seconds": 227.90006191600696, "supervised_tokens": 17130}
+{"segment_saved": "experiments/output_complete_20261018/progress_latest.pt", "optimizer_step": 128, "total_steps": 192}
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+  "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+  "data_sha256": "6b90494b12090d3c96ebb78d4680b7eda3d5dfce119ecd854bc7d16a5243898b",
+  "split_hash": "54346de3d687868ce0213138c5d5004e37f8bbcc2f6a396dd9ee065f01c75d2f",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 1,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 2e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 10.0,
+  "seed": 7,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 768,
+  "training_code_sha256": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+  "answer_tokens": 26051,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 176,
+  "pad_multiple": 32,
+  "mps_cache_interval": 20,
+  "segment_steps": 64,
+  "optimizer_plan_hash": "bef60b4fff69347afd21aa699f67c59b60d6a33beab4c614dc23b2e2be668b79",
+  "resume_code_sha256": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "fixed_padding": true,
+  "padding_width": 192,
+  "selection_sha256": "bcdc4451881d3ea96f256323e42912740332977128a1228039daac9afced86cf",
+  "selection_hash": "7093c26ae5dfb74fbbe597894e9318ca3e675b5afb6b2715ecbcb3de4a3b086d",
+  "selection_policy": "576 new paired calculation/complete-answer examples plus 96 generation and 96 factual replay"
+}
+{"step": 130, "epoch": 1, "loss": 0.12321925311355117, "learning_rate": 6.456423209331814e-06, "seconds": 235.54708245799702, "supervised_tokens": 17880}
+{"step": 135, "epoch": 1, "loss": 0.07351541137695312, "learning_rate": 5.82062398829651e-06, "seconds": 242.54321129199525, "supervised_tokens": 18512}
+{"step": 140, "epoch": 1, "loss": 0.03695163623730939, "learning_rate": 5.221348789877317e-06, "seconds": 251.89050091699755, "supervised_tokens": 19264}
+{"step": 145, "epoch": 1, "loss": 0.19129515820600856, "learning_rate": 4.6628235943565885e-06, "seconds": 259.34008533299493, "supervised_tokens": 19985}
+Error: command buffer exited with error status.
+	The Metal Performance Shaders operations encoded on it may not have completed.
+	Error: 
+	(null)
+	Ignored (for causing prior/excessive GPU errors) (00000004:kIOGPUCommandBufferCallbackErrorSubmissionsIgnored)
+	<AGXG13GFamilyCommandBuffer: 0x7923d44000>
+    label = <none> 
+    device = <AGXG13GDevice: 0x1059824e0>
+        name = Apple M1 
+    commandQueue = <AGXG13GFamilyCommandQueue: 0x1059848e0>
+        label = <none> 
+        device = <AGXG13GDevice: 0x1059824e0>
+            name = Apple M1 
+    retainedReferences = 1
+Traceback (most recent call last):
+  File "/Users/jq/qos_ai_eval/qos_ai_finetune.py", line 261, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jq/qos_ai_eval/qos_ai_finetune.py", line 257, in main
+    fine_tune(p.parse_args())
+    ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/jq/qos_ai_eval/qos_ai_finetune.py", line 193, in fine_tune
+    raise ValueError('Device target count mismatch; no checkpoint saved')
+ValueError: Device target count mismatch; no checkpoint saved

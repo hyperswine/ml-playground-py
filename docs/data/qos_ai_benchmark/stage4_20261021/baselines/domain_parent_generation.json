@@ -1,0 +1,17 @@
+{
+  "checkpoint_sha256": "5879f9c385158e1b679e8fda9c6fc53f8f15919e109d25c05c7a332f5d6df730",
+  "suite_hash": "dc5b215065faf0418990c371419bddef2d1e668ad0978f34fe41bfe47de3a94e",
+  "answers_sha256": "87031f8ee3cb1ba992fed7e97c12be772dd141a7641355767507caf5afb656d2",
+  "tokenizer_sha256": "06b9509352d2af50381ab2247e083b80d32d5c0aba91c272ca9ff729b6a0e523",
+  "seed": 7,
+  "temperature": 0,
+  "top_k": 20,
+  "no_repeat": 0,
+  "max_new_tokens": 200,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "count": 18,
+  "finished": 16,
+  "severe_loops": 4
+}

@@ -1,0 +1,17 @@
+{
+  "patterns": "Metal error, command-buffer error, Traceback, RuntimeError, out of memory, nonfinite, target count mismatch",
+  "matched_lines": [],
+  "logs_checked": [
+    "adafactor_segment1.log",
+    "adafactor_segment2.log",
+    "adafactor_segment3.log",
+    "adafactor_segment4.log",
+    "adafactor_segment5.log",
+    "audit.log",
+    "prepare.log",
+    "smoke_segment1.log",
+    "smoke_segment2.log",
+    "tests.log",
+    "tests_adafactor.log"
+  ]
+}

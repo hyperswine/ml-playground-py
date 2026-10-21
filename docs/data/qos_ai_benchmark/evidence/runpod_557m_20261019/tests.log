@@ -1,0 +1,18 @@
+test_atomic_full_checkpoint_keeps_ties_and_adam_moments (test_qos_ai_runpod.RunpodTests.test_atomic_full_checkpoint_keeps_ties_and_adam_moments) ... ok
+test_exact_bpe_fallback_avoids_greedy_dead_ends_and_rejects_missing_bytes (test_qos_ai_runpod.RunpodTests.test_exact_bpe_fallback_avoids_greedy_dead_ends_and_rejects_missing_bytes) ... ok
+test_profile_budget_does_not_exceed_token_or_time_allowance (test_qos_ai_runpod.RunpodTests.test_profile_budget_does_not_exceed_token_or_time_allowance) ... ok
+test_public_code_filter_grouping_and_exact_literal_screen (test_qos_ai_runpod.RunpodTests.test_public_code_filter_grouping_and_exact_literal_screen) ... ok
+test_web_host_is_indivisible_validation_group (test_qos_ai_runpod.RunpodTests.test_web_host_is_indivisible_validation_group) ... ok
+test_weighted_accumulation_matches_joint_loss_with_unknown_targets (test_qos_ai_runpod.RunpodTests.test_weighted_accumulation_matches_joint_loss_with_unknown_targets) ... ok
+test_accumulation_is_weighted_by_known_targets (test_qos_ai_scale.ScalingTests.test_accumulation_is_weighted_by_known_targets) ... ok
+test_activation_checkpointing_preserves_logits_and_gradients (test_qos_ai_scale.ScalingTests.test_activation_checkpointing_preserves_logits_and_gradients) ... ok
+test_actual_557m_shape_and_tied_parameters (test_qos_ai_scale.ScalingTests.test_actual_557m_shape_and_tied_parameters) ... ok
+test_adafactor_segment_restores_factored_moments (test_qos_ai_scale.ScalingTests.test_adafactor_segment_restores_factored_moments) ... ok
+test_case_and_source_groups_are_disjoint_and_exact_copies_removed (test_qos_ai_scale.ScalingTests.test_case_and_source_groups_are_disjoint_and_exact_copies_removed) ... ok
+test_complete_runner_exports_loadable_model_and_resumes_without_schedule_reset (test_qos_ai_scale.ScalingTests.test_complete_runner_exports_loadable_model_and_resumes_without_schedule_reset) ... ok
+test_resume_matches_weights_moments_schedule_and_data (test_qos_ai_scale.ScalingTests.test_resume_matches_weights_moments_schedule_and_data) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 1.685s
+
+OK

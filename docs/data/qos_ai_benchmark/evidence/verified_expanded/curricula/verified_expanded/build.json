@@ -1,0 +1,20 @@
+{
+  "original": 65,
+  "candidates": 629,
+  "new_kept": 599,
+  "rejected": 30,
+  "categories": {
+    "original": 65,
+    "domain_contract": 85,
+    "output_prediction": 140,
+    "code_generation": 140,
+    "code_explanation": 128,
+    "debugging": 106
+  },
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "base_split_hash": "cd57f4a7b5c2b02b40c6b8679c39a82712535c33254385a9139cfe8504529be3",
+  "expanded_split_hash": "10b314ad4e484922399e1a1b3980763786065da32838d501ceeb60edd69094b0",
+  "distinct_reference_programs": 304,
+  "generator_sha256": "d9c16d793634dad25d55e2d5363883994e3fd4dc86936e25c59ded1936768e60",
+  "seed": 29
+}

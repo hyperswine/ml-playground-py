@@ -1,0 +1,85 @@
+Distinct reference executions 200 / 6870
+Distinct reference executions 400 / 6870
+Distinct reference executions 600 / 6870
+Distinct reference executions 800 / 6870
+Distinct reference executions 1000 / 6870
+Distinct reference executions 1200 / 6870
+Distinct reference executions 1400 / 6870
+Distinct reference executions 1600 / 6870
+Distinct reference executions 1800 / 6870
+Distinct reference executions 2000 / 6870
+Distinct reference executions 2200 / 6870
+Distinct reference executions 2400 / 6870
+Distinct reference executions 2600 / 6870
+Distinct reference executions 2800 / 6870
+Distinct reference executions 3000 / 6870
+Distinct reference executions 3200 / 6870
+Distinct reference executions 3400 / 6870
+Distinct reference executions 3600 / 6870
+Distinct reference executions 3800 / 6870
+Distinct reference executions 4000 / 6870
+Distinct reference executions 4200 / 6870
+Distinct reference executions 4400 / 6870
+Distinct reference executions 4600 / 6870
+Distinct reference executions 4800 / 6870
+Distinct reference executions 5000 / 6870
+Distinct reference executions 5200 / 6870
+Distinct reference executions 5400 / 6870
+Distinct reference executions 5600 / 6870
+Distinct reference executions 5800 / 6870
+Distinct reference executions 6000 / 6870
+Distinct reference executions 6200 / 6870
+Distinct reference executions 6400 / 6870
+Distinct reference executions 6600 / 6870
+Distinct reference executions 6800 / 6870
+{
+  "diagnostic_hash": "49dae923a5d69a252c786162b9048fd3cb3566abc47eb876d2fe80238a9aface",
+  "new_cases": 2400,
+  "compiler_sha256": "c41c6ab9377e59be4d9bccedf1d6dd33f188bad0453046660650c6982fbc2f36",
+  "passed": 8917,
+  "total": 8917,
+  "distinct_executions": 6870
+}
+{"phase": "tests and authored grader controls", "unix_time": 1792330817.3010921}
+{"phase": "evaluate parent", "unix_time": 1792330824.571611}
+{"phase": "train seed 7, segment 1/15", "unix_time": 1792331059.904982}
+{"phase": "train seed 7, segment 2/15", "unix_time": 1792331302.2782888}
+{"phase": "train seed 7, segment 3/15", "unix_time": 1792331384.538267}
+{"phase": "train seed 7, segment 4/15", "unix_time": 1792331467.9577658}
+{"phase": "train seed 7, segment 5/15", "unix_time": 1792331552.221913}
+{"phase": "train seed 7, segment 6/15", "unix_time": 1792331633.2924569}
+{"phase": "retrying fresh process after failure: seed7_training.log, attempt 2", "unix_time": 1792331689.269472}
+{"phase": "train seed 7, segment 7/15", "unix_time": 1792331773.00541}
+{"phase": "evaluate seed7_step0336", "unix_time": 1792331855.650631}
+{"phase": "train seed 7, segment 8/15", "unix_time": 1792332134.553248}
+{"phase": "train seed 7, segment 9/15", "unix_time": 1792332215.530101}
+{"phase": "train seed 7, segment 10/15", "unix_time": 1792332296.8760939}
+{"phase": "train seed 7, segment 11/15", "unix_time": 1792332383.209256}
+{"phase": "train seed 7, segment 12/15", "unix_time": 1792332464.3085718}
+{"phase": "train seed 7, segment 13/15", "unix_time": 1792332545.240822}
+{"phase": "train seed 7, segment 14/15", "unix_time": 1792332626.130364}
+{"phase": "train seed 7, segment 15/15", "unix_time": 1792332706.8851562}
+{"phase": "evaluate seed7_final", "unix_time": 1792332752.293039}
+{"phase": "train seed 17, segment 1/15", "unix_time": 1792333075.7884831}
+{"phase": "train seed 17, segment 2/15", "unix_time": 1792333317.164842}
+{"phase": "train seed 17, segment 3/15", "unix_time": 1792333398.654888}
+{"phase": "train seed 17, segment 4/15", "unix_time": 1792333479.812622}
+{"phase": "train seed 17, segment 5/15", "unix_time": 1792333560.8958988}
+{"phase": "train seed 17, segment 6/15", "unix_time": 1792333641.872777}
+{"phase": "train seed 17, segment 7/15", "unix_time": 1792333722.9347541}
+{"phase": "evaluate seed17_step0336", "unix_time": 1792333808.8509922}
+{"phase": "train seed 17, segment 8/15", "unix_time": 1792334098.299208}
+{"phase": "train seed 17, segment 9/15", "unix_time": 1792334178.964849}
+{"phase": "retrying fresh process after failure: seed17_training.log, attempt 2", "unix_time": 1792334242.1225019}
+{"phase": "retrying fresh process after failure: seed17_training.log, attempt 3", "unix_time": 1792334306.2902882}
+{"phase": "failed: Command failed; see reports/generalization_20261019/seed17_training.log", "unix_time": 1792334373.699313}
+Traceback (most recent call last):
+  File "/Users/jq/qos_ai_eval/qos_ai_generalization_workflow.py", line 111, in <module>
+    try:main()
+        ~~~~^^
+  File "/Users/jq/qos_ai_eval/qos_ai_generalization_workflow.py", line 93, in main
+    status(f'train seed {seed}, segment {segment}/15');launch(train,f'seed{seed}_training.log',retries=2)
+                                                       ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jq/qos_ai_eval/qos_ai_generalization_workflow.py", line 28, in launch
+    raise RuntimeError('Command failed; see '+str(REPORTS/log))
+RuntimeError: Command failed; see reports/generalization_20261019/seed17_training.log

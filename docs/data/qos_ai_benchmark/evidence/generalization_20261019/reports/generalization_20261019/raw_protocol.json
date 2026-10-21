@@ -1,0 +1,33 @@
+{
+  "reason": "94 authored diagnostic answers contain token trigrams prohibited by no-repeat three; this is a decoding feasibility control, not an adaptive data change.",
+  "primary_metrics_unchanged": true,
+  "no_repeat": 0,
+  "temperature": 0,
+  "top_k": 20,
+  "max_new_tokens": 128,
+  "seed": 7,
+  "labels": [
+    "parent",
+    "seed7_step0336",
+    "seed7_final",
+    "seed17_step0336",
+    "seed17_final"
+  ],
+  "frozen_inputs": {
+    "curricula/generalization_20261019/benchmark.jsonl": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+    "curricula/generalization_20261019/training_selection.json": "cb79cfae005db03d66cf3cb3eda232e6f0ad8c41b1fc308b80359cecaf6afac4",
+    "curricula/generalization_20261019/verified_train.jsonl": "8ce597e251c15f39f2d00a07a2762c2e217f1dc655e707d3b0afdbce54979d9b",
+    "curricula/generalization_20261019/splits.json": "c209b5c7fbb4523f8a152176c8bdd87c5884d2634d0287337f239e43191626ae",
+    "curricula/generalization_20261019/coding_verification.json": "60b73c3a49e3fb1ebf44783ba789b2b29751157050b3f4449d18f53235bb2eff",
+    "curricula/generalization_20261019/rejected.jsonl": "d7ab5121bdaf466176d2be940f7b7ad168ec0ed9c499dd5634cda3f154b48f77",
+    "curricula/generalization_20261019/separation_audit.json": "73cc8857c0fb58f8194c8c542720fa3008cc842d1a4eb991e67d05951bb48fe0",
+    "curricula/generalization_20261019/coding_diagnostic.jsonl": "5328ff3c3cf01b132322349ef1830959b325a302926b437c78d32edaef8d59ce",
+    "curricula/generalization_20261019/generalization_verification.json": "bdc820f82bb98f8baf81d46e5035128133bfc62c387cbe07b0f5246b2b6c427c",
+    "curricula/generalization_20261019/verification.json": "a2dbf7f7d1d2a555c1697842912b7095148d6f0b918e2e6b90a0ed3890a8e9df",
+    "curricula/generalization_20261019/generalization_diagnostic.jsonl": "67b2155a65688599b10d79d77413fec8061bc2c3a73948fee13f0dd9fc4c4cda",
+    "curricula/generalization_20261019/balanced_train_ready.jsonl": "65f6bc6f624f5c44986754ed0bf0117e7871ae9dd8bbfc52c9d261e15dca51ab",
+    "curricula/generalization_20261019/build.json": "50a84094bb39de33209459a406c98b1e1691af482f8274fe9b32ec0747dd3859"
+  },
+  "code_sha256": "74b735774847ce8578bbae881b0971d336936f7732c883fecec955eedc5d7ec9",
+  "workflow_sha256": "a14be8f03263bacacd59e5558ff419031313a98db795c01ddb434e81db9e58be"
+}

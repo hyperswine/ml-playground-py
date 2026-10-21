@@ -1,0 +1,12 @@
+{
+  "checkpoint_sha256": "70e1fa8b26391b16156170ce121706c2abd4e187f2f12b7037630c10d43f42db",
+  "data_sha256": "14ee569fb0ba7006481716ae7c32b7a8d3ab15b397c2ccc38600dc0e150b3de1",
+  "final_training_loss": 0.009313406611550345,
+  "elapsed_seconds": 40.39393483288586,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "scope": "training-set diagnostic in a fresh process; no optimizer updates or benchmark prompts",
+  "answer_tokens": 24090,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 185
+}

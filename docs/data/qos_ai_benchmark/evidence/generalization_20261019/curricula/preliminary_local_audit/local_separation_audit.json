@@ -1,0 +1,41 @@
+{
+  "wording": {
+    "count": 48,
+    "modes": {
+      "output_only": 16,
+      "repair_expr": 10,
+      "no_change": 14,
+      "repair_program": 4,
+      "output_trace": 2,
+      "generate": 2
+    },
+    "program_overlap": 48,
+    "operation_shape_overlap": 48
+  },
+  "inputs": {
+    "count": 48,
+    "modes": {
+      "output_only": 8,
+      "output_trace": 8,
+      "repair_expr": 8,
+      "repair_program": 8,
+      "no_change": 8,
+      "generate": 8
+    },
+    "program_overlap": 0,
+    "operation_shape_overlap": 48
+  },
+  "combinations": {
+    "count": 48,
+    "modes": {
+      "output_only": 8,
+      "output_trace": 8,
+      "repair_expr": 8,
+      "repair_program": 8,
+      "no_change": 8,
+      "generate": 8
+    },
+    "program_overlap": 0,
+    "operation_shape_overlap": 0
+  }
+}

@@ -1,0 +1,840 @@
+
+COMMAND ["qos_ai_finetune.py", "--load", "experiments/balanced_from_codegen_20261018/student.pt", "--curriculum", "curricula/generalization_20261019", "--data", "curricula/generalization_20261019/balanced_train_ready.jsonl", "--selection", "curricula/generalization_20261019/training_selection.json", "--splits", "curricula/generalization_20261019/splits.json", "--root", "fprisc=source_snapshot/fprisc", "--root", "qos=source_snapshot/qos", "--output", "experiments/generalization_20261019_seed7", "--epochs", "1", "--batch-size", "2", "--grad-accumulation", "2", "--learning-rate", "0.00001", "--max-minutes", "60", "--seed", "7", "--pad-multiple", "32", "--fixed-padding", "--mps-cache-interval", "12", "--defer-final-loss", "--segment-steps", "48", "--resume", "--device", "mps"]
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+  "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+  "data_sha256": "65f6bc6f624f5c44986754ed0bf0117e7871ae9dd8bbfc52c9d261e15dca51ab",
+  "split_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 1,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 60.0,
+  "seed": 7,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 2784,
+  "training_code_sha256": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+  "answer_tokens": 97693,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 192,
+  "pad_multiple": 32,
+  "mps_cache_interval": 12,
+  "segment_steps": 48,
+  "optimizer_plan_hash": "95a8814d53ec47e9f6e3ebba6e6f81d9d0c1117fea1c00f7a765cb91a0513225",
+  "resume_code_sha256": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "fixed_padding": true,
+  "padding_width": 192,
+  "selection_sha256": "cb79cfae005db03d66cf3cb3eda232e6f0ad8c41b1fc308b80359cecaf6afac4",
+  "selection_hash": "0231f9038db3302da8b8f1d64f4b6a6c0ad298b98faaa032fbb78e1c82c68d12",
+  "selection_policy": "2400 distinct broader cases with scalar-verified traces plus 384 replay; one epoch, identical data for two seeds"
+}
+{"step": 1, "epoch": 1, "loss": 1.9272428362557057, "learning_rate": 2.0000000000000003e-06, "seconds": 162.33698754099896, "supervised_tokens": 178}
+{"step": 5, "epoch": 1, "loss": 2.063321128410379, "learning_rate": 1e-05, "seconds": 168.0676326660032, "supervised_tokens": 900}
+{"step": 10, "epoch": 1, "loss": 1.0448920791213576, "learning_rate": 9.998837354070644e-06, "seconds": 175.12408187499386, "supervised_tokens": 1623}
+{"step": 15, "epoch": 1, "loss": 0.9824663468593143, "learning_rate": 9.995350017058379e-06, "seconds": 182.2877166660037, "supervised_tokens": 2452}
+{"step": 20, "epoch": 1, "loss": 0.8577287277119272, "learning_rate": 9.989539790980174e-06, "seconds": 189.30649241599895, "supervised_tokens": 3117}
+{"step": 25, "epoch": 1, "loss": 0.40287738376193577, "learning_rate": 9.981409678163008e-06, "seconds": 196.49499820799974, "supervised_tokens": 3857}
+{"step": 30, "epoch": 1, "loss": 0.6255558500898645, "learning_rate": 9.970963879692466e-06, "seconds": 203.49262195799383, "supervised_tokens": 4505}
+{"step": 35, "epoch": 1, "loss": 0.6820897420247396, "learning_rate": 9.958207793241915e-06, "seconds": 210.52247924999392, "supervised_tokens": 5262}
+{"step": 40, "epoch": 1, "loss": 0.8309423461440921, "learning_rate": 9.943148010283347e-06, "seconds": 217.9481729160034, "supervised_tokens": 5849}
+{"step": 45, "epoch": 1, "loss": 0.38754700923311536, "learning_rate": 9.925792312681364e-06, "seconds": 224.99235174999922, "supervised_tokens": 6557}
+{"segment_saved": "experiments/generalization_20261019_seed7/progress_latest.pt", "optimizer_step": 48, "total_steps": 696}
+
+COMMAND ["qos_ai_finetune.py", "--load", "experiments/balanced_from_codegen_20261018/student.pt", "--curriculum", "curricula/generalization_20261019", "--data", "curricula/generalization_20261019/balanced_train_ready.jsonl", "--selection", "curricula/generalization_20261019/training_selection.json", "--splits", "curricula/generalization_20261019/splits.json", "--root", "fprisc=source_snapshot/fprisc", "--root", "qos=source_snapshot/qos", "--output", "experiments/generalization_20261019_seed7", "--epochs", "1", "--batch-size", "2", "--grad-accumulation", "2", "--learning-rate", "0.00001", "--max-minutes", "60", "--seed", "7", "--pad-multiple", "32", "--fixed-padding", "--mps-cache-interval", "12", "--defer-final-loss", "--segment-steps", "48", "--resume", "--device", "mps"]
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+  "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+  "data_sha256": "65f6bc6f624f5c44986754ed0bf0117e7871ae9dd8bbfc52c9d261e15dca51ab",
+  "split_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 1,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 60.0,
+  "seed": 7,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 2784,
+  "training_code_sha256": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+  "answer_tokens": 97693,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 192,
+  "pad_multiple": 32,
+  "mps_cache_interval": 12,
+  "segment_steps": 48,
+  "optimizer_plan_hash": "95a8814d53ec47e9f6e3ebba6e6f81d9d0c1117fea1c00f7a765cb91a0513225",
+  "resume_code_sha256": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "fixed_padding": true,
+  "padding_width": 192,
+  "selection_sha256": "cb79cfae005db03d66cf3cb3eda232e6f0ad8c41b1fc308b80359cecaf6afac4",
+  "selection_hash": "0231f9038db3302da8b8f1d64f4b6a6c0ad298b98faaa032fbb78e1c82c68d12",
+  "selection_policy": "2400 distinct broader cases with scalar-verified traces plus 384 replay; one epoch, identical data for two seeds"
+}
+{"step": 50, "epoch": 1, "loss": 0.3911523013047769, "learning_rate": 9.906149668672043e-06, "seconds": 233.24881237499358, "supervised_tokens": 7288}
+{"step": 55, "epoch": 1, "loss": 0.36693191948441156, "learning_rate": 9.884230228228757e-06, "seconds": 240.27853612498438, "supervised_tokens": 7929}
+{"step": 60, "epoch": 1, "loss": 0.9098534823795936, "learning_rate": 9.860045317817379e-06, "seconds": 247.70122249999258, "supervised_tokens": 8618}
+{"step": 65, "epoch": 1, "loss": 0.33875701272276026, "learning_rate": 9.833607434543526e-06, "seconds": 254.69285158299317, "supervised_tokens": 9448}
+{"step": 70, "epoch": 1, "loss": 0.4181227563302728, "learning_rate": 9.804930239694919e-06, "seconds": 261.74580945799244, "supervised_tokens": 10195}
+{"step": 75, "epoch": 1, "loss": 0.3392850261623577, "learning_rate": 9.774028551682157e-06, "seconds": 268.8535451249918, "supervised_tokens": 10888}
+{"step": 80, "epoch": 1, "loss": 0.16056194188404668, "learning_rate": 9.740918338381591e-06, "seconds": 275.8734971659869, "supervised_tokens": 11680}
+{"step": 85, "epoch": 1, "loss": 0.4486765718460083, "learning_rate": 9.7056167088842e-06, "seconds": 283.0459830829932, "supervised_tokens": 12256}
+{"step": 90, "epoch": 1, "loss": 0.5263679931903708, "learning_rate": 9.668141904654805e-06, "seconds": 290.02175808299216, "supervised_tokens": 13105}
+{"step": 95, "epoch": 1, "loss": 0.29743742435536485, "learning_rate": 9.628513290106106e-06, "seconds": 297.02530949999345, "supervised_tokens": 13786}
+{"segment_saved": "experiments/generalization_20261019_seed7/progress_latest.pt", "optimizer_step": 96, "total_steps": 696}
+
+COMMAND ["qos_ai_finetune.py", "--load", "experiments/balanced_from_codegen_20261018/student.pt", "--curriculum", "curricula/generalization_20261019", "--data", "curricula/generalization_20261019/balanced_train_ready.jsonl", "--selection", "curricula/generalization_20261019/training_selection.json", "--splits", "curricula/generalization_20261019/splits.json", "--root", "fprisc=source_snapshot/fprisc", "--root", "qos=source_snapshot/qos", "--output", "experiments/generalization_20261019_seed7", "--epochs", "1", "--batch-size", "2", "--grad-accumulation", "2", "--learning-rate", "0.00001", "--max-minutes", "60", "--seed", "7", "--pad-multiple", "32", "--fixed-padding", "--mps-cache-interval", "12", "--defer-final-loss", "--segment-steps", "48", "--resume", "--device", "mps"]
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+  "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+  "data_sha256": "65f6bc6f624f5c44986754ed0bf0117e7871ae9dd8bbfc52c9d261e15dca51ab",
+  "split_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 1,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 60.0,
+  "seed": 7,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 2784,
+  "training_code_sha256": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+  "answer_tokens": 97693,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 192,
+  "pad_multiple": 32,
+  "mps_cache_interval": 12,
+  "segment_steps": 48,
+  "optimizer_plan_hash": "95a8814d53ec47e9f6e3ebba6e6f81d9d0c1117fea1c00f7a765cb91a0513225",
+  "resume_code_sha256": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "fixed_padding": true,
+  "padding_width": 192,
+  "selection_sha256": "cb79cfae005db03d66cf3cb3eda232e6f0ad8c41b1fc308b80359cecaf6afac4",
+  "selection_hash": "0231f9038db3302da8b8f1d64f4b6a6c0ad298b98faaa032fbb78e1c82c68d12",
+  "selection_policy": "2400 distinct broader cases with scalar-verified traces plus 384 replay; one epoch, identical data for two seeds"
+}
+{"step": 100, "epoch": 1, "loss": 0.21780728924182036, "learning_rate": 9.586751342592505e-06, "seconds": 304.9747491249873, "supervised_tokens": 14416}
+{"step": 105, "epoch": 1, "loss": 0.4385581201361131, "learning_rate": 9.542877641828789e-06, "seconds": 312.9080934159865, "supervised_tokens": 14994}
+{"step": 110, "epoch": 1, "loss": 0.2929094635523283, "learning_rate": 9.496914858739226e-06, "seconds": 320.0193616659817, "supervised_tokens": 15550}
+{"step": 115, "epoch": 1, "loss": 0.1438846722455092, "learning_rate": 9.448886743742779e-06, "seconds": 327.0311223749886, "supervised_tokens": 16322}
+{"step": 120, "epoch": 1, "loss": 0.290557005466559, "learning_rate": 9.398818114480504e-06, "seconds": 334.2764320829883, "supervised_tokens": 17076}
+{"step": 125, "epoch": 1, "loss": 0.6390089422969495, "learning_rate": 9.346734842991522e-06, "seconds": 341.13426891599374, "supervised_tokens": 17520}
+{"step": 130, "epoch": 1, "loss": 0.35935504869981244, "learning_rate": 9.292663842344085e-06, "seconds": 348.146926832982, "supervised_tokens": 18165}
+{"step": 135, "epoch": 1, "loss": 0.11882278304429925, "learning_rate": 9.236633052728774e-06, "seconds": 355.2629699159879, "supervised_tokens": 18923}
+{"step": 140, "epoch": 1, "loss": 0.5153450086278822, "learning_rate": 9.17867142702091e-06, "seconds": 362.24041770798794, "supervised_tokens": 19738}
+{"segment_saved": "experiments/generalization_20261019_seed7/progress_latest.pt", "optimizer_step": 144, "total_steps": 696}
+
+COMMAND ["qos_ai_finetune.py", "--load", "experiments/balanced_from_codegen_20261018/student.pt", "--curriculum", "curricula/generalization_20261019", "--data", "curricula/generalization_20261019/balanced_train_ready.jsonl", "--selection", "curricula/generalization_20261019/training_selection.json", "--splits", "curricula/generalization_20261019/splits.json", "--root", "fprisc=source_snapshot/fprisc", "--root", "qos=source_snapshot/qos", "--output", "experiments/generalization_20261019_seed7", "--epochs", "1", "--batch-size", "2", "--grad-accumulation", "2", "--learning-rate", "0.00001", "--max-minutes", "60", "--seed", "7", "--pad-multiple", "32", "--fixed-padding", "--mps-cache-interval", "12", "--defer-final-loss", "--segment-steps", "48", "--resume", "--device", "mps"]
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+  "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+  "data_sha256": "65f6bc6f624f5c44986754ed0bf0117e7871ae9dd8bbfc52c9d261e15dca51ab",
+  "split_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 1,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 60.0,
+  "seed": 7,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 2784,
+  "training_code_sha256": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+  "answer_tokens": 97693,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 192,
+  "pad_multiple": 32,
+  "mps_cache_interval": 12,
+  "segment_steps": 48,
+  "optimizer_plan_hash": "95a8814d53ec47e9f6e3ebba6e6f81d9d0c1117fea1c00f7a765cb91a0513225",
+  "resume_code_sha256": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "fixed_padding": true,
+  "padding_width": 192,
+  "selection_sha256": "cb79cfae005db03d66cf3cb3eda232e6f0ad8c41b1fc308b80359cecaf6afac4",
+  "selection_hash": "0231f9038db3302da8b8f1d64f4b6a6c0ad298b98faaa032fbb78e1c82c68d12",
+  "selection_policy": "2400 distinct broader cases with scalar-verified traces plus 384 replay; one epoch, identical data for two seeds"
+}
+{"step": 145, "epoch": 1, "loss": 0.30221510811086083, "learning_rate": 9.11880891581968e-06, "seconds": 370.85384454099403, "supervised_tokens": 20485}
+{"step": 150, "epoch": 1, "loss": 0.10829767873210291, "learning_rate": 9.057076451971742e-06, "seconds": 377.842323416, "supervised_tokens": 21186}
+{"step": 155, "epoch": 1, "loss": 0.4154186921961167, "learning_rate": 8.99350593458723e-06, "seconds": 384.82358316599857, "supervised_tokens": 21967}
+{"step": 160, "epoch": 1, "loss": 0.2918874479883866, "learning_rate": 8.928130212556483e-06, "seconds": 391.95087620799313, "supervised_tokens": 22760}
+{"step": 165, "epoch": 1, "loss": 0.16602399501394718, "learning_rate": 8.860983067575988e-06, "seconds": 398.9578192499903, "supervised_tokens": 23382}
+{"step": 170, "epoch": 1, "loss": 0.1293992000876121, "learning_rate": 8.792099196692315e-06, "seconds": 406.06465449999087, "supervised_tokens": 24081}
+{"step": 175, "epoch": 1, "loss": 0.11644477260356047, "learning_rate": 8.721514194373053e-06, "seconds": 413.08369400000083, "supervised_tokens": 24768}
+{"step": 180, "epoch": 1, "loss": 0.14450082832208558, "learning_rate": 8.649264534114037e-06, "seconds": 423.1841327500006, "supervised_tokens": 25460}
+{"step": 185, "epoch": 1, "loss": 0.20194681124253708, "learning_rate": 8.57538754959233e-06, "seconds": 430.0456669579871, "supervised_tokens": 26142}
+{"step": 190, "epoch": 1, "loss": 0.21857792913576976, "learning_rate": 8.499921415374744e-06, "seconds": 437.13363479099644, "supervised_tokens": 26867}
+{"segment_saved": "experiments/generalization_20261019_seed7/progress_latest.pt", "optimizer_step": 192, "total_steps": 696}
+
+COMMAND ["qos_ai_finetune.py", "--load", "experiments/balanced_from_codegen_20261018/student.pt", "--curriculum", "curricula/generalization_20261019", "--data", "curricula/generalization_20261019/balanced_train_ready.jsonl", "--selection", "curricula/generalization_20261019/training_selection.json", "--splits", "curricula/generalization_20261019/splits.json", "--root", "fprisc=source_snapshot/fprisc", "--root", "qos=source_snapshot/qos", "--output", "experiments/generalization_20261019_seed7", "--epochs", "1", "--batch-size", "2", "--grad-accumulation", "2", "--learning-rate", "0.00001", "--max-minutes", "60", "--seed", "7", "--pad-multiple", "32", "--fixed-padding", "--mps-cache-interval", "12", "--defer-final-loss", "--segment-steps", "48", "--resume", "--device", "mps"]
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+  "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+  "data_sha256": "65f6bc6f624f5c44986754ed0bf0117e7871ae9dd8bbfc52c9d261e15dca51ab",
+  "split_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 1,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 60.0,
+  "seed": 7,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 2784,
+  "training_code_sha256": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+  "answer_tokens": 97693,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 192,
+  "pad_multiple": 32,
+  "mps_cache_interval": 12,
+  "segment_steps": 48,
+  "optimizer_plan_hash": "95a8814d53ec47e9f6e3ebba6e6f81d9d0c1117fea1c00f7a765cb91a0513225",
+  "resume_code_sha256": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "fixed_padding": true,
+  "padding_width": 192,
+  "selection_sha256": "cb79cfae005db03d66cf3cb3eda232e6f0ad8c41b1fc308b80359cecaf6afac4",
+  "selection_hash": "0231f9038db3302da8b8f1d64f4b6a6c0ad298b98faaa032fbb78e1c82c68d12",
+  "selection_policy": "2400 distinct broader cases with scalar-verified traces plus 384 replay; one epoch, identical data for two seeds"
+}
+{"step": 195, "epoch": 1, "loss": 0.2712097402478828, "learning_rate": 8.422905127191837e-06, "seconds": 444.9699564170005, "supervised_tokens": 27585}
+{"step": 200, "epoch": 1, "loss": 0.5685519973436991, "learning_rate": 8.344378481787588e-06, "seconds": 451.9750711670058, "supervised_tokens": 28175}
+{"step": 205, "epoch": 1, "loss": 0.184510548337758, "learning_rate": 8.26438205635516e-06, "seconds": 459.1335769169964, "supervised_tokens": 28930}
+{"step": 210, "epoch": 1, "loss": 0.3228048493590536, "learning_rate": 8.182957187569397e-06, "seconds": 466.11075804200664, "supervised_tokens": 29698}
+{"step": 215, "epoch": 1, "loss": 0.5529967171805246, "learning_rate": 8.100145950226848e-06, "seconds": 473.1287069999962, "supervised_tokens": 30319}
+{"step": 220, "epoch": 1, "loss": 0.4147994240265432, "learning_rate": 8.015991135504407e-06, "seconds": 480.2547928330023, "supervised_tokens": 31366}
+{"step": 225, "epoch": 1, "loss": 0.09826442430604179, "learning_rate": 7.930536228847746e-06, "seconds": 487.2591240000038, "supervised_tokens": 32270}
+{"step": 230, "epoch": 1, "loss": 0.30230292545002735, "learning_rate": 7.84382538750103e-06, "seconds": 494.38213091700163, "supervised_tokens": 32786}
+{"step": 235, "epoch": 1, "loss": 0.19216955119165882, "learning_rate": 7.755903417689473e-06, "seconds": 501.39313495799433, "supervised_tokens": 33552}
+{"step": 240, "epoch": 1, "loss": 0.16937790641301795, "learning_rate": 7.666815751466537e-06, "seconds": 508.6387392500037, "supervised_tokens": 34282}
+{"segment_saved": "experiments/generalization_20261019_seed7/progress_latest.pt", "optimizer_step": 240, "total_steps": 696}
+
+COMMAND ["qos_ai_finetune.py", "--load", "experiments/balanced_from_codegen_20261018/student.pt", "--curriculum", "curricula/generalization_20261019", "--data", "curricula/generalization_20261019/balanced_train_ready.jsonl", "--selection", "curricula/generalization_20261019/training_selection.json", "--splits", "curricula/generalization_20261019/splits.json", "--root", "fprisc=source_snapshot/fprisc", "--root", "qos=source_snapshot/qos", "--output", "experiments/generalization_20261019_seed7", "--epochs", "1", "--batch-size", "2", "--grad-accumulation", "2", "--learning-rate", "0.00001", "--max-minutes", "60", "--seed", "7", "--pad-multiple", "32", "--fixed-padding", "--mps-cache-interval", "12", "--defer-final-loss", "--segment-steps", "48", "--resume", "--device", "mps"]
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+  "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+  "data_sha256": "65f6bc6f624f5c44986754ed0bf0117e7871ae9dd8bbfc52c9d261e15dca51ab",
+  "split_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 1,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 60.0,
+  "seed": 7,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 2784,
+  "training_code_sha256": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+  "answer_tokens": 97693,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 192,
+  "pad_multiple": 32,
+  "mps_cache_interval": 12,
+  "segment_steps": 48,
+  "optimizer_plan_hash": "95a8814d53ec47e9f6e3ebba6e6f81d9d0c1117fea1c00f7a765cb91a0513225",
+  "resume_code_sha256": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "fixed_padding": true,
+  "padding_width": 192,
+  "selection_sha256": "cb79cfae005db03d66cf3cb3eda232e6f0ad8c41b1fc308b80359cecaf6afac4",
+  "selection_hash": "0231f9038db3302da8b8f1d64f4b6a6c0ad298b98faaa032fbb78e1c82c68d12",
+  "selection_policy": "2400 distinct broader cases with scalar-verified traces plus 384 replay; one epoch, identical data for two seeds"
+}
+{"step": 245, "epoch": 1, "loss": 0.6410543918609619, "learning_rate": 7.576608423237776e-06, "seconds": 516.1971925420075, "supervised_tokens": 34852}
+{"step": 250, "epoch": 1, "loss": 0.32714585498370957, "learning_rate": 7.485328045973394e-06, "seconds": 523.204170958008, "supervised_tokens": 35452}
+{"step": 255, "epoch": 1, "loss": 0.3832090073737545, "learning_rate": 7.393021787121865e-06, "seconds": 531.1475591250055, "supervised_tokens": 36020}
+{"step": 260, "epoch": 1, "loss": 0.2536349834356093, "learning_rate": 7.299737344237009e-06, "seconds": 538.145293708003, "supervised_tokens": 36723}
+{"step": 265, "epoch": 1, "loss": 0.12653945741199313, "learning_rate": 7.205522920331184e-06, "seconds": 545.3083030830021, "supervised_tokens": 37417}
+{"step": 270, "epoch": 1, "loss": 0.1351704372195747, "learning_rate": 7.110427198967247e-06, "seconds": 555.0480782920058, "supervised_tokens": 38023}
+Error: command buffer exited with error status.
+	The Metal Performance Shaders operations encoded on it may not have completed.
+	Error: 
+	(null)
+	Ignored (for causing prior/excessive GPU errors) (00000004:kIOGPUCommandBufferCallbackErrorSubmissionsIgnored)
+	<AGXG13GFamilyCommandBuffer: 0x7653bc8000>
+    label = <none> 
+    device = <AGXG13GDevice: 0x103bb5f20>
+        name = Apple M1 
+    commandQueue = <AGXG13GFamilyCommandQueue: 0x103bb8720>
+        label = <none> 
+        device = <AGXG13GDevice: 0x103bb5f20>
+            name = Apple M1 
+    retainedReferences = 1
+Traceback (most recent call last):
+  File "/Users/jq/qos_ai_eval/qos_ai_finetune.py", line 261, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jq/qos_ai_eval/qos_ai_finetune.py", line 257, in main
+    fine_tune(p.parse_args())
+    ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/jq/qos_ai_eval/qos_ai_finetune.py", line 193, in fine_tune
+    raise ValueError('Device target count mismatch; no checkpoint saved')
+ValueError: Device target count mismatch; no checkpoint saved
+
+COMMAND ["qos_ai_finetune.py", "--load", "experiments/balanced_from_codegen_20261018/student.pt", "--curriculum", "curricula/generalization_20261019", "--data", "curricula/generalization_20261019/balanced_train_ready.jsonl", "--selection", "curricula/generalization_20261019/training_selection.json", "--splits", "curricula/generalization_20261019/splits.json", "--root", "fprisc=source_snapshot/fprisc", "--root", "qos=source_snapshot/qos", "--output", "experiments/generalization_20261019_seed7", "--epochs", "1", "--batch-size", "2", "--grad-accumulation", "2", "--learning-rate", "0.00001", "--max-minutes", "60", "--seed", "7", "--pad-multiple", "32", "--fixed-padding", "--mps-cache-interval", "12", "--defer-final-loss", "--segment-steps", "48", "--resume", "--device", "mps"]
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+  "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+  "data_sha256": "65f6bc6f624f5c44986754ed0bf0117e7871ae9dd8bbfc52c9d261e15dca51ab",
+  "split_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 1,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 60.0,
+  "seed": 7,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 2784,
+  "training_code_sha256": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+  "answer_tokens": 97693,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 192,
+  "pad_multiple": 32,
+  "mps_cache_interval": 12,
+  "segment_steps": 48,
+  "optimizer_plan_hash": "95a8814d53ec47e9f6e3ebba6e6f81d9d0c1117fea1c00f7a765cb91a0513225",
+  "resume_code_sha256": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "fixed_padding": true,
+  "padding_width": 192,
+  "selection_sha256": "cb79cfae005db03d66cf3cb3eda232e6f0ad8c41b1fc308b80359cecaf6afac4",
+  "selection_hash": "0231f9038db3302da8b8f1d64f4b6a6c0ad298b98faaa032fbb78e1c82c68d12",
+  "selection_policy": "2400 distinct broader cases with scalar-verified traces plus 384 replay; one epoch, identical data for two seeds"
+}
+{"step": 245, "epoch": 1, "loss": 0.6410543918609619, "learning_rate": 7.576608423237776e-06, "seconds": 516.1190458750061, "supervised_tokens": 34852}
+{"step": 250, "epoch": 1, "loss": 0.32714585498370957, "learning_rate": 7.485328045973394e-06, "seconds": 523.1161370420014, "supervised_tokens": 35452}
+{"step": 255, "epoch": 1, "loss": 0.3818963230520055, "learning_rate": 7.393021787121865e-06, "seconds": 530.2372765420005, "supervised_tokens": 36020}
+{"step": 260, "epoch": 1, "loss": 0.2547592274228433, "learning_rate": 7.299737344237009e-06, "seconds": 537.2602738330024, "supervised_tokens": 36723}
+{"step": 265, "epoch": 1, "loss": 0.12780821891058058, "learning_rate": 7.205522920331184e-06, "seconds": 544.4088476670004, "supervised_tokens": 37417}
+{"step": 270, "epoch": 1, "loss": 0.13558687750748763, "learning_rate": 7.110427198967247e-06, "seconds": 551.3559655420104, "supervised_tokens": 38023}
+{"step": 275, "epoch": 1, "loss": 0.1461943588256836, "learning_rate": 7.014499319102243e-06, "seconds": 558.3700438329979, "supervised_tokens": 38797}
+{"step": 280, "epoch": 1, "loss": 0.10833746371882977, "learning_rate": 6.91778884969574e-06, "seconds": 567.8468787080055, "supervised_tokens": 39491}
+{"step": 285, "epoch": 1, "loss": 0.1183767502124493, "learning_rate": 6.820345764096001e-06, "seconds": 574.872617208006, "supervised_tokens": 40252}
+{"segment_saved": "experiments/generalization_20261019_seed7/progress_latest.pt", "optimizer_step": 288, "total_steps": 696}
+
+COMMAND ["qos_ai_finetune.py", "--load", "experiments/balanced_from_codegen_20261018/student.pt", "--curriculum", "curricula/generalization_20261019", "--data", "curricula/generalization_20261019/balanced_train_ready.jsonl", "--selection", "curricula/generalization_20261019/training_selection.json", "--splits", "curricula/generalization_20261019/splits.json", "--root", "fprisc=source_snapshot/fprisc", "--root", "qos=source_snapshot/qos", "--output", "experiments/generalization_20261019_seed7", "--epochs", "1", "--batch-size", "2", "--grad-accumulation", "2", "--learning-rate", "0.00001", "--max-minutes", "60", "--seed", "7", "--pad-multiple", "32", "--fixed-padding", "--mps-cache-interval", "12", "--defer-final-loss", "--segment-steps", "48", "--resume", "--device", "mps"]
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+  "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+  "data_sha256": "65f6bc6f624f5c44986754ed0bf0117e7871ae9dd8bbfc52c9d261e15dca51ab",
+  "split_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 1,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 60.0,
+  "seed": 7,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 2784,
+  "training_code_sha256": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+  "answer_tokens": 97693,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 192,
+  "pad_multiple": 32,
+  "mps_cache_interval": 12,
+  "segment_steps": 48,
+  "optimizer_plan_hash": "95a8814d53ec47e9f6e3ebba6e6f81d9d0c1117fea1c00f7a765cb91a0513225",
+  "resume_code_sha256": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "fixed_padding": true,
+  "padding_width": 192,
+  "selection_sha256": "cb79cfae005db03d66cf3cb3eda232e6f0ad8c41b1fc308b80359cecaf6afac4",
+  "selection_hash": "0231f9038db3302da8b8f1d64f4b6a6c0ad298b98faaa032fbb78e1c82c68d12",
+  "selection_policy": "2400 distinct broader cases with scalar-verified traces plus 384 replay; one epoch, identical data for two seeds"
+}
+{"step": 290, "epoch": 1, "loss": 0.2821055243286905, "learning_rate": 6.722220414217165e-06, "seconds": 582.7307408329943, "supervised_tokens": 40978}
+{"step": 295, "epoch": 1, "loss": 0.1375573476155599, "learning_rate": 6.623463504520834e-06, "seconds": 589.7303094579984, "supervised_tokens": 41510}
+{"step": 300, "epoch": 1, "loss": 0.13172172271099286, "learning_rate": 6.524126065815473e-06, "seconds": 596.9902610410063, "supervised_tokens": 42211}
+{"step": 305, "epoch": 1, "loss": 0.2819456546864611, "learning_rate": 6.424259428887196e-06, "seconds": 603.8533741249994, "supervised_tokens": 42751}
+{"step": 310, "epoch": 1, "loss": 0.18715195622004516, "learning_rate": 6.323915197975511e-06, "seconds": 610.8820794579951, "supervised_tokens": 43449}
+{"step": 315, "epoch": 1, "loss": 0.816814932853553, "learning_rate": 6.2231452241078e-06, "seconds": 618.0091413329937, "supervised_tokens": 44049}
+{"step": 320, "epoch": 1, "loss": 0.15138153235117593, "learning_rate": 6.122001578306246e-06, "seconds": 625.0184642910026, "supervised_tokens": 44690}
+{"step": 325, "epoch": 1, "loss": 0.3703678602195648, "learning_rate": 6.020536524681105e-06, "seconds": 632.1711102080008, "supervised_tokens": 45401}
+{"step": 330, "epoch": 1, "loss": 0.2723384201526642, "learning_rate": 5.918802493424189e-06, "seconds": 639.1554275829985, "supervised_tokens": 45955}
+{"step": 335, "epoch": 1, "loss": 0.32692609818954044, "learning_rate": 5.816852053716522e-06, "seconds": 646.1884520000021, "supervised_tokens": 46730}
+{"segment_saved": "experiments/generalization_20261019_seed7/progress_latest.pt", "optimizer_step": 336, "total_steps": 696}
+
+COMMAND ["qos_ai_finetune.py", "--load", "experiments/balanced_from_codegen_20261018/student.pt", "--curriculum", "curricula/generalization_20261019", "--data", "curricula/generalization_20261019/balanced_train_ready.jsonl", "--selection", "curricula/generalization_20261019/training_selection.json", "--splits", "curricula/generalization_20261019/splits.json", "--root", "fprisc=source_snapshot/fprisc", "--root", "qos=source_snapshot/qos", "--output", "experiments/generalization_20261019_seed7", "--epochs", "1", "--batch-size", "2", "--grad-accumulation", "2", "--learning-rate", "0.00001", "--max-minutes", "60", "--seed", "7", "--pad-multiple", "32", "--fixed-padding", "--mps-cache-interval", "12", "--defer-final-loss", "--segment-steps", "48", "--resume", "--device", "mps"]
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+  "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+  "data_sha256": "65f6bc6f624f5c44986754ed0bf0117e7871ae9dd8bbfc52c9d261e15dca51ab",
+  "split_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 1,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 60.0,
+  "seed": 7,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 2784,
+  "training_code_sha256": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+  "answer_tokens": 97693,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 192,
+  "pad_multiple": 32,
+  "mps_cache_interval": 12,
+  "segment_steps": 48,
+  "optimizer_plan_hash": "95a8814d53ec47e9f6e3ebba6e6f81d9d0c1117fea1c00f7a765cb91a0513225",
+  "resume_code_sha256": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "fixed_padding": true,
+  "padding_width": 192,
+  "selection_sha256": "cb79cfae005db03d66cf3cb3eda232e6f0ad8c41b1fc308b80359cecaf6afac4",
+  "selection_hash": "0231f9038db3302da8b8f1d64f4b6a6c0ad298b98faaa032fbb78e1c82c68d12",
+  "selection_policy": "2400 distinct broader cases with scalar-verified traces plus 384 replay; one epoch, identical data for two seeds"
+}
+{"step": 340, "epoch": 1, "loss": 0.1562701689230429, "learning_rate": 5.714737886564205e-06, "seconds": 654.0810475420003, "supervised_tokens": 47521}
+{"step": 345, "epoch": 1, "loss": 0.1905766148721018, "learning_rate": 5.612512757576469e-06, "seconds": 661.1183443750051, "supervised_tokens": 48185}
+{"step": 350, "epoch": 1, "loss": 0.27051456390865264, "learning_rate": 5.510229489700025e-06, "seconds": 668.2651843339991, "supervised_tokens": 48905}
+{"step": 355, "epoch": 1, "loss": 0.3012709898107192, "learning_rate": 5.407940935923777e-06, "seconds": 675.282137000002, "supervised_tokens": 49480}
+{"step": 360, "epoch": 1, "loss": 0.08797607841072502, "learning_rate": 5.30569995196802e-06, "seconds": 682.5629677920078, "supervised_tokens": 50235}
+{"step": 365, "epoch": 1, "loss": 0.3212259811691091, "learning_rate": 5.203559368972227e-06, "seconds": 689.4493479999946, "supervised_tokens": 50836}
+{"step": 370, "epoch": 1, "loss": 0.23932956159114838, "learning_rate": 5.101571966195528e-06, "seconds": 696.4621794999985, "supervised_tokens": 51482}
+{"step": 375, "epoch": 1, "loss": 0.4121774904655688, "learning_rate": 4.999790443744003e-06, "seconds": 703.5989441249985, "supervised_tokens": 52101}
+{"step": 380, "epoch": 1, "loss": 0.2520507176717122, "learning_rate": 4.8982673953388815e-06, "seconds": 710.6275215420028, "supervised_tokens": 52610}
+{"segment_saved": "experiments/generalization_20261019_seed7/progress_latest.pt", "optimizer_step": 384, "total_steps": 696}
+
+COMMAND ["qos_ai_finetune.py", "--load", "experiments/balanced_from_codegen_20261018/student.pt", "--curriculum", "curricula/generalization_20261019", "--data", "curricula/generalization_20261019/balanced_train_ready.jsonl", "--selection", "curricula/generalization_20261019/training_selection.json", "--splits", "curricula/generalization_20261019/splits.json", "--root", "fprisc=source_snapshot/fprisc", "--root", "qos=source_snapshot/qos", "--output", "experiments/generalization_20261019_seed7", "--epochs", "1", "--batch-size", "2", "--grad-accumulation", "2", "--learning-rate", "0.00001", "--max-minutes", "60", "--seed", "7", "--pad-multiple", "32", "--fixed-padding", "--mps-cache-interval", "12", "--defer-final-loss", "--segment-steps", "48", "--resume", "--device", "mps"]
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+  "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+  "data_sha256": "65f6bc6f624f5c44986754ed0bf0117e7871ae9dd8bbfc52c9d261e15dca51ab",
+  "split_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 1,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 60.0,
+  "seed": 7,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 2784,
+  "training_code_sha256": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+  "answer_tokens": 97693,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 192,
+  "pad_multiple": 32,
+  "mps_cache_interval": 12,
+  "segment_steps": 48,
+  "optimizer_plan_hash": "95a8814d53ec47e9f6e3ebba6e6f81d9d0c1117fea1c00f7a765cb91a0513225",
+  "resume_code_sha256": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "fixed_padding": true,
+  "padding_width": 192,
+  "selection_sha256": "cb79cfae005db03d66cf3cb3eda232e6f0ad8c41b1fc308b80359cecaf6afac4",
+  "selection_hash": "0231f9038db3302da8b8f1d64f4b6a6c0ad298b98faaa032fbb78e1c82c68d12",
+  "selection_policy": "2400 distinct broader cases with scalar-verified traces plus 384 replay; one epoch, identical data for two seeds"
+}
+{"step": 385, "epoch": 1, "loss": 0.20189279242406918, "learning_rate": 4.797055281139703e-06, "seconds": 718.6347066669987, "supervised_tokens": 53203}
+{"step": 390, "epoch": 1, "loss": 0.3058451747035121, "learning_rate": 4.696206400636501e-06, "seconds": 725.6043017089978, "supervised_tokens": 53773}
+{"step": 395, "epoch": 1, "loss": 0.21682607477361507, "learning_rate": 4.595772865625005e-06, "seconds": 732.626458209008, "supervised_tokens": 54461}
+{"step": 400, "epoch": 1, "loss": 0.09588016030247226, "learning_rate": 4.495806573278839e-06, "seconds": 739.7464095000032, "supervised_tokens": 55097}
+{"step": 405, "epoch": 1, "loss": 0.07775284057885558, "learning_rate": 4.396359179332613e-06, "seconds": 746.7272455839993, "supervised_tokens": 55726}
+{"step": 410, "epoch": 1, "loss": 0.21132092648837233, "learning_rate": 4.297482071389775e-06, "seconds": 753.8325178340019, "supervised_tokens": 56279}
+{"step": 415, "epoch": 1, "loss": 0.106958176872947, "learning_rate": 4.1992263423690146e-06, "seconds": 760.8324820840062, "supervised_tokens": 57066}
+{"step": 420, "epoch": 1, "loss": 0.09667753642552519, "learning_rate": 4.101642764102946e-06, "seconds": 768.086720709005, "supervised_tokens": 57672}
+{"step": 425, "epoch": 1, "loss": 0.12508337170469994, "learning_rate": 4.0047817611027015e-06, "seconds": 774.9541802089952, "supervised_tokens": 58441}
+{"step": 430, "epoch": 1, "loss": 0.19357021476911462, "learning_rate": 3.908693384501992e-06, "seconds": 781.969248459005, "supervised_tokens": 59043}
+{"segment_saved": "experiments/generalization_20261019_seed7/progress_latest.pt", "optimizer_step": 432, "total_steps": 696}
+
+COMMAND ["qos_ai_finetune.py", "--load", "experiments/balanced_from_codegen_20261018/student.pt", "--curriculum", "curricula/generalization_20261019", "--data", "curricula/generalization_20261019/balanced_train_ready.jsonl", "--selection", "curricula/generalization_20261019/training_selection.json", "--splits", "curricula/generalization_20261019/splits.json", "--root", "fprisc=source_snapshot/fprisc", "--root", "qos=source_snapshot/qos", "--output", "experiments/generalization_20261019_seed7", "--epochs", "1", "--batch-size", "2", "--grad-accumulation", "2", "--learning-rate", "0.00001", "--max-minutes", "60", "--seed", "7", "--pad-multiple", "32", "--fixed-padding", "--mps-cache-interval", "12", "--defer-final-loss", "--segment-steps", "48", "--resume", "--device", "mps"]
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+  "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+  "data_sha256": "65f6bc6f624f5c44986754ed0bf0117e7871ae9dd8bbfc52c9d261e15dca51ab",
+  "split_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 1,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 60.0,
+  "seed": 7,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 2784,
+  "training_code_sha256": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+  "answer_tokens": 97693,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 192,
+  "pad_multiple": 32,
+  "mps_cache_interval": 12,
+  "segment_steps": 48,
+  "optimizer_plan_hash": "95a8814d53ec47e9f6e3ebba6e6f81d9d0c1117fea1c00f7a765cb91a0513225",
+  "resume_code_sha256": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "fixed_padding": true,
+  "padding_width": 192,
+  "selection_sha256": "cb79cfae005db03d66cf3cb3eda232e6f0ad8c41b1fc308b80359cecaf6afac4",
+  "selection_hash": "0231f9038db3302da8b8f1d64f4b6a6c0ad298b98faaa032fbb78e1c82c68d12",
+  "selection_policy": "2400 distinct broader cases with scalar-verified traces plus 384 replay; one epoch, identical data for two seeds"
+}
+{"step": 435, "epoch": 1, "loss": 0.20946530356926005, "learning_rate": 3.81342728619411e-06, "seconds": 789.8939706259989, "supervised_tokens": 59714}
+{"step": 440, "epoch": 1, "loss": 0.32299022674560546, "learning_rate": 3.7190326931752374e-06, "seconds": 796.8997313340078, "supervised_tokens": 60505}
+{"step": 445, "epoch": 1, "loss": 0.15495156374844637, "learning_rate": 3.625558382107298e-06, "seconds": 804.0641914169973, "supervised_tokens": 61176}
+{"step": 450, "epoch": 1, "loss": 0.2645888551076253, "learning_rate": 3.5330526541135156e-06, "seconds": 816.022312126006, "supervised_tokens": 61752}
+{"step": 455, "epoch": 1, "loss": 0.2344092187427339, "learning_rate": 3.4415633098197136e-06, "seconds": 823.0246479589987, "supervised_tokens": 62527}
+{"step": 460, "epoch": 1, "loss": 0.1265343017578125, "learning_rate": 3.3511376246542115e-06, "seconds": 830.1342591669963, "supervised_tokens": 63166}
+{"step": 465, "epoch": 1, "loss": 0.16437386493293607, "learning_rate": 3.2618223244191283e-06, "seconds": 837.1509092089982, "supervised_tokens": 63741}
+{"step": 470, "epoch": 1, "loss": 0.17315114212036134, "learning_rate": 3.1736635611456846e-06, "seconds": 844.2989668340015, "supervised_tokens": 64393}
+{"step": 475, "epoch": 1, "loss": 0.4315444459306433, "learning_rate": 3.0867068892459944e-06, "seconds": 851.3095441260084, "supervised_tokens": 64980}
+{"step": 480, "epoch": 1, "loss": 0.3483580920161033, "learning_rate": 3.0009972419736654e-06, "seconds": 858.6437731670012, "supervised_tokens": 65820}
+{"segment_saved": "experiments/generalization_20261019_seed7/progress_latest.pt", "optimizer_step": 480, "total_steps": 696}
+
+COMMAND ["qos_ai_finetune.py", "--load", "experiments/balanced_from_codegen_20261018/student.pt", "--curriculum", "curricula/generalization_20261019", "--data", "curricula/generalization_20261019/balanced_train_ready.jsonl", "--selection", "curricula/generalization_20261019/training_selection.json", "--splits", "curricula/generalization_20261019/splits.json", "--root", "fprisc=source_snapshot/fprisc", "--root", "qos=source_snapshot/qos", "--output", "experiments/generalization_20261019_seed7", "--epochs", "1", "--batch-size", "2", "--grad-accumulation", "2", "--learning-rate", "0.00001", "--max-minutes", "60", "--seed", "7", "--pad-multiple", "32", "--fixed-padding", "--mps-cache-interval", "12", "--defer-final-loss", "--segment-steps", "48", "--resume", "--device", "mps"]
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+  "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+  "data_sha256": "65f6bc6f624f5c44986754ed0bf0117e7871ae9dd8bbfc52c9d261e15dca51ab",
+  "split_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 1,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 60.0,
+  "seed": 7,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 2784,
+  "training_code_sha256": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+  "answer_tokens": 97693,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 192,
+  "pad_multiple": 32,
+  "mps_cache_interval": 12,
+  "segment_steps": 48,
+  "optimizer_plan_hash": "95a8814d53ec47e9f6e3ebba6e6f81d9d0c1117fea1c00f7a765cb91a0513225",
+  "resume_code_sha256": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "fixed_padding": true,
+  "padding_width": 192,
+  "selection_sha256": "cb79cfae005db03d66cf3cb3eda232e6f0ad8c41b1fc308b80359cecaf6afac4",
+  "selection_hash": "0231f9038db3302da8b8f1d64f4b6a6c0ad298b98faaa032fbb78e1c82c68d12",
+  "selection_policy": "2400 distinct broader cases with scalar-verified traces plus 384 replay; one epoch, identical data for two seeds"
+}
+{"step": 485, "epoch": 1, "loss": 0.12423318418963201, "learning_rate": 2.9165789082053685e-06, "seconds": 866.2759029169974, "supervised_tokens": 66463}
+{"step": 490, "epoch": 1, "loss": 0.09709369589429383, "learning_rate": 2.8334955095553764e-06, "seconds": 873.2767145839898, "supervised_tokens": 67122}
+{"step": 495, "epoch": 1, "loss": 0.10894710421562195, "learning_rate": 2.7517899778349056e-06, "seconds": 880.3858722089935, "supervised_tokens": 67887}
+{"step": 500, "epoch": 1, "loss": 0.10526872717815897, "learning_rate": 2.671504532867896e-06, "seconds": 887.3865812919976, "supervised_tokens": 68465}
+{"step": 505, "epoch": 1, "loss": 0.259872130233876, "learning_rate": 2.5926806606746913e-06, "seconds": 894.5298799589946, "supervised_tokens": 69149}
+{"step": 510, "epoch": 1, "loss": 0.09526405778042106, "learning_rate": 2.5153590920349112e-06, "seconds": 901.4928388760018, "supervised_tokens": 69762}
+{"step": 515, "epoch": 1, "loss": 0.1387288516826844, "learning_rate": 2.43957978144057e-06, "seconds": 908.516409125994, "supervised_tokens": 70668}
+{"step": 520, "epoch": 1, "loss": 0.06112921946119554, "learning_rate": 2.3653818864503293e-06, "seconds": 915.6555136669922, "supervised_tokens": 71379}
+{"step": 525, "epoch": 1, "loss": 0.2073496998967351, "learning_rate": 2.292803747455559e-06, "seconds": 922.6680710009969, "supervised_tokens": 72200}
+{"segment_saved": "experiments/generalization_20261019_seed7/progress_latest.pt", "optimizer_step": 528, "total_steps": 696}
+
+COMMAND ["qos_ai_finetune.py", "--load", "experiments/balanced_from_codegen_20261018/student.pt", "--curriculum", "curricula/generalization_20261019", "--data", "curricula/generalization_20261019/balanced_train_ready.jsonl", "--selection", "curricula/generalization_20261019/training_selection.json", "--splits", "curricula/generalization_20261019/splits.json", "--root", "fprisc=source_snapshot/fprisc", "--root", "qos=source_snapshot/qos", "--output", "experiments/generalization_20261019_seed7", "--epochs", "1", "--batch-size", "2", "--grad-accumulation", "2", "--learning-rate", "0.00001", "--max-minutes", "60", "--seed", "7", "--pad-multiple", "32", "--fixed-padding", "--mps-cache-interval", "12", "--defer-final-loss", "--segment-steps", "48", "--resume", "--device", "mps"]
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+  "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+  "data_sha256": "65f6bc6f624f5c44986754ed0bf0117e7871ae9dd8bbfc52c9d261e15dca51ab",
+  "split_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 1,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 60.0,
+  "seed": 7,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 2784,
+  "training_code_sha256": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+  "answer_tokens": 97693,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 192,
+  "pad_multiple": 32,
+  "mps_cache_interval": 12,
+  "segment_steps": 48,
+  "optimizer_plan_hash": "95a8814d53ec47e9f6e3ebba6e6f81d9d0c1117fea1c00f7a765cb91a0513225",
+  "resume_code_sha256": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "fixed_padding": true,
+  "padding_width": 192,
+  "selection_sha256": "cb79cfae005db03d66cf3cb3eda232e6f0ad8c41b1fc308b80359cecaf6afac4",
+  "selection_hash": "0231f9038db3302da8b8f1d64f4b6a6c0ad298b98faaa032fbb78e1c82c68d12",
+  "selection_policy": "2400 distinct broader cases with scalar-verified traces plus 384 replay; one epoch, identical data for two seeds"
+}
+{"step": 530, "epoch": 1, "loss": 0.06815919240315756, "learning_rate": 2.221882867868638e-06, "seconds": 930.442407251001, "supervised_tokens": 73066}
+{"step": 535, "epoch": 1, "loss": 0.31372225961901923, "learning_rate": 2.1526558947437737e-06, "seconds": 937.4677973759972, "supervised_tokens": 73800}
+{"step": 540, "epoch": 1, "loss": 0.15260159647142565, "learning_rate": 2.0851585998403005e-06, "seconds": 944.7316794590006, "supervised_tokens": 74633}
+{"step": 545, "epoch": 1, "loss": 0.15777348135119287, "learning_rate": 2.0194258611382898e-06, "seconds": 951.579201458997, "supervised_tokens": 75286}
+{"step": 550, "epoch": 1, "loss": 0.274079053415417, "learning_rate": 1.955491644816e-06, "seconds": 958.5707360840024, "supervised_tokens": 75940}
+{"step": 555, "epoch": 1, "loss": 1.4018613121726295, "learning_rate": 1.8933889876984751e-06, "seconds": 965.6835280840023, "supervised_tokens": 76746}
+{"step": 560, "epoch": 1, "loss": 0.2890978521770901, "learning_rate": 1.8331499801863834e-06, "seconds": 972.6966640419996, "supervised_tokens": 77566}
+{"step": 565, "epoch": 1, "loss": 0.17754328897757124, "learning_rate": 1.7748057496738913e-06, "seconds": 979.8590453759971, "supervised_tokens": 78330}
+{"step": 570, "epoch": 1, "loss": 0.30503034017172204, "learning_rate": 1.718386444464154e-06, "seconds": 986.8359437089966, "supervised_tokens": 79118}
+{"step": 575, "epoch": 1, "loss": 0.23706861027700457, "learning_rate": 1.6639212181907467e-06, "seconds": 993.8429673760111, "supervised_tokens": 79845}
+{"segment_saved": "experiments/generalization_20261019_seed7/progress_latest.pt", "optimizer_step": 576, "total_steps": 696}
+
+COMMAND ["qos_ai_finetune.py", "--load", "experiments/balanced_from_codegen_20261018/student.pt", "--curriculum", "curricula/generalization_20261019", "--data", "curricula/generalization_20261019/balanced_train_ready.jsonl", "--selection", "curricula/generalization_20261019/training_selection.json", "--splits", "curricula/generalization_20261019/splits.json", "--root", "fprisc=source_snapshot/fprisc", "--root", "qos=source_snapshot/qos", "--output", "experiments/generalization_20261019_seed7", "--epochs", "1", "--batch-size", "2", "--grad-accumulation", "2", "--learning-rate", "0.00001", "--max-minutes", "60", "--seed", "7", "--pad-multiple", "32", "--fixed-padding", "--mps-cache-interval", "12", "--defer-final-loss", "--segment-steps", "48", "--resume", "--device", "mps"]
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+  "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+  "data_sha256": "65f6bc6f624f5c44986754ed0bf0117e7871ae9dd8bbfc52c9d261e15dca51ab",
+  "split_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 1,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 60.0,
+  "seed": 7,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 2784,
+  "training_code_sha256": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+  "answer_tokens": 97693,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 192,
+  "pad_multiple": 32,
+  "mps_cache_interval": 12,
+  "segment_steps": 48,
+  "optimizer_plan_hash": "95a8814d53ec47e9f6e3ebba6e6f81d9d0c1117fea1c00f7a765cb91a0513225",
+  "resume_code_sha256": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "fixed_padding": true,
+  "padding_width": 192,
+  "selection_sha256": "cb79cfae005db03d66cf3cb3eda232e6f0ad8c41b1fc308b80359cecaf6afac4",
+  "selection_hash": "0231f9038db3302da8b8f1d64f4b6a6c0ad298b98faaa032fbb78e1c82c68d12",
+  "selection_policy": "2400 distinct broader cases with scalar-verified traces plus 384 replay; one epoch, identical data for two seeds"
+}
+{"step": 580, "epoch": 1, "loss": 0.31177316966809726, "learning_rate": 1.6114382147530545e-06, "seconds": 1001.6214220429974, "supervised_tokens": 80741}
+{"step": 585, "epoch": 1, "loss": 0.1649599016448598, "learning_rate": 1.5609645537734364e-06, "seconds": 1008.619718167989, "supervised_tokens": 81556}
+{"step": 590, "epoch": 1, "loss": 0.13203983306884765, "learning_rate": 1.5125263165836606e-06, "seconds": 1015.7269827929995, "supervised_tokens": 82357}
+{"step": 595, "epoch": 1, "loss": 0.15311449321348275, "learning_rate": 1.4661485327478578e-06, "seconds": 1022.7422557509999, "supervised_tokens": 83024}
+{"step": 600, "epoch": 1, "loss": 0.06209650093858892, "learning_rate": 1.4218551671289557e-06, "seconds": 1029.9992112089967, "supervised_tokens": 83728}
+{"step": 605, "epoch": 1, "loss": 0.12844030231448775, "learning_rate": 1.3796691075052828e-06, "seconds": 1036.8723340009892, "supervised_tokens": 84498}
+{"step": 610, "epoch": 1, "loss": 0.05286309622429513, "learning_rate": 1.3396121527437236e-06, "seconds": 1043.8883068339928, "supervised_tokens": 85220}
+{"step": 615, "epoch": 1, "loss": 0.16081910300406682, "learning_rate": 1.301705001535567e-06, "seconds": 1051.0047015429882, "supervised_tokens": 85985}
+{"step": 620, "epoch": 1, "loss": 0.43983599082710817, "learning_rate": 1.2659672417008328e-06, "seconds": 1058.0146999589924, "supervised_tokens": 86619}
+{"segment_saved": "experiments/generalization_20261019_seed7/progress_latest.pt", "optimizer_step": 624, "total_steps": 696}
+
+COMMAND ["qos_ai_finetune.py", "--load", "experiments/balanced_from_codegen_20261018/student.pt", "--curriculum", "curricula/generalization_20261019", "--data", "curricula/generalization_20261019/balanced_train_ready.jsonl", "--selection", "curricula/generalization_20261019/training_selection.json", "--splits", "curricula/generalization_20261019/splits.json", "--root", "fprisc=source_snapshot/fprisc", "--root", "qos=source_snapshot/qos", "--output", "experiments/generalization_20261019_seed7", "--epochs", "1", "--batch-size", "2", "--grad-accumulation", "2", "--learning-rate", "0.00001", "--max-minutes", "60", "--seed", "7", "--pad-multiple", "32", "--fixed-padding", "--mps-cache-interval", "12", "--defer-final-loss", "--segment-steps", "48", "--resume", "--device", "mps"]
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+  "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+  "data_sha256": "65f6bc6f624f5c44986754ed0bf0117e7871ae9dd8bbfc52c9d261e15dca51ab",
+  "split_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 1,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 60.0,
+  "seed": 7,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 2784,
+  "training_code_sha256": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+  "answer_tokens": 97693,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 192,
+  "pad_multiple": 32,
+  "mps_cache_interval": 12,
+  "segment_steps": 48,
+  "optimizer_plan_hash": "95a8814d53ec47e9f6e3ebba6e6f81d9d0c1117fea1c00f7a765cb91a0513225",
+  "resume_code_sha256": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "fixed_padding": true,
+  "padding_width": 192,
+  "selection_sha256": "cb79cfae005db03d66cf3cb3eda232e6f0ad8c41b1fc308b80359cecaf6afac4",
+  "selection_hash": "0231f9038db3302da8b8f1d64f4b6a6c0ad298b98faaa032fbb78e1c82c68d12",
+  "selection_policy": "2400 distinct broader cases with scalar-verified traces plus 384 replay; one epoch, identical data for two seeds"
+}
+{"step": 625, "epoch": 1, "loss": 0.16889741968981084, "learning_rate": 1.2324173400666304e-06, "seconds": 1065.8277738339966, "supervised_tokens": 87350}
+{"step": 630, "epoch": 1, "loss": 0.23637297749519348, "learning_rate": 1.2010726329247671e-06, "seconds": 1072.792564791991, "supervised_tokens": 88182}
+{"step": 635, "epoch": 1, "loss": 0.18236088608250473, "learning_rate": 1.1719493170735381e-06, "seconds": 1079.793287376, "supervised_tokens": 88938}
+{"step": 640, "epoch": 1, "loss": 0.26680758771187857, "learning_rate": 1.145062441448332e-06, "seconds": 1086.87374929199, "supervised_tokens": 89530}
+{"step": 645, "epoch": 1, "loss": 0.18211058172255912, "learning_rate": 1.1204258993453704e-06, "seconds": 1093.8714419169992, "supervised_tokens": 90342}
+{"step": 650, "epoch": 1, "loss": 0.07832434751037368, "learning_rate": 1.0980524212426044e-06, "seconds": 1100.9779572919942, "supervised_tokens": 91099}
+{"step": 655, "epoch": 1, "loss": 0.07939803014036084, "learning_rate": 1.0779535682214746e-06, "seconds": 1107.974225041995, "supervised_tokens": 91739}
+{"step": 660, "epoch": 1, "loss": 0.2659577222970816, "learning_rate": 1.0601397259929359e-06, "seconds": 1115.2147140419984, "supervised_tokens": 92317}
+{"step": 665, "epoch": 1, "loss": 0.19959716707746558, "learning_rate": 1.0446200995308342e-06, "seconds": 1122.0634728339937, "supervised_tokens": 92928}
+{"step": 670, "epoch": 1, "loss": 0.11597533815914822, "learning_rate": 1.031402708315407e-06, "seconds": 1129.0538271669939, "supervised_tokens": 93760}
+{"segment_saved": "experiments/generalization_20261019_seed7/progress_latest.pt", "optimizer_step": 672, "total_steps": 696}
+
+COMMAND ["qos_ai_finetune.py", "--load", "experiments/balanced_from_codegen_20261018/student.pt", "--curriculum", "curricula/generalization_20261019", "--data", "curricula/generalization_20261019/balanced_train_ready.jsonl", "--selection", "curricula/generalization_20261019/training_selection.json", "--splits", "curricula/generalization_20261019/splits.json", "--root", "fprisc=source_snapshot/fprisc", "--root", "qos=source_snapshot/qos", "--output", "experiments/generalization_20261019_seed7", "--epochs", "1", "--batch-size", "2", "--grad-accumulation", "2", "--learning-rate", "0.00001", "--max-minutes", "60", "--seed", "7", "--pad-multiple", "32", "--fixed-padding", "--mps-cache-interval", "12", "--defer-final-loss", "--segment-steps", "48", "--resume", "--device", "mps"]
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+  "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+  "data_sha256": "65f6bc6f624f5c44986754ed0bf0117e7871ae9dd8bbfc52c9d261e15dca51ab",
+  "split_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 1,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 60.0,
+  "seed": 7,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 2784,
+  "training_code_sha256": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+  "answer_tokens": 97693,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 192,
+  "pad_multiple": 32,
+  "mps_cache_interval": 12,
+  "segment_steps": 48,
+  "optimizer_plan_hash": "95a8814d53ec47e9f6e3ebba6e6f81d9d0c1117fea1c00f7a765cb91a0513225",
+  "resume_code_sha256": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "fixed_padding": true,
+  "padding_width": 192,
+  "selection_sha256": "cb79cfae005db03d66cf3cb3eda232e6f0ad8c41b1fc308b80359cecaf6afac4",
+  "selection_hash": "0231f9038db3302da8b8f1d64f4b6a6c0ad298b98faaa032fbb78e1c82c68d12",
+  "selection_policy": "2400 distinct broader cases with scalar-verified traces plus 384 replay; one epoch, identical data for two seeds"
+}
+{"step": 675, "epoch": 1, "loss": 0.19829462314474172, "learning_rate": 1.020494382189361e-06, "seconds": 1136.837069917994, "supervised_tokens": 94448}
+{"step": 680, "epoch": 1, "loss": 0.11479712889446475, "learning_rate": 1.0119007578286814e-06, "seconds": 1143.8524048339896, "supervised_tokens": 95301}
+{"step": 685, "epoch": 1, "loss": 0.35285375799451557, "learning_rate": 1.005626275829983e-06, "seconds": 1150.9891659179993, "supervised_tokens": 96020}
+{"step": 690, "epoch": 1, "loss": 0.4262139299790636, "learning_rate": 1.0016741784159118e-06, "seconds": 1157.9905118339957, "supervised_tokens": 96766}
+{"step": 695, "epoch": 1, "loss": 0.08626578621945138, "learning_rate": 1.000046507759788e-06, "seconds": 1165.0067697509949, "supervised_tokens": 97512}
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+  "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+  "data_sha256": "65f6bc6f624f5c44986754ed0bf0117e7871ae9dd8bbfc52c9d261e15dca51ab",
+  "split_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 1,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 60.0,
+  "seed": 7,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 2784,
+  "training_code_sha256": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+  "answer_tokens": 97693,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 192,
+  "pad_multiple": 32,
+  "mps_cache_interval": 12,
+  "segment_steps": 48,
+  "optimizer_plan_hash": "95a8814d53ec47e9f6e3ebba6e6f81d9d0c1117fea1c00f7a765cb91a0513225",
+  "resume_code_sha256": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "fixed_padding": true,
+  "padding_width": 192,
+  "selection_sha256": "cb79cfae005db03d66cf3cb3eda232e6f0ad8c41b1fc308b80359cecaf6afac4",
+  "selection_hash": "0231f9038db3302da8b8f1d64f4b6a6c0ad298b98faaa032fbb78e1c82c68d12",
+  "selection_policy": "2400 distinct broader cases with scalar-verified traces plus 384 replay; one epoch, identical data for two seeds",
+  "optimizer_steps": 696,
+  "epochs_completed": 1,
+  "examples_seen": 2784,
+  "supervised_tokens": 97693,
+  "initial_training_loss": 2.146795089423076,
+  "final_training_loss": null,
+  "final_training_loss_deferred": true,
+  "elapsed_seconds": 1166.669990126,
+  "budget_stop": false,
+  "segments_completed": 15,
+  "resumed_final_segment_from_step": 672,
+  "checkpoint_sha256": "f51187bc5176b2711f22b4c1f631b75c134951fc12cd25c4441a6ea9a5b51de2"
+}

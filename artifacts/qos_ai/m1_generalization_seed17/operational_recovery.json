@@ -1,0 +1,10 @@
+{
+  "saved_step": 384,
+  "discarded_unsaved_records": 108,
+  "reason": "Three 48-update MPS attempts failed near 35-40 updates; target-count safety checks rejected them.",
+  "original_process_chunk": 48,
+  "recovery_process_chunk": 16,
+  "data_order_lr_optimizer_loss_and_total_updates_unchanged": true,
+  "code_sha256": "8661f2b27fe0fe80c73fb03a90430b109938f2059a95c520236ae5445722cd1f",
+  "step_code_sha256": "82de15255949a490ec814ae6e5643292073f682d1ccc7ace827b8068195ed0a9"
+}

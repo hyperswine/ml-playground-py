@@ -1,0 +1,484 @@
+== 2026-09-25 15:45:43 (+0 min) ask: rounds 7-15, 5 all questions per chunk
+81900 question/answer pairs to generate for rounds 7-15 (47572 already in /workspace/qos_ai_4b/qos_ai/qa.jsonl)
+Generating with vllm on cuda
+INFO 09-25 15:48:34 [api_utils.py:286] non-default args: {'dtype': 'bfloat16', 'seed': 7, 'max_model_len': 4096, 'gpu_memory_utilization': 0.75, 'disable_log_stats': True, 'limit_mm_per_prompt': {'image': 0, 'video': 0}, 'model': 'Qwen/Qwen3.5-4B'}
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+INFO 09-25 15:50:34 [model.py:692] Resolved architecture: Qwen3_5ForConditionalGeneration
+INFO 09-25 15:50:34 [model.py:2030] Using max model len 4096
+WARNING 09-25 15:50:34 [model.py:994] Model does not support mm_device_do_normalize, forcing mm_device_do_normalize = False.
+INFO 09-25 15:50:44 [registry.py:146] All limits of multimodal modalities supported by the model are set to 0, running in text-only mode.
+INFO 09-25 15:50:44 [model.py:900] Disabled mm_prefix attention mode because multimodal inputs are configuration-disabled. Attention backends without mm_prefix support may now be selected.
+INFO 09-25 15:50:44 [scheduler.py:288] Chunked prefill is enabled with max_num_batched_tokens=8192.
+INFO 09-25 15:50:44 [config.py:625] Mamba cache mode is set to 'align' for Qwen3_5ForConditionalGeneration by default when prefix caching is enabled
+Parse safetensors files:   0%|          | 0/2 [00:00<?, ?it/s]Parse safetensors files:  50%|█████     | 1/2 [00:00<00:00,  2.97it/s]Parse safetensors files: 100%|██████████| 2/2 [00:00<00:00,  5.27it/s]
+INFO 09-25 15:50:44 [kernel.py:416] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'], gelu_and_mul_sparse=['triton', 'native'])
+WARNING 09-25 15:50:50 [system_utils.py:157] We must use the `spawn` multiprocessing start method. Overriding VLLM_WORKER_MULTIPROC_METHOD to 'spawn'. See https://docs.vllm.ai/en/latest/usage/troubleshooting.html#python-multiprocessing for more information. Reasons: CUDA is initialized
+(EngineCore pid=2019) INFO 09-25 15:52:29 [core.py:123] Initializing a V1 LLM engine (v0.30.0) with config: model='Qwen/Qwen3.5-4B', speculative_config=None, tokenizer='Qwen/Qwen3.5-4B', skip_tokenizer_init=False, tokenizer_mode=auto, revision=main, tokenizer_revision=main, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=None, quantization_config=None, enforce_eager=False, enable_return_routed_experts=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, per_request_spec_decode_metrics='none', kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_mode='warn', jit_monitor_verbose=False), seed=7, served_model_name=Qwen/Qwen3.5-4B, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.VLLM_COMPILE: 3>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['none'], 'ir_enable_torch_wrap': True, 'splitting_ops': ['vllm::unified_attention_with_output', 'vllm::unified_mla_attention_with_output', 'vllm::mamba_mixer2', 'vllm::mamba_mixer', 'vllm::short_conv', 'vllm::qwen4_exp_ple_short_conv', 'vllm::qwen4_exp_qsa_with_output', 'vllm::linear_attention', 'vllm::qwen_gdn_attention_core', 'vllm::qwen_gdn_attention_core_fused_norm_packed', 'vllm::gdn_attention_core_xpu', 'vllm::olmo_hybrid_gdn_full_forward', 'vllm::sparse_attn_indexer', 'vllm::rocm_aiter_sparse_attn_indexer', 'vllm::deepseek_v4_attention', 'vllm::hpc_rope_norm_forward', 'vllm::unified_kv_cache_update', 'vllm::unified_mla_kv_cache_update'], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'compile_sizes': [], 'compile_ranges_endpoints': [8192], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.FULL_AND_PIECEWISE: (2, 1)>, 'cudagraph_num_of_warmups': 1, 'cudagraph_capture_sizes': [1, 2, 4, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128, 136, 144, 152, 160, 168, 176, 184, 192, 200, 208, 216, 224, 232, 240, 248, 256, 272, 288, 304, 320, 336, 352, 368, 384, 400, 416, 432, 448, 464, 480, 496, 512], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': False, 'fuse_act_quant': False, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False, 'enable_qk_norm_rope_fusion': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False, 'fuse_qk_norm_rope_kvcache': False}, 'max_cudagraph_capture_size': 512, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'], gelu_and_mul_sparse=['triton', 'native']), enable_flashinfer_autotune=True, enable_cutedsl_warmup=True, enable_jit_warmup=True, moe_backend='auto', sparse_indexer_topk_backend='auto', linear_backend='auto', linear_backend_per_quant=None)
+(EngineCore pid=2019) INFO 09-25 15:52:42 [registry.py:146] All limits of multimodal modalities supported by the model are set to 0, running in text-only mode.
+(EngineCore pid=2019) INFO 09-25 15:52:43 [parallel_state.py:1827] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_e63fd578cbb743dda129dd4b6a62e04f backend=nccl
+(EngineCore pid=2019) INFO 09-25 15:52:43 [parallel_state.py:2267] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, ETP rank 0, EP rank N/A, EPLB rank N/A
+(EngineCore pid=2019) INFO 09-25 15:52:43 [gpu_worker.py:441] Using V2 Model Runner
+(EngineCore pid=2019) INFO 09-25 15:52:44 [model_runner.py:396] Loading model from scratch...
+(EngineCore pid=2019) INFO 09-25 15:52:44 [cuda.py:597] Using backend AttentionBackendEnum.FLASH_ATTN for vit attention
+(EngineCore pid=2019) INFO 09-25 15:52:44 [mm_encoder_attention.py:372] Using AttentionBackendEnum.FLASH_ATTN for MMEncoderAttention.
+(EngineCore pid=2019) INFO 09-25 15:52:45 [qwen_gdn_linear_attn.py:176] Using Triton/FLA GDN prefill kernel (requested=auto, head_k_dim=128).
+(EngineCore pid=2019) INFO 09-25 15:52:45 [qwen_gdn_linear_attn.py:528] GDN decode kernel: cuda
+(EngineCore pid=2019) INFO 09-25 15:53:06 [cuda.py:538] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION'].
+(EngineCore pid=2019) INFO 09-25 15:53:06 [flash_attn.py:1116] Using FlashAttention version 2
+(EngineCore pid=2019) Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+(EngineCore pid=2019) INFO 09-25 15:54:31 [weight_utils.py:558] Time spent downloading weights for Qwen/Qwen3.5-4B: 81.518822 seconds
+(EngineCore pid=2019) INFO 09-25 15:54:31 [weight_utils.py:895] Filesystem type for checkpoints: FUSE. Checkpoint size: 8.68 GiB. Available RAM: 208.20 GiB.
+(EngineCore pid=2019) INFO 09-25 15:54:31 [weight_utils.py:918] Auto-prefetch is disabled because the filesystem (FUSE) is not a recognized network FS (NFS/Lustre). If you want to force prefetching, start vLLM with --safetensors-load-strategy=prefetch.
+(EngineCore pid=2019) Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
+(EngineCore pid=2019) Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.10it/s]
+(EngineCore pid=2019) Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.07it/s]
+(EngineCore pid=2019) Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.08it/s]
+(EngineCore pid=2019) 
+(EngineCore pid=2019) INFO 09-25 15:54:33 [default_loader.py:430] Loading weights took 2.11 seconds
+(EngineCore pid=2019) INFO 09-25 15:54:34 [model_runner.py:428] Model loading took 7.99 GiB memory and 110.132985 seconds
+(EngineCore pid=2019) INFO 09-25 15:54:35 [topk_topp_sampler.py:78] Using FlashInfer for top-p & top-k sampling.
+(EngineCore pid=2019) INFO 09-25 15:54:35 [interface.py:933] Setting attention block size to 528 tokens to ensure that attention page size is >= mamba page size.
+(EngineCore pid=2019) INFO 09-25 15:54:35 [interface.py:957] Padding mamba page size by 0.76% to ensure that mamba page size and attention page size are exactly equal.
+(EngineCore pid=2019) INFO 09-25 15:54:35 [utils.py:320] Using LBNHC KV cache layout.
+(EngineCore pid=2019) INFO 09-25 15:55:02 [backends.py:1094] Using cache directory: /root/.cache/vllm/torch_compile_cache/c9556951c4/rank_0_0/backbone for vLLM's torch.compile
+(EngineCore pid=2019) INFO 09-25 15:55:02 [backends.py:1155] Dynamo bytecode transform time: 6.93 s
+(EngineCore pid=2019) INFO 09-25 15:55:18 [backends.py:393] Compiling a graph for compile range (1, 8192) takes 16.21 s
+(EngineCore pid=2019) INFO 09-25 15:55:24 [backends.py:920] collected artifacts: 33 entries, 12 artifacts, 12461469 bytes total
+(EngineCore pid=2019) INFO 09-25 15:55:24 [decorators.py:719] saved AOT compiled function to /root/.cache/vllm/torch_compile_cache/torch_aot_compile/3f258c4b91119f0833cfcd38e14e8525735a4d10d97ed0979ada72e611e855e9/rank_0_0/model
+(EngineCore pid=2019) INFO 09-25 15:55:24 [monitor.py:53] torch.compile took 28.63 s in total
+(EngineCore pid=2019) /workspace/qos_ai_4b/.venv-vllm/lib/python3.12/site-packages/triton/language/core.py:2284: UserWarning: tl.make_block_ptr is deprecated. Use TensorDescriptor or tl.make_tensor_descriptor instead.
+(EngineCore pid=2019)   warn("tl.make_block_ptr is deprecated. Use TensorDescriptor or tl.make_tensor_descriptor instead.")
+(EngineCore pid=2019) INFO 09-25 15:56:57 [monitor.py:81] Initial profiling/warmup run took 92.98 s
+(EngineCore pid=2019) Capturing CUDA graphs (PIECEWISE):   0%|          | 0/51 [00:00<?, ?it/s]Capturing CUDA graphs (PIECEWISE):   2%|▏         | 1/51 [00:01<01:21,  1.63s/it]Capturing CUDA graphs (PIECEWISE):   4%|▍         | 2/51 [00:02<00:58,  1.20s/it]Capturing CUDA graphs (PIECEWISE):   6%|▌         | 3/51 [00:03<00:41,  1.14it/s]Capturing CUDA graphs (PIECEWISE):   8%|▊         | 4/51 [00:03<00:34,  1.38it/s]Capturing CUDA graphs (PIECEWISE):  10%|▉         | 5/51 [00:04<00:30,  1.53it/s]Capturing CUDA graphs (PIECEWISE):  12%|█▏        | 6/51 [00:04<00:23,  1.88it/s]Capturing CUDA graphs (PIECEWISE):  14%|█▎        | 7/51 [00:04<00:21,  2.03it/s]Capturing CUDA graphs (PIECEWISE):  16%|█▌        | 8/51 [00:05<00:20,  2.11it/s]Capturing CUDA graphs (PIECEWISE):  18%|█▊        | 9/51 [00:05<00:20,  2.04it/s]Capturing CUDA graphs (PIECEWISE):  20%|█▉        | 10/51 [00:06<00:18,  2.19it/s]Capturing CUDA graphs (PIECEWISE):  22%|██▏       | 11/51 [00:06<00:16,  2.37it/s]Capturing CUDA graphs (PIECEWISE):  24%|██▎       | 12/51 [00:06<00:17,  2.29it/s]Capturing CUDA graphs (PIECEWISE):  25%|██▌       | 13/51 [00:07<00:17,  2.19it/s]Capturing CUDA graphs (PIECEWISE):  27%|██▋       | 14/51 [00:07<00:17,  2.15it/s]Capturing CUDA graphs (PIECEWISE):  29%|██▉       | 15/51 [00:08<00:16,  2.17it/s]Capturing CUDA graphs (PIECEWISE):  31%|███▏      | 16/51 [00:08<00:13,  2.55it/s]Capturing CUDA graphs (PIECEWISE):  33%|███▎      | 17/51 [00:09<00:23,  1.42it/s]Capturing CUDA graphs (PIECEWISE):  35%|███▌      | 18/51 [00:10<00:18,  1.74it/s]Capturing CUDA graphs (PIECEWISE):  37%|███▋      | 19/51 [00:10<00:14,  2.18it/s]Capturing CUDA graphs (PIECEWISE):  39%|███▉      | 20/51 [00:10<00:11,  2.78it/s]Capturing CUDA graphs (PIECEWISE):  43%|████▎     | 22/51 [00:10<00:07,  3.80it/s]Capturing CUDA graphs (PIECEWISE):  47%|████▋     | 24/51 [00:11<00:05,  5.13it/s]Capturing CUDA graphs (PIECEWISE):  51%|█████     | 26/51 [00:11<00:03,  6.51it/s]Capturing CUDA graphs (PIECEWISE):  53%|█████▎    | 27/51 [00:11<00:04,  5.89it/s]Capturing CUDA graphs (PIECEWISE):  55%|█████▍    | 28/51 [00:11<00:03,  6.44it/s]Capturing CUDA graphs (PIECEWISE):  59%|█████▉    | 30/51 [00:11<00:02,  7.95it/s]Capturing CUDA graphs (PIECEWISE):  63%|██████▎   | 32/51 [00:12<00:02,  7.45it/s]Capturing CUDA graphs (PIECEWISE):  65%|██████▍   | 33/51 [00:12<00:02,  7.85it/s]Capturing CUDA graphs (PIECEWISE):  69%|██████▊   | 35/51 [00:12<00:01,  9.11it/s]Capturing CUDA graphs (PIECEWISE):  73%|███████▎  | 37/51 [00:12<00:01,  8.00it/s]Capturing CUDA graphs (PIECEWISE):  76%|███████▋  | 39/51 [00:12<00:01,  8.91it/s]Capturing CUDA graphs (PIECEWISE):  80%|████████  | 41/51 [00:12<00:01,  9.85it/s]Capturing CUDA graphs (PIECEWISE):  84%|████████▍ | 43/51 [00:13<00:00,  8.14it/s]Capturing CUDA graphs (PIECEWISE):  88%|████████▊ | 45/51 [00:13<00:00,  9.13it/s]Capturing CUDA graphs (PIECEWISE):  92%|█████████▏| 47/51 [00:13<00:00,  8.01it/s]Capturing CUDA graphs (PIECEWISE):  94%|█████████▍| 48/51 [00:14<00:00,  6.15it/s]Capturing CUDA graphs (PIECEWISE):  96%|█████████▌| 49/51 [00:14<00:00,  5.17it/s]Capturing CUDA graphs (PIECEWISE): 100%|██████████| 51/51 [00:15<00:00,  2.88it/s]Capturing CUDA graphs (PIECEWISE): 100%|██████████| 51/51 [00:15<00:00,  3.26it/s]
+(EngineCore pid=2019) Capturing CUDA graphs (FULL):   0%|          | 0/2 [00:00<?, ?it/s]Capturing CUDA graphs (FULL): 100%|██████████| 2/2 [00:00<00:00, 19.74it/s]Capturing CUDA graphs (FULL): 100%|██████████| 2/2 [00:00<00:00, 19.67it/s]
+(EngineCore pid=2019) INFO 09-25 15:57:15 [model_runner.py:1066] Graph capturing finished in 17 secs, took 0.37 GiB
+(EngineCore pid=2019) INFO 09-25 15:57:16 [gpu_worker.py:640] Available KV cache memory: 47.05 GiB
+(EngineCore pid=2019) INFO 09-25 15:57:16 [gpu_worker.py:655] CUDA graph memory profiling is enabled (default since v0.21.0). The current --gpu-memory-utilization=0.7500 is equivalent to --gpu-memory-utilization=0.7447 without CUDA graph memory profiling. To maintain the same effective KV cache size as before, increase --gpu-memory-utilization to 0.7553. To disable, set VLLM_MEMORY_PROFILER_ESTIMATE_CUDAGRAPHS=0.
+(EngineCore pid=2019) INFO 09-25 15:57:16 [kv_cache_utils.py:2395] GPU KV cache size: 854,016 tokens, Maximum concurrency for 4,096 tokens per request: 208.50x
+(EngineCore pid=2019) INFO 09-25 15:57:17 [kernel_warmup.py:172] JIT kernel warmup starting.
+(EngineCore pid=2019) INFO 09-25 15:57:17 [kernel_warmup.py:185] JIT kernel warmup finished in 0.00s.
+(EngineCore pid=2019) INFO 09-25 15:57:17 [qwen_triton_warmup.py:294] Warming up Qwen GDN Triton kernels for model_type=qwen3_5_text.
+(EngineCore pid=2019) INFO 09-25 15:57:18 [qwen_vl_triton_warmup.py:98] Warmed M-RoPE Triton kernels.
+(EngineCore pid=2019) INFO 09-25 15:57:18 [mamba_triton_warmup.py:42] Warmed Mamba batch_memcpy_kernel.
+(EngineCore pid=2019) Capturing CUDA graphs (PIECEWISE):   0%|          | 0/51 [00:00<?, ?it/s]Capturing CUDA graphs (PIECEWISE):   2%|▏         | 1/51 [00:00<00:29,  1.71it/s]Capturing CUDA graphs (PIECEWISE):   4%|▍         | 2/51 [00:01<00:35,  1.37it/s]Capturing CUDA graphs (PIECEWISE):   6%|▌         | 3/51 [00:02<00:35,  1.36it/s]Capturing CUDA graphs (PIECEWISE):   8%|▊         | 4/51 [00:02<00:34,  1.38it/s]Capturing CUDA graphs (PIECEWISE):  10%|▉         | 5/51 [00:03<00:32,  1.42it/s]Capturing CUDA graphs (PIECEWISE):  12%|█▏        | 6/51 [00:04<00:30,  1.47it/s]Capturing CUDA graphs (PIECEWISE):  14%|█▎        | 7/51 [00:04<00:27,  1.61it/s]Capturing CUDA graphs (PIECEWISE):  16%|█▌        | 8/51 [00:05<00:25,  1.71it/s]Capturing CUDA graphs (PIECEWISE):  18%|█▊        | 9/51 [00:05<00:24,  1.74it/s]Capturing CUDA graphs (PIECEWISE):  20%|█▉        | 10/51 [00:06<00:20,  2.02it/s]Capturing CUDA graphs (PIECEWISE):  22%|██▏       | 11/51 [00:06<00:18,  2.15it/s]Capturing CUDA graphs (PIECEWISE):  24%|██▎       | 12/51 [00:06<00:17,  2.18it/s]Capturing CUDA graphs (PIECEWISE):  25%|██▌       | 13/51 [00:07<00:17,  2.14it/s]Capturing CUDA graphs (PIECEWISE):  27%|██▋       | 14/51 [00:07<00:14,  2.47it/s]Capturing CUDA graphs (PIECEWISE):  29%|██▉       | 15/51 [00:08<00:14,  2.50it/s]Capturing CUDA graphs (PIECEWISE):  31%|███▏      | 16/51 [00:08<00:11,  3.03it/s]Capturing CUDA graphs (PIECEWISE):  33%|███▎      | 17/51 [00:08<00:09,  3.67it/s]Capturing CUDA graphs (PIECEWISE):  35%|███▌      | 18/51 [00:08<00:08,  4.09it/s]Capturing CUDA graphs (PIECEWISE):  39%|███▉      | 20/51 [00:08<00:05,  5.94it/s]Capturing CUDA graphs (PIECEWISE):  43%|████▎     | 22/51 [00:08<00:04,  7.01it/s]Capturing CUDA graphs (PIECEWISE):  45%|████▌     | 23/51 [00:09<00:04,  6.55it/s]Capturing CUDA graphs (PIECEWISE):  49%|████▉     | 25/51 [00:09<00:03,  7.99it/s]Capturing CUDA graphs (PIECEWISE):  53%|█████▎    | 27/51 [00:09<00:02,  8.47it/s]Capturing CUDA graphs (PIECEWISE):  55%|█████▍    | 28/51 [00:09<00:03,  7.60it/s]Capturing CUDA graphs (PIECEWISE):  59%|█████▉    | 30/51 [00:09<00:02,  8.87it/s]Capturing CUDA graphs (PIECEWISE):  63%|██████▎   | 32/51 [00:09<00:02,  9.32it/s]Capturing CUDA graphs (PIECEWISE):  65%|██████▍   | 33/51 [00:10<00:02,  7.98it/s]Capturing CUDA graphs (PIECEWISE):  69%|██████▊   | 35/51 [00:10<00:01,  9.18it/s]Capturing CUDA graphs (PIECEWISE):  73%|███████▎  | 37/51 [00:10<00:01,  9.32it/s]Capturing CUDA graphs (PIECEWISE):  75%|███████▍  | 38/51 [00:10<00:01,  7.98it/s]Capturing CUDA graphs (PIECEWISE):  78%|███████▊  | 40/51 [00:10<00:01,  9.18it/s]Capturing CUDA graphs (PIECEWISE):  82%|████████▏ | 42/51 [00:11<00:00,  9.87it/s]Capturing CUDA graphs (PIECEWISE):  86%|████████▋ | 44/51 [00:11<00:00,  8.54it/s]Capturing CUDA graphs (PIECEWISE):  90%|█████████ | 46/51 [00:11<00:00,  9.53it/s]Capturing CUDA graphs (PIECEWISE):  94%|█████████▍| 48/51 [00:11<00:00,  8.63it/s]Capturing CUDA graphs (PIECEWISE):  96%|█████████▌| 49/51 [00:11<00:00,  8.70it/s]Capturing CUDA graphs (PIECEWISE): 100%|██████████| 51/51 [00:12<00:00,  9.79it/s]Capturing CUDA graphs (PIECEWISE): 100%|██████████| 51/51 [00:12<00:00,  4.22it/s]
+(EngineCore pid=2019) Capturing CUDA graphs (FULL):   0%|          | 0/35 [00:00<?, ?it/s]Capturing CUDA graphs (FULL):   6%|▌         | 2/35 [00:00<00:02, 16.47it/s]Capturing CUDA graphs (FULL):  11%|█▏        | 4/35 [00:00<00:02, 14.58it/s]Capturing CUDA graphs (FULL):  17%|█▋        | 6/35 [00:00<00:02, 14.34it/s]Capturing CUDA graphs (FULL):  23%|██▎       | 8/35 [00:00<00:01, 15.13it/s]Capturing CUDA graphs (FULL):  29%|██▊       | 10/35 [00:00<00:01, 14.32it/s]Capturing CUDA graphs (FULL):  34%|███▍      | 12/35 [00:00<00:01, 13.68it/s]Capturing CUDA graphs (FULL):  40%|████      | 14/35 [00:00<00:01, 14.43it/s]Capturing CUDA graphs (FULL):  46%|████▌     | 16/35 [00:01<00:01, 15.05it/s]Capturing CUDA graphs (FULL):  51%|█████▏    | 18/35 [00:01<00:01, 14.53it/s]Capturing CUDA graphs (FULL):  57%|█████▋    | 20/35 [00:01<00:01, 14.32it/s]Capturing CUDA graphs (FULL):  63%|██████▎   | 22/35 [00:01<00:00, 14.96it/s]Capturing CUDA graphs (FULL):  69%|██████▊   | 24/35 [00:01<00:00, 15.35it/s]Capturing CUDA graphs (FULL):  74%|███████▍  | 26/35 [00:01<00:00, 15.36it/s]Capturing CUDA graphs (FULL):  80%|████████  | 28/35 [00:01<00:00, 14.72it/s]Capturing CUDA graphs (FULL):  86%|████████▌ | 30/35 [00:02<00:00, 15.24it/s]Capturing CUDA graphs (FULL):  91%|█████████▏| 32/35 [00:02<00:00, 15.65it/s]Capturing CUDA graphs (FULL):  97%|█████████▋| 34/35 [00:02<00:00, 15.85it/s]Capturing CUDA graphs (FULL): 100%|██████████| 35/35 [00:02<00:00, 15.05it/s]
+(EngineCore pid=2019) INFO 09-25 15:59:37 [model_runner.py:1066] Graph capturing finished in 16 secs, took 0.22 GiB
+(EngineCore pid=2019) INFO 09-25 15:59:37 [gpu_worker.py:825] CUDA graph pool memory: 0.22 GiB (actual), 0.42 GiB (estimated), difference: 0.2 GiB (88.6%).
+(EngineCore pid=2019) INFO 09-25 15:59:37 [gpu_worker.py:888] Free memory on device (78.83/79.25 GiB) on startup. Desired GPU memory utilization is (0.75, 59.44 GiB). Actual usage is 10.68 GiB for consumed memory (weights + non-torch), 1.71 GiB for peak activation, and 0.22 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=50119218688` (46.68 GiB) to fit into requested memory, or `--kv-cache-memory=70947214848` (66.07 GiB) to fully utilize gpu memory. Current kv cache memory in use is 47.05 GiB.
+(EngineCore pid=2019) INFO 09-25 15:59:57 [jit_monitor.py:85] Kernel JIT monitor activated; monitored JIT compilations during inference will use mode=warn.
+(EngineCore pid=2019) INFO 09-25 15:59:58 [torch_utils.py:287] Reducing Torch threads from 128 to 1 for serving. Set OMP_NUM_THREADS in the external environment to override.
+(EngineCore pid=2019) INFO 09-25 15:59:58 [core.py:372] init engine (profile, create kv cache, warmup model) took 322.93 s (compilation: 28.63 s)
+(EngineCore pid=2019) INFO 09-25 15:59:58 [kv_cache_utils.py:748] kv cache group sizes [528, 528, 528, 528]
+(EngineCore pid=2019) INFO 09-25 15:59:58 [kv_cache_utils.py:749] kv lcm block sizes 528
+(EngineCore pid=2019) Parse safetensors files:   0%|          | 0/2 [00:00<?, ?it/s]Parse safetensors files:  50%|█████     | 1/2 [00:00<00:00,  2.72it/s]Parse safetensors files: 100%|██████████| 2/2 [00:00<00:00,  4.34it/s]
+(EngineCore pid=2019) INFO 09-25 16:00:00 [kernel.py:416] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'], gelu_and_mul_sparse=['triton', 'native'])
+INFO 09-25 16:00:04 [hf.py:642] Detected the chat template content format to be 'openai'. You can set `--chat-template-content-format` to override this.
+(EngineCore pid=2019) WARNING 09-25 16:00:09 [jit_monitor.py:141] Triton kernel JIT compilation during inference: _topk_topp_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=2019) WARNING 09-25 16:00:09 [jit_monitor.py:141] Triton kernel JIT compilation during inference: _topp_sb_stats_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=2019) WARNING 09-25 16:00:10 [jit_monitor.py:141] Triton kernel JIT compilation during inference: _topp_sb_step_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=2019) WARNING 09-25 16:00:12 [jit_monitor.py:141] Triton kernel JIT compilation during inference: _topp_sb_mask_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=2019) WARNING 09-25 16:00:12 [jit_monitor.py:141] Triton kernel JIT compilation during inference: _gumbel_sample_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+[round 7, 1024/81900 prompts, 1.2 min] kept 730, ~70176 answer tokens/min, rejected {'mentions the excerpt': 293, 'wrong language': 1}  Q: Why does the FP-RISC language require explicit typing for all values and operati
+[round 7, 2048/81900 prompts, 2.1 min] kept 1551, ~95344 answer tokens/min, rejected {'mentions the excerpt': 482, 'wrong language': 15}  Q: What is the purpose and execution flow of the `run_scan` function when processin
+[round 7, 3072/81900 prompts, 3.0 min] kept 2384, ~105546 answer tokens/min, rejected {'mentions the excerpt': 662, 'wrong language': 25, 'too short': 1}  Q: Write a Sol function that parses a chunked HTTP body according to the `dechunk` 
+[round 7, 4096/81900 prompts, 3.8 min] kept 3231, ~111643 answer tokens/min, rejected {'mentions the excerpt': 832, 'wrong language': 32, 'too short': 1}  Q: Write a Sol function that reads a single byte from a UART device and returns the
+[round 7, 5120/81900 prompts, 4.7 min] kept 4082, ~116488 answer tokens/min, rejected {'mentions the excerpt': 992, 'wrong language': 44, 'too short': 2}  Q: What happens if a source file exceeds the maximum allowed size in the FPRISC com
+[round 7, 6144/81900 prompts, 5.6 min] kept 4944, ~120230 answer tokens/min, rejected {'mentions the excerpt': 1146, 'wrong language': 50, 'too short': 4}  Q: What is the purpose of the `skip` function in `json.fpr`?
+[round 7, 7168/81900 prompts, 6.4 min] kept 5798, ~122726 answer tokens/min, rejected {'mentions the excerpt': 1306, 'wrong language': 59, 'too short': 5}  Q: What specific error or behavior occurs when attempting to use RECORD-accumulator
+[round 7, 8192/81900 prompts, 7.3 min] kept 6642, ~124778 answer tokens/min, rejected {'mentions the excerpt': 1480, 'wrong language': 65, 'too short': 5}  Q: How do you extract an integer from a JSON value that might be a Real number or a
+[round 7, 9100/81900 prompts, 8.1 min] kept 7386, ~125352 answer tokens/min, rejected {'mentions the excerpt': 1640, 'wrong language': 68, 'too short': 5, 'foreign script': 1}  Q: What is the difference between the FP-RISC raw representation and the resumable 
+[round 8, 10124/81900 prompts, 8.7 min] kept 8227, ~126845 answer tokens/min, rejected {'mentions the excerpt': 1822, 'wrong language': 69, 'too short': 5, 'foreign script': 1}  Q: Which functions, commands, or settings are available to manage the cross-cutting
+[round 8, 11148/81900 prompts, 9.5 min] kept 9146, ~128037 answer tokens/min, rejected {'mentions the excerpt': 1910, 'wrong language': 84, 'too short': 6, 'foreign script': 1, 'unparsable': 1}  Q: How do I run a Sol script using the QOS operating system?
+[round 8, 12172/81900 prompts, 10.4 min] kept 10084, ~128609 answer tokens/min, rejected {'mentions the excerpt': 1988, 'wrong language': 90, 'too short': 8, 'foreign script': 1, 'unparsable': 1}  Q: In the `dechunk` function, how should the recursive call handle the case where t
+[round 8, 13196/81900 prompts, 11.3 min] kept 11016, ~129104 answer tokens/min, rejected {'mentions the excerpt': 2075, 'wrong language': 95, 'too short': 8, 'foreign script': 1, 'unparsable': 1}  Q: How does the QOS system distinguish between a received byte and a transmit buffe
+[round 8, 14220/81900 prompts, 12.2 min] kept 11961, ~129868 answer tokens/min, rejected {'mentions the excerpt': 2145, 'wrong language': 103, 'too short': 8, 'foreign script': 1, 'unparsable': 2}  Q: How do I invoke the `package_plugin` function and what arguments does it require
+[round 8, 15244/81900 prompts, 13.1 min] kept 12915, ~130905 answer tokens/min, rejected {'mentions the excerpt': 2206, 'wrong language': 112, 'too short': 8, 'foreign script': 1, 'unparsable': 2}  Q: What does the `lineCol` function return when given a string, an index `i`, and p
+[round 8, 16268/81900 prompts, 14.0 min] kept 13855, ~131394 answer tokens/min, rejected {'mentions the excerpt': 2276, 'wrong language': 124, 'too short': 9, 'foreign script': 1, 'unparsable': 3}  Q: Why does the Fusion optimization pass run on every target in FP-RISC, even those
+[round 8, 17292/81900 prompts, 14.8 min] kept 14803, ~131986 answer tokens/min, rejected {'mentions the excerpt': 2344, 'wrong language': 130, 'too short': 9, 'foreign script': 1, 'unparsable': 5}  Q: I am using `Json.parse` to read a JSON string containing a "port" field as an in
+[round 8, 18200/81900 prompts, 15.7 min] kept 15632, ~131962 answer tokens/min, rejected {'mentions the excerpt': 2411, 'wrong language': 132, 'too short': 9, 'foreign script': 5, 'unparsable': 11}  Q: How do I verify that FP-RISC's built-in features pass their specific validation 
+[round 9, 19224/81900 prompts, 16.3 min] kept 16394, ~132384 answer tokens/min, rejected {'mentions the excerpt': 2672, 'wrong language': 133, 'too short': 9, 'foreign script': 5, 'unparsable': 11}  Q: How do I invoke the `fprisc` compiler to assemble a Sol script into an executabl
+[round 9, 20248/81900 prompts, 17.1 min] kept 17223, ~132477 answer tokens/min, rejected {'mentions the excerpt': 2848, 'wrong language': 150, 'too short': 11, 'foreign script': 5, 'unparsable': 11}  Q: Write a Sol function that returns the sum of two integers.
+[round 9, 21272/81900 prompts, 18.1 min] kept 18047, ~131911 answer tokens/min, rejected {'mentions the excerpt': 3043, 'wrong language': 154, 'too short': 12, 'foreign script': 5, 'unparsable': 11}  Q: What is the purpose of the file `fprisc/std/http.fpr`?
+[round 9, 22296/81900 prompts, 19.0 min] kept 18908, ~131795 answer tokens/min, rejected {'mentions the excerpt': 3198, 'wrong language': 161, 'too short': 12, 'foreign script': 6, 'unparsable': 11}  Q: What error or state is produced if the `UOpen` message is sent to a UART device 
+[round 9, 23320/81900 prompts, 19.9 min] kept 19750, ~131765 answer tokens/min, rejected {'mentions the excerpt': 3367, 'wrong language': 172, 'too short': 14, 'foreign script': 6, 'unparsable': 11}  Q: What is the purpose of the `package_plugin` function in the provided Python code
+[round 9, 24344/81900 prompts, 20.7 min] kept 20613, ~132177 answer tokens/min, rejected {'mentions the excerpt': 3519, 'wrong language': 180, 'too short': 15, 'foreign script': 6, 'unparsable': 11}  Q: How can one parse a JSON object containing a string key and a boolean value usin
+[round 9, 25368/81900 prompts, 21.6 min] kept 21473, ~132316 answer tokens/min, rejected {'mentions the excerpt': 3669, 'wrong language': 192, 'too short': 17, 'foreign script': 6, 'unparsable': 11}  Q: How can I compile adjacent `Vec.map` passes into a single fused operation, and w
+[round 9, 26392/81900 prompts, 22.4 min] kept 22327, ~132474 answer tokens/min, rejected {'mentions the excerpt': 3828, 'wrong language': 203, 'too short': 17, 'foreign script': 6, 'unparsable': 11}  Q: What is the purpose of the file `std/json.fpr`?
+[round 9, 27300/81900 prompts, 23.3 min] kept 23086, ~132353 answer tokens/min, rejected {'mentions the excerpt': 3971, 'wrong language': 208, 'too short': 18, 'foreign script': 6, 'unparsable': 11}  Q: What functions or settings are available to validate FP-RISC's raw representatio
+[round 10, 28324/81900 prompts, 23.9 min] kept 23905, ~132645 answer tokens/min, rejected {'mentions the excerpt': 4174, 'wrong language': 210, 'too short': 18, 'foreign script': 6, 'unparsable': 11}  Q: What is the purpose of the `cross-cutting themes` section in the V2-AUDIT docume
+[round 10, 29348/81900 prompts, 24.7 min] kept 24822, ~132990 answer tokens/min, rejected {'mentions the excerpt': 4267, 'wrong language': 222, 'too short': 19, 'foreign script': 6, 'unparsable': 12}  Q: I am running an FP-RISC `.sol` script on the QOS system, but the compiler fails 
+[round 10, 30372/81900 prompts, 25.6 min] kept 25756, ~133088 answer tokens/min, rejected {'mentions the excerpt': 4352, 'wrong language': 226, 'too short': 19, 'foreign script': 6, 'unparsable': 13}  Q: How does the `dechunk` function parse the HTTP chunked transfer encoding format?
+[round 10, 31396/81900 prompts, 26.5 min] kept 26709, ~133322 answer tokens/min, rejected {'mentions the excerpt': 4417, 'wrong language': 230, 'too short': 20, 'foreign script': 6, 'unparsable': 14}  Q: How do I check if the UART device is ready to receive data using the provided he
+[round 10, 32420/81900 prompts, 27.4 min] kept 27663, ~133680 answer tokens/min, rejected {'mentions the excerpt': 4481, 'wrong language': 235, 'too short': 20, 'foreign script': 6, 'unparsable': 15}  Q: What does the `package_plugin` function do with the `source` argument, and what 
+[round 10, 33444/81900 prompts, 28.3 min] kept 28607, ~134050 answer tokens/min, rejected {'mentions the excerpt': 4554, 'wrong language': 241, 'too short': 21, 'foreign script': 6, 'unparsable': 15}  Q: What does the `located` function do and how does it calculate the line and colum
+[round 10, 34468/81900 prompts, 29.1 min] kept 29563, ~134445 answer tokens/min, rejected {'mentions the excerpt': 4611, 'wrong language': 252, 'too short': 21, 'foreign script': 6, 'unparsable': 15}  Q: How does the `Vec.map` function handle adjacent passes like `Vec.map f (Vec.map 
+[round 10, 35492/81900 prompts, 30.0 min] kept 30504, ~134784 answer tokens/min, rejected {'mentions the excerpt': 4685, 'wrong language': 259, 'too short': 21, 'foreign script': 6, 'unparsable': 17}  Q: How does the FP-RISC JSON parser handle numeric literals that contain fractions 
+[round 10, 36400/81900 prompts, 30.8 min] kept 31333, ~134821 answer tokens/min, rejected {'mentions the excerpt': 4755, 'wrong language': 261, 'too short': 22, 'foreign script': 8, 'unparsable': 21}  Q: What is the purpose of the `check_arc.py` suite?
+[round 11, 37424/81900 prompts, 31.4 min] kept 32105, ~135081 answer tokens/min, rejected {'mentions the excerpt': 5005, 'wrong language': 263, 'too short': 22, 'foreign script': 8, 'unparsable': 21}  Q: How do the Sol scripting profile and the QOS operating system relate in terms of
+[round 11, 38448/81900 prompts, 32.2 min] kept 32943, ~135147 answer tokens/min, rejected {'mentions the excerpt': 5173, 'wrong language': 281, 'too short': 22, 'foreign script': 8, 'unparsable': 21}  Q: What is the function of the file located at `qos/qos.py`?
+[round 11, 39472/81900 prompts, 33.1 min] kept 33785, ~134975 answer tokens/min, rejected {'mentions the excerpt': 5344, 'wrong language': 291, 'too short': 23, 'foreign script': 8, 'unparsable': 21}  Q: What error is returned if the chunked transfer encoding body ends with a zero-si
+[round 11, 40496/81900 prompts, 34.0 min] kept 34645, ~134890 answer tokens/min, rejected {'mentions the excerpt': 5499, 'wrong language': 300, 'too short': 23, 'foreign script': 8, 'unparsable': 21}  Q: What is the purpose of the `BITTEST` function in the context of the UART device 
+[round 11, 41520/81900 prompts, 34.9 min] kept 35519, ~134995 answer tokens/min, rejected {'mentions the excerpt': 5633, 'wrong language': 313, 'too short': 26, 'foreign script': 8, 'unparsable': 21}  Q: How are requests handled in the FPRC compiler, and what is the status of module 
+[round 11, 42544/81900 prompts, 35.8 min] kept 36394, ~135196 answer tokens/min, rejected {'mentions the excerpt': 5771, 'wrong language': 323, 'too short': 27, 'foreign script': 8, 'unparsable': 21}  Q: How do I extract the line and column number of a specific character index in a s
+[round 11, 43568/81900 prompts, 36.6 min] kept 37257, ~135252 answer tokens/min, rejected {'mentions the excerpt': 5917, 'wrong language': 336, 'too short': 29, 'foreign script': 8, 'unparsable': 21}  Q: What is the default behavior of adjacent `Vec.map` passes in FP-RISC and how doe
+[round 11, 44592/81900 prompts, 37.5 min] kept 38123, ~135419 answer tokens/min, rejected {'mentions the excerpt': 6067, 'wrong language': 344, 'too short': 29, 'foreign script': 8, 'unparsable': 21}  Q: What error occurs if the `asInt` function is applied to a JSON `Real` value that
+[round 11, 45500/81900 prompts, 38.3 min] kept 38878, ~135332 answer tokens/min, rejected {'mentions the excerpt': 6217, 'wrong language': 344, 'too short': 29, 'foreign script': 11, 'unparsable': 21}  Q: What error or failure occurs when an FP-RISC program attempts to use raw values 
+[round 12, 46524/81900 prompts, 38.9 min] kept 39694, ~135470 answer tokens/min, rejected {'mentions the excerpt': 6423, 'wrong language': 346, 'too short': 29, 'foreign script': 11, 'unparsable': 21}  Q: What does "cross-cutting" mean in the context of FP-RISC themes?
+[round 12, 47548/81900 prompts, 39.7 min] kept 40633, ~135748 answer tokens/min, rejected {'mentions the excerpt': 6497, 'wrong language': 357, 'too short': 29, 'foreign script': 11, 'unparsable': 21}  Q: How does the QOS operating system determine whether to execute a program using t
+[round 12, 48572/81900 prompts, 40.6 min] kept 41591, ~135836 answer tokens/min, rejected {'mentions the excerpt': 6553, 'wrong language': 365, 'too short': 30, 'foreign script': 11, 'unparsable': 22}  Q: How do I invoke the `dechunk` function to parse a chunked HTTP body, and what ar
+[round 12, 49596/81900 prompts, 41.4 min] kept 42545, ~135955 answer tokens/min, rejected {'mentions the excerpt': 6620, 'wrong language': 368, 'too short': 30, 'foreign script': 11, 'unparsable': 22}  Q: lsrDR v = BITTEST v 0.
+lsrTHRE v = BITTEST v 5.
+What do these two lines of code 
+[round 12, 50620/81900 prompts, 42.3 min] kept 43509, ~136188 answer tokens/min, rejected {'mentions the excerpt': 6671, 'wrong language': 377, 'too short': 30, 'foreign script': 11, 'unparsable': 22}  Q: What is the purpose of the `package_plugin` function in `fprd.py` and how does i
+[round 12, 51644/81900 prompts, 43.1 min] kept 44455, ~136466 answer tokens/min, rejected {'mentions the excerpt': 6740, 'wrong language': 386, 'too short': 30, 'foreign script': 11, 'unparsable': 22}  Q: Write a Sol function that converts a JSON object into a list of its string value
+[round 12, 52668/81900 prompts, 44.0 min] kept 45415, ~136703 answer tokens/min, rejected {'mentions the excerpt': 6795, 'wrong language': 395, 'too short': 30, 'foreign script': 11, 'unparsable': 22}  Q: How does the mechanism for fusing adjacent `Vec.map` passes differ from the mech
+[round 12, 53692/81900 prompts, 44.8 min] kept 46364, ~136956 answer tokens/min, rejected {'mentions the excerpt': 6860, 'wrong language': 405, 'too short': 30, 'foreign script': 11, 'unparsable': 22}  Q: How can I extract an integer value from a JSON `Value` that contains a `Real` nu
+[round 12, 54600/81900 prompts, 45.6 min] kept 47216, ~137058 answer tokens/min, rejected {'mentions the excerpt': 6911, 'wrong language': 409, 'too short': 30, 'foreign script': 12, 'unparsable': 22}  Q: Why are the raw-representation and resumable-interrupt milestones in FP-RISC cur
+[round 13, 55624/81900 prompts, 46.2 min] kept 48022, ~137159 answer tokens/min, rejected {'mentions the excerpt': 7129, 'wrong language': 409, 'too short': 30, 'foreign script': 12, 'unparsable': 22}  Q: What error occurs if a Sol script is executed without first being registered wit
+[round 13, 56648/81900 prompts, 47.1 min] kept 48870, ~137111 answer tokens/min, rejected {'mentions the excerpt': 7288, 'wrong language': 424, 'too short': 31, 'foreign script': 12, 'unparsable': 23}  Q: What error or behavior occurs if a Sol script is executed in the virtual machine
+[round 13, 57672/81900 prompts, 48.0 min] kept 49734, ~136901 answer tokens/min, rejected {'mentions the excerpt': 7436, 'wrong language': 433, 'too short': 32, 'foreign script': 12, 'unparsable': 25}  Q: What does the term `unsafe` signify in the type signature `dechunk : unsafe Stri
+[round 13, 58696/81900 prompts, 48.9 min] kept 50622, ~136832 answer tokens/min, rejected {'mentions the excerpt': 7560, 'wrong language': 443, 'too short': 34, 'foreign script': 12, 'unparsable': 25}  Q: How does the `uart.fpr` actor handle incoming data and determine when to acknowl
+[round 13, 59720/81900 prompts, 49.7 min] kept 51495, ~136809 answer tokens/min, rejected {'mentions the excerpt': 7700, 'wrong language': 453, 'too short': 34, 'foreign script': 12, 'unparsable': 26}  Q: How does the `fprd` tool manage connections and caching during compilation, and 
+[round 13, 60744/81900 prompts, 50.6 min] kept 52393, ~136930 answer tokens/min, rejected {'mentions the excerpt': 7818, 'wrong language': 460, 'too short': 34, 'foreign script': 12, 'unparsable': 27}  Q: In the `value` function from `json.fpr`, the `valueAt` helper checks for the JSO
+[round 13, 61768/81900 prompts, 51.5 min] kept 53278, ~136941 answer tokens/min, rejected {'mentions the excerpt': 7941, 'wrong language': 475, 'too short': 34, 'foreign script': 12, 'unparsable': 28}  Q: How does the `Vec.map` fusion optimization work for adjacent passes in FP-RISC?
+[round 13, 62792/81900 prompts, 52.3 min] kept 54153, ~136971 answer tokens/min, rejected {'mentions the excerpt': 8078, 'wrong language': 486, 'too short': 34, 'foreign script': 12, 'unparsable': 29}  Q: What is the difference between an `Integer` and a `Real` in the `Value` type?
+[round 13, 63700/81900 prompts, 53.1 min] kept 54938, ~136854 answer tokens/min, rejected {'mentions the excerpt': 8193, 'wrong language': 490, 'too short': 35, 'foreign script': 13, 'unparsable': 31}  Q: What are the specific test suites used to validate the FP-RISC implementation, a
+[round 14, 64724/81900 prompts, 53.8 min] kept 55706, ~136903 answer tokens/min, rejected {'mentions the excerpt': 8446, 'wrong language': 493, 'too short': 35, 'foreign script': 13, 'unparsable': 31}  Q: What does "cross-cutting themes" mean in the context of FP-RISC?
+[round 14, 65748/81900 prompts, 54.6 min] kept 56561, ~136943 answer tokens/min, rejected {'mentions the excerpt': 8600, 'wrong language': 508, 'too short': 35, 'foreign script': 13, 'unparsable': 31}  Q: How do I execute a Sol script using the QOS operating system with the Sol profil
+[round 14, 66772/81900 prompts, 55.5 min] kept 57437, ~136846 answer tokens/min, rejected {'mentions the excerpt': 8740, 'wrong language': 515, 'too short': 36, 'foreign script': 13, 'unparsable': 31}  Q: What does the function `dechunk` return when given a valid chunked HTTP body str
+[round 14, 67796/81900 prompts, 56.3 min] kept 58312, ~136816 answer tokens/min, rejected {'mentions the excerpt': 8877, 'wrong language': 524, 'too short': 38, 'foreign script': 14, 'unparsable': 31}  Q: What is the purpose of the `lsrDR` and `lsrTHRE` helper functions, and how do th
+[round 14, 68820/81900 prompts, 57.2 min] kept 59193, ~136840 answer tokens/min, rejected {'mentions the excerpt': 9010, 'wrong language': 533, 'too short': 39, 'foreign script': 14, 'unparsable': 31}  Q: How are requests handled in the fprd compiler driver and what is the size limit 
+[round 14, 69844/81900 prompts, 58.0 min] kept 60090, ~136967 answer tokens/min, rejected {'mentions the excerpt': 9129, 'wrong language': 541, 'too short': 39, 'foreign script': 14, 'unparsable': 31}  Q: What is the purpose of the file located at `fprisc/std/json.fpr`?
+[round 14, 70868/81900 prompts, 58.9 min] kept 60944, ~136959 answer tokens/min, rejected {'mentions the excerpt': 9281, 'wrong language': 556, 'too short': 42, 'foreign script': 14, 'unparsable': 31}  Q: What is the purpose of the `hal_devtable_ext` symbol in the machine layer?
+[round 14, 71892/81900 prompts, 59.7 min] kept 61809, ~137005 answer tokens/min, rejected {'mentions the excerpt': 9431, 'wrong language': 565, 'too short': 42, 'foreign script': 14, 'unparsable': 31}  Q: What does the expression `Json.asInt (Json.parse '{"port": 8080}' :: Nil)` retur
+[round 14, 72800/81900 prompts, 60.6 min] kept 62577, ~136914 answer tokens/min, rejected {'mentions the excerpt': 9565, 'wrong language': 568, 'too short': 43, 'foreign script': 15, 'unparsable': 32}  Q: How do I run the test suite that validates the built-in functions, including che
+[round 15, 73824/81900 prompts, 61.2 min] kept 63395, ~137061 answer tokens/min, rejected {'mentions the excerpt': 9771, 'wrong language': 568, 'too short': 43, 'foreign script': 15, 'unparsable': 32}  Q: What happens when a Sol script attempts to execute a function that has not been 
+[round 15, 74848/81900 prompts, 62.0 min] kept 64275, ~137099 answer tokens/min, rejected {'mentions the excerpt': 9898, 'wrong language': 581, 'too short': 43, 'foreign script': 15, 'unparsable': 36}  Q: How does the `readOn` function handle a poller and what is the recursive strateg
+[round 15, 75872/81900 prompts, 62.9 min] kept 65180, ~137029 answer tokens/min, rejected {'mentions the excerpt': 10007, 'wrong language': 588, 'too short': 44, 'foreign script': 15, 'unparsable': 38}  Q: How does the `dechunk` function in FP-RISC handle the parsing of a chunked HTTP 
+[round 15, 76896/81900 prompts, 63.8 min] kept 66094, ~137040 answer tokens/min, rejected {'mentions the excerpt': 10112, 'wrong language': 591, 'too short': 44, 'foreign script': 15, 'unparsable': 40}  Q: How do I check if the UART receive data register is ready using the LSR register
+[round 15, 77920/81900 prompts, 64.7 min] kept 67022, ~137129 answer tokens/min, rejected {'mentions the excerpt': 10201, 'wrong language': 596, 'too short': 45, 'foreign script': 15, 'unparsable': 41}  Q: ```sol
+// sol
+plugin:1:hello
+```
+The code above attempts to define a plugin usin
+[round 15, 78944/81900 prompts, 65.5 min] kept 67954, ~137292 answer tokens/min, rejected {'mentions the excerpt': 10285, 'wrong language': 602, 'too short': 45, 'foreign script': 15, 'unparsable': 43}  Q: How does the `value` function in `json.fpr` parse a JSON object starting at a sp
+[round 15, 79968/81900 prompts, 66.4 min] kept 68884, ~137403 answer tokens/min, rejected {'mentions the excerpt': 10370, 'wrong language': 610, 'too short': 45, 'foreign script': 15, 'unparsable': 44}  Q: What does the term "linearity" mean in the context of FP-RISC fusion?
+[round 15, 80992/81900 prompts, 67.2 min] kept 69804, ~137542 answer tokens/min, rejected {'mentions the excerpt': 10470, 'wrong language': 613, 'too short': 45, 'foreign script': 15, 'unparsable': 45}  Q: How can one extract the string representation of a JSON number (whether integer 
+[round 15, 81900/81900 prompts, 68.0 min] kept 70621, ~137542 answer tokens/min, rejected {'mentions the excerpt': 10548, 'wrong language': 615, 'too short': 47, 'foreign script': 17, 'unparsable': 52}  Q: What specific test suites were used to validate the built-in features and machin
+INFO 09-25 17:08:06 [utils.py:632] [shutdown] Process manager: send sigterm to process EngineCore
+(EngineCore pid=2019) INFO 09-25 17:08:06 [core.py:1342] [shutdown] EngineCore: trigger received signal=SIGTERM
+(EngineCore pid=2019) INFO 09-25 17:08:06 [core.py:1493] [shutdown] EngineCore: start mode=abort timeout=0s
+(EngineCore pid=2019) INFO 09-25 17:08:06 [core.py:1524] [shutdown] EngineCore: request processing complete; starting resource teardown
+(EngineCore pid=2019) INFO 09-25 17:08:06 [core.py:1355] [shutdown] EngineCore: exiting busy loop
+WARNING 09-25 17:08:11 [utils.py:652] [shutdown] Process manager: force killing remaining processes count=1
+WARNING 09-25 17:08:11 [utils.py:657] [shutdown] Process manager: force killing remaining process EngineCore pid 2019
+== 2026-09-25 17:08:14 (+82 min) teach
+16 sources (docs, qa_r001, qa_r002, qa_r003, qa_r004, qa_r005, qa_r006, qa_r007, qa_r008, qa_r009, qa_r010, qa_r011, qa_r012, qa_r013, qa_r014, qa_r015), 40955 windows of 512 tokens; 40955 windows to score in 167 shards
+[ERROR] `image_like_kwargs` is part of BaseImageProcessor.preprocess's signature, but not documented. Make sure to add it to the docstring of the function in /usr/local/lib/python3.12/dist-packages/transformers/image_processing_utils.py.
+Loading teacher Qwen/Qwen3.5-4B on cuda (torch.bfloat16)...
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights:   9%|▊         | 62/723 [00:00<00:01, 610.66it/s]Loading weights:  17%|█▋        | 124/723 [00:00<00:01, 396.23it/s]Loading weights:  23%|██▎       | 168/723 [00:00<00:01, 340.43it/s]Loading weights:  30%|██▉       | 215/723 [00:00<00:01, 372.89it/s]Loading weights:  35%|███▌      | 255/723 [00:00<00:01, 352.61it/s]Loading weights:  40%|████      | 292/723 [00:00<00:01, 348.65it/s]Loading weights:  45%|████▌     | 328/723 [00:00<00:01, 301.13it/s]Loading weights:  51%|█████     | 370/723 [00:01<00:01, 326.90it/s]Loading weights:  56%|█████▌    | 405/723 [00:01<00:01, 317.04it/s]Loading weights:  63%|██████▎   | 453/723 [00:01<00:00, 347.47it/s]Loading weights:  70%|██████▉   | 506/723 [00:01<00:00, 395.82it/s]Loading weights:  79%|███████▉  | 573/723 [00:01<00:00, 470.89it/s]Loading weights:  87%|████████▋ | 630/723 [00:01<00:00, 483.94it/s]Loading weights:  95%|█████████▌| 688/723 [00:01<00:00, 509.98it/s]Loading weights: 100%|██████████| 723/723 [00:01<00:00, 416.92it/s]
+scored docs_0000.pt: 256/40955 windows (2523 tokens/s)
+scored docs_0001.pt: 512/40955 windows (4339 tokens/s)
+scored docs_0002.pt: 768/40955 windows (5702 tokens/s)
+scored docs_0003.pt: 1024/40955 windows (6760 tokens/s)
+scored docs_0004.pt: 1280/40955 windows (7622 tokens/s)
+scored docs_0005.pt: 1536/40955 windows (8324 tokens/s)
+scored docs_0006.pt: 1618/40955 windows (7683 tokens/s)
+scored qa_r001_0000.pt: 1874/40955 windows (8257 tokens/s)
+scored qa_r001_0001.pt: 2130/40955 windows (8741 tokens/s)
+scored qa_r001_0002.pt: 2386/40955 windows (9159 tokens/s)
+scored qa_r001_0003.pt: 2642/40955 windows (9535 tokens/s)
+scored qa_r001_0004.pt: 2898/40955 windows (9866 tokens/s)
+scored qa_r001_0005.pt: 3154/40955 windows (10158 tokens/s)
+scored qa_r001_0006.pt: 3410/40955 windows (10418 tokens/s)
+scored qa_r001_0007.pt: 3666/40955 windows (10661 tokens/s)
+scored qa_r001_0008.pt: 3922/40955 windows (10875 tokens/s)
+scored qa_r001_0009.pt: 4178/40955 windows (11075 tokens/s)
+scored qa_r001_0010.pt: 4308/40955 windows (11170 tokens/s)
+scored qa_r002_0000.pt: 4564/40955 windows (11341 tokens/s)
+scored qa_r002_0001.pt: 4820/40955 windows (11504 tokens/s)
+scored qa_r002_0002.pt: 5076/40955 windows (11658 tokens/s)
+scored qa_r002_0003.pt: 5332/40955 windows (11795 tokens/s)
+scored qa_r002_0004.pt: 5588/40955 windows (11919 tokens/s)
+scored qa_r002_0005.pt: 5844/40955 windows (12036 tokens/s)
+scored qa_r002_0006.pt: 6100/40955 windows (12150 tokens/s)
+scored qa_r002_0007.pt: 6356/40955 windows (12258 tokens/s)
+scored qa_r002_0008.pt: 6612/40955 windows (12351 tokens/s)
+scored qa_r002_0009.pt: 6868/40955 windows (12440 tokens/s)
+scored qa_r002_0010.pt: 6927/40955 windows (12414 tokens/s)
+scored qa_r003_0000.pt: 7183/40955 windows (12503 tokens/s)
+scored qa_r003_0001.pt: 7439/40955 windows (12580 tokens/s)
+scored qa_r003_0002.pt: 7695/40955 windows (12658 tokens/s)
+scored qa_r003_0003.pt: 7951/40955 windows (12733 tokens/s)
+scored qa_r003_0004.pt: 8207/40955 windows (12801 tokens/s)
+scored qa_r003_0005.pt: 8463/40955 windows (12866 tokens/s)
+scored qa_r003_0006.pt: 8719/40955 windows (12928 tokens/s)
+scored qa_r003_0007.pt: 8975/40955 windows (12987 tokens/s)
+scored qa_r003_0008.pt: 9231/40955 windows (13044 tokens/s)
+scored qa_r003_0009.pt: 9487/40955 windows (13102 tokens/s)
+scored qa_r003_0010.pt: 9510/40955 windows (13068 tokens/s)
+scored qa_r004_0000.pt: 9766/40955 windows (13122 tokens/s)
+scored qa_r004_0001.pt: 10022/40955 windows (13172 tokens/s)
+scored qa_r004_0002.pt: 10278/40955 windows (13220 tokens/s)
+scored qa_r004_0003.pt: 10534/40955 windows (13263 tokens/s)
+scored qa_r004_0004.pt: 10790/40955 windows (13307 tokens/s)
+scored qa_r004_0005.pt: 11046/40955 windows (13346 tokens/s)
+scored qa_r004_0006.pt: 11302/40955 windows (13388 tokens/s)
+scored qa_r004_0007.pt: 11558/40955 windows (13425 tokens/s)
+scored qa_r004_0008.pt: 11814/40955 windows (13465 tokens/s)
+scored qa_r004_0009.pt: 12070/40955 windows (13499 tokens/s)
+scored qa_r004_0010.pt: 12177/40955 windows (13506 tokens/s)
+scored qa_r005_0000.pt: 12433/40955 windows (13542 tokens/s)
+scored qa_r005_0001.pt: 12689/40955 windows (13574 tokens/s)
+scored qa_r005_0002.pt: 12945/40955 windows (13605 tokens/s)
+scored qa_r005_0003.pt: 13201/40955 windows (13631 tokens/s)
+scored qa_r005_0004.pt: 13457/40955 windows (13664 tokens/s)
+scored qa_r005_0005.pt: 13713/40955 windows (13689 tokens/s)
+scored qa_r005_0006.pt: 13969/40955 windows (13716 tokens/s)
+scored qa_r005_0007.pt: 14225/40955 windows (13745 tokens/s)
+scored qa_r005_0008.pt: 14481/40955 windows (13774 tokens/s)
+scored qa_r005_0009.pt: 14702/40955 windows (13768 tokens/s)
+scored qa_r006_0000.pt: 14958/40955 windows (13793 tokens/s)
+scored qa_r006_0001.pt: 15214/40955 windows (13817 tokens/s)
+scored qa_r006_0002.pt: 15470/40955 windows (13837 tokens/s)
+scored qa_r006_0003.pt: 15726/40955 windows (13860 tokens/s)
+scored qa_r006_0004.pt: 15982/40955 windows (13884 tokens/s)
+scored qa_r006_0005.pt: 16238/40955 windows (13903 tokens/s)
+scored qa_r006_0006.pt: 16494/40955 windows (13923 tokens/s)
+scored qa_r006_0007.pt: 16750/40955 windows (13943 tokens/s)
+scored qa_r006_0008.pt: 17006/40955 windows (13963 tokens/s)
+scored qa_r006_0009.pt: 17262/40955 windows (13983 tokens/s)
+scored qa_r006_0010.pt: 17486/40955 windows (13997 tokens/s)
+scored qa_r007_0000.pt: 17742/40955 windows (14015 tokens/s)
+scored qa_r007_0001.pt: 17998/40955 windows (14032 tokens/s)
+scored qa_r007_0002.pt: 18254/40955 windows (14049 tokens/s)
+scored qa_r007_0003.pt: 18510/40955 windows (14066 tokens/s)
+scored qa_r007_0004.pt: 18766/40955 windows (14080 tokens/s)
+scored qa_r007_0005.pt: 19022/40955 windows (14094 tokens/s)
+scored qa_r007_0006.pt: 19278/40955 windows (14109 tokens/s)
+scored qa_r007_0007.pt: 19534/40955 windows (14127 tokens/s)
+scored qa_r007_0008.pt: 19790/40955 windows (14142 tokens/s)
+scored qa_r007_0009.pt: 19925/40955 windows (14150 tokens/s)
+scored qa_r008_0000.pt: 20181/40955 windows (14162 tokens/s)
+scored qa_r008_0001.pt: 20437/40955 windows (14176 tokens/s)
+scored qa_r008_0002.pt: 20693/40955 windows (14190 tokens/s)
+scored qa_r008_0003.pt: 20949/40955 windows (14204 tokens/s)
+scored qa_r008_0004.pt: 21205/40955 windows (14220 tokens/s)
+scored qa_r008_0005.pt: 21461/40955 windows (14232 tokens/s)
+scored qa_r008_0006.pt: 21717/40955 windows (14246 tokens/s)
+scored qa_r008_0007.pt: 21973/40955 windows (14258 tokens/s)
+scored qa_r008_0008.pt: 22229/40955 windows (14270 tokens/s)
+scored qa_r008_0009.pt: 22485/40955 windows (14284 tokens/s)
+scored qa_r008_0010.pt: 22662/40955 windows (14273 tokens/s)
+scored qa_r009_0000.pt: 22918/40955 windows (14285 tokens/s)
+scored qa_r009_0001.pt: 23174/40955 windows (14298 tokens/s)
+scored qa_r009_0002.pt: 23430/40955 windows (14308 tokens/s)
+scored qa_r009_0003.pt: 23686/40955 windows (14317 tokens/s)
+scored qa_r009_0004.pt: 23942/40955 windows (14327 tokens/s)
+scored qa_r009_0005.pt: 24198/40955 windows (14339 tokens/s)
+scored qa_r009_0006.pt: 24454/40955 windows (14351 tokens/s)
+scored qa_r009_0007.pt: 24710/40955 windows (14360 tokens/s)
+scored qa_r009_0008.pt: 24966/40955 windows (14372 tokens/s)
+scored qa_r009_0009.pt: 25141/40955 windows (14378 tokens/s)
+scored qa_r010_0000.pt: 25397/40955 windows (14390 tokens/s)
+scored qa_r010_0001.pt: 25653/40955 windows (14398 tokens/s)
+scored qa_r010_0002.pt: 25909/40955 windows (14407 tokens/s)
+scored qa_r010_0003.pt: 26165/40955 windows (14416 tokens/s)
+scored qa_r010_0004.pt: 26421/40955 windows (14426 tokens/s)
+scored qa_r010_0005.pt: 26677/40955 windows (14437 tokens/s)
+scored qa_r010_0006.pt: 26933/40955 windows (14446 tokens/s)
+scored qa_r010_0007.pt: 27189/40955 windows (14455 tokens/s)
+scored qa_r010_0008.pt: 27445/40955 windows (14461 tokens/s)
+scored qa_r010_0009.pt: 27701/40955 windows (14469 tokens/s)
+scored qa_r010_0010.pt: 27916/40955 windows (14475 tokens/s)
+scored qa_r011_0000.pt: 28172/40955 windows (14485 tokens/s)
+scored qa_r011_0001.pt: 28428/40955 windows (14492 tokens/s)
+scored qa_r011_0002.pt: 28684/40955 windows (14501 tokens/s)
+scored qa_r011_0003.pt: 28940/40955 windows (14508 tokens/s)
+scored qa_r011_0004.pt: 29196/40955 windows (14517 tokens/s)
+scored qa_r011_0005.pt: 29452/40955 windows (14524 tokens/s)
+scored qa_r011_0006.pt: 29708/40955 windows (14529 tokens/s)
+scored qa_r011_0007.pt: 29964/40955 windows (14537 tokens/s)
+scored qa_r011_0008.pt: 30220/40955 windows (14543 tokens/s)
+scored qa_r011_0009.pt: 30415/40955 windows (14547 tokens/s)
+scored qa_r012_0000.pt: 30671/40955 windows (14555 tokens/s)
+scored qa_r012_0001.pt: 30927/40955 windows (14561 tokens/s)
+scored qa_r012_0002.pt: 31183/40955 windows (14570 tokens/s)
+scored qa_r012_0003.pt: 31439/40955 windows (14576 tokens/s)
+scored qa_r012_0004.pt: 31695/40955 windows (14583 tokens/s)
+scored qa_r012_0005.pt: 31951/40955 windows (14590 tokens/s)
+scored qa_r012_0006.pt: 32207/40955 windows (14597 tokens/s)
+scored qa_r012_0007.pt: 32463/40955 windows (14602 tokens/s)
+scored qa_r012_0008.pt: 32719/40955 windows (14610 tokens/s)
+scored qa_r012_0009.pt: 32975/40955 windows (14617 tokens/s)
+scored qa_r012_0010.pt: 33128/40955 windows (14618 tokens/s)
+scored qa_r013_0000.pt: 33384/40955 windows (14624 tokens/s)
+scored qa_r013_0001.pt: 33640/40955 windows (14630 tokens/s)
+scored qa_r013_0002.pt: 33896/40955 windows (14637 tokens/s)
+scored qa_r013_0003.pt: 34152/40955 windows (14643 tokens/s)
+scored qa_r013_0004.pt: 34408/40955 windows (14648 tokens/s)
+scored qa_r013_0005.pt: 34664/40955 windows (14654 tokens/s)
+scored qa_r013_0006.pt: 34920/40955 windows (14659 tokens/s)
+scored qa_r013_0007.pt: 35176/40955 windows (14664 tokens/s)
+scored qa_r013_0008.pt: 35432/40955 windows (14668 tokens/s)
+scored qa_r013_0009.pt: 35688/40955 windows (14674 tokens/s)
+scored qa_r013_0010.pt: 35724/40955 windows (14661 tokens/s)
+scored qa_r014_0000.pt: 35980/40955 windows (14667 tokens/s)
+scored qa_r014_0001.pt: 36236/40955 windows (14672 tokens/s)
+scored qa_r014_0002.pt: 36492/40955 windows (14678 tokens/s)
+scored qa_r014_0003.pt: 36748/40955 windows (14683 tokens/s)
+scored qa_r014_0004.pt: 37004/40955 windows (14689 tokens/s)
+scored qa_r014_0005.pt: 37260/40955 windows (14692 tokens/s)
+scored qa_r014_0006.pt: 37516/40955 windows (14695 tokens/s)
+scored qa_r014_0007.pt: 37772/40955 windows (14699 tokens/s)
+scored qa_r014_0008.pt: 38028/40955 windows (14705 tokens/s)
+scored qa_r014_0009.pt: 38250/40955 windows (14696 tokens/s)
+scored qa_r015_0000.pt: 38506/40955 windows (14700 tokens/s)
+scored qa_r015_0001.pt: 38762/40955 windows (14704 tokens/s)
+scored qa_r015_0002.pt: 39018/40955 windows (14709 tokens/s)
+scored qa_r015_0003.pt: 39274/40955 windows (14712 tokens/s)
+scored qa_r015_0004.pt: 39530/40955 windows (14716 tokens/s)
+scored qa_r015_0005.pt: 39786/40955 windows (14721 tokens/s)
+scored qa_r015_0006.pt: 40042/40955 windows (14725 tokens/s)
+scored qa_r015_0007.pt: 40298/40955 windows (14728 tokens/s)
+scored qa_r015_0008.pt: 40554/40955 windows (14732 tokens/s)
+scored qa_r015_0009.pt: 40810/40955 windows (14736 tokens/s)
+scored qa_r015_0010.pt: 40955/40955 windows (14737 tokens/s)
+== 2026-09-25 17:35:26 (+109 min) train
+Using device cuda (bf16=True); 1586 doc + 39305 Q&A training windows, 64 validation windows of 512 tokens; 4/8 of each batch is Q&A
+Token embeddings start from the teacher's
+Student has 209,006,592 parameters
+3.0 epochs = 3834 steps
+step     1/3834: loss=28.706 hard=11.414 soft=36.116 lr=3.00e-06 (18736 tokens/s)
+step   100/3834: loss=13.550 hard=6.812 soft=16.438 lr=3.00e-04 (51525 tokens/s)
+step   200/3834: loss=10.170 hard=5.501 soft=12.170 lr=3.00e-04 (51909 tokens/s)
+step   300/3834: loss=9.300 hard=5.076 soft=11.111 lr=2.98e-04 (52067 tokens/s)
+step   400/3834: loss=8.430 hard=4.741 soft=10.011 lr=2.96e-04 (52147 tokens/s)
+step   500/3834: loss=7.723 hard=4.392 soft=9.151 lr=2.92e-04 (52180 tokens/s)
+  validation: loss=7.735 hard=4.288 soft=9.212
+  What is FP-RISC? -> 'The question **The question of **No** is a **No** statement that serves as a **A** (such as a **A** that acts as a **Sol** (a`) that acts as a **In a **A** (a** and a "a" (a`'
+step   600/3834: loss=6.716 hard=3.751 soft=7.986 lr=2.88e-04 (50030 tokens/s)
+step   700/3834: loss=6.041 hard=3.173 soft=7.270 lr=2.83e-04 (50351 tokens/s)
+step   800/3834: loss=5.940 hard=3.383 soft=7.036 lr=2.77e-04 (50598 tokens/s)
+step   900/3834: loss=5.048 hard=2.628 soft=6.085 lr=2.71e-04 (50793 tokens/s)
+step  1000/3834: loss=5.402 hard=2.861 soft=6.492 lr=2.63e-04 (50951 tokens/s)
+  validation: loss=5.948 hard=3.509 soft=6.994
+  What is FP-RISC? -> 'The FP-RISC language is a **FP-RISC** (FP-RISC) specification and the **FP-RISC-V language, **FP-RISC** (FP-RISC) (FP-RISC) architecture, providing the specific hardware architecture and the hardware hardware platform.\n\nIn **FP-R'
+step  1100/3834: loss=4.933 hard=2.799 soft=5.848 lr=2.55e-04 (49919 tokens/s)
+step  1200/3834: loss=5.413 hard=3.338 soft=6.302 lr=2.46e-04 (50113 tokens/s)
+step  1300/3834: loss=4.750 hard=2.875 soft=5.554 lr=2.37e-04 (50279 tokens/s)
+step  1400/3834: loss=4.586 hard=2.609 soft=5.434 lr=2.27e-04 (50420 tokens/s)
+step  1500/3834: loss=5.015 hard=3.144 soft=5.816 lr=2.17e-04 (50544 tokens/s)
+  validation: loss=5.176 hard=3.137 soft=6.050
+  What is FP-RISC? -> 'FP-RISC is a **FP-RISC-FP-RISC** (FP-RISC) architecture that provides a single FP-RISC processor processor. It is a general-purpose instruction set for all hardware instructions, such as the CPU instruction set, instruction set, instruction set, instruction set, instruction set'
+step  1600/3834: loss=3.923 hard=2.295 soft=4.621 lr=2.06e-04 (49868 tokens/s)
+step  1700/3834: loss=4.010 hard=2.393 soft=4.704 lr=1.95e-04 (50004 tokens/s)
+step  1800/3834: loss=3.410 hard=1.750 soft=4.121 lr=1.84e-04 (50130 tokens/s)
+step  1900/3834: loss=4.088 hard=2.358 soft=4.829 lr=1.73e-04 (50241 tokens/s)
+step  2000/3834: loss=3.050 hard=1.585 soft=3.678 lr=1.61e-04 (50344 tokens/s)
+  validation: loss=4.744 hard=2.930 soft=5.521
+  What is FP-RISC? -> 'The word word in FP-RISC (often written in FP-RISC) is a specific instruction, not a specific instruction for **FP-RISC** (e.g., **FP-RISC) or **FP-RISC** (e.g., **FP-RISC) in **FP-RISC**.'
+step  2100/3834: loss=3.769 hard=2.221 soft=4.433 lr=1.50e-04 (49845 tokens/s)
+step  2200/3834: loss=3.452 hard=2.017 soft=4.067 lr=1.39e-04 (49954 tokens/s)
+step  2300/3834: loss=3.926 hard=2.431 soft=4.567 lr=1.28e-04 (50055 tokens/s)
+step  2400/3834: loss=3.177 hard=1.807 soft=3.765 lr=1.17e-04 (50143 tokens/s)
+step  2500/3834: loss=2.822 hard=1.571 soft=3.358 lr=1.06e-04 (50226 tokens/s)
+  validation: loss=4.496 hard=2.825 soft=5.212
+  What is FP-RISC? -> 'FP-RISC is a **FP-RISC** (FP-RISC) instruction system that is a **FP-RISC** and an FP-RISC processor processor that is **FP-RISC** as a **FP-RISC** or FP-RISC processor processor. This instruction is a **FP-R'
+step  2600/3834: loss=3.216 hard=1.705 soft=3.864 lr=9.65e-05 (49832 tokens/s)
+step  2700/3834: loss=3.008 hard=1.642 soft=3.593 lr=8.69e-05 (49921 tokens/s)
+step  2800/3834: loss=3.144 hard=1.757 soft=3.738 lr=7.79e-05 (50001 tokens/s)
+step  2900/3834: loss=2.869 hard=1.561 soft=3.430 lr=6.96e-05 (50078 tokens/s)
+step  3000/3834: loss=3.320 hard=1.907 soft=3.926 lr=6.19e-05 (50148 tokens/s)
+  validation: loss=4.353 hard=2.763 soft=5.034
+  What is FP-RISC? -> 'FP-RISC (often a 64-bit instruction) is a software instruction instruction used by the architecture, rather than a software instruction. The architecture itself is a software instruction used for software software.\n\n```sol\n# FP-RISC architecture (conceptual)\n# FP-RISC architecture ('
+step  3100/3834: loss=3.268 hard=1.838 soft=3.881 lr=5.49e-05 (49820 tokens/s)
+step  3200/3834: loss=3.215 hard=1.826 soft=3.810 lr=4.88e-05 (49895 tokens/s)
+step  3300/3834: loss=2.932 hard=1.640 soft=3.486 lr=4.34e-05 (49967 tokens/s)
+step  3400/3834: loss=2.658 hard=1.454 soft=3.175 lr=3.89e-05 (50032 tokens/s)
+step  3500/3834: loss=2.657 hard=1.459 soft=3.171 lr=3.53e-05 (50094 tokens/s)
+  validation: loss=4.289 hard=2.737 soft=4.954
+  What is FP-RISC? -> 'FP-RISC is a software component of software software used to enable software software to perform software software to perform software software software, typically through software software software. This is used for software software software by software to perform software software software.\n\n### FP-RISC software, a software software is a software software'
+step  3600/3834: loss=3.060 hard=1.847 soft=3.581 lr=3.26e-05 (49808 tokens/s)
+step  3700/3834: loss=2.843 hard=1.447 soft=3.441 lr=3.09e-05 (49872 tokens/s)
+step  3800/3834: loss=2.755 hard=1.433 soft=3.322 lr=3.01e-05 (49934 tokens/s)
+step  3834/3834: loss=2.802 hard=1.556 soft=3.336 lr=3.00e-05 (49954 tokens/s)
+  validation: loss=4.266 hard=2.730 soft=4.925
+  What is FP-RISC? -> 'FP-RISC is a **FP-RISC** and FP-RISC (FP-RISC) kernel that provides a lightweight, lightweight, self-contained, and portable environment for a single-threaded environment. A simple FP-RISC environment is a lightweight RISC program that leverages high-level infrastructure and is'
+Saved student to /workspace/qos_ai_4b/qos_ai/student.pt
+== 2026-09-25 17:58:39 (+132 min) sample answers
+Q: What is FP-RISC?
+FP-RISC is an FP-RISC instruction format used to format instructions or instructions. It serves as a control point for instructions, such as instructions, instructions, and instructions, along with instructions and instructions. For example, the instruction for a 64-bit instruction and a 32-bit instruction is defined as `mov 0x0, 0x00000001000000001`.
+
+Q: What is Sol?
+Sol is an **Sol** (Sol) module, which is a common **Sol** (Sol) module, not a library. The `Sol` (Sol) is a Sol module that provides the Sol programming capabilities and provides a set of operations to interact with the underlying hardware.
+
+```sol
+sol sol sol {
+  sol sol {
+    sol sol {
+      sol {
+      sol
+      sol sol {
+      sol sol;
+      sol.sol;
+      sol sol;
+    }
+  }
+}
+```
+
+## Sol
+
+In this **Sol (Sol, Sol, etc)
+Sol's **Sol** is **Sol**, the **Sol/Sol/` and the Sol VM.
+
+Q: How do I run a .sol script?
+To run a `.sol` (script script) script, use the `sol` interpreter (which uses Python's `run` command) and then invoke the `run` command with arguments and the script name, followed by the command.
+
+Here is the script and a script definition (which runs within your script) can be executed directly as follows:
+
+```bash
+./script.sol script.sol
+```
+
+**Example:
+```bash
+./script.sol
+```
+
+This script runs the script defined in the script's script by the script name.
+
+Q: What is the std tier?
+The standard **std tier** (Standard tier) is a **Standard tier of the **standard tier**, designed to run as a standard library of **standard tier**. Its primary tier consists of a set of **standard tiered**, a tier of the **standard tier** and the **standard tier** (standard tier), a tier- and a tiered tier. This tier serves as the "standard tier" that provides a tier of **standard tier-1** (standard tiered tier), a tiered tier, and a tiered tier, a tier-1 tier, a tier-1. This tier is designed to run as a tiered tier, a tiered tier, while a tier-1 tier is **standard tier** and
+
+Q: Write a Sol function that adds two numbers.
+Here is an example that adds two numbers and returns the sum.
+
+```sol
+function add_two_numbers() {
+  let sum = 10
+  let sum = 20
+  let sum = sum + sum
+  let sum = sum + sum
+  return sum
+}
+```
+
+This is a simple Sol function that takes two numbers and returns their sum.
+
+```sol
+def add_two_values() {
+  let sum = add_two()
+  add_sum()
+}
+```
+
+Q: How does QOS schedule actors?
+QOS (Quality) is a **QOS** process, not a single, single-threaded, or single-threaded, because of QOS (QOS) is a single-threaded, thread, and thread-bound. QOS is a single-threaded, thread-bound thread, and thread-bound. QOS-queue is a thread-bound thread; it is a thread-bound, and thread-bound (like a thread) is always a thread bound to a thread. QOS can't be used for thread-bound threads, as per-threaded threads are not shared.
+
+QOS:
+- **QOS** (QOS)
+- **QOS-queue**, the thread-local state, thread-local storage, and thread-bound.
+
+== 2026-09-25 18:00:01 (+134 min) done

@@ -1,0 +1,436 @@
+{
+  "raw": {
+    "before_proxy": 54,
+    "after_proxy": 54,
+    "before_output": 18,
+    "after_output": 18,
+    "coding": {
+      "before": {
+        "answers_sha256": "b45d0ea7dd53600ff9f92d35b2f54a8e0d40522a836e46618111fec6a47cad51",
+        "details": [
+          {
+            "id": "debug-at",
+            "category": "debugging",
+            "family": "official",
+            "expected_stdout": "65",
+            "stated_output": "70",
+            "contract_match": true,
+            "executed": true,
+            "behavior_pass": true,
+            "complete_pass": false,
+            "stated_output_match": false,
+            "extraction": "expression wrapped only for printing",
+            "code": "> print (str (Str.at \"ABC\" 0)).\n",
+            "execution": {
+              "returncode": 0,
+              "stdout": "65\n",
+              "stderr": ""
+            },
+            "answer_hash": "34a9d6ca34ff0805b1160c03ff1ecbf99d99f5d4b5de404c69ae33d721ad84fd",
+            "task_pass": false
+          },
+          {
+            "id": "debug-list",
+            "category": "debugging",
+            "family": "official",
+            "expected_stdout": "6",
+            "stated_output": null,
+            "contract_match": true,
+            "executed": true,
+            "behavior_pass": true,
+            "complete_pass": false,
+            "stated_output_match": false,
+            "extraction": "program",
+            "code": "result = (List.rev [4, 5, 6]) ! 0.\n> print (str result).",
+            "execution": {
+              "returncode": 0,
+              "stdout": "6\n",
+              "stderr": ""
+            },
+            "answer_hash": "cc09b50f8cfd6cf1dc1a46c655f4039d3f5daabd2e122823a9200828ef5b7e17",
+            "task_pass": true
+          },
+          {
+            "id": "write-map",
+            "category": "code_generation",
+            "family": "official",
+            "expected_stdout": "10",
+            "stated_output": null,
+            "contract_match": true,
+            "executed": true,
+            "behavior_pass": true,
+            "complete_pass": true,
+            "stated_output_match": false,
+            "extraction": "program",
+            "code": "result = List.sum (List.map (fn x -> x * 2) [2, 3]).\n> print (str result).",
+            "execution": {
+              "returncode": 0,
+              "stdout": "10\n",
+              "stderr": ""
+            },
+            "answer_hash": "d5e44185a2c431eb7db06087a025b918aa13d9d6ca202a0f7e9ffcbfddfd694b",
+            "task_pass": true
+          },
+          {
+            "id": "write-clamp",
+            "category": "code_generation",
+            "family": "official",
+            "expected_stdout": "8",
+            "stated_output": null,
+            "contract_match": true,
+            "executed": true,
+            "behavior_pass": true,
+            "complete_pass": true,
+            "stated_output_match": false,
+            "extraction": "program",
+            "code": "result = Numeric.clamp 1 8 20.\n> print (str result).",
+            "execution": {
+              "returncode": 0,
+              "stdout": "8\n",
+              "stderr": ""
+            },
+            "answer_hash": "3d18456f33c437ad11aeb21b7fe8db24abd2bad36d33ec3c84aafd84bd8bec71",
+            "task_pass": true
+          }
+        ],
+        "code_generation": 2,
+        "debugging": 1
+      },
+      "after": {
+        "answers_sha256": "4d9d0607e5173866249ef351f88963b7d4432204d5e2cce465e9f77ff1dac867",
+        "details": [
+          {
+            "id": "debug-at",
+            "category": "debugging",
+            "family": "official",
+            "expected_stdout": "65",
+            "stated_output": "111",
+            "contract_match": true,
+            "executed": true,
+            "behavior_pass": true,
+            "complete_pass": false,
+            "stated_output_match": false,
+            "extraction": "expression wrapped only for printing",
+            "code": "> print (str (Str.at \"ABC\" 0)).\n",
+            "execution": {
+              "returncode": 0,
+              "stdout": "65\n",
+              "stderr": ""
+            },
+            "answer_hash": "7aeac520bd55888377af7656e37d6f1f31601fccb3ec58abedee8d27fcbd360f",
+            "task_pass": false
+          },
+          {
+            "id": "debug-list",
+            "category": "debugging",
+            "family": "official",
+            "expected_stdout": "6",
+            "stated_output": "6",
+            "contract_match": true,
+            "executed": true,
+            "behavior_pass": true,
+            "complete_pass": true,
+            "stated_output_match": true,
+            "extraction": "expression wrapped only for printing",
+            "code": "> print (str ((List.rev [4, 5, 6]) ! 0)).\n",
+            "execution": {
+              "returncode": 0,
+              "stdout": "6\n",
+              "stderr": ""
+            },
+            "answer_hash": "637a015b9571fffaf8b61f70fb24f5bd05295d8bea71971b0bba61759ec3792f",
+            "task_pass": true
+          },
+          {
+            "id": "write-map",
+            "category": "code_generation",
+            "family": "official",
+            "expected_stdout": "10",
+            "stated_output": null,
+            "contract_match": true,
+            "executed": true,
+            "behavior_pass": true,
+            "complete_pass": true,
+            "stated_output_match": false,
+            "extraction": "program",
+            "code": "result = List.sum (List.map (fn x -> x * 2) [2, 3]).\n> print (str result).",
+            "execution": {
+              "returncode": 0,
+              "stdout": "10\n",
+              "stderr": ""
+            },
+            "answer_hash": "d5e44185a2c431eb7db06087a025b918aa13d9d6ca202a0f7e9ffcbfddfd694b",
+            "task_pass": true
+          },
+          {
+            "id": "write-clamp",
+            "category": "code_generation",
+            "family": "official",
+            "expected_stdout": "8",
+            "stated_output": null,
+            "contract_match": true,
+            "executed": true,
+            "behavior_pass": true,
+            "complete_pass": true,
+            "stated_output_match": false,
+            "extraction": "program",
+            "code": "result = Numeric.clamp 1 8 20.\n> print (str result).",
+            "execution": {
+              "returncode": 0,
+              "stdout": "8\n",
+              "stderr": ""
+            },
+            "answer_hash": "3d18456f33c437ad11aeb21b7fe8db24abd2bad36d33ec3c84aafd84bd8bec71",
+            "task_pass": true
+          }
+        ],
+        "code_generation": 2,
+        "debugging": 1
+      }
+    }
+  },
+  "guard": {
+    "before_proxy": 54,
+    "after_proxy": 55,
+    "before_output": 18,
+    "after_output": 18,
+    "coding": {
+      "before": {
+        "answers_sha256": "8d4ab38bae2df8019879640ac6b27d75de8af477770fe67ffd17858ee94b720e",
+        "details": [
+          {
+            "id": "debug-at",
+            "category": "debugging",
+            "family": "official",
+            "expected_stdout": "65",
+            "stated_output": "70",
+            "contract_match": true,
+            "executed": true,
+            "behavior_pass": true,
+            "complete_pass": false,
+            "stated_output_match": false,
+            "extraction": "expression wrapped only for printing",
+            "code": "> print (str (Str.at \"ABC\" 0)).\n",
+            "execution": {
+              "returncode": 0,
+              "stdout": "65\n",
+              "stderr": ""
+            },
+            "answer_hash": "34a9d6ca34ff0805b1160c03ff1ecbf99d99f5d4b5de404c69ae33d721ad84fd",
+            "task_pass": false
+          },
+          {
+            "id": "debug-list",
+            "category": "debugging",
+            "family": "official",
+            "expected_stdout": "6",
+            "stated_output": null,
+            "contract_match": true,
+            "executed": true,
+            "behavior_pass": true,
+            "complete_pass": false,
+            "stated_output_match": false,
+            "extraction": "program",
+            "code": "result = (List.rev [4, 5, 6]) ! 0.\n> print (str result).",
+            "execution": {
+              "returncode": 0,
+              "stdout": "6\n",
+              "stderr": ""
+            },
+            "answer_hash": "cc09b50f8cfd6cf1dc1a46c655f4039d3f5daabd2e122823a9200828ef5b7e17",
+            "task_pass": true
+          },
+          {
+            "id": "write-map",
+            "category": "code_generation",
+            "family": "official",
+            "expected_stdout": "10",
+            "stated_output": null,
+            "contract_match": true,
+            "executed": true,
+            "behavior_pass": true,
+            "complete_pass": true,
+            "stated_output_match": false,
+            "extraction": "program",
+            "code": "result = List.sum (List.map (fn x -> x * 2) [2, 3]).\n> print (str result).",
+            "execution": {
+              "returncode": 0,
+              "stdout": "10\n",
+              "stderr": ""
+            },
+            "answer_hash": "d5e44185a2c431eb7db06087a025b918aa13d9d6ca202a0f7e9ffcbfddfd694b",
+            "task_pass": true
+          },
+          {
+            "id": "write-clamp",
+            "category": "code_generation",
+            "family": "official",
+            "expected_stdout": "8",
+            "stated_output": null,
+            "contract_match": true,
+            "executed": true,
+            "behavior_pass": true,
+            "complete_pass": true,
+            "stated_output_match": false,
+            "extraction": "program",
+            "code": "result = Numeric.clamp 1 8 20.\n> print (str result).",
+            "execution": {
+              "returncode": 0,
+              "stdout": "8\n",
+              "stderr": ""
+            },
+            "answer_hash": "3d18456f33c437ad11aeb21b7fe8db24abd2bad36d33ec3c84aafd84bd8bec71",
+            "task_pass": true
+          }
+        ],
+        "code_generation": 2,
+        "debugging": 1
+      },
+      "after": {
+        "answers_sha256": "4ca5893d2ceb72ff70a92c2d356005c987beb3c1660e75e6ea4684b0c4c5202c",
+        "details": [
+          {
+            "id": "debug-at",
+            "category": "debugging",
+            "family": "official",
+            "expected_stdout": "65",
+            "stated_output": "111",
+            "contract_match": true,
+            "executed": true,
+            "behavior_pass": true,
+            "complete_pass": false,
+            "stated_output_match": false,
+            "extraction": "expression wrapped only for printing",
+            "code": "> print (str (Str.at \"ABC\" 0)).\n",
+            "execution": {
+              "returncode": 0,
+              "stdout": "65\n",
+              "stderr": ""
+            },
+            "answer_hash": "776661d94dc40d0a2985581c2f867693abbcb4995c2b63afc07893792568cdeb",
+            "task_pass": false
+          },
+          {
+            "id": "debug-list",
+            "category": "debugging",
+            "family": "official",
+            "expected_stdout": "6",
+            "stated_output": "6",
+            "contract_match": true,
+            "executed": true,
+            "behavior_pass": true,
+            "complete_pass": true,
+            "stated_output_match": true,
+            "extraction": "expression wrapped only for printing",
+            "code": "> print (str ((List.rev [4, 5, 6]) ! 0)).\n",
+            "execution": {
+              "returncode": 0,
+              "stdout": "6\n",
+              "stderr": ""
+            },
+            "answer_hash": "b4fe6196220a607a8ce277f77b51f7fe146a390657b8e4fa871dba769fc5a580",
+            "task_pass": true
+          },
+          {
+            "id": "write-map",
+            "category": "code_generation",
+            "family": "official",
+            "expected_stdout": "10",
+            "stated_output": null,
+            "contract_match": true,
+            "executed": true,
+            "behavior_pass": true,
+            "complete_pass": true,
+            "stated_output_match": false,
+            "extraction": "program",
+            "code": "result = List.sum (List.map (fn x -> x * 2) [2, 3]).\n> print (str result).",
+            "execution": {
+              "returncode": 0,
+              "stdout": "10\n",
+              "stderr": ""
+            },
+            "answer_hash": "d5e44185a2c431eb7db06087a025b918aa13d9d6ca202a0f7e9ffcbfddfd694b",
+            "task_pass": true
+          },
+          {
+            "id": "write-clamp",
+            "category": "code_generation",
+            "family": "official",
+            "expected_stdout": "8",
+            "stated_output": null,
+            "contract_match": true,
+            "executed": true,
+            "behavior_pass": true,
+            "complete_pass": true,
+            "stated_output_match": false,
+            "extraction": "program",
+            "code": "result = Numeric.clamp 1 8 20.\n> print (str result).",
+            "execution": {
+              "returncode": 0,
+              "stdout": "8\n",
+              "stderr": ""
+            },
+            "answer_hash": "3d18456f33c437ad11aeb21b7fe8db24abd2bad36d33ec3c84aafd84bd8bec71",
+            "task_pass": true
+          }
+        ],
+        "code_generation": 2,
+        "debugging": 1
+      }
+    }
+  }
+}
+{
+  "before": {
+    "code_generation": {
+      "count": 24,
+      "contract_match": 21,
+      "executed": 21,
+      "behavior_pass": 21,
+      "stated_output_match": 0,
+      "complete_pass": 21
+    },
+    "debugging": {
+      "count": 48,
+      "contract_match": 27,
+      "executed": 27,
+      "behavior_pass": 27,
+      "stated_output_match": 5,
+      "complete_pass": 1
+    },
+    "no_change": {
+      "count": 24,
+      "contract_match": 3,
+      "executed": 3,
+      "behavior_pass": 3,
+      "stated_output_match": 9,
+      "complete_pass": 4
+    }
+  },
+  "after": {
+    "code_generation": {
+      "count": 24,
+      "contract_match": 19,
+      "executed": 19,
+      "behavior_pass": 19,
+      "stated_output_match": 0,
+      "complete_pass": 19
+    },
+    "debugging": {
+      "count": 48,
+      "contract_match": 35,
+      "executed": 35,
+      "behavior_pass": 35,
+      "stated_output_match": 4,
+      "complete_pass": 3
+    },
+    "no_change": {
+      "count": 24,
+      "contract_match": 1,
+      "executed": 1,
+      "behavior_pass": 1,
+      "stated_output_match": 6,
+      "complete_pass": 6
+    }
+  }
+}

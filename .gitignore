@@ -1,0 +1,37 @@
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+.secrets/
+**/API_KEY
+*.key
+# Runtime and dependency caches
+.venv/
+.venv-*/
+.runtime/
+__pycache__/
+*.pyc
+.hypothesis/
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.DS_Store
+# Model weights and rebuildable token/tensor files
+*.pt
+*.pt.xz
+*.npy
+*.bin
+*.safetensors
+artifacts/qos_ai/pod*/**
+artifacts/qos_ai/corpus.jsonl
+artifacts/qos_ai/run.log
+artifacts/qos_ai/setup.log
+
+# Preserve previously versioned evidence from the original repository.
+!artifacts/qos_ai/pod_4b/pod.log
+!artifacts/qos_ai/pod_4b/qa.jsonl
+!artifacts/qos_ai/pod_4b/setup.log
+!artifacts/qos_ai/pod_4b_v2/pod.log
+!artifacts/qos_ai/pod_4b_v2/qa.jsonl
+!artifacts/qos_ai/pod_4b_v2/setup.log

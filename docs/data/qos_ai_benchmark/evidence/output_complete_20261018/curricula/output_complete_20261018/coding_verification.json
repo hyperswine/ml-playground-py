@@ -1,0 +1,1162 @@
+{
+  "diagnostic_hash": "97c4f5c14160362307c0a51b2693ddbb100345d45811f4d355913cf56bcd24df",
+  "compiler_sha256": "c41c6ab9377e59be4d9bccedf1d6dd33f188bad0453046660650c6982fbc2f36",
+  "host": "JQs-Mac-mini.local",
+  "passed": 144,
+  "total": 144,
+  "distinct_executions": 48,
+  "results": [
+    {
+      "id": "codingdiag-991-map-0-repair_inline",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "68\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-map-0-repair_inline",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "102\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-map-0-repair_program",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "68\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-map-0-repair_program",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "102\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-map-0-generate",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "68\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-map-0-correct_check",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "68\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-map-1-repair_inline",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "81\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-map-1-repair_inline",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "96\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-map-1-repair_program",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "81\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-map-1-repair_program",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "96\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-map-1-generate",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "81\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-map-1-correct_check",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "81\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-clamp-0-repair_inline",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-clamp-0-repair_inline",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "<fn Numeric.clamp/1>\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-clamp-0-repair_program",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-clamp-0-repair_program",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "<fn Numeric.clamp/1>\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-clamp-0-generate",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-clamp-0-correct_check",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-clamp-1-repair_inline",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "12\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-clamp-1-repair_inline",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "3\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-clamp-1-repair_program",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "12\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-clamp-1-repair_program",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "3\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-clamp-1-generate",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "12\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-clamp-1-correct_check",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "12\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-byte-0-repair_inline",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "71\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-byte-0-repair_inline",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "114\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-byte-0-repair_program",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "71\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-byte-0-repair_program",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "114\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-byte-0-generate",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "71\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-byte-0-correct_check",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "71\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-byte-1-repair_inline",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "77\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-byte-1-repair_inline",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "90\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-byte-1-repair_program",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "77\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-byte-1-repair_program",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "90\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-byte-1-generate",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "77\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-byte-1-correct_check",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "77\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-reverse-0-repair_inline",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "16\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-reverse-0-repair_inline",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "25\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-reverse-0-repair_program",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "16\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-reverse-0-repair_program",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "25\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-reverse-0-generate",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "16\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-reverse-0-correct_check",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "16\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-reverse-1-repair_inline",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "16\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-reverse-1-repair_inline",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "14\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-reverse-1-repair_program",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "16\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-reverse-1-repair_program",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "14\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-reverse-1-generate",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "16\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-reverse-1-correct_check",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "16\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-slice-0-repair_inline",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "Gr\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-slice-0-repair_inline",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "Gra\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-slice-0-repair_program",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "Gr\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-slice-0-repair_program",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "Gra\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-slice-0-generate",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "Gr\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-slice-0-correct_check",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "Gr\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-slice-1-repair_inline",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "apl\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-slice-1-repair_inline",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "0pl\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-slice-1-repair_program",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "apl\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-slice-1-repair_program",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "0pl\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-slice-1-generate",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "apl\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-slice-1-correct_check",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "apl\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-filter-0-repair_inline",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "34\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-filter-0-repair_inline",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "26\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-filter-0-repair_program",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "34\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-filter-0-repair_program",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "26\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-filter-0-generate",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "34\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-filter-0-correct_check",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "34\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-filter-6-repair_inline",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "35\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-filter-6-repair_inline",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "26\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-filter-6-repair_program",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "35\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-filter-6-repair_program",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "26\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-filter-6-generate",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "35\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-filter-6-correct_check",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "35\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-sum-1-repair_inline",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "37\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-sum-1-repair_inline",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "57\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-sum-1-repair_program",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "37\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-sum-1-repair_program",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "57\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-sum-1-generate",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "37\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-sum-1-correct_check",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "37\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-sum-2-repair_inline",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "71\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-sum-2-repair_inline",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "47\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-sum-2-repair_program",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "71\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-sum-2-repair_program",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "47\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-sum-2-generate",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "71\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-sum-2-correct_check",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "71\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-take-0-repair_inline",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "27\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-take-0-repair_inline",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "50\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-take-0-repair_program",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "27\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-take-0-repair_program",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "50\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-take-0-generate",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "27\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-take-0-correct_check",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "27\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-take-1-repair_inline",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "17\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-take-1-repair_inline",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "18\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-take-1-repair_program",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "17\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-take-1-repair_program",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "18\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-take-1-generate",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "17\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-take-1-correct_check",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "17\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-length-0-repair_inline",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-length-0-repair_inline",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "6\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-length-0-repair_program",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-length-0-repair_program",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "6\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-length-0-generate",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-length-0-correct_check",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-length-1-repair_inline",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-length-1-repair_inline",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "6\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-length-1-repair_program",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-length-1-repair_program",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "6\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-length-1-generate",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-length-1-correct_check",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-min-0-repair_inline",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-min-0-repair_inline",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "22\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-min-0-repair_program",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-min-0-repair_program",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "22\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-min-0-generate",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-min-0-correct_check",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-min-2-repair_inline",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-min-2-repair_inline",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "26\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-min-2-repair_program",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-min-2-repair_program",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "26\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-min-2-generate",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-min-2-correct_check",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-range-3-repair_inline",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "63\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-range-3-repair_inline",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "75\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-range-3-repair_program",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "63\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-range-3-repair_program",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "75\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-range-3-generate",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "63\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-range-3-correct_check",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "63\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-range-26-repair_inline",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "108\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-range-26-repair_inline",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "126\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-range-26-repair_program",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "108\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-range-26-repair_program",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "126\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-range-26-generate",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "108\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-range-26-correct_check",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "108\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-missing-0-repair_inline",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-missing-0-repair_inline",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "0\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-missing-0-repair_program",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-missing-0-repair_program",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "0\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-missing-0-generate",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-missing-0-correct_check",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-missing-1-repair_inline",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-missing-1-repair_inline",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "0\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-missing-1-repair_program",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-missing-1-repair_program",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "0\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-missing-1-generate",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    },
+    {
+      "id": "codingdiag-991-missing-1-correct_check",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    }
+  ]
+}

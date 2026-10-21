@@ -1,0 +1,28 @@
+
+COMMAND ["qos_ai_generalization_eval.py", "loss", "--data", "curricula/generalization_20261019", "--load", "experiments/generalization_20261019_seed7/student.pt", "--output", "reports/generalization_20261019/seed7_final/loss.json"]
+{
+  "checkpoint_sha256": "f51187bc5176b2711f22b4c1f631b75c134951fc12cd25c4441a6ea9a5b51de2",
+  "diagnostic_hash": "49dae923a5d69a252c786162b9048fd3cb3566abc47eb876d2fe80238a9aface",
+  "train_probe_hash": "8b91df9a751913a9ea9816ff495830a2ea283a76888acbf84e0bbd10a7de73fe",
+  "loss_code_sha256": "e9cceff554e8687429f14c04c47614881b9c25f4a29deec88f3fed2bc30faed6",
+  "train_probe": {
+    "examples": 96,
+    "answer_tokens": 3580,
+    "answer_cross_entropy": 0.17028236446600387
+  },
+  "wording": {
+    "examples": 48,
+    "answer_tokens": 1633,
+    "answer_cross_entropy": 0.15410212917847643
+  },
+  "inputs": {
+    "examples": 48,
+    "answer_tokens": 1599,
+    "answer_cross_entropy": 0.1982199562721658
+  },
+  "combinations": {
+    "examples": 48,
+    "answer_tokens": 2346,
+    "answer_cross_entropy": 0.5854890998976919
+  }
+}

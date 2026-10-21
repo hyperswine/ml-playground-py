@@ -1,0 +1,159 @@
+{
+  "compiler_sha256": "c41c6ab9377e59be4d9bccedf1d6dd33f188bad0453046660650c6982fbc2f36",
+  "results": [
+    {
+      "id": "sample-11",
+      "passed": true,
+      "stdout": "39\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "id": "sample-12",
+      "passed": true,
+      "stdout": "9\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "id": "sample-13",
+      "passed": true,
+      "stdout": "unr\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "id": "sample-14",
+      "passed": true,
+      "stdout": "15\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "id": "sample-15",
+      "passed": true,
+      "stdout": "16\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "id": "sample-16",
+      "passed": true,
+      "stdout": "19\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "id": "sample-17",
+      "passed": true,
+      "stdout": "6\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "id": "sample-18",
+      "passed": true,
+      "stdout": "7\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "id": "sample-19",
+      "passed": true,
+      "stdout": "2\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "id": "sample-20",
+      "passed": true,
+      "stdout": "23\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "id": "sample-21",
+      "passed": true,
+      "stdout": "90\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "id": "sample-22",
+      "passed": true,
+      "stdout": "ind\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "id": "sample-23",
+      "passed": true,
+      "stdout": "8\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "id": "sample-24",
+      "passed": true,
+      "stdout": "7\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "id": "sample-25",
+      "passed": true,
+      "stdout": "68\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "id": "sample-26",
+      "passed": true,
+      "stdout": "13\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "id": "sample-27",
+      "passed": true,
+      "stdout": "12\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "id": "sample-28",
+      "passed": true,
+      "stdout": "11\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "id": "sample-29",
+      "passed": true,
+      "stdout": "22\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "id": "sample-30",
+      "passed": true,
+      "stdout": "10\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "id": "sample-31",
+      "passed": true,
+      "stdout": "6\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "id": "sample-32",
+      "passed": true,
+      "stdout": "ce\n",
+      "stderr": "",
+      "returncode": 0
+    }
+  ]
+}

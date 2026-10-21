@@ -1,0 +1,41 @@
+{"phase": "initial", "step": 18, "validation": {"loss": 7.259952783584595, "known_target_tokens": 2048, "scope": "four fixed internal-validation windows; infrastructure diagnostic only"}, "host": "JQs-Mac-mini.local", "config": {"vocabulary_size": 65536, "context_length": 512, "embedding_size": 1280, "head_count": 20, "layer_count": 24}, "unique_parameters": 556526080, "fp32_weight_bytes": 2226104320, "fp32_sgd_weights_gradients_bytes": 4452208640, "fp32_adam_weights_gradients_moments_bytes": 8904417280, "fp32_adafactor_weights_gradients_moments_bytes": 4454950912, "memory_estimate_excludes": "activations, logits, kernel workspaces, allocator and other processes", "initialization": "random weights; existing tokenizer mapping only; no teacher or 168M weights"}
+{"step": 19, "loss": 7.9488325119018555, "known_target_tokens": 512, "tokens": 512, "learning_rate": 0.00917002391031667, "gradient_norm": 7.430743217468262, "elapsed_segment_seconds": 7.927569750012481}
+{"step": 20, "loss": 10.067850112915039, "known_target_tokens": 512, "tokens": 512, "learning_rate": 0.009018241671106134, "gradient_norm": 29.980758666992188, "elapsed_segment_seconds": 15.332229541003471}
+{"step": 21, "loss": 8.486106872558594, "known_target_tokens": 512, "tokens": 512, "learning_rate": 0.008855389741974244, "gradient_norm": 4.377462387084961, "elapsed_segment_seconds": 22.700981583009707}
+{"step": 22, "loss": 7.811964511871338, "known_target_tokens": 512, "tokens": 512, "learning_rate": 0.008681980515339464, "gradient_norm": 5.0779523849487305, "elapsed_segment_seconds": 29.953645500005223}
+{"step": 23, "loss": 7.132667541503906, "known_target_tokens": 512, "tokens": 512, "learning_rate": 0.008498559600784019, "gradient_norm": 4.412014007568359, "elapsed_segment_seconds": 37.26615512500575}
+{"step": 24, "loss": 6.099728107452393, "known_target_tokens": 512, "tokens": 512, "learning_rate": 0.0083057041083643, "gradient_norm": 6.7618865966796875, "elapsed_segment_seconds": 44.54396637500031}
+{"step": 25, "loss": 5.7008056640625, "known_target_tokens": 512, "tokens": 512, "learning_rate": 0.008104020832809127, "gradient_norm": 3.3587563037872314, "elapsed_segment_seconds": 53.692800750010065}
+{"step": 26, "loss": 5.5999860763549805, "known_target_tokens": 512, "tokens": 512, "learning_rate": 0.007894144344319015, "gradient_norm": 8.903585433959961, "elapsed_segment_seconds": 60.98403133300599}
+{"step": 27, "loss": 10.010108947753906, "known_target_tokens": 512, "tokens": 512, "learning_rate": 0.00767673499197358, "gradient_norm": 33.93257141113281, "elapsed_segment_seconds": 68.28473212500103}
+{"step": 28, "loss": 5.406599044799805, "known_target_tokens": 512, "tokens": 512, "learning_rate": 0.007452476826029011, "gradient_norm": 3.3665640354156494, "elapsed_segment_seconds": 75.55370616599976}
+{"step": 29, "loss": 9.542701721191406, "known_target_tokens": 512, "tokens": 512, "learning_rate": 0.007222075445642904, "gradient_norm": 11.16646957397461, "elapsed_segment_seconds": 82.85604683301062}
+{"step": 30, "loss": 7.668801307678223, "known_target_tokens": 512, "tokens": 512, "learning_rate": 0.006986255778798253, "gradient_norm": 5.4054951667785645, "elapsed_segment_seconds": 90.1229725000012}
+{"step": 31, "loss": 5.592415809631348, "known_target_tokens": 512, "tokens": 512, "learning_rate": 0.006745759801411822, "gradient_norm": 4.492741584777832, "elapsed_segment_seconds": 97.39975658300682}
+{"step": 32, "loss": 8.269706726074219, "known_target_tokens": 512, "tokens": 512, "learning_rate": 0.006501344202803414, "gradient_norm": 6.141517162322998, "elapsed_segment_seconds": 104.69684300001245}
+{"step": 33, "loss": 9.369571685791016, "known_target_tokens": 512, "tokens": 512, "learning_rate": 0.006253778004871314, "gradient_norm": 6.705984115600586, "elapsed_segment_seconds": 114.11196079100773}
+{"step": 34, "loss": 7.579115390777588, "known_target_tokens": 512, "tokens": 512, "learning_rate": 0.006003840142464886, "gradient_norm": 3.2639362812042236, "elapsed_segment_seconds": 121.39245475000644}
+{
+  "step": 34,
+  "complete": false,
+  "segment_start_step": 18,
+  "parameter_count": 556526080,
+  "initial_validation": {
+    "loss": 7.259952783584595,
+    "known_target_tokens": 2048,
+    "scope": "four fixed internal-validation windows; infrastructure diagnostic only"
+  },
+  "final_validation": {
+    "loss": 6.12753438949585,
+    "known_target_tokens": 2048,
+    "scope": "four fixed internal-validation windows; infrastructure diagnostic only"
+  },
+  "total_tokens": 17408,
+  "known_target_tokens": 17408,
+  "segment_seconds": 124.92206620800425,
+  "checkpoint_sha256": "8aaa73632f2884cf6847c319a3dea5207d8a32902930284667fe1607caff0e34",
+  "settings_hash": "78b4ba09b43b807147058ee8170d68b31aa22eb04487ad10f53cef5af106316a",
+  "scope": "infrastructure pilot; not a capability comparison",
+  "mps_allocated_bytes": 2228846592,
+  "mps_driver_bytes": 3381297152
+}

@@ -1,0 +1,1 @@
+{"id": "general-train-419-clamp-55-repair_expr-w0", "question": "Fix the extra +1 or appended x. Intended task: clamp 0 into the inclusive bounds [0,1] using Numeric.clamp. Give the fixed expression in backticks. State stdout and short name=value calculation steps.\n```sol\n> print (str ((Numeric.clamp 0 1 0) + 1)).\n```", "reason": "benchmark program input overlap"}

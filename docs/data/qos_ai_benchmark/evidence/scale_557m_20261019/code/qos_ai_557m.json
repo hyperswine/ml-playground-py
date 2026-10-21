@@ -1,0 +1,7 @@
+{
+  "vocabulary_size": 65536,
+  "context_length": 512,
+  "embedding_size": 1280,
+  "head_count": 20,
+  "layer_count": 24
+}

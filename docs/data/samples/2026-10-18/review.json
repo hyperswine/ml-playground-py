@@ -1,0 +1,511 @@
+{
+  "method": "Source-grounded review for project facts; recorded M1 executions and exact input contracts for code; direct prompt review for general answers. Raw answers unchanged.",
+  "reviews": [
+    {
+      "id": "sample-01",
+      "status": "incorrect",
+      "note": "Answers a compiler-location question instead of repository ownership. The compiler, runtime and language libraries belong in fprisc; the OS, HAL and QOS services belong in qos.",
+      "automatic_review": {
+        "status": "not automatically judged"
+      }
+    },
+    {
+      "id": "sample-02",
+      "status": "partial",
+      "note": "The launch command template is correct, but it does not substitute the supplied filename. The requested command is ./fpr sol hello.sol.",
+      "automatic_review": {
+        "status": "not automatically judged"
+      }
+    },
+    {
+      "id": "sample-03",
+      "status": "correct",
+      "note": "Matches the pinned source: Base is the default profile.",
+      "automatic_review": {
+        "status": "not automatically judged"
+      }
+    },
+    {
+      "id": "sample-04",
+      "status": "correct",
+      "note": "Matches the pinned parser contract: trailing non-whitespace text is rejected.",
+      "automatic_review": {
+        "status": "not automatically judged"
+      }
+    },
+    {
+      "id": "sample-05",
+      "status": "correct",
+      "note": "Matches the source contract: Ok records queue admission, not completion of message processing.",
+      "automatic_review": {
+        "status": "not automatically judged"
+      }
+    },
+    {
+      "id": "sample-06",
+      "status": "correct",
+      "note": "Correct retry boundary: retry mailbox-full admission failures, return permanent failures such as a dead actor.",
+      "automatic_review": {
+        "status": "not automatically judged"
+      }
+    },
+    {
+      "id": "sample-07",
+      "status": "partial",
+      "note": "Describes this project's host-executable build path, but is too narrow as a general definition of a compiler.",
+      "automatic_review": {
+        "status": "not automatically judged"
+      }
+    },
+    {
+      "id": "sample-08",
+      "status": "incorrect",
+      "note": "Unrelated answer; does not explain recursion.",
+      "automatic_review": {
+        "status": "not automatically judged"
+      }
+    },
+    {
+      "id": "sample-09",
+      "status": "incorrect",
+      "note": "Returns malformed code instead of the requested greeting. This response was not executed.",
+      "automatic_review": {
+        "status": "not automatically judged"
+      }
+    },
+    {
+      "id": "sample-10",
+      "status": "incorrect",
+      "note": "17 + 28 is 45; the model answered 17.",
+      "automatic_review": {
+        "status": "wrong or missing stated value",
+        "expected": "45",
+        "stated": "17"
+      }
+    },
+    {
+      "id": "sample-11",
+      "status": "correct",
+      "note": "Generated program executed successfully on the M1 and printed 39.",
+      "automatic_review": {
+        "status": "passed the code/output checks",
+        "id": "sample-11",
+        "category": "code_generation",
+        "family": "official",
+        "expected_stdout": "39",
+        "stated_output": null,
+        "contract_match": true,
+        "executed": true,
+        "behavior_pass": true,
+        "complete_pass": true,
+        "stated_output_match": false,
+        "extraction": "program",
+        "code": "result = List.sum (List.map (fn x -> x * 3) [4, 7, 2]).\n> print (str result).",
+        "execution": {
+          "returncode": 0,
+          "stdout": "39\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "sample-12",
+      "status": "incorrect",
+      "note": "Changes the supplied value from 15 to -2. The requested clamp result is 9. Rejected by the input-contract check before execution.",
+      "automatic_review": {
+        "status": "unmatched: supplied code/answer does not pass the restricted checks",
+        "id": "sample-12",
+        "category": "code_generation",
+        "family": "official",
+        "expected_stdout": "9",
+        "stated_output": null,
+        "contract_match": false,
+        "executed": false,
+        "behavior_pass": false,
+        "complete_pass": false,
+        "stated_output_match": false,
+        "extraction": "program",
+        "code": "result = Numeric.clamp (-2) 9 (-2).\n> print (str result).",
+        "reason": "supported syntax but reference operation/input structure differs"
+      }
+    },
+    {
+      "id": "sample-13",
+      "status": "incorrect",
+      "note": "Uses offsets 4 and 4 instead of 1 and 4. The requested slice is unr. Rejected by the input-contract check before execution.",
+      "automatic_review": {
+        "status": "unmatched: supplied code/answer does not pass the restricted checks",
+        "id": "sample-13",
+        "category": "code_generation",
+        "family": "official",
+        "expected_stdout": "unr",
+        "stated_output": null,
+        "contract_match": false,
+        "executed": false,
+        "behavior_pass": false,
+        "complete_pass": false,
+        "stated_output_match": false,
+        "extraction": "program",
+        "code": "result = Str.slice \"Sunrise\" 4 4.\n> print (str result).",
+        "reason": "supported syntax but reference operation/input structure differs"
+      }
+    },
+    {
+      "id": "sample-14",
+      "status": "correct",
+      "note": "Generated program executed successfully on the M1 and printed 15.",
+      "automatic_review": {
+        "status": "passed the code/output checks",
+        "id": "sample-14",
+        "category": "code_generation",
+        "family": "official",
+        "expected_stdout": "15",
+        "stated_output": null,
+        "contract_match": true,
+        "executed": true,
+        "behavior_pass": true,
+        "complete_pass": true,
+        "stated_output_match": false,
+        "extraction": "program",
+        "code": "result = List.sum (List.filter (fn x -> x >= 6) [2, 6, 9, 4]).\n> print (str result).",
+        "execution": {
+          "returncode": 0,
+          "stdout": "15\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "sample-15",
+      "status": "correct",
+      "note": "Generated program executed successfully on the M1 and printed 16.",
+      "automatic_review": {
+        "status": "passed the code/output checks",
+        "id": "sample-15",
+        "category": "code_generation",
+        "family": "official",
+        "expected_stdout": "16",
+        "stated_output": null,
+        "contract_match": true,
+        "executed": true,
+        "behavior_pass": true,
+        "complete_pass": true,
+        "stated_output_match": false,
+        "extraction": "program",
+        "code": "result = List.sum (List.take 2 [5, 11, 4]).\n> print (str result).",
+        "execution": {
+          "returncode": 0,
+          "stdout": "16\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "sample-16",
+      "status": "correct",
+      "note": "Generated program executed successfully on the M1 and printed 19.",
+      "automatic_review": {
+        "status": "passed the code/output checks",
+        "id": "sample-16",
+        "category": "code_generation",
+        "family": "official",
+        "expected_stdout": "19",
+        "stated_output": null,
+        "contract_match": true,
+        "executed": true,
+        "behavior_pass": true,
+        "complete_pass": true,
+        "stated_output_match": false,
+        "extraction": "program",
+        "code": "result = (List.rev [12, 7, 19]) ! 0.\n> print (str result).",
+        "execution": {
+          "returncode": 0,
+          "stdout": "19\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "sample-17",
+      "status": "correct",
+      "note": "Generated program executed successfully on the M1 and printed 6.",
+      "automatic_review": {
+        "status": "passed the code/output checks",
+        "id": "sample-17",
+        "category": "code_generation",
+        "family": "official",
+        "expected_stdout": "6",
+        "stated_output": null,
+        "contract_match": true,
+        "executed": true,
+        "behavior_pass": true,
+        "complete_pass": true,
+        "stated_output_match": false,
+        "extraction": "program",
+        "code": "result = Str.len \"Copper\".\n> print (str result).",
+        "execution": {
+          "returncode": 0,
+          "stdout": "6\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "sample-18",
+      "status": "correct",
+      "note": "Generated program executed successfully on the M1 and printed 7.",
+      "automatic_review": {
+        "status": "passed the code/output checks",
+        "id": "sample-18",
+        "category": "code_generation",
+        "family": "official",
+        "expected_stdout": "7",
+        "stated_output": null,
+        "contract_match": true,
+        "executed": true,
+        "behavior_pass": true,
+        "complete_pass": true,
+        "stated_output_match": false,
+        "extraction": "program",
+        "code": "result = Numeric.min 7 18.\n> print (str result).",
+        "execution": {
+          "returncode": 0,
+          "stdout": "7\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "sample-19",
+      "status": "incorrect",
+      "note": "The independently executed input program prints 2, not -3.",
+      "automatic_review": {
+        "status": "wrong or missing stated value",
+        "expected": "2",
+        "stated": "-3"
+      }
+    },
+    {
+      "id": "sample-20",
+      "status": "incorrect",
+      "note": "The independently executed input program prints 23, not 14.",
+      "automatic_review": {
+        "status": "wrong or missing stated value",
+        "expected": "23",
+        "stated": "14"
+      }
+    },
+    {
+      "id": "sample-21",
+      "status": "incorrect",
+      "note": "The independently executed input program prints 90, the byte code of Z, not 66.",
+      "automatic_review": {
+        "status": "wrong or missing stated value",
+        "expected": "90",
+        "stated": "66"
+      }
+    },
+    {
+      "id": "sample-22",
+      "status": "incorrect",
+      "note": "The independently executed input program prints ind, not window.",
+      "automatic_review": {
+        "status": "wrong or missing stated value",
+        "expected": "ind",
+        "stated": "window"
+      }
+    },
+    {
+      "id": "sample-23",
+      "status": "correct",
+      "note": "The independently executed input program prints 8, matching the answer.",
+      "automatic_review": {
+        "status": "correct stated value",
+        "expected": "8",
+        "stated": "8"
+      }
+    },
+    {
+      "id": "sample-24",
+      "status": "incorrect",
+      "note": "The independently executed input program prints 7, not 5.",
+      "automatic_review": {
+        "status": "wrong or missing stated value",
+        "expected": "7",
+        "stated": "5"
+      }
+    },
+    {
+      "id": "sample-25",
+      "status": "correct",
+      "note": "The generated repaired expression, wrapped only for printing, executed and printed 68. Its stated byte code also matches.",
+      "automatic_review": {
+        "status": "passed the code/output checks",
+        "id": "sample-25",
+        "category": "debugging",
+        "family": "official",
+        "expected_stdout": "68",
+        "stated_output": "68",
+        "contract_match": true,
+        "executed": true,
+        "behavior_pass": true,
+        "complete_pass": true,
+        "stated_output_match": true,
+        "extraction": "expression wrapped only for printing",
+        "code": "> print (str (Str.at \"Daisy\" 0)).\n",
+        "execution": {
+          "returncode": 0,
+          "stdout": "68\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "sample-26",
+      "status": "incorrect",
+      "note": "Removes the item selection rather than correcting the index, and states the wrong value. Selecting index 0 after reversal gives 13.",
+      "automatic_review": {
+        "status": "unmatched: supplied code/answer does not pass the restricted checks",
+        "id": "sample-26",
+        "category": "debugging",
+        "family": "official",
+        "expected_stdout": "13",
+        "stated_output": "1",
+        "contract_match": false,
+        "executed": false,
+        "behavior_pass": false,
+        "complete_pass": false,
+        "stated_output_match": false,
+        "extraction": "expression wrapped only for printing",
+        "code": "> print (str (List.rev [9, 2, 13])).\n",
+        "reason": "supported syntax but reference operation/input structure differs"
+      }
+    },
+    {
+      "id": "sample-27",
+      "status": "incorrect",
+      "note": "Retains Numeric.min when the requirement needs Numeric.max. The requested value is 12, and it is not stated.",
+      "automatic_review": {
+        "status": "unmatched: supplied code/answer does not pass the restricted checks",
+        "id": "sample-27",
+        "category": "debugging",
+        "family": "official",
+        "expected_stdout": "12",
+        "stated_output": null,
+        "contract_match": false,
+        "executed": false,
+        "behavior_pass": false,
+        "complete_pass": false,
+        "stated_output_match": false,
+        "reason": "restricted harness: no unambiguous supported program/expression"
+      }
+    },
+    {
+      "id": "sample-28",
+      "status": "partial",
+      "note": "The generated repaired expression executed and printed 11, but the answer omits the requested total.",
+      "automatic_review": {
+        "status": "partial: correct code; requested result or judgment missing/wrong",
+        "id": "sample-28",
+        "category": "debugging",
+        "family": "official",
+        "expected_stdout": "11",
+        "stated_output": null,
+        "contract_match": true,
+        "executed": true,
+        "behavior_pass": true,
+        "complete_pass": false,
+        "stated_output_match": false,
+        "extraction": "expression wrapped only for printing",
+        "code": "> print (str (List.sum (List.filter (fn x -> x >= 4) [1, 4, 7]))).\n",
+        "execution": {
+          "returncode": 0,
+          "stdout": "11\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "sample-29",
+      "status": "partial",
+      "note": "The generated repaired expression executed and printed 22, but the answer omits the requested total.",
+      "automatic_review": {
+        "status": "partial: correct code; requested result or judgment missing/wrong",
+        "id": "sample-29",
+        "category": "debugging",
+        "family": "official",
+        "expected_stdout": "22",
+        "stated_output": null,
+        "contract_match": true,
+        "executed": true,
+        "behavior_pass": true,
+        "complete_pass": false,
+        "stated_output_match": false,
+        "extraction": "expression wrapped only for printing",
+        "code": "> print (str (List.sum (List.map (fn x -> x * 2) [3, 8]))).\n",
+        "execution": {
+          "returncode": 0,
+          "stdout": "22\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "sample-30",
+      "status": "incorrect",
+      "note": "Returns only 5 instead of a repaired complete program defining result. The requested sum and stdout are 10.",
+      "automatic_review": {
+        "status": "unmatched: supplied code/answer does not pass the restricted checks",
+        "id": "sample-30",
+        "category": "debugging",
+        "family": "official",
+        "expected_stdout": "10",
+        "stated_output": "5",
+        "contract_match": false,
+        "executed": false,
+        "behavior_pass": false,
+        "complete_pass": false,
+        "stated_output_match": false,
+        "reason": "restricted harness: no unambiguous supported program/expression"
+      }
+    },
+    {
+      "id": "sample-31",
+      "status": "correct",
+      "note": "Correct no-change judgment and stated stdout. The supplied reference program executed and printed 6; there is no generated program to execute.",
+      "automatic_review": {
+        "status": "passed the code/output checks",
+        "id": "sample-31",
+        "category": "no_change",
+        "family": "official",
+        "expected_stdout": "6",
+        "stated_output": "6",
+        "contract_match": false,
+        "executed": false,
+        "behavior_pass": false,
+        "complete_pass": true,
+        "stated_output_match": true,
+        "no_change_claim": true
+      }
+    },
+    {
+      "id": "sample-32",
+      "status": "partial",
+      "note": "The no-change judgment is correct, but the stdout has the wrong case: the supplied reference program prints ce, not Ce.",
+      "automatic_review": {
+        "status": "unmatched: supplied code/answer does not pass the restricted checks",
+        "id": "sample-32",
+        "category": "no_change",
+        "family": "official",
+        "expected_stdout": "ce",
+        "stated_output": "Ce",
+        "contract_match": false,
+        "executed": false,
+        "behavior_pass": false,
+        "complete_pass": false,
+        "stated_output_match": false,
+        "no_change_claim": true
+      }
+    }
+  ]
+}

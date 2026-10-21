@@ -1,0 +1,136 @@
+{
+  "suite_hash": "dc5b215065faf0418990c371419bddef2d1e668ad0978f34fe41bfe47de3a94e",
+  "answers_hash": "cfaff5a310357f1e885d6fb3e4940f10d4d64f6b20ca0a5599aa5d065efb9735",
+  "compiler_sha256": "9987da491a791af853300f38ad3e73c52a243dbfd1422379a8dbe437369b776e",
+  "correct": 0,
+  "total": 18,
+  "rows": [
+    {
+      "id": "map_sum-p0",
+      "family": "map_sum",
+      "correct": false,
+      "admitted": false,
+      "reason": "unknown/free function or variable: result"
+    },
+    {
+      "id": "map_sum-p1",
+      "family": "map_sum",
+      "correct": false,
+      "admitted": false,
+      "reason": "unknown/free function or variable: result"
+    },
+    {
+      "id": "map_sum-p2",
+      "family": "map_sum",
+      "correct": false,
+      "admitted": false,
+      "reason": "unknown/free function or variable: result"
+    },
+    {
+      "id": "filter_sum-p0",
+      "family": "filter_sum",
+      "correct": false,
+      "admitted": false,
+      "reason": "unknown/free function or variable: result"
+    },
+    {
+      "id": "filter_sum-p1",
+      "family": "filter_sum",
+      "correct": false,
+      "admitted": false,
+      "reason": "unknown/free function or variable: result"
+    },
+    {
+      "id": "filter_sum-p2",
+      "family": "filter_sum",
+      "correct": false,
+      "admitted": false,
+      "reason": "unknown/free function or variable: result"
+    },
+    {
+      "id": "clamp_sum-p0",
+      "family": "clamp_sum",
+      "correct": false,
+      "admitted": false,
+      "reason": "unknown/free function or variable: result"
+    },
+    {
+      "id": "clamp_sum-p1",
+      "family": "clamp_sum",
+      "correct": false,
+      "admitted": false,
+      "reason": "unknown/free function or variable: result"
+    },
+    {
+      "id": "clamp_sum-p2",
+      "family": "clamp_sum",
+      "correct": false,
+      "admitted": false,
+      "reason": "unknown/free function or variable: result"
+    },
+    {
+      "id": "signed_branch-p0",
+      "family": "signed_branch",
+      "correct": false,
+      "admitted": false,
+      "reason": "unknown/free function or variable: result"
+    },
+    {
+      "id": "signed_branch-p1",
+      "family": "signed_branch",
+      "correct": false,
+      "admitted": false,
+      "reason": "unknown/free function or variable: result"
+    },
+    {
+      "id": "signed_branch-p2",
+      "family": "signed_branch",
+      "correct": false,
+      "admitted": false,
+      "reason": "unknown/free function or variable: result"
+    },
+    {
+      "id": "filter_map_sum-p0",
+      "family": "filter_map_sum",
+      "correct": false,
+      "admitted": false,
+      "reason": "unknown/free function or variable: result"
+    },
+    {
+      "id": "filter_map_sum-p1",
+      "family": "filter_map_sum",
+      "correct": false,
+      "admitted": false,
+      "reason": "unknown/free function or variable: result"
+    },
+    {
+      "id": "filter_map_sum-p2",
+      "family": "filter_map_sum",
+      "correct": false,
+      "admitted": false,
+      "reason": "unsupported token"
+    },
+    {
+      "id": "branch_max-p0",
+      "family": "branch_max",
+      "correct": false,
+      "admitted": false,
+      "reason": "unknown/free function or variable: result"
+    },
+    {
+      "id": "branch_max-p1",
+      "family": "branch_max",
+      "correct": false,
+      "admitted": false,
+      "reason": "unknown/free function or variable: result"
+    },
+    {
+      "id": "branch_max-p2",
+      "family": "branch_max",
+      "correct": false,
+      "admitted": false,
+      "reason": "unknown/free function or variable: result"
+    }
+  ],
+  "scope": "finite-case behavioral checks; unsupported answers count as unmatched, not proof of incorrect Sol"
+}

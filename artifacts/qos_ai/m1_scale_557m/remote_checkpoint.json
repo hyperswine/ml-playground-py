@@ -1,0 +1,10 @@
+{
+  "host": "jq@100.107.153.43",
+  "workspace": "/Users/jq/qos_ai_eval",
+  "student": "experiments/scale_557m_adafactor_20261019/student.pt",
+  "student_sha256": "be61753dc7eb9a5f4049ff7adfd0d182ed67e8a19bf6e4339b2422b540cae4ad",
+  "progress": "experiments/scale_557m_adafactor_20261019/progress.pt",
+  "progress_sha256": "7a7c1f3bb6e233634bd3ba686a37eac48e570ac195b11fa930b1f12ef13bfe36",
+  "local_weights_present": false,
+  "backup_scope": "code, dataset, metadata, logs and audit locally; full weights and optimizer on M1"
+}

@@ -1,0 +1,51 @@
+{
+  "cross_partition_exact_text_hashes_removed": 0,
+  "frozen_benchmarks": {
+    "curricula/generalization_20261019/benchmark.jsonl": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+    "curricula/generalization_20261019/coding_diagnostic.jsonl": "5328ff3c3cf01b132322349ef1830959b325a302926b437c78d32edaef8d59ce",
+    "curricula/generalization_20261019/generalization_diagnostic.jsonl": "67b2155a65688599b10d79d77413fec8061bc2c3a73948fee13f0dd9fc4c4cda"
+  },
+  "frozen_inputs": {
+    "clean_data/corpus.jsonl": "1631e945bde3f3fdcf0f44f301db3b0c31ca84af186a3c9e32656f6d05604fca",
+    "curricula/generalization_20261019/balanced_train_ready.jsonl": "65f6bc6f624f5c44986754ed0bf0117e7871ae9dd8bbfc52c9d261e15dca51ab",
+    "curricula/generalization_20261019/splits.json": "c209b5c7fbb4523f8a152176c8bdd87c5884d2634d0287337f239e43191626ae",
+    "curricula/generalization_20261019/training_selection.json": "cb79cfae005db03d66cf3cb3eda232e6f0ad8c41b1fc308b80359cecaf6afac4",
+    "curricula/generalization_20261019/verification.json": "a2dbf7f7d1d2a555c1697842912b7095148d6f0b918e2e6b90a0ed3890a8e9df",
+    "curricula/generalization_20261019/verified_train.jsonl": "8ce597e251c15f39f2d00a07a2762c2e217f1dc655e707d3b0afdbce54979d9b",
+    "qos_ai_557m.json": "557edcaae667fe1a6f4d6b49b25ae420ae46e4c9ee13e73d23de773efac75188"
+  },
+  "hash": "227501e433783a1cd6b46deeff280603548dd6c108abc0fb5eb9ecd29cf058cf",
+  "partition_policy": "training partition only; 10 percent hashed whole source/case groups reserved internally",
+  "partition_sha256": "85d28b76d76712dabf6a923da6433e74fce7e51956b242c9bfd6d744ed23fa49",
+  "preparation_code_sha256": "631b625bb38ae122c122e5082248ca157bd9b04a7f2eadcff052a896cbcc4167",
+  "schema": 1,
+  "scope": "pipeline pilot from verified chats and training-partition source; no general-English pretraining",
+  "split_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "stats": {
+    "train": {
+      "documents": 4098,
+      "groups": 2625,
+      "kinds": {
+        "source": 1574,
+        "verified_chat": 2524
+      },
+      "sha256": "d82e833a9f3b28206a2f972af63a71298acde96968d911d89e6f837ded497eba",
+      "tokens": 1007503,
+      "unknown_tokens": 0
+    },
+    "validation": {
+      "documents": 345,
+      "groups": 272,
+      "kinds": {
+        "source": 85,
+        "verified_chat": 260
+      },
+      "sha256": "b2975682b4cea1b08284c7b8e7e0eacfc1257713d2b7bff7be689b2d4d7304f4",
+      "tokens": 64434,
+      "unknown_tokens": 0
+    }
+  },
+  "tokenizer_source_sha256": "2db239f619ce87ac330b201c0c61c7aa76ea87b086a7326f86faf3b3bffe7a3d",
+  "validation_limit": "internal validation is template-related; use frozen development diagnostics for capability claims",
+  "vocabulary_sha256": "74138be221701ca868b413cf711642fc2abde19687ff7f3af37de475f817dcf7"
+}

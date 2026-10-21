@@ -1,0 +1,36 @@
+[project]
+name = "ml-playground-py"
+version = "0.1.0"
+description = "Custom QOS language models, verified evaluation, and local ML experiments"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "httpx>=0.27",
+    "huggingface-hub",
+    "matplotlib>=3.10.3",
+    "numpy>=2.2.6",
+    "requests>=2.32.4",
+    "tokenizers",
+    "torch>=2.9.1",
+    "torchvision>=0.28.0",
+    "transformers",
+]
+
+[dependency-groups]
+dev = ["hypothesis>=6.151.0"]
+
+[project.scripts]
+qos = "ml_playground.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.autopep8]
+indent_size = 2
+
+[tool.uv.sources]
+transformers = { git = "https://github.com/huggingface/transformers.git", rev = "80a79d1bef2bacfa10b1b543669eebffa3f0ec36" }

@@ -1,0 +1,17 @@
+{
+  "benchmark_sha256": "5328ff3c3cf01b132322349ef1830959b325a302926b437c78d32edaef8d59ce",
+  "checkpoint_sha256": "430915b08ee981d6efa32bca2aafdeeb4d33d4b18c093b82c16373ea0b7b0a63",
+  "count": 96,
+  "device": "cuda",
+  "diagnostic_hash": "97c4f5c14160362307c0a51b2693ddbb100345d45811f4d355913cf56bcd24df",
+  "diagnostic_sha256": "5328ff3c3cf01b132322349ef1830959b325a302926b437c78d32edaef8d59ce",
+  "evaluator_sha256": "546e721ab192983e5c9dc64d5ca0ac1bc59579fafe62de12d5fdd3f0df4f40da",
+  "generation_model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "inference_precision": "fp32",
+  "max_new_tokens": 128,
+  "no_repeat": 3,
+  "scope": "same frozen development prompts and decoding; CUDA generations graded on M1",
+  "seed": 7,
+  "temperature": 0,
+  "top_k": 20
+}

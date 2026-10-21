@@ -1,0 +1,14 @@
+{
+  "pretrained": {
+    "outputs": 0,
+    "output_count": 33,
+    "strict_trace": 0,
+    "trace_count": 120
+  },
+  "sft": {
+    "outputs": 3,
+    "output_count": 33,
+    "strict_trace": 7,
+    "trace_count": 120
+  }
+}

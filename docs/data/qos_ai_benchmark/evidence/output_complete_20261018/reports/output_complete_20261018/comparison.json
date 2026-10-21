@@ -1,0 +1,1183 @@
+{
+  "training": {
+    "method": "answer-only supervised cross-entropy",
+    "parent": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+    "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+    "data_sha256": "6b90494b12090d3c96ebb78d4680b7eda3d5dfce119ecd854bc7d16a5243898b",
+    "split_hash": "54346de3d687868ce0213138c5d5004e37f8bbcc2f6a396dd9ee065f01c75d2f",
+    "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+    "epochs_requested": 1,
+    "batch_size": 2,
+    "grad_accumulation": 2,
+    "learning_rate": 2e-05,
+    "weight_decay": 0.01,
+    "warmup_steps": 5,
+    "gradient_clip": 1.0,
+    "max_minutes": 10.0,
+    "seed": 7,
+    "device": "mps",
+    "host": "JQs-Mac-mini.local",
+    "torch": "2.13.0",
+    "examples": 768,
+    "training_code_sha256": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+    "answer_tokens": 26051,
+    "unknown_answer_tokens_skipped": 0,
+    "longest_example": 176,
+    "pad_multiple": 32,
+    "mps_cache_interval": 20,
+    "segment_steps": 64,
+    "optimizer_plan_hash": "bef60b4fff69347afd21aa699f67c59b60d6a33beab4c614dc23b2e2be668b79",
+    "resume_code_sha256": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+    "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+    "fixed_padding": true,
+    "padding_width": 192,
+    "selection_sha256": "bcdc4451881d3ea96f256323e42912740332977128a1228039daac9afced86cf",
+    "selection_hash": "7093c26ae5dfb74fbbe597894e9318ca3e675b5afb6b2715ecbcb3de4a3b086d",
+    "selection_policy": "576 new paired calculation/complete-answer examples plus 96 generation and 96 factual replay",
+    "optimizer_steps": 192,
+    "epochs_completed": 1,
+    "examples_seen": 768,
+    "supervised_tokens": 26051,
+    "initial_training_loss": 1.8298248603607106,
+    "final_training_loss": null,
+    "final_training_loss_deferred": true,
+    "elapsed_seconds": 322.8875448750041,
+    "budget_stop": false,
+    "segments_completed": 3,
+    "resumed_final_segment_from_step": 128,
+    "checkpoint_sha256": "4b7d9bf013bcf357b6c04c50e0da672505cbb6fd491334bc91f311d0da4f793b"
+  },
+  "post_training_loss": {
+    "checkpoint_sha256": "4b7d9bf013bcf357b6c04c50e0da672505cbb6fd491334bc91f311d0da4f793b",
+    "data_sha256": "6b90494b12090d3c96ebb78d4680b7eda3d5dfce119ecd854bc7d16a5243898b",
+    "final_training_loss": 0.07294248633936387,
+    "examples": 768,
+    "code_sha256": "ad46855154500499fed4a4c6282911943225d1b4fee7ad20b6014cbe27f46a42"
+  },
+  "comparison_code_sha256": "bdcdcbf74f7f9bfdf60b7d6123cf342708bdc8bc4b4f7bbfad588624a90ad217",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "diagnostic_hash": "97c4f5c14160362307c0a51b2693ddbb100345d45811f4d355913cf56bcd24df",
+  "scope": "90 development prompts and fixed 96-prompt coding diagnostic; no test model inference",
+  "runs": {
+    "raw": {
+      "before": {
+        "checkpoint_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+        "ancestry": "legacy_or_unknown",
+        "count": 90,
+        "concept_groups": 34,
+        "rubric_proxy_pass_rate": 0.6,
+        "finished_rate": 1.0,
+        "severe_loop_rate": 0.0,
+        "mean_tokens": 13.166666666666666,
+        "context_limited_count": 0
+      },
+      "after": {
+        "checkpoint_sha256": "4b7d9bf013bcf357b6c04c50e0da672505cbb6fd491334bc91f311d0da4f793b",
+        "ancestry": "legacy_or_unknown",
+        "count": 90,
+        "concept_groups": 34,
+        "rubric_proxy_pass_rate": 0.6,
+        "finished_rate": 0.9888888888888889,
+        "severe_loop_rate": 0.011111111111111112,
+        "mean_tokens": 15.833333333333334,
+        "context_limited_count": 0
+      },
+      "output_diagnostic": {
+        "count": 33,
+        "parent_matches": 18,
+        "tuned_matches": 18,
+        "parent_parseable": 33,
+        "tuned_parseable": 33,
+        "note": "Post-hoc diagnostic of explicitly stated output literals; code echoes excluded. Ambiguous answers are unmatched. Not full factual accuracy.",
+        "details": [
+          {
+            "id": "output-string-length-1",
+            "expected": "5",
+            "parent_stated": "5",
+            "tuned_stated": "5",
+            "parent_match": true,
+            "tuned_match": true
+          },
+          {
+            "id": "output-string-length-2",
+            "expected": "5",
+            "parent_stated": "5",
+            "tuned_stated": "5",
+            "parent_match": true,
+            "tuned_match": true
+          },
+          {
+            "id": "output-string-length-3",
+            "expected": "5",
+            "parent_stated": "5",
+            "tuned_stated": "5",
+            "parent_match": true,
+            "tuned_match": true
+          },
+          {
+            "id": "output-string-first-byte-1",
+            "expected": "65",
+            "parent_stated": "108",
+            "tuned_stated": "108",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-string-first-byte-2",
+            "expected": "65",
+            "parent_stated": "108",
+            "tuned_stated": "108",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-string-first-byte-3",
+            "expected": "65",
+            "parent_stated": "108",
+            "tuned_stated": "108",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-string-slice-1",
+            "expected": "bcd",
+            "parent_stated": "bcd",
+            "tuned_stated": "bcd",
+            "parent_match": true,
+            "tuned_match": true
+          },
+          {
+            "id": "output-string-slice-2",
+            "expected": "bcd",
+            "parent_stated": "bcd",
+            "tuned_stated": "bcd",
+            "parent_match": true,
+            "tuned_match": true
+          },
+          {
+            "id": "output-string-slice-3",
+            "expected": "bcd",
+            "parent_stated": "bcd",
+            "tuned_stated": "bcd",
+            "parent_match": true,
+            "tuned_match": true
+          },
+          {
+            "id": "output-string-find-missing-1",
+            "expected": "-1",
+            "parent_stated": "-1",
+            "tuned_stated": "-1",
+            "parent_match": true,
+            "tuned_match": true
+          },
+          {
+            "id": "output-string-find-missing-2",
+            "expected": "-1",
+            "parent_stated": "-1",
+            "tuned_stated": "-1",
+            "parent_match": true,
+            "tuned_match": true
+          },
+          {
+            "id": "output-string-find-missing-3",
+            "expected": "-1",
+            "parent_stated": "-1",
+            "tuned_stated": "-1",
+            "parent_match": true,
+            "tuned_match": true
+          },
+          {
+            "id": "output-list-map-1",
+            "expected": "12",
+            "parent_stated": "10",
+            "tuned_stated": "36",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-map-2",
+            "expected": "12",
+            "parent_stated": "25",
+            "tuned_stated": "132",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-map-3",
+            "expected": "12",
+            "parent_stated": "108",
+            "tuned_stated": "32",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-filter-1",
+            "expected": "7",
+            "parent_stated": "10",
+            "tuned_stated": "36",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-filter-2",
+            "expected": "7",
+            "parent_stated": "25",
+            "tuned_stated": "36",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-filter-3",
+            "expected": "7",
+            "parent_stated": "10",
+            "tuned_stated": "36",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-range-1",
+            "expected": "9",
+            "parent_stated": "14",
+            "tuned_stated": "144",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-range-2",
+            "expected": "9",
+            "parent_stated": "10",
+            "tuned_stated": "144",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-range-3",
+            "expected": "9",
+            "parent_stated": "15",
+            "tuned_stated": "164",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-take-1",
+            "expected": "11",
+            "parent_stated": "5",
+            "tuned_stated": "36",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-take-2",
+            "expected": "11",
+            "parent_stated": "5",
+            "tuned_stated": "33",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-take-3",
+            "expected": "11",
+            "parent_stated": "5",
+            "tuned_stated": "5",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-reverse-1",
+            "expected": "6",
+            "parent_stated": "6",
+            "tuned_stated": "6",
+            "parent_match": true,
+            "tuned_match": true
+          },
+          {
+            "id": "output-list-reverse-2",
+            "expected": "6",
+            "parent_stated": "6",
+            "tuned_stated": "6",
+            "parent_match": true,
+            "tuned_match": true
+          },
+          {
+            "id": "output-list-reverse-3",
+            "expected": "6",
+            "parent_stated": "6",
+            "tuned_stated": "6",
+            "parent_match": true,
+            "tuned_match": true
+          },
+          {
+            "id": "output-numeric-clamp-1",
+            "expected": "10",
+            "parent_stated": "10",
+            "tuned_stated": "10",
+            "parent_match": true,
+            "tuned_match": true
+          },
+          {
+            "id": "output-numeric-clamp-2",
+            "expected": "10",
+            "parent_stated": "10",
+            "tuned_stated": "10",
+            "parent_match": true,
+            "tuned_match": true
+          },
+          {
+            "id": "output-numeric-clamp-3",
+            "expected": "10",
+            "parent_stated": "10",
+            "tuned_stated": "10",
+            "parent_match": true,
+            "tuned_match": true
+          },
+          {
+            "id": "output-numeric-min-1",
+            "expected": "3",
+            "parent_stated": "3",
+            "tuned_stated": "3",
+            "parent_match": true,
+            "tuned_match": true
+          },
+          {
+            "id": "output-numeric-min-2",
+            "expected": "3",
+            "parent_stated": "3",
+            "tuned_stated": "3",
+            "parent_match": true,
+            "tuned_match": true
+          },
+          {
+            "id": "output-numeric-min-3",
+            "expected": "3",
+            "parent_stated": "3",
+            "tuned_stated": "3",
+            "parent_match": true,
+            "tuned_match": true
+          }
+        ]
+      },
+      "lexical_improvements": 0,
+      "lexical_regressions": 0,
+      "official_coding": {
+        "before": {
+          "answers_sha256": "b45d0ea7dd53600ff9f92d35b2f54a8e0d40522a836e46618111fec6a47cad51",
+          "details": [
+            {
+              "id": "debug-at",
+              "category": "debugging",
+              "family": "official",
+              "expected_stdout": "65",
+              "stated_output": "70",
+              "contract_match": true,
+              "executed": true,
+              "behavior_pass": true,
+              "complete_pass": false,
+              "stated_output_match": false,
+              "extraction": "expression wrapped only for printing",
+              "code": "> print (str (Str.at \"ABC\" 0)).\n",
+              "execution": {
+                "returncode": 0,
+                "stdout": "65\n",
+                "stderr": ""
+              },
+              "answer_hash": "34a9d6ca34ff0805b1160c03ff1ecbf99d99f5d4b5de404c69ae33d721ad84fd",
+              "task_pass": false
+            },
+            {
+              "id": "debug-list",
+              "category": "debugging",
+              "family": "official",
+              "expected_stdout": "6",
+              "stated_output": null,
+              "contract_match": true,
+              "executed": true,
+              "behavior_pass": true,
+              "complete_pass": false,
+              "stated_output_match": false,
+              "extraction": "program",
+              "code": "result = (List.rev [4, 5, 6]) ! 0.\n> print (str result).",
+              "execution": {
+                "returncode": 0,
+                "stdout": "6\n",
+                "stderr": ""
+              },
+              "answer_hash": "cc09b50f8cfd6cf1dc1a46c655f4039d3f5daabd2e122823a9200828ef5b7e17",
+              "task_pass": true
+            },
+            {
+              "id": "write-map",
+              "category": "code_generation",
+              "family": "official",
+              "expected_stdout": "10",
+              "stated_output": null,
+              "contract_match": true,
+              "executed": true,
+              "behavior_pass": true,
+              "complete_pass": true,
+              "stated_output_match": false,
+              "extraction": "program",
+              "code": "result = List.sum (List.map (fn x -> x * 2) [2, 3]).\n> print (str result).",
+              "execution": {
+                "returncode": 0,
+                "stdout": "10\n",
+                "stderr": ""
+              },
+              "answer_hash": "d5e44185a2c431eb7db06087a025b918aa13d9d6ca202a0f7e9ffcbfddfd694b",
+              "task_pass": true
+            },
+            {
+              "id": "write-clamp",
+              "category": "code_generation",
+              "family": "official",
+              "expected_stdout": "8",
+              "stated_output": null,
+              "contract_match": true,
+              "executed": true,
+              "behavior_pass": true,
+              "complete_pass": true,
+              "stated_output_match": false,
+              "extraction": "program",
+              "code": "result = Numeric.clamp 1 8 20.\n> print (str result).",
+              "execution": {
+                "returncode": 0,
+                "stdout": "8\n",
+                "stderr": ""
+              },
+              "answer_hash": "3d18456f33c437ad11aeb21b7fe8db24abd2bad36d33ec3c84aafd84bd8bec71",
+              "task_pass": true
+            }
+          ],
+          "code_generation": 2,
+          "debugging": 1
+        },
+        "after": {
+          "answers_sha256": "4d9d0607e5173866249ef351f88963b7d4432204d5e2cce465e9f77ff1dac867",
+          "details": [
+            {
+              "id": "debug-at",
+              "category": "debugging",
+              "family": "official",
+              "expected_stdout": "65",
+              "stated_output": "111",
+              "contract_match": true,
+              "executed": true,
+              "behavior_pass": true,
+              "complete_pass": false,
+              "stated_output_match": false,
+              "extraction": "expression wrapped only for printing",
+              "code": "> print (str (Str.at \"ABC\" 0)).\n",
+              "execution": {
+                "returncode": 0,
+                "stdout": "65\n",
+                "stderr": ""
+              },
+              "answer_hash": "7aeac520bd55888377af7656e37d6f1f31601fccb3ec58abedee8d27fcbd360f",
+              "task_pass": false
+            },
+            {
+              "id": "debug-list",
+              "category": "debugging",
+              "family": "official",
+              "expected_stdout": "6",
+              "stated_output": "6",
+              "contract_match": true,
+              "executed": true,
+              "behavior_pass": true,
+              "complete_pass": true,
+              "stated_output_match": true,
+              "extraction": "expression wrapped only for printing",
+              "code": "> print (str ((List.rev [4, 5, 6]) ! 0)).\n",
+              "execution": {
+                "returncode": 0,
+                "stdout": "6\n",
+                "stderr": ""
+              },
+              "answer_hash": "637a015b9571fffaf8b61f70fb24f5bd05295d8bea71971b0bba61759ec3792f",
+              "task_pass": true
+            },
+            {
+              "id": "write-map",
+              "category": "code_generation",
+              "family": "official",
+              "expected_stdout": "10",
+              "stated_output": null,
+              "contract_match": true,
+              "executed": true,
+              "behavior_pass": true,
+              "complete_pass": true,
+              "stated_output_match": false,
+              "extraction": "program",
+              "code": "result = List.sum (List.map (fn x -> x * 2) [2, 3]).\n> print (str result).",
+              "execution": {
+                "returncode": 0,
+                "stdout": "10\n",
+                "stderr": ""
+              },
+              "answer_hash": "d5e44185a2c431eb7db06087a025b918aa13d9d6ca202a0f7e9ffcbfddfd694b",
+              "task_pass": true
+            },
+            {
+              "id": "write-clamp",
+              "category": "code_generation",
+              "family": "official",
+              "expected_stdout": "8",
+              "stated_output": null,
+              "contract_match": true,
+              "executed": true,
+              "behavior_pass": true,
+              "complete_pass": true,
+              "stated_output_match": false,
+              "extraction": "program",
+              "code": "result = Numeric.clamp 1 8 20.\n> print (str result).",
+              "execution": {
+                "returncode": 0,
+                "stdout": "8\n",
+                "stderr": ""
+              },
+              "answer_hash": "3d18456f33c437ad11aeb21b7fe8db24abd2bad36d33ec3c84aafd84bd8bec71",
+              "task_pass": true
+            }
+          ],
+          "code_generation": 2,
+          "debugging": 1
+        }
+      },
+      "tracks": {
+        "familiar": {
+          "count": 75,
+          "before": 54,
+          "after": 54
+        },
+        "generalization": {
+          "count": 15,
+          "before": 0,
+          "after": 0
+        }
+      }
+    },
+    "guard": {
+      "before": {
+        "checkpoint_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+        "ancestry": "legacy_or_unknown",
+        "count": 90,
+        "concept_groups": 34,
+        "rubric_proxy_pass_rate": 0.6,
+        "finished_rate": 1.0,
+        "severe_loop_rate": 0.0,
+        "mean_tokens": 13.044444444444444,
+        "context_limited_count": 0
+      },
+      "after": {
+        "checkpoint_sha256": "4b7d9bf013bcf357b6c04c50e0da672505cbb6fd491334bc91f311d0da4f793b",
+        "ancestry": "legacy_or_unknown",
+        "count": 90,
+        "concept_groups": 34,
+        "rubric_proxy_pass_rate": 0.6111111111111112,
+        "finished_rate": 1.0,
+        "severe_loop_rate": 0.0,
+        "mean_tokens": 14.166666666666666,
+        "context_limited_count": 0
+      },
+      "output_diagnostic": {
+        "count": 33,
+        "parent_matches": 18,
+        "tuned_matches": 18,
+        "parent_parseable": 33,
+        "tuned_parseable": 33,
+        "note": "Post-hoc diagnostic of explicitly stated output literals; code echoes excluded. Ambiguous answers are unmatched. Not full factual accuracy.",
+        "details": [
+          {
+            "id": "output-string-length-1",
+            "expected": "5",
+            "parent_stated": "5",
+            "tuned_stated": "5",
+            "parent_match": true,
+            "tuned_match": true
+          },
+          {
+            "id": "output-string-length-2",
+            "expected": "5",
+            "parent_stated": "5",
+            "tuned_stated": "5",
+            "parent_match": true,
+            "tuned_match": true
+          },
+          {
+            "id": "output-string-length-3",
+            "expected": "5",
+            "parent_stated": "5",
+            "tuned_stated": "5",
+            "parent_match": true,
+            "tuned_match": true
+          },
+          {
+            "id": "output-string-first-byte-1",
+            "expected": "65",
+            "parent_stated": "108",
+            "tuned_stated": "108",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-string-first-byte-2",
+            "expected": "65",
+            "parent_stated": "108",
+            "tuned_stated": "108",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-string-first-byte-3",
+            "expected": "65",
+            "parent_stated": "108",
+            "tuned_stated": "108",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-string-slice-1",
+            "expected": "bcd",
+            "parent_stated": "bcd",
+            "tuned_stated": "bcd",
+            "parent_match": true,
+            "tuned_match": true
+          },
+          {
+            "id": "output-string-slice-2",
+            "expected": "bcd",
+            "parent_stated": "bcd",
+            "tuned_stated": "bcd",
+            "parent_match": true,
+            "tuned_match": true
+          },
+          {
+            "id": "output-string-slice-3",
+            "expected": "bcd",
+            "parent_stated": "bcd",
+            "tuned_stated": "bcd",
+            "parent_match": true,
+            "tuned_match": true
+          },
+          {
+            "id": "output-string-find-missing-1",
+            "expected": "-1",
+            "parent_stated": "-1",
+            "tuned_stated": "-1",
+            "parent_match": true,
+            "tuned_match": true
+          },
+          {
+            "id": "output-string-find-missing-2",
+            "expected": "-1",
+            "parent_stated": "-1",
+            "tuned_stated": "-1",
+            "parent_match": true,
+            "tuned_match": true
+          },
+          {
+            "id": "output-string-find-missing-3",
+            "expected": "-1",
+            "parent_stated": "-1",
+            "tuned_stated": "-1",
+            "parent_match": true,
+            "tuned_match": true
+          },
+          {
+            "id": "output-list-map-1",
+            "expected": "12",
+            "parent_stated": "10",
+            "tuned_stated": "36",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-map-2",
+            "expected": "12",
+            "parent_stated": "25",
+            "tuned_stated": "132",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-map-3",
+            "expected": "12",
+            "parent_stated": "108",
+            "tuned_stated": "32",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-filter-1",
+            "expected": "7",
+            "parent_stated": "10",
+            "tuned_stated": "36",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-filter-2",
+            "expected": "7",
+            "parent_stated": "25",
+            "tuned_stated": "36",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-filter-3",
+            "expected": "7",
+            "parent_stated": "10",
+            "tuned_stated": "36",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-range-1",
+            "expected": "9",
+            "parent_stated": "14",
+            "tuned_stated": "144",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-range-2",
+            "expected": "9",
+            "parent_stated": "10",
+            "tuned_stated": "144",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-range-3",
+            "expected": "9",
+            "parent_stated": "15",
+            "tuned_stated": "164",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-take-1",
+            "expected": "11",
+            "parent_stated": "5",
+            "tuned_stated": "36",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-take-2",
+            "expected": "11",
+            "parent_stated": "5",
+            "tuned_stated": "33",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-take-3",
+            "expected": "11",
+            "parent_stated": "5",
+            "tuned_stated": "5",
+            "parent_match": false,
+            "tuned_match": false
+          },
+          {
+            "id": "output-list-reverse-1",
+            "expected": "6",
+            "parent_stated": "6",
+            "tuned_stated": "6",
+            "parent_match": true,
+            "tuned_match": true
+          },
+          {
+            "id": "output-list-reverse-2",
+            "expected": "6",
+            "parent_stated": "6",
+            "tuned_stated": "6",
+            "parent_match": true,
+            "tuned_match": true
+          },
+          {
+            "id": "output-list-reverse-3",
+            "expected": "6",
+            "parent_stated": "6",
+            "tuned_stated": "6",
+            "parent_match": true,
+            "tuned_match": true
+          },
+          {
+            "id": "output-numeric-clamp-1",
+            "expected": "10",
+            "parent_stated": "10",
+            "tuned_stated": "10",
+            "parent_match": true,
+            "tuned_match": true
+          },
+          {
+            "id": "output-numeric-clamp-2",
+            "expected": "10",
+            "parent_stated": "10",
+            "tuned_stated": "10",
+            "parent_match": true,
+            "tuned_match": true
+          },
+          {
+            "id": "output-numeric-clamp-3",
+            "expected": "10",
+            "parent_stated": "10",
+            "tuned_stated": "10",
+            "parent_match": true,
+            "tuned_match": true
+          },
+          {
+            "id": "output-numeric-min-1",
+            "expected": "3",
+            "parent_stated": "3",
+            "tuned_stated": "3",
+            "parent_match": true,
+            "tuned_match": true
+          },
+          {
+            "id": "output-numeric-min-2",
+            "expected": "3",
+            "parent_stated": "3",
+            "tuned_stated": "3",
+            "parent_match": true,
+            "tuned_match": true
+          },
+          {
+            "id": "output-numeric-min-3",
+            "expected": "3",
+            "parent_stated": "3",
+            "tuned_stated": "3",
+            "parent_match": true,
+            "tuned_match": true
+          }
+        ]
+      },
+      "lexical_improvements": 1,
+      "lexical_regressions": 0,
+      "official_coding": {
+        "before": {
+          "answers_sha256": "8d4ab38bae2df8019879640ac6b27d75de8af477770fe67ffd17858ee94b720e",
+          "details": [
+            {
+              "id": "debug-at",
+              "category": "debugging",
+              "family": "official",
+              "expected_stdout": "65",
+              "stated_output": "70",
+              "contract_match": true,
+              "executed": true,
+              "behavior_pass": true,
+              "complete_pass": false,
+              "stated_output_match": false,
+              "extraction": "expression wrapped only for printing",
+              "code": "> print (str (Str.at \"ABC\" 0)).\n",
+              "execution": {
+                "returncode": 0,
+                "stdout": "65\n",
+                "stderr": ""
+              },
+              "answer_hash": "34a9d6ca34ff0805b1160c03ff1ecbf99d99f5d4b5de404c69ae33d721ad84fd",
+              "task_pass": false
+            },
+            {
+              "id": "debug-list",
+              "category": "debugging",
+              "family": "official",
+              "expected_stdout": "6",
+              "stated_output": null,
+              "contract_match": true,
+              "executed": true,
+              "behavior_pass": true,
+              "complete_pass": false,
+              "stated_output_match": false,
+              "extraction": "program",
+              "code": "result = (List.rev [4, 5, 6]) ! 0.\n> print (str result).",
+              "execution": {
+                "returncode": 0,
+                "stdout": "6\n",
+                "stderr": ""
+              },
+              "answer_hash": "cc09b50f8cfd6cf1dc1a46c655f4039d3f5daabd2e122823a9200828ef5b7e17",
+              "task_pass": true
+            },
+            {
+              "id": "write-map",
+              "category": "code_generation",
+              "family": "official",
+              "expected_stdout": "10",
+              "stated_output": null,
+              "contract_match": true,
+              "executed": true,
+              "behavior_pass": true,
+              "complete_pass": true,
+              "stated_output_match": false,
+              "extraction": "program",
+              "code": "result = List.sum (List.map (fn x -> x * 2) [2, 3]).\n> print (str result).",
+              "execution": {
+                "returncode": 0,
+                "stdout": "10\n",
+                "stderr": ""
+              },
+              "answer_hash": "d5e44185a2c431eb7db06087a025b918aa13d9d6ca202a0f7e9ffcbfddfd694b",
+              "task_pass": true
+            },
+            {
+              "id": "write-clamp",
+              "category": "code_generation",
+              "family": "official",
+              "expected_stdout": "8",
+              "stated_output": null,
+              "contract_match": true,
+              "executed": true,
+              "behavior_pass": true,
+              "complete_pass": true,
+              "stated_output_match": false,
+              "extraction": "program",
+              "code": "result = Numeric.clamp 1 8 20.\n> print (str result).",
+              "execution": {
+                "returncode": 0,
+                "stdout": "8\n",
+                "stderr": ""
+              },
+              "answer_hash": "3d18456f33c437ad11aeb21b7fe8db24abd2bad36d33ec3c84aafd84bd8bec71",
+              "task_pass": true
+            }
+          ],
+          "code_generation": 2,
+          "debugging": 1
+        },
+        "after": {
+          "answers_sha256": "4ca5893d2ceb72ff70a92c2d356005c987beb3c1660e75e6ea4684b0c4c5202c",
+          "details": [
+            {
+              "id": "debug-at",
+              "category": "debugging",
+              "family": "official",
+              "expected_stdout": "65",
+              "stated_output": "111",
+              "contract_match": true,
+              "executed": true,
+              "behavior_pass": true,
+              "complete_pass": false,
+              "stated_output_match": false,
+              "extraction": "expression wrapped only for printing",
+              "code": "> print (str (Str.at \"ABC\" 0)).\n",
+              "execution": {
+                "returncode": 0,
+                "stdout": "65\n",
+                "stderr": ""
+              },
+              "answer_hash": "776661d94dc40d0a2985581c2f867693abbcb4995c2b63afc07893792568cdeb",
+              "task_pass": false
+            },
+            {
+              "id": "debug-list",
+              "category": "debugging",
+              "family": "official",
+              "expected_stdout": "6",
+              "stated_output": "6",
+              "contract_match": true,
+              "executed": true,
+              "behavior_pass": true,
+              "complete_pass": true,
+              "stated_output_match": true,
+              "extraction": "expression wrapped only for printing",
+              "code": "> print (str ((List.rev [4, 5, 6]) ! 0)).\n",
+              "execution": {
+                "returncode": 0,
+                "stdout": "6\n",
+                "stderr": ""
+              },
+              "answer_hash": "b4fe6196220a607a8ce277f77b51f7fe146a390657b8e4fa871dba769fc5a580",
+              "task_pass": true
+            },
+            {
+              "id": "write-map",
+              "category": "code_generation",
+              "family": "official",
+              "expected_stdout": "10",
+              "stated_output": null,
+              "contract_match": true,
+              "executed": true,
+              "behavior_pass": true,
+              "complete_pass": true,
+              "stated_output_match": false,
+              "extraction": "program",
+              "code": "result = List.sum (List.map (fn x -> x * 2) [2, 3]).\n> print (str result).",
+              "execution": {
+                "returncode": 0,
+                "stdout": "10\n",
+                "stderr": ""
+              },
+              "answer_hash": "d5e44185a2c431eb7db06087a025b918aa13d9d6ca202a0f7e9ffcbfddfd694b",
+              "task_pass": true
+            },
+            {
+              "id": "write-clamp",
+              "category": "code_generation",
+              "family": "official",
+              "expected_stdout": "8",
+              "stated_output": null,
+              "contract_match": true,
+              "executed": true,
+              "behavior_pass": true,
+              "complete_pass": true,
+              "stated_output_match": false,
+              "extraction": "program",
+              "code": "result = Numeric.clamp 1 8 20.\n> print (str result).",
+              "execution": {
+                "returncode": 0,
+                "stdout": "8\n",
+                "stderr": ""
+              },
+              "answer_hash": "3d18456f33c437ad11aeb21b7fe8db24abd2bad36d33ec3c84aafd84bd8bec71",
+              "task_pass": true
+            }
+          ],
+          "code_generation": 2,
+          "debugging": 1
+        }
+      },
+      "tracks": {
+        "familiar": {
+          "count": 75,
+          "before": 54,
+          "after": 54
+        },
+        "generalization": {
+          "count": 15,
+          "before": 0,
+          "after": 1
+        }
+      }
+    }
+  },
+  "diagnostics": {
+    "before": {
+      "summary": {
+        "checkpoint_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+        "diagnostic_hash": "97c4f5c14160362307c0a51b2693ddbb100345d45811f4d355913cf56bcd24df",
+        "diagnostic_sha256": "5328ff3c3cf01b132322349ef1830959b325a302926b437c78d32edaef8d59ce",
+        "seed": 7,
+        "temperature": 0,
+        "top_k": 20,
+        "no_repeat": 3,
+        "max_new_tokens": 128,
+        "device": "mps",
+        "host": "JQs-Mac-mini.local",
+        "machine": "arm64",
+        "torch": "2.13.0",
+        "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+        "generation_code_sha256": "e4e1cf111bc85249a721df58d942de5ebbddc92d857ded48bafa5e6ccc28d348",
+        "ancestry": "legacy_or_unknown",
+        "scope": "auxiliary familiar-source novel-input diagnostic; no clean legacy pretraining exposure claim",
+        "count": 96,
+        "finished": 96,
+        "severe_loops": 0,
+        "mean_tokens": 20.875
+      },
+      "grading": {
+        "checkpoint_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+        "diagnostic_hash": "97c4f5c14160362307c0a51b2693ddbb100345d45811f4d355913cf56bcd24df",
+        "answers_sha256": "240b714d13e88a34e279258ba2b2c524164df5f8c95ad934df3c98d4eb5b076b",
+        "grader_sha256": "e4e1cf111bc85249a721df58d942de5ebbddc92d857ded48bafa5e6ccc28d348",
+        "parser_sha256": "b64fa21c1553e92fa5f482a4a67dd4cbdd08a24da33adb7274cf0981ed76b187",
+        "compiler_sha256": "c41c6ab9377e59be4d9bccedf1d6dd33f188bad0453046660650c6982fbc2f36",
+        "output_parser_sha256": "5b36d9f618c7ff643c4b1b45205bd4abc7738bd1c40d34dfc691d5866da279ff",
+        "coverage_note": "Restricted structural contract plus executed stdout; unsupported or different algorithms are unmatched. No-change prose uses verified reference proof, not generated execution.",
+        "categories": {
+          "code_generation": {
+            "count": 24,
+            "contract_match": 21,
+            "executed": 21,
+            "behavior_pass": 21,
+            "stated_output_match": 0,
+            "complete_pass": 21
+          },
+          "debugging": {
+            "count": 48,
+            "contract_match": 27,
+            "executed": 27,
+            "behavior_pass": 27,
+            "stated_output_match": 5,
+            "complete_pass": 1
+          },
+          "no_change": {
+            "count": 24,
+            "contract_match": 3,
+            "executed": 3,
+            "behavior_pass": 3,
+            "stated_output_match": 9,
+            "complete_pass": 4
+          }
+        },
+        "count": 96,
+        "complete_pass": 26,
+        "distinct_executions": 24
+      }
+    },
+    "after": {
+      "summary": {
+        "checkpoint_sha256": "4b7d9bf013bcf357b6c04c50e0da672505cbb6fd491334bc91f311d0da4f793b",
+        "diagnostic_hash": "97c4f5c14160362307c0a51b2693ddbb100345d45811f4d355913cf56bcd24df",
+        "diagnostic_sha256": "5328ff3c3cf01b132322349ef1830959b325a302926b437c78d32edaef8d59ce",
+        "seed": 7,
+        "temperature": 0,
+        "top_k": 20,
+        "no_repeat": 3,
+        "max_new_tokens": 128,
+        "device": "mps",
+        "host": "JQs-Mac-mini.local",
+        "machine": "arm64",
+        "torch": "2.13.0",
+        "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+        "generation_code_sha256": "e4e1cf111bc85249a721df58d942de5ebbddc92d857ded48bafa5e6ccc28d348",
+        "ancestry": "legacy_or_unknown",
+        "scope": "auxiliary familiar-source novel-input diagnostic; no clean legacy pretraining exposure claim",
+        "count": 96,
+        "finished": 96,
+        "severe_loops": 0,
+        "mean_tokens": 41.260416666666664
+      },
+      "grading": {
+        "checkpoint_sha256": "4b7d9bf013bcf357b6c04c50e0da672505cbb6fd491334bc91f311d0da4f793b",
+        "diagnostic_hash": "97c4f5c14160362307c0a51b2693ddbb100345d45811f4d355913cf56bcd24df",
+        "answers_sha256": "7f808aa5a76a7863a956814af2b6b15f4283bfd4dec43faae41fe56523111e65",
+        "grader_sha256": "e4e1cf111bc85249a721df58d942de5ebbddc92d857ded48bafa5e6ccc28d348",
+        "parser_sha256": "b64fa21c1553e92fa5f482a4a67dd4cbdd08a24da33adb7274cf0981ed76b187",
+        "compiler_sha256": "c41c6ab9377e59be4d9bccedf1d6dd33f188bad0453046660650c6982fbc2f36",
+        "output_parser_sha256": "5b36d9f618c7ff643c4b1b45205bd4abc7738bd1c40d34dfc691d5866da279ff",
+        "coverage_note": "Restricted structural contract plus executed stdout; unsupported or different algorithms are unmatched. No-change prose uses verified reference proof, not generated execution.",
+        "categories": {
+          "code_generation": {
+            "count": 24,
+            "contract_match": 19,
+            "executed": 19,
+            "behavior_pass": 19,
+            "stated_output_match": 0,
+            "complete_pass": 19
+          },
+          "debugging": {
+            "count": 48,
+            "contract_match": 35,
+            "executed": 35,
+            "behavior_pass": 35,
+            "stated_output_match": 4,
+            "complete_pass": 3
+          },
+          "no_change": {
+            "count": 24,
+            "contract_match": 1,
+            "executed": 1,
+            "behavior_pass": 1,
+            "stated_output_match": 6,
+            "complete_pass": 6
+          }
+        },
+        "count": 96,
+        "complete_pass": 28,
+        "distinct_executions": 24
+      }
+    }
+  }
+}

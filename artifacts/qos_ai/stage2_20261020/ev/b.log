@@ -1,0 +1,13 @@
+{"phase": "sft", "unix_time": 1792461043.3184218, "step": 50, "loss": 1.571433447169821, "learning_rate": 1.9877251730624504e-05, "gradient_norm": 2.080294132232666, "total_steps": 590}
+{"phase": "sft", "unix_time": 1792461048.6424582, "step": 100, "loss": 1.3991570555361372, "learning_rate": 1.91392144462782e-05, "gradient_norm": 2.045830488204956, "total_steps": 590}
+{"phase": "sft", "unix_time": 1792461053.8262572, "step": 150, "loss": 1.3238365686460634, "learning_rate": 1.7786959487992068e-05, "gradient_norm": 2.4205946922302246, "total_steps": 590}
+{"phase": "sft", "unix_time": 1792461059.1353748, "step": 200, "loss": 1.4447118762112403, "learning_rate": 1.5922533423101843e-05, "gradient_norm": 1.8374747037887573, "total_steps": 590}
+{"phase": "sft", "unix_time": 1792461064.2861245, "step": 250, "loss": 1.4194579869189934, "learning_rate": 1.3686633299015254e-05, "gradient_norm": 2.1845922470092773, "total_steps": 590}
+{"phase": "sft", "unix_time": 1792461069.5506263, "step": 300, "loss": 1.0760533047566372, "learning_rate": 1.124798908131346e-05, "gradient_norm": 1.82651948928833, "total_steps": 590}
+{"phase": "sft", "unix_time": 1792461074.8666282, "step": 350, "loss": 1.3885018536002782, "learning_rate": 8.790630615732809e-06, "gradient_norm": 2.1478145122528076, "total_steps": 590}
+{"phase": "sft", "unix_time": 1792461080.2339933, "step": 400, "loss": 1.5279133982985325, "learning_rate": 6.500000000000003e-06, "gradient_norm": 2.0880074501037598, "total_steps": 590}
+{"phase": "sft", "unix_time": 1792461085.4942536, "step": 450, "loss": 1.347443873477104, "learning_rate": 4.548957381483941e-06, "gradient_norm": 2.0407934188842773, "total_steps": 590}
+{"phase": "sft", "unix_time": 1792461090.7686377, "step": 500, "loss": 1.6963537891296177, "learning_rate": 3.0847362391415995e-06, "gradient_norm": 2.277177095413208, "total_steps": 590}
+{"phase": "sft", "unix_time": 1792461096.0388775, "step": 550, "loss": 1.5123691113123867, "learning_rate": 2.21783255635308e-06, "gradient_norm": 2.142462730407715, "total_steps": 590}
+{"phase": "sft", "unix_time": 1792461100.189811, "step": 590, "loss": 1.2975332313382686, "learning_rate": 2.0000000000000003e-06, "gradient_norm": 3.7762742042541504, "total_steps": 590}
+{"phase": "complete", "unix_time": 1792461102.8677323, "student_sha256": "47ae025e0e970752fb76d593c53cbbf1931dba3b4333ed17e01d4e65e4f6c065"}

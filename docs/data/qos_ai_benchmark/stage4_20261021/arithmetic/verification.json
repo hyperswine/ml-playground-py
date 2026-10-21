@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "seed": 20261021,
+  "compiler_sha256": "9987da491a791af853300f38ad3e73c52a243dbfd1422379a8dbe437369b776e",
+  "groups": 1024,
+  "train": 899,
+  "validation": 125,
+  "verified_intermediate_executions": 3854,
+  "protected_inputs": {
+    "qos_ai/solgen_20261020/test_fresh.jsonl": "e02b1681bf3cb36b4e6ed63a853628dc6106ae24c0adf9391f0756373e701c32",
+    "qos_ai/solgen_20261020/test_held_pairs.jsonl": "85dd8cba6ce004b71af6bd722508b32d634911063a599737f9788c166d63fce2",
+    "qos_ai/solgen_20261020/test_big_numbers.jsonl": "de24004fd737531c8f85348b251f887eb25c48ce1543f4c9ddd15fd9a84ea90d",
+    "qos_ai/probe_sol_20261020/questions.json": "f95bc9e164780febba1b62ffa9bbaec38b99688d29af0abb292e15c442c13b47",
+    "runpod/557m/bundle/benchmarks/benchmark.jsonl": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+    "runpod/557m/bundle/benchmarks/coding_diagnostic.jsonl": "5328ff3c3cf01b132322349ef1830959b325a302926b437c78d32edaef8d59ce",
+    "runpod/557m/bundle/benchmarks/generalization_diagnostic.jsonl": "67b2155a65688599b10d79d77413fec8061bc2c3a73948fee13f0dd9fc4c4cda"
+  },
+  "files": {
+    "train": "b89b2c3d37afc307a232b22e264358d9a2572473828a9b1a866608fa85160b19",
+    "validation": "95d88ec6bec4ae5903feadd19ceb8c7d4754556d3ad8f7d7a209d0ed65414f1c"
+  },
+  "scope": "arithmetic supplement; validation holds out input groups and wording, not all concepts",
+  "hash": "73c2d0567639c1bbe425dbeb4b6f350247af33fdb4cb9124b32aea3dde0ca7cb"
+}

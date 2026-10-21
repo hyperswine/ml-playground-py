@@ -1,0 +1,307 @@
+{
+  "host": "JQs-Mac-mini.local",
+  "machine": "arm64",
+  "fpr_sha256": "c41c6ab9377e59be4d9bccedf1d6dd33f188bad0453046660650c6982fbc2f36",
+  "distinct_executions": 7,
+  "reviewer": "Codex source/input-contract review with actual M1 execution; not independent human review",
+  "summary": {
+    "parent_raw": {
+      "debugging": {
+        "count": 2,
+        "correct": 0
+      },
+      "code_generation": {
+        "count": 2,
+        "correct": 0
+      }
+    },
+    "parent_guard": {
+      "debugging": {
+        "count": 2,
+        "correct": 0
+      },
+      "code_generation": {
+        "count": 2,
+        "correct": 0
+      }
+    },
+    "tuned_raw": {
+      "debugging": {
+        "count": 2,
+        "correct": 0
+      },
+      "code_generation": {
+        "count": 2,
+        "correct": 2
+      }
+    },
+    "tuned_guard": {
+      "debugging": {
+        "count": 2,
+        "correct": 0
+      },
+      "code_generation": {
+        "count": 2,
+        "correct": 2
+      }
+    }
+  },
+  "records": [
+    {
+      "model": "parent",
+      "condition": "raw",
+      "id": "debug-at",
+      "category": "debugging",
+      "answer_hash": "645bad226c5f9313f5503914a23b6f4c80ca14c1f0e7387564bd7f9ddd1214ac",
+      "code": "result = Str.at \"ABC\" 1.\n> print (str result).\n",
+      "extraction": "entire generated program, unchanged",
+      "expected_stdout": "65",
+      "requested_input_and_operation_contract": false,
+      "behavior_matches": false,
+      "task_behavior_correct": false,
+      "exit_code": 0,
+      "stdout": "66\n",
+      "stderr": ""
+    },
+    {
+      "model": "parent",
+      "condition": "raw",
+      "id": "debug-list",
+      "category": "debugging",
+      "answer_hash": "ea5f28911aa1dea640c36b9d9ec24adc76d86aad69f3859d2aa45c9e3534aedd",
+      "code": "> print (str (List.rev [4, 5, 6] ! 1)).\n",
+      "extraction": "print wrapper around the exact stated expression",
+      "expected_stdout": "6",
+      "requested_input_and_operation_contract": false,
+      "behavior_matches": false,
+      "task_behavior_correct": false,
+      "exit_code": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "model": "parent",
+      "condition": "raw",
+      "id": "write-map",
+      "category": "code_generation",
+      "answer_hash": "9cec7280aaba9ecd52783091c1ccea6423db93989ca635d1ecaffa2596d00cf5",
+      "code": "result = List.sum (List.map (fn v -> v * 3) [2, 3, 2]).\n> print (str result).\n",
+      "extraction": "entire generated program, unchanged",
+      "expected_stdout": "10",
+      "requested_input_and_operation_contract": false,
+      "behavior_matches": false,
+      "task_behavior_correct": false,
+      "exit_code": 0,
+      "stdout": "21\n",
+      "stderr": ""
+    },
+    {
+      "model": "parent",
+      "condition": "raw",
+      "id": "write-clamp",
+      "category": "code_generation",
+      "answer_hash": "e6466d2d199a0d7d86f5e31caaf7a59b60a86df6a7e4a8b95b108e1ddcd001ec",
+      "code": "result = Numeric.clamp 20 8.\n> print (str result).\n",
+      "extraction": "entire generated program, unchanged",
+      "expected_stdout": "8",
+      "requested_input_and_operation_contract": false,
+      "behavior_matches": false,
+      "task_behavior_correct": false,
+      "exit_code": 0,
+      "stdout": "<fn Numeric.clamp/1>\n",
+      "stderr": ""
+    },
+    {
+      "model": "parent",
+      "condition": "guard",
+      "id": "debug-at",
+      "category": "debugging",
+      "answer_hash": "645bad226c5f9313f5503914a23b6f4c80ca14c1f0e7387564bd7f9ddd1214ac",
+      "code": "result = Str.at \"ABC\" 1.\n> print (str result).\n",
+      "extraction": "entire generated program, unchanged",
+      "expected_stdout": "65",
+      "requested_input_and_operation_contract": false,
+      "behavior_matches": false,
+      "task_behavior_correct": false,
+      "exit_code": 0,
+      "stdout": "66\n",
+      "stderr": ""
+    },
+    {
+      "model": "parent",
+      "condition": "guard",
+      "id": "debug-list",
+      "category": "debugging",
+      "answer_hash": "ea5f28911aa1dea640c36b9d9ec24adc76d86aad69f3859d2aa45c9e3534aedd",
+      "code": "> print (str (List.rev [4, 5, 6] ! 1)).\n",
+      "extraction": "print wrapper around the exact stated expression",
+      "expected_stdout": "6",
+      "requested_input_and_operation_contract": false,
+      "behavior_matches": false,
+      "task_behavior_correct": false,
+      "exit_code": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "model": "parent",
+      "condition": "guard",
+      "id": "write-map",
+      "category": "code_generation",
+      "answer_hash": "9cec7280aaba9ecd52783091c1ccea6423db93989ca635d1ecaffa2596d00cf5",
+      "code": "result = List.sum (List.map (fn v -> v * 3) [2, 3, 2]).\n> print (str result).\n",
+      "extraction": "entire generated program, unchanged",
+      "expected_stdout": "10",
+      "requested_input_and_operation_contract": false,
+      "behavior_matches": false,
+      "task_behavior_correct": false,
+      "exit_code": 0,
+      "stdout": "21\n",
+      "stderr": ""
+    },
+    {
+      "model": "parent",
+      "condition": "guard",
+      "id": "write-clamp",
+      "category": "code_generation",
+      "answer_hash": "e6466d2d199a0d7d86f5e31caaf7a59b60a86df6a7e4a8b95b108e1ddcd001ec",
+      "code": "result = Numeric.clamp 20 8.\n> print (str result).\n",
+      "extraction": "entire generated program, unchanged",
+      "expected_stdout": "8",
+      "requested_input_and_operation_contract": false,
+      "behavior_matches": false,
+      "task_behavior_correct": false,
+      "exit_code": 0,
+      "stdout": "<fn Numeric.clamp/1>\n",
+      "stderr": ""
+    },
+    {
+      "model": "tuned",
+      "condition": "raw",
+      "id": "debug-at",
+      "category": "debugging",
+      "answer_hash": "15dd4bb9036d260dc06bbf994cdc49c0d8b4b278ccd3dad2ea5153f5cf0d95d5",
+      "code": "result = Str.at \"ABC\" 1.\n> print (str result).\n",
+      "extraction": "entire generated program, unchanged",
+      "expected_stdout": "65",
+      "requested_input_and_operation_contract": false,
+      "behavior_matches": false,
+      "task_behavior_correct": false,
+      "exit_code": 0,
+      "stdout": "66\n",
+      "stderr": ""
+    },
+    {
+      "model": "tuned",
+      "condition": "raw",
+      "id": "debug-list",
+      "category": "debugging",
+      "answer_hash": "bf02a13bc6d1155a83a111b06290854ef2c96a744add70a109fbdb4c276554fc",
+      "code": "result = (List.rev [4, 5, 6]) ! 1.\n> print (str result).\n",
+      "extraction": "entire generated program, unchanged",
+      "expected_stdout": "6",
+      "requested_input_and_operation_contract": false,
+      "behavior_matches": false,
+      "task_behavior_correct": false,
+      "exit_code": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "model": "tuned",
+      "condition": "raw",
+      "id": "write-map",
+      "category": "code_generation",
+      "answer_hash": "d5e44185a2c431eb7db06087a025b918aa13d9d6ca202a0f7e9ffcbfddfd694b",
+      "code": "result = List.sum (List.map (fn x -> x * 2) [2, 3]).\n> print (str result).\n",
+      "extraction": "entire generated program, unchanged",
+      "expected_stdout": "10",
+      "requested_input_and_operation_contract": true,
+      "behavior_matches": true,
+      "task_behavior_correct": true,
+      "exit_code": 0,
+      "stdout": "10\n",
+      "stderr": ""
+    },
+    {
+      "model": "tuned",
+      "condition": "raw",
+      "id": "write-clamp",
+      "category": "code_generation",
+      "answer_hash": "3d18456f33c437ad11aeb21b7fe8db24abd2bad36d33ec3c84aafd84bd8bec71",
+      "code": "result = Numeric.clamp 1 8 20.\n> print (str result).\n",
+      "extraction": "entire generated program, unchanged",
+      "expected_stdout": "8",
+      "requested_input_and_operation_contract": true,
+      "behavior_matches": true,
+      "task_behavior_correct": true,
+      "exit_code": 0,
+      "stdout": "8\n",
+      "stderr": ""
+    },
+    {
+      "model": "tuned",
+      "condition": "guard",
+      "id": "debug-at",
+      "category": "debugging",
+      "answer_hash": "6400add424fd2c7431f5bf7ed37597c86ed87c21e47df434a87c446adf6bb6e5",
+      "code": null,
+      "extraction": "no corrected expression or program was supplied",
+      "expected_stdout": "65",
+      "requested_input_and_operation_contract": false,
+      "behavior_matches": false,
+      "task_behavior_correct": false,
+      "exit_code": null,
+      "stdout": null,
+      "stderr": null
+    },
+    {
+      "model": "tuned",
+      "condition": "guard",
+      "id": "debug-list",
+      "category": "debugging",
+      "answer_hash": "bf02a13bc6d1155a83a111b06290854ef2c96a744add70a109fbdb4c276554fc",
+      "code": "result = (List.rev [4, 5, 6]) ! 1.\n> print (str result).\n",
+      "extraction": "entire generated program, unchanged",
+      "expected_stdout": "6",
+      "requested_input_and_operation_contract": false,
+      "behavior_matches": false,
+      "task_behavior_correct": false,
+      "exit_code": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "model": "tuned",
+      "condition": "guard",
+      "id": "write-map",
+      "category": "code_generation",
+      "answer_hash": "d5e44185a2c431eb7db06087a025b918aa13d9d6ca202a0f7e9ffcbfddfd694b",
+      "code": "result = List.sum (List.map (fn x -> x * 2) [2, 3]).\n> print (str result).\n",
+      "extraction": "entire generated program, unchanged",
+      "expected_stdout": "10",
+      "requested_input_and_operation_contract": true,
+      "behavior_matches": true,
+      "task_behavior_correct": true,
+      "exit_code": 0,
+      "stdout": "10\n",
+      "stderr": ""
+    },
+    {
+      "model": "tuned",
+      "condition": "guard",
+      "id": "write-clamp",
+      "category": "code_generation",
+      "answer_hash": "3d18456f33c437ad11aeb21b7fe8db24abd2bad36d33ec3c84aafd84bd8bec71",
+      "code": "result = Numeric.clamp 1 8 20.\n> print (str result).\n",
+      "extraction": "entire generated program, unchanged",
+      "expected_stdout": "8",
+      "requested_input_and_operation_contract": true,
+      "behavior_matches": true,
+      "task_behavior_correct": true,
+      "exit_code": 0,
+      "stdout": "8\n",
+      "stderr": ""
+    }
+  ]
+}

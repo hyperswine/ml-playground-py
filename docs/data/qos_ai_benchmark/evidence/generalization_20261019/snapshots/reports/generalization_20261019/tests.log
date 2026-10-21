@@ -1,0 +1,13 @@
+
+COMMAND ["-m", "unittest", "test_qos_ai_data", "test_qos_ai_curriculum", "test_qos_ai_compare", "test_qos_ai_finetune", "test_qos_ai_inputs", "test_qos_ai_balanced", "test_qos_ai_resume", "test_qos_ai_output", "test_qos_ai_output_claim_audit", "test_qos_ai_generalization"]
+..3 sources (docs_train, qa_dev_r001, qa_test_r001), 3 windows of 8 tokens; 3 windows to score in 3 shards
+scored docs_train_0000.pt: 1/3 windows (14224 tokens/s)
+scored qa_dev_r001_0000.pt: 2/3 windows (18910 tokens/s)
+scored qa_test_r001_0000.pt: 3/3 windows (21741 tokens/s)
+3 sources (docs_train, qa_dev_r001, qa_test_r001), 3 windows of 8 tokens; 0 windows to score in 0 shards
+8.33% of lesson tokens are outside the student's vocabulary
+.....................................................................................
+----------------------------------------------------------------------
+Ran 87 tests in 1.387s
+
+OK

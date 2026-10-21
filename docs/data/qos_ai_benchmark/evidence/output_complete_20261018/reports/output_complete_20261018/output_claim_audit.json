@@ -1,0 +1,369 @@
+{
+  "primary_benchmark_unchanged": true,
+  "code_sha256": "6da9a73c3cb70a25b340535db2b14d72b4358ac3c4790bc1305ab5a041989a53",
+  "note": "Supplemental audit of stated literals in existing generation answers; ambiguous claims remain unassessed. This does not assess all explanation prose.",
+  "runs": {
+    "before": {
+      "checkpoint_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+      "answers_sha256": "240b714d13e88a34e279258ba2b2c524164df5f8c95ad934df3c98d4eb5b076b",
+      "count": 24,
+      "working_programs": 21,
+      "working_with_consistent_or_absent_claim": 21,
+      "working_with_correct_claim": 0,
+      "working_with_incorrect_claim": 0,
+      "working_with_ambiguous_claim": 0,
+      "working_with_absent_claim": 21,
+      "details": [
+        {
+          "id": "codingdiag-991-map-0-generate",
+          "working_program": true,
+          "expected_stdout": "68",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-map-1-generate",
+          "working_program": true,
+          "expected_stdout": "81",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-clamp-0-generate",
+          "working_program": true,
+          "expected_stdout": "4",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-clamp-1-generate",
+          "working_program": true,
+          "expected_stdout": "12",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-byte-0-generate",
+          "working_program": true,
+          "expected_stdout": "71",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-byte-1-generate",
+          "working_program": true,
+          "expected_stdout": "77",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-reverse-0-generate",
+          "working_program": true,
+          "expected_stdout": "16",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-reverse-1-generate",
+          "working_program": false,
+          "expected_stdout": "16",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-slice-0-generate",
+          "working_program": true,
+          "expected_stdout": "Gr",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-slice-1-generate",
+          "working_program": true,
+          "expected_stdout": "apl",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-filter-0-generate",
+          "working_program": true,
+          "expected_stdout": "34",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-filter-6-generate",
+          "working_program": false,
+          "expected_stdout": "35",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-sum-1-generate",
+          "working_program": true,
+          "expected_stdout": "37",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-sum-2-generate",
+          "working_program": false,
+          "expected_stdout": "71",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-take-0-generate",
+          "working_program": true,
+          "expected_stdout": "27",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-take-1-generate",
+          "working_program": true,
+          "expected_stdout": "17",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-length-0-generate",
+          "working_program": true,
+          "expected_stdout": "5",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-length-1-generate",
+          "working_program": true,
+          "expected_stdout": "5",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-min-0-generate",
+          "working_program": true,
+          "expected_stdout": "4",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-min-2-generate",
+          "working_program": true,
+          "expected_stdout": "2",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-range-3-generate",
+          "working_program": true,
+          "expected_stdout": "63",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-range-26-generate",
+          "working_program": true,
+          "expected_stdout": "108",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-missing-0-generate",
+          "working_program": true,
+          "expected_stdout": "-1",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-missing-1-generate",
+          "working_program": true,
+          "expected_stdout": "-1",
+          "stated_output": null,
+          "claim_status": "absent"
+        }
+      ]
+    },
+    "after": {
+      "checkpoint_sha256": "4b7d9bf013bcf357b6c04c50e0da672505cbb6fd491334bc91f311d0da4f793b",
+      "answers_sha256": "7f808aa5a76a7863a956814af2b6b15f4283bfd4dec43faae41fe56523111e65",
+      "count": 24,
+      "working_programs": 19,
+      "working_with_consistent_or_absent_claim": 19,
+      "working_with_correct_claim": 0,
+      "working_with_incorrect_claim": 0,
+      "working_with_ambiguous_claim": 0,
+      "working_with_absent_claim": 19,
+      "details": [
+        {
+          "id": "codingdiag-991-map-0-generate",
+          "working_program": true,
+          "expected_stdout": "68",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-map-1-generate",
+          "working_program": false,
+          "expected_stdout": "81",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-clamp-0-generate",
+          "working_program": true,
+          "expected_stdout": "4",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-clamp-1-generate",
+          "working_program": true,
+          "expected_stdout": "12",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-byte-0-generate",
+          "working_program": true,
+          "expected_stdout": "71",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-byte-1-generate",
+          "working_program": true,
+          "expected_stdout": "77",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-reverse-0-generate",
+          "working_program": true,
+          "expected_stdout": "16",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-reverse-1-generate",
+          "working_program": false,
+          "expected_stdout": "16",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-slice-0-generate",
+          "working_program": true,
+          "expected_stdout": "Gr",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-slice-1-generate",
+          "working_program": true,
+          "expected_stdout": "apl",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-filter-0-generate",
+          "working_program": true,
+          "expected_stdout": "34",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-filter-6-generate",
+          "working_program": false,
+          "expected_stdout": "35",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-sum-1-generate",
+          "working_program": false,
+          "expected_stdout": "37",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-sum-2-generate",
+          "working_program": false,
+          "expected_stdout": "71",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-take-0-generate",
+          "working_program": true,
+          "expected_stdout": "27",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-take-1-generate",
+          "working_program": true,
+          "expected_stdout": "17",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-length-0-generate",
+          "working_program": true,
+          "expected_stdout": "5",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-length-1-generate",
+          "working_program": true,
+          "expected_stdout": "5",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-min-0-generate",
+          "working_program": true,
+          "expected_stdout": "4",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-min-2-generate",
+          "working_program": true,
+          "expected_stdout": "2",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-range-3-generate",
+          "working_program": true,
+          "expected_stdout": "63",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-range-26-generate",
+          "working_program": true,
+          "expected_stdout": "108",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-missing-0-generate",
+          "working_program": true,
+          "expected_stdout": "-1",
+          "stated_output": null,
+          "claim_status": "absent"
+        },
+        {
+          "id": "codingdiag-991-missing-1-generate",
+          "working_program": true,
+          "expected_stdout": "-1",
+          "stated_output": null,
+          "claim_status": "absent"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "local_path": "qos_ai/m1_output_complete/student.pt",
+  "m1_path": "/Users/jq/qos_ai_eval/experiments/output_complete_20261018/student.pt",
+  "sha256": "4b7d9bf013bcf357b6c04c50e0da672505cbb6fd491334bc91f311d0da4f793b",
+  "bytes": 673874540,
+  "report_sha256": "b5413153fded58cc6a132e9826c96e017439d28bb17f712d21ce98aa75005980"
+}

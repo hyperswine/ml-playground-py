@@ -1,0 +1,5356 @@
+{
+  "verified_data_hash": "c1b203578b7cdb179c34ea4c2735e12024db6372116a4dfb423178b35857e10f",
+  "benchmark_data_hash": "6eb10d79e8f084c31601c923494b2e057ef56d8672c3e5170654924ad5fc0c4e",
+  "host": "JQs-Mac-mini.local",
+  "machine": "arm64",
+  "fpr_sha256": "c41c6ab9377e59be4d9bccedf1d6dd33f188bad0453046660650c6982fbc2f36",
+  "passed": 668,
+  "total": 668,
+  "distinct_executions": 393,
+  "results": [
+    {
+      "id": "teach-code-string-length-1",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-string-length-2",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-string-length-3",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-string-first-byte-1",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "74\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-string-first-byte-2",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "75\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-string-first-byte-3",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "76\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-string-substring-1",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "ab\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-string-substring-2",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "bc\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-string-substring-3",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "cd\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-string-slice-1",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "cde\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-string-slice-2",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "def\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-string-slice-3",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "efg\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-string-find-missing-1",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-string-find-missing-2",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-string-find-missing-3",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-sum-1",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-sum-2",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "18\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-sum-3",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "30\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-map-1",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "15\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-map-2",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "33\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-map-3",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "57\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-filter-1",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "7\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-filter-2",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "13\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-filter-3",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "21\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-fold-1",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-fold-2",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "18\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-fold-3",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "30\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-range-1",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-range-2",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "18\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-range-3",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "30\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-take-1",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-take-2",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-take-3",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-drop-1",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "7\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-drop-2",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "13\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-drop-3",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "21\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-reverse-1",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-reverse-2",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "7\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-list-reverse-3",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "11\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-numeric-clamp-1",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-numeric-clamp-2",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-numeric-clamp-3",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-numeric-abs-1",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "6\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-numeric-abs-2",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-numeric-abs-3",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "13\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-numeric-min-1",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-numeric-min-2",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "5\n",
+      "stderr": ""
+    },
+    {
+      "id": "teach-code-numeric-min-3",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-0",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-17\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-0",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-17\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-0",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-17\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-0",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-17\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-0:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-17\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-1",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "108\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-1",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "108\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-1",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "108\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-1",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "108\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-1:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "97\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-2",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "lan\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-2",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "lan\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-2",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "lan\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-2",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "lan\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-2:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "lant\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-3",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "an\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-3",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "an\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-3",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "an\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-3",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "an\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-3:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "ant\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-4",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "60\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-4",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "60\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-4",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "60\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-5",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "180\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-5",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "180\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-5",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "180\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-5",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "180\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-5:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "72\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-6",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "49\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-6",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "49\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-6",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "49\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-6",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "49\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-6:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "36\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-7",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "60\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-7",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "60\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-7",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "60\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-7",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "60\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-7:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "67\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-8",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "50\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-8",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "50\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-8",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "50\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-8",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "50\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-8:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "65\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-9",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "24\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-9",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "24\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-9",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "24\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-9",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "24\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-9:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "36\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-10",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "49\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-10",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "49\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-10",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "49\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-10",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "49\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-10:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "11\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-11",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "20\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-11",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "20\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-11",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "20\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-11",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "20\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-11:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "16\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-12",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "11\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-12",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "11\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-12",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "11\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-13",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "11\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-13",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "11\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-13",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "11\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-13",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "11\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-13:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "19\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-14",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "19\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-14",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "19\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-14",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "19\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-15",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "7\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-15",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "7\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-15",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "7\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-16",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-16",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-16",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-17",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-17",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-17",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-18",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-7\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-18",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-7\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-18",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-7\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-18",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-7\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-18:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-16\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-19",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "111\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-19",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "111\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-19",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "111\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-19",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "111\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-19:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "98\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-20",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "oba\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-20",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "oba\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-20",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "oba\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-20",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "oba\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-20:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "obal\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-21",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "ba\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-21",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "ba\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-21",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "ba\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-21",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "ba\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-21:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "balt\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-22",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "72\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-22",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "72\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-22",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "72\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-23",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "216\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-23",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "216\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-23",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "216\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-23",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "216\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-23:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "84\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-24",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "58\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-24",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "58\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-24",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "58\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-24",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "58\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-24:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "42\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-25",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "72\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-25",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "72\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-25",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "72\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-25",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "72\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-25:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "79\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-26",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "62\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-26",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "62\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-26",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "62\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-26",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "62\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-26:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "80\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-27",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "30\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-27",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "30\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-27",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "30\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-27",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "30\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-27:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "42\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-28",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "58\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-28",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "58\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-28",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "58\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-28",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "58\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-28:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "14\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-29",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "23\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-29",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "23\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-29",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "23\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-29",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "23\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-29:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "19\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-30",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "14\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-30",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "14\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-30",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "14\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-31",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "14\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-31",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "14\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-31",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "14\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-31",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "14\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-31:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "22\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-32",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "22\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-32",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "22\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-32",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "22\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-33",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-33",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-33",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-34",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-34",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-34",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-35",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-35",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-35",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-36",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-15\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-36",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-15\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-36",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-15\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-36",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-15\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-36:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-15\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-37",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "98\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-37",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "98\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-37",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "98\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-37",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "98\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-37:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "97\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-38",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "bal\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-38",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "bal\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-38",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "bal\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-38",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "bal\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-38:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "balt\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-39",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "al\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-39",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "al\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-39",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "al\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-39",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "al\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-39:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "altin\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-40",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "84\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-40",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "84\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-40",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "84\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-41",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "252\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-41",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "252\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-41",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "252\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-41",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "252\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-41:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "96\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-42",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "67\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-42",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "67\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-42",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "67\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-42",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "67\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-42:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "48\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-43",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "84\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-43",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "84\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-43",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "84\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-43",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "84\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-43:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "91\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-44",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "74\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-44",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "74\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-44",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "74\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-44",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "74\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-44:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "95\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-45",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "36\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-45",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "36\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-45",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "36\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-45",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "36\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-45:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "48\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-46",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "67\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-46",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "67\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-46",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "67\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-46",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "67\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-46:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "17\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-47",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "26\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-47",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "26\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-47",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "26\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-47",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "26\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-47:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "22\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-48",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "17\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-48",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "17\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-48",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "17\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-49",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "17\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-49",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "17\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-49",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "17\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-49",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "17\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-49:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "25\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-50",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "25\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-50",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "25\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-50",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "25\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-51",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-51",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-52",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-52",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-52",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-53",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-53",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-54",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-5\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-54",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-5\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-54",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-5\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-54",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-5\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-54:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-14\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-55",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "108\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-55",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "108\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-56",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "lan\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-56",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "lan\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-57",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "an\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-57",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "an\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-58",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "96\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-58",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "96\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-58",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "96\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-59",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "288\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-59",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "288\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-59",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "288\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-59",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "288\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-59:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "108\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-60",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "76\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-60",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "76\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-60",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "76\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-60",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "76\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-60:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "54\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-61",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "96\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-61",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "96\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-61",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "96\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-61",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "96\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-61:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "103\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-62",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "86\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-62",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "86\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-62",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "86\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-62",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "86\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-62:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "110\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-63",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "42\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-63",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "42\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-63",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "42\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-63",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "42\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-63:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "54\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-64",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "76\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-64",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "76\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-64",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "76\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-64",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "76\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-64:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "20\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-65",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "29\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-65",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "29\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-65",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "29\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-65",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "29\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-65:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "25\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-66",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "20\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-66",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "20\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-66",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "20\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-67",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "20\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-67",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "20\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-67",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "20\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-67",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "20\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-67:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "28\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-68",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "28\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-68",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "28\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-68",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "28\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-69",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "7\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-69",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "7\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-70",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-70",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-70",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-71",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-71",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-72",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-13\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-72",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-13\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-72",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-13\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-72",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-13\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-72:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-13\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-73",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "111\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-73",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "111\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-74",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "oba\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-74",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "oba\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-75",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "ba\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-75",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "ba\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-76",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "108\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-76",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "108\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-76",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "108\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-77",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "324\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-77",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "324\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-77",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "324\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-77",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "324\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-77:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "120\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-78",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "85\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-78",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "85\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-78",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "85\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-78",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "85\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-78:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "60\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-79",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "108\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-79",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "108\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-79",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "108\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-79",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "108\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-79:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "115\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-80",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "98\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-80",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "98\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-80",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "98\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-80",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "98\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-80:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "125\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-81",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "48\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-81",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "48\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-81",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "48\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-81",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "48\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-81:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "60\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-82",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "85\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-82",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "85\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-82",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "85\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-82",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "85\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-82:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "23\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-83",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "32\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-83",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "32\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-83",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "32\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-83",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "32\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-83:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "28\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-84",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "23\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-84",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "23\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-84",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "23\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-85",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "23\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-85",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "23\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-85",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "23\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-85",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "23\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-85:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "31\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-86",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "31\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-86",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "31\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-86",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "31\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-88",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-88",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-88",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-90",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-3\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-90",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-3\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-90",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-3\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-90",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-3\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-90:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-12\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-91",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "111\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-91",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "111\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-91",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "111\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-91",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "111\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-91:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "100\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-92",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "odl\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-92",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "odl\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-92",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "odl\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-92",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "odl\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-92:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "odla\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-93",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "dl\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-93",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "dl\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-93",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "dl\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-93",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "dl\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-93:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "dland\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-94",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "120\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-94",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "120\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-94",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "120\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-95",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "360\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-95",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "360\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-95",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "360\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-95",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "360\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-95:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "132\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-96",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "94\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-96",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "94\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-96",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "94\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-96",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "94\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-96:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "66\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-97",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "120\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-97",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "120\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-97",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "120\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-97",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "120\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-97:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "127\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-98",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "110\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-98",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "110\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-98",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "110\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-98",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "110\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-98:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "140\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-99",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "54\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-99",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "54\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-99",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "54\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-99",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "54\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-99:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "66\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-100",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "94\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-100",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "94\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-100",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "94\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-100",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "94\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-100:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "26\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-101",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "35\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-101",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "35\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-101",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "35\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-101",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "35\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-101:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "31\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-102",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "26\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-102",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "26\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-102",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "26\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-103",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "26\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-103",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "26\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-103",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "26\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-103",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "26\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-103:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "34\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-104",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "34\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-104",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "34\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-104",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "34\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-105",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-105",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-105",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-106",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-106",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-106",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-107",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-107",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-107",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-108",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-11\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-108",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-11\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-108",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-11\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-108",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-11\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-108:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-11\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-109",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "119\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-109",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "119\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-109",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "119\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-109",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "119\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-109:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "111\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-110",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "woo\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-110",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "woo\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-110",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "woo\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-110",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "woo\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-110:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "wood\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-111",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "oo\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-111",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "oo\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-111",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "oo\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-111",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "oo\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-111:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "ood\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-112",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "132\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-112",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "132\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-112",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "132\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-113",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "396\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-113",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "396\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-113",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "396\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-113",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "396\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-113:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "144\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-114",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "103\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-114",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "103\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-114",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "103\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-114",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "103\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-114:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "72\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-115",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "132\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-115",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "132\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-115",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "132\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-115",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "132\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-115:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "139\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-116",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "122\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-116",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "122\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-116",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "122\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-116",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "122\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-116:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "155\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-117",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "60\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-117",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "60\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-117",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "60\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-117",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "60\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-117:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "72\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-118",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "103\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-118",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "103\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-118",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "103\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-118",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "103\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-118:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "29\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-119",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "38\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-119",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "38\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-119",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "38\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-119",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "38\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-119:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "34\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-120",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "29\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-120",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "29\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-120",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "29\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-121",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "29\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-121",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "29\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-121",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "29\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-121",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "29\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-121:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "37\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-122",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "37\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-122",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "37\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-122",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "37\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-123",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-123",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "9\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-124",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-124",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-124",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-125",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-125",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-126",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-126",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-126",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-126",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-1\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-126:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-10\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-127",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "97\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-127",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "97\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-127",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "97\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-127",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "97\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-127:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "110\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-128",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "ant\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-128",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "ant\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-128",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "ant\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-128",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "ant\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-128:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "ante\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-129",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "nt\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-129",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "nt\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-129",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "nt\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-129",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "nt\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-129:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "nter\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-130",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "144\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-130",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "144\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-130",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "144\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-131",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "432\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-131",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "432\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-131",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "432\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-131",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "432\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-131:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "156\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-132",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "112\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-132",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "112\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-132",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "112\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-132",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "112\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-132:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "78\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-133",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "144\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-133",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "144\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-133",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "144\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-133",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "144\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-133:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "151\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-134",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "134\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-134",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "134\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-134",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "134\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-134",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "134\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-134:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "170\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-135",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "66\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-135",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "66\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-135",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "66\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-135",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "66\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-135:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "78\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-136",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "112\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-136",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "112\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-136",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "112\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-136",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "112\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-136:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "32\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-137",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "41\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-137",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "41\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-137",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "41\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-137",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "41\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-137:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "37\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-138",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "32\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-138",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "32\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-138",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "32\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-139",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "32\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-139",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "32\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-139",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "32\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-139",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "32\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-debug-139:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "40\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-140",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "40\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-140",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "40\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-140",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "40\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-output-142",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-code-142",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-explain-142",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-unbound-0",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "-17\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-unbound-0:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "=== TYPE ERRORS ===\n  * /var/folders/56/8x2brs557_v7kq404r8yxzr80000gn/T/qos-ai-expanded-check-lbmxu74c/example.sol:1: in <eval 1>: unbound name: result\n"
+    },
+    {
+      "id": "expanded-unbound-1",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "108\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-unbound-1:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "=== TYPE ERRORS ===\n  * /var/folders/56/8x2brs557_v7kq404r8yxzr80000gn/T/qos-ai-expanded-check-lbmxu74c/example.sol:1: in <eval 1>: unbound name: result\n"
+    },
+    {
+      "id": "expanded-unbound-2",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "lan\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-unbound-2:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "=== TYPE ERRORS ===\n  * /var/folders/56/8x2brs557_v7kq404r8yxzr80000gn/T/qos-ai-expanded-check-lbmxu74c/example.sol:1: in <eval 1>: unbound name: result\n"
+    },
+    {
+      "id": "expanded-unbound-3",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "an\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-unbound-3:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "=== TYPE ERRORS ===\n  * /var/folders/56/8x2brs557_v7kq404r8yxzr80000gn/T/qos-ai-expanded-check-lbmxu74c/example.sol:1: in <eval 1>: unbound name: result\n"
+    },
+    {
+      "id": "expanded-unbound-4",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "60\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-unbound-4:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "=== TYPE ERRORS ===\n  * /var/folders/56/8x2brs557_v7kq404r8yxzr80000gn/T/qos-ai-expanded-check-lbmxu74c/example.sol:1: in <eval 1>: unbound name: result\n"
+    },
+    {
+      "id": "expanded-unbound-5",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "180\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-unbound-5:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "=== TYPE ERRORS ===\n  * /var/folders/56/8x2brs557_v7kq404r8yxzr80000gn/T/qos-ai-expanded-check-lbmxu74c/example.sol:1: in <eval 1>: unbound name: result\n"
+    },
+    {
+      "id": "expanded-unbound-6",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "49\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-unbound-6:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "=== TYPE ERRORS ===\n  * /var/folders/56/8x2brs557_v7kq404r8yxzr80000gn/T/qos-ai-expanded-check-lbmxu74c/example.sol:1: in <eval 1>: unbound name: result\n"
+    },
+    {
+      "id": "expanded-unbound-7",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "60\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-unbound-7:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "=== TYPE ERRORS ===\n  * /var/folders/56/8x2brs557_v7kq404r8yxzr80000gn/T/qos-ai-expanded-check-lbmxu74c/example.sol:1: in <eval 1>: unbound name: result\n"
+    },
+    {
+      "id": "expanded-unbound-8",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "50\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-unbound-8:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "=== TYPE ERRORS ===\n  * /var/folders/56/8x2brs557_v7kq404r8yxzr80000gn/T/qos-ai-expanded-check-lbmxu74c/example.sol:1: in <eval 1>: unbound name: result\n"
+    },
+    {
+      "id": "expanded-unbound-9",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "24\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-unbound-9:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "=== TYPE ERRORS ===\n  * /var/folders/56/8x2brs557_v7kq404r8yxzr80000gn/T/qos-ai-expanded-check-lbmxu74c/example.sol:1: in <eval 1>: unbound name: result\n"
+    },
+    {
+      "id": "expanded-unbound-10",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "49\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-unbound-10:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "=== TYPE ERRORS ===\n  * /var/folders/56/8x2brs557_v7kq404r8yxzr80000gn/T/qos-ai-expanded-check-lbmxu74c/example.sol:1: in <eval 1>: unbound name: result\n"
+    },
+    {
+      "id": "expanded-unbound-11",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "20\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-unbound-11:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "=== TYPE ERRORS ===\n  * /var/folders/56/8x2brs557_v7kq404r8yxzr80000gn/T/qos-ai-expanded-check-lbmxu74c/example.sol:1: in <eval 1>: unbound name: result\n"
+    },
+    {
+      "id": "expanded-unbound-12",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "11\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-unbound-12:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "=== TYPE ERRORS ===\n  * /var/folders/56/8x2brs557_v7kq404r8yxzr80000gn/T/qos-ai-expanded-check-lbmxu74c/example.sol:1: in <eval 1>: unbound name: result\n"
+    },
+    {
+      "id": "expanded-unbound-13",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "11\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-unbound-13:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "=== TYPE ERRORS ===\n  * /var/folders/56/8x2brs557_v7kq404r8yxzr80000gn/T/qos-ai-expanded-check-lbmxu74c/example.sol:1: in <eval 1>: unbound name: result\n"
+    },
+    {
+      "id": "expanded-unbound-14",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "19\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-unbound-14:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "=== TYPE ERRORS ===\n  * /var/folders/56/8x2brs557_v7kq404r8yxzr80000gn/T/qos-ai-expanded-check-lbmxu74c/example.sol:1: in <eval 1>: unbound name: result\n"
+    },
+    {
+      "id": "expanded-unbound-15",
+      "fixture": "program",
+      "passed": true,
+      "exit_code": 0,
+      "stdout": "7\n",
+      "stderr": ""
+    },
+    {
+      "id": "expanded-unbound-15:broken",
+      "fixture": "debug_program",
+      "passed": true,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "=== TYPE ERRORS ===\n  * /var/folders/56/8x2brs557_v7kq404r8yxzr80000gn/T/qos-ai-expanded-check-lbmxu74c/example.sol:1: in <eval 1>: unbound name: result\n"
+    }
+  ]
+}

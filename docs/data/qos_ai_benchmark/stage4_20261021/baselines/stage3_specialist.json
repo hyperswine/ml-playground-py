@@ -1,0 +1,128 @@
+[
+  {
+    "id": "map_sum-p0",
+    "answer": "```sol\n> print (str (List.map (fn x -> x * 2) (List.map (fn x -> x * 3) [1, 277, 68]))).\n```\nIt prints [3, 1111, 1148]. Steps: map=[3, 1111, 1148]; map2=[3, 1111, 1148].",
+    "finished": true,
+    "tokens": 99,
+    "severe_loop": true
+  },
+  {
+    "id": "map_sum-p1",
+    "answer": "```sol\n> print (str (List.map (fn x -> x * 4) (List.rev [x, y]))).\n```\nIt prints [12, 16, 12]. Steps: rev=[12, 16, 2]; map=[12, 16, 12].",
+    "finished": true,
+    "tokens": 72,
+    "severe_loop": false
+  },
+  {
+    "id": "map_sum-p2",
+    "answer": "```sol\n> print (str (Numeric.clamp 0 0 0)).\n```\nIt prints 0.",
+    "finished": true,
+    "tokens": 26,
+    "severe_loop": false
+  },
+  {
+    "id": "filter_sum-p0",
+    "answer": "```sol\n> print (str (List.zip (List.filter (fn x -> x > 5) xs) (List.drop 1 [1, 2, 3, 4, 5]))).\n```\nIt prints [(3, 5)]. Steps: filter=[3]; drop=[5]; zip=[(3, 5)].",
+    "finished": true,
+    "tokens": 74,
+    "severe_loop": false
+  },
+  {
+    "id": "filter_sum-p1",
+    "answer": "```sol\n> print (str (List.rev (List.drop 1 [1, 2, 3]))).\n```\nIt prints [3]. Steps: drop=[2, 3]; rev=[3].",
+    "finished": true,
+    "tokens": 46,
+    "severe_loop": false
+  },
+  {
+    "id": "filter_sum-p2",
+    "answer": "```sol\n> print (str (List.zip (List.filter (fn x -> x > 5) [1, 2, 3]) (List.drop 1 [1, 2, 3]))).\n```\nIt prints []. Steps: filter=[]; drop=[2, 3]; zip=[].",
+    "finished": true,
+    "tokens": 67,
+    "severe_loop": false
+  },
+  {
+    "id": "clamp_sum-p0",
+    "answer": "```sol\n> print (str (List.zip (List.rev [a, b, c]) (List.map (fn x -> x * 2) [(-1, 2, 4, 8, 10]))).\n```\nIt prints [(-2, 4), (0, 10), (2, 12), (0, 6)]. Steps: rev=[1, 2, 3, 4, 1]; map=[4, 10, 12, 6, 2]; zip=[(-2, 4), (0, 10), (2, 12), (0, 6)].",
+    "finished": true,
+    "tokens": 146,
+    "severe_loop": true
+  },
+  {
+    "id": "clamp_sum-p1",
+    "answer": "```sol\n> print (str (List.map (fn x -> x * 2) (List.rev [x, y]))).\n```\nIt prints [2, 4, 8, 10]. Steps: rev=[10, 2, 3, 4]; map=[2, 4, 8, 10].",
+    "finished": true,
+    "tokens": 76,
+    "severe_loop": false
+  },
+  {
+    "id": "clamp_sum-p2",
+    "answer": "```sol\n> print (str (Numeric.clamp 0 1 1)).\n```\nIt prints 1.",
+    "finished": true,
+    "tokens": 26,
+    "severe_loop": false
+  },
+  {
+    "id": "signed_branch-p0",
+    "answer": "```sol\n> print (str (List.sum (List.map (fn x -> x * 2) [1, 2, 4]))).\n```\nIt prints 10. Steps: map=[2, 4, 8]; sum=10.",
+    "finished": true,
+    "tokens": 58,
+    "severe_loop": false
+  },
+  {
+    "id": "signed_branch-p1",
+    "answer": "```sol\n> print (str (List.sum (List.rev xs k)).\n```\nIt prints 10. Steps: rev=[-1, 0, -1]; sum=10.",
+    "finished": true,
+    "tokens": 43,
+    "severe_loop": false
+  },
+  {
+    "id": "signed_branch-p2",
+    "answer": "```sol\n> print (str (List.sum (List.map (fn x -> x * 4) [1, 2, 8, 12]))).\n```\nIt prints 120. Steps: map=[4, 8, 22, 48]; sum=120.",
+    "finished": true,
+    "tokens": 69,
+    "severe_loop": false
+  },
+  {
+    "id": "filter_map_sum-p0",
+    "answer": "```sol\n> print (str (List.sum (List.drop 1 [1; 2; 3; 4; 5; 6; 7; 8; 9]))).\n```\nIt prints 10. Steps: drop=[2; 3; 4; 5; 6; 8; 9]; sum=10.",
+    "finished": true,
+    "tokens": 81,
+    "severe_loop": false
+  },
+  {
+    "id": "filter_map_sum-p1",
+    "answer": "```sol\n> print (str (List.sum (List.rev [1, 2, 3]))).\n```\nIt prints 10. Steps: rev=[3, 2, 1]; sum=10.",
+    "finished": true,
+    "tokens": 49,
+    "severe_loop": false
+  },
+  {
+    "id": "filter_map_sum-p2",
+    "answer": "```sol\n> print (str (List.sum (List.map (fn x -> x * 4) [1, 2, 8, 36]))).\n```\nIt prints 126. Steps: map=[4, 8, 22, 126]; sum=126.",
+    "finished": true,
+    "tokens": 70,
+    "severe_loop": false
+  },
+  {
+    "id": "branch_max-p0",
+    "answer": "```sol\n> print (str (Numeric.max (Numeric.max 0 0) (List.sum xs)).\n```\nIt prints 0. Steps: max=0; sum=0; max2=0.",
+    "finished": true,
+    "tokens": 46,
+    "severe_loop": false
+  },
+  {
+    "id": "branch_max-p1",
+    "answer": "```sol\n> print (str (List.zip (fn x -> x * 2) (List.range 1 3))\n    [(-1, 0), (0, 1), (2, 2), (1, 3)].\n```\nIt prints [(1, 2), (2, 0), (3, 1)]. Steps: range=[1, 2, 3]; zip=[(1, 2), (2, 0), (3, 1)].",
+    "finished": true,
+    "tokens": 109,
+    "severe_loop": false
+  },
+  {
+    "id": "branch_max-p2",
+    "answer": "```sol\n> print (str (Numeric.max (Numeric.max 0 0) (List.sum xs)).\n```\nIt prints 0. Steps: max=0; sum=0; max2=0.",
+    "finished": true,
+    "tokens": 46,
+    "severe_loop": false
+  }
+]

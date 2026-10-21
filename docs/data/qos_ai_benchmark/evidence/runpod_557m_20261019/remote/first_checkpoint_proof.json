@@ -1,0 +1,13 @@
+{
+  "checkpoint_step": 20,
+  "bytes": 6678579187,
+  "parameter_count": 556526080,
+  "finite_accepted_updates": 20,
+  "last_loss": 9.202307057240704,
+  "optimizer_state_present": true,
+  "schedule_verified": true,
+  "target_tokens": 459243520,
+  "total_steps": 56060,
+  "profile_tokens_per_second": 25400.163426659845,
+  "dataset_hash": "84e61e87b22ec26d80c81bcaf8891570a39f921ce35a0e49d58ea821541887cc"
+}

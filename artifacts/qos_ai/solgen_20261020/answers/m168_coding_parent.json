@@ -1,0 +1,2354 @@
+[
+ {
+  "id": "fresh-000",
+  "answer": "40",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-001",
+  "answer": "4",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "fresh-002",
+  "answer": "-16",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "fresh-003",
+  "answer": "34",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-004",
+  "answer": "5",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "fresh-005",
+  "answer": "```sol\nresult = Str.len \"  \".\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 19
+ },
+ {
+  "id": "fresh-006",
+  "answer": "```sol\nresult = Str.slice 4 9.\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 21
+ },
+ {
+  "id": "fresh-007",
+  "answer": "-1",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-008",
+  "answer": "```sol\nresult = List.rev [30, 34, 30].\n> print (str result).\n```\nIt prints 30.",
+  "finished": true,
+  "tokens": 35
+ },
+ {
+  "id": "fresh-009",
+  "answer": "```sol\nresult = Numeric.min (-39) 39.\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 24
+ },
+ {
+  "id": "fresh-010",
+  "answer": "4 = 4.",
+  "finished": true,
+  "tokens": 5
+ },
+ {
+  "id": "fresh-011",
+  "answer": "6",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "fresh-012",
+  "answer": "```sol\nresult = List.sum [0].\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 19
+ },
+ {
+  "id": "fresh-013",
+  "answer": "```sol\nresult = List.sum (List.filter (fn x -> x >= 52) [0, 52]).\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 36
+ },
+ {
+  "id": "fresh-014",
+  "answer": "thunder",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-015",
+  "answer": "234",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "fresh-016",
+  "answer": "59",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-017",
+  "answer": "108",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "fresh-018",
+  "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 2) [60, 23, 3, 14, 14]).\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 47
+ },
+ {
+  "id": "fresh-019",
+  "answer": "35",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-020",
+  "answer": "map",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "fresh-021",
+  "answer": "108",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "fresh-022",
+  "answer": "35",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-023",
+  "answer": "```sol\nresult = List.sum (List.take 60).\n> print (str result).\n```\nIt prints 28.",
+  "finished": true,
+  "tokens": 30
+ },
+ {
+  "id": "fresh-024",
+  "answer": "```sol\nresult = List.sum (List.range 2 4).\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 24
+ },
+ {
+  "id": "fresh-025",
+  "answer": "10",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-026",
+  "answer": "67",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-027",
+  "answer": "Use `> print (str (54 - 36)).`.\n```sol\n> print (str (54 - 36)).\n```\nIt prints 18.",
+  "finished": true,
+  "tokens": 40
+ },
+ {
+  "id": "fresh-028",
+  "answer": "13",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-029",
+  "answer": "No change needed. It prints 56.",
+  "finished": true,
+  "tokens": 10
+ },
+ {
+  "id": "fresh-030",
+  "answer": "2",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "fresh-031",
+  "answer": "5",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "fresh-032",
+  "answer": "```sol\nresult = (List remainder, 9).\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 21
+ },
+ {
+  "id": "fresh-033",
+  "answer": "22",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-034",
+  "answer": "37",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-035",
+  "answer": "gold",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "fresh-036",
+  "answer": "-15",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "fresh-037",
+  "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 2) [33, 38, 48, 5]).\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 43
+ },
+ {
+  "id": "fresh-038",
+  "answer": "29",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-039",
+  "answer": "-1",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-040",
+  "answer": "10",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-041",
+  "answer": "Ce",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "fresh-042",
+  "answer": "49 divided by 9 is not equal to (49, 87) nor (49, 87).",
+  "finished": true,
+  "tokens": 27
+ },
+ {
+  "id": "fresh-043",
+  "answer": "```sol\nresult = List.sum (List.filter (fn x -> x >= 40) [27, 29]).\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 37
+ },
+ {
+  "id": "fresh-044",
+  "answer": "```sol\nresult = List.sum (List.filter (fn x -> x >= 15) [16, 10]).\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 37
+ },
+ {
+  "id": "fresh-045",
+  "answer": "68",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-046",
+  "answer": "-1",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-047",
+  "answer": "Use `> print (str ((-1) + 34)).`.\n```sol\n> print (str ((-1) + 34)).\n```\nIt prints 34.",
+  "finished": true,
+  "tokens": 42
+ },
+ {
+  "id": "fresh-048",
+  "answer": "No values. It prints 46.",
+  "finished": true,
+  "tokens": 9
+ },
+ {
+  "id": "fresh-049",
+  "answer": "`> print (str ((3 * 7) - 16) * 3)`.\nIt prints 76.",
+  "finished": true,
+  "tokens": 28
+ },
+ {
+  "id": "fresh-050",
+  "answer": "```sol\n> print (Str.trim \"   silver \").\n```\nIt prints 5.",
+  "finished": true,
+  "tokens": 20
+ },
+ {
+  "id": "fresh-051",
+  "answer": "34",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-052",
+  "answer": "34",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-053",
+  "answer": "31",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-054",
+  "answer": "19",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-055",
+  "answer": "27",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-056",
+  "answer": "fpr sol prints (str.upper \"falcon\").\n```sol\n> print (str.upper \"falcon\").\n```",
+  "finished": true,
+  "tokens": 26
+ },
+ {
+  "id": "fresh-057",
+  "answer": "-1",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-058",
+  "answer": "40",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-059",
+  "answer": "```sol\nresult = Str.slice \"lamp\" 5 5.\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 24
+ },
+ {
+  "id": "fresh-060",
+  "answer": "-1",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-061",
+  "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 6) [0]).\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 31
+ },
+ {
+  "id": "fresh-062",
+  "answer": "-1",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-063",
+  "answer": "```sol\nresult = Numeric.abs (-4).\n> print (str result).\n```\nIt prints 3.",
+  "finished": true,
+  "tokens": 25
+ },
+ {
+  "id": "fresh-064",
+  "answer": "49",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-065",
+  "answer": "36",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-066",
+  "answer": "144",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "fresh-067",
+  "answer": "-33",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "fresh-068",
+  "answer": "24 >= 24",
+  "finished": true,
+  "tokens": 6
+ },
+ {
+  "id": "fresh-069",
+  "answer": "-1",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-070",
+  "answer": "27",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-071",
+  "answer": "25",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-072",
+  "answer": "15",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-073",
+  "answer": "32",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-074",
+  "answer": "```sol\nresult = (List.sum (List.take 5 [(-39, 27, 25), (-32), 0, 53]).\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 46
+ },
+ {
+  "id": "fresh-075",
+  "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 2) [0, 3]).\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 34
+ },
+ {
+  "id": "fresh-076",
+  "answer": "23",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-077",
+  "answer": "55",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-078",
+  "answer": "```sol\nresult = (List.rev [18, (-40), (-16), (-2]) ! 0.\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 36
+ },
+ {
+  "id": "fresh-079",
+  "answer": "42",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-080",
+  "answer": "```sol\nresult = (List.rev [30, 58, 27]) ! 0.\n> print (str result).\n```\nIt prints 27.",
+  "finished": true,
+  "tokens": 40
+ },
+ {
+  "id": "fresh-081",
+  "answer": "```sol\nresult = List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (List.sum (",
+  "finished": false,
+  "tokens": 200
+ },
+ {
+  "id": "fresh-082",
+  "answer": "thunder",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-083",
+  "answer": "7",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "fresh-084",
+  "answer": "```sol\nresult = (List.all (fn x -> x >= 8) (List.filter (fn x -> x >= 8) [(-14, 51, 22, 51]).\n> print (str result).\n```\nIt prints 53.",
+  "finished": true,
+  "tokens": 62
+ },
+ {
+  "id": "fresh-085",
+  "answer": "46",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-086",
+  "answer": "11",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-087",
+  "answer": "39",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-088",
+  "answer": "40",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-089",
+  "answer": "15",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-090",
+  "answer": "66",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-091",
+  "answer": "-1",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-092",
+  "answer": "39",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-093",
+  "answer": "```sol\nresult = Numeric.min 32 47 32.\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 26
+ },
+ {
+  "id": "fresh-094",
+  "answer": "25",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-095",
+  "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 6) [0, 6]).\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 34
+ },
+ {
+  "id": "fresh-096",
+  "answer": "```sol\n> print (str (2 - (-9))).\n```\nIt prints 10.",
+  "finished": true,
+  "tokens": 22
+ },
+ {
+  "id": "fresh-097",
+  "answer": "```sol\nresult = Str.slice \"maple\" 3 4.\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 25
+ },
+ {
+  "id": "fresh-098",
+  "answer": "30",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-099",
+  "answer": "10",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-100",
+  "answer": "```sol\nresult = (8) div 4.\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 21
+ },
+ {
+  "id": "fresh-101",
+  "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 3) [8, 55, 31]).\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 39
+ },
+ {
+  "id": "fresh-102",
+  "answer": "50",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-103",
+  "answer": "20",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-104",
+  "answer": "copper",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-105",
+  "answer": "41",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-106",
+  "answer": "-11",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "fresh-107",
+  "answer": "45",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-108",
+  "answer": "8",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "fresh-109",
+  "answer": "4",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "fresh-110",
+  "answer": "158",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "fresh-111",
+  "answer": "108",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "fresh-112",
+  "answer": "-1",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-113",
+  "answer": "6",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "fresh-114",
+  "answer": "4",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "fresh-115",
+  "answer": "34",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-116",
+  "answer": "-15",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "fresh-117",
+  "answer": "-3",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "fresh-118",
+  "answer": "6",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "fresh-119",
+  "answer": "44",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-000",
+  "answer": "25",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-001",
+  "answer": "```sol\nresult = Str.slice \"window\" 4 1.\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 24
+ },
+ {
+  "id": "held_pairs-002",
+  "answer": "Mapping",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "held_pairs-003",
+  "answer": "24",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-004",
+  "answer": "30",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-005",
+  "answer": "Use `List.filter (fn x -> x >= 21) (List.range 21 21).\n```sol\n> print (str (List.filter (fn x -> x >= 21) (List.range 21 21))).\n```\nIt prints 30.",
+  "finished": true,
+  "tokens": 64
+ },
+ {
+  "id": "held_pairs-006",
+  "answer": "```sol\nresult = (List.rev [1, 32, (-9), (-32), (-32)], reversed).\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 37
+ },
+ {
+  "id": "held_pairs-007",
+  "answer": "14",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-008",
+  "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 5) [15, 11, 15, 59]).\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 44
+ },
+ {
+  "id": "held_pairs-009",
+  "answer": "38",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-010",
+  "answer": "-17",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "held_pairs-011",
+  "answer": "21",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-012",
+  "answer": "-47",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "held_pairs-013",
+  "answer": "```sol\nresult = (List.rev [20, 3, 6]) ! 0.\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 31
+ },
+ {
+  "id": "held_pairs-014",
+  "answer": "39",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-015",
+  "answer": "13",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-016",
+  "answer": "6",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "held_pairs-017",
+  "answer": "65",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-018",
+  "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 9) [39, 28]).\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 36
+ },
+ {
+  "id": "held_pairs-019",
+  "answer": "49",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-020",
+  "answer": "48",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-021",
+  "answer": "34",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-022",
+  "answer": "```sol\n> print (str (List.filter (fn x -> x >= 7) (List.range 7 9))).\n```\nIt prints 7.",
+  "finished": true,
+  "tokens": 35
+ },
+ {
+  "id": "held_pairs-023",
+  "answer": "-1",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-024",
+  "answer": "40",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-025",
+  "answer": "25",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-026",
+  "answer": "-19",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "held_pairs-027",
+  "answer": "26",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-028",
+  "answer": "35",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-029",
+  "answer": "59",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-030",
+  "answer": "20",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-031",
+  "answer": "No change needed. It prints 21.",
+  "finished": true,
+  "tokens": 10
+ },
+ {
+  "id": "held_pairs-032",
+  "answer": "4",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "held_pairs-033",
+  "answer": "28",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-034",
+  "answer": "14",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-035",
+  "answer": "```sol\n> print (str (List.rev (List.rev (List.range 10 11)))\n```\nIt prints 11.",
+  "finished": true,
+  "tokens": 32
+ },
+ {
+  "id": "held_pairs-036",
+  "answer": "Use `List.take 1 (List.filter (fn x -> x >= 25)`. It prints 5.",
+  "finished": true,
+  "tokens": 25
+ },
+ {
+  "id": "held_pairs-037",
+  "answer": "-30",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "held_pairs-038",
+  "answer": "The program uses `r` for the upper bound, and the string slice.",
+  "finished": true,
+  "tokens": 16
+ },
+ {
+  "id": "held_pairs-039",
+  "answer": "49",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-040",
+  "answer": "Mapping",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "held_pairs-041",
+  "answer": "4",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "held_pairs-042",
+  "answer": "45",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-043",
+  "answer": "-1",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-044",
+  "answer": "24",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-045",
+  "answer": "```sol\nresult = List.sum (List.sum (List.sum (List.map (fn x -> x * 55) [55, 7, 11, 33, 7]).\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 53
+ },
+ {
+  "id": "held_pairs-046",
+  "answer": "-23",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "held_pairs-047",
+  "answer": "```sol\nresult = (List.rev [List.rev [List.rev [List.rev [List.rev [List.rev [List.rev [List.rev [List.rev [List.rev [List.rev [List.rev [List.rev [List.rev [List.rev [List.rev [List.rev [List.rev [List.rev [List.rev [List.rev [List.rev [List.rev [List.rev [List.rev [List.rev [List.rev [List.rev [List.rev [List.rev [List.rev [List.rev [List.rev [List.rev [List.rev [List.rev [List.rev [List.rev [List.rev])])])]) 0) 0).\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 141
+ },
+ {
+  "id": "held_pairs-048",
+  "answer": "Use >=26. It prints 40.",
+  "finished": true,
+  "tokens": 11
+ },
+ {
+  "id": "held_pairs-049",
+  "answer": "```sol\nresult = List.sum (List.filter (fn x -> x >= 32) [48, 47]).\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 37
+ },
+ {
+  "id": "held_pairs-050",
+  "answer": "30",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-051",
+  "answer": "-7",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-052",
+  "answer": "24",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-053",
+  "answer": "bank",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "held_pairs-054",
+  "answer": "-48",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "held_pairs-055",
+  "answer": "4",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "held_pairs-056",
+  "answer": "37",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-057",
+  "answer": "Use `List.filter (fn x -> x >= 12) (List.range 2 3).\nIt prints 24.",
+  "finished": true,
+  "tokens": 29
+ },
+ {
+  "id": "held_pairs-058",
+  "answer": "```sol\nresult = (List.range 3 6).\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 22
+ },
+ {
+  "id": "held_pairs-059",
+  "answer": "```sol\nresult = Numeric.min 4 1.\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 21
+ },
+ {
+  "id": "held_pairs-060",
+  "answer": "25",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-061",
+  "answer": "25",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-062",
+  "answer": "Use `List.sum (List.filter (fn x -> x >= 22) (List.range (-3) 1))`.\n```sol\n> print (str (List.sum (List.filter (fn x -> x >= 22) (List.range (-3) 1)))\n```\nIt prints 22.",
+  "finished": true,
+  "tokens": 69
+ },
+ {
+  "id": "held_pairs-063",
+  "answer": "```sol\nresult = List.sum (List.range 7 0).\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 24
+ },
+ {
+  "id": "held_pairs-064",
+  "answer": "meadow = Str.slice \"meadow\" 3 5.\n> print (str (Str.upper (Str.upper \"meadow\"))).\n```",
+  "finished": true,
+  "tokens": 32
+ },
+ {
+  "id": "held_pairs-065",
+  "answer": "Use `List.filter (fn x -> x >= 11) (List.range - 2).`.\n```sol\n> print (str (List.filter (fn x -> x >= 11) (List.range - 2 ())))).\n```\nIt prints 27.",
+  "finished": true,
+  "tokens": 61
+ },
+ {
+  "id": "held_pairs-066",
+  "answer": "-38",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "held_pairs-067",
+  "answer": "```sol\nresult = (List.rev [33, 11, 51, 42]) ! 0.\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 37
+ },
+ {
+  "id": "held_pairs-068",
+  "answer": "23",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-069",
+  "answer": "Use `List.any (fn x -> x >= 4) [31, 25, 58, 14].\n```sol\n> print (str (List.any (fn x -> x >= 4) [31, 25, 58, 14])).\n```\nIt prints 58.",
+  "finished": true,
+  "tokens": 75
+ },
+ {
+  "id": "held_pairs-070",
+  "answer": "meadow = Str.slice \"meadow\" 1 4.\n> print (str (Str.upper (Str.upper \"meadow\"))).\n```",
+  "finished": true,
+  "tokens": 32
+ },
+ {
+  "id": "held_pairs-071",
+  "answer": "-1",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-072",
+  "answer": "25",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-073",
+  "answer": "28",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-074",
+  "answer": "-5",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-075",
+  "answer": "The program uses `kernel`.",
+  "finished": true,
+  "tokens": 6
+ },
+ {
+  "id": "held_pairs-076",
+  "answer": "bank",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "held_pairs-077",
+  "answer": "```sol\nresult = Str.slice \"rocket\" 4 6.\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 24
+ },
+ {
+  "id": "held_pairs-078",
+  "answer": "23",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-079",
+  "answer": "-18",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "held_pairs-080",
+  "answer": "```sol\nresult = (2 to 3 (end exclusive) of \"basket\".\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 27
+ },
+ {
+  "id": "held_pairs-081",
+  "answer": "It prints 5.",
+  "finished": true,
+  "tokens": 5
+ },
+ {
+  "id": "held_pairs-082",
+  "answer": "-16",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "held_pairs-083",
+  "answer": "29",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-084",
+  "answer": "40",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-085",
+  "answer": "No change needed. It prints 49.",
+  "finished": true,
+  "tokens": 10
+ },
+ {
+  "id": "held_pairs-086",
+  "answer": "```sol\nresult = (List.range 44 44).\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 24
+ },
+ {
+  "id": "held_pairs-087",
+  "answer": "-14",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "held_pairs-088",
+  "answer": "17",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-089",
+  "answer": "```sol\nresult = List.sum (List.take 1 [17, 10, 1]).\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 32
+ },
+ {
+  "id": "held_pairs-090",
+  "answer": "158",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "held_pairs-091",
+  "answer": "```sol\nresult = List.any (fn x -> x >= 17) (List.map (fn x -> x * 3) [50, 26, 51, 9, 11]).\n> print (str result).\n```\nIt prints 119.",
+  "finished": true,
+  "tokens": 65
+ },
+ {
+  "id": "held_pairs-092",
+  "answer": "-14.",
+  "finished": true,
+  "tokens": 4
+ },
+ {
+  "id": "held_pairs-093",
+  "answer": "132",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "held_pairs-094",
+  "answer": "-4",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-095",
+  "answer": "-32",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "held_pairs-096",
+  "answer": "25",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-097",
+  "answer": "```sol\nresult = Numeric.min 31 33.\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 23
+ },
+ {
+  "id": "held_pairs-098",
+  "answer": "-3",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-099",
+  "answer": "-38",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "held_pairs-100",
+  "answer": "25",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-101",
+  "answer": "35",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-102",
+  "answer": "-ter",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-103",
+  "answer": "-1",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-104",
+  "answer": "No change needed. It prints 6.",
+  "finished": true,
+  "tokens": 9
+ },
+ {
+  "id": "held_pairs-105",
+  "answer": "31",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-106",
+  "answer": "```sol\nresult = List.sum (List.range 1 9).\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 24
+ },
+ {
+  "id": "held_pairs-107",
+  "answer": "```sol\nresult = List.sum (List.take 2 [59, 33, 55, 33, 33]).\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 41
+ },
+ {
+  "id": "held_pairs-108",
+  "answer": "40",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-109",
+  "answer": "47",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-110",
+  "answer": "18",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-111",
+  "answer": "-18",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "held_pairs-112",
+  "answer": "Use `List.sum (List.filter (fn x -> x >= 26) (List.range 4 4)).\nIt prints 26.",
+  "finished": true,
+  "tokens": 32
+ },
+ {
+  "id": "held_pairs-113",
+  "answer": "```sol\nresult = Numeric.min (-38) 16.\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 24
+ },
+ {
+  "id": "held_pairs-114",
+  "answer": "23",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-115",
+  "answer": "26",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-116",
+  "answer": "23",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-117",
+  "answer": "25",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "held_pairs-118",
+  "answer": "The program uses a slice that starts at offset zero.\n```sol\n> print (Str.upper (Str.upper \"garden\")).\n```\nIt prints ard.",
+  "finished": true,
+  "tokens": 34
+ },
+ {
+  "id": "held_pairs-119",
+  "answer": "-1",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-000",
+  "answer": "```sol\nresult = Numeric.min 14 62.\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 23
+ },
+ {
+  "id": "big_numbers-001",
+  "answer": "124",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "big_numbers-002",
+  "answer": "25",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-003",
+  "answer": "26",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-004",
+  "answer": "```sol\nresult = List.sum (List.range 5 2).\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 24
+ },
+ {
+  "id": "big_numbers-005",
+  "answer": "147",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "big_numbers-006",
+  "answer": "-16",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "big_numbers-007",
+  "answer": "214",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "big_numbers-008",
+  "answer": "25",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-009",
+  "answer": "143",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "big_numbers-010",
+  "answer": "64",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-011",
+  "answer": "49",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-012",
+  "answer": "73",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-013",
+  "answer": "-133",
+  "finished": true,
+  "tokens": 4
+ },
+ {
+  "id": "big_numbers-014",
+  "answer": "135",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "big_numbers-015",
+  "answer": "Use `List.map`. It prints 42.",
+  "finished": true,
+  "tokens": 11
+ },
+ {
+  "id": "big_numbers-016",
+  "answer": "108",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "big_numbers-017",
+  "answer": "103",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "big_numbers-018",
+  "answer": "```sol\nresult = List.rev [42, 40, 108, 43, 74, (22, 43, 74, 74, 74)].\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 58
+ },
+ {
+  "id": "big_numbers-019",
+  "answer": "4",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "big_numbers-020",
+  "answer": "```sol\nresult = List.sum (List.take 0 [103, 17, 58, 124, 124, 136]).\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 49
+ },
+ {
+  "id": "big_numbers-021",
+  "answer": "29",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-022",
+  "answer": "25",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-023",
+  "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 3) [18, 128, 125]).\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 42
+ },
+ {
+  "id": "big_numbers-024",
+  "answer": "-34",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "big_numbers-025",
+  "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 5) [105]).\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 33
+ },
+ {
+  "id": "big_numbers-026",
+  "answer": "15",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-027",
+  "answer": "119",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "big_numbers-028",
+  "answer": "```sol\nresult = Numeric.abs 110.\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 21
+ },
+ {
+  "id": "big_numbers-029",
+  "answer": "4",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "big_numbers-030",
+  "answer": "122",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "big_numbers-031",
+  "answer": "108",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "big_numbers-032",
+  "answer": "Numeric.clamp needs all three arguments: lower bound, upper bound, then the supplied value.\n```sol\n> print (str (Numeric.clamp (-39) 97 (Numeric.abs 24))).\n```\nIt prints 24.",
+  "finished": true,
+  "tokens": 54
+ },
+ {
+  "id": "big_numbers-033",
+  "answer": "42",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-034",
+  "answer": "True. It prints 6.",
+  "finished": true,
+  "tokens": 7
+ },
+ {
+  "id": "big_numbers-035",
+  "answer": "Use `List.rev [80, 73, 80]`. It prints 73.",
+  "finished": true,
+  "tokens": 23
+ },
+ {
+  "id": "big_numbers-036",
+  "answer": "25",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-037",
+  "answer": "81",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-038",
+  "answer": "-11",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "big_numbers-039",
+  "answer": "104",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "big_numbers-040",
+  "answer": "143",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "big_numbers-041",
+  "answer": "30",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-042",
+  "answer": "-1",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-043",
+  "answer": "65",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-044",
+  "answer": "27",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-045",
+  "answer": "91",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-046",
+  "answer": "37",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-047",
+  "answer": "41",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-048",
+  "answer": "10",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-049",
+  "answer": "95",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-050",
+  "answer": "-126",
+  "finished": true,
+  "tokens": 4
+ },
+ {
+  "id": "big_numbers-051",
+  "answer": "27",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-052",
+  "answer": "45",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-053",
+  "answer": "245",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "big_numbers-054",
+  "answer": "Use `List.rev (List.rev [116, 40, 88, 74, 232])`.\n```sol\nresult = List.rev (List.rev [116, 40, 88, 74, 232])\n> print (str result).\n```\nIt prints 74.",
+  "finished": true,
+  "tokens": 79
+ },
+ {
+  "id": "big_numbers-055",
+  "answer": "104",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "big_numbers-056",
+  "answer": "```sol\nresult = List.sum (List.filter (fn x -> x >= 27) [87, 146, 90]).\n> print (str result).\n```\nIt prints 146.",
+  "finished": true,
+  "tokens": 50
+ },
+ {
+  "id": "big_numbers-057",
+  "answer": "128",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "big_numbers-058",
+  "answer": "4",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "big_numbers-059",
+  "answer": "4",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "big_numbers-060",
+  "answer": "25",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-061",
+  "answer": "```sol\nresult = Numeric.abs 105.\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 21
+ },
+ {
+  "id": "big_numbers-062",
+  "answer": "116",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "big_numbers-063",
+  "answer": "25",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-064",
+  "answer": "25",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-065",
+  "answer": "77",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-066",
+  "answer": "Use `Numeric.clamp (-30) 1 [103, 104, 104].\n```sol\n> print (str (Numeric.clamp (-30) 1 [103, 104, 104])\n```\nIt prints 104.",
+  "finished": true,
+  "tokens": 69
+ },
+ {
+  "id": "big_numbers-067",
+  "answer": "```sol\nresult = List.map (fn x -> x * 5) [(-14, 144, 122, 52])).\n> print (str result).\n```\nIt prints 57.",
+  "finished": true,
+  "tokens": 51
+ },
+ {
+  "id": "big_numbers-068",
+  "answer": "7",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "big_numbers-069",
+  "answer": "114",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "big_numbers-070",
+  "answer": "86",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-071",
+  "answer": "47",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-072",
+  "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 3) [137, 98]).\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 37
+ },
+ {
+  "id": "big_numbers-073",
+  "answer": "144",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "big_numbers-074",
+  "answer": "-1",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-075",
+  "answer": "```sol\n> print (str ((Numeric.min 146 114) * 5 (List.map (fn x -> x * 5) (List.range 0 7))).\n```\nIt prints 43.",
+  "finished": true,
+  "tokens": 51
+ },
+ {
+  "id": "big_numbers-076",
+  "answer": "76",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-077",
+  "answer": "100",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "big_numbers-078",
+  "answer": "108",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "big_numbers-079",
+  "answer": "49",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-080",
+  "answer": "-1",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-081",
+  "answer": "```sol\nresult = List.sum (List.take 1 [54, 99, 149, 123, 10]).\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 43
+ },
+ {
+  "id": "big_numbers-082",
+  "answer": "28",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-083",
+  "answer": "-1",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-084",
+  "answer": "145",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "big_numbers-085",
+  "answer": "57",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-086",
+  "answer": "```sol\nresult = (List.rev [(-106), 106, 128, 46]) ! 0.\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 41
+ },
+ {
+  "id": "big_numbers-087",
+  "answer": "75",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-088",
+  "answer": "34",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-089",
+  "answer": "125",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "big_numbers-090",
+  "answer": "69",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-091",
+  "answer": "```sol\nresult = List.filter (fn x -> x >= 143) [105, 126, -21].\n> print (str result).\n```\nIt prints 21.",
+  "finished": true,
+  "tokens": 48
+ },
+ {
+  "id": "big_numbers-092",
+  "answer": "27",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-093",
+  "answer": "25",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-094",
+  "answer": "5",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "big_numbers-095",
+  "answer": "22",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-096",
+  "answer": "Use `List.rev [138, 0, (-30, 9])`. It prints 9.",
+  "finished": true,
+  "tokens": 25
+ },
+ {
+  "id": "big_numbers-097",
+  "answer": "```sol\nresult = Numeric.min 21 109.\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 24
+ },
+ {
+  "id": "big_numbers-098",
+  "answer": "154",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "big_numbers-099",
+  "answer": "116",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "big_numbers-100",
+  "answer": "```sol\nresult = Numeric.min 49 83 103.\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 27
+ },
+ {
+  "id": "big_numbers-101",
+  "answer": "56",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-102",
+  "answer": "```sol\nresult = (119 - 7).\n> print (str result).\n```\nIt prints 7.",
+  "finished": true,
+  "tokens": 28
+ },
+ {
+  "id": "big_numbers-103",
+  "answer": "111",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "big_numbers-104",
+  "answer": "21",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-105",
+  "answer": "Use `Numeric.abs 1`. It prints 117.",
+  "finished": true,
+  "tokens": 14
+ },
+ {
+  "id": "big_numbers-106",
+  "answer": "63 >= 115.",
+  "finished": true,
+  "tokens": 8
+ },
+ {
+  "id": "big_numbers-107",
+  "answer": "4",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "big_numbers-108",
+  "answer": "102",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "big_numbers-109",
+  "answer": "104",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "big_numbers-110",
+  "answer": "```sol\nresult = Str.len 128.\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 21
+ },
+ {
+  "id": "big_numbers-111",
+  "answer": "23",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-112",
+  "answer": "```sol\nresult = (List.rev [119, 35, 126, 73, 92]) ! 0.\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 43
+ },
+ {
+  "id": "big_numbers-113",
+  "answer": "```sol\nresult = List.all (fn x -> x >= 24) [102, 40, 101, (-1)].\n> print (str result).\n```\nIt prints 102.",
+  "finished": true,
+  "tokens": 51
+ },
+ {
+  "id": "big_numbers-114",
+  "answer": "```sol\n> print (str (List.filter (fn x -> x >= 142) [41, 16, 46, 123, 87, 0])).\n```\nIt prints 46.",
+  "finished": true,
+  "tokens": 54
+ },
+ {
+  "id": "big_numbers-115",
+  "answer": "-150",
+  "finished": true,
+  "tokens": 4
+ },
+ {
+  "id": "big_numbers-116",
+  "answer": "101",
+  "finished": true,
+  "tokens": 3
+ },
+ {
+  "id": "big_numbers-117",
+  "answer": "```sol\nresult = Numeric.clamp (-13) 85.\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 25
+ },
+ {
+  "id": "big_numbers-118",
+  "answer": "49",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "big_numbers-119",
+  "answer": "62",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "probe-t1-map-sum",
+  "answer": "25",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "probe-t1-range-sum",
+  "answer": "17",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "probe-t1-clamp",
+  "answer": "-3",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "probe-t1-rev-index",
+  "answer": "13",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "probe-t1-gen-double-sum",
+  "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 2) [6, 1, 8]).\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 37
+ },
+ {
+  "id": "probe-t1-slice",
+  "answer": "railway",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "probe-t1-take-map",
+  "answer": "36",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "probe-t1-fix-index",
+  "answer": "```sol\n> print (str ([9, 4, 2]).\n```\nIt prints 4.",
+  "finished": true,
+  "tokens": 24
+ },
+ {
+  "id": "probe-t2-upper",
+  "answer": "17",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "probe-t2-max",
+  "answer": "2",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "probe-t2-abs",
+  "answer": "41",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "probe-t2-any",
+  "answer": "5",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "probe-t2-all",
+  "answer": "2",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "probe-t2-join",
+  "answer": "5",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "probe-t2-zip",
+  "answer": "10",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "probe-t2-if",
+  "answer": "4",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "probe-t2-drop",
+  "answer": "40",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "probe-t2-last",
+  "answer": "5",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "probe-t2-trim",
+  "answer": "\"",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "probe-t2-gen-filter",
+  "answer": "```sol\nresult = List.sum (List.filter (fn x -> x >= 5) [2, 9, 6, 1]).\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 40
+ },
+ {
+  "id": "probe-t3-map-filter-sum",
+  "answer": "10",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "probe-t3-clamp-sum",
+  "answer": "5",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "probe-t3-rev-take",
+  "answer": "4",
+  "finished": true,
+  "tokens": 1
+ },
+ {
+  "id": "probe-t3-binding-mod",
+  "answer": "37",
+  "finished": true,
+  "tokens": 2
+ },
+ {
+  "id": "probe-c-args",
+  "answer": "```sol\nresult = Str.slice \"hello\" 0 5.\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 24
+ },
+ {
+  "id": "probe-c-conflict",
+  "answer": "It retries the whole script, and the caller receives Err \"dead actor\" rather than waiting forever for a reply.",
+  "finished": true,
+  "tokens": 23
+ },
+ {
+  "id": "probe-c-query-vs-aftercommit",
+  "answer": "It records the request in the request.",
+  "finished": true,
+  "tokens": 8
+ },
+ {
+  "id": "probe-c-at-least-once",
+  "answer": "Run `./fpr sol path/to/script.sol`. The sol subcommand selects the hosted scripting profile.",
+  "finished": true,
+  "tokens": 21
+ },
+ {
+  "id": "probe-c-runnow",
+  "answer": "The Sol runtime uses `runNow` at the top level. It runs the program, not a wrapper wrapper.",
+  "finished": true,
+  "tokens": 23
+ },
+ {
+  "id": "probe-c-brace",
+  "answer": "```sol\nresult = Str.at \"1\" 0.\n> print (str result).\n```",
+  "finished": true,
+  "tokens": 22
+ },
+ {
+  "id": "probe-c-json-parse",
+  "answer": "The Sol JSON parser validates the whole document and returns Err for trailing non-whitespace characters after a value.",
+  "finished": true,
+  "tokens": 21
+ },
+ {
+  "id": "probe-c-no-shell",
+  "answer": "Run `./fpr sol path/to/script.sol`. The sol subcommand selects the hosted scripting profile.",
+  "finished": true,
+  "tokens": 21
+ }
+]

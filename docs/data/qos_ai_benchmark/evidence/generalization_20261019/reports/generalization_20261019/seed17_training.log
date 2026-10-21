@@ -1,0 +1,598 @@
+
+COMMAND ["qos_ai_finetune.py", "--load", "experiments/balanced_from_codegen_20261018/student.pt", "--curriculum", "curricula/generalization_20261019", "--data", "curricula/generalization_20261019/balanced_train_ready.jsonl", "--selection", "curricula/generalization_20261019/training_selection.json", "--splits", "curricula/generalization_20261019/splits.json", "--root", "fprisc=source_snapshot/fprisc", "--root", "qos=source_snapshot/qos", "--output", "experiments/generalization_20261019_seed17", "--epochs", "1", "--batch-size", "2", "--grad-accumulation", "2", "--learning-rate", "0.00001", "--max-minutes", "60", "--seed", "17", "--pad-multiple", "32", "--fixed-padding", "--mps-cache-interval", "12", "--defer-final-loss", "--segment-steps", "48", "--resume", "--device", "mps"]
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+  "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+  "data_sha256": "65f6bc6f624f5c44986754ed0bf0117e7871ae9dd8bbfc52c9d261e15dca51ab",
+  "split_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 1,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 60.0,
+  "seed": 17,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 2784,
+  "training_code_sha256": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+  "answer_tokens": 97693,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 192,
+  "pad_multiple": 32,
+  "mps_cache_interval": 12,
+  "segment_steps": 48,
+  "optimizer_plan_hash": "88cc33141eb203c8d5a674aaf706348547a23d5f684f91e057732f9c5bdc9f57",
+  "resume_code_sha256": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "fixed_padding": true,
+  "padding_width": 192,
+  "selection_sha256": "cb79cfae005db03d66cf3cb3eda232e6f0ad8c41b1fc308b80359cecaf6afac4",
+  "selection_hash": "0231f9038db3302da8b8f1d64f4b6a6c0ad298b98faaa032fbb78e1c82c68d12",
+  "selection_policy": "2400 distinct broader cases with scalar-verified traces plus 384 replay; one epoch, identical data for two seeds"
+}
+{"step": 1, "epoch": 1, "loss": 1.902582912121789, "learning_rate": 2.0000000000000003e-06, "seconds": 162.44945020900923, "supervised_tokens": 118}
+{"step": 5, "epoch": 1, "loss": 2.4742973552030674, "learning_rate": 1e-05, "seconds": 168.07164066699625, "supervised_tokens": 648}
+{"step": 10, "epoch": 1, "loss": 1.1439142142776895, "learning_rate": 9.998837354070644e-06, "seconds": 175.13315079199674, "supervised_tokens": 1349}
+{"step": 15, "epoch": 1, "loss": 1.0801472786145332, "learning_rate": 9.995350017058379e-06, "seconds": 182.29356154199922, "supervised_tokens": 2015}
+{"step": 20, "epoch": 1, "loss": 0.6517918326637961, "learning_rate": 9.989539790980174e-06, "seconds": 189.32299683400197, "supervised_tokens": 2673}
+{"step": 25, "epoch": 1, "loss": 0.42341454132743506, "learning_rate": 9.981409678163008e-06, "seconds": 196.50117233399942, "supervised_tokens": 3417}
+{"step": 30, "epoch": 1, "loss": 0.3776259007661239, "learning_rate": 9.970963879692466e-06, "seconds": 203.49323745899892, "supervised_tokens": 4050}
+{"step": 35, "epoch": 1, "loss": 0.5316954262648956, "learning_rate": 9.958207793241915e-06, "seconds": 210.53152908400807, "supervised_tokens": 4700}
+{"step": 40, "epoch": 1, "loss": 0.4651588313487353, "learning_rate": 9.943148010283347e-06, "seconds": 217.65258379200532, "supervised_tokens": 5452}
+{"step": 45, "epoch": 1, "loss": 0.16030246127735484, "learning_rate": 9.925792312681364e-06, "seconds": 224.65918204199988, "supervised_tokens": 6215}
+{"segment_saved": "experiments/generalization_20261019_seed17/progress_latest.pt", "optimizer_step": 48, "total_steps": 696}
+
+COMMAND ["qos_ai_finetune.py", "--load", "experiments/balanced_from_codegen_20261018/student.pt", "--curriculum", "curricula/generalization_20261019", "--data", "curricula/generalization_20261019/balanced_train_ready.jsonl", "--selection", "curricula/generalization_20261019/training_selection.json", "--splits", "curricula/generalization_20261019/splits.json", "--root", "fprisc=source_snapshot/fprisc", "--root", "qos=source_snapshot/qos", "--output", "experiments/generalization_20261019_seed17", "--epochs", "1", "--batch-size", "2", "--grad-accumulation", "2", "--learning-rate", "0.00001", "--max-minutes", "60", "--seed", "17", "--pad-multiple", "32", "--fixed-padding", "--mps-cache-interval", "12", "--defer-final-loss", "--segment-steps", "48", "--resume", "--device", "mps"]
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+  "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+  "data_sha256": "65f6bc6f624f5c44986754ed0bf0117e7871ae9dd8bbfc52c9d261e15dca51ab",
+  "split_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 1,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 60.0,
+  "seed": 17,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 2784,
+  "training_code_sha256": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+  "answer_tokens": 97693,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 192,
+  "pad_multiple": 32,
+  "mps_cache_interval": 12,
+  "segment_steps": 48,
+  "optimizer_plan_hash": "88cc33141eb203c8d5a674aaf706348547a23d5f684f91e057732f9c5bdc9f57",
+  "resume_code_sha256": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "fixed_padding": true,
+  "padding_width": 192,
+  "selection_sha256": "cb79cfae005db03d66cf3cb3eda232e6f0ad8c41b1fc308b80359cecaf6afac4",
+  "selection_hash": "0231f9038db3302da8b8f1d64f4b6a6c0ad298b98faaa032fbb78e1c82c68d12",
+  "selection_policy": "2400 distinct broader cases with scalar-verified traces plus 384 replay; one epoch, identical data for two seeds"
+}
+{"step": 50, "epoch": 1, "loss": 0.7817917563698509, "learning_rate": 9.906149668672043e-06, "seconds": 232.53762683398963, "supervised_tokens": 7031}
+{"step": 55, "epoch": 1, "loss": 0.20412189619881765, "learning_rate": 9.884230228228757e-06, "seconds": 239.54519799999252, "supervised_tokens": 7727}
+{"step": 60, "epoch": 1, "loss": 0.15816990534464517, "learning_rate": 9.860045317817379e-06, "seconds": 246.85528166699805, "supervised_tokens": 8527}
+{"step": 65, "epoch": 1, "loss": 0.5811926155274617, "learning_rate": 9.833607434543526e-06, "seconds": 253.71268620899355, "supervised_tokens": 9182}
+{"step": 70, "epoch": 1, "loss": 0.3234950374154484, "learning_rate": 9.804930239694919e-06, "seconds": 260.72485670899914, "supervised_tokens": 9836}
+{"step": 75, "epoch": 1, "loss": 0.3702757817617855, "learning_rate": 9.774028551682157e-06, "seconds": 267.82521341698884, "supervised_tokens": 10546}
+{"step": 80, "epoch": 1, "loss": 0.35341090247744605, "learning_rate": 9.740918338381591e-06, "seconds": 274.8395987499971, "supervised_tokens": 11344}
+{"step": 85, "epoch": 1, "loss": 0.10846003865808006, "learning_rate": 9.7056167088842e-06, "seconds": 282.03489879198605, "supervised_tokens": 12000}
+{"step": 90, "epoch": 1, "loss": 0.12527441311823695, "learning_rate": 9.668141904654805e-06, "seconds": 288.99938516698603, "supervised_tokens": 12683}
+{"step": 95, "epoch": 1, "loss": 0.22308916898117853, "learning_rate": 9.628513290106106e-06, "seconds": 295.96184804198856, "supervised_tokens": 13471}
+{"segment_saved": "experiments/generalization_20261019_seed17/progress_latest.pt", "optimizer_step": 96, "total_steps": 696}
+
+COMMAND ["qos_ai_finetune.py", "--load", "experiments/balanced_from_codegen_20261018/student.pt", "--curriculum", "curricula/generalization_20261019", "--data", "curricula/generalization_20261019/balanced_train_ready.jsonl", "--selection", "curricula/generalization_20261019/training_selection.json", "--splits", "curricula/generalization_20261019/splits.json", "--root", "fprisc=source_snapshot/fprisc", "--root", "qos=source_snapshot/qos", "--output", "experiments/generalization_20261019_seed17", "--epochs", "1", "--batch-size", "2", "--grad-accumulation", "2", "--learning-rate", "0.00001", "--max-minutes", "60", "--seed", "17", "--pad-multiple", "32", "--fixed-padding", "--mps-cache-interval", "12", "--defer-final-loss", "--segment-steps", "48", "--resume", "--device", "mps"]
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+  "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+  "data_sha256": "65f6bc6f624f5c44986754ed0bf0117e7871ae9dd8bbfc52c9d261e15dca51ab",
+  "split_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 1,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 60.0,
+  "seed": 17,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 2784,
+  "training_code_sha256": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+  "answer_tokens": 97693,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 192,
+  "pad_multiple": 32,
+  "mps_cache_interval": 12,
+  "segment_steps": 48,
+  "optimizer_plan_hash": "88cc33141eb203c8d5a674aaf706348547a23d5f684f91e057732f9c5bdc9f57",
+  "resume_code_sha256": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "fixed_padding": true,
+  "padding_width": 192,
+  "selection_sha256": "cb79cfae005db03d66cf3cb3eda232e6f0ad8c41b1fc308b80359cecaf6afac4",
+  "selection_hash": "0231f9038db3302da8b8f1d64f4b6a6c0ad298b98faaa032fbb78e1c82c68d12",
+  "selection_policy": "2400 distinct broader cases with scalar-verified traces plus 384 replay; one epoch, identical data for two seeds"
+}
+{"step": 100, "epoch": 1, "loss": 0.2849017652884993, "learning_rate": 9.586751342592505e-06, "seconds": 303.820083041981, "supervised_tokens": 14167}
+{"step": 105, "epoch": 1, "loss": 0.35449713593596344, "learning_rate": 9.542877641828789e-06, "seconds": 310.82647533298586, "supervised_tokens": 15070}
+{"step": 110, "epoch": 1, "loss": 0.2581852491085346, "learning_rate": 9.496914858739226e-06, "seconds": 317.93770533298084, "supervised_tokens": 15685}
+{"step": 115, "epoch": 1, "loss": 0.28000361509997435, "learning_rate": 9.448886743742779e-06, "seconds": 324.9505907919811, "supervised_tokens": 16251}
+{"step": 120, "epoch": 1, "loss": 0.3202016675794447, "learning_rate": 9.398818114480504e-06, "seconds": 332.2312184579787, "supervised_tokens": 16918}
+{"step": 125, "epoch": 1, "loss": 0.49094224294026695, "learning_rate": 9.346734842991522e-06, "seconds": 339.0979616249824, "supervised_tokens": 17697}
+{"step": 130, "epoch": 1, "loss": 0.32863276580284384, "learning_rate": 9.292663842344085e-06, "seconds": 346.1247920419846, "supervised_tokens": 18430}
+{"step": 135, "epoch": 1, "loss": 0.28540741575175316, "learning_rate": 9.236633052728774e-06, "seconds": 353.2617500419874, "supervised_tokens": 18979}
+{"step": 140, "epoch": 1, "loss": 0.4263679013393893, "learning_rate": 9.17867142702091e-06, "seconds": 360.29499549997854, "supervised_tokens": 19653}
+{"segment_saved": "experiments/generalization_20261019_seed17/progress_latest.pt", "optimizer_step": 144, "total_steps": 696}
+
+COMMAND ["qos_ai_finetune.py", "--load", "experiments/balanced_from_codegen_20261018/student.pt", "--curriculum", "curricula/generalization_20261019", "--data", "curricula/generalization_20261019/balanced_train_ready.jsonl", "--selection", "curricula/generalization_20261019/training_selection.json", "--splits", "curricula/generalization_20261019/splits.json", "--root", "fprisc=source_snapshot/fprisc", "--root", "qos=source_snapshot/qos", "--output", "experiments/generalization_20261019_seed17", "--epochs", "1", "--batch-size", "2", "--grad-accumulation", "2", "--learning-rate", "0.00001", "--max-minutes", "60", "--seed", "17", "--pad-multiple", "32", "--fixed-padding", "--mps-cache-interval", "12", "--defer-final-loss", "--segment-steps", "48", "--resume", "--device", "mps"]
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+  "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+  "data_sha256": "65f6bc6f624f5c44986754ed0bf0117e7871ae9dd8bbfc52c9d261e15dca51ab",
+  "split_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 1,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 60.0,
+  "seed": 17,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 2784,
+  "training_code_sha256": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+  "answer_tokens": 97693,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 192,
+  "pad_multiple": 32,
+  "mps_cache_interval": 12,
+  "segment_steps": 48,
+  "optimizer_plan_hash": "88cc33141eb203c8d5a674aaf706348547a23d5f684f91e057732f9c5bdc9f57",
+  "resume_code_sha256": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "fixed_padding": true,
+  "padding_width": 192,
+  "selection_sha256": "cb79cfae005db03d66cf3cb3eda232e6f0ad8c41b1fc308b80359cecaf6afac4",
+  "selection_hash": "0231f9038db3302da8b8f1d64f4b6a6c0ad298b98faaa032fbb78e1c82c68d12",
+  "selection_policy": "2400 distinct broader cases with scalar-verified traces plus 384 replay; one epoch, identical data for two seeds"
+}
+{"step": 145, "epoch": 1, "loss": 0.30243131009543817, "learning_rate": 9.11880891581968e-06, "seconds": 368.1911752079759, "supervised_tokens": 20330}
+{"step": 150, "epoch": 1, "loss": 0.4841653031188172, "learning_rate": 9.057076451971742e-06, "seconds": 375.15403166698525, "supervised_tokens": 21019}
+{"step": 155, "epoch": 1, "loss": 0.7017339399491234, "learning_rate": 8.99350593458723e-06, "seconds": 382.1710246669827, "supervised_tokens": 21624}
+{"step": 160, "epoch": 1, "loss": 0.2326727886589206, "learning_rate": 8.928130212556483e-06, "seconds": 389.30490666697733, "supervised_tokens": 22439}
+{"step": 165, "epoch": 1, "loss": 0.20831679466158845, "learning_rate": 8.860983067575988e-06, "seconds": 396.32094141698326, "supervised_tokens": 23031}
+{"step": 170, "epoch": 1, "loss": 0.8099455227927556, "learning_rate": 8.792099196692315e-06, "seconds": 403.430994749986, "supervised_tokens": 23688}
+{"step": 175, "epoch": 1, "loss": 0.1533201298815139, "learning_rate": 8.721514194373053e-06, "seconds": 410.46454066697333, "supervised_tokens": 24421}
+{"step": 180, "epoch": 1, "loss": 0.24486031922154455, "learning_rate": 8.649264534114037e-06, "seconds": 417.7234105419775, "supervised_tokens": 25089}
+{"step": 185, "epoch": 1, "loss": 0.2504983526287657, "learning_rate": 8.57538754959233e-06, "seconds": 424.59751924997545, "supervised_tokens": 25564}
+{"step": 190, "epoch": 1, "loss": 0.1814691142032021, "learning_rate": 8.499921415374744e-06, "seconds": 431.6104670829809, "supervised_tokens": 26360}
+{"segment_saved": "experiments/generalization_20261019_seed17/progress_latest.pt", "optimizer_step": 192, "total_steps": 696}
+
+COMMAND ["qos_ai_finetune.py", "--load", "experiments/balanced_from_codegen_20261018/student.pt", "--curriculum", "curricula/generalization_20261019", "--data", "curricula/generalization_20261019/balanced_train_ready.jsonl", "--selection", "curricula/generalization_20261019/training_selection.json", "--splits", "curricula/generalization_20261019/splits.json", "--root", "fprisc=source_snapshot/fprisc", "--root", "qos=source_snapshot/qos", "--output", "experiments/generalization_20261019_seed17", "--epochs", "1", "--batch-size", "2", "--grad-accumulation", "2", "--learning-rate", "0.00001", "--max-minutes", "60", "--seed", "17", "--pad-multiple", "32", "--fixed-padding", "--mps-cache-interval", "12", "--defer-final-loss", "--segment-steps", "48", "--resume", "--device", "mps"]
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+  "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+  "data_sha256": "65f6bc6f624f5c44986754ed0bf0117e7871ae9dd8bbfc52c9d261e15dca51ab",
+  "split_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 1,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 60.0,
+  "seed": 17,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 2784,
+  "training_code_sha256": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+  "answer_tokens": 97693,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 192,
+  "pad_multiple": 32,
+  "mps_cache_interval": 12,
+  "segment_steps": 48,
+  "optimizer_plan_hash": "88cc33141eb203c8d5a674aaf706348547a23d5f684f91e057732f9c5bdc9f57",
+  "resume_code_sha256": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "fixed_padding": true,
+  "padding_width": 192,
+  "selection_sha256": "cb79cfae005db03d66cf3cb3eda232e6f0ad8c41b1fc308b80359cecaf6afac4",
+  "selection_hash": "0231f9038db3302da8b8f1d64f4b6a6c0ad298b98faaa032fbb78e1c82c68d12",
+  "selection_policy": "2400 distinct broader cases with scalar-verified traces plus 384 replay; one epoch, identical data for two seeds"
+}
+{"step": 195, "epoch": 1, "loss": 0.3731804308683976, "learning_rate": 8.422905127191837e-06, "seconds": 439.4278836669837, "supervised_tokens": 27114}
+{"step": 200, "epoch": 1, "loss": 0.44398733973503113, "learning_rate": 8.344378481787588e-06, "seconds": 446.4361093749758, "supervised_tokens": 27756}
+{"step": 205, "epoch": 1, "loss": 0.3545557417959537, "learning_rate": 8.26438205635516e-06, "seconds": 453.59477249997144, "supervised_tokens": 28459}
+{"step": 210, "epoch": 1, "loss": 0.38619392889517323, "learning_rate": 8.182957187569397e-06, "seconds": 460.5517825419811, "supervised_tokens": 29089}
+{"step": 215, "epoch": 1, "loss": 0.4397065137561999, "learning_rate": 8.100145950226848e-06, "seconds": 467.55668941697513, "supervised_tokens": 29722}
+{"step": 220, "epoch": 1, "loss": 0.15929051871611694, "learning_rate": 8.015991135504407e-06, "seconds": 474.68352724997385, "supervised_tokens": 30570}
+{"step": 225, "epoch": 1, "loss": 0.4890104293823242, "learning_rate": 7.930536228847746e-06, "seconds": 481.70821283398254, "supervised_tokens": 31217}
+{"step": 230, "epoch": 1, "loss": 0.33137836168758833, "learning_rate": 7.84382538750103e-06, "seconds": 488.8328092919837, "supervised_tokens": 32097}
+{"step": 235, "epoch": 1, "loss": 0.3224930219202234, "learning_rate": 7.755903417689473e-06, "seconds": 495.8240572919749, "supervised_tokens": 32863}
+{"step": 240, "epoch": 1, "loss": 0.1952590062068059, "learning_rate": 7.666815751466537e-06, "seconds": 503.1040979589743, "supervised_tokens": 33640}
+{"segment_saved": "experiments/generalization_20261019_seed17/progress_latest.pt", "optimizer_step": 240, "total_steps": 696}
+
+COMMAND ["qos_ai_finetune.py", "--load", "experiments/balanced_from_codegen_20261018/student.pt", "--curriculum", "curricula/generalization_20261019", "--data", "curricula/generalization_20261019/balanced_train_ready.jsonl", "--selection", "curricula/generalization_20261019/training_selection.json", "--splits", "curricula/generalization_20261019/splits.json", "--root", "fprisc=source_snapshot/fprisc", "--root", "qos=source_snapshot/qos", "--output", "experiments/generalization_20261019_seed17", "--epochs", "1", "--batch-size", "2", "--grad-accumulation", "2", "--learning-rate", "0.00001", "--max-minutes", "60", "--seed", "17", "--pad-multiple", "32", "--fixed-padding", "--mps-cache-interval", "12", "--defer-final-loss", "--segment-steps", "48", "--resume", "--device", "mps"]
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+  "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+  "data_sha256": "65f6bc6f624f5c44986754ed0bf0117e7871ae9dd8bbfc52c9d261e15dca51ab",
+  "split_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 1,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 60.0,
+  "seed": 17,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 2784,
+  "training_code_sha256": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+  "answer_tokens": 97693,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 192,
+  "pad_multiple": 32,
+  "mps_cache_interval": 12,
+  "segment_steps": 48,
+  "optimizer_plan_hash": "88cc33141eb203c8d5a674aaf706348547a23d5f684f91e057732f9c5bdc9f57",
+  "resume_code_sha256": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "fixed_padding": true,
+  "padding_width": 192,
+  "selection_sha256": "cb79cfae005db03d66cf3cb3eda232e6f0ad8c41b1fc308b80359cecaf6afac4",
+  "selection_hash": "0231f9038db3302da8b8f1d64f4b6a6c0ad298b98faaa032fbb78e1c82c68d12",
+  "selection_policy": "2400 distinct broader cases with scalar-verified traces plus 384 replay; one epoch, identical data for two seeds"
+}
+{"step": 245, "epoch": 1, "loss": 0.17260111975915654, "learning_rate": 7.576608423237776e-06, "seconds": 510.66888350096997, "supervised_tokens": 34293}
+{"step": 250, "epoch": 1, "loss": 0.08895654678344726, "learning_rate": 7.485328045973394e-06, "seconds": 517.6956827919639, "supervised_tokens": 34995}
+{"step": 255, "epoch": 1, "loss": 0.15545457250931682, "learning_rate": 7.393021787121865e-06, "seconds": 524.8195750419691, "supervised_tokens": 35621}
+{"step": 260, "epoch": 1, "loss": 0.9615236043930053, "learning_rate": 7.299737344237009e-06, "seconds": 531.8384787509713, "supervised_tokens": 36302}
+{"step": 265, "epoch": 1, "loss": 0.46369323276338126, "learning_rate": 7.205522920331184e-06, "seconds": 539.0262899589725, "supervised_tokens": 36791}
+{"step": 270, "epoch": 1, "loss": 0.43660770763050427, "learning_rate": 7.110427198967247e-06, "seconds": 546.00401229196, "supervised_tokens": 37453}
+{"step": 275, "epoch": 1, "loss": 0.1002972610597688, "learning_rate": 7.014499319102243e-06, "seconds": 553.040657416961, "supervised_tokens": 38243}
+{"step": 280, "epoch": 1, "loss": 0.06322788018568427, "learning_rate": 6.91778884969574e-06, "seconds": 560.1447101259691, "supervised_tokens": 38767}
+{"step": 285, "epoch": 1, "loss": 0.12759337425231934, "learning_rate": 6.820345764096001e-06, "seconds": 567.1435861669743, "supervised_tokens": 39640}
+{"segment_saved": "experiments/generalization_20261019_seed17/progress_latest.pt", "optimizer_step": 288, "total_steps": 696}
+
+COMMAND ["qos_ai_finetune.py", "--load", "experiments/balanced_from_codegen_20261018/student.pt", "--curriculum", "curricula/generalization_20261019", "--data", "curricula/generalization_20261019/balanced_train_ready.jsonl", "--selection", "curricula/generalization_20261019/training_selection.json", "--splits", "curricula/generalization_20261019/splits.json", "--root", "fprisc=source_snapshot/fprisc", "--root", "qos=source_snapshot/qos", "--output", "experiments/generalization_20261019_seed17", "--epochs", "1", "--batch-size", "2", "--grad-accumulation", "2", "--learning-rate", "0.00001", "--max-minutes", "60", "--seed", "17", "--pad-multiple", "32", "--fixed-padding", "--mps-cache-interval", "12", "--defer-final-loss", "--segment-steps", "48", "--resume", "--device", "mps"]
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+  "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+  "data_sha256": "65f6bc6f624f5c44986754ed0bf0117e7871ae9dd8bbfc52c9d261e15dca51ab",
+  "split_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 1,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 60.0,
+  "seed": 17,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 2784,
+  "training_code_sha256": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+  "answer_tokens": 97693,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 192,
+  "pad_multiple": 32,
+  "mps_cache_interval": 12,
+  "segment_steps": 48,
+  "optimizer_plan_hash": "88cc33141eb203c8d5a674aaf706348547a23d5f684f91e057732f9c5bdc9f57",
+  "resume_code_sha256": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "fixed_padding": true,
+  "padding_width": 192,
+  "selection_sha256": "cb79cfae005db03d66cf3cb3eda232e6f0ad8c41b1fc308b80359cecaf6afac4",
+  "selection_hash": "0231f9038db3302da8b8f1d64f4b6a6c0ad298b98faaa032fbb78e1c82c68d12",
+  "selection_policy": "2400 distinct broader cases with scalar-verified traces plus 384 replay; one epoch, identical data for two seeds"
+}
+{"step": 290, "epoch": 1, "loss": 0.874556884765625, "learning_rate": 6.722220414217165e-06, "seconds": 574.9768517089688, "supervised_tokens": 40273}
+{"step": 295, "epoch": 1, "loss": 0.25201721706905883, "learning_rate": 6.623463504520834e-06, "seconds": 582.0152126679604, "supervised_tokens": 41068}
+{"step": 300, "epoch": 1, "loss": 0.20852457958719003, "learning_rate": 6.524126065815473e-06, "seconds": 589.2934235009598, "supervised_tokens": 41781}
+{"step": 305, "epoch": 1, "loss": 0.18864477897176937, "learning_rate": 6.424259428887196e-06, "seconds": 596.1347827509599, "supervised_tokens": 42578}
+{"step": 310, "epoch": 1, "loss": 0.17032717014181203, "learning_rate": 6.323915197975511e-06, "seconds": 603.1547953339614, "supervised_tokens": 43138}
+{"step": 315, "epoch": 1, "loss": 0.35311987780142523, "learning_rate": 6.2231452241078e-06, "seconds": 610.3055063759675, "supervised_tokens": 43811}
+{"step": 320, "epoch": 1, "loss": 0.3222090930938721, "learning_rate": 6.122001578306246e-06, "seconds": 620.7665878339612, "supervised_tokens": 44658}
+{"step": 325, "epoch": 1, "loss": 0.13731919424874442, "learning_rate": 6.020536524681105e-06, "seconds": 627.9427151679556, "supervised_tokens": 45484}
+{"step": 330, "epoch": 1, "loss": 0.19809348810286748, "learning_rate": 5.918802493424189e-06, "seconds": 634.9057131259615, "supervised_tokens": 46067}
+{"step": 335, "epoch": 1, "loss": 0.38345691595184667, "learning_rate": 5.816852053716522e-06, "seconds": 641.9231890009687, "supervised_tokens": 46698}
+{"segment_saved": "experiments/generalization_20261019_seed17/progress_latest.pt", "optimizer_step": 336, "total_steps": 696}
+
+COMMAND ["qos_ai_finetune.py", "--load", "experiments/balanced_from_codegen_20261018/student.pt", "--curriculum", "curricula/generalization_20261019", "--data", "curricula/generalization_20261019/balanced_train_ready.jsonl", "--selection", "curricula/generalization_20261019/training_selection.json", "--splits", "curricula/generalization_20261019/splits.json", "--root", "fprisc=source_snapshot/fprisc", "--root", "qos=source_snapshot/qos", "--output", "experiments/generalization_20261019_seed17", "--epochs", "1", "--batch-size", "2", "--grad-accumulation", "2", "--learning-rate", "0.00001", "--max-minutes", "60", "--seed", "17", "--pad-multiple", "32", "--fixed-padding", "--mps-cache-interval", "12", "--defer-final-loss", "--segment-steps", "48", "--resume", "--device", "mps"]
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+  "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+  "data_sha256": "65f6bc6f624f5c44986754ed0bf0117e7871ae9dd8bbfc52c9d261e15dca51ab",
+  "split_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 1,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 60.0,
+  "seed": 17,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 2784,
+  "training_code_sha256": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+  "answer_tokens": 97693,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 192,
+  "pad_multiple": 32,
+  "mps_cache_interval": 12,
+  "segment_steps": 48,
+  "optimizer_plan_hash": "88cc33141eb203c8d5a674aaf706348547a23d5f684f91e057732f9c5bdc9f57",
+  "resume_code_sha256": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "fixed_padding": true,
+  "padding_width": 192,
+  "selection_sha256": "cb79cfae005db03d66cf3cb3eda232e6f0ad8c41b1fc308b80359cecaf6afac4",
+  "selection_hash": "0231f9038db3302da8b8f1d64f4b6a6c0ad298b98faaa032fbb78e1c82c68d12",
+  "selection_policy": "2400 distinct broader cases with scalar-verified traces plus 384 replay; one epoch, identical data for two seeds"
+}
+{"step": 340, "epoch": 1, "loss": 0.1647671620051066, "learning_rate": 5.714737886564205e-06, "seconds": 649.7577617929637, "supervised_tokens": 47524}
+{"step": 345, "epoch": 1, "loss": 0.29524164881025045, "learning_rate": 5.612512757576469e-06, "seconds": 656.7702838759724, "supervised_tokens": 48230}
+{"step": 350, "epoch": 1, "loss": 0.0954520414907036, "learning_rate": 5.510229489700025e-06, "seconds": 663.9112034179707, "supervised_tokens": 48880}
+{"step": 355, "epoch": 1, "loss": 0.08583044012387593, "learning_rate": 5.407940935923777e-06, "seconds": 670.9103048759716, "supervised_tokens": 49601}
+{"step": 360, "epoch": 1, "loss": 0.1112833383704434, "learning_rate": 5.30569995196802e-06, "seconds": 678.1737312099722, "supervised_tokens": 50212}
+{"step": 365, "epoch": 1, "loss": 0.10037656753293929, "learning_rate": 5.203559368972227e-06, "seconds": 685.0322271259647, "supervised_tokens": 50898}
+{"step": 370, "epoch": 1, "loss": 0.15745072751431852, "learning_rate": 5.101571966195528e-06, "seconds": 692.0513733759726, "supervised_tokens": 51712}
+{"step": 375, "epoch": 1, "loss": 0.3968292408519321, "learning_rate": 4.999790443744003e-06, "seconds": 699.1679680849629, "supervised_tokens": 52216}
+{"step": 380, "epoch": 1, "loss": 0.06748173453591087, "learning_rate": 4.8982673953388815e-06, "seconds": 706.1765067929664, "supervised_tokens": 52919}
+{"segment_saved": "experiments/generalization_20261019_seed17/progress_latest.pt", "optimizer_step": 384, "total_steps": 696}
+
+COMMAND ["qos_ai_finetune.py", "--load", "experiments/balanced_from_codegen_20261018/student.pt", "--curriculum", "curricula/generalization_20261019", "--data", "curricula/generalization_20261019/balanced_train_ready.jsonl", "--selection", "curricula/generalization_20261019/training_selection.json", "--splits", "curricula/generalization_20261019/splits.json", "--root", "fprisc=source_snapshot/fprisc", "--root", "qos=source_snapshot/qos", "--output", "experiments/generalization_20261019_seed17", "--epochs", "1", "--batch-size", "2", "--grad-accumulation", "2", "--learning-rate", "0.00001", "--max-minutes", "60", "--seed", "17", "--pad-multiple", "32", "--fixed-padding", "--mps-cache-interval", "12", "--defer-final-loss", "--segment-steps", "48", "--resume", "--device", "mps"]
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+  "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+  "data_sha256": "65f6bc6f624f5c44986754ed0bf0117e7871ae9dd8bbfc52c9d261e15dca51ab",
+  "split_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 1,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 60.0,
+  "seed": 17,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 2784,
+  "training_code_sha256": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+  "answer_tokens": 97693,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 192,
+  "pad_multiple": 32,
+  "mps_cache_interval": 12,
+  "segment_steps": 48,
+  "optimizer_plan_hash": "88cc33141eb203c8d5a674aaf706348547a23d5f684f91e057732f9c5bdc9f57",
+  "resume_code_sha256": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "fixed_padding": true,
+  "padding_width": 192,
+  "selection_sha256": "cb79cfae005db03d66cf3cb3eda232e6f0ad8c41b1fc308b80359cecaf6afac4",
+  "selection_hash": "0231f9038db3302da8b8f1d64f4b6a6c0ad298b98faaa032fbb78e1c82c68d12",
+  "selection_policy": "2400 distinct broader cases with scalar-verified traces plus 384 replay; one epoch, identical data for two seeds"
+}
+{"step": 385, "epoch": 1, "loss": 0.409837768191383, "learning_rate": 4.797055281139703e-06, "seconds": 714.092072083964, "supervised_tokens": 53451}
+{"step": 390, "epoch": 1, "loss": 0.10114408863915338, "learning_rate": 4.696206400636501e-06, "seconds": 721.031503250968, "supervised_tokens": 54294}
+{"step": 395, "epoch": 1, "loss": 0.09808475956036027, "learning_rate": 4.595772865625005e-06, "seconds": 728.0538722509664, "supervised_tokens": 55092}
+{"step": 400, "epoch": 1, "loss": 0.12423198793563375, "learning_rate": 4.495806573278839e-06, "seconds": 735.1738877089665, "supervised_tokens": 55751}
+{"step": 405, "epoch": 1, "loss": 0.177359673514295, "learning_rate": 4.396359179332613e-06, "seconds": 742.1773511259671, "supervised_tokens": 56370}
+{"step": 410, "epoch": 1, "loss": 0.2622363415170223, "learning_rate": 4.297482071389775e-06, "seconds": 749.2975182089722, "supervised_tokens": 57032}
+{"step": 415, "epoch": 1, "loss": 0.22902503380408654, "learning_rate": 4.1992263423690146e-06, "seconds": 756.3123820839683, "supervised_tokens": 57629}
+Error: command buffer exited with error status.
+	The Metal Performance Shaders operations encoded on it may not have completed.
+	Error: 
+	(null)
+	Ignored (for causing prior/excessive GPU errors) (00000004:kIOGPUCommandBufferCallbackErrorSubmissionsIgnored)
+	<AGXG13GFamilyCommandBuffer: 0x7844580000>
+    label = <none> 
+    device = <AGXG13GDevice: 0x1011a7ff0>
+        name = Apple M1 
+    commandQueue = <AGXG13GFamilyCommandQueue: 0x1011aa3f0>
+        label = <none> 
+        device = <AGXG13GDevice: 0x1011a7ff0>
+            name = Apple M1 
+    retainedReferences = 1
+Traceback (most recent call last):
+  File "/Users/jq/qos_ai_eval/qos_ai_finetune.py", line 261, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jq/qos_ai_eval/qos_ai_finetune.py", line 257, in main
+    fine_tune(p.parse_args())
+    ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/jq/qos_ai_eval/qos_ai_finetune.py", line 193, in fine_tune
+    raise ValueError('Device target count mismatch; no checkpoint saved')
+ValueError: Device target count mismatch; no checkpoint saved
+
+COMMAND ["qos_ai_finetune.py", "--load", "experiments/balanced_from_codegen_20261018/student.pt", "--curriculum", "curricula/generalization_20261019", "--data", "curricula/generalization_20261019/balanced_train_ready.jsonl", "--selection", "curricula/generalization_20261019/training_selection.json", "--splits", "curricula/generalization_20261019/splits.json", "--root", "fprisc=source_snapshot/fprisc", "--root", "qos=source_snapshot/qos", "--output", "experiments/generalization_20261019_seed17", "--epochs", "1", "--batch-size", "2", "--grad-accumulation", "2", "--learning-rate", "0.00001", "--max-minutes", "60", "--seed", "17", "--pad-multiple", "32", "--fixed-padding", "--mps-cache-interval", "12", "--defer-final-loss", "--segment-steps", "48", "--resume", "--device", "mps"]
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+  "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+  "data_sha256": "65f6bc6f624f5c44986754ed0bf0117e7871ae9dd8bbfc52c9d261e15dca51ab",
+  "split_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 1,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 60.0,
+  "seed": 17,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 2784,
+  "training_code_sha256": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+  "answer_tokens": 97693,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 192,
+  "pad_multiple": 32,
+  "mps_cache_interval": 12,
+  "segment_steps": 48,
+  "optimizer_plan_hash": "88cc33141eb203c8d5a674aaf706348547a23d5f684f91e057732f9c5bdc9f57",
+  "resume_code_sha256": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "fixed_padding": true,
+  "padding_width": 192,
+  "selection_sha256": "cb79cfae005db03d66cf3cb3eda232e6f0ad8c41b1fc308b80359cecaf6afac4",
+  "selection_hash": "0231f9038db3302da8b8f1d64f4b6a6c0ad298b98faaa032fbb78e1c82c68d12",
+  "selection_policy": "2400 distinct broader cases with scalar-verified traces plus 384 replay; one epoch, identical data for two seeds"
+}
+{"step": 385, "epoch": 1, "loss": 0.409837768191383, "learning_rate": 4.797055281139703e-06, "seconds": 713.9513647929707, "supervised_tokens": 53451}
+{"step": 390, "epoch": 1, "loss": 0.10114412042829725, "learning_rate": 4.696206400636501e-06, "seconds": 720.9282342929655, "supervised_tokens": 54294}
+{"step": 395, "epoch": 1, "loss": 0.09808492660522461, "learning_rate": 4.595772865625005e-06, "seconds": 727.9359637509624, "supervised_tokens": 55092}
+{"step": 400, "epoch": 1, "loss": 0.12423161933758507, "learning_rate": 4.495806573278839e-06, "seconds": 735.0638531259756, "supervised_tokens": 55751}
+{"step": 405, "epoch": 1, "loss": 0.17796755548733384, "learning_rate": 4.396359179332613e-06, "seconds": 745.6436945009627, "supervised_tokens": 56370}
+{"step": 410, "epoch": 1, "loss": 0.26329031396419444, "learning_rate": 4.297482071389775e-06, "seconds": 752.757422375973, "supervised_tokens": 57032}
+{"step": 415, "epoch": 1, "loss": 0.22849716039804313, "learning_rate": 4.1992263423690146e-06, "seconds": 759.7764911259728, "supervised_tokens": 57629}
+{"step": 420, "epoch": 1, "loss": 0.1965488910675049, "learning_rate": 4.101642764102946e-06, "seconds": 767.0691311259725, "supervised_tokens": 58478}
+Error: command buffer exited with error status.
+	The Metal Performance Shaders operations encoded on it may not have completed.
+	Error: 
+	(null)
+	Ignored (for causing prior/excessive GPU errors) (00000004:kIOGPUCommandBufferCallbackErrorSubmissionsIgnored)
+	<AGXG13GFamilyCommandBuffer: 0x77b60e8000>
+    label = <none> 
+    device = <AGXG13GDevice: 0x101c43800>
+        name = Apple M1 
+    commandQueue = <AGXG13GFamilyCommandQueue: 0x101c45c00>
+        label = <none> 
+        device = <AGXG13GDevice: 0x101c43800>
+            name = Apple M1 
+    retainedReferences = 1
+Traceback (most recent call last):
+  File "/Users/jq/qos_ai_eval/qos_ai_finetune.py", line 261, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jq/qos_ai_eval/qos_ai_finetune.py", line 257, in main
+    fine_tune(p.parse_args())
+    ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/jq/qos_ai_eval/qos_ai_finetune.py", line 193, in fine_tune
+    raise ValueError('Device target count mismatch; no checkpoint saved')
+ValueError: Device target count mismatch; no checkpoint saved
+
+COMMAND ["qos_ai_finetune.py", "--load", "experiments/balanced_from_codegen_20261018/student.pt", "--curriculum", "curricula/generalization_20261019", "--data", "curricula/generalization_20261019/balanced_train_ready.jsonl", "--selection", "curricula/generalization_20261019/training_selection.json", "--splits", "curricula/generalization_20261019/splits.json", "--root", "fprisc=source_snapshot/fprisc", "--root", "qos=source_snapshot/qos", "--output", "experiments/generalization_20261019_seed17", "--epochs", "1", "--batch-size", "2", "--grad-accumulation", "2", "--learning-rate", "0.00001", "--max-minutes", "60", "--seed", "17", "--pad-multiple", "32", "--fixed-padding", "--mps-cache-interval", "12", "--defer-final-loss", "--segment-steps", "48", "--resume", "--device", "mps"]
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+  "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+  "data_sha256": "65f6bc6f624f5c44986754ed0bf0117e7871ae9dd8bbfc52c9d261e15dca51ab",
+  "split_hash": "623a7b7cbe936b5e22b79db691f0256990231ce58a7eda8f3390ff922aa71f92",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 1,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 60.0,
+  "seed": 17,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 2784,
+  "training_code_sha256": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+  "answer_tokens": 97693,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 192,
+  "pad_multiple": 32,
+  "mps_cache_interval": 12,
+  "segment_steps": 48,
+  "optimizer_plan_hash": "88cc33141eb203c8d5a674aaf706348547a23d5f684f91e057732f9c5bdc9f57",
+  "resume_code_sha256": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "fixed_padding": true,
+  "padding_width": 192,
+  "selection_sha256": "cb79cfae005db03d66cf3cb3eda232e6f0ad8c41b1fc308b80359cecaf6afac4",
+  "selection_hash": "0231f9038db3302da8b8f1d64f4b6a6c0ad298b98faaa032fbb78e1c82c68d12",
+  "selection_policy": "2400 distinct broader cases with scalar-verified traces plus 384 replay; one epoch, identical data for two seeds"
+}
+{"step": 385, "epoch": 1, "loss": 0.409837768191383, "learning_rate": 4.797055281139703e-06, "seconds": 714.3411560429668, "supervised_tokens": 53451}
+{"step": 390, "epoch": 1, "loss": 0.10114408863915338, "learning_rate": 4.696206400636501e-06, "seconds": 721.3348835839715, "supervised_tokens": 54294}
+{"step": 395, "epoch": 1, "loss": 0.09742527251030988, "learning_rate": 4.595772865625005e-06, "seconds": 730.536852375968, "supervised_tokens": 55092}
+{"step": 400, "epoch": 1, "loss": 0.12390532815383255, "learning_rate": 4.495806573278839e-06, "seconds": 737.7169255429762, "supervised_tokens": 55751}
+{"step": 405, "epoch": 1, "loss": 0.17924822622270725, "learning_rate": 4.396359179332613e-06, "seconds": 744.7140597509715, "supervised_tokens": 56370}
+{"step": 410, "epoch": 1, "loss": 0.2605669701353033, "learning_rate": 4.297482071389775e-06, "seconds": 751.8486655429733, "supervised_tokens": 57032}
+{"step": 415, "epoch": 1, "loss": 0.22866896849412185, "learning_rate": 4.1992263423690146e-06, "seconds": 758.8553012509656, "supervised_tokens": 57629}
+{"step": 420, "epoch": 1, "loss": 0.19449898600578308, "learning_rate": 4.101642764102946e-06, "seconds": 766.1110947929701, "supervised_tokens": 58478}
+Error: command buffer exited with error status.
+	The Metal Performance Shaders operations encoded on it may not have completed.
+	Error: 
+	(null)
+	Ignored (for causing prior/excessive GPU errors) (00000004:kIOGPUCommandBufferCallbackErrorSubmissionsIgnored)
+	<AGXG13GFamilyCommandBuffer: 0x7abff20000>
+    label = <none> 
+    device = <AGXG13GDevice: 0x105f72340>
+        name = Apple M1 
+    commandQueue = <AGXG13GFamilyCommandQueue: 0x105f74740>
+        label = <none> 
+        device = <AGXG13GDevice: 0x105f72340>
+            name = Apple M1 
+    retainedReferences = 1
+Traceback (most recent call last):
+  File "/Users/jq/qos_ai_eval/qos_ai_finetune.py", line 261, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jq/qos_ai_eval/qos_ai_finetune.py", line 257, in main
+    fine_tune(p.parse_args())
+    ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/jq/qos_ai_eval/qos_ai_finetune.py", line 193, in fine_tune
+    raise ValueError('Device target count mismatch; no checkpoint saved')
+ValueError: Device target count mismatch; no checkpoint saved

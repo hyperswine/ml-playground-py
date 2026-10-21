@@ -1,0 +1,27 @@
+{"phase": "initial", "step": 0, "validation": {"loss": 11.282360792160034, "known_target_tokens": 2048, "scope": "four fixed internal-validation windows; infrastructure diagnostic only"}, "host": "JQs-Mac-mini.local", "config": {"vocabulary_size": 65536, "context_length": 512, "embedding_size": 1280, "head_count": 20, "layer_count": 24}, "unique_parameters": 556526080, "fp32_weight_bytes": 2226104320, "fp32_sgd_weights_gradients_bytes": 4452208640, "fp32_adam_weights_gradients_moments_bytes": 8904417280, "fp32_adafactor_weights_gradients_moments_bytes": 4454950912, "memory_estimate_excludes": "activations, logits, kernel workspaces, allocator and other processes", "initialization": "random weights; existing tokenizer mapping only; no teacher or 168M weights"}
+{"step": 1, "loss": 11.230175018310547, "known_target_tokens": 512, "tokens": 512, "learning_rate": 0.00125, "gradient_norm": 16.72540855407715, "elapsed_segment_seconds": 7.623831375007285}
+{"step": 2, "loss": 11.092353820800781, "known_target_tokens": 512, "tokens": 512, "learning_rate": 0.0025, "gradient_norm": 9.099833488464355, "elapsed_segment_seconds": 14.943454833002761}
+{
+  "step": 2,
+  "complete": false,
+  "segment_start_step": 0,
+  "parameter_count": 556526080,
+  "initial_validation": {
+    "loss": 11.282360792160034,
+    "known_target_tokens": 2048,
+    "scope": "four fixed internal-validation windows; infrastructure diagnostic only"
+  },
+  "final_validation": {
+    "loss": 10.42970085144043,
+    "known_target_tokens": 2048,
+    "scope": "four fixed internal-validation windows; infrastructure diagnostic only"
+  },
+  "total_tokens": 1024,
+  "known_target_tokens": 1024,
+  "segment_seconds": 18.472720332996687,
+  "checkpoint_sha256": "f22f2df76efaf92f415bccb0c38fc4e92ae940291b2cdad488113ac55632dea7",
+  "settings_hash": "78b4ba09b43b807147058ee8170d68b31aa22eb04487ad10f53cef5af106316a",
+  "scope": "infrastructure pilot; not a capability comparison",
+  "mps_allocated_bytes": 2228846592,
+  "mps_driver_bytes": 3398074368
+}

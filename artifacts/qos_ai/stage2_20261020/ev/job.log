@@ -1,0 +1,20 @@
+== 2026-10-20T03:48:14Z (+0 min) hard cap watchdog armed: 320 min
+== 2026-10-20T03:48:14Z (+0 min) verifying inputs
+qos_ai.py: OK
+qos_ai_data.py: OK
+qos_ai_finetune.py: OK
+qos_ai_resume.py: OK
+qos_ai_stage1_train.py: OK
+qos_ai_stage2_train.py: OK
+sft_mix.pt: OK
+/workspace/qos_ai_557m/experiment/progress_pretrain.pt: OK
+/workspace/qos_ai_stage1/bundle/english_probe.npy: OK
+/workspace/qos_ai_stage1/bundle/verified_sft.pt: OK
+NVIDIA GeForce RTX 4090, 24564 MiB
+== 2026-10-20T03:48:18Z (+0 min) C: continued pretraining until at most 07:53 UTC
+== 2026-10-20T07:27:27Z (+219 min) D: domain stage + pilot SFT on the 1B model
+== 2026-10-20T08:05:35Z (+257 min) E: mixed SFT on the 1B domain checkpoint
+== 2026-10-20T08:08:49Z (+260 min) done
+== 2026-10-20T08:08:49Z (+260 min) stopping pod gbcpf24i72r8y6: complete
+Runpod config file not found, please run `runpodctl config` to create it
+pod "gbcpf24i72r8y6" stopped

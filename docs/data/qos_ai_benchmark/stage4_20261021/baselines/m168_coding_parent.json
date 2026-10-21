@@ -1,0 +1,128 @@
+[
+  {
+    "id": "map_sum-p0",
+    "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 4) [x]).\n> print (str result).\n```",
+    "finished": true,
+    "tokens": 31,
+    "severe_loop": false
+  },
+  {
+    "id": "map_sum-p1",
+    "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 4) [0]).\n> print (str result).\n```",
+    "finished": true,
+    "tokens": 31,
+    "severe_loop": false
+  },
+  {
+    "id": "map_sum-p2",
+    "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 4) [List]).\n> print (str result).\n```",
+    "finished": true,
+    "tokens": 31,
+    "severe_loop": false
+  },
+  {
+    "id": "filter_sum-p0",
+    "answer": "```sol\nresult = List.sum (List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 100]).]).\n> print (str result).\n```",
+    "finished": true,
+    "tokens": 75,
+    "severe_loop": true
+  },
+  {
+    "id": "filter_sum-p1",
+    "answer": "```sol\nresult = List.sum (List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 10]]).]).\n```",
+    "finished": true,
+    "tokens": 108,
+    "severe_loop": true
+  },
+  {
+    "id": "filter_sum-p2",
+    "answer": "```sol\nresult = List.sum (List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 10]]).]).\n```",
+    "finished": true,
+    "tokens": 113,
+    "severe_loop": true
+  },
+  {
+    "id": "clamp_sum-p0",
+    "answer": "```sol\nresult = List.sum (List.range 0 10).\n> print (str result).\n```",
+    "finished": true,
+    "tokens": 25,
+    "severe_loop": false
+  },
+  {
+    "id": "clamp_sum-p1",
+    "answer": "```sol\nresult = List.sum (List.range 0 10).\n> print (str result).\n```",
+    "finished": true,
+    "tokens": 25,
+    "severe_loop": false
+  },
+  {
+    "id": "clamp_sum-p2",
+    "answer": "```sol\nresult = Numeric.clamp 0 10 10.\n> print (str result).\n```",
+    "finished": true,
+    "tokens": 26,
+    "severe_loop": false
+  },
+  {
+    "id": "signed_branch-p0",
+    "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 4) xs).\n> print (str result).\n```",
+    "finished": true,
+    "tokens": 30,
+    "severe_loop": false
+  },
+  {
+    "id": "signed_branch-p1",
+    "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 4) [0, 0]).\n> print (str result).\n```",
+    "finished": true,
+    "tokens": 34,
+    "severe_loop": false
+  },
+  {
+    "id": "signed_branch-p2",
+    "answer": "```sol\nresult = List.sum (List.map (fn x -> x * k) [xs]).\n> print (str result).\n```",
+    "finished": true,
+    "tokens": 30,
+    "severe_loop": false
+  },
+  {
+    "id": "filter_map_sum-p0",
+    "answer": "```sol\nresult = List.sum (List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 100]).]).\n```",
+    "finished": true,
+    "tokens": 73,
+    "severe_loop": true
+  },
+  {
+    "id": "filter_map_sum-p1",
+    "answer": "```sol\nresult = List.sum (List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 100]).]).\n> print (str result).\n```",
+    "finished": true,
+    "tokens": 70,
+    "severe_loop": true
+  },
+  {
+    "id": "filter_map_sum-p2",
+    "answer": "```sol\nresult = List.sum (List.filter (fn x -> x >= 1) [List.filter (fn x -> x >= 1) [List.filter (fn x -> x >= 1) [List.filter (fn x -> x >= 1) [List.filter (fn x -> x >= 1) [List.filter (fn x -> x >= 1) [List.filter (fn x -> x >= 1) [List.filter (fn x -> x >= 1) [List.filter (fn x -> x >= 1) [List.filter (fn x -> x >= 1) [List.filter (fn x -> x >= 1) [List.filter (fn x -> x >= 1) [List.filter (fn x -> x >= 1) [List.filter (fn x -> x >= 1) [List.filter (fn x -> x >= 1) [List.filter (fn x -> x >= 1) [",
+    "finished": false,
+    "tokens": 200,
+    "severe_loop": true
+  },
+  {
+    "id": "branch_max-p0",
+    "answer": "```sol\nresult = List.sum (List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 1 [List.take 10]]).]).\n> print (str result).\n```",
+    "finished": true,
+    "tokens": 110,
+    "severe_loop": true
+  },
+  {
+    "id": "branch_max-p1",
+    "answer": "```sol\nresult = Numeric.max 0 5.\n> print (str result).\n```",
+    "finished": true,
+    "tokens": 21,
+    "severe_loop": false
+  },
+  {
+    "id": "branch_max-p2",
+    "answer": "```sol\nresult = Numeric.max 0 5.\n> print (str result).\n```",
+    "finished": true,
+    "tokens": 21,
+    "severe_loop": false
+  }
+]

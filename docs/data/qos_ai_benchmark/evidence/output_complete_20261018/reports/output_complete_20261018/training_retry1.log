@@ -1,0 +1,97 @@
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+  "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+  "data_sha256": "6b90494b12090d3c96ebb78d4680b7eda3d5dfce119ecd854bc7d16a5243898b",
+  "split_hash": "54346de3d687868ce0213138c5d5004e37f8bbcc2f6a396dd9ee065f01c75d2f",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 1,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 2e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 10.0,
+  "seed": 7,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 768,
+  "training_code_sha256": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+  "answer_tokens": 26051,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 176,
+  "pad_multiple": 32,
+  "mps_cache_interval": 20,
+  "segment_steps": 64,
+  "optimizer_plan_hash": "bef60b4fff69347afd21aa699f67c59b60d6a33beab4c614dc23b2e2be668b79",
+  "resume_code_sha256": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "fixed_padding": true,
+  "padding_width": 192,
+  "selection_sha256": "bcdc4451881d3ea96f256323e42912740332977128a1228039daac9afced86cf",
+  "selection_hash": "7093c26ae5dfb74fbbe597894e9318ca3e675b5afb6b2715ecbcb3de4a3b086d",
+  "selection_policy": "576 new paired calculation/complete-answer examples plus 96 generation and 96 factual replay"
+}
+{"step": 130, "epoch": 1, "loss": 0.12321925311355117, "learning_rate": 6.456423209331814e-06, "seconds": 235.90226083400194, "supervised_tokens": 17880}
+{"step": 135, "epoch": 1, "loss": 0.07351573181152343, "learning_rate": 5.82062398829651e-06, "seconds": 243.0978112090088, "supervised_tokens": 18512}
+{"step": 140, "epoch": 1, "loss": 0.0368830084352565, "learning_rate": 5.221348789877317e-06, "seconds": 250.4937185840099, "supervised_tokens": 19264}
+{"step": 145, "epoch": 1, "loss": 0.19099243043914554, "learning_rate": 4.6628235943565885e-06, "seconds": 257.4350705000106, "supervised_tokens": 19985}
+{"step": 150, "epoch": 1, "loss": 0.18923695087432862, "learning_rate": 4.1489870203684554e-06, "seconds": 264.31824133401096, "supervised_tokens": 20615}
+{"step": 155, "epoch": 1, "loss": 0.3803324890136719, "learning_rate": 3.6834625504727688e-06, "seconds": 271.18858262500726, "supervised_tokens": 21242}
+{"step": 160, "epoch": 1, "loss": 0.06801642220595787, "learning_rate": 3.2695329790116303e-06, "seconds": 278.3514251670131, "supervised_tokens": 21935}
+{"step": 165, "epoch": 1, "loss": 0.09241150147639789, "learning_rate": 2.910117262437584e-06, "seconds": 285.20622579200426, "supervised_tokens": 22664}
+{"step": 170, "epoch": 1, "loss": 0.09597343234389041, "learning_rate": 2.6077499353607988e-06, "seconds": 292.1941552500066, "supervised_tokens": 23311}
+{"step": 175, "epoch": 1, "loss": 0.10740968159266881, "learning_rate": 2.364563237469525e-06, "seconds": 299.09566141699906, "supervised_tokens": 24008}
+{"step": 180, "epoch": 1, "loss": 0.04291507863998413, "learning_rate": 2.182272077361563e-06, "seconds": 306.28338704199996, "supervised_tokens": 24642}
+{"step": 185, "epoch": 1, "loss": 0.020254379119535888, "learning_rate": 2.0621619393190862e-06, "seconds": 313.1216745420097, "supervised_tokens": 25298}
+{"step": 190, "epoch": 1, "loss": 0.04849384047768333, "learning_rate": 2.005079818306039e-06, "seconds": 320.0863257500023, "supervised_tokens": 25849}
+{
+  "method": "answer-only supervised cross-entropy",
+  "parent": "/Users/jq/qos_ai_eval/experiments/balanced_from_codegen_20261018/student.pt",
+  "parent_sha256": "5312f018cc482f8b209a5c09ffc6a5c77de8bb8695661075f5d511654e5b0767",
+  "data_sha256": "6b90494b12090d3c96ebb78d4680b7eda3d5dfce119ecd854bc7d16a5243898b",
+  "split_hash": "54346de3d687868ce0213138c5d5004e37f8bbcc2f6a396dd9ee065f01c75d2f",
+  "benchmark_sha256": "1394b9a12fd1d2de8d55c57437b7c5945b0e270a9850c01039b22c38b38c81e7",
+  "epochs_requested": 1,
+  "batch_size": 2,
+  "grad_accumulation": 2,
+  "learning_rate": 2e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 5,
+  "gradient_clip": 1.0,
+  "max_minutes": 10.0,
+  "seed": 7,
+  "device": "mps",
+  "host": "JQs-Mac-mini.local",
+  "torch": "2.13.0",
+  "examples": 768,
+  "training_code_sha256": "8908b0efd31a74d271208526c554dcbae569fbe7ea0ff8667175e9bd9b377d61",
+  "answer_tokens": 26051,
+  "unknown_answer_tokens_skipped": 0,
+  "longest_example": 176,
+  "pad_multiple": 32,
+  "mps_cache_interval": 20,
+  "segment_steps": 64,
+  "optimizer_plan_hash": "bef60b4fff69347afd21aa699f67c59b60d6a33beab4c614dc23b2e2be668b79",
+  "resume_code_sha256": "926524dbf75758bcd63430fdca75fb098e85554a4248eeabaafb04940aed30a1",
+  "model_code_sha256": "326a02e3478f2548817f357a89a002348ddca725cafee139314b6067ad702f12",
+  "fixed_padding": true,
+  "padding_width": 192,
+  "selection_sha256": "bcdc4451881d3ea96f256323e42912740332977128a1228039daac9afced86cf",
+  "selection_hash": "7093c26ae5dfb74fbbe597894e9318ca3e675b5afb6b2715ecbcb3de4a3b086d",
+  "selection_policy": "576 new paired calculation/complete-answer examples plus 96 generation and 96 factual replay",
+  "optimizer_steps": 192,
+  "epochs_completed": 1,
+  "examples_seen": 768,
+  "supervised_tokens": 26051,
+  "initial_training_loss": 1.8298248603607106,
+  "final_training_loss": null,
+  "final_training_loss_deferred": true,
+  "elapsed_seconds": 322.8875448750041,
+  "budget_stop": false,
+  "segments_completed": 3,
+  "resumed_final_segment_from_step": 128,
+  "checkpoint_sha256": "4b7d9bf013bcf357b6c04c50e0da672505cbb6fd491334bc91f311d0da4f793b"
+}

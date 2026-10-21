@@ -1,0 +1,63 @@
+Training on 158 files, 1,536,118 characters, 184 unique characters; model has 132,024 parameters
+So far, the model has been trained for 1000 steps and has generated 50 characters of text. The prompt used for generation was "def ". The model checkpoint was loaded from "text_transformer.pt".
+
+When the model converts the word "mouse" into numbers, it doesn't use just 1 number; it uses a list of numbers, like [0.5, -1.2, 0.8, ...].
+numbers as different "features" or "concepts" the model uses to describe a word
+
+Masked Self-Attention step (from your previous question), the model looks at every word and asks, "How relevant is this word to the word I'm currently processing?"
+8 heads, the model runs 8 separate relevance-scoring processes at the exact same time.
+Head 1 might focus entirely on grammar: "Which word is the verb that matches this noun?"
+Head 2 might focus on pronouns: "What does the word 'it' refer back to?"
+Head 3 might focus on the topic of the sentence: "What is this sentence about?"
+...
+
+After all 8 heads finish their calculations, the model squashes their results together and passes them to the next layer.
+
+self.query_key_value = nn.Linear(config.embedding_size, 3 * config.embedding_size)
+The masked attention is the big deal
+
+query_key_value = query_key_value.view(batch_size, token_count, 3, self.head_count, self.head_size)
+query, key, value = query_key_value.unbind(dim=0)
+
+self.register_buffer("causal_mask", torch.tril(torch.ones(...)))
+...
+attention_scores = attention_scores.masked_fill(
+    ~self.causal_mask[:token_count, :token_count], float("-inf")
+)
+
+So the ith token can only attend to the first i tokens, and not any of the tokens that come after it. This is what makes it "causal" attention.
+creates a lower-triangular matrix to hide the future tokens from the current token, so that the model can only attend to the past and present tokens, not the future ones.
+
+Much of the work happens here
+
+self.feed_forward = nn.Sequential(
+    nn.Linear(config.embedding_size, 4 * config.embedding_size),
+    nn.GELU(),
+    nn.Linear(4 * config.embedding_size, config.embedding_size),
+)
+
+This is the decoder
+(Gaussian Error Linear Unit) is a high-performing neural network activation function that weights inputs probabilistically based on their magnitude, smoothing out the hard cutoff of standard ReLU
+First expand the embedding by 4x, then apply GELU, then reduce it back down to the original embedding size
+
+autoregressive model predicts the next value in a sequence or time series using its own past values as inputs
+
+softmax: a math tool in machine learning. It takes a list of raw numbers and turns them into a set of probabilities. Each output number is between 0 and 1, and all the numbers add up to 1
+
+query matrix represents the current token, the key matrix represents all tokens in the sequence, and the value matrix represents the information to be attended to.
+
+LayerNorm: a deep learning technique that normalizes inputs across the features of a single training example rather than across a mini-batch. It stabilizes hidden states, prevents vanishing gradient
+it also accelerates convergence
+
+FFNs act as associative memories:
+
+The first layer acts as a key lookup: "What pattern does this input match?"
+The second layer retrieves the value: "What output should I produce?"
+So the FFN stores knowledge that the model has learned:
+
+Factual knowledge ("Paris is the capital of France")
+Linguistic patterns ("The cat ___ the mouse" → "chased")
+Semantic relationships ("happy" → "joyful")
+
+logits are the raw, unnormalized scores output by a model before an activation function (like softmax or sigmoid) turns them into probabilities. They can be any real number from negative to positiv
+So basically, logits are the model's raw predictions, and softmax turns those predictions into probabilities that sum to 1.

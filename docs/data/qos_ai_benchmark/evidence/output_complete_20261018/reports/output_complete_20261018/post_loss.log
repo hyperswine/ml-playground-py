@@ -1,0 +1,7 @@
+{
+  "checkpoint_sha256": "4b7d9bf013bcf357b6c04c50e0da672505cbb6fd491334bc91f311d0da4f793b",
+  "data_sha256": "6b90494b12090d3c96ebb78d4680b7eda3d5dfce119ecd854bc7d16a5243898b",
+  "final_training_loss": 0.07294248633936387,
+  "examples": 768,
+  "code_sha256": "ad46855154500499fed4a4c6282911943225d1b4fee7ad20b6014cbe27f46a42"
+}

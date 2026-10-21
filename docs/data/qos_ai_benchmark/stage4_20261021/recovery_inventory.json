@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-21",
+  "retained_volume": "xewpn3z8za",
+  "delete_authorized": false,
+  "artifacts": [
+    {
+      "role": "domain_parent",
+      "backup_path": "/Users/jq/qos_ai_eval/experiments/stage2_20261020/m557_1b_domain.pt",
+      "sha256": "5879f9c385158e1b679e8fda9c6fc53f8f15919e109d25c05c7a332f5d6df730",
+      "verified_on_m1_20261021": true,
+      "bytes": 2226705867
+    },
+    {
+      "role": "stage3_specialist",
+      "backup_path": "/Users/jq/qos_ai_eval/experiments/stage3_20261020/m557_sol.pt",
+      "sha256": "ea62b00586637abd2d16f70f9d45de9dcdd1f9b806ed6dfb25721b9c8f4619b0",
+      "verified_on_m1_20261021": true,
+      "bytes": 2226705878
+    },
+    {
+      "role": "pretrained",
+      "backup_path": null,
+      "sha256": "a84e9c29d93812513814bc579bc819df662daa6aacea5efe15c7113f49d3f592",
+      "volume_path": "/workspace/qos_ai_stage2/m557_1b_pretrain/pretrained.pt"
+    },
+    {
+      "role": "optimizer",
+      "backup_path": null,
+      "sha256": null,
+      "volume_path": "/workspace/qos_ai_stage2/m557_1b_pretrain/progress_stage2.pt"
+    },
+    {
+      "role": "document_ledger",
+      "backup_path": null,
+      "sha256": "5bce07ef4d1afd87b04628e6c7118410f6848b97cfdadaaf746ffa5b6361328f",
+      "volume_path": "/workspace/qos_ai_557m/pretraining_data/documents.jsonl.gz"
+    }
+  ],
+  "m1_readback": {
+    "host": "JQs-Mac-mini.local",
+    "free_kib": 65797436,
+    "method": "SSH jq via Tailscale; shasum -a 256 and df -k",
+    "scope": "two checkpoint byte hashes verified; checkpoint structures not reloaded"
+  },
+  "recovery_complete": false,
+  "pending": [
+    "Copy and hash the latest pretrained weights and optimizer off the volume",
+    "Verify optimizer/model structure, step and matching lineage",
+    "Copy and hash the accepted-document ledger",
+    "Verify original English training stream against archived dataset manifest",
+    "Measure destination volume free space; keep all retained artifacts",
+    "Test independent controller deadline and stop-state read-back; agree next spend ceiling"
+  ],
+  "cloud_status": "Not queried in this preparation turn; no cloud mutations."
+}

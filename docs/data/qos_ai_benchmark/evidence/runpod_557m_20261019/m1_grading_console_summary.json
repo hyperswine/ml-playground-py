@@ -1,0 +1,46 @@
+{
+  "scope": "Summaries returned by the four successful M1 grader commands; full per-answer reports remain on the M1 pending download.",
+  "compiler_sha256": "c41c6ab9377e59be4d9bccedf1d6dd33f188bad0453046660650c6982fbc2f36",
+  "sft": {
+    "checkpoint_sha256": "430915b08ee981d6efa32bca2aafdeeb4d33d4b18c093b82c16373ea0b7b0a63",
+    "working_generation": 14,
+    "generation_count": 24,
+    "applied_repairs": 20,
+    "repair_count": 48,
+    "complete_repairs": 3,
+    "no_change_complete": 7,
+    "no_change_count": 24,
+    "generalization": {
+      "wording": 18,
+      "inputs": 14,
+      "combinations": 6,
+      "count_each": 48
+    }
+  },
+  "pretrained": {
+    "working_generation": 0,
+    "applied_repairs": 0,
+    "complete_repairs": 0,
+    "no_change_complete": 0,
+    "generalization": {
+      "wording": 0,
+      "inputs": 0,
+      "combinations": 0,
+      "count_each": 48
+    }
+  },
+  "m1_grader_answer_hashes_verified": {
+    "sft": {
+      "coding": "8728c96c98a7ea352c6f9a057fc909644cd614358c9407729d31c7b558499016",
+      "generalization": "d6019807c94957348256bf4a39381db7694f4b3031f8775cc06648376e512ca8"
+    },
+    "pretrained": {
+      "coding": "1a3b75f57ead85e7af615aa48b8dea535a388a8a49adfdf9d2fe7a7a6fad07ea",
+      "generalization": "67a947c8812444db894d797852770ee51ef4c7ff51c0abb912d5e45dc442a3eb"
+    }
+  },
+  "graders": {
+    "coding": "e4e1cf111bc85249a721df58d942de5ebbddc92d857ded48bafa5e6ccc28d348",
+    "generalization": "e9cceff554e8687429f14c04c47614881b9c25f4a29deec88f3fed2bc30faed6"
+  }
+}
