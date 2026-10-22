@@ -1,0 +1,153 @@
+{
+  "suite_hash": "dc5b215065faf0418990c371419bddef2d1e668ad0978f34fe41bfe47de3a94e",
+  "answers_hash": "dc1e4415867150063763891ee56c99fbbebf2a0a4ab591daeb4e5a61db8e25f7",
+  "compiler_sha256": "9987da491a791af853300f38ad3e73c52a243dbfd1422379a8dbe437369b776e",
+  "correct": 14,
+  "total": 18,
+  "rows": [
+    {
+      "id": "map_sum-p0",
+      "family": "map_sum",
+      "passed_cases": 6,
+      "total_cases": 6,
+      "correct": true,
+      "admitted": true
+    },
+    {
+      "id": "map_sum-p1",
+      "family": "map_sum",
+      "passed_cases": 6,
+      "total_cases": 6,
+      "correct": true,
+      "admitted": true
+    },
+    {
+      "id": "map_sum-p2",
+      "family": "map_sum",
+      "passed_cases": 6,
+      "total_cases": 6,
+      "correct": true,
+      "admitted": true
+    },
+    {
+      "id": "filter_sum-p0",
+      "family": "filter_sum",
+      "passed_cases": 6,
+      "total_cases": 6,
+      "correct": true,
+      "admitted": true
+    },
+    {
+      "id": "filter_sum-p1",
+      "family": "filter_sum",
+      "passed_cases": 0,
+      "total_cases": 6,
+      "correct": false,
+      "admitted": true
+    },
+    {
+      "id": "filter_sum-p2",
+      "family": "filter_sum",
+      "passed_cases": 6,
+      "total_cases": 6,
+      "correct": true,
+      "admitted": true
+    },
+    {
+      "id": "clamp_sum-p0",
+      "family": "clamp_sum",
+      "passed_cases": 6,
+      "total_cases": 6,
+      "correct": true,
+      "admitted": true
+    },
+    {
+      "id": "clamp_sum-p1",
+      "family": "clamp_sum",
+      "passed_cases": 6,
+      "total_cases": 6,
+      "correct": true,
+      "admitted": true
+    },
+    {
+      "id": "clamp_sum-p2",
+      "family": "clamp_sum",
+      "passed_cases": 6,
+      "total_cases": 6,
+      "correct": true,
+      "admitted": true
+    },
+    {
+      "id": "signed_branch-p0",
+      "family": "signed_branch",
+      "passed_cases": 6,
+      "total_cases": 6,
+      "correct": true,
+      "admitted": true
+    },
+    {
+      "id": "signed_branch-p1",
+      "family": "signed_branch",
+      "passed_cases": 6,
+      "total_cases": 6,
+      "correct": true,
+      "admitted": true
+    },
+    {
+      "id": "signed_branch-p2",
+      "family": "signed_branch",
+      "passed_cases": 6,
+      "total_cases": 6,
+      "correct": true,
+      "admitted": true
+    },
+    {
+      "id": "filter_map_sum-p0",
+      "family": "filter_map_sum",
+      "passed_cases": 6,
+      "total_cases": 6,
+      "correct": true,
+      "admitted": true
+    },
+    {
+      "id": "filter_map_sum-p1",
+      "family": "filter_map_sum",
+      "passed_cases": 6,
+      "total_cases": 6,
+      "correct": true,
+      "admitted": true
+    },
+    {
+      "id": "filter_map_sum-p2",
+      "family": "filter_map_sum",
+      "correct": false,
+      "admitted": false,
+      "reason": "range outside diagnostic bound"
+    },
+    {
+      "id": "branch_max-p0",
+      "family": "branch_max",
+      "passed_cases": 6,
+      "total_cases": 6,
+      "correct": true,
+      "admitted": true
+    },
+    {
+      "id": "branch_max-p1",
+      "family": "branch_max",
+      "passed_cases": 5,
+      "total_cases": 6,
+      "correct": false,
+      "admitted": true
+    },
+    {
+      "id": "branch_max-p2",
+      "family": "branch_max",
+      "passed_cases": 5,
+      "total_cases": 6,
+      "correct": false,
+      "admitted": true
+    }
+  ],
+  "scope": "finite-case behavioral checks; unsupported answers count as unmatched, not proof of incorrect Sol"
+}

@@ -1,0 +1,26 @@
+{
+  "seed7": {
+    "with_references_pass_90": 50,
+    "closed_book_pass_90": 42,
+    "referenced_subset_51": {
+      "with_references": 19,
+      "closed_book": 11
+    },
+    "unreferenced_subset_39": {
+      "with_references_run": 31,
+      "closed_book": 31
+    }
+  },
+  "round2": {
+    "with_references_pass_90": 53,
+    "closed_book_pass_90": 32,
+    "referenced_subset_51": {
+      "with_references": 28,
+      "closed_book": 7
+    },
+    "unreferenced_subset_39": {
+      "with_references_run": 25,
+      "closed_book": 25
+    }
+  }
+}

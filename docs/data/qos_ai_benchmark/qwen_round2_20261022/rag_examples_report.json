@@ -1,0 +1,9 @@
+{
+  "examples": 3000,
+  "retriever": "bm25",
+  "chunks": 1659,
+  "top1_from_source_file": 0.6316666666666667,
+  "reference_tokens": 1500,
+  "excluded_stage5_questions": 3951,
+  "index": "training-partition chunks and questions only"
+}

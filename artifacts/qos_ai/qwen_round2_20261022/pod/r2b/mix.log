@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "data_hash": "68e937223db30170228d8ea60fb781102f2e0080d95174dc582bfbd7cd4bab03",
+  "replay": {
+    "english": {
+      "target_tokens": 685251,
+      "requested_tokens": 685226,
+      "examples": 1341,
+      "full_cycles": 0,
+      "overshoot": 25
+    },
+    "docs": {
+      "target_tokens": 685358,
+      "requested_tokens": 685226,
+      "examples": 2069,
+      "full_cycles": 0,
+      "overshoot": 132
+    },
+    "qa": {
+      "target_tokens": 342748,
+      "requested_tokens": 342613,
+      "examples": 2563,
+      "full_cycles": 0,
+      "overshoot": 135
+    }
+  },
+  "examples": 83033,
+  "target_tokens": 4894763,
+  "verified_tokens": 3181406,
+  "verified_share": 0.6499611932181395,
+  "replay_shares": {
+    "english": 0.13999676797426147,
+    "docs": 0.140018628072493,
+    "qa": 0.07002341073510607
+  },
+  "pools_file_sha256": "ce6f6945c6d52ea5e1a4f160a30bf67607b3fb3515811b090d3ffd4c411a41cf",
+  "pretraining_manifest_sha256": "7451c6fabb883a9c87a893b2b84a80c536132c376698c0ba7cf352db894886b5",
+  "english_train_sha256": "520068a12af869ca405191b951fec23f6d70bb39ef50e8502f4f30baf229d2e9",
+  "seed": 7,
+  "sft_file_sha256": "937452d144b39e99cbc0870e103d9948eb08444e101678319ea6e5f1b690a9ee"
+}

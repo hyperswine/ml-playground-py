@@ -62,6 +62,45 @@ def convert(args):
   print(json.dumps({'examples': len(examples), 'target_tokens': sum(sum(m[1:]) for _, m in examples)}))
 
 
+def merge(args):
+  """Append round-2 rows (question/answer text) to a converted mixture, tokenized with Qwen's tokenizer."""
+  import torch
+  import qos_ai as ai
+  from transformers import AutoTokenizer
+  tok = AutoTokenizer.from_pretrained(args.tokenizer)
+  data = torch.load(args.sft, weights_only=True); examples = list(data['examples']); base = len(examples)
+  report = {'base_examples': base, 'sources': {}, 'skipped_too_long': 0, 'skipped_boundary': 0}
+  for path in args.rows:
+    for r in map(json.loads, open(path)):
+      prompt = tok.encode(ai.chat_text(r['question']), add_special_tokens=False)
+      ids = tok.encode(ai.chat_text(r['question'], r['answer']), add_special_tokens=False)
+      if len(ids) > args.max_length: report['skipped_too_long'] += 1; continue
+      if ids[:len(prompt)] != prompt: report['skipped_boundary'] += 1; continue
+      mask = [i >= len(prompt) for i in range(len(ids))]
+      examples.append((ids, mask))
+      s = report['sources'].setdefault(r.get('source', 'unknown'), {'examples': 0, 'target_tokens': 0})
+      s['examples'] += 1; s['target_tokens'] += sum(mask[1:])
+  report['examples'] = len(examples)
+  report['base_target_tokens'] = sum(sum(m[1:]) for _, m in examples[:base])
+  report['added_target_tokens'] = sum(sum(m[1:]) for _, m in examples[base:])
+  report['max_length'] = max(len(ids) for ids, _ in examples)
+  torch.save({'examples': examples, 'source_sft': data.get('source_sft'), 'merge': report}, args.output)
+  print(json.dumps(report))
+
+
+def micro_batches(members, examples, token_budget=2048, target_budget=1024):
+  """Split one update's examples, sorted by length, into micro-batches of at most token_budget padded tokens and
+  target_budget answer tokens (a single example always fits). Memory then never exceeds the Stage 5 worst case
+  (4 x 512 tokens), however long the retrieval examples are, and short examples pack more densely."""
+  out, cur, cur_targets = [], [], 0
+  for i in sorted(members, key=lambda i: len(examples[i][0])):
+    n, t = len(examples[i][0]), sum(examples[i][1][1:])
+    if cur and ((len(cur) + 1) * n > token_budget or cur_targets + t > target_budget):
+      out.append(cur); cur, cur_targets = [], 0
+    cur.append(i); cur_targets += t
+  return out + ([cur] if cur else [])
+
+
 def rate(base, step, total, warmup):
   if step <= warmup: return base * step / max(1, warmup)
   return base * (0.1 + 0.9 * 0.5 * (1 + math.cos(math.pi * min(1, (step - warmup) / max(1, total - warmup)))))
@@ -89,7 +128,9 @@ def train(args):
     for g in opt.param_groups: g['lr'] = lr
     known = sum(sum(examples[i][1][1:]) for b in group['batches'] for i in b)
     total = 0.
-    for indexes in group['batches']:
+    # Same examples and summed loss per update; packing them by length only changes how they are split.
+    members = [i for b in group['batches'] for i in b]
+    for indexes in micro_batches(members, examples, args.token_budget, args.target_budget):
       batch = [examples[i] for i in indexes]; width = max(len(ids) for ids, _ in batch)
       ids = torch.full((len(batch), width), pad, dtype=torch.long); att = torch.zeros_like(ids); tgt = torch.zeros_like(ids, dtype=torch.bool)
       for j, (x, m) in enumerate(batch):
@@ -112,7 +153,8 @@ def train(args):
   model.to(torch.bfloat16)  # generation runs in bf16; halves the artifact to pull
   model.save_pretrained(Path(args.output) / 'model', safe_serialization=True)
   (Path(args.output) / 'result.json').write_text(json.dumps({'steps': len(plan), 'seed': args.seed, 'learning_rate': args.learning_rate,
-    'batch_size': args.batch_size, 'accumulation': args.accumulation, 'history': history}) + '\n')
+    'batch_size': args.batch_size, 'accumulation': args.accumulation, 'token_budget': args.token_budget,
+    'target_budget': args.target_budget, 'history': history}) + '\n')
 
 
 def generate(args):
@@ -181,8 +223,12 @@ if __name__ == '__main__':
   c.add_argument('--learning-rate', type=float, default=1e-5); c.add_argument('--batch-size', type=int, default=4)
   c.add_argument('--accumulation', type=int, default=8); c.add_argument('--pad-id', type=int, default=248044)
   c.add_argument('--seed', type=int, default=7, help='data order and initialization of the training run')
+  c.add_argument('--token-budget', type=int, default=2048, help='padded tokens per micro-batch')
+  c.add_argument('--target-budget', type=int, default=1024, help='answer tokens per micro-batch')
   c = s.add_parser('generate'); c.add_argument('--model', required=True); c.add_argument('--tokenizer', default=QWEN)
   c.add_argument('--prompts', required=True); c.add_argument('--output', required=True); c.add_argument('--batch-size', type=int, default=32)
   c = s.add_parser('assemble'); c.add_argument('--answers', required=True); c.add_argument('--output', required=True); c.add_argument('--label', required=True)
+  c = s.add_parser('merge'); c.add_argument('--sft', required=True); c.add_argument('--rows', nargs='+', required=True)
+  c.add_argument('--output', required=True); c.add_argument('--tokenizer', default=QWEN); c.add_argument('--max-length', type=int, default=2048)
   a = p.parse_args()
-  {'prompts': prompts, 'convert': convert, 'train': train, 'generate': generate, 'assemble': assemble}[a.command](a)
+  {'prompts': prompts, 'convert': convert, 'train': train, 'generate': generate, 'assemble': assemble, 'merge': merge}[a.command](a)

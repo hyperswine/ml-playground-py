@@ -1,0 +1,14 @@
+{
+  "tasks": 4201,
+  "kinds": {
+    "param_conditional": 746,
+    "param": 455,
+    "generate": 910,
+    "output": 1542,
+    "repair": 548
+  },
+  "reference_failures": 299,
+  "seed": 20261101,
+  "compiler_sha256": "9987da491a791af853300f38ad3e73c52a243dbfd1422379a8dbe437369b776e",
+  "tasks_sha256": "d91ec66946fce4b8a78dc94755b65ec34f543bf72653e0e24382908a2cd81052"
+}

@@ -1,0 +1,50 @@
+{
+  "rows": 3281,
+  "by_kind": {
+    "param_conditional": {
+      "tasks": 746,
+      "solved": 701,
+      "samples": 2984,
+      "correct_samples": 1852,
+      "rows": 1354
+    },
+    "param": {
+      "tasks": 455,
+      "solved": 448,
+      "samples": 1820,
+      "correct_samples": 1416,
+      "rows": 886
+    },
+    "generate": {
+      "tasks": 910,
+      "solved": 788,
+      "samples": 910,
+      "correct_samples": 788,
+      "rows": 302
+    },
+    "output": {
+      "tasks": 1542,
+      "solved": 1321,
+      "samples": 1542,
+      "correct_samples": 1321,
+      "rows": 527
+    },
+    "repair": {
+      "tasks": 548,
+      "solved": 467,
+      "samples": 548,
+      "correct_samples": 467,
+      "rows": 212
+    }
+  },
+  "sources": {
+    "self_sample": 2188,
+    "reference": 52,
+    "reference_failed": 424,
+    "reference_solved": 617
+  },
+  "keep_solved": 0.25,
+  "per_task": 2,
+  "compiler_sha256": "9987da491a791af853300f38ad3e73c52a243dbfd1422379a8dbe437369b776e",
+  "rows_sha256": "f6d0d2e6f2e60ad0bc61846459c6bd66914ddaf29a90c86b2151936b00ee18e2"
+}

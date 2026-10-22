@@ -43,3 +43,6 @@ artifacts/qos_ai/stage5_20261021/s5.tar.xz
 artifacts/qos_ai/stage5_20261021/bundle/
 artifacts/qos_ai/qwen_sft_20261022/bundle/
 artifacts/qos_ai/qwen_sft_20261022/q.tar.xz
+artifacts/qos_ai/qwen_sft_20261022/model/
+artifacts/qos_ai/round2_20261022/
+artifacts/qos_ai/retrieval_20261022/

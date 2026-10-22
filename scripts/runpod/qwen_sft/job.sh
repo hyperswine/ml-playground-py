@@ -3,13 +3,16 @@
 # evaluation prompt, before and after. Network volume xewpn3z8za at /workspace is read, never pruned; outputs go to
 # the pod's local disk, small receipts and answers to /workspace/qos_ai_qwen_sft.
 # Self-stop via pod-scoped runpodctl on completion, failure and HARD_CAP_MINUTES; WAIT_MINUTES bounds the pull wait.
+# EXTRA_ROWS (space-separated .jsonl.xz files in the bundle) are appended after conversion (`merge`).
+# BASE_MODEL picks the Qwen3.5 size (same tokenizer for 0.8B and 2B); KEEP_ON_VOLUME=1 also copies the fine-tuned
+# weights to $VOL/model when the volume has room, so they survive the pod stopping.
 set -u
 export $(tr '\0' '\n' < /proc/1/environ | grep -E '^RUNPOD_(API_KEY|POD_ID)=' | xargs)
 cd "$(dirname "$0")"
 PILOT=/workspace/qos_ai_557m; VOL=/workspace/qos_ai_qwen_sft${RUN_SUFFIX:-}; LOCAL=/root/q
 STAGE5_SFT_SHA=937452d144b39e99cbc0870e103d9948eb08444e101678319ea6e5f1b690a9ee
 HARD_CAP_MINUTES="${HARD_CAP_MINUTES:-120}"; WAIT_MINUTES="${WAIT_MINUTES:-30}"
-START=$(date +%s); export PYTHONUNBUFFERED=1 HF_HOME=/root/hf TOKENIZERS_PARALLELISM=false PIP_BREAK_SYSTEM_PACKAGES=1
+BASE_MODEL="${BASE_MODEL:-Qwen/Qwen3.5-0.8B}"; START=$(date +%s); export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True PYTHONUNBUFFERED=1 HF_HOME=/root/hf TOKENIZERS_PARALLELISM=false PIP_BREAK_SYSTEM_PACKAGES=1
 mkdir -p "$LOCAL" "$VOL"
 stamp() { echo "== $(date -u +%FT%TZ) (+$(( ($(date +%s) - START) / 60 )) min) $*"; }
 stop_pod() { stamp "stopping pod: $1"; sync; runpodctl stop pod "$RUNPOD_POD_ID" 2>&1 || runpodctl pod stop "$RUNPOD_POD_ID" 2>&1; }
@@ -24,7 +27,7 @@ phase install
 pip install -q "transformers @ git+https://github.com/huggingface/transformers.git@80a79d1bef2bacfa10b1b543669eebffa3f0ec36" \
   safetensors huggingface_hub tokenizers flash-linear-attention > "$LOCAL/pip.log" 2>&1 || fail "pip (pip.log)"
 python3 -c "import transformers, fla; print('transformers', transformers.__version__)" >> "$LOCAL/pip.log" 2>&1 || fail "imports (pip.log)"
-python3 -c "from huggingface_hub import snapshot_download; print(snapshot_download('Qwen/Qwen3.5-0.8B'))" > "$LOCAL/download.log" 2>&1 \
+python3 -c "from huggingface_hub import snapshot_download; print(snapshot_download('$BASE_MODEL'))" > "$LOCAL/download.log" 2>&1 \
   || fail "model download (download.log)"
 
 phase mix
@@ -34,21 +37,34 @@ python3 qos_ai_stage4_data.py mix --pools pools.pt --pretraining-data "$PILOT/pr
 [ "$(sha256sum "$LOCAL/mixture/sft.pt" | cut -d' ' -f1)" = "$STAGE5_SFT_SHA" ] || fail "mixture differs from Stage 5"
 python3 qos_ai_qwen_sft.py convert --sft "$LOCAL/mixture/sft.pt" --vocabulary vocabulary.pt --output "$LOCAL/qwen_sft.pt" \
   > "$LOCAL/convert.log" 2>&1 || fail "convert (convert.log)"
+if [ -n "${EXTRA_ROWS:-}" ]; then  # round-2 rows (xz-compressed jsonl in the bundle), tokenized with Qwen's tokenizer
+  phase merge
+  rows=(); for f in $EXTRA_ROWS; do xz -dc "$f" > "$LOCAL/$(basename "$f" .xz)" || fail "unpack $f"; rows+=("$LOCAL/$(basename "$f" .xz)"); done
+  python3 qos_ai_qwen_sft.py merge --sft "$LOCAL/qwen_sft.pt" --rows "${rows[@]}" --output "$LOCAL/qwen_sft_merged.pt" \
+    > "$LOCAL/merge.log" 2>&1 || fail "merge (merge.log)"
+  mv "$LOCAL/qwen_sft_merged.pt" "$LOCAL/qwen_sft.pt"; cp "$LOCAL/merge.log" "$VOL/"
+fi
 
 if [ "${SKIP_BASE:-0}" != "1" ]; then
 phase generate_base
-python3 qos_ai_qwen_sft.py generate --model Qwen/Qwen3.5-0.8B --prompts prompts.jsonl --output "$LOCAL/base_answers.jsonl" \
+python3 qos_ai_qwen_sft.py generate --model "$BASE_MODEL" --prompts prompts.jsonl --output "$LOCAL/base_answers.jsonl" \
   > "$LOCAL/generate_base.log" 2>&1 || fail "generate base (generate_base.log)"
 cp "$LOCAL/base_answers.jsonl" "$VOL/"
 fi
 phase train
-python3 qos_ai_qwen_sft.py train --data "$LOCAL/qwen_sft.pt" --output "$LOCAL/run" --seed "${SEED:-7}" > "$LOCAL/train.log" 2>&1 || fail "train (train.log)"
+python3 qos_ai_qwen_sft.py train --data "$LOCAL/qwen_sft.pt" --model "$BASE_MODEL" --output "$LOCAL/run" --seed "${SEED:-7}" > "$LOCAL/train.log" 2>&1 || fail "train (train.log)"
 cp "$LOCAL/run/result.json" "$VOL/train_result.json"
 phase generate_tuned
 python3 qos_ai_qwen_sft.py generate --model "$LOCAL/run/model" --prompts prompts.jsonl --output "$LOCAL/tuned_answers.jsonl" \
   > "$LOCAL/generate_tuned.log" 2>&1 || fail "generate tuned (generate_tuned.log)"
 cp "$LOCAL/tuned_answers.jsonl" "$LOCAL"/*.log "$VOL/"
 (cd "$LOCAL/run/model" && sha256sum * > ../model.sha256) && cp "$LOCAL/run/model.sha256" "$VOL/"
+if [ "${KEEP_ON_VOLUME:-0}" = "1" ]; then
+  need=$(( $(du -sk "$LOCAL/run/model" | cut -f1) + 1048576 )); have=$(df -Pk "$VOL" | awk 'NR==2 {print $4}')
+  if [ "$have" -gt "$need" ] && cp -r "$LOCAL/run/model" "$VOL/model" && (cd "$VOL/model" && sha256sum -c --quiet ../model.sha256); then
+    stamp "weights kept on the volume"
+  else stamp "weights not kept on the volume (space $have KB, need $need KB)"; rm -rf "$VOL/model"; fi
+fi
 touch "$LOCAL/READY"
 
 phase wait_for_pulls

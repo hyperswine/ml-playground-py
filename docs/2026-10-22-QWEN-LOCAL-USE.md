@@ -101,6 +101,8 @@ repetition loop. BM25 found nothing relevant for "How do I print a value in Sol?
 
 ## Next
 
+Follow-up on 2026-10-22: [round 2](2026-10-22-QWEN-ROUND2.md) (hybrid retrieval, long-reference training, repetition guard).
+
 1. Better retrieval for documentation questions (dense or hybrid ranking; the top-1 source-file rate is 56%).
 2. A repetition guard for `ask` (the JSON answer loop).
 3. If the Qwen model becomes the default: decide where its weights live (M1 only today, 1.7 GB bf16).

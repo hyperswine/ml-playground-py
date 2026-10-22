@@ -36,8 +36,39 @@ def load(model, device_name, dtype_name='float32'):
   return m, tok, device
 
 
-def generate(m, tok, device, questions, budget, batch_size=8):
+def loop_start(row, min_period=4, max_period=64, repeats=3):
+  """Index where a run of `repeats` identical consecutive blocks begins (keeping one copy), else None."""
+  n = len(row)
+  for i in range(n):
+    for p in range(min_period, min(max_period, (n - i) // repeats) + 1):
+      block = row[i:i + p]
+      if all(row[i + r * p:i + (r + 1) * p] == block for r in range(1, repeats)):
+        return i + p
+  return None
+
+
+def loop_stopper(width, every=8, window=256):
+  """Stop a sequence once its tail is the same block of 4..64 tokens repeated four times (checked every 8 tokens)."""
   import torch
+  from transformers import StoppingCriteria
+
+  class LoopStop(StoppingCriteria):
+    def __call__(self, input_ids, scores, **kwargs):
+      done = torch.zeros(input_ids.shape[0], dtype=torch.bool, device=input_ids.device)
+      if (input_ids.shape[1] - width) % every: return done
+      for j, row in enumerate(input_ids[:, max(width, input_ids.shape[1] - window):].tolist()):
+        for p in range(4, min(64, len(row) // 4) + 1):
+          if row[-p:] == row[-2 * p:-p] == row[-3 * p:-2 * p] == row[-4 * p:-3 * p]:
+            done[j] = True; break
+      return done
+  return LoopStop()
+
+
+def generate(m, tok, device, questions, budget, batch_size=8, k=1, temperature=None, stop_loops=False):
+  """Greedy (temperature None) or sampled answers, k per question in question order. With stop_loops, a
+  degenerate repetition is stopped early and cut after its first copy, marked '[stopped: repetition]'."""
+  import torch
+  from transformers import StoppingCriteriaList
   stop = [tok.convert_tokens_to_ids('<|im_end|>'), tok.convert_tokens_to_ids('<|endoftext|>')]
   out = []
   for s in range(0, len(questions), batch_size):
@@ -45,13 +76,54 @@ def generate(m, tok, device, questions, budget, batch_size=8):
     enc = [tok.encode(chat_text(q), add_special_tokens=False) for q in part]; w = max(map(len, enc))
     ids = torch.full((len(part), w), stop[1], dtype=torch.long); att = torch.zeros_like(ids)
     for j, e in enumerate(enc): ids[j, w - len(e):] = torch.tensor(e); att[j, w - len(e):] = 1
+    extra = {'do_sample': True, 'temperature': temperature, 'top_k': 40, 'num_return_sequences': k} if temperature else {'do_sample': False}
+    if stop_loops: extra['stopping_criteria'] = StoppingCriteriaList([loop_stopper(w)])
     with torch.inference_mode():
       g = m.generate(input_ids=ids.to(device), attention_mask=att.to(device), max_new_tokens=budget,
-                     do_sample=False, eos_token_id=stop, pad_token_id=stop[1])
+                     eos_token_id=stop, pad_token_id=stop[1], **extra)
     for row in g[:, w:].tolist():
       end = next((i for i, t in enumerate(row) if t in stop), None)
-      out.append(tok.decode(row if end is None else row[:end], skip_special_tokens=True).strip())
+      row = row if end is None else row[:end]
+      cut = loop_start(row) if stop_loops and end is None else None
+      text = tok.decode(row if cut is None else row[:cut], skip_special_tokens=True).strip()
+      out.append(text + ('\n[stopped: repetition]' if cut is not None else ''))
   return out
+
+
+def with_references(questions, tok, args):
+  """(prompts, sources): with args.retrieve K, questions without code that do not ask for a program get the top-K
+  chunks (BM25, or hybrid with args.embeddings) cut to args.reference_tokens, in the retrieval-training format."""
+  prompts, sources = list(questions), [[] for _ in questions]
+  if not args.retrieve: return prompts, sources
+  from qos_ai_data import read_rows
+  from qos_ai_execute import BLOCK
+  from qos_ai_retrieval import BM25, with_reference
+  rows = read_rows(args.corpus); docs = [{'path': r['path'], 'text': f"# File: {r['path']}\n{r['text']}"} for r in rows]
+  if args.embeddings:
+    from qos_ai_hybrid import Hybrid
+    index = Hybrid(docs, args.embeddings, corpus_rows=rows)
+  else:
+    index = BM25(docs)
+  for i, q in enumerate(questions):
+    if BLOCK.search(q) or CODE_REQUEST.search(q): continue  # references distract program writing
+    hits = index.search(q, args.retrieve)
+    if not hits: continue
+    ref = tok.decode(tok.encode('\n\n'.join(h['text'] for h in hits), add_special_tokens=False)[:args.reference_tokens])
+    prompts[i], sources[i] = with_reference(q, ref), [h['path'] for h in hits]
+  return prompts, sources
+
+
+def answer(args):
+  """Greedy answers for a prompt file (qos qwen_sft prompts format), optionally with references, as jsonl."""
+  rows = [r for r in map(json.loads, open(args.prompts)) if not args.suites or r['suite'] in args.suites]
+  m, tok, device = load(args.model, args.device, args.dtype)
+  prompts, sources = with_references([r['question'] for r in rows], tok, args)
+  with open(args.output, 'w') as f:
+    for budget in sorted({r['max_new_tokens'] for r in rows}):
+      idx = [i for i, r in enumerate(rows) if r['max_new_tokens'] == budget]
+      for i, a in zip(idx, generate(m, tok, device, [prompts[i] for i in idx], budget)):
+        f.write(json.dumps({'id': rows[i]['id'], 'answer': a, 'references': sources[i]}) + '\n')
+  print(json.dumps({'answers': len(rows), 'with_references': sum(bool(s) for s in sources), 'output': args.output}))
 
 
 def ask(args):
@@ -59,21 +131,11 @@ def ask(args):
   documentation corpus as a reference (the retrieval-training format). Questions that contain code or ask for a
   program or expression are asked as written: on the 2026-10-22 demo, references turned a correct program into a
   string-interpolation one."""
-  from qos_ai_execute import BLOCK, augment
+  from qos_ai_execute import augment
   m, tok, device = load(args.model, args.device, args.dtype)
   questions = [args.question] if args.question else [q.strip() for q in Path(args.questions).read_text().split('\n---\n') if q.strip()]
-  prompts, sources = list(questions), [[] for _ in questions]
-  if args.retrieve:
-    from qos_ai_data import read_rows
-    from qos_ai_retrieval import BM25, with_reference
-    index = BM25([{'path': r['path'], 'text': f"# File: {r['path']}\n{r['text']}"} for r in read_rows(args.corpus)])
-    for i, q in enumerate(questions):
-      if BLOCK.search(q) or CODE_REQUEST.search(q): continue  # references distract program writing
-      hits = index.search(q, args.retrieve)
-      if not hits: continue
-      ref = tok.decode(tok.encode('\n\n'.join(h['text'] for h in hits), add_special_tokens=False)[:args.reference_tokens])
-      prompts[i], sources[i] = with_reference(q, ref), [h['path'] for h in hits]
-  for q, src, a in zip(questions, sources, generate(m, tok, device, prompts, args.max_new_tokens)):
+  prompts, sources = with_references(questions, tok, args)
+  for q, src, a in zip(questions, sources, generate(m, tok, device, prompts, args.max_new_tokens, stop_loops=True)):
     r = augment(q, a, args.fpr, drop_wrong_steps=True) if args.fpr else {'answer': a, 'note': 'not executed'}
     ref = f'--- references: {", ".join(src)} ---\n' if src else ''
     print(f'Q: {q}\n{ref}--- model ---\n{a}\n--- executed ({r["note"]}) ---\n{r["answer"]}\n', flush=True)
@@ -107,7 +169,12 @@ def rag_loss(args):
   from torch.nn import functional as F
   from qos_ai_retrieval import BM25, load as load_questions, with_reference
   docs, qa = load_questions(args)
-  index = BM25(docs)
+  if args.embeddings:
+    from qos_ai_data import read_rows
+    from qos_ai_hybrid import Hybrid
+    index = Hybrid(docs, args.embeddings, corpus_rows=read_rows(args.corpus))
+  else:
+    index = BM25(docs)
   m, tok, device = load(args.model, args.device, args.dtype)
   lm, head = m.model.language_model, m.lm_head
   enc = lambda t: tok.encode(t, add_special_tokens=False)
@@ -142,18 +209,24 @@ def rag_loss(args):
 if __name__ == '__main__':
   p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
   s = p.add_subparsers(dest='command', required=True)
-  for name in ('ask', 'mps-check', 'rag-loss'):
+  for name in ('ask', 'answer', 'mps-check', 'rag-loss'):
     c = s.add_parser(name); c.add_argument('--model', required=True)
     c.add_argument('--device', default='auto'); c.add_argument('--dtype', default='float32', choices=['float32', 'bfloat16', 'float16'])
+  for name in ('ask', 'answer'):
+    a = s.choices[name]
+    a.add_argument('--retrieve', type=int, default=0, help='top-K documentation chunks for questions without code')
+    a.add_argument('--reference-tokens', type=int, default=1500); a.add_argument('--corpus', default='qos_ai/corpus.jsonl')
+    a.add_argument('--embeddings', help='hybrid BM25 + dense retrieval (qos hybrid embed); BM25 only when omitted')
   a = s.choices['ask']; a.add_argument('--fpr'); a.add_argument('--question'); a.add_argument('--questions')
   a.add_argument('--max-new-tokens', type=int, default=200)
-  a.add_argument('--retrieve', type=int, default=0, help='top-K documentation chunks for questions without code')
-  a.add_argument('--reference-tokens', type=int, default=1500); a.add_argument('--corpus', default='qos_ai/corpus.jsonl')
+  a = s.choices['answer']; a.add_argument('--prompts', required=True); a.add_argument('--output', required=True)
+  a.add_argument('--suites', nargs='*', help='prompt suites to answer (default: all)')
   c = s.choices['mps-check']; c.add_argument('--prompts', required=True); c.add_argument('--reference', required=True)
   c.add_argument('--n', type=int, default=120); c.add_argument('--output', required=True)
   r = s.choices['rag-loss']; r.add_argument('--n', type=int, default=300); r.add_argument('--reference-tokens', type=int, default=1500)
   r.add_argument('--corpus', default='qos_ai/corpus.jsonl'); r.add_argument('--qa', default='qos_ai/pod_pt/qa.jsonl')
   r.add_argument('--splits', default='qos_ai_benchmark/evidence/generalization_20261019/curricula/generalization_20261019/splits.json')
   r.add_argument('--output', required=True)
+  r.add_argument('--embeddings', help='hybrid BM25 + dense retrieval (qos hybrid embed); BM25 only when omitted')
   args = p.parse_args()
-  {'ask': ask, 'mps-check': mps_check, 'rag-loss': rag_loss}[args.command](args)
+  {'ask': ask, 'answer': answer, 'mps-check': mps_check, 'rag-loss': rag_loss}[args.command](args)
