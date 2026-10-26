@@ -6,6 +6,7 @@
 # Self-stop via pod-scoped runpodctl on completion, failure and HARD_CAP_MINUTES; WAIT_MINUTES bounds the pull wait.
 # EXTRA_ROWS (space-separated .jsonl.xz files in the bundle) are appended after conversion (`merge`, options in
 # MERGE_FLAGS, e.g. '--steps-first --closed-book-pairs').
+# TRAIN_FLAGS go to `train` (e.g. larger --token-budget on big GPUs; the updates are the same).
 # BASE_MODEL picks the Qwen3.5 size (same tokenizer for 0.8B and 2B); KEEP_ON_VOLUME=1 also copies the fine-tuned
 # weights to $VOL/model when the volume has room, so they survive the pod stopping.
 set -u
@@ -54,7 +55,7 @@ python3 qos_ai_qwen_sft.py generate --model "$BASE_MODEL" --prompts prompts.json
 cp "$LOCAL/base_answers.jsonl" "$VOL/"
 fi
 phase train
-python3 qos_ai_qwen_sft.py train --data "$LOCAL/qwen_sft.pt" --model "$BASE_MODEL" --output "$LOCAL/run" --seed "${SEED:-7}" > "$LOCAL/train.log" 2>&1 || fail "train (train.log)"
+python3 qos_ai_qwen_sft.py train --data "$LOCAL/qwen_sft.pt" --model "$BASE_MODEL" --output "$LOCAL/run" --seed "${SEED:-7}" ${TRAIN_FLAGS:-} > "$LOCAL/train.log" 2>&1 || fail "train (train.log)"
 cp "$LOCAL/run/result.json" "$VOL/train_result.json"
 phase generate_tuned
 python3 qos_ai_qwen_sft.py generate --model "$LOCAL/run/model" --prompts prompts.jsonl --output "$LOCAL/tuned_answers.jsonl" \

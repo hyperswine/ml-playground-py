@@ -1,0 +1,128 @@
+[
+ {
+  "id": "map_sum-p0",
+  "answer": "```sol\nList.sum (List.map (fn x -> x * k) xs)\n```\nFor xs = [48, 59, 29, 20, 12], k = 0 and limit = 29 it evaluates to 0.",
+  "finished": true,
+  "tokens": 60,
+  "severe_loop": false
+ },
+ {
+  "id": "filter_sum-p0",
+  "answer": "```sol\nList.sum (List.filter (fn x -> x > limit) xs)\n```\nFor xs = [39, 29, 29, 29], k = 0 and limit = 29 it evaluates to 0.",
+  "finished": true,
+  "tokens": 56,
+  "severe_loop": false
+ },
+ {
+  "id": "map_sum-p2",
+  "answer": "```sol\nList.sum (List.map (fn x -> x * k) xs)\n```\nFor xs = [38, 29, 10, 29, 12], k = 0 and xs2 = [38, 29, 10, 29, 12] it evaluates to 0.",
+  "finished": true,
+  "tokens": 78,
+  "severe_loop": false
+ },
+ {
+  "id": "map_sum-p1",
+  "answer": "```sol\nList.sum (List.map (fn x -> x * k) xs)\n```\nFor xs = [45, 29, 20, 40, 29], k = 0 and limit = 29 it evaluates to 0.",
+  "finished": true,
+  "tokens": 60,
+  "severe_loop": false
+ },
+ {
+  "id": "filter_sum-p2",
+  "answer": "```sol\nList.sum (List.filter (fn x -> x > limit) xs)\n```\nFor xs = [48, 50, 20, 29, 19], limit = 29 it evaluates to 146.",
+  "finished": true,
+  "tokens": 57,
+  "severe_loop": false
+ },
+ {
+  "id": "filter_sum-p1",
+  "answer": "```sol\nList.sum (List.filter (fn x -> x > limit) xs)\n```\nFor xs = [48, 20, 30, 29, 12], k = 0 and limit = 29 it evaluates to 129.",
+  "finished": true,
+  "tokens": 62,
+  "severe_loop": false
+ },
+ {
+  "id": "clamp_sum-p0",
+  "answer": "```sol\nList.sum (List.map (fn x -> Numeric.clamp 0 10 x) xs)\n```\nFor xs = [48, 19, 29, 29, 29], k = 0 and limit = 29 it evaluates to 50.",
+  "finished": true,
+  "tokens": 67,
+  "severe_loop": false
+ },
+ {
+  "id": "filter_map_sum-p0",
+  "answer": "```sol\nList.sum (List.map (fn x -> x * k) (List.filter (fn x -> x > limit) xs))\n```\nFor xs = [38, 29, 40, 29, 29], k = 0 and limit = 29 it evaluates to 0.",
+  "finished": true,
+  "tokens": 71,
+  "severe_loop": false
+ },
+ {
+  "id": "signed_branch-p0",
+  "answer": "```sol\nif k > 0 then List.sum (List.map (fn x -> x * k) xs) else List.sum xs\n```\nFor xs = [47, 29, 40, 29, 19], k = 0 and limit = 29 it evaluates to 155.",
+  "finished": true,
+  "tokens": 72,
+  "severe_loop": false
+ },
+ {
+  "id": "branch_max-p0",
+  "answer": "```sol\nif k > 0 then Numeric.max k (List.sum xs) else Numeric.abs (List.sum xs)\n```\nFor xs = [48, 59, 48, 29], k = 0 and limit = 29 it evaluates to 174.",
+  "finished": true,
+  "tokens": 65,
+  "severe_loop": false
+ },
+ {
+  "id": "clamp_sum-p2",
+  "answer": "```sol\nList.sum (List.map (fn x -> Numeric.clamp 0 10 x) xs)\n```\nFor xs = [48, 20, 29, 29, 29], it evaluates to 50.",
+  "finished": true,
+  "tokens": 57,
+  "severe_loop": false
+ },
+ {
+  "id": "clamp_sum-p1",
+  "answer": "```sol\nList.sum (List.map (fn x -> Numeric.clamp 0 10 x) xs)\n```\nFor xs = [48, 29, 59, 29, 29], k = 0 and limit = 29 it evaluates to 50.",
+  "finished": true,
+  "tokens": 67,
+  "severe_loop": false
+ },
+ {
+  "id": "filter_map_sum-p2",
+  "answer": "```sol\nList.sum (List.map (fn x -> x * k) (List.filter (fn x -> x > limit) xs))\n```\nFor xs = [39, 40, 29, 59, 29], limit = 29 and k = 29 it evaluates to 100.",
+  "finished": true,
+  "tokens": 74,
+  "severe_loop": false
+ },
+ {
+  "id": "signed_branch-p2",
+  "answer": "```sol\nif k > 0 then List.sum (List.map (fn x -> x * k) xs) else List.sum xs\n```\nFor xs = [39, 48, 10, 29, 20], k = 0 it evaluates to 146.",
+  "finished": true,
+  "tokens": 66,
+  "severe_loop": false
+ },
+ {
+  "id": "filter_map_sum-p1",
+  "answer": "```sol\nList.sum (List.map (fn x -> x * k) (List.filter (fn x -> x > limit) xs))\n```\nFor xs = [48, 29, 20, 29, 29], k = 0 and limit = 29 it evaluates to 0.",
+  "finished": true,
+  "tokens": 71,
+  "severe_loop": false
+ },
+ {
+  "id": "signed_branch-p1",
+  "answer": "```sol\nif k > 0 then List.sum (List.map (fn x -> x * k) xs) else List.sum xs\n```\nFor xs = [38, 40, 12, 40, 20], k = 0 and limit = 20 it evaluates to 150.",
+  "finished": true,
+  "tokens": 72,
+  "severe_loop": false
+ },
+ {
+  "id": "branch_max-p2",
+  "answer": "```sol\nif k > 0 then Numeric.max k (List.sum xs) else Numeric.abs (List.sum xs)\n```\nFor xs = [38, 29, 40, 29], k = 0 it evaluates to 136.",
+  "finished": true,
+  "tokens": 59,
+  "severe_loop": false
+ },
+ {
+  "id": "branch_max-p1",
+  "answer": "```sol\nif k > 0 then Numeric.max k (List.sum xs) else Numeric.abs (List.sum xs)\n```\nFor xs = [48, 29, 20, 28], k = 0 and limit = 28 it evaluates to 125.",
+  "finished": true,
+  "tokens": 65,
+  "severe_loop": false
+ }
+]

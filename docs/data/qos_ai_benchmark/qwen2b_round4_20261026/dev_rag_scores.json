@@ -1,0 +1,14 @@
+{
+  "qwen2b_round4": {
+    "with_references_pass_90": 62,
+    "closed_book_pass_90": 52,
+    "referenced_subset_51": {
+      "with_references": 26,
+      "closed_book": 16
+    },
+    "unreferenced_subset_39": {
+      "with_references_run": 36,
+      "closed_book": 36
+    }
+  }
+}
