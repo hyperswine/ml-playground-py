@@ -1,0 +1,13 @@
+{
+  "model": "/Users/jq/qos_ai_eval/experiments/qwen_round3_20261026/model",
+  "device": "mps",
+  "questions": 300,
+  "top1_source_file": 0.5633333333333334,
+  "reference_tokens": 1500,
+  "seconds": 3023,
+  "plain_answer_perplexity": 5.682006915775175,
+  "top1_fit512_answer_perplexity": 3.9819303323906854,
+  "top1_answer_perplexity": 3.6313253262853653,
+  "top3_answer_perplexity": 3.346336727253285,
+  "oracle_file_answer_perplexity": 4.782150658228459
+}

@@ -16,6 +16,7 @@ The vision tower is frozen and unused.
 import argparse
 import json
 import math
+import re
 import time
 from pathlib import Path
 
@@ -62,24 +63,58 @@ def convert(args):
   print(json.dumps({'examples': len(examples), 'target_tokens': sum(sum(m[1:]) for _, m in examples)}))
 
 
+STATED_FIRST = re.compile(r'(?s)^(.*?)It prints (.*)\. (Steps: .*?)\s*$')
+REFERENCE_QUESTION = '\n\nQuestion: '
+
+
+def steps_first(answer):
+  """'... It prints X. Steps: a=1; b=2.' -> '... Steps: a=1; b=2.\\nIt prints X.' (work before the claim), else None."""
+  m = STATED_FIRST.match(answer)
+  if not m or '\n' in m.group(2): return None
+  prefix, value, steps = m.groups()
+  return f'{prefix}{steps}\nIt prints {value}.'
+
+
 def merge(args):
-  """Append round-2 rows (question/answer text) to a converted mixture, tokenized with Qwen's tokenizer."""
+  """Append round-2 rows (question/answer text) to a converted mixture, tokenized with Qwen's tokenizer.
+
+  --steps-first rewrites every answer of the form 'It prints X. Steps: S.' (mixture and rows) to put the steps first.
+  --closed-book-pairs adds each retrieval row's question again without its reference, with the same answer."""
   import torch
   import qos_ai as ai
   from transformers import AutoTokenizer
   tok = AutoTokenizer.from_pretrained(args.tokenizer)
+  end = tok.encode(ai.IM_END, add_special_tokens=False)
   data = torch.load(args.sft, weights_only=True); examples = list(data['examples']); base = len(examples)
-  report = {'base_examples': base, 'sources': {}, 'skipped_too_long': 0, 'skipped_boundary': 0}
+  report = {'base_examples': base, 'sources': {}, 'skipped_too_long': 0, 'skipped_boundary': 0,
+            'steps_first': {'base_rewritten': 0, 'rows_rewritten': 0}}
+  if args.steps_first:
+    for j, (ids, mask) in enumerate(examples):
+      start = mask.index(True) if True in mask else len(mask)
+      if ids[-len(end):] != end or start == len(mask): continue
+      new = steps_first(tok.decode(ids[start:-len(end)]))
+      if new is None: continue
+      ids = list(ids[:start]) + tok.encode(new, add_special_tokens=False) + end
+      if len(ids) > args.max_length: continue
+      examples[j] = (ids, [i >= start for i in range(len(ids))]); report['steps_first']['base_rewritten'] += 1
+  rows = []
   for path in args.rows:
     for r in map(json.loads, open(path)):
-      prompt = tok.encode(ai.chat_text(r['question']), add_special_tokens=False)
-      ids = tok.encode(ai.chat_text(r['question'], r['answer']), add_special_tokens=False)
-      if len(ids) > args.max_length: report['skipped_too_long'] += 1; continue
-      if ids[:len(prompt)] != prompt: report['skipped_boundary'] += 1; continue
-      mask = [i >= len(prompt) for i in range(len(ids))]
-      examples.append((ids, mask))
-      s = report['sources'].setdefault(r.get('source', 'unknown'), {'examples': 0, 'target_tokens': 0})
-      s['examples'] += 1; s['target_tokens'] += sum(mask[1:])
+      rows.append(r)
+      if args.closed_book_pairs and r.get('source') == 'rag' and REFERENCE_QUESTION in r['question']:
+        rows.append({**r, 'question': r['question'].rsplit(REFERENCE_QUESTION, 1)[1], 'source': 'rag_closed_book'})
+  for r in rows:
+    answer = r['answer']
+    if args.steps_first and (new := steps_first(answer)) is not None:
+      answer = new; report['steps_first']['rows_rewritten'] += 1
+    prompt = tok.encode(ai.chat_text(r['question']), add_special_tokens=False)
+    ids = tok.encode(ai.chat_text(r['question'], answer), add_special_tokens=False)
+    if len(ids) > args.max_length: report['skipped_too_long'] += 1; continue
+    if ids[:len(prompt)] != prompt: report['skipped_boundary'] += 1; continue
+    mask = [i >= len(prompt) for i in range(len(ids))]
+    examples.append((ids, mask))
+    s = report['sources'].setdefault(r.get('source', 'unknown'), {'examples': 0, 'target_tokens': 0})
+    s['examples'] += 1; s['target_tokens'] += sum(mask[1:])
   report['examples'] = len(examples)
   report['base_target_tokens'] = sum(sum(m[1:]) for _, m in examples[:base])
   report['added_target_tokens'] = sum(sum(m[1:]) for _, m in examples[base:])
@@ -230,5 +265,6 @@ if __name__ == '__main__':
   c = s.add_parser('assemble'); c.add_argument('--answers', required=True); c.add_argument('--output', required=True); c.add_argument('--label', required=True)
   c = s.add_parser('merge'); c.add_argument('--sft', required=True); c.add_argument('--rows', nargs='+', required=True)
   c.add_argument('--output', required=True); c.add_argument('--tokenizer', default=QWEN); c.add_argument('--max-length', type=int, default=2048)
+  c.add_argument('--steps-first', action='store_true'); c.add_argument('--closed-book-pairs', action='store_true')
   a = p.parse_args()
   {'prompts': prompts, 'convert': convert, 'train': train, 'generate': generate, 'assemble': assemble, 'merge': merge}[a.command](a)

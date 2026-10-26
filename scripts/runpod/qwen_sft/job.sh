@@ -2,8 +2,10 @@
 # Reference run: fine-tune Qwen3.5-0.8B on the identical Stage 5 mixture and generate answers for every frozen
 # evaluation prompt, before and after. Network volume xewpn3z8za at /workspace is read, never pruned; outputs go to
 # the pod's local disk, small receipts and answers to /workspace/qos_ai_qwen_sft.
+# flash-linear-attention is pinned: 0.6.0 (2026-10-23) needs a newer Triton than the image's.
 # Self-stop via pod-scoped runpodctl on completion, failure and HARD_CAP_MINUTES; WAIT_MINUTES bounds the pull wait.
-# EXTRA_ROWS (space-separated .jsonl.xz files in the bundle) are appended after conversion (`merge`).
+# EXTRA_ROWS (space-separated .jsonl.xz files in the bundle) are appended after conversion (`merge`, options in
+# MERGE_FLAGS, e.g. '--steps-first --closed-book-pairs').
 # BASE_MODEL picks the Qwen3.5 size (same tokenizer for 0.8B and 2B); KEEP_ON_VOLUME=1 also copies the fine-tuned
 # weights to $VOL/model when the volume has room, so they survive the pod stopping.
 set -u
@@ -25,8 +27,8 @@ sha256sum -c inputs.sha256 || fail "input hash mismatch"
 nvidia-smi --query-gpu=name,memory.total --format=csv,noheader
 phase install
 pip install -q "transformers @ git+https://github.com/huggingface/transformers.git@80a79d1bef2bacfa10b1b543669eebffa3f0ec36" \
-  safetensors huggingface_hub tokenizers flash-linear-attention > "$LOCAL/pip.log" 2>&1 || fail "pip (pip.log)"
-python3 -c "import transformers, fla; print('transformers', transformers.__version__)" >> "$LOCAL/pip.log" 2>&1 || fail "imports (pip.log)"
+  safetensors huggingface_hub tokenizers "flash-linear-attention==0.5.2" > "$LOCAL/pip.log" 2>&1 || fail "pip (pip.log)"
+python3 -c "import transformers, fla, triton, torch; print('transformers', transformers.__version__, 'fla', fla.__version__, 'triton', triton.__version__, 'torch', torch.__version__)" >> "$LOCAL/pip.log" 2>&1 || fail "imports (pip.log)"
 python3 -c "from huggingface_hub import snapshot_download; print(snapshot_download('$BASE_MODEL'))" > "$LOCAL/download.log" 2>&1 \
   || fail "model download (download.log)"
 
@@ -40,7 +42,7 @@ python3 qos_ai_qwen_sft.py convert --sft "$LOCAL/mixture/sft.pt" --vocabulary vo
 if [ -n "${EXTRA_ROWS:-}" ]; then  # round-2 rows (xz-compressed jsonl in the bundle), tokenized with Qwen's tokenizer
   phase merge
   rows=(); for f in $EXTRA_ROWS; do xz -dc "$f" > "$LOCAL/$(basename "$f" .xz)" || fail "unpack $f"; rows+=("$LOCAL/$(basename "$f" .xz)"); done
-  python3 qos_ai_qwen_sft.py merge --sft "$LOCAL/qwen_sft.pt" --rows "${rows[@]}" --output "$LOCAL/qwen_sft_merged.pt" \
+  python3 qos_ai_qwen_sft.py merge --sft "$LOCAL/qwen_sft.pt" --rows "${rows[@]}" --output "$LOCAL/qwen_sft_merged.pt" ${MERGE_FLAGS:-} \
     > "$LOCAL/merge.log" 2>&1 || fail "merge (merge.log)"
   mv "$LOCAL/qwen_sft_merged.pt" "$LOCAL/qwen_sft.pt"; cp "$LOCAL/merge.log" "$VOL/"
 fi

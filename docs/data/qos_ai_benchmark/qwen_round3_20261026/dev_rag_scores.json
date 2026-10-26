@@ -1,0 +1,14 @@
+{
+  "round3": {
+    "with_references_pass_90": 47,
+    "closed_book_pass_90": 43,
+    "referenced_subset_51": {
+      "with_references": 16,
+      "closed_book": 11
+    },
+    "unreferenced_subset_39": {
+      "with_references_run": 31,
+      "closed_book": 32
+    }
+  }
+}
