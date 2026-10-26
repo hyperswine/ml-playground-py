@@ -50,4 +50,5 @@ records its exact timestamp; original pages retain their own dates and recorded 
 | 2026-10-22 | [Fine-tuned Qwen: second seed, local M1 use, execution and retrieval](2026-10-22-QWEN-LOCAL-USE.md) |
 | 2026-10-22 | [Qwen round 2: targeted Sol data, long-reference retrieval and hybrid search](2026-10-22-QWEN-ROUND2.md) |
 | 2026-10-26 | [Qwen round 3: steps before the answer, and closed-book pairs](2026-10-26-QWEN-ROUND3.md) |
+| 2026-10-26 | [Qwen round 4: steps first, retrieval, and different closed-book questions](2026-10-26-QWEN-ROUND4.md) |
 | 2026-10-24 | [Small-model pretraining precedents: 4-12B tokens](2026-10-24-SMALL-MODEL-PRETRAINING-PRECEDENTS.md) |

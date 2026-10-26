@@ -1,0 +1,21 @@
+== 2026-10-26T10:39:49Z (+0 min) verify
+qos_ai.py: OK
+qos_ai_data.py: OK
+qos_ai_pure_sol.py: OK
+qos_ai_resume.py: OK
+qos_ai_stage4_data.py: OK
+qos_ai_stage4_eval.py: OK
+pools.pt: OK
+vocabulary.pt: OK
+prompts.jsonl: OK
+qos_ai_qwen_sft.py: OK
+rows.jsonl.xz: OK
+rag.jsonl.xz: OK
+closed.jsonl.xz: OK
+job.sh: OK
+NVIDIA GeForce RTX 4090, 24564 MiB
+== 2026-10-26T10:39:49Z (+0 min) install
+== 2026-10-26T10:40:45Z (+0 min) mix
+== 2026-10-26T10:41:27Z (+1 min) merge
+== 2026-10-26T10:41:58Z (+2 min) train
+== 2026-10-26T11:19:49Z (+40 min) generate_tuned

@@ -1,0 +1,6 @@
+{
+  "examples": 3000,
+  "excluded_retrieval_questions": 6933,
+  "seed": 20261026,
+  "scope": "training-partition questions; none appears in a retrieval example"
+}

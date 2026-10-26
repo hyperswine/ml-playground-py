@@ -10,6 +10,7 @@ are generated on purpose and must take both branches with different results on t
   sample  answer each task with the fine-tuned Qwen: greedy for programs, K samples for expressions      [Mac, MPS]
   select  judge every answer with fpr and write the round-2 rows
   rag     retrieval examples with up to --reference-tokens of top-1..3 references (training partition only)
+  closed  closed-book Q&A from training-partition questions that no retrieval example uses
 
   uv run --locked qos round2 tasks --fpr FPR --output DIR
   python qos_ai_round2.py sample --model MODEL --tasks DIR/tasks.jsonl --output DIR/samples.0.jsonl --shard 0/2
@@ -235,6 +236,29 @@ def rag(args):
   Path(str(args.output) + '.json').write_text(json.dumps(report, indent=2) + '\n'); print(json.dumps(report, indent=2))
 
 
+def closed(args):
+  """Closed-book Q&A rows from training-partition questions used by no retrieval example (Stage 5's or round 2's),
+  to keep answering from memory without teaching that a reference is optional (round 3's same-question pairs did)."""
+  from qos_ai_data import read_rows, row_split
+  manifest = json.loads(Path(args.splits).read_text())
+  used = set()
+  for path in args.exclude:
+    used |= {r['question'].split('\n\nQuestion: ', 1)[-1] for r in read_rows(path)}
+  qa = [r for r in read_rows(args.qa) if row_split(r, manifest) == 'train' and r['question'] not in used]
+  rng = random.Random(args.seed); rng.shuffle(qa)
+  out, seen = [], set()
+  for r in qa:
+    if r['question'] in seen: continue
+    seen.add(r['question'])
+    out.append({'id': f'r4-closed-{len(out):05d}', 'question': r['question'], 'answer': r['answer'], 'source': 'closed_book'})
+    if len(out) == args.count: break
+  with open(args.output, 'w') as f:
+    for r in out: f.write(json.dumps(r) + '\n')
+  report = {'examples': len(out), 'excluded_retrieval_questions': len(used), 'seed': args.seed,
+            'scope': 'training-partition questions; none appears in a retrieval example'}
+  Path(str(args.output) + '.json').write_text(json.dumps(report, indent=2) + '\n'); print(json.dumps(report, indent=2))
+
+
 if __name__ == '__main__':
   p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
   s = p.add_subparsers(dest='command', required=True)
@@ -259,5 +283,9 @@ if __name__ == '__main__':
   r.add_argument('--splits', default='qos_ai_benchmark/evidence/generalization_20261019/curricula/generalization_20261019/splits.json')
   r.add_argument('--exclude', default='qos_ai/stage5_20261021/rag_train.jsonl'); r.add_argument('--seed', type=int, default=20261103)
   r.add_argument('--tokenizer', default='runpod/557m/bundle/tokenizer')
+  c = s.add_parser('closed'); c.add_argument('--output', type=Path, required=True); c.add_argument('--count', type=int, default=3000)
+  c.add_argument('--qa', default='qos_ai/pod_pt/qa.jsonl'); c.add_argument('--seed', type=int, default=20261026)
+  c.add_argument('--splits', default='qos_ai_benchmark/evidence/generalization_20261019/curricula/generalization_20261019/splits.json')
+  c.add_argument('--exclude', nargs='+', default=['qos_ai/stage5_20261021/rag_train.jsonl', 'qos_ai/round2_20261022/rag.jsonl'])
   a = p.parse_args()
-  {'tasks': build_tasks, 'sample': sample, 'select': select, 'rag': rag}[a.command](a)
+  {'tasks': build_tasks, 'sample': sample, 'select': select, 'rag': rag, 'closed': closed}[a.command](a)
