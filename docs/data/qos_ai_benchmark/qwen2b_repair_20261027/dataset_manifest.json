@@ -1,0 +1,40 @@
+{
+  "seed": 2026102701,
+  "compiler": "/Users/jq/qos_ai_eval/experiments/stage4_20261021/preparation/toolchain/fpr",
+  "compiler_sha256": "9987da491a791af853300f38ad3e73c52a243dbfd1422379a8dbe437369b776e",
+  "replay_source": "train.jsonl",
+  "replay_sha256": "e24d21e21797dabea366872b6f58b89d40bd2fa96c9b9109b9ed01ec9f50efaf",
+  "split_policy": "disjoint new composition families; historical training replay reverified; final unopened until candidate selection",
+  "counts": {
+    "train": {
+      "repair": 159,
+      "nochange": 72,
+      "output": 174,
+      "generate": 27
+    },
+    "valid": {
+      "repair": 4,
+      "nochange": 4,
+      "output": 4,
+      "generate": 4
+    },
+    "dev": {
+      "repair": 12,
+      "nochange": 12,
+      "output": 12,
+      "generate": 12
+    },
+    "final": {
+      "repair": 4,
+      "nochange": 4,
+      "output": 4,
+      "generate": 4
+    }
+  },
+  "sha256": {
+    "train": "0938dd4f96d8a41f442a8f7f2b29027c9b828466849976a7020d6e219b4da386",
+    "valid": "208366642c574903775b7d2b89bc1908ac126c3b9e026dbe34e76cc93faa2921",
+    "dev": "fe5c351615b3820d70f73781a2e90b5b0bc1798f8a849e814dab419b34a6f0ef",
+    "final": "ead9a069b5edd41a6135ece20f3a4f9d74032341fd086ddc479009ce37bfa1ec"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "training_rows": 444,
+  "actual_target_or_question_programs_reexecuted": 432,
+  "all_passed": true,
+  "tokenization_boundary_mismatches": [],
+  "train_sha256": "c927c37479bfb3e6ccecdacb10457d5fa6771dab93d8e66de7dcd7750862af6e",
+  "compiler_sha256": "9987da491a791af853300f38ad3e73c52a243dbfd1422379a8dbe437369b776e",
+  "source_verified_documentation_rows": 12
+}

@@ -1,0 +1,47 @@
+{
+  "fresh": {
+    "base": {
+      "code_complete": 0,
+      "code_programs_correct": 1,
+      "code_claims_correct": 1
+    },
+    "parent": {
+      "code_complete": 4,
+      "code_programs_correct": 21,
+      "code_claims_correct": 4
+    },
+    "candidate": {
+      "code_complete": 3,
+      "code_programs_correct": 20,
+      "code_claims_correct": 8
+    }
+  },
+  "manual_documentation": {
+    "base": 3,
+    "parent": 1,
+    "corrected": 4
+  },
+  "frozen_parent": {
+    "solgen_correct": 341,
+    "program_correct": 111,
+    "multi_correct": 18
+  },
+  "frozen_corrected": {
+    "solgen_correct": 253,
+    "program_correct": 111,
+    "multi_correct": 18
+  },
+  "decision": {
+    "candidate": "adapter_corrected",
+    "promoted": false,
+    "parent": "round-4 Qwen3.5-2B MLX q8",
+    "final_holdout_run": false,
+    "reasons": [
+      "Fresh complete coding answers did not improve.",
+      "Fresh output-only accuracy lost two of twelve cases, exceeding the prespecified category guard.",
+      "Original benchmark regressions also favor retaining the parent."
+    ],
+    "adapter_sha256": "0074e58d9abc29ba1bc6f60872fecf15d3a8d883a5a4084e6fa9d5bd54a038ed"
+  },
+  "updated": "2026-10-27T17:11:49+11:00"
+}

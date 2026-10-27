@@ -46,3 +46,6 @@ artifacts/qos_ai/qwen_sft_20261022/q.tar.xz
 artifacts/qos_ai/qwen_sft_20261022/model/
 artifacts/qos_ai/round2_20261022/
 artifacts/qos_ai/retrieval_20261022/
+
+# Rebuildable Qwen 2B repair datasets, adapters and local run copies
+artifacts/qos_ai/qwen2b_repair_20261027/

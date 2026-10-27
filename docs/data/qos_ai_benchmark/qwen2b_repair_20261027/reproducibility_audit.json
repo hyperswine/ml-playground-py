@@ -1,0 +1,96 @@
+{
+  "all_match": true,
+  "checked_files": 18,
+  "files": [
+    {
+      "file": "dataset_v2/dev.jsonl",
+      "sha256": "fe5c351615b3820d70f73781a2e90b5b0bc1798f8a849e814dab419b34a6f0ef",
+      "matches": true
+    },
+    {
+      "file": "dataset_v2/final.jsonl",
+      "sha256": "ead9a069b5edd41a6135ece20f3a4f9d74032341fd086ddc479009ce37bfa1ec",
+      "matches": true
+    },
+    {
+      "file": "dataset_v2/train.jsonl",
+      "sha256": "0938dd4f96d8a41f442a8f7f2b29027c9b828466849976a7020d6e219b4da386",
+      "matches": true
+    },
+    {
+      "file": "dataset_v2/valid.jsonl",
+      "sha256": "208366642c574903775b7d2b89bc1908ac126c3b9e026dbe34e76cc93faa2921",
+      "matches": true
+    },
+    {
+      "file": "prepared_v3/dev_docs_closed_prompts.jsonl",
+      "sha256": "310e0c344c4528891c16062111a36a1d8fadb0824df1095c8d9f86c363c32273",
+      "matches": true
+    },
+    {
+      "file": "prepared_v3/dev_docs_legacy_prompts.jsonl",
+      "sha256": "7e33634a77568965a58b764336e902582c8897f0d32ed1f32a94914de202b8ca",
+      "matches": true
+    },
+    {
+      "file": "prepared_v3/dev_docs_lexical_prompts.jsonl",
+      "sha256": "0ee101769f91b7d7e48d25e3b1e23609177ee9c18fd9054f13d71637335b1cca",
+      "matches": true
+    },
+    {
+      "file": "prepared_v3/dev_rows.jsonl",
+      "sha256": "0992cef72ef5166cfe2ecc400f8d74e6615b285a1768882c419756bcc52c3ad5",
+      "matches": true
+    },
+    {
+      "file": "prepared_v3/dev_source_prompts.jsonl",
+      "sha256": "4023c9fdd1ae9772d301a69bf94014078aa09d9894613228cdfe84d6c2f49633",
+      "matches": true
+    },
+    {
+      "file": "prepared_v3/final_docs_closed_prompts.jsonl",
+      "sha256": "2fd16765083502ec6f3709d5761bc6c90a01d7ada572f3b5b7ac91c749e23879",
+      "matches": true
+    },
+    {
+      "file": "prepared_v3/final_docs_legacy_prompts.jsonl",
+      "sha256": "148cac2d813df9d638cb26aed3c8f1108ac95c0cf204e7264b10ad2e1a39b15f",
+      "matches": true
+    },
+    {
+      "file": "prepared_v3/final_docs_lexical_prompts.jsonl",
+      "sha256": "a2f735540f6fdbc85743e69fe5d610057ba26e1708f879f53e7407543ba26172",
+      "matches": true
+    },
+    {
+      "file": "prepared_v3/final_rows.jsonl",
+      "sha256": "8b2160fed143719f90fff79b3f9ede9d347853080820c99bd6765837da18858a",
+      "matches": true
+    },
+    {
+      "file": "prepared_v3/final_source_prompts.jsonl",
+      "sha256": "0b9b407732d7a35a644a1d511df830acbd556cf28cd6e54d8d9845572bc93251",
+      "matches": true
+    },
+    {
+      "file": "prepared_v3/train_prepared.jsonl",
+      "sha256": "c927c37479bfb3e6ccecdacb10457d5fa6771dab93d8e66de7dcd7750862af6e",
+      "matches": true
+    },
+    {
+      "file": "prepared_v3/train_rows.jsonl",
+      "sha256": "9cb25d8bbc549a93b64a87a2ef4b218c0991015c57e38dc1971df4e69758d27f",
+      "matches": true
+    },
+    {
+      "file": "prepared_v3/valid_prepared.jsonl",
+      "sha256": "4b3f8604878b33eab9fce8793c0e9f5f2504f5471dc538c3d5c6dc2651215942",
+      "matches": true
+    },
+    {
+      "file": "prepared_v3/valid_rows.jsonl",
+      "sha256": "208366642c574903775b7d2b89bc1908ac126c3b9e026dbe34e76cc93faa2921",
+      "matches": true
+    }
+  ]
+}

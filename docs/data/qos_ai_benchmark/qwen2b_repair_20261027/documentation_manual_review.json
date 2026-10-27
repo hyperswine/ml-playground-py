@@ -1,0 +1,229 @@
+{
+  "method": "Manual review by the implementing assistant, not blinded or independently replicated. Development evidence only.",
+  "criterion": "Complete requested factual answer, no unsupported or contradictory assertions or invented code, requested prose format, valid relevant file citation. Repository-relative citations count. Regex matches alone are not correctness.",
+  "limitations": "Only eight questions. Several automatic rubric false positives and false negatives were observed; do not combine documentation proxy totals with executable correctness.",
+  "models": {
+    "base_docs_source_v2": {
+      "answers_sha256": "7cb37b104e4f82c1166dfa807ac8e73bf5dbaa842b7b03b748e8fd7a39a366fc",
+      "complete_supported": 3,
+      "n": 8,
+      "rows": [
+        {
+          "id": "docs-dev-00",
+          "complete_supported": false,
+          "reason": "Confuses parse with its value helper: parse does not return a cursor; not every malformed input yields the trailing-character error.",
+          "answer": "On success, `parse` returns a `Result` containing the parsed JSON value and the current cursor position. On malformed input, it returns an error with the message \"json: trailing characters at {i}\". Source: fprisc/sol/lib/json.sol"
+        },
+        {
+          "id": "docs-dev-01",
+          "complete_supported": false,
+          "reason": "Denies the explicitly documented duplicate-key behavior and repeats until the token budget.",
+          "answer": "The reference does not establish a specific behavior for duplicate object keys, as it only states that parsing is whole-document without a configurable nesting/size limit. It does not explicitly state whether duplicates are discarded or retained. The reference does not establish a specific behavior for duplicate object keys, as it only states that parsing is whole-document without a configurable nesting/size limit. It does not explicitly state whether duplicates are discarded or retained. The reference does not establish a specific behavior for duplicate object keys, as it only states that parsing is whole-document without a configurable nesting/size limit. It does not explicitly state whether duplicates are discarded or retained. The reference does not establish a specific behavior for duplicate object keys, as it only states that parsing is whole-document without a configurable nesting/size limit. It does not explicitly state whether duplicates are discarded or retained. The reference does not establish a specific behavior for duplicate object keys, as it only states that parsing is whole-document without a"
+        },
+        {
+          "id": "docs-dev-02",
+          "complete_supported": false,
+          "reason": "Says behavior is not established while also describing the documented trailing-text rejection.",
+          "answer": "The reference does not establish a behavior for accepting a valid JSON value followed by unrelated non-whitespace text. The `parse` function terminates immediately upon encountering a trailing character, as indicated by the case statement that returns an error if `ws s i >= Str.len s` is false.\n\nSource: fprisc/sol/lib/json.sol"
+        },
+        {
+          "id": "docs-dev-03",
+          "complete_supported": false,
+          "reason": "Correct library recommendation, but incorrectly generalizes native numeric values as Real rather than Integer.",
+          "answer": "Hosted Sol should use `sol/lib/json.sol` for JSON operations because the current `std/json.fpr` implementation explicitly states that importing it does not establish Unicode compatibility and constructs UTF-8 byte strings. The reference file indicates that `Value` is a design's flexible-data type where numbers are kept as `Real` rather than `Integer` to preserve their original text representation. Therefore, the hosted Sol implementation must rely on the separate `json.sol` module to handle Unicode code-point strings correctly. Source: fprisc/std/json.fpr"
+        },
+        {
+          "id": "docs-dev-04",
+          "complete_supported": false,
+          "reason": "Misdescribes text as retrieving a value at the final path index; it checks JStr and returns Result.",
+          "answer": "The `path` accessor traverses the JSON object by folding through keys to find the target key, while `text` retrieves the value at the final index of the path. When a path like `[\"user\", \"name\"]` is applied to an object, it first locates the \"user\" key and then the \"name\" key within the resulting object to extract the string value. Source: fprisc/sol/lib/json.sol"
+        },
+        {
+          "id": "docs-dev-05",
+          "complete_supported": true,
+          "reason": "Correctly states no configurable nesting depth is established.",
+          "answer": "The provided reference file does not establish a configurable maximum nesting depth for the JSON parsing API. The documentation explicitly states that parsing is \"whole-document\" and notes that \"nesting/size limit\" is not yet configurable.\n\nSource: fprisc/sol/lib/json.sol"
+        },
+        {
+          "id": "docs-dev-06",
+          "complete_supported": true,
+          "reason": "Correctly says parseStream is not established in the supplied reference.",
+          "answer": "No, the provided reference does not establish the existence or behavior of a `parseStream` function. The file defines a `parse` function that processes a single string at a time, and it does not mention any public streaming API. Source: fprisc/sol/lib/json.sol"
+        },
+        {
+          "id": "docs-dev-07",
+          "complete_supported": true,
+          "reason": "Correct two-space indentation and inline empty/scalar behavior.",
+          "answer": "The pretty indentation is defined by the `prettyAt` function, which uses a `lines` helper to insert a two-space prefix before each element in an array or object. Empty containers and scalars remain inline and are not indented. Source: fprisc/sol/lib/json.sol"
+        }
+      ]
+    },
+    "parent_docs_source_v2": {
+      "answers_sha256": "ff5e5e26f3ae00b56f4f176acb846a2a1fac8b35a92ac1edb56b72e8da139f2b",
+      "complete_supported": 1,
+      "n": 8,
+      "rows": [
+        {
+          "id": "docs-dev-00",
+          "complete_supported": false,
+          "reason": "Correct Result distinction, but assigns the trailing-character error to all malformed JSON.",
+          "answer": "parse returns a Result containing either a Json value or an error string. If the input string is malformed, it returns Err \"json: trailing characters at <cursor>\"; otherwise, it returns Ok the parsed value.\nSource: fprisc/sol/lib/json.sol"
+        },
+        {
+          "id": "docs-dev-01",
+          "complete_supported": false,
+          "reason": "Correct duplicate-key rule, but invents a map representation; JObj contains an association list.",
+          "answer": "Duplicate object keys are retained in input order; get returns the first occurrence. The implementation uses a map where keys are stored sequentially, ensuring the first key encountered during parsing is the one returned by get. Source: fprisc/sol/lib/json.sol"
+        },
+        {
+          "id": "docs-dev-02",
+          "complete_supported": false,
+          "reason": "Correct trailing-text rejection, but adds a false whitespace claim and an invalid two-argument parse example.",
+          "answer": "The parser validates the entire document and returns an error if trailing characters exist after the value. It does not automatically trim whitespace or handle incomplete trailing text.\n```sol\nparse \"true\" \"extra\"\n```\nSource: fprisc/sol/lib/json.sol"
+        },
+        {
+          "id": "docs-dev-03",
+          "complete_supported": false,
+          "reason": "Correct profile distinction but does not answer which library hosted Sol should use.",
+          "answer": "Hosted Sol uses Unicode code-point Strings rather than the UTF-8 byte strings constructed in std/json.fpr. The reference notes that importing std/json.fpr does not establish Unicode compatibility.\nSource: fprisc/std/json.fpr"
+        },
+        {
+          "id": "docs-dev-04",
+          "complete_supported": false,
+          "reason": "Invents let/semicolon code and treats text as a conversion, losing the Result contract.",
+          "answer": "Path and text compose by first retrieving the value at the specified path and then extracting the text content from that value. The `path` function traverses the object structure, and `text` converts the resulting value into a string.\n\n```sol\nlet result = path [\"user\", \"name\"] (JObj [(\"user\", JStr \"Alice\")]);\nlet name = text result;\n```\n\nSource: fprisc/sol/lib/json.sol"
+        },
+        {
+          "id": "docs-dev-05",
+          "complete_supported": true,
+          "reason": "Correct no-configurable-depth answer and grounded whole-document behavior.",
+          "answer": "The current implementation does not expose a configurable maximum nesting depth. The parse function recursively processes the entire document without a size limit, and the `parse` function returns an error if trailing characters are found after the value.\nSource: fprisc/sol/lib/json.sol"
+        },
+        {
+          "id": "docs-dev-06",
+          "complete_supported": false,
+          "reason": "Starts with not established, then invents a streaming-parser characterization of parseStream.",
+          "answer": "parseStream is not established in the reference. The reference defines parse as a recursive descent parser that consumes the entire document, whereas parseStream is a streaming parser. Source: fprisc/sol/lib/json.sol"
+        },
+        {
+          "id": "docs-dev-07",
+          "complete_supported": false,
+          "reason": "Correct headline rule, then incorrectly says empty lists produce empty strings.",
+          "answer": "The `pretty` function applies two-space indentation to nested structures, while empty containers and scalars remain inline. This behavior is implemented by recursively mapping `prettyAt` over arrays and objects, where empty lists and objects result in empty strings or inline values respectively. Source: fprisc/sol/lib/json.sol"
+        }
+      ]
+    },
+    "candidate_dev": {
+      "answers_sha256": "9030f8435f4000bef50170cb47214b1cd655a2f823711eac6bdce982eb47d94e",
+      "complete_supported": 6,
+      "n": 8,
+      "rows": [
+        {
+          "id": "docs-dev-00",
+          "complete_supported": false,
+          "reason": "Still assigns the specific trailing-character error to all malformed input.",
+          "answer": "It returns Ok Json on valid input and Err \"json: trailing characters at {i}\" on malformed input. Source: fprisc/sol/lib/json.sol."
+        },
+        {
+          "id": "docs-dev-01",
+          "complete_supported": true,
+          "reason": "Correct duplicate-key rule without the invented map explanation.",
+          "answer": "Duplicate object keys are retained in input order, and get returns the first occurrence. Source: fprisc/sol/lib/json.sol."
+        },
+        {
+          "id": "docs-dev-02",
+          "complete_supported": true,
+          "reason": "Correct concise trailing-text rejection, with source and no invented code.",
+          "answer": "The parser refuses trailing non-whitespace characters after a value. Source: fprisc/sol/lib/json.sol."
+        },
+        {
+          "id": "docs-dev-03",
+          "complete_supported": false,
+          "reason": "Correct profile distinction but still omits the requested hosted Sol library path.",
+          "answer": "Hosted Sol uses Unicode code-point Strings, not the UTF-8 byte strings constructed by std/json.fpr. Source: fprisc/std/json.fpr."
+        },
+        {
+          "id": "docs-dev-04",
+          "complete_supported": true,
+          "reason": "Correct conceptual composition and failure conditions, without the invented code or conversion claim.",
+          "answer": "Path and text compose by first retrieving the value at the specified path and then extracting the text from that value. If the path is invalid or the value is not a string, the operation fails. Source: fprisc/sol/lib/json.sol."
+        },
+        {
+          "id": "docs-dev-05",
+          "complete_supported": true,
+          "reason": "Correct no-configurable-depth and whole-document answer.",
+          "answer": "The current implementation does not expose a configurable maximum nesting depth. The parse function accepts the entire document as a single value without a size limit, and the `J.parse` function returns an error if trailing characters are found. Source: fprisc/sol/lib/json.sol."
+        },
+        {
+          "id": "docs-dev-06",
+          "complete_supported": true,
+          "reason": "Correctly limits the answer to what the reference establishes.",
+          "answer": "It is not established. Source: fprisc/sol/lib/json.sol."
+        },
+        {
+          "id": "docs-dev-07",
+          "complete_supported": true,
+          "reason": "Correct two-space indentation and inline empty/scalar behavior.",
+          "answer": "It uses two-space indentation for nested structures, keeping empty containers and scalars inline. Source: fprisc/sol/lib/json.sol."
+        }
+      ],
+      "status": "provisional; superseded after loss-mask audit"
+    },
+    "corrected_dev": {
+      "status": "final corrected-mask pilot",
+      "answers_sha256": "b634258eb55435f9e77a5394449f503ec306a0d0050001a0b7b2f9a79e088fbf",
+      "complete_supported": 4,
+      "n": 8,
+      "rows": [
+        {
+          "id": "docs-dev-00",
+          "complete_supported": false,
+          "reason": "Confuses parse with its value helper: parse returns the Json value without the cursor, and malformed inputs have more than one possible error.",
+          "answer": "It returns Ok (value, cursor) on success, or Err \"json: trailing characters at <cursor>\" on malformed input. Source: fprisc/sol/lib/json.sol."
+        },
+        {
+          "id": "docs-dev-01",
+          "complete_supported": true,
+          "reason": "Correct duplicate-key retention and first-occurrence rule.",
+          "answer": "Duplicate object keys are retained in input order, and get returns the first occurrence. Source: fprisc/sol/lib/json.sol."
+        },
+        {
+          "id": "docs-dev-02",
+          "complete_supported": true,
+          "reason": "Correct rejection of the non-whitespace trailing content asked about; whitespace handling is not explained.",
+          "answer": "It parses a value and returns Err \"json: trailing characters at {i}\" if the cursor is not at the end. Source: fprisc/sol/lib/json.sol."
+        },
+        {
+          "id": "docs-dev-03",
+          "complete_supported": false,
+          "reason": "Describes std/json.fpr byte strings but omits which library hosted Sol should use.",
+          "answer": "It constructs UTF-8 byte strings. Source: fprisc/std/json.fpr."
+        },
+        {
+          "id": "docs-dev-04",
+          "complete_supported": false,
+          "reason": "Gives supported end-to-end behavior, but does not explain how path and text compose or propagate Result.",
+          "answer": "It extracts the value at the given path from a JSON object, returning an Err if the path is invalid or the value is not a string. Source: fprisc/sol/lib/json.sol."
+        },
+        {
+          "id": "docs-dev-05",
+          "complete_supported": false,
+          "reason": "Correct no-configurable-depth headline, but invents an example establishing arbitrary depth and 100 nesting levels.",
+          "answer": "No maximum nesting depth is currently exposed. The parser accepts any depth, as demonstrated by the ability to parse deeply nested structures like 100 levels of objects and arrays. Source: fprisc/sol/lib/json.sol."
+        },
+        {
+          "id": "docs-dev-06",
+          "complete_supported": true,
+          "reason": "Correctly says the streaming API is not established and identifies the whole-document recursive parser.",
+          "answer": "It is not established. The reference defines a recursive descent parser for JSON, not a streaming parser. Source: fprisc/sol/lib/json.sol."
+        },
+        {
+          "id": "docs-dev-07",
+          "complete_supported": true,
+          "reason": "Correct two-space indentation and inline empty/scalar behavior.",
+          "answer": "It uses two-space indentation for nested structures, while empty containers and scalars remain inline. Source: fprisc/sol/lib/json.sol."
+        }
+      ]
+    }
+  }
+}

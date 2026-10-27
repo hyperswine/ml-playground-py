@@ -1,0 +1,21 @@
+{
+  "policy": "frozen before model generation; final split used once after development selection",
+  "files": {
+    "dev_docs_lexical_prompts.jsonl": "0ee101769f91b7d7e48d25e3b1e23609177ee9c18fd9054f13d71637335b1cca",
+    "train_rows.jsonl": "9cb25d8bbc549a93b64a87a2ef4b218c0991015c57e38dc1971df4e69758d27f",
+    "train_prepared.jsonl": "c927c37479bfb3e6ccecdacb10457d5fa6771dab93d8e66de7dcd7750862af6e",
+    "dev_rows.jsonl": "0992cef72ef5166cfe2ecc400f8d74e6615b285a1768882c419756bcc52c3ad5",
+    "dev_source_prompts.jsonl": "4023c9fdd1ae9772d301a69bf94014078aa09d9894613228cdfe84d6c2f49633",
+    "final_source_prompts.jsonl": "0b9b407732d7a35a644a1d511df830acbd556cf28cd6e54d8d9845572bc93251",
+    "valid_rows.jsonl": "208366642c574903775b7d2b89bc1908ac126c3b9e026dbe34e76cc93faa2921",
+    "final_docs_legacy_prompts.jsonl": "148cac2d813df9d638cb26aed3c8f1108ac95c0cf204e7264b10ad2e1a39b15f",
+    "dev_docs_legacy_prompts.jsonl": "7e33634a77568965a58b764336e902582c8897f0d32ed1f32a94914de202b8ca",
+    "final_docs_closed_prompts.jsonl": "2fd16765083502ec6f3709d5761bc6c90a01d7ada572f3b5b7ac91c749e23879",
+    "valid_prepared.jsonl": "4b3f8604878b33eab9fce8793c0e9f5f2504f5471dc538c3d5c6dc2651215942",
+    "final_rows.jsonl": "8b2160fed143719f90fff79b3f9ede9d347853080820c99bd6765837da18858a",
+    "final_docs_lexical_prompts.jsonl": "a2f735540f6fdbc85743e69fe5d610057ba26e1708f879f53e7407543ba26172",
+    "dev_docs_closed_prompts.jsonl": "310e0c344c4528891c16062111a36a1d8fadb0824df1095c8d9f86c363c32273"
+  },
+  "corpus_sha256": "7bc112aca6471500a5bca032a76edc28a4031ffe705444b95a2b8850afdfe72a",
+  "legacy_corpus_sha256": "1631e945bde3f3fdcf0f44f301db3b0c31ca84af186a3c9e32656f6d05604fca"
+}

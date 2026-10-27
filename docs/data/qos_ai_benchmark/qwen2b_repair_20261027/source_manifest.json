@@ -1,0 +1,36 @@
+{
+  "git_head": "b8912aad3933d3363e589516c2773aea9cd87a09",
+  "files": [
+    {
+      "path": "sol/lib/json.sol",
+      "sha256": "2511e0b22faa0dfa1acf6eb58ad55f2e8c02c3b41a617fc6322353d0569dde09",
+      "authority": "implementation"
+    },
+    {
+      "path": "std/json.fpr",
+      "sha256": "ba0fa024b7c9e03e4dcb05b2319e3bdd2f1ce2a9543e169e562484d73b921da6",
+      "authority": "implementation"
+    },
+    {
+      "path": "sol/lib/base.sol",
+      "sha256": "6ad47d5fac24ed686b8046b0a2de9dc80c078a7da7b729c5055cb4491e9b4707",
+      "authority": "implementation"
+    },
+    {
+      "path": "sol/lib/proc.sol",
+      "sha256": "5b52defc8d4f443505c7908182e8260cd343e412f06a8b45cb7c162765594d71",
+      "authority": "implementation"
+    },
+    {
+      "path": "sol/lib/csv.sol",
+      "sha256": "e13267b764d947a73d14eb712120d22962a83e5b12cf366f9ee25c066d1d8b5b",
+      "authority": "implementation"
+    },
+    {
+      "path": "sol/lib/system.sol",
+      "sha256": "c3389be13dec273563577e9a92932aa1fb043f66ebb934b1e70215c83aa662ae",
+      "authority": "implementation"
+    }
+  ],
+  "note": "Content hashes pin working-tree source; not a claim that all files match HEAD."
+}

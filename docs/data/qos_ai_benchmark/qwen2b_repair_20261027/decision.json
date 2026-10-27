@@ -1,0 +1,12 @@
+{
+  "candidate": "adapter_corrected",
+  "promoted": false,
+  "parent": "round-4 Qwen3.5-2B MLX q8",
+  "final_holdout_run": false,
+  "reasons": [
+    "Fresh complete coding answers did not improve.",
+    "Fresh output-only accuracy lost two of twelve cases, exceeding the prespecified category guard.",
+    "Original benchmark regressions also favor retaining the parent."
+  ],
+  "adapter_sha256": "0074e58d9abc29ba1bc6f60872fecf15d3a8d883a5a4084e6fa9d5bd54a038ed"
+}

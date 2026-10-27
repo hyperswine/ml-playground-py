@@ -1,0 +1,24 @@
+{
+  "mlx_lm_version": "0.32.2",
+  "fixture": {
+    "tokens": [
+      1,
+      2,
+      3,
+      4,
+      0,
+      0
+    ],
+    "prompt_length": 2,
+    "sequence_length": 4,
+    "eos_token": 4,
+    "padding_token": 0
+  },
+  "expected_supervised_tokens": 2,
+  "observed_installed_default_supervised_tokens": 3,
+  "observed_corrected_supervised_tokens": 2,
+  "cause": "Installed default_loss uses positions <= sequence_length although length is exclusive; one padding token is supervised.",
+  "fix": "Use prompt_length <= target_position < sequence_length; EOS remains supervised.",
+  "tests": "tests/qos_ai/test_qos_ai_mlx_repair.py passed all three checks on M1; local mask test skipped because MLX is not installed.",
+  "status": "Provisional adapter retained as superseded; corrected run restarts from unchanged parent."
+}

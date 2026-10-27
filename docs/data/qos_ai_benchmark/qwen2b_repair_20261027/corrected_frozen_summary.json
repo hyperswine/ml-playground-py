@@ -1,0 +1,64 @@
+{
+  "answers_sha256": "7e2cfdac161d43c70cff7804e34890d1cc7b2744505db9e72daa186004ed094e",
+  "generation_receipt": {
+    "model": "../mlx_20261027/mlx_2b_round4_q8",
+    "model_files": {
+      "config.json": "ddfcb7c9c8e637f1bee327053edf61575f754fce61142c5125a3b65bb3acce8a",
+      "generation_config.json": "1b9e2b234e67729879487a490c93fd51156db740512ee41bf8c99ba2b264dbb2",
+      "model.safetensors": "b34593af75a601f2825a10ca4ac90035fcf9b5c86cbbb537344ae689a4e1e047",
+      "model.safetensors.index.json": "e391653bb33e96175a39aad5576940b04bed4ff13673b4c89896d41917ae8fd3",
+      "tokenizer.json": "a5cd9732badce41de57e6efce8302930ded1c1188c5f81feb2bd6c24c4a1941f",
+      "tokenizer_config.json": "4d2fc7899270dc76b57a7aa1d5ec3234e6a25934c6e2aea6166f989f1d453892"
+    },
+    "adapter": "adapter_corrected",
+    "adapter_files": {
+      "0000048_adapters.safetensors": "0074e58d9abc29ba1bc6f60872fecf15d3a8d883a5a4084e6fa9d5bd54a038ed",
+      "adapter_config.json": "8b6897b1a481055d93d73114b1f72f4840140da05913833d96c2d711f46ab188",
+      "adapters.safetensors": "0074e58d9abc29ba1bc6f60872fecf15d3a8d883a5a4084e6fa9d5bd54a038ed",
+      "result.json": "fef0a2702d417e8fdbe3ee50dba65e567a561a6837947d6f2824c80225e09ccf",
+      "run_input.json": "3b2252fb3c2db9eb85828684304a1e48bf0adaf3afa0da3b3c01b2cec1f02d37"
+    },
+    "prompts_sha256": "abc7de7c08f3e12b70f0eef135e0d212d2827f28af1efcafd776731cbc342102",
+    "sampler": "greedy temperature=0",
+    "format": "manual historical no-thinking chat",
+    "script_sha256": "9e2a59b1c4ac743ef9a0dfc91e47c71ed93ec73786bcb8e152d426a690fcfdbc",
+    "mlx": "0.32.4",
+    "mlx_lm": "0.32.2",
+    "seconds": 826.0821036250563,
+    "peak_memory_gb": 2.592257432,
+    "answers_sha256": "7e2cfdac161d43c70cff7804e34890d1cc7b2744505db9e72daa186004ed094e",
+    "count": 740
+  },
+  "scorer_sha256": "2a70951c156578ff08c566ec92f28d79ecc46e1dedd4541dbcab7c946c09b3c4",
+  "solgen_compiler_sha256": "9987da491a791af853300f38ad3e73c52a243dbfd1422379a8dbe437369b776e",
+  "solgen_correct": 253,
+  "solgen_n": 360,
+  "program_correct": 111,
+  "pure_admission_declines": [],
+  "multi_correct": 18,
+  "multi_total": 18,
+  "bench": {
+    "checkpoint_sha256": null,
+    "no_repeat": 0,
+    "dev_lexical_90": 47,
+    "dev_outputs_33": 24,
+    "working_generation_24": 24,
+    "applied_repairs_48": 42,
+    "repair_plus_output_48": 31,
+    "no_change_plus_output_24": 18,
+    "gen_wording_48": 38,
+    "gen_inputs_48": 40,
+    "gen_combinations_48": 16,
+    "strict_trace_120": 2,
+    "finished": {
+      "development": 90,
+      "coding": 96,
+      "generalization": 144
+    },
+    "severe_loops": {
+      "development": 0,
+      "coding": 0,
+      "generalization": 0
+    }
+  }
+}

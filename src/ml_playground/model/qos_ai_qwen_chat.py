@@ -39,12 +39,14 @@ def chat_text(question, answer=None):
 TOKENIZER_FILES = ('tokenizer.json', 'tokenizer_config.json', 'chat_template.jinja', 'vocab.json', 'merges.txt')
 
 
-def load(model, device_name, dtype_name='float32', engine='torch'):
+def load(model, device_name, dtype_name='float32', engine='torch', adapter=None):
   """(model, tokenizer, device); with engine 'mlx' the device is the string 'mlx'."""
   if engine == 'mlx':
     from mlx_lm import load as mlx_load
-    m, tok = mlx_load(str(model))
+    m, tok = mlx_load(str(model), adapter_path=str(adapter) if adapter else None)
     return m, tok, 'mlx'
+  if adapter:
+    raise ValueError('--adapter is supported only with --engine mlx')
   import torch
   from transformers import AutoTokenizer, Qwen3_5ForConditionalGeneration
   device = torch.device(device_name if device_name != 'auto' else ('mps' if torch.backends.mps.is_available() else 'cpu'))
@@ -146,25 +148,31 @@ def with_references(questions, tok, args):
   from qos_ai_data import read_rows
   from qos_ai_execute import BLOCK
   from qos_ai_retrieval import BM25, with_reference
-  rows = read_rows(args.corpus); docs = [{'path': r['path'], 'text': f"# File: {r['path']}\n{r['text']}"} for r in rows]
-  if args.embeddings:
+  rows = read_rows(args.corpus); docs = [{**r, 'text': f"# File: {r['path']}\n{r['text']}"} for r in rows]
+  source_profile = getattr(args, 'retrieval_profile', 'legacy') == 'source'
+  if source_profile:
+    docs = [{**r, 'text': r['text'] if r['text'].startswith('# File:') else f"# File: {r['path']}\n{r['text']}"} for r in rows]
+    if args.embeddings: raise ValueError('source profile does not use legacy hybrid embeddings')
+    from qos_ai_source_retrieval import SourceBM25, is_documentation_question, grounded_question
+    index = SourceBM25(docs)
+  elif args.embeddings:
     from qos_ai_hybrid import Hybrid
     index = Hybrid(docs, args.embeddings, corpus_rows=rows)
   else:
     index = BM25(docs)
   for i, q in enumerate(questions):
-    if BLOCK.search(q) or CODE_REQUEST.search(q): continue  # references distract program writing
+    if (BLOCK.search(q) or CODE_REQUEST.search(q)) and not (source_profile and is_documentation_question(q)): continue
     hits = index.search(q, args.retrieve)
     if not hits: continue
     ref = tok.decode(tok.encode('\n\n'.join(h['text'] for h in hits), add_special_tokens=False)[:args.reference_tokens])
-    prompts[i], sources[i] = with_reference(q, ref), [h['path'] for h in hits]
+    prompts[i], sources[i] = with_reference(grounded_question(q) if source_profile else q, ref), [h['path'] for h in hits]
   return prompts, sources
 
 
 def answer(args):
   """Greedy answers for a prompt file (qos qwen_sft prompts format), optionally with references, as jsonl."""
   rows = [r for r in map(json.loads, open(args.prompts)) if not args.suites or r['suite'] in args.suites]
-  m, tok, device = load(args.model, args.device, args.dtype, args.engine)
+  m, tok, device = load(args.model, args.device, args.dtype, args.engine, getattr(args, 'adapter', None))
   prompts, sources = with_references([r['question'] for r in rows], tok, args)
   with open(args.output, 'w') as f:
     for budget in sorted({r['max_new_tokens'] for r in rows}):
@@ -180,7 +188,7 @@ def ask(args):
   program or expression are asked as written: on the 2026-10-22 demo, references turned a correct program into a
   string-interpolation one."""
   from qos_ai_execute import augment
-  m, tok, device = load(args.model, args.device, args.dtype, args.engine)
+  m, tok, device = load(args.model, args.device, args.dtype, args.engine, getattr(args, 'adapter', None))
   questions = [args.question] if args.question else [q.strip() for q in Path(args.questions).read_text().split('\n---\n') if q.strip()]
   prompts, sources = with_references(questions, tok, args)
   for q, src, a in zip(questions, sources, generate(m, tok, device, prompts, args.max_new_tokens, stop_loops=True)):
@@ -282,6 +290,8 @@ if __name__ == '__main__':
   for name in ('ask', 'answer'):
     a = s.choices[name]
     a.add_argument('--engine', choices=['torch', 'mlx'], default='torch', help='mlx: --model is an mlx-convert directory')
+    a.add_argument('--adapter', help='MLX adapter directory; parent --model remains unchanged')
+    a.add_argument('--retrieval-profile', choices=['legacy', 'source'], default='legacy')
     a.add_argument('--retrieve', type=int, default=0, help='top-K documentation chunks for questions without code')
     a.add_argument('--reference-tokens', type=int, default=1500); a.add_argument('--corpus', default='qos_ai/corpus.jsonl')
     a.add_argument('--embeddings', help='hybrid BM25 + dense retrieval (qos hybrid embed); BM25 only when omitted')

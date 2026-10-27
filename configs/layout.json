@@ -83,7 +83,9 @@
     "qos_ai_stage4_recovery.py": "src/ml_playground/cloud/qos_ai_stage4_recovery.py",
     "qos_ai_stage4_train.py": "src/ml_playground/training/qos_ai_stage4_train.py",
     "qos_ai_stage5_param.py": "src/ml_playground/data/qos_ai_stage5_param.py",
-    "qwen08.py": "src/ml_playground/examples/qwen08.py"
+    "qwen08.py": "src/ml_playground/examples/qwen08.py",
+    "qos_ai_source_retrieval.py": "src/ml_playground/evaluation/qos_ai_source_retrieval.py",
+    "qos_ai_qwen_repair.py": "src/ml_playground/workflows/qos_ai_qwen_repair.py"
   },
   "tests": {
     "test_layout.py": "tests/test_layout.py",
@@ -105,7 +107,9 @@
     "test_qos_ai_resume.py": "tests/qos_ai/test_qos_ai_resume.py",
     "test_qos_ai_runpod.py": "tests/qos_ai/test_qos_ai_runpod.py",
     "test_qos_ai_scale.py": "tests/qos_ai/test_qos_ai_scale.py",
-    "test_qos_ai_stage4.py": "tests/qos_ai/test_qos_ai_stage4.py"
+    "test_qos_ai_stage4.py": "tests/qos_ai/test_qos_ai_stage4.py",
+    "test_qos_ai_qwen_repair.py": "tests/qos_ai/test_qos_ai_qwen_repair.py",
+    "test_qos_ai_mlx_repair.py": "tests/qos_ai/test_qos_ai_mlx_repair.py"
   },
   "scripts": {
     "runpod/morepretrain_run.sh": "scripts/runpod/morepretrain_run.sh",
@@ -126,7 +130,10 @@
     "mac/qwen_mps_gdn.py": "scripts/mac/qwen_mps_gdn.py",
     "mac/qwen_mps_ops.py": "scripts/mac/qwen_mps_ops.py",
     "mac/mlx_check.py": "scripts/mac/mlx_check.py",
-    "mac/mlx_answers.py": "scripts/mac/mlx_answers.py"
+    "mac/mlx_answers.py": "scripts/mac/mlx_answers.py",
+    "mac/mlx_repair.py": "scripts/mac/mlx_repair.py",
+    "mac/prepare_qwen_repair.py": "scripts/mac/prepare_qwen_repair.py",
+    "mac/score_qwen_frozen.py": "scripts/mac/score_qwen_frozen.py"
   },
   "files": {
     "qos_ai_557m.json": "configs/qos_ai_557m.json",

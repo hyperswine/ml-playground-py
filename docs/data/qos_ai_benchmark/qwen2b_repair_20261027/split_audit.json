@@ -1,0 +1,46 @@
+{
+  "train": {
+    "n": 444,
+    "duplicate_ids": 0,
+    "duplicate_questions": 0,
+    "families": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "overlap_with_earlier_splits": 0
+  },
+  "valid": {
+    "n": 16,
+    "duplicate_ids": 0,
+    "duplicate_questions": 0,
+    "families": [
+      6
+    ],
+    "overlap_with_earlier_splits": 0
+  },
+  "dev": {
+    "n": 56,
+    "duplicate_ids": 0,
+    "duplicate_questions": 0,
+    "families": [
+      7,
+      8,
+      9
+    ],
+    "overlap_with_earlier_splits": 0
+  },
+  "final": {
+    "n": 24,
+    "duplicate_ids": 0,
+    "duplicate_questions": 0,
+    "families": [
+      10,
+      11
+    ],
+    "overlap_with_earlier_splits": 0
+  }
+}

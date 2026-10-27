@@ -1,0 +1,23 @@
+{
+  "model": "../mlx_20261027/mlx_2b_round4_q8",
+  "model_files": {
+    "config.json": "ddfcb7c9c8e637f1bee327053edf61575f754fce61142c5125a3b65bb3acce8a",
+    "generation_config.json": "1b9e2b234e67729879487a490c93fd51156db740512ee41bf8c99ba2b264dbb2",
+    "model.safetensors": "b34593af75a601f2825a10ca4ac90035fcf9b5c86cbbb537344ae689a4e1e047",
+    "model.safetensors.index.json": "e391653bb33e96175a39aad5576940b04bed4ff13673b4c89896d41917ae8fd3",
+    "tokenizer.json": "a5cd9732badce41de57e6efce8302930ded1c1188c5f81feb2bd6c24c4a1941f",
+    "tokenizer_config.json": "4d2fc7899270dc76b57a7aa1d5ec3234e6a25934c6e2aea6166f989f1d453892"
+  },
+  "adapter": null,
+  "adapter_files": null,
+  "prompts_sha256": "57f7b247aafafdcb5a86f21efc8216a8abf94c720af16c94a741933041ed366f",
+  "sampler": "greedy temperature=0",
+  "format": "manual historical no-thinking chat",
+  "script_sha256": "e4e05a1967c6fd294afd7f340a30782a50766d8914dea6c1b2aa4c27fe61191b",
+  "mlx": "0.32.4",
+  "mlx_lm": "0.32.2",
+  "seconds": 33.49840541603044,
+  "peak_memory_gb": 3.789466308,
+  "answers_sha256": "ff5e5e26f3ae00b56f4f176acb846a2a1fac8b35a92ac1edb56b72e8da139f2b",
+  "count": 8
+}

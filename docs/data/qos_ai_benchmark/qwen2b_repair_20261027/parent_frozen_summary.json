@@ -1,0 +1,36 @@
+{
+  "answers_sha256": "47de79638d513faa4efff5fbd025ba819b011d29178a33b29415d13b189a74ff",
+  "generation_receipt": null,
+  "scorer_sha256": "2a70951c156578ff08c566ec92f28d79ecc46e1dedd4541dbcab7c946c09b3c4",
+  "solgen_compiler_sha256": "9987da491a791af853300f38ad3e73c52a243dbfd1422379a8dbe437369b776e",
+  "solgen_correct": 341,
+  "solgen_n": 360,
+  "program_correct": 111,
+  "pure_admission_declines": [],
+  "multi_correct": 18,
+  "multi_total": 18,
+  "bench": {
+    "checkpoint_sha256": null,
+    "no_repeat": 0,
+    "dev_lexical_90": 51,
+    "dev_outputs_33": 30,
+    "working_generation_24": 24,
+    "applied_repairs_48": 46,
+    "repair_plus_output_48": 35,
+    "no_change_plus_output_24": 19,
+    "gen_wording_48": 43,
+    "gen_inputs_48": 42,
+    "gen_combinations_48": 41,
+    "strict_trace_120": 108,
+    "finished": {
+      "development": 90,
+      "coding": 96,
+      "generalization": 144
+    },
+    "severe_loops": {
+      "development": 0,
+      "coding": 0,
+      "generalization": 0
+    }
+  }
+}

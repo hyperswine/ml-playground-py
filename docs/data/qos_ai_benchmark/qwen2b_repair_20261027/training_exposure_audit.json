@@ -1,0 +1,115 @@
+{
+  "method": "Reconstruct seeded first-epoch permutation; accept reconstruction only if target-token totals match every logged report.",
+  "all_logged_totals_match": true,
+  "checks": [
+    {
+      "iteration": 5,
+      "recorded": 114,
+      "reconstructed": 114
+    },
+    {
+      "iteration": 10,
+      "recorded": 399,
+      "reconstructed": 399
+    },
+    {
+      "iteration": 15,
+      "recorded": 665,
+      "reconstructed": 665
+    },
+    {
+      "iteration": 20,
+      "recorded": 848,
+      "reconstructed": 848
+    },
+    {
+      "iteration": 25,
+      "recorded": 1200,
+      "reconstructed": 1200
+    },
+    {
+      "iteration": 30,
+      "recorded": 1396,
+      "reconstructed": 1396
+    },
+    {
+      "iteration": 35,
+      "recorded": 1673,
+      "reconstructed": 1673
+    },
+    {
+      "iteration": 40,
+      "recorded": 2006,
+      "reconstructed": 2006
+    },
+    {
+      "iteration": 45,
+      "recorded": 2380,
+      "reconstructed": 2380
+    },
+    {
+      "iteration": 48,
+      "recorded": 2452,
+      "reconstructed": 2452
+    }
+  ],
+  "kind_counts": {
+    "output": 17,
+    "docs": 2,
+    "generate": 4,
+    "nochange": 12,
+    "repair": 13
+  },
+  "replay_rows": 16,
+  "ids": [
+    "replay/train-11532",
+    "docs-train-06",
+    "replay/train-39338",
+    "train-02-019",
+    "replay/train-39294",
+    "replay/train-45352",
+    "docs-train-10",
+    "train-02-046",
+    "train-03-016",
+    "replay/train-46528",
+    "train-05-039",
+    "train-00-014",
+    "train-04-040",
+    "replay/train-46619",
+    "train-00-024",
+    "replay/train-18355",
+    "train-04-002",
+    "replay/train-30699",
+    "train-04-019",
+    "replay/train-23609",
+    "train-05-016",
+    "train-05-001",
+    "train-01-045",
+    "train-02-029",
+    "train-04-000",
+    "replay/train-06731",
+    "train-00-031",
+    "train-02-022",
+    "replay/train-01308",
+    "train-02-044",
+    "train-02-014",
+    "train-03-018",
+    "replay/train-50932",
+    "train-01-002",
+    "replay/train-03048",
+    "train-00-008",
+    "replay/train-25819",
+    "train-03-010",
+    "train-02-039",
+    "train-02-018",
+    "train-03-034",
+    "train-03-026",
+    "train-01-038",
+    "train-01-005",
+    "train-00-037",
+    "replay/train-38357",
+    "replay/train-04050",
+    "train-03-027"
+  ],
+  "target_tokens": 2452
+}

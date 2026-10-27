@@ -1,7 +1,12 @@
 import unittest
+import json
+import tempfile
+from pathlib import Path
+from types import SimpleNamespace
+from unittest.mock import Mock, patch
 
 import qos_ai as ai
-from qos_ai_qwen_chat import CODE_REQUEST, chat_text, loop_start, looping
+from qos_ai_qwen_chat import CODE_REQUEST, chat_text, loop_start, looping, load, with_references
 
 
 class ChatFormatTest(unittest.TestCase):
@@ -14,6 +19,34 @@ class RetrievalScopeTest(unittest.TestCase):
   def test_program_requests_skip_references(self):
     self.assertTrue(CODE_REQUEST.search('Write a Sol program that prints 3.'))
     self.assertFalse(CODE_REQUEST.search('How do I read a command-line argument in a Sol script?'))
+
+
+class NewInterfaceTest(unittest.TestCase):
+  def test_mlx_adapter_is_forwarded(self):
+    backend=Mock(return_value=('model','tokenizer'))
+    with patch.dict('sys.modules',{'mlx_lm':SimpleNamespace(load=backend)}):
+      self.assertEqual(load('parent','auto',engine='mlx',adapter='candidate'),('model','tokenizer','mlx'))
+    backend.assert_called_once_with('parent',adapter_path='candidate')
+    with self.assertRaisesRegex(ValueError,'only with --engine mlx'):
+      load('parent','cpu',engine='torch',adapter='candidate')
+
+  def test_source_profile_routes_module_requests_and_preserves_plain_code(self):
+    class Tok:
+      def encode(self,text,**kwargs):return list(map(ord,text))
+      def decode(self,ids):return ''.join(map(chr,ids))
+    with tempfile.TemporaryDirectory() as directory:
+      corpus=Path(directory)/'corpus.jsonl'
+      corpus.write_text(json.dumps({'path':'fprisc/sol/lib/json.sol','authority':'implementation',
+        'text':'# File: fprisc/sol/lib/json.sol\nparse returns Result Json.'})+'\n')
+      args=SimpleNamespace(retrieve=1,corpus=corpus,embeddings=None,reference_tokens=2000,retrieval_profile='source')
+      qs=['Write an explanation of the sol/lib/json.sol API.','Write a Sol program that prints 3.']
+      prompts,sources=with_references(qs,Tok(),args)
+      self.assertIn('Source: <file path>',prompts[0])
+      self.assertEqual(prompts[0].count('# File:'),1)
+      self.assertEqual(sources[0],['fprisc/sol/lib/json.sol'])
+      self.assertEqual(prompts[1],qs[1])
+      args.retrieval_profile='legacy'
+      self.assertEqual(with_references(qs,Tok(),args)[0],qs)
 
 
 class LoopTest(unittest.TestCase):

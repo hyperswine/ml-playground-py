@@ -1,0 +1,6 @@
+Q: What does get do with duplicate object keys in sol/lib/json.sol?
+--- references: fprisc/sol/lib/json.sol, fprisc/sol/lib/json.sol, fprisc/sol/lib/json.sol ---
+--- model ---
+It returns the first occurrence. Source: fprisc/sol/lib/json.sol.
+--- executed (not executed) ---
+It returns the first occurrence. Source: fprisc/sol/lib/json.sol.
