@@ -1,0 +1,13 @@
+{
+ "note": "M1 Mac mini (16 GB), torch 2.13.0, transformers 5.18.0.dev0, round-4 Qwen3.5-0.8B in fp32 on MPS; scripts/mac/qwen_mps_*.py",
+ "qwen_mps_profile": {"prompt_tokens": 75, "long_prompt_tokens": 900, "prefill_s": 0.538, "prefill_long_s": 3.870,
+   "generate64_bs1_s": 10.75, "decode_ms_per_step_bs1": 159.5, "generate64_bs8_s": 22.83, "decode_ms_per_step_bs8": 348.3,
+   "hooked_generate32_by_module_s": {"Qwen3_5GatedDeltaNet": 4.205, "Qwen3_5MLP": 1.372, "Qwen3_5RMSNorm": 1.006, "Qwen3_5Attention": 0.557},
+   "calls": {"Qwen3_5RMSNorm": 1536, "Qwen3_5GatedDeltaNet": 576, "Qwen3_5MLP": 768, "Qwen3_5Attention": 192}},
+ "qwen_mps_gdn_decode33_s": {"GatedDeltaNet_total": 6.325, "torch_recurrent_gated_delta_rule": 1.331, "causal_conv1d_update": 0.826,
+   "in_proj_qkv": 0.684, "out_proj": 0.58, "in_proj_z": 0.451, "norm": 0.428, "in_proj_b": 0.299, "in_proj_a": 0.289,
+   "torch_chunk_gated_delta_rule": 0.233, "causal_conv1d_fn": 0.027, "record_past": false, "decode_path": "causal_conv1d_update + torch_recurrent_gated_delta_rule"},
+ "qwen_mps_ops": {"aten_ops_per_decode_step": 2829, "top_ops": {"mul": 414, "to": 401, "add": 275, "linear": 187, "transpose": 169,
+   "unsqueeze": 161, "reshape": 138, "select": 116, "rsqrt": 115, "slice": 98, "pow": 79, "mean": 79, "sum": 73, "type_as": 61, "silu": 60},
+   "generate64_wall_s": 7.6, "process_cpu_s": 2.76, "cpu_share_of_wall": 0.36}
+}

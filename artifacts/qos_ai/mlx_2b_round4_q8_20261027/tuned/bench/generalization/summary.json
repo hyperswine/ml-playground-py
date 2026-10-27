@@ -1,0 +1,14 @@
+{
+  "checkpoint_sha256": "mlx-2b_round4_q8",
+  "diagnostic_hash": "49dae923a5d69a252c786162b9048fd3cb3566abc47eb876d2fe80238a9aface",
+  "seed": 7,
+  "temperature": 0,
+  "top_k": 0,
+  "no_repeat": 0,
+  "max_new_tokens": 128,
+  "device": "cuda",
+  "count": 144,
+  "finished": 144,
+  "severe_loops": 0,
+  "mean_tokens": 0
+}

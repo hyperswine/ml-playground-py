@@ -1,11 +1,21 @@
-"""Use the fine-tuned Qwen3.5-0.8B Sol model locally (M1/M4 MPS or CPU): answer, execute, check, retrieve.
+"""Use the fine-tuned Qwen3.5 Sol models locally (M1/M4 MPS or CPU): answer, execute, check, retrieve.
 
-  ask        answer questions, then run the answer's Sol code (or the question's program) with `qos_ai_execute`
-  mps-check  re-answer a deterministic sample of the frozen prompts locally and compare with the GPU-pod answers
-  rag-loss   answer-only perplexity on held-out dev questions with 0, 1 or 3 BM25-retrieved chunks in the user turn,
-             using Qwen's longer context (references trimmed to --reference-tokens)
+  ask          answer questions, then run the answer's Sol code (or the question's program) with `qos_ai_execute`
+  answer       greedy answers for a prompt file, optionally with retrieved references
+  mps-check    re-answer a deterministic sample of the frozen prompts locally and compare with the GPU-pod answers
+  rag-loss     answer-only perplexity on held-out dev questions with 0, 1 or 3 BM25-retrieved chunks in the user turn,
+               using Qwen's longer context (references trimmed to --reference-tokens)
+  mlx-convert  convert a fine-tuned checkpoint to MLX (bf16, or 8-bit with --q-bits 8)
+
+Engines (`--engine`): `torch` (default; PyTorch on MPS/CPU) or `mlx` (Apple MLX, `--model` is an MLX directory from
+`mlx-convert`). On Apple GPUs PyTorch runs Qwen3.5's linear-attention layers as ~2,800 small ops per generated token
+(no Triton, so no fused kernels) and is launch-bound; MLX uses Metal kernels for them and is about 5x faster in bf16
+and 9x faster in 8-bit, with the same evaluation scores (docs/2026-10-27-MAC-INFERENCE.md). MLX is macOS-only and not
+in the lockfile: install `mlx-lm==0.32.2` in a separate environment to use it.
 
   python qos_ai_qwen_chat.py ask --model DIR --fpr FPR --retrieve 3 --question "..."
+  python qos_ai_qwen_chat.py mlx-convert --model DIR --output MLX_DIR --q-bits 8
+  python qos_ai_qwen_chat.py ask --engine mlx --model MLX_DIR --fpr FPR --question "..."
   python qos_ai_qwen_chat.py mps-check --model DIR --prompts prompts.jsonl --reference tuned_answers.jsonl --n 120
   python qos_ai_qwen_chat.py rag-loss --model DIR --n 300
 """
@@ -26,7 +36,15 @@ def chat_text(question, answer=None):
   return text if answer is None else text + f'{answer}<|im_end|>'
 
 
-def load(model, device_name, dtype_name='float32'):
+TOKENIZER_FILES = ('tokenizer.json', 'tokenizer_config.json', 'chat_template.jinja', 'vocab.json', 'merges.txt')
+
+
+def load(model, device_name, dtype_name='float32', engine='torch'):
+  """(model, tokenizer, device); with engine 'mlx' the device is the string 'mlx'."""
+  if engine == 'mlx':
+    from mlx_lm import load as mlx_load
+    m, tok = mlx_load(str(model))
+    return m, tok, 'mlx'
   import torch
   from transformers import AutoTokenizer, Qwen3_5ForConditionalGeneration
   device = torch.device(device_name if device_name != 'auto' else ('mps' if torch.backends.mps.is_available() else 'cpu'))
@@ -64,9 +82,39 @@ def loop_stopper(width, every=8, window=256):
   return LoopStop()
 
 
+def looping(row, every=8):
+  """The tail is one block of 4..64 tokens repeated four times (the early-stop rule of `loop_stopper`)."""
+  if len(row) % every: return False
+  for p in range(4, min(64, len(row) // 4) + 1):
+    if row[-p:] == row[-2 * p:-p] == row[-3 * p:-2 * p] == row[-4 * p:-3 * p]: return True
+  return False
+
+
+def generate_mlx(m, tok, questions, budget, k=1, temperature=None, stop_loops=False):
+  """MLX counterpart of `generate`: one sequence at a time (MLX decoding is memory-bandwidth bound already)."""
+  from mlx_lm import stream_generate
+  from mlx_lm.sample_utils import make_sampler
+  stop = {tok.convert_tokens_to_ids('<|im_end|>'), tok.convert_tokens_to_ids('<|endoftext|>')}
+  sampler = make_sampler(temp=temperature or 0.0, top_k=40 if temperature else 0)
+  out = []
+  for q in questions:
+    prompt = tok.encode(chat_text(q), add_special_tokens=False)
+    for _ in range(k):
+      row, ended = [], False
+      for resp in stream_generate(m, tok, prompt=prompt, max_tokens=budget, sampler=sampler):
+        if resp.token in stop: ended = True; break
+        row.append(resp.token)
+        if stop_loops and looping(row): break
+      cut = loop_start(row) if stop_loops and not ended else None
+      text = tok.decode(row if cut is None else row[:cut]).strip()
+      out.append(text + ('\n[stopped: repetition]' if cut is not None else ''))
+  return out
+
+
 def generate(m, tok, device, questions, budget, batch_size=8, k=1, temperature=None, stop_loops=False):
   """Greedy (temperature None) or sampled answers, k per question in question order. With stop_loops, a
   degenerate repetition is stopped early and cut after its first copy, marked '[stopped: repetition]'."""
+  if device == 'mlx': return generate_mlx(m, tok, questions, budget, k, temperature, stop_loops)
   import torch
   from transformers import StoppingCriteriaList
   stop = [tok.convert_tokens_to_ids('<|im_end|>'), tok.convert_tokens_to_ids('<|endoftext|>')]
@@ -116,7 +164,7 @@ def with_references(questions, tok, args):
 def answer(args):
   """Greedy answers for a prompt file (qos qwen_sft prompts format), optionally with references, as jsonl."""
   rows = [r for r in map(json.loads, open(args.prompts)) if not args.suites or r['suite'] in args.suites]
-  m, tok, device = load(args.model, args.device, args.dtype)
+  m, tok, device = load(args.model, args.device, args.dtype, args.engine)
   prompts, sources = with_references([r['question'] for r in rows], tok, args)
   with open(args.output, 'w') as f:
     for budget in sorted({r['max_new_tokens'] for r in rows}):
@@ -132,7 +180,7 @@ def ask(args):
   program or expression are asked as written: on the 2026-10-22 demo, references turned a correct program into a
   string-interpolation one."""
   from qos_ai_execute import augment
-  m, tok, device = load(args.model, args.device, args.dtype)
+  m, tok, device = load(args.model, args.device, args.dtype, args.engine)
   questions = [args.question] if args.question else [q.strip() for q in Path(args.questions).read_text().split('\n---\n') if q.strip()]
   prompts, sources = with_references(questions, tok, args)
   for q, src, a in zip(questions, sources, generate(m, tok, device, prompts, args.max_new_tokens, stop_loops=True)):
@@ -206,6 +254,25 @@ def rag_loss(args):
   Path(args.output).write_text(json.dumps(report, indent=2) + '\n'); print(json.dumps(report, indent=2))
 
 
+def mlx_convert(args):
+  """Fine-tuned checkpoint (bf16 safetensors + config) -> MLX directory, adding the base model's tokenizer files
+  (the fine-tuned runs save weights only; the tokenizer is unchanged)."""
+  import shutil
+  import tempfile
+  from huggingface_hub import snapshot_download
+  from mlx_lm import convert
+  tokenizer = Path(snapshot_download(BASE, allow_patterns=list(TOKENIZER_FILES)))
+  with tempfile.TemporaryDirectory() as d:
+    stage = Path(d)
+    for f in Path(args.model).iterdir():
+      if f.suffix in ('.json', '.safetensors'): (stage / f.name).symlink_to(f.resolve())
+    for name in TOKENIZER_FILES:
+      if (tokenizer / name).exists(): shutil.copy(tokenizer / name, stage / name)
+    convert(hf_path=str(stage), mlx_path=str(args.output), dtype='bfloat16', quantize=bool(args.q_bits),
+            q_bits=args.q_bits or None, q_group_size=64 if args.q_bits else None)
+  print(json.dumps({'output': str(args.output), 'q_bits': args.q_bits or 16}))
+
+
 if __name__ == '__main__':
   p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
   s = p.add_subparsers(dest='command', required=True)
@@ -214,6 +281,7 @@ if __name__ == '__main__':
     c.add_argument('--device', default='auto'); c.add_argument('--dtype', default='float32', choices=['float32', 'bfloat16', 'float16'])
   for name in ('ask', 'answer'):
     a = s.choices[name]
+    a.add_argument('--engine', choices=['torch', 'mlx'], default='torch', help='mlx: --model is an mlx-convert directory')
     a.add_argument('--retrieve', type=int, default=0, help='top-K documentation chunks for questions without code')
     a.add_argument('--reference-tokens', type=int, default=1500); a.add_argument('--corpus', default='qos_ai/corpus.jsonl')
     a.add_argument('--embeddings', help='hybrid BM25 + dense retrieval (qos hybrid embed); BM25 only when omitted')
@@ -228,5 +296,7 @@ if __name__ == '__main__':
   r.add_argument('--splits', default='qos_ai_benchmark/evidence/generalization_20261019/curricula/generalization_20261019/splits.json')
   r.add_argument('--output', required=True)
   r.add_argument('--embeddings', help='hybrid BM25 + dense retrieval (qos hybrid embed); BM25 only when omitted')
+  x = s.add_parser('mlx-convert'); x.add_argument('--model', required=True); x.add_argument('--output', required=True)
+  x.add_argument('--q-bits', type=int, choices=[4, 8], help='quantize (8-bit kept every evaluation score); bf16 when omitted')
   args = p.parse_args()
-  {'ask': ask, 'answer': answer, 'mps-check': mps_check, 'rag-loss': rag_loss}[args.command](args)
+  {'ask': ask, 'answer': answer, 'mps-check': mps_check, 'rag-loss': rag_loss, 'mlx-convert': mlx_convert}[args.command](args)

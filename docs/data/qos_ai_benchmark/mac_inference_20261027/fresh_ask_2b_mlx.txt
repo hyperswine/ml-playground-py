@@ -1,0 +1,109 @@
+Q: What does this Sol program print?
+```sol
+xs = [3, 8, 12, 5].
+> print (str (List.sum (List.map (fn x -> x * 3) (List.filter (fn x -> x > 4) xs)))).
+```
+--- model ---
+Steps: filter=[8, 12, 5]; map=[24, 36, 15]; sum=75.
+It prints 75.
+--- executed (claim confirmed) ---
+Steps: filter=[8, 12, 5]; map=[24, 36, 15]; sum=75.
+It prints 75.
+
+Q: What will this Sol program output?
+```sol
+> print (str (List.rev (List.take 3 (List.range 4 10)))).
+```
+--- model ---
+Steps: range=[4, 5, 6, 7, 8, 9, 10]; take=[4, 5, 6]; rev=[6, 5, 4].
+It prints [6, 5, 4].
+--- executed (claim confirmed) ---
+Steps: range=[4, 5, 6, 7, 8, 9, 10]; take=[4, 5, 6]; rev=[6, 5, 4].
+It prints [6, 5, 4].
+
+Q: Write a Sol program that prints the larger of the sum of [4, 9, 1] and the sum of [7, 2, 6].
+--- model ---
+```sol
+> print (str (Numeric.max (List.sum [4, 9, 1]) (List.sum [7, 2, 6]))).
+```
+Steps: sum=14; sum2=15; max=15.
+It prints 15.
+--- executed (claim confirmed) ---
+```sol
+> print (str (Numeric.max (List.sum [4, 9, 1]) (List.sum [7, 2, 6]))).
+```
+Steps: sum=14; sum2=15; max=15.
+It prints 15.
+
+Q: Write a Sol program that prints the list [2, 4, 6, 8, 10] with every element squared.
+--- model ---
+```sol
+> print (str (List.map (fn x -> x * x) [2, 4, 6, 8, 10])).
+```
+It prints [4, 16, 36, 64, 100].
+--- executed (claim confirmed) ---
+```sol
+> print (str (List.map (fn x -> x * x) [2, 4, 6, 8, 10])).
+```
+It prints [4, 16, 36, 64, 100].
+
+Q: This Sol program should print the sum of the elements of [4, 15, 22, 8] that are greater than 10, but it prints 12. Fix it.
+```sol
+> print (str (List.sum (List.filter (fn x -> x < 10) [4, 15, 22, 8]))).
+```
+--- model ---
+```sol
+> print (str (List.sum (List.filter (fn x -> x > 10) [4, 15, 22, 8]))).
+```
+Steps: filter=[15, 22]; sum=37.
+It prints 37.
+--- executed (claim confirmed) ---
+```sol
+> print (str (List.sum (List.filter (fn x -> x > 10) [4, 15, 22, 8]))).
+```
+Steps: filter=[15, 22]; sum=37.
+It prints 37.
+
+Q: Write a Sol expression over xs, k and limit: when k is negative, the sum of xs; otherwise the larger of limit and the sum of xs. Return the expression in a sol code block.
+--- model ---
+```sol
+if k < 0 then List.sum xs else Numeric.max limit (List.sum xs)
+```
+For xs = [48, 29, 40, 29, 29], k = 0 and limit = 29 it evaluates to 165.
+--- executed (not executed: name k not admitted) ---
+```sol
+if k < 0 then List.sum xs else Numeric.max limit (List.sum xs)
+```
+For xs = [48, 29, 40, 29, 29], k = 0 and limit = 29 it evaluates to 165.
+
+Q: What does this Sol program print?
+```sol
+words = ["sol", "risc", "qos"].
+> print (str (List.map (fn w -> Str.upper w) (List.rev words))).
+```
+--- model ---
+Steps: rev=[qos, risc, sol]; map=[QOS, RISC, SOL].
+It prints [QOS, RISC, SOL].
+--- executed (claim confirmed) ---
+Steps: rev=[qos, risc, sol]; map=[QOS, RISC, SOL].
+It prints [QOS, RISC, SOL].
+
+Q: What does the std/json module in the Sol standard library provide?
+--- references: fprisc/docs/PRELIM_BASE_LIBRARY_DESIGN.md, fprisc/docs/STD-PLAN.md, fprisc/tests/check_std.py ---
+--- model ---
+The std/json module provides a JSON parser and serializer for the Sol scripting profile. It is designed to handle text data structures, including arrays, objects, and primitive values, allowing developers to convert between JSON and Sol data types. For example, a Sol script can parse a JSON object into a Sol record and vice versa:
+
+```sol
+import std/json;
+
+let j = json.parse("{" + "name": "Alice", "age": 30 + 20 + 1
+[stopped: repetition]
+--- executed (no single code block) ---
+The std/json module provides a JSON parser and serializer for the Sol scripting profile. It is designed to handle text data structures, including arrays, objects, and primitive values, allowing developers to convert between JSON and Sol data types. For example, a Sol script can parse a JSON object into a Sol record and vice versa:
+
+```sol
+import std/json;
+
+let j = json.parse("{" + "name": "Alice", "age": 30 + 20 + 1
+[stopped: repetition]
+
