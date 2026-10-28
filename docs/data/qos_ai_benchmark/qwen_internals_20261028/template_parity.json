@@ -1,0 +1,15 @@
+{
+  "model": "/Users/jq/qos_ai_eval/experiments/mlx_20261027/mlx_2b_round4_q8",
+  "sets": {
+    "fresh_development": {
+      "n": 48,
+      "mismatch_ids": [],
+      "rows_sha256": "fe5c351615b3820d70f73781a2e90b5b0bc1798f8a849e814dab419b34a6f0ef"
+    },
+    "selected_training": {
+      "n": 120,
+      "mismatch_ids": [],
+      "rows_sha256": "bea408e05d9a4a93033172ecf9afcb8fbcc80fcb13ee533492a31a18c28156b7"
+    }
+  }
+}

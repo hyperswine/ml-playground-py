@@ -1,0 +1,29 @@
+{
+  "policy": "Exploratory four-question development probe, not promotion evidence. Questions fixed before generation. Greedy across all modes; no final holdout.",
+  "rows_sha256": "fe5c351615b3820d70f73781a2e90b5b0bc1798f8a849e814dab419b34a6f0ef",
+  "model": "../qwen2b_repair_20261027/base_q8",
+  "config_sha256": "562a3d5264ec78616357528b4f8095de0d398ce0d25d462df978627c9de75bb0",
+  "conditions": [
+    {
+      "name": "historical_budget",
+      "thinking": false,
+      "budget": "original per-question"
+    },
+    {
+      "name": "longer_no_thinking",
+      "thinking": false,
+      "budget": 512
+    },
+    {
+      "name": "thinking",
+      "thinking": true,
+      "budget": 512
+    }
+  ],
+  "selected": [
+    "dev-07-002",
+    "dev-08-006",
+    "dev-07-003",
+    "dev-09-000"
+  ]
+}

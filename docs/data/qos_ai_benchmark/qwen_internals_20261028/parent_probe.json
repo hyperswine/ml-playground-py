@@ -1,0 +1,176 @@
+{
+  "policy": "Exploratory four-question development probe, not promotion evidence. Questions fixed before generation. Greedy across all modes; no final holdout.",
+  "rows_sha256": "fe5c351615b3820d70f73781a2e90b5b0bc1798f8a849e814dab419b34a6f0ef",
+  "model": "../mlx_20261027/mlx_2b_round4_q8",
+  "config_sha256": "ddfcb7c9c8e637f1bee327053edf61575f754fce61142c5125a3b65bb3acce8a",
+  "conditions": [
+    {
+      "name": "historical_budget",
+      "thinking": false,
+      "budget": "original per-question"
+    },
+    {
+      "name": "longer_no_thinking",
+      "thinking": false,
+      "budget": 512
+    },
+    {
+      "name": "thinking",
+      "thinking": true,
+      "budget": 512
+    }
+  ],
+  "selected": [
+    "dev-07-002",
+    "dev-08-006",
+    "dev-07-003",
+    "dev-09-000"
+  ],
+  "answers": [
+    {
+      "id": "dev-07-002",
+      "condition": "historical_budget",
+      "thinking": false,
+      "max_new_tokens": 96,
+      "finished": true,
+      "generated_tokens": 64,
+      "thinking_closed": false,
+      "answer": "Steps: filter=[5, 6, 4, 8, 5]; map=[10, 12, 16, 32, 20]; take=[10, 12, 16]; sum=48.\nIt prints 48.",
+      "raw": "Steps: filter=[5, 6, 4, 8, 5]; map=[10, 12, 16, 32, 20]; take=[10, 12, 16]; sum=48.\nIt prints 48.",
+      "seconds": 2.7231654170900583
+    },
+    {
+      "id": "dev-08-006",
+      "condition": "historical_budget",
+      "thinking": false,
+      "max_new_tokens": 96,
+      "finished": true,
+      "generated_tokens": 80,
+      "thinking_closed": false,
+      "answer": "Steps: sum=1; cmp=False; map=[4, 10, -14, 10, 6, 13, 3, 6]; sum2=44; abs=44; filter=[0, -12, -2]; sum3=-14; max=-4; if=-4.\nIt prints -4.",
+      "raw": "Steps: sum=1; cmp=False; map=[4, 10, -14, 10, 6, 13, 3, 6]; sum2=44; abs=44; filter=[0, -12, -2]; sum3=-14; max=-4; if=-4.\nIt prints -4.",
+      "seconds": 3.261347958003171
+    },
+    {
+      "id": "dev-07-003",
+      "condition": "historical_budget",
+      "thinking": false,
+      "max_new_tokens": 320,
+      "finished": true,
+      "generated_tokens": 68,
+      "thinking_closed": false,
+      "answer": "```sol\nxs = [-11]; k = -1; limit = -4.\nresult = List.sum (List.take 3 (List.map (fn x -> x * k) (List.filter (fn x -> x >= limit) xs))).\n> print (str result).\n```\nIt prints 1.",
+      "raw": "```sol\nxs = [-11]; k = -1; limit = -4.\nresult = List.sum (List.take 3 (List.map (fn x -> x * k) (List.filter (fn x -> x >= limit) xs))).\n> print (str result).\n```\nIt prints 1.",
+      "seconds": 2.7715173329925165
+    },
+    {
+      "id": "dev-09-000",
+      "condition": "historical_budget",
+      "thinking": false,
+      "max_new_tokens": 320,
+      "finished": true,
+      "generated_tokens": 66,
+      "thinking_closed": false,
+      "answer": "```sol\nxs = [3].\nk = 2.\nlimit = -4.\nanswer = List.sum (List.map (fn x -> x + limit) (List.drop 1 (List.take 4 (List.rev xs)))).\n> print (str answer).\n```\nNo change needed.",
+      "raw": "```sol\nxs = [3].\nk = 2.\nlimit = -4.\nanswer = List.sum (List.map (fn x -> x + limit) (List.drop 1 (List.take 4 (List.rev xs)))).\n> print (str answer).\n```\nNo change needed.",
+      "seconds": 2.8750035000266507
+    },
+    {
+      "id": "dev-07-002",
+      "condition": "longer_no_thinking",
+      "thinking": false,
+      "max_new_tokens": 512,
+      "finished": true,
+      "generated_tokens": 64,
+      "thinking_closed": false,
+      "answer": "Steps: filter=[5, 6, 4, 8, 5]; map=[10, 12, 16, 32, 20]; take=[10, 12, 16]; sum=48.\nIt prints 48.",
+      "raw": "Steps: filter=[5, 6, 4, 8, 5]; map=[10, 12, 16, 32, 20]; take=[10, 12, 16]; sum=48.\nIt prints 48.",
+      "seconds": 2.6873008750844747
+    },
+    {
+      "id": "dev-08-006",
+      "condition": "longer_no_thinking",
+      "thinking": false,
+      "max_new_tokens": 512,
+      "finished": true,
+      "generated_tokens": 80,
+      "thinking_closed": false,
+      "answer": "Steps: sum=1; cmp=False; map=[4, 10, -14, 10, 6, 13, 3, 6]; sum2=44; abs=44; filter=[0, -12, -2]; sum3=-14; max=-4; if=-4.\nIt prints -4.",
+      "raw": "Steps: sum=1; cmp=False; map=[4, 10, -14, 10, 6, 13, 3, 6]; sum2=44; abs=44; filter=[0, -12, -2]; sum3=-14; max=-4; if=-4.\nIt prints -4.",
+      "seconds": 3.263154291897081
+    },
+    {
+      "id": "dev-07-003",
+      "condition": "longer_no_thinking",
+      "thinking": false,
+      "max_new_tokens": 512,
+      "finished": true,
+      "generated_tokens": 68,
+      "thinking_closed": false,
+      "answer": "```sol\nxs = [-11]; k = -1; limit = -4.\nresult = List.sum (List.take 3 (List.map (fn x -> x * k) (List.filter (fn x -> x >= limit) xs))).\n> print (str result).\n```\nIt prints 1.",
+      "raw": "```sol\nxs = [-11]; k = -1; limit = -4.\nresult = List.sum (List.take 3 (List.map (fn x -> x * k) (List.filter (fn x -> x >= limit) xs))).\n> print (str result).\n```\nIt prints 1.",
+      "seconds": 2.7682801670162007
+    },
+    {
+      "id": "dev-09-000",
+      "condition": "longer_no_thinking",
+      "thinking": false,
+      "max_new_tokens": 512,
+      "finished": true,
+      "generated_tokens": 66,
+      "thinking_closed": false,
+      "answer": "```sol\nxs = [3].\nk = 2.\nlimit = -4.\nanswer = List.sum (List.map (fn x -> x + limit) (List.drop 1 (List.take 4 (List.rev xs)))).\n> print (str answer).\n```\nNo change needed.",
+      "raw": "```sol\nxs = [3].\nk = 2.\nlimit = -4.\nanswer = List.sum (List.map (fn x -> x + limit) (List.drop 1 (List.take 4 (List.rev xs)))).\n> print (str answer).\n```\nNo change needed.",
+      "seconds": 2.8667724579572678
+    },
+    {
+      "id": "dev-07-002",
+      "condition": "thinking",
+      "thinking": true,
+      "max_new_tokens": 512,
+      "finished": true,
+      "generated_tokens": 64,
+      "thinking_closed": false,
+      "answer": "",
+      "raw": "Steps: filter=[5, 6, 4, 8, 5]; map=[10, 12, 16, 32, 20]; take=[10, 12, 16]; sum=38.\nIt prints 38.",
+      "seconds": 2.674172541941516
+    },
+    {
+      "id": "dev-08-006",
+      "condition": "thinking",
+      "thinking": true,
+      "max_new_tokens": 512,
+      "finished": true,
+      "generated_tokens": 80,
+      "thinking_closed": false,
+      "answer": "",
+      "raw": "Steps: sum=1; cmp=False; map=[4, 10, -14, 10, 6, 13, 3, 6]; sum2=44; abs=44; filter=[0, -12, -2]; sum3=-14; max=-4; if=-4.\nIt prints -4.",
+      "seconds": 3.264025333104655
+    },
+    {
+      "id": "dev-07-003",
+      "condition": "thinking",
+      "thinking": true,
+      "max_new_tokens": 512,
+      "finished": true,
+      "generated_tokens": 51,
+      "thinking_closed": false,
+      "answer": "",
+      "raw": "```sol\nresult = List.sum (List.take 3 (List.map (fn x -> x * k) (List.filter (fn x -> x >= limit) xs))).\n> print (str result).\n```\nIt prints 0.",
+      "seconds": 2.1473176670260727
+    },
+    {
+      "id": "dev-09-000",
+      "condition": "thinking",
+      "thinking": true,
+      "max_new_tokens": 512,
+      "finished": true,
+      "generated_tokens": 4,
+      "thinking_closed": false,
+      "answer": "",
+      "raw": "No change needed.",
+      "seconds": 0.6164849590277299
+    }
+  ],
+  "seconds": 31.958136665984057
+}

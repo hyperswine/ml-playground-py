@@ -1,0 +1,489 @@
+{
+  "model": "/Users/jq/qos_ai_eval/experiments/mlx_20261027/mlx_2b_round4_q8",
+  "config": {
+    "architectures": [
+      "Qwen3_5ForConditionalGeneration"
+    ],
+    "dtype": "bfloat16",
+    "eos_token_id": 248044,
+    "image_token_id": 248056,
+    "model_type": "qwen3_5",
+    "quantization": {
+      "group_size": 64,
+      "bits": 8,
+      "mode": "affine"
+    },
+    "quantization_config": {
+      "group_size": 64,
+      "bits": 8,
+      "mode": "affine"
+    },
+    "text_config": {
+      "attention_bias": false,
+      "attention_dropout": 0.0,
+      "attn_output_gate": true,
+      "bos_token_id": null,
+      "dtype": "float32",
+      "eos_token_id": 248044,
+      "full_attention_interval": 4,
+      "head_dim": 256,
+      "hidden_act": "silu",
+      "hidden_size": 2048,
+      "initializer_range": 0.02,
+      "intermediate_size": 6144,
+      "layer_types": [
+        "linear_attention",
+        "linear_attention",
+        "linear_attention",
+        "full_attention",
+        "linear_attention",
+        "linear_attention",
+        "linear_attention",
+        "full_attention",
+        "linear_attention",
+        "linear_attention",
+        "linear_attention",
+        "full_attention",
+        "linear_attention",
+        "linear_attention",
+        "linear_attention",
+        "full_attention",
+        "linear_attention",
+        "linear_attention",
+        "linear_attention",
+        "full_attention",
+        "linear_attention",
+        "linear_attention",
+        "linear_attention",
+        "full_attention"
+      ],
+      "linear_conv_kernel_dim": 4,
+      "linear_key_head_dim": 128,
+      "linear_num_key_heads": 16,
+      "linear_num_value_heads": 16,
+      "linear_value_head_dim": 128,
+      "mamba_ssm_dtype": "float32",
+      "max_position_embeddings": 262144,
+      "mlp_only_layers": [],
+      "model_type": "qwen3_5_text",
+      "mtp_num_hidden_layers": 1,
+      "mtp_use_dedicated_embeddings": false,
+      "num_attention_heads": 8,
+      "num_hidden_layers": 24,
+      "num_key_value_heads": 2,
+      "pad_token_id": null,
+      "partial_rotary_factor": 0.25,
+      "rms_norm_eps": 1e-06,
+      "rope_parameters": {
+        "mrope_interleaved": true,
+        "mrope_section": [
+          11,
+          11,
+          10
+        ],
+        "partial_rotary_factor": 0.25,
+        "rope_theta": 10000000,
+        "type": "default"
+      },
+      "tie_word_embeddings": true,
+      "use_cache": true,
+      "vocab_size": 248320
+    },
+    "tie_word_embeddings": true,
+    "transformers_version": "5.18.0.dev0",
+    "use_cache": true,
+    "video_token_id": 248057,
+    "vision_end_token_id": 248054,
+    "vision_start_token_id": 248053
+  },
+  "config_sha256": "ddfcb7c9c8e637f1bee327053edf61575f754fce61142c5125a3b65bb3acce8a",
+  "logical_text_parameters": 1881824512,
+  "parameter_breakdown": {
+    "embedding": 508559360,
+    "final_norm": 2048,
+    "layer_00": {
+      "kind": "linear_attention",
+      "parameters": 58814592
+    },
+    "layer_01": {
+      "kind": "linear_attention",
+      "parameters": 58814592
+    },
+    "layer_02": {
+      "kind": "linear_attention",
+      "parameters": 58814592
+    },
+    "layer_03": {
+      "kind": "full_attention",
+      "parameters": 52433408
+    },
+    "layer_04": {
+      "kind": "linear_attention",
+      "parameters": 58814592
+    },
+    "layer_05": {
+      "kind": "linear_attention",
+      "parameters": 58814592
+    },
+    "layer_06": {
+      "kind": "linear_attention",
+      "parameters": 58814592
+    },
+    "layer_07": {
+      "kind": "full_attention",
+      "parameters": 52433408
+    },
+    "layer_08": {
+      "kind": "linear_attention",
+      "parameters": 58814592
+    },
+    "layer_09": {
+      "kind": "linear_attention",
+      "parameters": 58814592
+    },
+    "layer_10": {
+      "kind": "linear_attention",
+      "parameters": 58814592
+    },
+    "layer_11": {
+      "kind": "full_attention",
+      "parameters": 52433408
+    },
+    "layer_12": {
+      "kind": "linear_attention",
+      "parameters": 58814592
+    },
+    "layer_13": {
+      "kind": "linear_attention",
+      "parameters": 58814592
+    },
+    "layer_14": {
+      "kind": "linear_attention",
+      "parameters": 58814592
+    },
+    "layer_15": {
+      "kind": "full_attention",
+      "parameters": 52433408
+    },
+    "layer_16": {
+      "kind": "linear_attention",
+      "parameters": 58814592
+    },
+    "layer_17": {
+      "kind": "linear_attention",
+      "parameters": 58814592
+    },
+    "layer_18": {
+      "kind": "linear_attention",
+      "parameters": 58814592
+    },
+    "layer_19": {
+      "kind": "full_attention",
+      "parameters": 52433408
+    },
+    "layer_20": {
+      "kind": "linear_attention",
+      "parameters": 58814592
+    },
+    "layer_21": {
+      "kind": "linear_attention",
+      "parameters": 58814592
+    },
+    "layer_22": {
+      "kind": "linear_attention",
+      "parameters": 58814592
+    },
+    "layer_23": {
+      "kind": "full_attention",
+      "parameters": 52433408
+    }
+  },
+  "adapter": "/Users/jq/qos_ai_eval/experiments/qwen2b_controlled_20261028/adapter_mixed/adapters.safetensors",
+  "adapter_parameters": 1401600,
+  "adapter_by_layer": {
+    "20": 360704,
+    "21": 360704,
+    "22": 360704,
+    "23": 319488
+  },
+  "adapter_by_module": {
+    "linear_attn.in_proj_a": 49536,
+    "linear_attn.in_proj_b": 49536,
+    "linear_attn.in_proj_qkv": 196608,
+    "linear_attn.in_proj_z": 98304,
+    "linear_attn.out_proj": 98304,
+    "mlp.down_proj": 262144,
+    "mlp.gate_proj": 262144,
+    "mlp.up_proj": 262144,
+    "self_attn.k_proj": 20480,
+    "self_attn.o_proj": 32768,
+    "self_attn.q_proj": 49152,
+    "self_attn.v_proj": 20480
+  },
+  "adapter_shapes": {
+    "language_model.model.layers.20.linear_attn.in_proj_a.lora_a": [
+      2048,
+      8
+    ],
+    "language_model.model.layers.20.linear_attn.in_proj_a.lora_b": [
+      8,
+      16
+    ],
+    "language_model.model.layers.20.linear_attn.in_proj_b.lora_a": [
+      2048,
+      8
+    ],
+    "language_model.model.layers.20.linear_attn.in_proj_b.lora_b": [
+      8,
+      16
+    ],
+    "language_model.model.layers.20.linear_attn.in_proj_qkv.lora_a": [
+      2048,
+      8
+    ],
+    "language_model.model.layers.20.linear_attn.in_proj_qkv.lora_b": [
+      8,
+      6144
+    ],
+    "language_model.model.layers.20.linear_attn.in_proj_z.lora_a": [
+      2048,
+      8
+    ],
+    "language_model.model.layers.20.linear_attn.in_proj_z.lora_b": [
+      8,
+      2048
+    ],
+    "language_model.model.layers.20.linear_attn.out_proj.lora_a": [
+      2048,
+      8
+    ],
+    "language_model.model.layers.20.linear_attn.out_proj.lora_b": [
+      8,
+      2048
+    ],
+    "language_model.model.layers.20.mlp.down_proj.lora_a": [
+      6144,
+      8
+    ],
+    "language_model.model.layers.20.mlp.down_proj.lora_b": [
+      8,
+      2048
+    ],
+    "language_model.model.layers.20.mlp.gate_proj.lora_a": [
+      2048,
+      8
+    ],
+    "language_model.model.layers.20.mlp.gate_proj.lora_b": [
+      8,
+      6144
+    ],
+    "language_model.model.layers.20.mlp.up_proj.lora_a": [
+      2048,
+      8
+    ],
+    "language_model.model.layers.20.mlp.up_proj.lora_b": [
+      8,
+      6144
+    ],
+    "language_model.model.layers.21.linear_attn.in_proj_a.lora_a": [
+      2048,
+      8
+    ],
+    "language_model.model.layers.21.linear_attn.in_proj_a.lora_b": [
+      8,
+      16
+    ],
+    "language_model.model.layers.21.linear_attn.in_proj_b.lora_a": [
+      2048,
+      8
+    ],
+    "language_model.model.layers.21.linear_attn.in_proj_b.lora_b": [
+      8,
+      16
+    ],
+    "language_model.model.layers.21.linear_attn.in_proj_qkv.lora_a": [
+      2048,
+      8
+    ],
+    "language_model.model.layers.21.linear_attn.in_proj_qkv.lora_b": [
+      8,
+      6144
+    ],
+    "language_model.model.layers.21.linear_attn.in_proj_z.lora_a": [
+      2048,
+      8
+    ],
+    "language_model.model.layers.21.linear_attn.in_proj_z.lora_b": [
+      8,
+      2048
+    ],
+    "language_model.model.layers.21.linear_attn.out_proj.lora_a": [
+      2048,
+      8
+    ],
+    "language_model.model.layers.21.linear_attn.out_proj.lora_b": [
+      8,
+      2048
+    ],
+    "language_model.model.layers.21.mlp.down_proj.lora_a": [
+      6144,
+      8
+    ],
+    "language_model.model.layers.21.mlp.down_proj.lora_b": [
+      8,
+      2048
+    ],
+    "language_model.model.layers.21.mlp.gate_proj.lora_a": [
+      2048,
+      8
+    ],
+    "language_model.model.layers.21.mlp.gate_proj.lora_b": [
+      8,
+      6144
+    ],
+    "language_model.model.layers.21.mlp.up_proj.lora_a": [
+      2048,
+      8
+    ],
+    "language_model.model.layers.21.mlp.up_proj.lora_b": [
+      8,
+      6144
+    ],
+    "language_model.model.layers.22.linear_attn.in_proj_a.lora_a": [
+      2048,
+      8
+    ],
+    "language_model.model.layers.22.linear_attn.in_proj_a.lora_b": [
+      8,
+      16
+    ],
+    "language_model.model.layers.22.linear_attn.in_proj_b.lora_a": [
+      2048,
+      8
+    ],
+    "language_model.model.layers.22.linear_attn.in_proj_b.lora_b": [
+      8,
+      16
+    ],
+    "language_model.model.layers.22.linear_attn.in_proj_qkv.lora_a": [
+      2048,
+      8
+    ],
+    "language_model.model.layers.22.linear_attn.in_proj_qkv.lora_b": [
+      8,
+      6144
+    ],
+    "language_model.model.layers.22.linear_attn.in_proj_z.lora_a": [
+      2048,
+      8
+    ],
+    "language_model.model.layers.22.linear_attn.in_proj_z.lora_b": [
+      8,
+      2048
+    ],
+    "language_model.model.layers.22.linear_attn.out_proj.lora_a": [
+      2048,
+      8
+    ],
+    "language_model.model.layers.22.linear_attn.out_proj.lora_b": [
+      8,
+      2048
+    ],
+    "language_model.model.layers.22.mlp.down_proj.lora_a": [
+      6144,
+      8
+    ],
+    "language_model.model.layers.22.mlp.down_proj.lora_b": [
+      8,
+      2048
+    ],
+    "language_model.model.layers.22.mlp.gate_proj.lora_a": [
+      2048,
+      8
+    ],
+    "language_model.model.layers.22.mlp.gate_proj.lora_b": [
+      8,
+      6144
+    ],
+    "language_model.model.layers.22.mlp.up_proj.lora_a": [
+      2048,
+      8
+    ],
+    "language_model.model.layers.22.mlp.up_proj.lora_b": [
+      8,
+      6144
+    ],
+    "language_model.model.layers.23.mlp.down_proj.lora_a": [
+      6144,
+      8
+    ],
+    "language_model.model.layers.23.mlp.down_proj.lora_b": [
+      8,
+      2048
+    ],
+    "language_model.model.layers.23.mlp.gate_proj.lora_a": [
+      2048,
+      8
+    ],
+    "language_model.model.layers.23.mlp.gate_proj.lora_b": [
+      8,
+      6144
+    ],
+    "language_model.model.layers.23.mlp.up_proj.lora_a": [
+      2048,
+      8
+    ],
+    "language_model.model.layers.23.mlp.up_proj.lora_b": [
+      8,
+      6144
+    ],
+    "language_model.model.layers.23.self_attn.k_proj.lora_a": [
+      2048,
+      8
+    ],
+    "language_model.model.layers.23.self_attn.k_proj.lora_b": [
+      8,
+      512
+    ],
+    "language_model.model.layers.23.self_attn.o_proj.lora_a": [
+      2048,
+      8
+    ],
+    "language_model.model.layers.23.self_attn.o_proj.lora_b": [
+      8,
+      2048
+    ],
+    "language_model.model.layers.23.self_attn.q_proj.lora_a": [
+      2048,
+      8
+    ],
+    "language_model.model.layers.23.self_attn.q_proj.lora_b": [
+      8,
+      4096
+    ],
+    "language_model.model.layers.23.self_attn.v_proj.lora_a": [
+      2048,
+      8
+    ],
+    "language_model.model.layers.23.self_attn.v_proj.lora_b": [
+      8,
+      512
+    ]
+  },
+  "adapter_sha256": "216b0abf7e43a62817069d979a12776f94bc9f85504200ea70205d62b0d03b1d",
+  "runtime_sources_sha256": {
+    "/Users/jq/qos_ai_eval/mlx_venv/lib/python3.13/site-packages/mlx_lm/models/qwen3_5.py": "851449fd9989d6bf4b3c4fed92ddc3be5f1e781eb2246f89c54d7eff2518d9c6",
+    "/Users/jq/qos_ai_eval/mlx_venv/lib/python3.13/site-packages/mlx_lm/models/qwen3_next.py": "67ca08a4d08cb7be124965e95399735e556f1eaeb21a16bc23cb88d1ac035e11",
+    "/Users/jq/qos_ai_eval/mlx_venv/lib/python3.13/site-packages/mlx_lm/models/gated_delta.py": "f69e837ea68641dbb06fdb5dcc024a9a7e1d9353f08ae58c05275253a0c39428",
+    "/Users/jq/qos_ai_eval/mlx_venv/lib/python3.13/site-packages/mlx_lm/tuner/utils.py": "f59f3c027176a3975fe60e7fbd9f3f38723c27c3f888cf9e591c103f93f68588"
+  },
+  "mlx": "0.32.4",
+  "mlx_lm": "0.32.2",
+  "historical_prefix_matches_current_no_thinking_template": true,
+  "chat_prefix_examples": {
+    "False": "<|im_start|>user\nWhat does this Sol program print?\n```sol\n> print (str (List.sum [1, 2, 3])).\n```<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "True": "<|im_start|>user\nWhat does this Sol program print?\n```sol\n> print (str (List.sum [1, 2, 3])).\n```<|im_end|>\n<|im_start|>assistant\n<think>\n"
+  },
+  "mtp_tensors_in_converted_weights": 0,
+  "vision_tensors_in_converted_weights": 0
+}
