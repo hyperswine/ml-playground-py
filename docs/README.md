@@ -5,6 +5,7 @@ The layout follows the chronological pages used by FP-RISC and the separation of
 
 | Start here | Contents |
 | --- | --- |
+| [Project overview: what worked and what did not](2026-10-28-PROJECT-OVERVIEW.md) | Whole-project results, limitations and current priorities |
 | [Repository layout and migration](2026-10-21-REPOSITORY-MIGRATION.md) | Source categories, preserved artifacts, timestamps and validation |
 | [Running experiments](2026-10-21-RUNNING-EXPERIMENTS.md) | Launcher, dependencies, environments and unchanged M1 workflows |
 | [Raw data and evidence](data/README.md) | Frozen benchmarks, source snapshots, receipts and migration provenance |
@@ -56,3 +57,4 @@ records its exact timestamp; original pages retain their own dates and recorded 
 | 2026-10-24 | [Small-model pretraining precedents: 4-12B tokens](2026-10-24-SMALL-MODEL-PRETRAINING-PRECEDENTS.md) |
 | 2026-10-27 | [Qwen 2B fresh diagnostic and M1 repair pilot](2026-10-27-QWEN-2B-REPAIR.md) |
 | 2026-10-28 | [Qwen 2B controlled coding curriculum](2026-10-28-QWEN-2B-CONTROLLED.md) |
+| 2026-10-28 | [Whole-project overview: what worked and what did not](2026-10-28-PROJECT-OVERVIEW.md) |

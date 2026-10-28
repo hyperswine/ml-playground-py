@@ -3,7 +3,8 @@
 Custom QOS language models, verified Sol curricula and evaluation, and small neural-network experiments.
 The QOS student is a custom architecture with experimental 168M and 557M checkpoint lineages.
 
-Start with the [dated documentation index](docs/README.md) and the
+Start with the [project overview](docs/2026-10-28-PROJECT-OVERVIEW.md),
+the [dated documentation index](docs/README.md) and the
 [running guide](docs/2026-10-21-RUNNING-EXPERIMENTS.md). Historical experiment reports describe
 their recorded revision and machine; they are not current deployment or model-promotion claims.
 
