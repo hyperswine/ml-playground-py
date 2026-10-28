@@ -1,0 +1,104 @@
+{
+  "winner": {
+    "tag": "mixed_8192",
+    "adapter": "/Users/jq/qos_ai_eval/experiments/qwen2b_controlled_20261028/adapter_mixed/step_0120",
+    "tokens": 8208,
+    "complete": 6,
+    "programs": 24,
+    "outputs": 6,
+    "by_kind": {
+      "generate": {
+        "n": 12,
+        "correct": 3
+      },
+      "nochange": {
+        "n": 12,
+        "correct": 0
+      },
+      "output": {
+        "n": 12,
+        "correct": 3
+      },
+      "repair": {
+        "n": 12,
+        "correct": 0
+      }
+    },
+    "strict_trace_guard": 20,
+    "passes_screen": true
+  },
+  "repeat_seed": 20261029,
+  "milestones": [
+    {
+      "budget": 2048,
+      "actual_tokens": 2044,
+      "micro_batches": 28,
+      "optimizer_updates": 14,
+      "unique_rows": 28,
+      "by_origin": {
+        "replay": 14,
+        "new": 14
+      },
+      "by_kind": {
+        "output": 7,
+        "repair": 7,
+        "nochange": 7,
+        "generate": 7
+      }
+    },
+    {
+      "budget": 4096,
+      "actual_tokens": 4096,
+      "micro_batches": 56,
+      "optimizer_updates": 28,
+      "unique_rows": 56,
+      "by_origin": {
+        "replay": 28,
+        "new": 28
+      },
+      "by_kind": {
+        "output": 14,
+        "repair": 14,
+        "nochange": 14,
+        "generate": 14
+      }
+    },
+    {
+      "budget": 8192,
+      "actual_tokens": 8192,
+      "micro_batches": 116,
+      "optimizer_updates": 58,
+      "unique_rows": 116,
+      "by_origin": {
+        "replay": 58,
+        "new": 58
+      },
+      "by_kind": {
+        "output": 29,
+        "repair": 29,
+        "nochange": 29,
+        "generate": 29
+      }
+    }
+  ],
+  "repeat_schedule_sha256": "9692ac6a2d5bde6654a393b900592e47d0e6d5683013e0a4fa464ea3addcea64",
+  "same_development_screen": true,
+  "full_regression_floors": {
+    "solgen_correct": 339,
+    "program_correct": 111,
+    "multi_correct": 18,
+    "bench": {
+      "dev_outputs_33": 29,
+      "working_generation_24": 24,
+      "applied_repairs_48": 45,
+      "repair_plus_output_48": 34,
+      "no_change_plus_output_24": 18,
+      "gen_wording_48": 42,
+      "gen_inputs_48": 41,
+      "gen_combinations_48": 40,
+      "strict_trace_120": 106
+    }
+  },
+  "final_policy": "only generate final holdout if primary and repeat pass full regression and repeat passes development; no automatic default change",
+  "created": 1793128501.3282838
+}

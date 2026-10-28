@@ -1,0 +1,19 @@
+{
+  "repeat": {
+    "complete": 5,
+    "programs": 24,
+    "outputs": 6,
+    "strict_trace_guard": 20,
+    "passes_screen": false,
+    "tokens": 8192
+  },
+  "full": {
+    "selected": {
+      "passes": true,
+      "failures": {}
+    }
+  },
+  "final_holdout_run": false,
+  "promoted": false,
+  "next": "retain round 4; confirmation gates not all met"
+}

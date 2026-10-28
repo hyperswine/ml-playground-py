@@ -49,3 +49,6 @@ artifacts/qos_ai/retrieval_20261022/
 
 # Rebuildable Qwen 2B repair datasets, adapters and local run copies
 artifacts/qos_ai/qwen2b_repair_20261027/
+
+# Controlled M1 curriculum runs and adapter checkpoints.
+artifacts/qos_ai/qwen2b_controlled_20261028/

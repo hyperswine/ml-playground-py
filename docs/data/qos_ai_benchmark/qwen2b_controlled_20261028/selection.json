@@ -1,0 +1,33 @@
+{
+  "winner": {
+    "tag": "mixed_8192",
+    "adapter": "/Users/jq/qos_ai_eval/experiments/qwen2b_controlled_20261028/adapter_mixed/step_0120",
+    "tokens": 8208,
+    "complete": 6,
+    "programs": 24,
+    "outputs": 6,
+    "by_kind": {
+      "generate": {
+        "n": 12,
+        "correct": 3
+      },
+      "nochange": {
+        "n": 12,
+        "correct": 0
+      },
+      "output": {
+        "n": 12,
+        "correct": 3
+      },
+      "repair": {
+        "n": 12,
+        "correct": 0
+      }
+    },
+    "strict_trace_guard": 20,
+    "passes_screen": true
+  },
+  "promoted": false,
+  "final_holdout_run": false,
+  "next": "repeat winning recipe and run full regression before holdout"
+}

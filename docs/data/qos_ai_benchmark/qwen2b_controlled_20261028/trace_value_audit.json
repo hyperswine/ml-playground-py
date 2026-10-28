@@ -1,0 +1,7406 @@
+{
+  "policy": "Post-hoc supplementary proxy; promotion criteria and frozen canonical scores unchanged. Exact ordered intermediate values permit renamed labels but do not prove arbitrary prose semantics or program correctness.",
+  "scorer_sha256": "f8d697ad61789569bbe7bf59c0110d9b97e8ffaa68488513a2a88b180c3c5099",
+  "runs": {
+    "parent": {
+      "n": 24,
+      "ordered_values_match": 20,
+      "renamed_fields_only": 0,
+      "answers_sha256": "47de79638d513faa4efff5fbd025ba819b011d29178a33b29415d13b189a74ff",
+      "details": [
+        {
+          "id": "general-inputs-941-map-1-output_trace-w0",
+          "answer": "Steps: products=[105, 27, -45]; result=87.\nIt prints 87.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                105,
+                27,
+                -45
+              ]
+            ],
+            [
+              "result",
+              87
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                105,
+                27,
+                -45
+              ]
+            ],
+            [
+              "result",
+              87
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-map-2-repair_expr-w0",
+          "answer": "`List.sum (List.map (fn x -> x * 2) [20, (-1), 14, 25])`\nSteps: products=[40, -2, 28, 50]; result=126.\nIt prints 126.",
+          "ordered_values_match": false,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                40,
+                -2,
+                28,
+                50
+              ]
+            ],
+            [
+              "result",
+              126
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                40,
+                -2,
+                28,
+                50
+              ]
+            ],
+            [
+              "result",
+              116
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-map-4-repair_program-w0",
+          "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 3) [(-3), 13]).\n> print (str result).\n```\nSteps: products=[-9, 39]; result=30.\nIt prints 30.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                -9,
+                39
+              ]
+            ],
+            [
+              "result",
+              30
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -9,
+                39
+              ]
+            ],
+            [
+              "result",
+              30
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-clamp-0-no_change-w0",
+          "answer": "No change needed. Steps: lower=-3; upper=4; input=4; result=4.\nIt prints 4.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -3
+            ],
+            [
+              "upper",
+              4
+            ],
+            [
+              "input",
+              4
+            ],
+            [
+              "result",
+              4
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -3
+            ],
+            [
+              "upper",
+              4
+            ],
+            [
+              "input",
+              4
+            ],
+            [
+              "result",
+              4
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-clamp-2-generate-w0",
+          "answer": "```sol\nvalue = Numeric.clamp (-2) 2 (-4).\n> print (str value).\n```\nSteps: lower=-2; upper=2; input=-4; result=-2.\nIt prints -2.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -2
+            ],
+            [
+              "upper",
+              2
+            ],
+            [
+              "input",
+              -4
+            ],
+            [
+              "result",
+              -2
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -2
+            ],
+            [
+              "upper",
+              2
+            ],
+            [
+              "input",
+              -4
+            ],
+            [
+              "result",
+              -2
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-clamp-4-output_trace-w0",
+          "answer": "Steps: lower=-15; upper=-10; input=-7; result=-10.\nIt prints -10.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -15
+            ],
+            [
+              "upper",
+              -10
+            ],
+            [
+              "input",
+              -7
+            ],
+            [
+              "result",
+              -10
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -15
+            ],
+            [
+              "upper",
+              -10
+            ],
+            [
+              "input",
+              -7
+            ],
+            [
+              "result",
+              -10
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-byte-0-repair_expr-w0",
+          "answer": "`Str.at \"mmi\" 0`\nSteps: offset=0; result=109.\nIt prints 109.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "offset",
+              0
+            ],
+            [
+              "result",
+              109
+            ]
+          ],
+          "expected": [
+            [
+              "offset",
+              0
+            ],
+            [
+              "result",
+              109
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-byte-1-repair_program-w0",
+          "answer": "```sol\nvalue = Str.at \"bbsq\" 1.\n> print (str value).\n```\nSteps: offset=1; result=115.\nIt prints 115.",
+          "ordered_values_match": false,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "offset",
+              1
+            ],
+            [
+              "result",
+              115
+            ]
+          ],
+          "expected": [
+            [
+              "offset",
+              1
+            ],
+            [
+              "result",
+              98
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-1-output_trace-w0",
+          "answer": "Steps: products=[40, -14, 14]; result=40.\nIt prints 40.",
+          "ordered_values_match": false,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                40,
+                -14,
+                14
+              ]
+            ],
+            [
+              "result",
+              40
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                40,
+                -14,
+                14
+              ]
+            ],
+            [
+              "kept",
+              [
+                40,
+                14
+              ]
+            ],
+            [
+              "result",
+              54
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-4-repair_expr-w0",
+          "answer": "`List.sum (List.filter (fn x -> x >= (-5)) (List.map (fn x -> x * 2) [19, (-23)]))`\nSteps: products=[38, -46]; kept=[38]; result=38.\nIt prints 38.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                38,
+                -46
+              ]
+            ],
+            [
+              "kept",
+              [
+                38
+              ]
+            ],
+            [
+              "result",
+              38
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                38,
+                -46
+              ]
+            ],
+            [
+              "kept",
+              [
+                38
+              ]
+            ],
+            [
+              "result",
+              38
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-8-repair_program-w0",
+          "answer": "```sol\nresult = List.sum (List.filter (fn x -> x >= 20) (List.map (fn x -> x * 3) [5, 13])).\n> print (str result).\n```\nSteps: products=[15, 39]; kept=[39]; result=39.\nIt prints 39.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                15,
+                39
+              ]
+            ],
+            [
+              "kept",
+              [
+                39
+              ]
+            ],
+            [
+              "result",
+              39
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                15,
+                39
+              ]
+            ],
+            [
+              "kept",
+              [
+                39
+              ]
+            ],
+            [
+              "result",
+              39
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-9-no_change-w0",
+          "answer": "No change needed. Steps: products=[32, -10, -64]; kept=[32]; result=32.\nIt prints 32.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                32,
+                -10,
+                -64
+              ]
+            ],
+            [
+              "kept",
+              [
+                32
+              ]
+            ],
+            [
+              "result",
+              32
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                32,
+                -10,
+                -64
+              ]
+            ],
+            [
+              "kept",
+              [
+                32
+              ]
+            ],
+            [
+              "result",
+              32
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-10-generate-w0",
+          "answer": "```sol\nvalue = List.sum (List.filter (fn x -> x >= 20) (List.map (fn x -> x * (-2)) [(-17), (-4), 37, 9])).\n> print (str value).\n```\nSteps: products=[34, 8, -74, -18]; kept=[34]; result=34.\nIt prints 34.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                34,
+                8,
+                -74,
+                -18
+              ]
+            ],
+            [
+              "kept",
+              [
+                34
+              ]
+            ],
+            [
+              "result",
+              34
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                34,
+                8,
+                -74,
+                -18
+              ]
+            ],
+            [
+              "kept",
+              [
+                34
+              ]
+            ],
+            [
+              "result",
+              34
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-12-output_trace-w0",
+          "answer": "Steps: products=[-22, -56]; kept=[]; result=0.\nIt prints 0.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                -22,
+                -56
+              ]
+            ],
+            [
+              "kept",
+              []
+            ],
+            [
+              "result",
+              0
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -22,
+                -56
+              ]
+            ],
+            [
+              "kept",
+              []
+            ],
+            [
+              "result",
+              0
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-16-repair_expr-w0",
+          "answer": "`List.sum (List.filter (fn x -> x >= 11) (List.map (fn x -> x * 2) [(-4), 24]))`\nSteps: products=[-8, 48]; kept=[48]; result=48.\nIt prints 48.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                -8,
+                48
+              ]
+            ],
+            [
+              "kept",
+              [
+                48
+              ]
+            ],
+            [
+              "result",
+              48
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -8,
+                48
+              ]
+            ],
+            [
+              "kept",
+              [
+                48
+              ]
+            ],
+            [
+              "result",
+              48
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-20-repair_program-w0",
+          "answer": "```sol\nresult = List.sum (List.filter (fn x -> x >= (-3)) (List.map (fn x -> x * (-2)) [(-5), 36])).\n> print (str result).\n```\nSteps: products=[10, -72]; kept=[10]; result=10.\nIt prints 10.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                10,
+                -72
+              ]
+            ],
+            [
+              "kept",
+              [
+                10
+              ]
+            ],
+            [
+              "result",
+              10
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                10,
+                -72
+              ]
+            ],
+            [
+              "kept",
+              [
+                10
+              ]
+            ],
+            [
+              "result",
+              10
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-map-1-output_trace-w1",
+          "answer": "Steps: products=[-90, -72, -72]; result=-234.\nIt prints -234.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                -90,
+                -72,
+                -72
+              ]
+            ],
+            [
+              "result",
+              -234
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -90,
+                -72,
+                -72
+              ]
+            ],
+            [
+              "result",
+              -234
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-map-2-repair_expr-w1",
+          "answer": "`List.sum (List.map (fn x -> x * 2) [(-3), (-13), 22, (-1)])`\nSteps: products=[-6, -26, 44, -2]; result=10.\nIt prints 10.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                -6,
+                -26,
+                44,
+                -2
+              ]
+            ],
+            [
+              "result",
+              10
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -6,
+                -26,
+                44,
+                -2
+              ]
+            ],
+            [
+              "result",
+              10
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-map-4-repair_program-w1",
+          "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 4) [6, 27]).\n> print (str result).\n```\nSteps: products=[24, 108]; result=132.\nIt prints 132.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                24,
+                108
+              ]
+            ],
+            [
+              "result",
+              132
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                24,
+                108
+              ]
+            ],
+            [
+              "result",
+              132
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-clamp-4-no_change-w1",
+          "answer": "No change needed. Steps: lower=-6; upper=1; input=4; result=1.\nIt prints 1.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -6
+            ],
+            [
+              "upper",
+              1
+            ],
+            [
+              "input",
+              4
+            ],
+            [
+              "result",
+              1
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -6
+            ],
+            [
+              "upper",
+              1
+            ],
+            [
+              "input",
+              4
+            ],
+            [
+              "result",
+              1
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-clamp-5-generate-w1",
+          "answer": "```sol\ntotal = Numeric.clamp (-14) (-8) (-16).\n> print (str total).\n```\nSteps: lower=-14; upper=-8; input=-16; result=-14.\nIt prints -14.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -14
+            ],
+            [
+              "upper",
+              -8
+            ],
+            [
+              "input",
+              -16
+            ],
+            [
+              "result",
+              -14
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -14
+            ],
+            [
+              "upper",
+              -8
+            ],
+            [
+              "input",
+              -16
+            ],
+            [
+              "result",
+              -14
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-clamp-1-output_trace-w1",
+          "answer": "Steps: lower=4; upper=6; input=6; result=6.\nIt prints 6.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              4
+            ],
+            [
+              "upper",
+              6
+            ],
+            [
+              "input",
+              6
+            ],
+            [
+              "result",
+              6
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              4
+            ],
+            [
+              "upper",
+              6
+            ],
+            [
+              "input",
+              6
+            ],
+            [
+              "result",
+              6
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-byte-2-repair_expr-w1",
+          "answer": "`Str.at \"tydnh\" 0`\nSteps: offset=0; result=116.\nIt prints 116.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "offset",
+              0
+            ],
+            [
+              "result",
+              116
+            ]
+          ],
+          "expected": [
+            [
+              "offset",
+              0
+            ],
+            [
+              "result",
+              116
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-byte-3-repair_program-w1",
+          "answer": "```sol\nresult = Str.at \"oxoavu\" 4.\n> print (str result).\n```\nSteps: offset=4; result=119.\nIt prints 119.",
+          "ordered_values_match": false,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "offset",
+              4
+            ],
+            [
+              "result",
+              119
+            ]
+          ],
+          "expected": [
+            [
+              "offset",
+              4
+            ],
+            [
+              "result",
+              118
+            ]
+          ]
+        }
+      ]
+    },
+    "mixed_2048": {
+      "n": 24,
+      "ordered_values_match": 22,
+      "renamed_fields_only": 11,
+      "answers_sha256": "7fff342d4c429772596c9c2c473c6aa8728e34a50fca060fe5d4e0d736a4cf6a",
+      "details": [
+        {
+          "id": "general-inputs-941-map-1-output_trace-w0",
+          "answer": "Steps: adjusted=[105, 27, -45]; result=87.\nIt prints 87.",
+          "ordered_values_match": true,
+          "renamed_fields_only": true,
+          "parsed": [
+            [
+              "adjusted",
+              [
+                105,
+                27,
+                -45
+              ]
+            ],
+            [
+              "result",
+              87
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                105,
+                27,
+                -45
+              ]
+            ],
+            [
+              "result",
+              87
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-map-2-repair_expr-w0",
+          "answer": "`List.sum (List.map (fn x -> x * 2) [20, (-1), 14, 25])`\nSteps: products=[40, -2, 28, 50]; result=116.\nIt prints 116.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                40,
+                -2,
+                28,
+                50
+              ]
+            ],
+            [
+              "result",
+              116
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                40,
+                -2,
+                28,
+                50
+              ]
+            ],
+            [
+              "result",
+              116
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-map-4-repair_program-w0",
+          "answer": "```sol\ntotal = List.sum (List.map (fn x -> x * 3) [(-3), 13]).\n> print (str total).\n```\nSteps: adjusted=[-9, 39]; result=30.\nIt prints 30.",
+          "ordered_values_match": true,
+          "renamed_fields_only": true,
+          "parsed": [
+            [
+              "adjusted",
+              [
+                -9,
+                39
+              ]
+            ],
+            [
+              "result",
+              30
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -9,
+                39
+              ]
+            ],
+            [
+              "result",
+              30
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-clamp-0-no_change-w0",
+          "answer": "No change needed. Steps: lower=-3; upper=4; input=4; result=4.\nIt prints 4.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -3
+            ],
+            [
+              "upper",
+              4
+            ],
+            [
+              "input",
+              4
+            ],
+            [
+              "result",
+              4
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -3
+            ],
+            [
+              "upper",
+              4
+            ],
+            [
+              "input",
+              4
+            ],
+            [
+              "result",
+              4
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-clamp-2-generate-w0",
+          "answer": "```sol\nvalue = Numeric.clamp (-2) 2 (-4).\n> print (str value).\n```\nSteps: lower=-2; upper=2; input=-4; result=-2.\nIt prints -2.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -2
+            ],
+            [
+              "upper",
+              2
+            ],
+            [
+              "input",
+              -4
+            ],
+            [
+              "result",
+              -2
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -2
+            ],
+            [
+              "upper",
+              2
+            ],
+            [
+              "input",
+              -4
+            ],
+            [
+              "result",
+              -2
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-clamp-4-output_trace-w0",
+          "answer": "Steps: lower=-15; upper=-10; input=-7; result=-10.\nIt prints -10.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -15
+            ],
+            [
+              "upper",
+              -10
+            ],
+            [
+              "input",
+              -7
+            ],
+            [
+              "result",
+              -10
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -15
+            ],
+            [
+              "upper",
+              -10
+            ],
+            [
+              "input",
+              -7
+            ],
+            [
+              "result",
+              -10
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-byte-0-repair_expr-w0",
+          "answer": "`Str.at \"mmi\" 0`\nSteps: offset=0; result=109.\nIt prints 109.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "offset",
+              0
+            ],
+            [
+              "result",
+              109
+            ]
+          ],
+          "expected": [
+            [
+              "offset",
+              0
+            ],
+            [
+              "result",
+              109
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-byte-1-repair_program-w0",
+          "answer": "```sol\nanswer = Str.at \"bbsq\" 1.\n> print (str answer).\n```\nSteps: offset=1; result=115.\nIt prints 115.",
+          "ordered_values_match": false,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "offset",
+              1
+            ],
+            [
+              "result",
+              115
+            ]
+          ],
+          "expected": [
+            [
+              "offset",
+              1
+            ],
+            [
+              "result",
+              98
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-1-output_trace-w0",
+          "answer": "Steps: adjusted=[40, -14, 14]; result=40.\nIt prints 40.",
+          "ordered_values_match": false,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "adjusted",
+              [
+                40,
+                -14,
+                14
+              ]
+            ],
+            [
+              "result",
+              40
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                40,
+                -14,
+                14
+              ]
+            ],
+            [
+              "kept",
+              [
+                40,
+                14
+              ]
+            ],
+            [
+              "result",
+              54
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-4-repair_expr-w0",
+          "answer": "`List.sum (List.filter (fn x -> x >= (-5)) (List.map (fn x -> x * 2) [19, (-23)]))`\nSteps: adjusted=[38, -46]; kept=[38]; result=38.\nIt prints 38.",
+          "ordered_values_match": true,
+          "renamed_fields_only": true,
+          "parsed": [
+            [
+              "adjusted",
+              [
+                38,
+                -46
+              ]
+            ],
+            [
+              "kept",
+              [
+                38
+              ]
+            ],
+            [
+              "result",
+              38
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                38,
+                -46
+              ]
+            ],
+            [
+              "kept",
+              [
+                38
+              ]
+            ],
+            [
+              "result",
+              38
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-8-repair_program-w0",
+          "answer": "```sol\nresult = List.sum (List.filter (fn x -> x >= 20) (List.map (fn x -> x * 3) [5, 13])).\n> print (str result).\n```\nSteps: adjusted=[15, 39]; kept=[39]; result=39.\nIt prints 39.",
+          "ordered_values_match": true,
+          "renamed_fields_only": true,
+          "parsed": [
+            [
+              "adjusted",
+              [
+                15,
+                39
+              ]
+            ],
+            [
+              "kept",
+              [
+                39
+              ]
+            ],
+            [
+              "result",
+              39
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                15,
+                39
+              ]
+            ],
+            [
+              "kept",
+              [
+                39
+              ]
+            ],
+            [
+              "result",
+              39
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-9-no_change-w0",
+          "answer": "No change needed. Steps: adjusted=[32, -10, -64]; kept=[32]; result=32.\nIt prints 32.",
+          "ordered_values_match": true,
+          "renamed_fields_only": true,
+          "parsed": [
+            [
+              "adjusted",
+              [
+                32,
+                -10,
+                -64
+              ]
+            ],
+            [
+              "kept",
+              [
+                32
+              ]
+            ],
+            [
+              "result",
+              32
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                32,
+                -10,
+                -64
+              ]
+            ],
+            [
+              "kept",
+              [
+                32
+              ]
+            ],
+            [
+              "result",
+              32
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-10-generate-w0",
+          "answer": "```sol\nvalue = List.sum (List.filter (fn x -> x >= 20) (List.map (fn x -> x * (-2)) [(-17), (-4), 37, 9])).\n> print (str value).\n```\nSteps: products=[34, 8, -74, -18]; kept=[34]; result=34.\nIt prints 34.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                34,
+                8,
+                -74,
+                -18
+              ]
+            ],
+            [
+              "kept",
+              [
+                34
+              ]
+            ],
+            [
+              "result",
+              34
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                34,
+                8,
+                -74,
+                -18
+              ]
+            ],
+            [
+              "kept",
+              [
+                34
+              ]
+            ],
+            [
+              "result",
+              34
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-12-output_trace-w0",
+          "answer": "Steps: adjusted=[-22, -56]; kept=[]; result=0.\nIt prints 0.",
+          "ordered_values_match": true,
+          "renamed_fields_only": true,
+          "parsed": [
+            [
+              "adjusted",
+              [
+                -22,
+                -56
+              ]
+            ],
+            [
+              "kept",
+              []
+            ],
+            [
+              "result",
+              0
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -22,
+                -56
+              ]
+            ],
+            [
+              "kept",
+              []
+            ],
+            [
+              "result",
+              0
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-16-repair_expr-w0",
+          "answer": "`List.sum (List.filter (fn x -> x >= 11) (List.map (fn x -> x * 2) [(-4), 24]))`\nSteps: adjusted=[-8, 48]; kept=[48]; result=48.\nIt prints 48.",
+          "ordered_values_match": true,
+          "renamed_fields_only": true,
+          "parsed": [
+            [
+              "adjusted",
+              [
+                -8,
+                48
+              ]
+            ],
+            [
+              "kept",
+              [
+                48
+              ]
+            ],
+            [
+              "result",
+              48
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -8,
+                48
+              ]
+            ],
+            [
+              "kept",
+              [
+                48
+              ]
+            ],
+            [
+              "result",
+              48
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-20-repair_program-w0",
+          "answer": "```sol\nresult = List.sum (List.filter (fn x -> x >= (-3)) (List.map (fn x -> x * (-2)) [(-5), 36])).\n> print (str result).\n```\nSteps: adjusted=[10, -72]; kept=[10]; result=10.\nIt prints 10.",
+          "ordered_values_match": true,
+          "renamed_fields_only": true,
+          "parsed": [
+            [
+              "adjusted",
+              [
+                10,
+                -72
+              ]
+            ],
+            [
+              "kept",
+              [
+                10
+              ]
+            ],
+            [
+              "result",
+              10
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                10,
+                -72
+              ]
+            ],
+            [
+              "kept",
+              [
+                10
+              ]
+            ],
+            [
+              "result",
+              10
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-map-1-output_trace-w1",
+          "answer": "Steps: adjusted=[-90, -72, -72]; result=-234.\nIt prints -234.",
+          "ordered_values_match": true,
+          "renamed_fields_only": true,
+          "parsed": [
+            [
+              "adjusted",
+              [
+                -90,
+                -72,
+                -72
+              ]
+            ],
+            [
+              "result",
+              -234
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -90,
+                -72,
+                -72
+              ]
+            ],
+            [
+              "result",
+              -234
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-map-2-repair_expr-w1",
+          "answer": "`List.sum (List.map (fn x -> x * 2) [(-3), (-13), 22, (-1)])`\nSteps: adjusted=[-6, -26, 44, -2]; result=10.\nIt prints 10.",
+          "ordered_values_match": true,
+          "renamed_fields_only": true,
+          "parsed": [
+            [
+              "adjusted",
+              [
+                -6,
+                -26,
+                44,
+                -2
+              ]
+            ],
+            [
+              "result",
+              10
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -6,
+                -26,
+                44,
+                -2
+              ]
+            ],
+            [
+              "result",
+              10
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-map-4-repair_program-w1",
+          "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 4) [6, 27]).\n> print (str result).\n```\nSteps: adjusted=[24, 108]; result=132.\nIt prints 132.",
+          "ordered_values_match": true,
+          "renamed_fields_only": true,
+          "parsed": [
+            [
+              "adjusted",
+              [
+                24,
+                108
+              ]
+            ],
+            [
+              "result",
+              132
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                24,
+                108
+              ]
+            ],
+            [
+              "result",
+              132
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-clamp-4-no_change-w1",
+          "answer": "No change needed. Steps: lower=-6; upper=1; input=4; result=1.\nIt prints 1.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -6
+            ],
+            [
+              "upper",
+              1
+            ],
+            [
+              "input",
+              4
+            ],
+            [
+              "result",
+              1
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -6
+            ],
+            [
+              "upper",
+              1
+            ],
+            [
+              "input",
+              4
+            ],
+            [
+              "result",
+              1
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-clamp-5-generate-w1",
+          "answer": "```sol\ntotal = Numeric.clamp (-14) (-8) (-16).\n> print (str total).\n```\nSteps: lower=-14; upper=-8; input=-16; result=-14.\nIt prints -14.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -14
+            ],
+            [
+              "upper",
+              -8
+            ],
+            [
+              "input",
+              -16
+            ],
+            [
+              "result",
+              -14
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -14
+            ],
+            [
+              "upper",
+              -8
+            ],
+            [
+              "input",
+              -16
+            ],
+            [
+              "result",
+              -14
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-clamp-1-output_trace-w1",
+          "answer": "Steps: lower=4; upper=6; input=6; result=6.\nIt prints 6.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              4
+            ],
+            [
+              "upper",
+              6
+            ],
+            [
+              "input",
+              6
+            ],
+            [
+              "result",
+              6
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              4
+            ],
+            [
+              "upper",
+              6
+            ],
+            [
+              "input",
+              6
+            ],
+            [
+              "result",
+              6
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-byte-2-repair_expr-w1",
+          "answer": "`Str.at \"tydnh\" 0`\nSteps: offset=0; result=116.\nIt prints 116.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "offset",
+              0
+            ],
+            [
+              "result",
+              116
+            ]
+          ],
+          "expected": [
+            [
+              "offset",
+              0
+            ],
+            [
+              "result",
+              116
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-byte-3-repair_program-w1",
+          "answer": "```sol\ntotal = Str.at \"oxoavu\" 4.\n> print (str total).\n```\nSteps: offset=4; result=118.\nIt prints 118.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "offset",
+              4
+            ],
+            [
+              "result",
+              118
+            ]
+          ],
+          "expected": [
+            [
+              "offset",
+              4
+            ],
+            [
+              "result",
+              118
+            ]
+          ]
+        }
+      ]
+    },
+    "mixed_4096": {
+      "n": 24,
+      "ordered_values_match": 21,
+      "renamed_fields_only": 0,
+      "answers_sha256": "9b2d5c48c3d1e66ce15fe95bf6bc0ac06bbe6c5b935063ab194121c6b7e8ad29",
+      "details": [
+        {
+          "id": "general-inputs-941-map-1-output_trace-w0",
+          "answer": "Steps: products=[105, 27, -45]; result=87.\nIt prints 87.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                105,
+                27,
+                -45
+              ]
+            ],
+            [
+              "result",
+              87
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                105,
+                27,
+                -45
+              ]
+            ],
+            [
+              "result",
+              87
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-map-2-repair_expr-w0",
+          "answer": "`List.sum (List.map (fn x -> x * 2) [20, (-1), 14, 25])`\nSteps: products=[40, -2, 28, 50]; result=126.\nIt prints 126.",
+          "ordered_values_match": false,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                40,
+                -2,
+                28,
+                50
+              ]
+            ],
+            [
+              "result",
+              126
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                40,
+                -2,
+                28,
+                50
+              ]
+            ],
+            [
+              "result",
+              116
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-map-4-repair_program-w0",
+          "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 3) [(-3), 13]).\n> print (str result).\n```\nSteps: products=[-9, 39]; result=30.\nIt prints 30.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                -9,
+                39
+              ]
+            ],
+            [
+              "result",
+              30
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -9,
+                39
+              ]
+            ],
+            [
+              "result",
+              30
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-clamp-0-no_change-w0",
+          "answer": "No change needed. Steps: lower=-3; upper=4; input=4; result=4.\nIt prints 4.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -3
+            ],
+            [
+              "upper",
+              4
+            ],
+            [
+              "input",
+              4
+            ],
+            [
+              "result",
+              4
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -3
+            ],
+            [
+              "upper",
+              4
+            ],
+            [
+              "input",
+              4
+            ],
+            [
+              "result",
+              4
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-clamp-2-generate-w0",
+          "answer": "```sol\nvalue = Numeric.clamp (-2) 2 (-4).\n> print (str value).\n```\nSteps: lower=-2; upper=2; input=-4; result=-2.\nIt prints -2.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -2
+            ],
+            [
+              "upper",
+              2
+            ],
+            [
+              "input",
+              -4
+            ],
+            [
+              "result",
+              -2
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -2
+            ],
+            [
+              "upper",
+              2
+            ],
+            [
+              "input",
+              -4
+            ],
+            [
+              "result",
+              -2
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-clamp-4-output_trace-w0",
+          "answer": "Steps: lower=-15; upper=-10; input=-7; result=-10.\nIt prints -10.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -15
+            ],
+            [
+              "upper",
+              -10
+            ],
+            [
+              "input",
+              -7
+            ],
+            [
+              "result",
+              -10
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -15
+            ],
+            [
+              "upper",
+              -10
+            ],
+            [
+              "input",
+              -7
+            ],
+            [
+              "result",
+              -10
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-byte-0-repair_expr-w0",
+          "answer": "`Str.at \"mmi\" 0`\nSteps: offset=0; result=109.\nIt prints 109.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "offset",
+              0
+            ],
+            [
+              "result",
+              109
+            ]
+          ],
+          "expected": [
+            [
+              "offset",
+              0
+            ],
+            [
+              "result",
+              109
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-byte-1-repair_program-w0",
+          "answer": "```sol\nanswer = Str.at \"bbsq\" 1.\n> print (str answer).\n```\nSteps: offset=1; result=115.\nIt prints 115.",
+          "ordered_values_match": false,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "offset",
+              1
+            ],
+            [
+              "result",
+              115
+            ]
+          ],
+          "expected": [
+            [
+              "offset",
+              1
+            ],
+            [
+              "result",
+              98
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-1-output_trace-w0",
+          "answer": "Steps: products=[40, -14, 14]; kept=[40, -14, 14]; result=40.\nIt prints 40.",
+          "ordered_values_match": false,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                40,
+                -14,
+                14
+              ]
+            ],
+            [
+              "kept",
+              [
+                40,
+                -14,
+                14
+              ]
+            ],
+            [
+              "result",
+              40
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                40,
+                -14,
+                14
+              ]
+            ],
+            [
+              "kept",
+              [
+                40,
+                14
+              ]
+            ],
+            [
+              "result",
+              54
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-4-repair_expr-w0",
+          "answer": "`List.sum (List.filter (fn x -> x >= (-5)) (List.map (fn x -> x * 2) [19, (-23)]))`\nSteps: products=[38, -46]; kept=[38]; result=38.\nIt prints 38.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                38,
+                -46
+              ]
+            ],
+            [
+              "kept",
+              [
+                38
+              ]
+            ],
+            [
+              "result",
+              38
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                38,
+                -46
+              ]
+            ],
+            [
+              "kept",
+              [
+                38
+              ]
+            ],
+            [
+              "result",
+              38
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-8-repair_program-w0",
+          "answer": "```sol\nresult = List.sum (List.filter (fn x -> x >= 20) (List.map (fn x -> x * 3) [5, 13])).\n> print (str result).\n```\nSteps: products=[15, 39]; kept=[39]; result=39.\nIt prints 39.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                15,
+                39
+              ]
+            ],
+            [
+              "kept",
+              [
+                39
+              ]
+            ],
+            [
+              "result",
+              39
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                15,
+                39
+              ]
+            ],
+            [
+              "kept",
+              [
+                39
+              ]
+            ],
+            [
+              "result",
+              39
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-9-no_change-w0",
+          "answer": "No change needed. Steps: products=[32, -10, -64]; kept=[32]; result=32.\nIt prints 32.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                32,
+                -10,
+                -64
+              ]
+            ],
+            [
+              "kept",
+              [
+                32
+              ]
+            ],
+            [
+              "result",
+              32
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                32,
+                -10,
+                -64
+              ]
+            ],
+            [
+              "kept",
+              [
+                32
+              ]
+            ],
+            [
+              "result",
+              32
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-10-generate-w0",
+          "answer": "```sol\nvalue = List.sum (List.filter (fn x -> x >= 20) (List.map (fn x -> x * (-2)) [(-17), (-4), 37, 9])).\n> print (str value).\n```\nSteps: products=[34, 8, -74, -18]; kept=[34]; result=34.\nIt prints 34.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                34,
+                8,
+                -74,
+                -18
+              ]
+            ],
+            [
+              "kept",
+              [
+                34
+              ]
+            ],
+            [
+              "result",
+              34
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                34,
+                8,
+                -74,
+                -18
+              ]
+            ],
+            [
+              "kept",
+              [
+                34
+              ]
+            ],
+            [
+              "result",
+              34
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-12-output_trace-w0",
+          "answer": "Steps: products=[-22, -56]; kept=[]; result=0.\nIt prints 0.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                -22,
+                -56
+              ]
+            ],
+            [
+              "kept",
+              []
+            ],
+            [
+              "result",
+              0
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -22,
+                -56
+              ]
+            ],
+            [
+              "kept",
+              []
+            ],
+            [
+              "result",
+              0
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-16-repair_expr-w0",
+          "answer": "`List.sum (List.filter (fn x -> x >= 11) (List.map (fn x -> x * 2) [(-4), 24]))`\nSteps: products=[-8, 48]; kept=[48]; result=48.\nIt prints 48.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                -8,
+                48
+              ]
+            ],
+            [
+              "kept",
+              [
+                48
+              ]
+            ],
+            [
+              "result",
+              48
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -8,
+                48
+              ]
+            ],
+            [
+              "kept",
+              [
+                48
+              ]
+            ],
+            [
+              "result",
+              48
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-20-repair_program-w0",
+          "answer": "```sol\nresult = List.sum (List.filter (fn x -> x >= (-3)) (List.map (fn x -> x * (-2)) [(-5), 36])).\n> print (str result).\n```\nSteps: products=[10, -72]; kept=[10]; result=10.\nIt prints 10.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                10,
+                -72
+              ]
+            ],
+            [
+              "kept",
+              [
+                10
+              ]
+            ],
+            [
+              "result",
+              10
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                10,
+                -72
+              ]
+            ],
+            [
+              "kept",
+              [
+                10
+              ]
+            ],
+            [
+              "result",
+              10
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-map-1-output_trace-w1",
+          "answer": "Steps: products=[-90, -72, -72]; result=-234.\nIt prints -234.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                -90,
+                -72,
+                -72
+              ]
+            ],
+            [
+              "result",
+              -234
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -90,
+                -72,
+                -72
+              ]
+            ],
+            [
+              "result",
+              -234
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-map-2-repair_expr-w1",
+          "answer": "`List.sum (List.map (fn x -> x * 2) [(-3), (-13), 22, (-1)])`\nSteps: products=[-6, -26, 44, -2]; result=10.\nIt prints 10.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                -6,
+                -26,
+                44,
+                -2
+              ]
+            ],
+            [
+              "result",
+              10
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -6,
+                -26,
+                44,
+                -2
+              ]
+            ],
+            [
+              "result",
+              10
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-map-4-repair_program-w1",
+          "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 4) [6, 27]).\n> print (str result).\n```\nSteps: products=[24, 108]; result=132.\nIt prints 132.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                24,
+                108
+              ]
+            ],
+            [
+              "result",
+              132
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                24,
+                108
+              ]
+            ],
+            [
+              "result",
+              132
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-clamp-4-no_change-w1",
+          "answer": "No change needed. Steps: lower=-6; upper=1; input=4; result=1.\nIt prints 1.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -6
+            ],
+            [
+              "upper",
+              1
+            ],
+            [
+              "input",
+              4
+            ],
+            [
+              "result",
+              1
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -6
+            ],
+            [
+              "upper",
+              1
+            ],
+            [
+              "input",
+              4
+            ],
+            [
+              "result",
+              1
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-clamp-5-generate-w1",
+          "answer": "```sol\ntotal = Numeric.clamp (-14) (-8) (-16).\n> print (str total).\n```\nSteps: lower=-14; upper=-8; input=-16; result=-14.\nIt prints -14.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -14
+            ],
+            [
+              "upper",
+              -8
+            ],
+            [
+              "input",
+              -16
+            ],
+            [
+              "result",
+              -14
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -14
+            ],
+            [
+              "upper",
+              -8
+            ],
+            [
+              "input",
+              -16
+            ],
+            [
+              "result",
+              -14
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-clamp-1-output_trace-w1",
+          "answer": "Steps: lower=4; upper=6; input=6; result=6.\nIt prints 6.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              4
+            ],
+            [
+              "upper",
+              6
+            ],
+            [
+              "input",
+              6
+            ],
+            [
+              "result",
+              6
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              4
+            ],
+            [
+              "upper",
+              6
+            ],
+            [
+              "input",
+              6
+            ],
+            [
+              "result",
+              6
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-byte-2-repair_expr-w1",
+          "answer": "`Str.at \"tydnh\" 0`\nSteps: offset=0; result=116.\nIt prints 116.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "offset",
+              0
+            ],
+            [
+              "result",
+              116
+            ]
+          ],
+          "expected": [
+            [
+              "offset",
+              0
+            ],
+            [
+              "result",
+              116
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-byte-3-repair_program-w1",
+          "answer": "```sol\nresult = Str.at \"oxoavu\" 4.\n> print (str result).\n```\nSteps: offset=4; result=118.\nIt prints 118.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "offset",
+              4
+            ],
+            [
+              "result",
+              118
+            ]
+          ],
+          "expected": [
+            [
+              "offset",
+              4
+            ],
+            [
+              "result",
+              118
+            ]
+          ]
+        }
+      ]
+    },
+    "mixed_8192": {
+      "n": 24,
+      "ordered_values_match": 20,
+      "renamed_fields_only": 0,
+      "answers_sha256": "bee545538b8e0b9f72a6f67b96915c6ddecfb5bbfb4efc5c62b3ce81b18e7391",
+      "details": [
+        {
+          "id": "general-inputs-941-map-1-output_trace-w0",
+          "answer": "Steps: products=[105, 27, -45]; result=87.\nIt prints 87.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                105,
+                27,
+                -45
+              ]
+            ],
+            [
+              "result",
+              87
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                105,
+                27,
+                -45
+              ]
+            ],
+            [
+              "result",
+              87
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-map-2-repair_expr-w0",
+          "answer": "`List.sum (List.map (fn x -> x * 2) [20, (-1), 14, 25])`\nSteps: products=[40, -2, 28, 50]; result=126.\nIt prints 126.",
+          "ordered_values_match": false,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                40,
+                -2,
+                28,
+                50
+              ]
+            ],
+            [
+              "result",
+              126
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                40,
+                -2,
+                28,
+                50
+              ]
+            ],
+            [
+              "result",
+              116
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-map-4-repair_program-w0",
+          "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 3) [(-3), 13]).\n> print (str result).\n```\nSteps: products=[-9, 39]; result=30.\nIt prints 30.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                -9,
+                39
+              ]
+            ],
+            [
+              "result",
+              30
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -9,
+                39
+              ]
+            ],
+            [
+              "result",
+              30
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-clamp-0-no_change-w0",
+          "answer": "No change needed. Steps: lower=-3; upper=4; input=4; result=4.\nIt prints 4.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -3
+            ],
+            [
+              "upper",
+              4
+            ],
+            [
+              "input",
+              4
+            ],
+            [
+              "result",
+              4
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -3
+            ],
+            [
+              "upper",
+              4
+            ],
+            [
+              "input",
+              4
+            ],
+            [
+              "result",
+              4
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-clamp-2-generate-w0",
+          "answer": "```sol\nvalue = Numeric.clamp (-2) 2 (-4).\n> print (str value).\n```\nSteps: lower=-2; upper=2; input=-4; result=-2.\nIt prints -2.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -2
+            ],
+            [
+              "upper",
+              2
+            ],
+            [
+              "input",
+              -4
+            ],
+            [
+              "result",
+              -2
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -2
+            ],
+            [
+              "upper",
+              2
+            ],
+            [
+              "input",
+              -4
+            ],
+            [
+              "result",
+              -2
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-clamp-4-output_trace-w0",
+          "answer": "Steps: lower=-15; upper=-10; input=-7; result=-10.\nIt prints -10.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -15
+            ],
+            [
+              "upper",
+              -10
+            ],
+            [
+              "input",
+              -7
+            ],
+            [
+              "result",
+              -10
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -15
+            ],
+            [
+              "upper",
+              -10
+            ],
+            [
+              "input",
+              -7
+            ],
+            [
+              "result",
+              -10
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-byte-0-repair_expr-w0",
+          "answer": "`Str.at \"mmi\" 0`\nSteps: offset=0; result=109.\nIt prints 109.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "offset",
+              0
+            ],
+            [
+              "result",
+              109
+            ]
+          ],
+          "expected": [
+            [
+              "offset",
+              0
+            ],
+            [
+              "result",
+              109
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-byte-1-repair_program-w0",
+          "answer": "```sol\nanswer = Str.at \"bbsq\" 1.\n> print (str answer).\n```\nSteps: offset=1; result=115.\nIt prints 115.",
+          "ordered_values_match": false,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "offset",
+              1
+            ],
+            [
+              "result",
+              115
+            ]
+          ],
+          "expected": [
+            [
+              "offset",
+              1
+            ],
+            [
+              "result",
+              98
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-1-output_trace-w0",
+          "answer": "Steps: products=[40, -14, 14]; kept=[40, -14, 14]; result=40.\nIt prints 40.",
+          "ordered_values_match": false,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                40,
+                -14,
+                14
+              ]
+            ],
+            [
+              "kept",
+              [
+                40,
+                -14,
+                14
+              ]
+            ],
+            [
+              "result",
+              40
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                40,
+                -14,
+                14
+              ]
+            ],
+            [
+              "kept",
+              [
+                40,
+                14
+              ]
+            ],
+            [
+              "result",
+              54
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-4-repair_expr-w0",
+          "answer": "`List.sum (List.filter (fn x -> x >= (-5)) (List.map (fn x -> x * 2) [19, (-23)]))`\nSteps: products=[38, -46]; kept=[38]; result=38.\nIt prints 38.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                38,
+                -46
+              ]
+            ],
+            [
+              "kept",
+              [
+                38
+              ]
+            ],
+            [
+              "result",
+              38
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                38,
+                -46
+              ]
+            ],
+            [
+              "kept",
+              [
+                38
+              ]
+            ],
+            [
+              "result",
+              38
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-8-repair_program-w0",
+          "answer": "```sol\nresult = List.sum (List.filter (fn x -> x >= 20) (List.map (fn x -> x * 3) [5, 13])).\n> print (str result).\n```\nSteps: products=[15, 39]; kept=[39]; result=39.\nIt prints 39.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                15,
+                39
+              ]
+            ],
+            [
+              "kept",
+              [
+                39
+              ]
+            ],
+            [
+              "result",
+              39
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                15,
+                39
+              ]
+            ],
+            [
+              "kept",
+              [
+                39
+              ]
+            ],
+            [
+              "result",
+              39
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-9-no_change-w0",
+          "answer": "No change needed. Steps: products=[32, -10, -64]; kept=[32]; result=32.\nIt prints 32.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                32,
+                -10,
+                -64
+              ]
+            ],
+            [
+              "kept",
+              [
+                32
+              ]
+            ],
+            [
+              "result",
+              32
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                32,
+                -10,
+                -64
+              ]
+            ],
+            [
+              "kept",
+              [
+                32
+              ]
+            ],
+            [
+              "result",
+              32
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-10-generate-w0",
+          "answer": "```sol\nvalue = List.sum (List.filter (fn x -> x >= 20) (List.map (fn x -> x * (-2)) [(-17), (-4), 37, 9])).\n> print (str value).\n```\nSteps: products=[34, 8, -74, -18]; kept=[34]; result=34.\nIt prints 34.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                34,
+                8,
+                -74,
+                -18
+              ]
+            ],
+            [
+              "kept",
+              [
+                34
+              ]
+            ],
+            [
+              "result",
+              34
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                34,
+                8,
+                -74,
+                -18
+              ]
+            ],
+            [
+              "kept",
+              [
+                34
+              ]
+            ],
+            [
+              "result",
+              34
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-12-output_trace-w0",
+          "answer": "Steps: products=[-22, -56]; kept=[]; result=0.\nIt prints 0.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                -22,
+                -56
+              ]
+            ],
+            [
+              "kept",
+              []
+            ],
+            [
+              "result",
+              0
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -22,
+                -56
+              ]
+            ],
+            [
+              "kept",
+              []
+            ],
+            [
+              "result",
+              0
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-16-repair_expr-w0",
+          "answer": "`List.sum (List.filter (fn x -> x >= 11) (List.map (fn x -> x * 2) [(-4), 24]))`\nSteps: products=[-8, 48]; kept=[48]; result=48.\nIt prints 48.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                -8,
+                48
+              ]
+            ],
+            [
+              "kept",
+              [
+                48
+              ]
+            ],
+            [
+              "result",
+              48
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -8,
+                48
+              ]
+            ],
+            [
+              "kept",
+              [
+                48
+              ]
+            ],
+            [
+              "result",
+              48
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-20-repair_program-w0",
+          "answer": "```sol\nresult = List.sum (List.filter (fn x -> x >= (-3)) (List.map (fn x -> x * (-2)) [(-5), 36])).\n> print (str result).\n```\nSteps: products=[10, -72]; kept=[10]; result=10.\nIt prints 10.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                10,
+                -72
+              ]
+            ],
+            [
+              "kept",
+              [
+                10
+              ]
+            ],
+            [
+              "result",
+              10
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                10,
+                -72
+              ]
+            ],
+            [
+              "kept",
+              [
+                10
+              ]
+            ],
+            [
+              "result",
+              10
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-map-1-output_trace-w1",
+          "answer": "Steps: products=[-90, -72, -72]; result=-234.\nIt prints -234.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                -90,
+                -72,
+                -72
+              ]
+            ],
+            [
+              "result",
+              -234
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -90,
+                -72,
+                -72
+              ]
+            ],
+            [
+              "result",
+              -234
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-map-2-repair_expr-w1",
+          "answer": "`List.sum (List.map (fn x -> x * 2) [(-3), (-13), 22, (-1)])`\nSteps: products=[-6, -26, 44, -2]; result=10.\nIt prints 10.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                -6,
+                -26,
+                44,
+                -2
+              ]
+            ],
+            [
+              "result",
+              10
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -6,
+                -26,
+                44,
+                -2
+              ]
+            ],
+            [
+              "result",
+              10
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-map-4-repair_program-w1",
+          "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 4) [6, 27]).\n> print (str result).\n```\nSteps: products=[24, 108]; result=132.\nIt prints 132.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                24,
+                108
+              ]
+            ],
+            [
+              "result",
+              132
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                24,
+                108
+              ]
+            ],
+            [
+              "result",
+              132
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-clamp-4-no_change-w1",
+          "answer": "No change needed. Steps: lower=-6; upper=1; input=4; result=1.\nIt prints 1.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -6
+            ],
+            [
+              "upper",
+              1
+            ],
+            [
+              "input",
+              4
+            ],
+            [
+              "result",
+              1
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -6
+            ],
+            [
+              "upper",
+              1
+            ],
+            [
+              "input",
+              4
+            ],
+            [
+              "result",
+              1
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-clamp-5-generate-w1",
+          "answer": "```sol\ntotal = Numeric.clamp (-14) (-8) (-16).\n> print (str total).\n```\nSteps: lower=-14; upper=-8; input=-16; result=-14.\nIt prints -14.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -14
+            ],
+            [
+              "upper",
+              -8
+            ],
+            [
+              "input",
+              -16
+            ],
+            [
+              "result",
+              -14
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -14
+            ],
+            [
+              "upper",
+              -8
+            ],
+            [
+              "input",
+              -16
+            ],
+            [
+              "result",
+              -14
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-clamp-1-output_trace-w1",
+          "answer": "Steps: lower=4; upper=6; input=6; result=6.\nIt prints 6.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              4
+            ],
+            [
+              "upper",
+              6
+            ],
+            [
+              "input",
+              6
+            ],
+            [
+              "result",
+              6
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              4
+            ],
+            [
+              "upper",
+              6
+            ],
+            [
+              "input",
+              6
+            ],
+            [
+              "result",
+              6
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-byte-2-repair_expr-w1",
+          "answer": "`Str.at \"tydnh\" 0`\nSteps: offset=0; result=116.\nIt prints 116.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "offset",
+              0
+            ],
+            [
+              "result",
+              116
+            ]
+          ],
+          "expected": [
+            [
+              "offset",
+              0
+            ],
+            [
+              "result",
+              116
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-byte-3-repair_program-w1",
+          "answer": "```sol\nresult = Str.at \"oxoavu\" 4.\n> print (str result).\n```\nSteps: offset=4; result=117.\nIt prints 117.",
+          "ordered_values_match": false,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "offset",
+              4
+            ],
+            [
+              "result",
+              117
+            ]
+          ],
+          "expected": [
+            [
+              "offset",
+              4
+            ],
+            [
+              "result",
+              118
+            ]
+          ]
+        }
+      ]
+    },
+    "repeat": {
+      "n": 24,
+      "ordered_values_match": 20,
+      "renamed_fields_only": 0,
+      "answers_sha256": "68bcefd3c87959bfac482ea69946655f262522941f993095d564b893237f4037",
+      "details": [
+        {
+          "id": "general-inputs-941-map-1-output_trace-w0",
+          "answer": "Steps: products=[105, 27, -45]; result=87.\nIt prints 87.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                105,
+                27,
+                -45
+              ]
+            ],
+            [
+              "result",
+              87
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                105,
+                27,
+                -45
+              ]
+            ],
+            [
+              "result",
+              87
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-map-2-repair_expr-w0",
+          "answer": "`List.sum (List.map (fn x -> x * 2) [20, (-1), 14, 25])`\nSteps: products=[40, -2, 28, 50]; result=126.\nIt prints 126.",
+          "ordered_values_match": false,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                40,
+                -2,
+                28,
+                50
+              ]
+            ],
+            [
+              "result",
+              126
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                40,
+                -2,
+                28,
+                50
+              ]
+            ],
+            [
+              "result",
+              116
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-map-4-repair_program-w0",
+          "answer": "```sol\nanswer = List.sum (List.map (fn x -> x * 3) [(-3), 13]).\n> print (str answer).\n```\nSteps: products=[-9, 39]; result=30.\nIt prints 30.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                -9,
+                39
+              ]
+            ],
+            [
+              "result",
+              30
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -9,
+                39
+              ]
+            ],
+            [
+              "result",
+              30
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-clamp-0-no_change-w0",
+          "answer": "No change needed. Steps: lower=-3; upper=4; input=4; result=4.\nIt prints 4.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -3
+            ],
+            [
+              "upper",
+              4
+            ],
+            [
+              "input",
+              4
+            ],
+            [
+              "result",
+              4
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -3
+            ],
+            [
+              "upper",
+              4
+            ],
+            [
+              "input",
+              4
+            ],
+            [
+              "result",
+              4
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-clamp-2-generate-w0",
+          "answer": "```sol\nvalue = Numeric.clamp (-2) 2 (-4).\n> print (str value).\n```\nSteps: lower=-2; upper=2; input=-4; result=-2.\nIt prints -2.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -2
+            ],
+            [
+              "upper",
+              2
+            ],
+            [
+              "input",
+              -4
+            ],
+            [
+              "result",
+              -2
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -2
+            ],
+            [
+              "upper",
+              2
+            ],
+            [
+              "input",
+              -4
+            ],
+            [
+              "result",
+              -2
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-clamp-4-output_trace-w0",
+          "answer": "Steps: lower=-15; upper=-10; input=-7; result=-10.\nIt prints -10.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -15
+            ],
+            [
+              "upper",
+              -10
+            ],
+            [
+              "input",
+              -7
+            ],
+            [
+              "result",
+              -10
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -15
+            ],
+            [
+              "upper",
+              -10
+            ],
+            [
+              "input",
+              -7
+            ],
+            [
+              "result",
+              -10
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-byte-0-repair_expr-w0",
+          "answer": "`Str.at \"mmi\" 0`\nSteps: offset=0; result=109.\nIt prints 109.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "offset",
+              0
+            ],
+            [
+              "result",
+              109
+            ]
+          ],
+          "expected": [
+            [
+              "offset",
+              0
+            ],
+            [
+              "result",
+              109
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-byte-1-repair_program-w0",
+          "answer": "```sol\nanswer = Str.at \"bbsq\" 1.\n> print (str answer).\n```\nSteps: offset=1; result=115.\nIt prints 115.",
+          "ordered_values_match": false,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "offset",
+              1
+            ],
+            [
+              "result",
+              115
+            ]
+          ],
+          "expected": [
+            [
+              "offset",
+              1
+            ],
+            [
+              "result",
+              98
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-1-output_trace-w0",
+          "answer": "Steps: products=[40, -14, 14]; kept=[40, -14, 14]; result=40.\nIt prints 40.",
+          "ordered_values_match": false,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                40,
+                -14,
+                14
+              ]
+            ],
+            [
+              "kept",
+              [
+                40,
+                -14,
+                14
+              ]
+            ],
+            [
+              "result",
+              40
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                40,
+                -14,
+                14
+              ]
+            ],
+            [
+              "kept",
+              [
+                40,
+                14
+              ]
+            ],
+            [
+              "result",
+              54
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-4-repair_expr-w0",
+          "answer": "`List.sum (List.filter (fn x -> x >= (-5)) (List.map (fn x -> x * 2) [19, (-23)]))`\nSteps: products=[38, -46]; kept=[38]; result=38.\nIt prints 38.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                38,
+                -46
+              ]
+            ],
+            [
+              "kept",
+              [
+                38
+              ]
+            ],
+            [
+              "result",
+              38
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                38,
+                -46
+              ]
+            ],
+            [
+              "kept",
+              [
+                38
+              ]
+            ],
+            [
+              "result",
+              38
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-8-repair_program-w0",
+          "answer": "```sol\nresult = List.sum (List.filter (fn x -> x >= 20) (List.map (fn x -> x * 3) [5, 13])).\n> print (str result).\n```\nSteps: products=[15, 39]; kept=[39]; result=39.\nIt prints 39.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                15,
+                39
+              ]
+            ],
+            [
+              "kept",
+              [
+                39
+              ]
+            ],
+            [
+              "result",
+              39
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                15,
+                39
+              ]
+            ],
+            [
+              "kept",
+              [
+                39
+              ]
+            ],
+            [
+              "result",
+              39
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-9-no_change-w0",
+          "answer": "No change needed. Steps: products=[32, -10, -64]; kept=[32]; result=32.\nIt prints 32.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                32,
+                -10,
+                -64
+              ]
+            ],
+            [
+              "kept",
+              [
+                32
+              ]
+            ],
+            [
+              "result",
+              32
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                32,
+                -10,
+                -64
+              ]
+            ],
+            [
+              "kept",
+              [
+                32
+              ]
+            ],
+            [
+              "result",
+              32
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-10-generate-w0",
+          "answer": "```sol\nvalue = List.sum (List.filter (fn x -> x >= 20) (List.map (fn x -> x * (-2)) [(-17), (-4), 37, 9])).\n> print (str value).\n```\nSteps: products=[34, 8, -74, -18]; kept=[34]; result=34.\nIt prints 34.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                34,
+                8,
+                -74,
+                -18
+              ]
+            ],
+            [
+              "kept",
+              [
+                34
+              ]
+            ],
+            [
+              "result",
+              34
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                34,
+                8,
+                -74,
+                -18
+              ]
+            ],
+            [
+              "kept",
+              [
+                34
+              ]
+            ],
+            [
+              "result",
+              34
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-12-output_trace-w0",
+          "answer": "Steps: products=[-22, -56]; kept=[]; result=0.\nIt prints 0.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                -22,
+                -56
+              ]
+            ],
+            [
+              "kept",
+              []
+            ],
+            [
+              "result",
+              0
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -22,
+                -56
+              ]
+            ],
+            [
+              "kept",
+              []
+            ],
+            [
+              "result",
+              0
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-16-repair_expr-w0",
+          "answer": "`List.sum (List.filter (fn x -> x >= 11) (List.map (fn x -> x * 2) [(-4), 24]))`\nSteps: products=[-8, 48]; kept=[48]; result=48.\nIt prints 48.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                -8,
+                48
+              ]
+            ],
+            [
+              "kept",
+              [
+                48
+              ]
+            ],
+            [
+              "result",
+              48
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -8,
+                48
+              ]
+            ],
+            [
+              "kept",
+              [
+                48
+              ]
+            ],
+            [
+              "result",
+              48
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-20-repair_program-w0",
+          "answer": "```sol\nresult = List.sum (List.filter (fn x -> x >= (-3)) (List.map (fn x -> x * (-2)) [(-5), 36])).\n> print (str result).\n```\nSteps: products=[10, -72]; kept=[10]; result=10.\nIt prints 10.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                10,
+                -72
+              ]
+            ],
+            [
+              "kept",
+              [
+                10
+              ]
+            ],
+            [
+              "result",
+              10
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                10,
+                -72
+              ]
+            ],
+            [
+              "kept",
+              [
+                10
+              ]
+            ],
+            [
+              "result",
+              10
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-map-1-output_trace-w1",
+          "answer": "Steps: products=[-90, -72, -72]; result=-234.\nIt prints -234.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                -90,
+                -72,
+                -72
+              ]
+            ],
+            [
+              "result",
+              -234
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -90,
+                -72,
+                -72
+              ]
+            ],
+            [
+              "result",
+              -234
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-map-2-repair_expr-w1",
+          "answer": "`List.sum (List.map (fn x -> x * 2) [(-3), (-13), 22, (-1)])`\nSteps: products=[-6, -26, 44, -2]; result=10.\nIt prints 10.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                -6,
+                -26,
+                44,
+                -2
+              ]
+            ],
+            [
+              "result",
+              10
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -6,
+                -26,
+                44,
+                -2
+              ]
+            ],
+            [
+              "result",
+              10
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-map-4-repair_program-w1",
+          "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 4) [6, 27]).\n> print (str result).\n```\nSteps: products=[24, 108]; result=132.\nIt prints 132.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                24,
+                108
+              ]
+            ],
+            [
+              "result",
+              132
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                24,
+                108
+              ]
+            ],
+            [
+              "result",
+              132
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-clamp-4-no_change-w1",
+          "answer": "No change needed. Steps: lower=-6; upper=1; input=4; result=1.\nIt prints 1.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -6
+            ],
+            [
+              "upper",
+              1
+            ],
+            [
+              "input",
+              4
+            ],
+            [
+              "result",
+              1
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -6
+            ],
+            [
+              "upper",
+              1
+            ],
+            [
+              "input",
+              4
+            ],
+            [
+              "result",
+              1
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-clamp-5-generate-w1",
+          "answer": "```sol\ntotal = Numeric.clamp (-14) (-8) (-16).\n> print (str total).\n```\nSteps: lower=-14; upper=-8; input=-16; result=-14.\nIt prints -14.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -14
+            ],
+            [
+              "upper",
+              -8
+            ],
+            [
+              "input",
+              -16
+            ],
+            [
+              "result",
+              -14
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -14
+            ],
+            [
+              "upper",
+              -8
+            ],
+            [
+              "input",
+              -16
+            ],
+            [
+              "result",
+              -14
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-clamp-1-output_trace-w1",
+          "answer": "Steps: lower=4; upper=6; input=6; result=6.\nIt prints 6.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              4
+            ],
+            [
+              "upper",
+              6
+            ],
+            [
+              "input",
+              6
+            ],
+            [
+              "result",
+              6
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              4
+            ],
+            [
+              "upper",
+              6
+            ],
+            [
+              "input",
+              6
+            ],
+            [
+              "result",
+              6
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-byte-2-repair_expr-w1",
+          "answer": "`Str.at \"tydnh\" 0`\nSteps: offset=0; result=116.\nIt prints 116.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "offset",
+              0
+            ],
+            [
+              "result",
+              116
+            ]
+          ],
+          "expected": [
+            [
+              "offset",
+              0
+            ],
+            [
+              "result",
+              116
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-byte-3-repair_program-w1",
+          "answer": "```sol\nvalue = Str.at \"oxoavu\" 4.\n> print (str value).\n```\nSteps: offset=4; result=117.\nIt prints 117.",
+          "ordered_values_match": false,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "offset",
+              4
+            ],
+            [
+              "result",
+              117
+            ]
+          ],
+          "expected": [
+            [
+              "offset",
+              4
+            ],
+            [
+              "result",
+              118
+            ]
+          ]
+        }
+      ]
+    },
+    "replay_2048": {
+      "n": 24,
+      "ordered_values_match": 22,
+      "renamed_fields_only": 0,
+      "answers_sha256": "539b66dac9a5ef2859276237c2afb1fbe89d11118f6826bb7b8794102bb1d56a",
+      "details": [
+        {
+          "id": "general-inputs-941-map-1-output_trace-w0",
+          "answer": "Steps: products=[105, 27, -45]; result=87.\nIt prints 87.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                105,
+                27,
+                -45
+              ]
+            ],
+            [
+              "result",
+              87
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                105,
+                27,
+                -45
+              ]
+            ],
+            [
+              "result",
+              87
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-map-2-repair_expr-w0",
+          "answer": "`List.sum (List.map (fn x -> x * 2) [20, (-1), 14, 25])`\nSteps: products=[40, -2, 28, 50]; result=126.\nIt prints 126.",
+          "ordered_values_match": false,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                40,
+                -2,
+                28,
+                50
+              ]
+            ],
+            [
+              "result",
+              126
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                40,
+                -2,
+                28,
+                50
+              ]
+            ],
+            [
+              "result",
+              116
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-map-4-repair_program-w0",
+          "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 3) [(-3), 13]).\n> print (str result).\n```\nSteps: products=[-9, 39]; result=30.\nIt prints 30.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                -9,
+                39
+              ]
+            ],
+            [
+              "result",
+              30
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -9,
+                39
+              ]
+            ],
+            [
+              "result",
+              30
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-clamp-0-no_change-w0",
+          "answer": "No change needed. Steps: lower=-3; upper=4; input=4; result=4.\nIt prints 4.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -3
+            ],
+            [
+              "upper",
+              4
+            ],
+            [
+              "input",
+              4
+            ],
+            [
+              "result",
+              4
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -3
+            ],
+            [
+              "upper",
+              4
+            ],
+            [
+              "input",
+              4
+            ],
+            [
+              "result",
+              4
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-clamp-2-generate-w0",
+          "answer": "```sol\nvalue = Numeric.clamp (-2) 2 (-4).\n> print (str value).\n```\nSteps: lower=-2; upper=2; input=-4; result=-2.\nIt prints -2.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -2
+            ],
+            [
+              "upper",
+              2
+            ],
+            [
+              "input",
+              -4
+            ],
+            [
+              "result",
+              -2
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -2
+            ],
+            [
+              "upper",
+              2
+            ],
+            [
+              "input",
+              -4
+            ],
+            [
+              "result",
+              -2
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-clamp-4-output_trace-w0",
+          "answer": "Steps: lower=-15; upper=-10; input=-7; result=-10.\nIt prints -10.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -15
+            ],
+            [
+              "upper",
+              -10
+            ],
+            [
+              "input",
+              -7
+            ],
+            [
+              "result",
+              -10
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -15
+            ],
+            [
+              "upper",
+              -10
+            ],
+            [
+              "input",
+              -7
+            ],
+            [
+              "result",
+              -10
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-byte-0-repair_expr-w0",
+          "answer": "`Str.at \"mmi\" 0`\nSteps: offset=0; result=109.\nIt prints 109.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "offset",
+              0
+            ],
+            [
+              "result",
+              109
+            ]
+          ],
+          "expected": [
+            [
+              "offset",
+              0
+            ],
+            [
+              "result",
+              109
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-byte-1-repair_program-w0",
+          "answer": "```sol\nvalue = Str.at \"bbsq\" 1.\n> print (str value).\n```\nSteps: offset=1; result=98.\nIt prints 98.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "offset",
+              1
+            ],
+            [
+              "result",
+              98
+            ]
+          ],
+          "expected": [
+            [
+              "offset",
+              1
+            ],
+            [
+              "result",
+              98
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-1-output_trace-w0",
+          "answer": "Steps: products=[40, -14, 14]; kept=[40, -14, 14]; result=40.\nIt prints 40.",
+          "ordered_values_match": false,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                40,
+                -14,
+                14
+              ]
+            ],
+            [
+              "kept",
+              [
+                40,
+                -14,
+                14
+              ]
+            ],
+            [
+              "result",
+              40
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                40,
+                -14,
+                14
+              ]
+            ],
+            [
+              "kept",
+              [
+                40,
+                14
+              ]
+            ],
+            [
+              "result",
+              54
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-4-repair_expr-w0",
+          "answer": "`List.sum (List.filter (fn x -> x >= (-5)) (List.map (fn x -> x * 2) [19, (-23)]))`\nSteps: products=[38, -46]; kept=[38]; result=38.\nIt prints 38.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                38,
+                -46
+              ]
+            ],
+            [
+              "kept",
+              [
+                38
+              ]
+            ],
+            [
+              "result",
+              38
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                38,
+                -46
+              ]
+            ],
+            [
+              "kept",
+              [
+                38
+              ]
+            ],
+            [
+              "result",
+              38
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-8-repair_program-w0",
+          "answer": "```sol\nresult = List.sum (List.filter (fn x -> x >= 20) (List.map (fn x -> x * 3) [5, 13])).\n> print (str result).\n```\nSteps: products=[15, 39]; kept=[39]; result=39.\nIt prints 39.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                15,
+                39
+              ]
+            ],
+            [
+              "kept",
+              [
+                39
+              ]
+            ],
+            [
+              "result",
+              39
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                15,
+                39
+              ]
+            ],
+            [
+              "kept",
+              [
+                39
+              ]
+            ],
+            [
+              "result",
+              39
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-9-no_change-w0",
+          "answer": "No change needed. Steps: products=[32, -10, -64]; kept=[32]; result=32.\nIt prints 32.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                32,
+                -10,
+                -64
+              ]
+            ],
+            [
+              "kept",
+              [
+                32
+              ]
+            ],
+            [
+              "result",
+              32
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                32,
+                -10,
+                -64
+              ]
+            ],
+            [
+              "kept",
+              [
+                32
+              ]
+            ],
+            [
+              "result",
+              32
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-10-generate-w0",
+          "answer": "```sol\nvalue = List.sum (List.filter (fn x -> x >= 20) (List.map (fn x -> x * (-2)) [(-17), (-4), 37, 9])).\n> print (str value).\n```\nSteps: products=[34, 8, -74, -18]; kept=[34]; result=34.\nIt prints 34.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                34,
+                8,
+                -74,
+                -18
+              ]
+            ],
+            [
+              "kept",
+              [
+                34
+              ]
+            ],
+            [
+              "result",
+              34
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                34,
+                8,
+                -74,
+                -18
+              ]
+            ],
+            [
+              "kept",
+              [
+                34
+              ]
+            ],
+            [
+              "result",
+              34
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-12-output_trace-w0",
+          "answer": "Steps: products=[-22, -56]; kept=[]; result=0.\nIt prints 0.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                -22,
+                -56
+              ]
+            ],
+            [
+              "kept",
+              []
+            ],
+            [
+              "result",
+              0
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -22,
+                -56
+              ]
+            ],
+            [
+              "kept",
+              []
+            ],
+            [
+              "result",
+              0
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-16-repair_expr-w0",
+          "answer": "`List.sum (List.filter (fn x -> x >= 11) (List.map (fn x -> x * 2) [(-4), 24]))`\nSteps: products=[-8, 48]; kept=[48]; result=48.\nIt prints 48.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                -8,
+                48
+              ]
+            ],
+            [
+              "kept",
+              [
+                48
+              ]
+            ],
+            [
+              "result",
+              48
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -8,
+                48
+              ]
+            ],
+            [
+              "kept",
+              [
+                48
+              ]
+            ],
+            [
+              "result",
+              48
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-20-repair_program-w0",
+          "answer": "```sol\nresult = List.sum (List.filter (fn x -> x >= (-3)) (List.map (fn x -> x * (-2)) [(-5), 36])).\n> print (str result).\n```\nSteps: products=[10, -72]; kept=[10]; result=10.\nIt prints 10.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                10,
+                -72
+              ]
+            ],
+            [
+              "kept",
+              [
+                10
+              ]
+            ],
+            [
+              "result",
+              10
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                10,
+                -72
+              ]
+            ],
+            [
+              "kept",
+              [
+                10
+              ]
+            ],
+            [
+              "result",
+              10
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-map-1-output_trace-w1",
+          "answer": "Steps: products=[-90, -72, -72]; result=-234.\nIt prints -234.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                -90,
+                -72,
+                -72
+              ]
+            ],
+            [
+              "result",
+              -234
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -90,
+                -72,
+                -72
+              ]
+            ],
+            [
+              "result",
+              -234
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-map-2-repair_expr-w1",
+          "answer": "`List.sum (List.map (fn x -> x * 2) [(-3), (-13), 22, (-1)])`\nSteps: products=[-6, -26, 44, -2]; result=10.\nIt prints 10.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                -6,
+                -26,
+                44,
+                -2
+              ]
+            ],
+            [
+              "result",
+              10
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -6,
+                -26,
+                44,
+                -2
+              ]
+            ],
+            [
+              "result",
+              10
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-map-4-repair_program-w1",
+          "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 4) [6, 27]).\n> print (str result).\n```\nSteps: products=[24, 108]; result=132.\nIt prints 132.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                24,
+                108
+              ]
+            ],
+            [
+              "result",
+              132
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                24,
+                108
+              ]
+            ],
+            [
+              "result",
+              132
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-clamp-4-no_change-w1",
+          "answer": "No change needed. Steps: lower=-6; upper=1; input=4; result=1.\nIt prints 1.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -6
+            ],
+            [
+              "upper",
+              1
+            ],
+            [
+              "input",
+              4
+            ],
+            [
+              "result",
+              1
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -6
+            ],
+            [
+              "upper",
+              1
+            ],
+            [
+              "input",
+              4
+            ],
+            [
+              "result",
+              1
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-clamp-5-generate-w1",
+          "answer": "```sol\ntotal = Numeric.clamp (-14) (-8) (-16).\n> print (str total).\n```\nSteps: lower=-14; upper=-8; input=-16; result=-14.\nIt prints -14.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -14
+            ],
+            [
+              "upper",
+              -8
+            ],
+            [
+              "input",
+              -16
+            ],
+            [
+              "result",
+              -14
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -14
+            ],
+            [
+              "upper",
+              -8
+            ],
+            [
+              "input",
+              -16
+            ],
+            [
+              "result",
+              -14
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-clamp-1-output_trace-w1",
+          "answer": "Steps: lower=4; upper=6; input=6; result=6.\nIt prints 6.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              4
+            ],
+            [
+              "upper",
+              6
+            ],
+            [
+              "input",
+              6
+            ],
+            [
+              "result",
+              6
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              4
+            ],
+            [
+              "upper",
+              6
+            ],
+            [
+              "input",
+              6
+            ],
+            [
+              "result",
+              6
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-byte-2-repair_expr-w1",
+          "answer": "`Str.at \"tydnh\" 0`\nSteps: offset=0; result=116.\nIt prints 116.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "offset",
+              0
+            ],
+            [
+              "result",
+              116
+            ]
+          ],
+          "expected": [
+            [
+              "offset",
+              0
+            ],
+            [
+              "result",
+              116
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-byte-3-repair_program-w1",
+          "answer": "```sol\nresult = Str.at \"oxoavu\" 4.\n> print (str result).\n```\nSteps: offset=4; result=118.\nIt prints 118.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "offset",
+              4
+            ],
+            [
+              "result",
+              118
+            ]
+          ],
+          "expected": [
+            [
+              "offset",
+              4
+            ],
+            [
+              "result",
+              118
+            ]
+          ]
+        }
+      ]
+    },
+    "replay_4096": {
+      "n": 24,
+      "ordered_values_match": 22,
+      "renamed_fields_only": 0,
+      "answers_sha256": "9a8e3a3bb72f037baedcc5ae8524e5a234419b37bcad39f038d4e91de6598eb5",
+      "details": [
+        {
+          "id": "general-inputs-941-map-1-output_trace-w0",
+          "answer": "Steps: products=[105, 27, -45]; result=87.\nIt prints 87.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                105,
+                27,
+                -45
+              ]
+            ],
+            [
+              "result",
+              87
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                105,
+                27,
+                -45
+              ]
+            ],
+            [
+              "result",
+              87
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-map-2-repair_expr-w0",
+          "answer": "`List.sum (List.map (fn x -> x * 2) [20, (-1), 14, 25])`\nSteps: products=[40, -2, 28, 50]; result=116.\nIt prints 116.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                40,
+                -2,
+                28,
+                50
+              ]
+            ],
+            [
+              "result",
+              116
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                40,
+                -2,
+                28,
+                50
+              ]
+            ],
+            [
+              "result",
+              116
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-map-4-repair_program-w0",
+          "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 3) [(-3), 13]).\n> print (str result).\n```\nSteps: products=[-9, 39]; result=30.\nIt prints 30.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                -9,
+                39
+              ]
+            ],
+            [
+              "result",
+              30
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -9,
+                39
+              ]
+            ],
+            [
+              "result",
+              30
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-clamp-0-no_change-w0",
+          "answer": "No change needed. Steps: lower=-3; upper=4; input=4; result=4.\nIt prints 4.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -3
+            ],
+            [
+              "upper",
+              4
+            ],
+            [
+              "input",
+              4
+            ],
+            [
+              "result",
+              4
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -3
+            ],
+            [
+              "upper",
+              4
+            ],
+            [
+              "input",
+              4
+            ],
+            [
+              "result",
+              4
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-clamp-2-generate-w0",
+          "answer": "```sol\nvalue = Numeric.clamp (-2) 2 (-4).\n> print (str value).\n```\nSteps: lower=-2; upper=2; input=-4; result=-2.\nIt prints -2.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -2
+            ],
+            [
+              "upper",
+              2
+            ],
+            [
+              "input",
+              -4
+            ],
+            [
+              "result",
+              -2
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -2
+            ],
+            [
+              "upper",
+              2
+            ],
+            [
+              "input",
+              -4
+            ],
+            [
+              "result",
+              -2
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-clamp-4-output_trace-w0",
+          "answer": "Steps: lower=-15; upper=-10; input=-7; result=-10.\nIt prints -10.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -15
+            ],
+            [
+              "upper",
+              -10
+            ],
+            [
+              "input",
+              -7
+            ],
+            [
+              "result",
+              -10
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -15
+            ],
+            [
+              "upper",
+              -10
+            ],
+            [
+              "input",
+              -7
+            ],
+            [
+              "result",
+              -10
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-byte-0-repair_expr-w0",
+          "answer": "`Str.at \"mmi\" 0`\nSteps: offset=0; result=109.\nIt prints 109.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "offset",
+              0
+            ],
+            [
+              "result",
+              109
+            ]
+          ],
+          "expected": [
+            [
+              "offset",
+              0
+            ],
+            [
+              "result",
+              109
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-byte-1-repair_program-w0",
+          "answer": "```sol\nresult = Str.at \"bbsq\" 1.\n> print (str result).\n```\nSteps: offset=1; result=115.\nIt prints 115.",
+          "ordered_values_match": false,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "offset",
+              1
+            ],
+            [
+              "result",
+              115
+            ]
+          ],
+          "expected": [
+            [
+              "offset",
+              1
+            ],
+            [
+              "result",
+              98
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-1-output_trace-w0",
+          "answer": "Steps: products=[40, -14, 14]; kept=[40, -14, 14]; result=40.\nIt prints 40.",
+          "ordered_values_match": false,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                40,
+                -14,
+                14
+              ]
+            ],
+            [
+              "kept",
+              [
+                40,
+                -14,
+                14
+              ]
+            ],
+            [
+              "result",
+              40
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                40,
+                -14,
+                14
+              ]
+            ],
+            [
+              "kept",
+              [
+                40,
+                14
+              ]
+            ],
+            [
+              "result",
+              54
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-4-repair_expr-w0",
+          "answer": "`List.sum (List.filter (fn x -> x >= (-5)) (List.map (fn x -> x * 2) [19, (-23)]))`\nSteps: products=[38, -46]; kept=[38]; result=38.\nIt prints 38.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                38,
+                -46
+              ]
+            ],
+            [
+              "kept",
+              [
+                38
+              ]
+            ],
+            [
+              "result",
+              38
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                38,
+                -46
+              ]
+            ],
+            [
+              "kept",
+              [
+                38
+              ]
+            ],
+            [
+              "result",
+              38
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-8-repair_program-w0",
+          "answer": "```sol\nresult = List.sum (List.filter (fn x -> x >= 20) (List.map (fn x -> x * 3) [5, 13])).\n> print (str result).\n```\nSteps: products=[15, 39]; kept=[39]; result=39.\nIt prints 39.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                15,
+                39
+              ]
+            ],
+            [
+              "kept",
+              [
+                39
+              ]
+            ],
+            [
+              "result",
+              39
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                15,
+                39
+              ]
+            ],
+            [
+              "kept",
+              [
+                39
+              ]
+            ],
+            [
+              "result",
+              39
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-9-no_change-w0",
+          "answer": "No change needed. Steps: products=[32, -10, -64]; kept=[32]; result=32.\nIt prints 32.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                32,
+                -10,
+                -64
+              ]
+            ],
+            [
+              "kept",
+              [
+                32
+              ]
+            ],
+            [
+              "result",
+              32
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                32,
+                -10,
+                -64
+              ]
+            ],
+            [
+              "kept",
+              [
+                32
+              ]
+            ],
+            [
+              "result",
+              32
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-10-generate-w0",
+          "answer": "```sol\nvalue = List.sum (List.filter (fn x -> x >= 20) (List.map (fn x -> x * (-2)) [(-17), (-4), 37, 9])).\n> print (str value).\n```\nSteps: products=[34, 8, -74, -18]; kept=[34]; result=34.\nIt prints 34.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                34,
+                8,
+                -74,
+                -18
+              ]
+            ],
+            [
+              "kept",
+              [
+                34
+              ]
+            ],
+            [
+              "result",
+              34
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                34,
+                8,
+                -74,
+                -18
+              ]
+            ],
+            [
+              "kept",
+              [
+                34
+              ]
+            ],
+            [
+              "result",
+              34
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-12-output_trace-w0",
+          "answer": "Steps: products=[-22, -56]; kept=[]; result=0.\nIt prints 0.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                -22,
+                -56
+              ]
+            ],
+            [
+              "kept",
+              []
+            ],
+            [
+              "result",
+              0
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -22,
+                -56
+              ]
+            ],
+            [
+              "kept",
+              []
+            ],
+            [
+              "result",
+              0
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-16-repair_expr-w0",
+          "answer": "`List.sum (List.filter (fn x -> x >= 11) (List.map (fn x -> x * 2) [(-4), 24]))`\nSteps: products=[-8, 48]; kept=[48]; result=48.\nIt prints 48.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                -8,
+                48
+              ]
+            ],
+            [
+              "kept",
+              [
+                48
+              ]
+            ],
+            [
+              "result",
+              48
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -8,
+                48
+              ]
+            ],
+            [
+              "kept",
+              [
+                48
+              ]
+            ],
+            [
+              "result",
+              48
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-20-repair_program-w0",
+          "answer": "```sol\nresult = List.sum (List.filter (fn x -> x >= (-3)) (List.map (fn x -> x * (-2)) [(-5), 36])).\n> print (str result).\n```\nSteps: products=[10, -72]; kept=[10]; result=10.\nIt prints 10.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                10,
+                -72
+              ]
+            ],
+            [
+              "kept",
+              [
+                10
+              ]
+            ],
+            [
+              "result",
+              10
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                10,
+                -72
+              ]
+            ],
+            [
+              "kept",
+              [
+                10
+              ]
+            ],
+            [
+              "result",
+              10
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-map-1-output_trace-w1",
+          "answer": "Steps: products=[-90, -72, -72]; result=-234.\nIt prints -234.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                -90,
+                -72,
+                -72
+              ]
+            ],
+            [
+              "result",
+              -234
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -90,
+                -72,
+                -72
+              ]
+            ],
+            [
+              "result",
+              -234
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-map-2-repair_expr-w1",
+          "answer": "`List.sum (List.map (fn x -> x * 2) [(-3), (-13), 22, (-1)])`\nSteps: products=[-6, -26, 44, -2]; result=10.\nIt prints 10.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                -6,
+                -26,
+                44,
+                -2
+              ]
+            ],
+            [
+              "result",
+              10
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -6,
+                -26,
+                44,
+                -2
+              ]
+            ],
+            [
+              "result",
+              10
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-map-4-repair_program-w1",
+          "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 4) [6, 27]).\n> print (str result).\n```\nSteps: products=[24, 108]; result=132.\nIt prints 132.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                24,
+                108
+              ]
+            ],
+            [
+              "result",
+              132
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                24,
+                108
+              ]
+            ],
+            [
+              "result",
+              132
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-clamp-4-no_change-w1",
+          "answer": "No change needed. Steps: lower=-6; upper=1; input=4; result=1.\nIt prints 1.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -6
+            ],
+            [
+              "upper",
+              1
+            ],
+            [
+              "input",
+              4
+            ],
+            [
+              "result",
+              1
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -6
+            ],
+            [
+              "upper",
+              1
+            ],
+            [
+              "input",
+              4
+            ],
+            [
+              "result",
+              1
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-clamp-5-generate-w1",
+          "answer": "```sol\ntotal = Numeric.clamp (-14) (-8) (-16).\n> print (str total).\n```\nSteps: lower=-14; upper=-8; input=-16; result=-14.\nIt prints -14.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -14
+            ],
+            [
+              "upper",
+              -8
+            ],
+            [
+              "input",
+              -16
+            ],
+            [
+              "result",
+              -14
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -14
+            ],
+            [
+              "upper",
+              -8
+            ],
+            [
+              "input",
+              -16
+            ],
+            [
+              "result",
+              -14
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-clamp-1-output_trace-w1",
+          "answer": "Steps: lower=4; upper=6; input=6; result=6.\nIt prints 6.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              4
+            ],
+            [
+              "upper",
+              6
+            ],
+            [
+              "input",
+              6
+            ],
+            [
+              "result",
+              6
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              4
+            ],
+            [
+              "upper",
+              6
+            ],
+            [
+              "input",
+              6
+            ],
+            [
+              "result",
+              6
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-byte-2-repair_expr-w1",
+          "answer": "`Str.at \"tydnh\" 0`\nSteps: offset=0; result=116.\nIt prints 116.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "offset",
+              0
+            ],
+            [
+              "result",
+              116
+            ]
+          ],
+          "expected": [
+            [
+              "offset",
+              0
+            ],
+            [
+              "result",
+              116
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-byte-3-repair_program-w1",
+          "answer": "```sol\nresult = Str.at \"oxoavu\" 4.\n> print (str result).\n```\nSteps: offset=4; result=118.\nIt prints 118.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "offset",
+              4
+            ],
+            [
+              "result",
+              118
+            ]
+          ],
+          "expected": [
+            [
+              "offset",
+              4
+            ],
+            [
+              "result",
+              118
+            ]
+          ]
+        }
+      ]
+    },
+    "replay_8192": {
+      "n": 24,
+      "ordered_values_match": 21,
+      "renamed_fields_only": 0,
+      "answers_sha256": "e2128a2f4e3fac35d845db52f001e5184c1048811a9bad914839a5fd0e5df102",
+      "details": [
+        {
+          "id": "general-inputs-941-map-1-output_trace-w0",
+          "answer": "Steps: products=[105, 27, -45]; result=87.\nIt prints 87.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                105,
+                27,
+                -45
+              ]
+            ],
+            [
+              "result",
+              87
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                105,
+                27,
+                -45
+              ]
+            ],
+            [
+              "result",
+              87
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-map-2-repair_expr-w0",
+          "answer": "`List.sum (List.map (fn x -> x * 2) [20, (-1), 14, 25])`\nSteps: products=[40, -2, 28, 50]; result=126.\nIt prints 126.",
+          "ordered_values_match": false,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                40,
+                -2,
+                28,
+                50
+              ]
+            ],
+            [
+              "result",
+              126
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                40,
+                -2,
+                28,
+                50
+              ]
+            ],
+            [
+              "result",
+              116
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-map-4-repair_program-w0",
+          "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 3) [(-3), 13]).\n> print (str result).\n```\nSteps: products=[-9, 39]; result=30.\nIt prints 30.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                -9,
+                39
+              ]
+            ],
+            [
+              "result",
+              30
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -9,
+                39
+              ]
+            ],
+            [
+              "result",
+              30
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-clamp-0-no_change-w0",
+          "answer": "No change needed. Steps: lower=-3; upper=4; input=4; result=4.\nIt prints 4.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -3
+            ],
+            [
+              "upper",
+              4
+            ],
+            [
+              "input",
+              4
+            ],
+            [
+              "result",
+              4
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -3
+            ],
+            [
+              "upper",
+              4
+            ],
+            [
+              "input",
+              4
+            ],
+            [
+              "result",
+              4
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-clamp-2-generate-w0",
+          "answer": "```sol\nvalue = Numeric.clamp (-2) 2 (-4).\n> print (str value).\n```\nSteps: lower=-2; upper=2; input=-4; result=-2.\nIt prints -2.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -2
+            ],
+            [
+              "upper",
+              2
+            ],
+            [
+              "input",
+              -4
+            ],
+            [
+              "result",
+              -2
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -2
+            ],
+            [
+              "upper",
+              2
+            ],
+            [
+              "input",
+              -4
+            ],
+            [
+              "result",
+              -2
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-clamp-4-output_trace-w0",
+          "answer": "Steps: lower=-15; upper=-10; input=-7; result=-10.\nIt prints -10.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -15
+            ],
+            [
+              "upper",
+              -10
+            ],
+            [
+              "input",
+              -7
+            ],
+            [
+              "result",
+              -10
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -15
+            ],
+            [
+              "upper",
+              -10
+            ],
+            [
+              "input",
+              -7
+            ],
+            [
+              "result",
+              -10
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-byte-0-repair_expr-w0",
+          "answer": "`Str.at \"mmi\" 0`\nSteps: offset=0; result=109.\nIt prints 109.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "offset",
+              0
+            ],
+            [
+              "result",
+              109
+            ]
+          ],
+          "expected": [
+            [
+              "offset",
+              0
+            ],
+            [
+              "result",
+              109
+            ]
+          ]
+        },
+        {
+          "id": "general-inputs-941-byte-1-repair_program-w0",
+          "answer": "```sol\nvalue = Str.at \"bbsq\" 1.\n> print (str value).\n```\nSteps: offset=1; result=115.\nIt prints 115.",
+          "ordered_values_match": false,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "offset",
+              1
+            ],
+            [
+              "result",
+              115
+            ]
+          ],
+          "expected": [
+            [
+              "offset",
+              1
+            ],
+            [
+              "result",
+              98
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-1-output_trace-w0",
+          "answer": "Steps: products=[40, -14, 14]; kept=[40, -14, 14]; result=40.\nIt prints 40.",
+          "ordered_values_match": false,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                40,
+                -14,
+                14
+              ]
+            ],
+            [
+              "kept",
+              [
+                40,
+                -14,
+                14
+              ]
+            ],
+            [
+              "result",
+              40
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                40,
+                -14,
+                14
+              ]
+            ],
+            [
+              "kept",
+              [
+                40,
+                14
+              ]
+            ],
+            [
+              "result",
+              54
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-4-repair_expr-w0",
+          "answer": "`List.sum (List.filter (fn x -> x >= (-5)) (List.map (fn x -> x * 2) [19, (-23)]))`\nSteps: products=[38, -46]; kept=[38]; result=38.\nIt prints 38.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                38,
+                -46
+              ]
+            ],
+            [
+              "kept",
+              [
+                38
+              ]
+            ],
+            [
+              "result",
+              38
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                38,
+                -46
+              ]
+            ],
+            [
+              "kept",
+              [
+                38
+              ]
+            ],
+            [
+              "result",
+              38
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-8-repair_program-w0",
+          "answer": "```sol\nresult = List.sum (List.filter (fn x -> x >= 20) (List.map (fn x -> x * 3) [5, 13])).\n> print (str result).\n```\nSteps: products=[15, 39]; kept=[39]; result=39.\nIt prints 39.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                15,
+                39
+              ]
+            ],
+            [
+              "kept",
+              [
+                39
+              ]
+            ],
+            [
+              "result",
+              39
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                15,
+                39
+              ]
+            ],
+            [
+              "kept",
+              [
+                39
+              ]
+            ],
+            [
+              "result",
+              39
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-9-no_change-w0",
+          "answer": "No change needed. Steps: products=[32, -10, -64]; kept=[32]; result=32.\nIt prints 32.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                32,
+                -10,
+                -64
+              ]
+            ],
+            [
+              "kept",
+              [
+                32
+              ]
+            ],
+            [
+              "result",
+              32
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                32,
+                -10,
+                -64
+              ]
+            ],
+            [
+              "kept",
+              [
+                32
+              ]
+            ],
+            [
+              "result",
+              32
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-10-generate-w0",
+          "answer": "```sol\nvalue = List.sum (List.filter (fn x -> x >= 20) (List.map (fn x -> x * (-2)) [(-17), (-4), 37, 9])).\n> print (str value).\n```\nSteps: products=[34, 8, -74, -18]; kept=[34]; result=34.\nIt prints 34.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                34,
+                8,
+                -74,
+                -18
+              ]
+            ],
+            [
+              "kept",
+              [
+                34
+              ]
+            ],
+            [
+              "result",
+              34
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                34,
+                8,
+                -74,
+                -18
+              ]
+            ],
+            [
+              "kept",
+              [
+                34
+              ]
+            ],
+            [
+              "result",
+              34
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-12-output_trace-w0",
+          "answer": "Steps: products=[-22, -56]; kept=[]; result=0.\nIt prints 0.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                -22,
+                -56
+              ]
+            ],
+            [
+              "kept",
+              []
+            ],
+            [
+              "result",
+              0
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -22,
+                -56
+              ]
+            ],
+            [
+              "kept",
+              []
+            ],
+            [
+              "result",
+              0
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-16-repair_expr-w0",
+          "answer": "`List.sum (List.filter (fn x -> x >= 11) (List.map (fn x -> x * 2) [(-4), 24]))`\nSteps: products=[-8, 48]; kept=[48]; result=48.\nIt prints 48.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                -8,
+                48
+              ]
+            ],
+            [
+              "kept",
+              [
+                48
+              ]
+            ],
+            [
+              "result",
+              48
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -8,
+                48
+              ]
+            ],
+            [
+              "kept",
+              [
+                48
+              ]
+            ],
+            [
+              "result",
+              48
+            ]
+          ]
+        },
+        {
+          "id": "general-combinations-941-map_filter-20-repair_program-w0",
+          "answer": "```sol\nresult = List.sum (List.filter (fn x -> x >= (-3)) (List.map (fn x -> x * (-2)) [(-5), 36])).\n> print (str result).\n```\nSteps: products=[10, -72]; kept=[10]; result=10.\nIt prints 10.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                10,
+                -72
+              ]
+            ],
+            [
+              "kept",
+              [
+                10
+              ]
+            ],
+            [
+              "result",
+              10
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                10,
+                -72
+              ]
+            ],
+            [
+              "kept",
+              [
+                10
+              ]
+            ],
+            [
+              "result",
+              10
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-map-1-output_trace-w1",
+          "answer": "Steps: products=[-90, -72, -72]; result=-234.\nIt prints -234.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                -90,
+                -72,
+                -72
+              ]
+            ],
+            [
+              "result",
+              -234
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -90,
+                -72,
+                -72
+              ]
+            ],
+            [
+              "result",
+              -234
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-map-2-repair_expr-w1",
+          "answer": "`List.sum (List.map (fn x -> x * 2) [(-3), (-13), 22, (-1)])`\nSteps: products=[-6, -26, 44, -2]; result=10.\nIt prints 10.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                -6,
+                -26,
+                44,
+                -2
+              ]
+            ],
+            [
+              "result",
+              10
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                -6,
+                -26,
+                44,
+                -2
+              ]
+            ],
+            [
+              "result",
+              10
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-map-4-repair_program-w1",
+          "answer": "```sol\nresult = List.sum (List.map (fn x -> x * 4) [6, 27]).\n> print (str result).\n```\nSteps: products=[24, 108]; result=132.\nIt prints 132.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "products",
+              [
+                24,
+                108
+              ]
+            ],
+            [
+              "result",
+              132
+            ]
+          ],
+          "expected": [
+            [
+              "products",
+              [
+                24,
+                108
+              ]
+            ],
+            [
+              "result",
+              132
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-clamp-4-no_change-w1",
+          "answer": "No change needed. Steps: lower=-6; upper=1; input=4; result=1.\nIt prints 1.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -6
+            ],
+            [
+              "upper",
+              1
+            ],
+            [
+              "input",
+              4
+            ],
+            [
+              "result",
+              1
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -6
+            ],
+            [
+              "upper",
+              1
+            ],
+            [
+              "input",
+              4
+            ],
+            [
+              "result",
+              1
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-clamp-5-generate-w1",
+          "answer": "```sol\ntotal = Numeric.clamp (-14) (-8) (-16).\n> print (str total).\n```\nSteps: lower=-14; upper=-8; input=-16; result=-14.\nIt prints -14.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              -14
+            ],
+            [
+              "upper",
+              -8
+            ],
+            [
+              "input",
+              -16
+            ],
+            [
+              "result",
+              -14
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              -14
+            ],
+            [
+              "upper",
+              -8
+            ],
+            [
+              "input",
+              -16
+            ],
+            [
+              "result",
+              -14
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-clamp-1-output_trace-w1",
+          "answer": "Steps: lower=4; upper=6; input=6; result=6.\nIt prints 6.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "lower",
+              4
+            ],
+            [
+              "upper",
+              6
+            ],
+            [
+              "input",
+              6
+            ],
+            [
+              "result",
+              6
+            ]
+          ],
+          "expected": [
+            [
+              "lower",
+              4
+            ],
+            [
+              "upper",
+              6
+            ],
+            [
+              "input",
+              6
+            ],
+            [
+              "result",
+              6
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-byte-2-repair_expr-w1",
+          "answer": "`Str.at \"tydnh\" 0`\nSteps: offset=0; result=116.\nIt prints 116.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "offset",
+              0
+            ],
+            [
+              "result",
+              116
+            ]
+          ],
+          "expected": [
+            [
+              "offset",
+              0
+            ],
+            [
+              "result",
+              116
+            ]
+          ]
+        },
+        {
+          "id": "general-wording-419-byte-3-repair_program-w1",
+          "answer": "```sol\nresult = Str.at \"oxoavu\" 4.\n> print (str result).\n```\nSteps: offset=4; result=118.\nIt prints 118.",
+          "ordered_values_match": true,
+          "renamed_fields_only": false,
+          "parsed": [
+            [
+              "offset",
+              4
+            ],
+            [
+              "result",
+              118
+            ]
+          ],
+          "expected": [
+            [
+              "offset",
+              4
+            ],
+            [
+              "result",
+              118
+            ]
+          ]
+        }
+      ]
+    }
+  }
+}

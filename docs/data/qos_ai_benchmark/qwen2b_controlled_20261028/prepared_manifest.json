@@ -1,0 +1,132 @@
+{
+  "seed": 20261028,
+  "compiler_sha256": "9987da491a791af853300f38ad3e73c52a243dbfd1422379a8dbe437369b776e",
+  "historical_train_sha256": "8ce597e251c15f39f2d00a07a2762c2e217f1dc655e707d3b0afdbce54979d9b",
+  "policy": "coding only; all intermediate calculations compiler verified; steps before output; exact question/program and historical case exclusions; no final answers",
+  "replay_counts": {
+    "repair": 60,
+    "output": 60,
+    "generate": 60,
+    "nochange": 60
+  },
+  "new_counts": {
+    "repair": 72,
+    "nochange": 72,
+    "output": 72,
+    "generate": 72
+  },
+  "verified_rows": 544,
+  "replay_rejections": [],
+  "schedules": {
+    "replay": [
+      {
+        "budget": 2048,
+        "actual_tokens": 2048,
+        "micro_batches": 50,
+        "optimizer_updates": 25,
+        "unique_rows": 50,
+        "by_origin": {
+          "replay": 50
+        },
+        "by_kind": {
+          "output": 13,
+          "repair": 13,
+          "nochange": 12,
+          "generate": 12
+        }
+      },
+      {
+        "budget": 4096,
+        "actual_tokens": 4060,
+        "micro_batches": 100,
+        "optimizer_updates": 50,
+        "unique_rows": 100,
+        "by_origin": {
+          "replay": 100
+        },
+        "by_kind": {
+          "output": 25,
+          "repair": 25,
+          "nochange": 25,
+          "generate": 25
+        }
+      },
+      {
+        "budget": 8192,
+        "actual_tokens": 8191,
+        "micro_batches": 208,
+        "optimizer_updates": 104,
+        "unique_rows": 208,
+        "by_origin": {
+          "replay": 208
+        },
+        "by_kind": {
+          "output": 52,
+          "repair": 52,
+          "nochange": 52,
+          "generate": 52
+        }
+      }
+    ],
+    "mixed": [
+      {
+        "budget": 2048,
+        "actual_tokens": 2048,
+        "micro_batches": 28,
+        "optimizer_updates": 14,
+        "unique_rows": 28,
+        "by_origin": {
+          "replay": 14,
+          "new": 14
+        },
+        "by_kind": {
+          "output": 7,
+          "repair": 7,
+          "nochange": 7,
+          "generate": 7
+        }
+      },
+      {
+        "budget": 4096,
+        "actual_tokens": 4096,
+        "micro_batches": 58,
+        "optimizer_updates": 29,
+        "unique_rows": 58,
+        "by_origin": {
+          "replay": 29,
+          "new": 29
+        },
+        "by_kind": {
+          "output": 15,
+          "repair": 15,
+          "nochange": 14,
+          "generate": 14
+        }
+      },
+      {
+        "budget": 8192,
+        "actual_tokens": 8208,
+        "micro_batches": 120,
+        "optimizer_updates": 60,
+        "unique_rows": 120,
+        "by_origin": {
+          "replay": 60,
+          "new": 60
+        },
+        "by_kind": {
+          "output": 30,
+          "repair": 30,
+          "nochange": 30,
+          "generate": 30
+        }
+      }
+    ]
+  },
+  "sha256": {
+    "replay_schedule.jsonl": "0cf77bd31443d7a9ad802c7a5ba4e0b579275dc926fbc3fe4a12409b3b3f1e4d",
+    "new_pool.jsonl": "f4601de25eb4ecff64c64bf9cfed3534ac88c3c89dfe99ad8cfe4d8b37f74d50",
+    "mixed_schedule.jsonl": "bea408e05d9a4a93033172ecf9afcb8fbcc80fcb13ee533492a31a18c28156b7",
+    "valid.jsonl": "a212875d9b721ffd8b9f0d7f8c6682276f091747fe1c6e9f5f5d87a55c690fa6",
+    "replay_pool.jsonl": "c0700dce4ec22f5f5d4aab03a5c05c794d98fbfbe1e41a31e076207e37e1ef47"
+  }
+}

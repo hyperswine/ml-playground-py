@@ -1,0 +1,27 @@
+{
+  "model": "/Users/jq/qos_ai_eval/experiments/mlx_20261027/mlx_2b_round4_q8",
+  "model_files": {
+    "config.json": "ddfcb7c9c8e637f1bee327053edf61575f754fce61142c5125a3b65bb3acce8a",
+    "generation_config.json": "1b9e2b234e67729879487a490c93fd51156db740512ee41bf8c99ba2b264dbb2",
+    "model.safetensors": "b34593af75a601f2825a10ca4ac90035fcf9b5c86cbbb537344ae689a4e1e047",
+    "model.safetensors.index.json": "e391653bb33e96175a39aad5576940b04bed4ff13673b4c89896d41917ae8fd3",
+    "tokenizer.json": "a5cd9732badce41de57e6efce8302930ded1c1188c5f81feb2bd6c24c4a1941f",
+    "tokenizer_config.json": "4d2fc7899270dc76b57a7aa1d5ec3234e6a25934c6e2aea6166f989f1d453892"
+  },
+  "adapter": "/Users/jq/qos_ai_eval/experiments/qwen2b_controlled_20261028/adapter_replay/step_0050",
+  "adapter_files": {
+    "adapter_config.json": "a379de7a70e66d6a91ca7b7ed5fcc7f4688206f2895602bdacc7a96338146674",
+    "adapters.safetensors": "6fa7d9ac3a36d55af6e25b4376f0dcf97e4f7c79de8fda83c38b86df2facbff2",
+    "receipt.json": "6c5290e9112d45207e6303ec80927874ce5374179a918f260f9bcf592df2b030"
+  },
+  "prompts_sha256": "3649e5e5bc0963575e1194d78fc055f598fdb5fdc6f73c4c5318aa905b899a11",
+  "sampler": "greedy temperature=0",
+  "format": "manual historical no-thinking chat",
+  "script_sha256": "d37d548830fa33f5f8f8f7116e414b0e2b46d39682379a5be52d1de2e8e61ea3",
+  "mlx": "0.32.4",
+  "mlx_lm": "0.32.2",
+  "seconds": 51.12129800010007,
+  "peak_memory_gb": 2.532553448,
+  "answers_sha256": "539b66dac9a5ef2859276237c2afb1fbe89d11118f6826bb7b8794102bb1d56a",
+  "count": 24
+}

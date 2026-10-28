@@ -1,0 +1,539 @@
+{
+  "schema": 2,
+  "n": 48,
+  "code_n": 48,
+  "code_complete": 4,
+  "code_programs_correct": 21,
+  "code_claims_correct": 4,
+  "documentation_n": 0,
+  "documentation_rubric_proxy_pass": 0,
+  "documentation_requires_manual_review": false,
+  "by_kind": {
+    "generate": {
+      "n": 12,
+      "correct": 1
+    },
+    "nochange": {
+      "n": 12,
+      "correct": 0
+    },
+    "output": {
+      "n": 12,
+      "correct": 3
+    },
+    "repair": {
+      "n": 12,
+      "correct": 0
+    }
+  },
+  "scorer_sha256": "ecdbc89eb2a8b4b73d7e4772e54d03693dc3b11eede89fa8b1ae733c56af9745",
+  "compiler_sha256": "9987da491a791af853300f38ad3e73c52a243dbfd1422379a8dbe437369b776e",
+  "rows_sha256": "fe5c351615b3820d70f73781a2e90b5b0bc1798f8a849e814dab419b34a6f0ef",
+  "answers_sha256": "67dbb2c0a2bb9676673d6013bccc8fe48ae5846405b9ab1269b864aaef0f24a0",
+  "rows": [
+    {
+      "id": "dev-07-000",
+      "kind": "repair",
+      "claim_correct": false,
+      "code_correct": true,
+      "input_preserved": true,
+      "case_passes": 7,
+      "cases": 7,
+      "nochange_correct": null,
+      "repair_decision_correct": false,
+      "correct": false
+    },
+    {
+      "id": "dev-07-001",
+      "kind": "nochange",
+      "claim_correct": false,
+      "code_correct": true,
+      "input_preserved": true,
+      "case_passes": 7,
+      "cases": 7,
+      "nochange_correct": true,
+      "repair_decision_correct": null,
+      "correct": false
+    },
+    {
+      "id": "dev-07-002",
+      "kind": "output",
+      "claim_correct": false,
+      "correct": false
+    },
+    {
+      "id": "dev-07-003",
+      "kind": "generate",
+      "claim_correct": false,
+      "code_correct": false,
+      "input_preserved": false,
+      "case_passes": 0,
+      "cases": 7,
+      "nochange_correct": null,
+      "correct": false,
+      "reason": "expected exactly one literal xs binding"
+    },
+    {
+      "id": "dev-07-004",
+      "kind": "repair",
+      "claim_correct": false,
+      "code_correct": true,
+      "input_preserved": true,
+      "case_passes": 7,
+      "cases": 7,
+      "nochange_correct": null,
+      "repair_decision_correct": false,
+      "correct": false
+    },
+    {
+      "id": "dev-07-005",
+      "kind": "nochange",
+      "claim_correct": false,
+      "code_correct": true,
+      "input_preserved": true,
+      "case_passes": 7,
+      "cases": 7,
+      "nochange_correct": true,
+      "repair_decision_correct": null,
+      "correct": false
+    },
+    {
+      "id": "dev-07-006",
+      "kind": "output",
+      "claim_correct": false,
+      "correct": false
+    },
+    {
+      "id": "dev-07-007",
+      "kind": "generate",
+      "claim_correct": true,
+      "code_correct": true,
+      "input_preserved": true,
+      "case_passes": 7,
+      "cases": 7,
+      "nochange_correct": null,
+      "repair_decision_correct": null,
+      "correct": true
+    },
+    {
+      "id": "dev-07-008",
+      "kind": "repair",
+      "claim_correct": false,
+      "code_correct": true,
+      "input_preserved": true,
+      "case_passes": 7,
+      "cases": 7,
+      "nochange_correct": null,
+      "repair_decision_correct": false,
+      "correct": false
+    },
+    {
+      "id": "dev-07-009",
+      "kind": "nochange",
+      "claim_correct": false,
+      "code_correct": true,
+      "input_preserved": true,
+      "case_passes": 7,
+      "cases": 7,
+      "nochange_correct": true,
+      "repair_decision_correct": null,
+      "correct": false
+    },
+    {
+      "id": "dev-07-010",
+      "kind": "output",
+      "claim_correct": false,
+      "correct": false
+    },
+    {
+      "id": "dev-07-011",
+      "kind": "generate",
+      "claim_correct": false,
+      "code_correct": true,
+      "input_preserved": true,
+      "case_passes": 7,
+      "cases": 7,
+      "nochange_correct": null,
+      "repair_decision_correct": null,
+      "correct": false
+    },
+    {
+      "id": "dev-07-012",
+      "kind": "repair",
+      "claim_correct": false,
+      "code_correct": true,
+      "input_preserved": true,
+      "case_passes": 7,
+      "cases": 7,
+      "nochange_correct": null,
+      "repair_decision_correct": false,
+      "correct": false
+    },
+    {
+      "id": "dev-07-013",
+      "kind": "nochange",
+      "claim_correct": false,
+      "code_correct": true,
+      "input_preserved": true,
+      "case_passes": 7,
+      "cases": 7,
+      "nochange_correct": true,
+      "repair_decision_correct": null,
+      "correct": false
+    },
+    {
+      "id": "dev-07-014",
+      "kind": "output",
+      "claim_correct": false,
+      "correct": false
+    },
+    {
+      "id": "dev-07-015",
+      "kind": "generate",
+      "claim_correct": false,
+      "code_correct": false,
+      "input_preserved": false,
+      "case_passes": 0,
+      "cases": 7,
+      "nochange_correct": null,
+      "correct": false,
+      "reason": "expected exactly one literal xs binding"
+    },
+    {
+      "id": "dev-08-000",
+      "kind": "repair",
+      "claim_correct": false,
+      "code_correct": false,
+      "input_preserved": true,
+      "case_passes": 5,
+      "cases": 7,
+      "nochange_correct": null,
+      "repair_decision_correct": false,
+      "correct": false
+    },
+    {
+      "id": "dev-08-001",
+      "kind": "nochange",
+      "claim_correct": false,
+      "code_correct": true,
+      "input_preserved": true,
+      "case_passes": 7,
+      "cases": 7,
+      "nochange_correct": true,
+      "repair_decision_correct": null,
+      "correct": false
+    },
+    {
+      "id": "dev-08-002",
+      "kind": "output",
+      "claim_correct": false,
+      "correct": false
+    },
+    {
+      "id": "dev-08-003",
+      "kind": "generate",
+      "claim_correct": false,
+      "code_correct": false,
+      "input_preserved": false,
+      "case_passes": 0,
+      "cases": 7,
+      "nochange_correct": null,
+      "correct": false,
+      "reason": "expected exactly one literal xs binding"
+    },
+    {
+      "id": "dev-08-004",
+      "kind": "repair",
+      "claim_correct": false,
+      "code_correct": false,
+      "input_preserved": true,
+      "case_passes": 6,
+      "cases": 7,
+      "nochange_correct": null,
+      "repair_decision_correct": false,
+      "correct": false
+    },
+    {
+      "id": "dev-08-005",
+      "kind": "nochange",
+      "claim_correct": false,
+      "code_correct": true,
+      "input_preserved": true,
+      "case_passes": 7,
+      "cases": 7,
+      "nochange_correct": true,
+      "repair_decision_correct": null,
+      "correct": false
+    },
+    {
+      "id": "dev-08-006",
+      "kind": "output",
+      "claim_correct": true,
+      "correct": true
+    },
+    {
+      "id": "dev-08-007",
+      "kind": "generate",
+      "claim_correct": false,
+      "code_correct": false,
+      "input_preserved": false,
+      "case_passes": 0,
+      "cases": 7,
+      "nochange_correct": null,
+      "correct": false,
+      "reason": "expected exactly one literal xs binding"
+    },
+    {
+      "id": "dev-08-008",
+      "kind": "repair",
+      "claim_correct": false,
+      "code_correct": false,
+      "input_preserved": true,
+      "case_passes": 6,
+      "cases": 7,
+      "nochange_correct": null,
+      "repair_decision_correct": false,
+      "correct": false
+    },
+    {
+      "id": "dev-08-009",
+      "kind": "nochange",
+      "claim_correct": false,
+      "code_correct": true,
+      "input_preserved": true,
+      "case_passes": 7,
+      "cases": 7,
+      "nochange_correct": true,
+      "repair_decision_correct": null,
+      "correct": false
+    },
+    {
+      "id": "dev-08-010",
+      "kind": "output",
+      "claim_correct": true,
+      "correct": true
+    },
+    {
+      "id": "dev-08-011",
+      "kind": "generate",
+      "claim_correct": false,
+      "code_correct": false,
+      "input_preserved": false,
+      "case_passes": 0,
+      "cases": 7,
+      "nochange_correct": null,
+      "correct": false,
+      "reason": "expected exactly one literal xs binding"
+    },
+    {
+      "id": "dev-08-012",
+      "kind": "repair",
+      "claim_correct": false,
+      "code_correct": false,
+      "input_preserved": true,
+      "case_passes": 6,
+      "cases": 7,
+      "nochange_correct": null,
+      "repair_decision_correct": false,
+      "correct": false
+    },
+    {
+      "id": "dev-08-013",
+      "kind": "nochange",
+      "claim_correct": false,
+      "code_correct": true,
+      "input_preserved": true,
+      "case_passes": 7,
+      "cases": 7,
+      "nochange_correct": true,
+      "repair_decision_correct": null,
+      "correct": false
+    },
+    {
+      "id": "dev-08-014",
+      "kind": "output",
+      "claim_correct": false,
+      "correct": false
+    },
+    {
+      "id": "dev-08-015",
+      "kind": "generate",
+      "claim_correct": false,
+      "code_correct": false,
+      "input_preserved": false,
+      "case_passes": 0,
+      "cases": 7,
+      "nochange_correct": null,
+      "correct": false,
+      "reason": "expected exactly one literal xs binding"
+    },
+    {
+      "id": "dev-09-000",
+      "kind": "repair",
+      "claim_correct": false,
+      "code_correct": true,
+      "input_preserved": true,
+      "case_passes": 7,
+      "cases": 7,
+      "nochange_correct": null,
+      "repair_decision_correct": false,
+      "correct": false
+    },
+    {
+      "id": "dev-09-001",
+      "kind": "nochange",
+      "claim_correct": false,
+      "code_correct": true,
+      "input_preserved": true,
+      "case_passes": 7,
+      "cases": 7,
+      "nochange_correct": true,
+      "repair_decision_correct": null,
+      "correct": false
+    },
+    {
+      "id": "dev-09-002",
+      "kind": "output",
+      "claim_correct": false,
+      "correct": false
+    },
+    {
+      "id": "dev-09-003",
+      "kind": "generate",
+      "claim_correct": false,
+      "code_correct": false,
+      "input_preserved": false,
+      "case_passes": 0,
+      "cases": 7,
+      "nochange_correct": null,
+      "correct": false,
+      "reason": "expected exactly one literal xs binding"
+    },
+    {
+      "id": "dev-09-004",
+      "kind": "repair",
+      "claim_correct": false,
+      "code_correct": true,
+      "input_preserved": true,
+      "case_passes": 7,
+      "cases": 7,
+      "nochange_correct": null,
+      "repair_decision_correct": false,
+      "correct": false
+    },
+    {
+      "id": "dev-09-005",
+      "kind": "nochange",
+      "claim_correct": false,
+      "code_correct": true,
+      "input_preserved": true,
+      "case_passes": 7,
+      "cases": 7,
+      "nochange_correct": true,
+      "repair_decision_correct": null,
+      "correct": false
+    },
+    {
+      "id": "dev-09-006",
+      "kind": "output",
+      "claim_correct": false,
+      "correct": false
+    },
+    {
+      "id": "dev-09-007",
+      "kind": "generate",
+      "claim_correct": false,
+      "code_correct": false,
+      "input_preserved": false,
+      "case_passes": 0,
+      "cases": 7,
+      "nochange_correct": null,
+      "correct": false,
+      "reason": "expected exactly one literal xs binding"
+    },
+    {
+      "id": "dev-09-008",
+      "kind": "repair",
+      "claim_correct": false,
+      "code_correct": false,
+      "input_preserved": false,
+      "case_passes": 7,
+      "cases": 7,
+      "nochange_correct": null,
+      "repair_decision_correct": false,
+      "correct": false
+    },
+    {
+      "id": "dev-09-009",
+      "kind": "nochange",
+      "claim_correct": false,
+      "code_correct": true,
+      "input_preserved": true,
+      "case_passes": 7,
+      "cases": 7,
+      "nochange_correct": true,
+      "repair_decision_correct": null,
+      "correct": false
+    },
+    {
+      "id": "dev-09-010",
+      "kind": "output",
+      "claim_correct": true,
+      "correct": true
+    },
+    {
+      "id": "dev-09-011",
+      "kind": "generate",
+      "claim_correct": false,
+      "code_correct": false,
+      "input_preserved": false,
+      "case_passes": 0,
+      "cases": 7,
+      "nochange_correct": null,
+      "correct": false,
+      "reason": "expected exactly one literal xs binding"
+    },
+    {
+      "id": "dev-09-012",
+      "kind": "repair",
+      "claim_correct": false,
+      "code_correct": true,
+      "input_preserved": true,
+      "case_passes": 7,
+      "cases": 7,
+      "nochange_correct": null,
+      "repair_decision_correct": false,
+      "correct": false
+    },
+    {
+      "id": "dev-09-013",
+      "kind": "nochange",
+      "claim_correct": false,
+      "code_correct": true,
+      "input_preserved": true,
+      "case_passes": 7,
+      "cases": 7,
+      "nochange_correct": true,
+      "repair_decision_correct": null,
+      "correct": false
+    },
+    {
+      "id": "dev-09-014",
+      "kind": "output",
+      "claim_correct": false,
+      "correct": false
+    },
+    {
+      "id": "dev-09-015",
+      "kind": "generate",
+      "claim_correct": false,
+      "code_correct": false,
+      "input_preserved": false,
+      "case_passes": 0,
+      "cases": 7,
+      "nochange_correct": null,
+      "correct": false,
+      "reason": "expected exactly one literal xs binding"
+    }
+  ]
+}

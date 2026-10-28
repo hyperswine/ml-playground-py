@@ -1,0 +1,81 @@
+{
+  "replay": [
+    {
+      "budget": 2048,
+      "tokens_by_origin": {
+        "replay": 2048
+      },
+      "tokens_by_kind": {
+        "output": 201,
+        "repair": 657,
+        "nochange": 386,
+        "generate": 804
+      }
+    },
+    {
+      "budget": 4096,
+      "tokens_by_origin": {
+        "replay": 4060
+      },
+      "tokens_by_kind": {
+        "output": 405,
+        "repair": 1280,
+        "nochange": 777,
+        "generate": 1598
+      }
+    },
+    {
+      "budget": 8192,
+      "tokens_by_origin": {
+        "replay": 8191
+      },
+      "tokens_by_kind": {
+        "output": 731,
+        "repair": 2644,
+        "nochange": 1542,
+        "generate": 3274
+      }
+    }
+  ],
+  "mixed": [
+    {
+      "budget": 2048,
+      "tokens_by_origin": {
+        "replay": 532,
+        "new": 1516
+      },
+      "tokens_by_kind": {
+        "output": 241,
+        "repair": 642,
+        "nochange": 513,
+        "generate": 652
+      }
+    },
+    {
+      "budget": 4096,
+      "tokens_by_origin": {
+        "replay": 1192,
+        "new": 2904
+      },
+      "tokens_by_kind": {
+        "output": 480,
+        "repair": 1250,
+        "nochange": 1110,
+        "generate": 1256
+      }
+    },
+    {
+      "budget": 8192,
+      "tokens_by_origin": {
+        "replay": 2334,
+        "new": 5874
+      },
+      "tokens_by_kind": {
+        "output": 892,
+        "repair": 2492,
+        "nochange": 2253,
+        "generate": 2571
+      }
+    }
+  ]
+}

@@ -60,10 +60,24 @@ def answer_only_loss(model, batch, lengths):
   return ce.astype(mx.float32).sum()/count,count
 
 
+def ordered_batches(dataset,batch_size,max_seq_length,loop=False,seed=None,comm_group=None):
+  """Explicit row order; finite validation and exactly recorded training exposure."""
+  import mlx.core as mx
+  if batch_size!=1 or (comm_group is not None and comm_group.size()!=1):
+    raise ValueError('ordered pilot supports one example and one device')
+  while True:
+    for i in range(len(dataset)):
+      tokens,offset=dataset[i]
+      if len(tokens)>max_seq_length:raise ValueError('refusing truncation')
+      padded=min(max_seq_length,1+32*((len(tokens)+31)//32))
+      yield mx.array([tokens+[0]*(padded-len(tokens))]),mx.array([[offset,len(tokens)]])
+    if not loop:break
+
+
 def train(a):
   import mlx.core as mx
   import numpy as np
-  np.random.seed(20261027)
+  np.random.seed(a.seed)
   from mlx_lm import load
   from mlx_lm.lora import CONFIG_DEFAULTS
   from mlx_lm.tuner.datasets import CacheDataset
@@ -74,17 +88,20 @@ def train(a):
   if dest.exists():raise ValueError('choose a new adapter output directory')
   model,tok=load(a.model)
   tr=ExactDataset(rows(a.train),tok,a.max_seq_length)
+  checkpoints=sorted(set(int(x) for x in a.checkpoints.split(',') if x))
+  if any(x<2 or x%2 or x>a.iters for x in checkpoints):raise ValueError('checkpoints must be even and within training')
+  if a.ordered and len(tr)!=a.iters:raise ValueError('ordered training requires exactly one row per micro-batch')
   va=ExactDataset(rows(a.valid),tok,a.max_seq_length)
   cfg={**CONFIG_DEFAULTS,'model':a.model,'data':str(Path(a.train).parent),'train':True,'fine_tune_type':'lora','num_layers':4,
        'lora_parameters':{'rank':8,'scale':16.,'dropout':0.},'batch_size':1,'iters':a.iters,
        'grad_accumulation_steps':2,'val_batches':4,'steps_per_eval':a.iters,
        'steps_per_report':5,'save_every':a.iters,'learning_rate':a.learning_rate,
        'optimizer':'adamw','adapter_path':str(dest),'max_seq_length':a.max_seq_length,
-       'grad_checkpoint':True,'seed':20261027,'resume_adapter_file':None,'report_to':None}
+       'grad_checkpoint':True,'seed':a.seed,'resume_adapter_file':None,'report_to':None}
   if a.iters < 2 or a.iters % 2: raise ValueError('iters must be a positive multiple of two for accumulation')
   meta={'optimizer_updates':a.iters//2,'micro_batches':a.iters,'model':a.model,'model_files':identity(a.model),'train_sha256':sha(a.train),'valid_sha256':sha(a.valid),
         'train_rows':len(tr),'valid_rows':len(va),'max_tokens':max(len(x[0]) for x in tr.encoded),
-        'script_sha256':sha(__file__),
+        'script_sha256':sha(__file__),'ordered':a.ordered,'checkpoints':checkpoints,
         'loss_mask':'prompt excluded; EOS included; padding excluded; strict end-exclusive mask',
         'target_tokens_in_dataset':sum(len(x)-n for x,n in tr.encoded),'format':'manual historical no-thinking chat, answer-only',
         'mlx':importlib.metadata.version('mlx'),'mlx_lm':importlib.metadata.version('mlx-lm'),'config':cfg}
@@ -93,7 +110,17 @@ def train(a):
   class Record:
     def record(self, kind, data):
       with (dest/'metrics.jsonl').open('a') as f: f.write(json.dumps({'kind':kind,**data})+'\n')
-    def on_train_loss_report(self, data): self.record('train',data)
+    def on_train_loss_report(self, data):
+      self.record('train',data)
+      if data['iteration'] in checkpoints:
+        from mlx.utils import tree_flatten
+        cp=dest/f"step_{data['iteration']:04d}";cp.mkdir()
+        mx.save_safetensors(str(cp/'adapters.safetensors'),dict(tree_flatten(model.trainable_parameters())))
+        (cp/'adapter_config.json').write_text(json.dumps(cfg,indent=2)+'\n')
+        exposure=tr.data[:data['iteration']]
+        (cp/'receipt.json').write_text(json.dumps({'iteration':data['iteration'],'trained_tokens':data['trained_tokens'],
+          'adapter_sha256':sha(cp/'adapters.safetensors'),'ordered':a.ordered,
+          'ids':[r['id'] for r in exposure] if a.ordered else None},indent=2)+'\n')
     def on_val_loss_report(self, data): self.record('validation',data)
   mx.random.seed(cfg['seed'])
   model.freeze()
@@ -104,8 +131,10 @@ def train(a):
   training_args=TrainingArgs(batch_size=1,iters=a.iters,val_batches=4,steps_per_report=5,
     steps_per_eval=a.iters,steps_per_save=a.iters,adapter_file=dest/'adapters.safetensors',
     max_seq_length=a.max_seq_length,grad_checkpoint=True,grad_accumulation_steps=2)
+  if checkpoints:training_args.steps_per_report=1
   fit(model=model,args=training_args,optimizer=optimizer,train_dataset=CacheDataset(tr),
-      val_dataset=CacheDataset(va),loss=answer_only_loss,training_callback=Record())
+      val_dataset=CacheDataset(va),loss=answer_only_loss,training_callback=Record(),
+      **({'iterate_batches':ordered_batches} if a.ordered else {}))
   meta.update(seconds=time.monotonic()-start,peak_memory_gb=mx.get_peak_memory()/1e9,adapter_sha256=sha(dest/'adapters.safetensors'))
   (dest/'result.json').write_text(json.dumps(meta,indent=2)+'\n')
   print(json.dumps({'TRAIN_COMPLETE':str(dest),'seconds':meta['seconds'],'peak_memory_gb':meta['peak_memory_gb']}),flush=True)
@@ -145,6 +174,8 @@ if __name__=='__main__':
   t=s.add_parser('train');t.add_argument('--train',required=True);t.add_argument('--valid',required=True)
   t.add_argument('--iters',type=int,default=120);t.add_argument('--learning-rate',type=float,default=1e-5)
   t.add_argument('--max-seq-length',type=int,default=1024)
+  t.add_argument('--seed',type=int,default=20261027);t.add_argument('--ordered',action='store_true')
+  t.add_argument('--checkpoints',default='',help='Comma-separated even micro-batch counts')
   g=s.add_parser('answer');g.add_argument('--prompts',required=True);g.add_argument('--adapter')
   for c in (t,g):c.add_argument('--model',required=True);c.add_argument('--output',required=True)
   a=p.parse_args();{'train':train,'answer':answer}[a.command](a)

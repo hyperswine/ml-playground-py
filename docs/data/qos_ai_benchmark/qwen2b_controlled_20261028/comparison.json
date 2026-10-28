@@ -1,0 +1,178 @@
+{
+  "parent": {
+    "complete": 4,
+    "programs": 21,
+    "outputs": 4,
+    "strict_trace_guard": 20
+  },
+  "runs": [
+    {
+      "tag": "replay_2048",
+      "adapter": "/Users/jq/qos_ai_eval/experiments/qwen2b_controlled_20261028/adapter_replay/step_0050",
+      "tokens": 2048,
+      "complete": 5,
+      "programs": 20,
+      "outputs": 6,
+      "by_kind": {
+        "generate": {
+          "n": 12,
+          "correct": 2
+        },
+        "nochange": {
+          "n": 12,
+          "correct": 0
+        },
+        "output": {
+          "n": 12,
+          "correct": 3
+        },
+        "repair": {
+          "n": 12,
+          "correct": 0
+        }
+      },
+      "strict_trace_guard": 22,
+      "passes_screen": false
+    },
+    {
+      "tag": "replay_4096",
+      "adapter": "/Users/jq/qos_ai_eval/experiments/qwen2b_controlled_20261028/adapter_replay/step_0100",
+      "tokens": 4060,
+      "complete": 6,
+      "programs": 20,
+      "outputs": 7,
+      "by_kind": {
+        "generate": {
+          "n": 12,
+          "correct": 2
+        },
+        "nochange": {
+          "n": 12,
+          "correct": 0
+        },
+        "output": {
+          "n": 12,
+          "correct": 4
+        },
+        "repair": {
+          "n": 12,
+          "correct": 0
+        }
+      },
+      "strict_trace_guard": 22,
+      "passes_screen": false
+    },
+    {
+      "tag": "replay_8192",
+      "adapter": "/Users/jq/qos_ai_eval/experiments/qwen2b_controlled_20261028/adapter_replay/step_0208",
+      "tokens": 8191,
+      "complete": 4,
+      "programs": 20,
+      "outputs": 4,
+      "by_kind": {
+        "generate": {
+          "n": 12,
+          "correct": 1
+        },
+        "nochange": {
+          "n": 12,
+          "correct": 0
+        },
+        "output": {
+          "n": 12,
+          "correct": 3
+        },
+        "repair": {
+          "n": 12,
+          "correct": 0
+        }
+      },
+      "strict_trace_guard": 21,
+      "passes_screen": false
+    },
+    {
+      "tag": "mixed_2048",
+      "adapter": "/Users/jq/qos_ai_eval/experiments/qwen2b_controlled_20261028/adapter_mixed/step_0028",
+      "tokens": 2048,
+      "complete": 5,
+      "programs": 20,
+      "outputs": 6,
+      "by_kind": {
+        "generate": {
+          "n": 12,
+          "correct": 2
+        },
+        "nochange": {
+          "n": 12,
+          "correct": 0
+        },
+        "output": {
+          "n": 12,
+          "correct": 3
+        },
+        "repair": {
+          "n": 12,
+          "correct": 0
+        }
+      },
+      "strict_trace_guard": 11,
+      "passes_screen": false
+    },
+    {
+      "tag": "mixed_4096",
+      "adapter": "/Users/jq/qos_ai_eval/experiments/qwen2b_controlled_20261028/adapter_mixed/step_0058",
+      "tokens": 4096,
+      "complete": 5,
+      "programs": 17,
+      "outputs": 6,
+      "by_kind": {
+        "generate": {
+          "n": 12,
+          "correct": 2
+        },
+        "nochange": {
+          "n": 12,
+          "correct": 0
+        },
+        "output": {
+          "n": 12,
+          "correct": 3
+        },
+        "repair": {
+          "n": 12,
+          "correct": 0
+        }
+      },
+      "strict_trace_guard": 21,
+      "passes_screen": false
+    },
+    {
+      "tag": "mixed_8192",
+      "adapter": "/Users/jq/qos_ai_eval/experiments/qwen2b_controlled_20261028/adapter_mixed/step_0120",
+      "tokens": 8208,
+      "complete": 6,
+      "programs": 24,
+      "outputs": 6,
+      "by_kind": {
+        "generate": {
+          "n": 12,
+          "correct": 3
+        },
+        "nochange": {
+          "n": 12,
+          "correct": 0
+        },
+        "output": {
+          "n": 12,
+          "correct": 3
+        },
+        "repair": {
+          "n": 12,
+          "correct": 0
+        }
+      },
+      "strict_trace_guard": 20,
+      "passes_screen": true
+    }
+  ]
+}

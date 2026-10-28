@@ -1,0 +1,20 @@
+{"id": "retrieval-00", "question": "How does Rand.next4 advance deterministic random state in Sol?", "path": "fprisc/sol/lib/rand.sol", "evidence_substring": "Rand.next4 s"}
+{"id": "retrieval-01", "question": "Which Sol random helper produces an integer below hi?", "path": "fprisc/sol/lib/rand.sol", "evidence_substring": "uniform = fn"}
+{"id": "retrieval-02", "question": "What is the range of Rand.unit in sol/lib/rand.sol?", "path": "fprisc/sol/lib/rand.sol", "evidence_substring": "unit = fn"}
+{"id": "retrieval-03", "question": "How does sol/lib/rand.sol approximate a Gaussian sample?", "path": "fprisc/sol/lib/rand.sol", "evidence_substring": "gauss4 = fn"}
+{"id": "retrieval-04", "question": "How does the Sol matrix library handle ragged input rows?", "path": "fprisc/sol/lib/matrix.sol", "evidence_substring": "mFlatten c rss"}
+{"id": "retrieval-05", "question": "How does reading a cell in sol/lib/matrix.sol preserve the linear matrix?", "path": "fprisc/sol/lib/matrix.sol", "evidence_substring": "mGet i j m"}
+{"id": "retrieval-06", "question": "What does mDims return in the Sol matrix library?", "path": "fprisc/sol/lib/matrix.sol", "evidence_substring": "mDims m"}
+{"id": "retrieval-07", "question": "Does row selection in sol/lib/matrix.sol return the source matrix too?", "path": "fprisc/sol/lib/matrix.sol", "evidence_substring": "mSelectRows is m"}
+{"id": "retrieval-08", "question": "Which Sol plotting API animates moving dots along tracks?", "path": "fprisc/sol/lib/plot.sol", "evidence_substring": "P.animDots"}
+{"id": "retrieval-09", "question": "How can I make an SVG scatter plot with sol/lib/plot.sol?", "path": "fprisc/sol/lib/plot.sol", "evidence_substring": "P.scatter"}
+{"id": "retrieval-10", "question": "Does the Sol plot library use JavaScript to animate SVG charts?", "path": "fprisc/sol/lib/plot.sol", "evidence_substring": "Animation-over-time is SMIL"}
+{"id": "retrieval-11", "question": "How are degenerate point bounds handled in sol/lib/plot.sol?", "path": "fprisc/sol/lib/plot.sol", "evidence_substring": "ptsBounds pts"}
+{"id": "retrieval-12", "question": "What are the default entry and byte limits in sol/lib/archive.sol?", "path": "fprisc/sol/lib/archive.sol", "evidence_substring": "defaultLimits ="}
+{"id": "retrieval-13", "question": "When does the Sol native archive creation execute?", "path": "fprisc/sol/lib/archive.sol", "evidence_substring": "NativeArchive.afterCommit"}
+{"id": "retrieval-14", "question": "How can limits be supplied to archive creation in Sol?", "path": "fprisc/sol/lib/archive.sol", "evidence_substring": "createWith (Limits"}
+{"id": "retrieval-15", "question": "Which limits does create use in sol/lib/archive.sol?", "path": "fprisc/sol/lib/archive.sol", "evidence_substring": "create source target"}
+{"id": "retrieval-16", "question": "Which Sol Git uncommit mode keeps the working tree?", "path": "fprisc/sol/lib/git.sol", "evidence_substring": "keepWorktree ="}
+{"id": "retrieval-17", "question": "How can sol/lib/git.sol read the head after deferred changes?", "path": "fprisc/sol/lib/git.sol", "evidence_substring": "headLater (Repo"}
+{"id": "retrieval-18", "question": "Do queries in sol/lib/git.sol see live or deferred state?", "path": "fprisc/sol/lib/git.sol", "evidence_substring": "query operation"}
+{"id": "retrieval-19", "question": "What status format does the Sol native Git library return?", "path": "fprisc/sol/lib/git.sol", "evidence_substring": "status r ="}

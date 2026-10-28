@@ -1,0 +1,25 @@
+{
+  "status": "complete",
+  "promoted": false,
+  "parent_retained": true,
+  "training_examples": 528,
+  "validation_examples": 16,
+  "training_runs": 3,
+  "development_checkpoints_evaluated": 7,
+  "full_regression_runs": 1,
+  "repeat_passed": false,
+  "selected_full_regression_passed": true,
+  "final_holdout_run": false,
+  "previous_experiment_commit": "3abbaf6",
+  "working_programs": {
+    "parent": 21,
+    "selected": 24,
+    "repeat": 24
+  },
+  "complete_answers": {
+    "parent": 4,
+    "selected": 6,
+    "repeat": 5
+  },
+  "reason": "Complete-answer gain failed the predeclared second-seed screen."
+}

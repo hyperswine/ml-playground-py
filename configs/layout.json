@@ -85,7 +85,10 @@
     "qos_ai_stage5_param.py": "src/ml_playground/data/qos_ai_stage5_param.py",
     "qwen08.py": "src/ml_playground/examples/qwen08.py",
     "qos_ai_source_retrieval.py": "src/ml_playground/evaluation/qos_ai_source_retrieval.py",
-    "qos_ai_qwen_repair.py": "src/ml_playground/workflows/qos_ai_qwen_repair.py"
+    "qos_ai_qwen_repair.py": "src/ml_playground/workflows/qos_ai_qwen_repair.py",
+    "qos_ai_qwen_controlled.py": "src/ml_playground/workflows/qos_ai_qwen_controlled.py",
+    "qos_ai_source_audit.py": "src/ml_playground/workflows/qos_ai_source_audit.py",
+    "qos_ai_qwen_trace_values.py": "src/ml_playground/evaluation/qos_ai_qwen_trace_values.py"
   },
   "tests": {
     "test_layout.py": "tests/test_layout.py",
@@ -109,7 +112,9 @@
     "test_qos_ai_scale.py": "tests/qos_ai/test_qos_ai_scale.py",
     "test_qos_ai_stage4.py": "tests/qos_ai/test_qos_ai_stage4.py",
     "test_qos_ai_qwen_repair.py": "tests/qos_ai/test_qos_ai_qwen_repair.py",
-    "test_qos_ai_mlx_repair.py": "tests/qos_ai/test_qos_ai_mlx_repair.py"
+    "test_qos_ai_mlx_repair.py": "tests/qos_ai/test_qos_ai_mlx_repair.py",
+    "test_qos_ai_qwen_controlled.py": "tests/qos_ai/test_qos_ai_qwen_controlled.py",
+    "test_qos_ai_qwen_trace_values.py": "tests/qos_ai/test_qos_ai_qwen_trace_values.py"
   },
   "scripts": {
     "runpod/morepretrain_run.sh": "scripts/runpod/morepretrain_run.sh",
@@ -133,7 +138,11 @@
     "mac/mlx_answers.py": "scripts/mac/mlx_answers.py",
     "mac/mlx_repair.py": "scripts/mac/mlx_repair.py",
     "mac/prepare_qwen_repair.py": "scripts/mac/prepare_qwen_repair.py",
-    "mac/score_qwen_frozen.py": "scripts/mac/score_qwen_frozen.py"
+    "mac/score_qwen_frozen.py": "scripts/mac/score_qwen_frozen.py",
+    "mac/run_qwen_controlled.py": "scripts/mac/run_qwen_controlled.py",
+    "mac/audit_qwen_controlled.py": "scripts/mac/audit_qwen_controlled.py",
+    "mac/audit_qwen_trace_values.py": "scripts/mac/audit_qwen_trace_values.py",
+    "mac/run_qwen_controlled_confirmation.py": "scripts/mac/run_qwen_controlled_confirmation.py"
   },
   "files": {
     "qos_ai_557m.json": "configs/qos_ai_557m.json",

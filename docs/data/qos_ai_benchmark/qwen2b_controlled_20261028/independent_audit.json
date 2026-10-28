@@ -1,0 +1,23 @@
+{
+  "new_and_validation_case_executions": 2128,
+  "effective_repairs": 76,
+  "all_passed": true,
+  "tokenization": {
+    "replay_pool": {
+      "rows": 240,
+      "max_sequence": 191,
+      "target_tokens": 9461
+    },
+    "new_pool": {
+      "rows": 288,
+      "max_sequence": 388,
+      "target_tokens": 26960
+    },
+    "valid": {
+      "rows": 16,
+      "max_sequence": 309,
+      "target_tokens": 1527
+    }
+  },
+  "compiler_sha256": "9987da491a791af853300f38ad3e73c52a243dbfd1422379a8dbe437369b776e"
+}

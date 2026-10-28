@@ -55,3 +55,4 @@ records its exact timestamp; original pages retain their own dates and recorded 
 | 2026-10-27 | [Mac inference: why Qwen3.5 was slow on the M1, and MLX as the fix](2026-10-27-MAC-INFERENCE.md) |
 | 2026-10-24 | [Small-model pretraining precedents: 4-12B tokens](2026-10-24-SMALL-MODEL-PRETRAINING-PRECEDENTS.md) |
 | 2026-10-27 | [Qwen 2B fresh diagnostic and M1 repair pilot](2026-10-27-QWEN-2B-REPAIR.md) |
+| 2026-10-28 | [Qwen 2B controlled coding curriculum](2026-10-28-QWEN-2B-CONTROLLED.md) |

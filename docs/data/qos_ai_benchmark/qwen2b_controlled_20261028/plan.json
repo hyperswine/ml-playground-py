@@ -1,0 +1,22 @@
+{
+  "learning_rate": 1e-05,
+  "seed": 20261028,
+  "budget_targets": [
+    2048,
+    4096,
+    8192
+  ],
+  "conditions": [
+    "replay",
+    "mixed"
+  ],
+  "selection": "complete coding >= parent+2; programs >= parent; no category loss >1; guard strict trace >= parent-1. Rank by complete coding, programs, then lower token exposure.",
+  "parent_guard_strict_trace": 20,
+  "guard_n": 24,
+  "parent_complete": 4,
+  "final_holdout_policy": "never use unless a repeated-seed winner passes full original regression checks",
+  "prepared_manifest_sha256": "710ecd2a4d9dd7d70a8728f158c43c08802b0dee9b1889eff3552cab22044160",
+  "dev_prompts_sha256": "f5cad896d962b780324466e16994a8d8e6700593c35258cdba0bad79f78b24a9",
+  "guard_prompts_sha256": "3649e5e5bc0963575e1194d78fc055f598fdb5fdc6f73c4c5318aa905b899a11",
+  "created": 1793126458.7558389
+}

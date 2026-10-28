@@ -1,0 +1,62 @@
+{
+  "answers_sha256": "6cf33145c2ad4b6f3ca767eaf1efc83a9568a4817023d16a6e5f524ab0cc9ad9",
+  "generation_receipt": {
+    "model": "/Users/jq/qos_ai_eval/experiments/mlx_20261027/mlx_2b_round4_q8",
+    "model_files": {
+      "config.json": "ddfcb7c9c8e637f1bee327053edf61575f754fce61142c5125a3b65bb3acce8a",
+      "generation_config.json": "1b9e2b234e67729879487a490c93fd51156db740512ee41bf8c99ba2b264dbb2",
+      "model.safetensors": "b34593af75a601f2825a10ca4ac90035fcf9b5c86cbbb537344ae689a4e1e047",
+      "model.safetensors.index.json": "e391653bb33e96175a39aad5576940b04bed4ff13673b4c89896d41917ae8fd3",
+      "tokenizer.json": "a5cd9732badce41de57e6efce8302930ded1c1188c5f81feb2bd6c24c4a1941f",
+      "tokenizer_config.json": "4d2fc7899270dc76b57a7aa1d5ec3234e6a25934c6e2aea6166f989f1d453892"
+    },
+    "adapter": "/Users/jq/qos_ai_eval/experiments/qwen2b_controlled_20261028/adapter_mixed/step_0120",
+    "adapter_files": {
+      "adapter_config.json": "f026338c36c2fad1e34953d27046095d349185b158d78055fcabf77550d26d3b",
+      "adapters.safetensors": "216b0abf7e43a62817069d979a12776f94bc9f85504200ea70205d62b0d03b1d",
+      "receipt.json": "841ff060971c23a36b137f2f1ba09c703467d6ec85dda5f2cd7e5e92da271998"
+    },
+    "prompts_sha256": "abc7de7c08f3e12b70f0eef135e0d212d2827f28af1efcafd776731cbc342102",
+    "sampler": "greedy temperature=0",
+    "format": "manual historical no-thinking chat",
+    "script_sha256": "d37d548830fa33f5f8f8f7116e414b0e2b46d39682379a5be52d1de2e8e61ea3",
+    "mlx": "0.32.4",
+    "mlx_lm": "0.32.2",
+    "seconds": 1189.183872917085,
+    "peak_memory_gb": 2.592273816,
+    "answers_sha256": "6cf33145c2ad4b6f3ca767eaf1efc83a9568a4817023d16a6e5f524ab0cc9ad9",
+    "count": 740
+  },
+  "scorer_sha256": "2a70951c156578ff08c566ec92f28d79ecc46e1dedd4541dbcab7c946c09b3c4",
+  "solgen_compiler_sha256": "9987da491a791af853300f38ad3e73c52a243dbfd1422379a8dbe437369b776e",
+  "solgen_correct": 342,
+  "solgen_n": 360,
+  "program_correct": 111,
+  "pure_admission_declines": [],
+  "multi_correct": 18,
+  "multi_total": 18,
+  "bench": {
+    "checkpoint_sha256": null,
+    "no_repeat": 0,
+    "dev_lexical_90": 53,
+    "dev_outputs_33": 30,
+    "working_generation_24": 24,
+    "applied_repairs_48": 46,
+    "repair_plus_output_48": 35,
+    "no_change_plus_output_24": 18,
+    "gen_wording_48": 43,
+    "gen_inputs_48": 41,
+    "gen_combinations_48": 41,
+    "strict_trace_120": 109,
+    "finished": {
+      "development": 90,
+      "coding": 96,
+      "generalization": 144
+    },
+    "severe_loops": {
+      "development": 0,
+      "coding": 0,
+      "generalization": 0
+    }
+  }
+}

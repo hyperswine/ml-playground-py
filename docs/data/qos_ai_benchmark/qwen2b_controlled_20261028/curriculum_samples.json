@@ -1,0 +1,161 @@
+{
+  "purpose": "Four compiler-verified training targets for human review; these are not model outputs.",
+  "samples": [
+    {
+      "id": "train-trace-00-002",
+      "kind": "output",
+      "question": "Calculate the exact output of this Sol program. End with \"It prints VALUE.\"\n```sol\nxs = [].\nk = 4.\nlimit = 8.\nanswer = List.sum (List.map (fn x -> x - k) (List.filter (fn x -> x > limit) xs)).\n> print (str answer).\n``` Show short name=value calculation steps before the final output.",
+      "answer": "Steps: kept=[]; adjusted=[]; result=0.\nIt prints 0.",
+      "inputs": [
+        [],
+        4,
+        8
+      ],
+      "expected": "0",
+      "traces": [
+        {
+          "name": "kept",
+          "value": [],
+          "expression": "List.filter (fn x -> x > limit) xs"
+        },
+        {
+          "name": "adjusted",
+          "value": [],
+          "expression": "List.map (fn x -> x - k) (List.filter (fn x -> x > limit) xs)"
+        },
+        {
+          "name": "result",
+          "value": 0,
+          "expression": "List.sum (List.map (fn x -> x - k) (List.filter (fn x -> x > limit) xs))"
+        }
+      ]
+    },
+    {
+      "id": "train-trace-00-000",
+      "kind": "repair",
+      "question": "Check this Sol implementation against the requirement: Using the supplied xs, k and limit, keep values strictly above limit, subtract k from each remaining value, then sum them. Keep the supplied bindings unchanged. Return one complete Sol code block and finish with \"It prints VALUE.\" The same computation must work for other input values. If it already satisfies the requirement, say \"No change needed\" and return the unchanged complete program. Otherwise repair it.\n```sol\nxs = [9, 10, 5, 16, -12, 5, 8, -7].\nk = -5.\nlimit = 2.\nanswer = List.sum (List.map (fn x -> x + k) (List.filter (fn x -> x > limit) xs)).\n> print (str answer).\n``` Show short name=value calculation steps before the final output.",
+      "answer": "```sol\nxs = [9, 10, 5, 16, -12, 5, 8, -7].\nk = -5.\nlimit = 2.\nanswer = List.sum (List.map (fn x -> x - k) (List.filter (fn x -> x > limit) xs)).\n> print (str answer).\n```\nSteps: kept=[9, 10, 5, 16, 5, 8]; adjusted=[14, 15, 10, 21, 10, 13]; result=83.\nIt prints 83.",
+      "inputs": [
+        [
+          9,
+          10,
+          5,
+          16,
+          -12,
+          5,
+          8,
+          -7
+        ],
+        -5,
+        2
+      ],
+      "expected": "83",
+      "traces": [
+        {
+          "name": "kept",
+          "value": [
+            9,
+            10,
+            5,
+            16,
+            5,
+            8
+          ],
+          "expression": "List.filter (fn x -> x > limit) xs"
+        },
+        {
+          "name": "adjusted",
+          "value": [
+            14,
+            15,
+            10,
+            21,
+            10,
+            13
+          ],
+          "expression": "List.map (fn x -> x - k) (List.filter (fn x -> x > limit) xs)"
+        },
+        {
+          "name": "result",
+          "value": 83,
+          "expression": "List.sum (List.map (fn x -> x - k) (List.filter (fn x -> x > limit) xs))"
+        }
+      ]
+    },
+    {
+      "id": "train-trace-00-001",
+      "kind": "nochange",
+      "question": "Check this Sol implementation against the requirement: Using the supplied xs, k and limit, keep values strictly above limit, subtract k from each remaining value, then sum them. Keep the supplied bindings unchanged. Return one complete Sol code block and finish with \"It prints VALUE.\" The same computation must work for other input values. If it already satisfies the requirement, say \"No change needed\" and return the unchanged complete program. Otherwise repair it.\n```sol\nxs = [-9, 13, -5, -13, 1, -6, 6, 13].\nk = -2.\nlimit = 4.\nanswer = List.sum (List.map (fn x -> x - k) (List.filter (fn x -> x > limit) xs)).\n> print (str answer).\n``` Show short name=value calculation steps before the final output.",
+      "answer": "No change needed.\n```sol\nxs = [-9, 13, -5, -13, 1, -6, 6, 13].\nk = -2.\nlimit = 4.\nanswer = List.sum (List.map (fn x -> x - k) (List.filter (fn x -> x > limit) xs)).\n> print (str answer).\n```\nSteps: kept=[13, 6, 13]; adjusted=[15, 8, 15]; result=38.\nIt prints 38.",
+      "inputs": [
+        [
+          -9,
+          13,
+          -5,
+          -13,
+          1,
+          -6,
+          6,
+          13
+        ],
+        -2,
+        4
+      ],
+      "expected": "38",
+      "traces": [
+        {
+          "name": "kept",
+          "value": [
+            13,
+            6,
+            13
+          ],
+          "expression": "List.filter (fn x -> x > limit) xs"
+        },
+        {
+          "name": "adjusted",
+          "value": [
+            15,
+            8,
+            15
+          ],
+          "expression": "List.map (fn x -> x - k) (List.filter (fn x -> x > limit) xs)"
+        },
+        {
+          "name": "result",
+          "value": 38,
+          "expression": "List.sum (List.map (fn x -> x - k) (List.filter (fn x -> x > limit) xs))"
+        }
+      ]
+    },
+    {
+      "id": "train-trace-00-003",
+      "kind": "generate",
+      "question": "Write a Sol program. Using the supplied xs, k and limit, keep values strictly above limit, subtract k from each remaining value, then sum them. Keep the supplied bindings unchanged. Return one complete Sol code block and finish with \"It prints VALUE.\" The same computation must work for other input values.\nInputs: xs = []; k = -2; limit = 2. Show short name=value calculation steps before the final output.",
+      "answer": "```sol\nxs = [].\nk = -2.\nlimit = 2.\nanswer = List.sum (List.map (fn x -> x - k) (List.filter (fn x -> x > limit) xs)).\n> print (str answer).\n```\nSteps: kept=[]; adjusted=[]; result=0.\nIt prints 0.",
+      "inputs": [
+        [],
+        -2,
+        2
+      ],
+      "expected": "0",
+      "traces": [
+        {
+          "name": "kept",
+          "value": [],
+          "expression": "List.filter (fn x -> x > limit) xs"
+        },
+        {
+          "name": "adjusted",
+          "value": [],
+          "expression": "List.map (fn x -> x - k) (List.filter (fn x -> x > limit) xs)"
+        },
+        {
+          "name": "result",
+          "value": 0,
+          "expression": "List.sum (List.map (fn x -> x - k) (List.filter (fn x -> x > limit) xs))"
+        }
+      ]
+    }
+  ]
+}

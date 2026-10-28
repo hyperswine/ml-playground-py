@@ -27,6 +27,15 @@ class DatasetTest(unittest.TestCase):
 
 @unittest.skipUnless(importlib.util.find_spec('mlx'),'requires the M1 MLX environment')
 class MaskTest(unittest.TestCase):
+  def test_ordered_batch_exposure_and_padding(self):
+    batches=list(driver.ordered_batches([([1,2,3],1),([4,5],1)],1,64))
+    self.assertEqual(len(batches),2)
+    self.assertEqual(batches[0][0][0,:3].tolist(),[1,2,3])
+    self.assertEqual(batches[1][0][0,:2].tolist(),[4,5])
+    self.assertEqual(batches[0][1].tolist(),[[1,3]])
+    with self.assertRaisesRegex(ValueError,'refusing truncation'):
+      list(driver.ordered_batches([([1,2,3],1)],1,2))
+
   def test_prompt_and_padding_excluded_eos_included(self):
     import mlx.core as mx
     class Toy:

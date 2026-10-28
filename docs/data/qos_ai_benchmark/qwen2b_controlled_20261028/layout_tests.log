@@ -1,0 +1,10 @@
+test_frozen_development_benchmark_identity_is_unchanged (test_layout.LayoutTests.test_frozen_development_benchmark_identity_is_unchanged) ... ok
+test_model_defaults_resolve_to_moved_artifacts_and_benchmarks (test_layout.LayoutTests.test_model_defaults_resolve_to_moved_artifacts_and_benchmarks) ... ok
+test_source_catalog_has_unique_targets_and_useful_aliases (test_layout.LayoutTests.test_source_catalog_has_unique_targets_and_useful_aliases) ... ok
+test_workspace_does_not_expose_credential_files (test_layout.LayoutTests.test_workspace_does_not_expose_credential_files) ... ok
+test_workspace_never_overwrites_existing_files (test_layout.LayoutTests.test_workspace_never_overwrites_existing_files) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 1.002s
+
+OK
