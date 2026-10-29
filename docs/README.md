@@ -59,3 +59,4 @@ records its exact timestamp; original pages retain their own dates and recorded 
 | 2026-10-28 | [Qwen 2B controlled coding curriculum](2026-10-28-QWEN-2B-CONTROLLED.md) |
 | 2026-10-28 | [Whole-project overview: what worked and what did not](2026-10-28-PROJECT-OVERVIEW.md) |
 | 2026-10-28 | [Qwen internals, adaptation coverage and data/recipe gaps](2026-10-28-QWEN-INTERNALS.md) |
+| 2026-10-29 | [Qwen3.5-4B experiment plan: US$20 maximum](2026-10-29-QWEN-4B-20USD-PLAN.md) |

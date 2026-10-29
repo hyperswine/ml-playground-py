@@ -62,6 +62,13 @@ See the [source-level internals audit and bounded inference probe](docs/2026-10-
 for the architectural comparison, actual adapter coverage, thinking-mode findings
 and experiments that could distinguish these causes.
 
+## Planned 4B experiment
+
+The [Qwen3.5-4B plan](docs/2026-10-29-QWEN-4B-20USD-PLAN.md) budgets at most
+US$20 for a bounded full text-model fine-tune, a comparison with the current 2B
+reference, and M1 MLX q8/q4 measurements. It includes shutdown controls and
+predeclared development gates. Status: planned; no paid training has started.
+
 ## Running the project
 
 ```sh
