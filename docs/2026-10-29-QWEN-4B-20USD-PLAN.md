@@ -1,6 +1,6 @@
 # Qwen3.5-4B experiment plan: US$20 maximum
 
-Updated: 2026-10-29T16:41:50+11:00 (Australia/Sydney).
+Updated: 2026-10-31T10:35:20+11:00 (Australia/Sydney).
 Status: planned; training has not started. This page authorizes no deployment by
 itself. The current request is to document and publish the plan.
 
@@ -73,6 +73,115 @@ planning estimate, not a throughput measurement or completion guarantee. Full SF
 memory includes fp32 weights/gradients/Adam states plus activations; fitting 4B
 in 96 GB must be established by the pilot. The cheaper 48 GB cards are possible
 adapter-training alternatives, not drop-in replacements for this full-SFT recipe.
+
+## Windows worker and Wake-on-LAN
+
+Added: 2026-10-31T10:35:20+11:00 (Australia/Sydney).
+These are owner-reported specifications and vendor-documentation checks, not a
+live inventory or a successful remote-wake test. Windows version/build, exact
+motherboard variant, BIOS/driver versions, available storage and network topology
+still need confirmation.
+
+| Component | Reported hardware / planning implication |
+| --- | --- |
+| Motherboard | MSI MAG X570 TOMAHAWK, connected over Wi-Fi; confirm the WIFI variant |
+| Processor | AMD Ryzen 5 3600 |
+| System memory | 32 GB DDR4 |
+| Graphics | AMD Radeon RX 7600; AMD specifies 8 GB GDDR6 VRAM |
+| Network on the WIFI variant | Realtek RTL8125B-CG 2.5 Gb Ethernet and Intel Wi-Fi 6 AX200 |
+
+Sources: [MSI motherboard datasheet](https://storage-asset.msi.com/datasheet/mb/uk/MAG-X570-TOMAHAWK-WIFI.pdf)
+and [AMD RX 7600 specifications](https://www.amd.com/en/products/graphics/desktops/radeon/7000-series/amd-radeon-rx-7600.html).
+
+### Roles and runtime limits
+
+Keep RunPod responsible for the planned full text-model fine-tune, the M1 for
+reference scoring and the independent budget supervisor, and Windows as an
+optional inference/evaluation and data-preparation worker. Its 8 GB GPU memory
+cannot hold the current full 4B fp32/Adam training recipe. The 32 GB of system RAM
+is separate from VRAM; it is not an additional 32 GB of equally fast GPU memory.
+An AMD adapter-training experiment would need separate memory/kernel validation
+and is not a replacement condition within this plan.
+
+For Windows inference, first test a text-only 4B GGUF at 4-bit precision through
+llama.cpp's Vulkan backend. Start at a 2,048-token context and one request at a
+time. Confirm actual RX 7600 GPU offload, driver stability and correct outputs
+before measuring throughput. Keep display/compute/cache memory headroom. No
+Windows speed or sustained-memory result has been measured.
+[llama.cpp documents its Windows Vulkan backend](https://github.com/ggml-org/llama.cpp/blob/master/docs/build.md#vulkan).
+
+MLX artifacts do not run directly on Windows, and the RunPod NVIDIA kernel stack
+must not be assumed compatible with AMD. Pin the Windows runtime, AMD driver and
+GGUF conversion/quantization versions; derive the GGUF from the same hashed
+trained checkpoint. Preserve template parity, explicit non-thinking mode, token
+caps and raw responses. Score Windows outputs with the existing pinned M1
+compiler/scorers. Differences between GGUF/Vulkan and MLX include quantization and
+backend effects, so do not attribute them to additional learning. Windows results
+supplement the primary M1 gates rather than replacing them.
+
+### Wake configuration and remote access
+
+**Prefer wired Ethernet for dependable unattended wake.** Ethernet Wake-on-LAN
+and Wi-Fi Wake-on-Wireless-LAN are different paths: enabling wake on the Realtek
+adapter does not establish wake support on the Intel AX200. Wi-Fi-only wake is
+unverified on this system and depends on BIOS, driver, power state and access
+point behavior. Do not schedule work that assumes it succeeds.
+
+Before relying on wake, configure and test these settings locally:
+
+1. In MSI BIOS, set `ErP Ready = Disabled` and
+   `Resume By PCI-E Device = Enabled` (wording may vary by BIOS revision).
+   The [board manual, printed pages 53-54](https://download.msi.com/archive/mnu_exe/mb/E7C84v1.1.pdf)
+   describes these controls; ErP disables PCIe wake from S4/S5.
+2. On the actual connected network adapter, enable wake permission and magic-packet
+   wake where supported. Record the physical adapter's MAC address and its settings,
+   not a Tailscale or virtual adapter address.
+3. Disable Windows Fast Startup for consistent shutdown testing, following
+   [MSI's setup guidance](https://www.msi.com/support/technical_details/MB_Wake_On_LAN).
+   Test sleep, explicit hibernation and shutdown independently. Microsoft supports
+   WoL from S3 sleep/S4 hibernate; S5 shutdown wake is firmware-dependent. Keep
+   AC/standby power connected. A passing sleep test does not prove shutdown wake.
+   [Microsoft power-state guidance](https://learn.microsoft.com/en-us/windows/win32/power/system-power-states).
+4. Use an awake sender on the PC's local network to emit the wake packet. The M1
+   can fill this role only if it is awake and on that same network. For remote
+   operation: remote device -> Tailscale -> awake local sender -> physical network
+   adapter -> Windows PC. Tailscale has peer wake support, but its
+   [implementation sends packets from a running peer's local interfaces](https://github.com/tailscale/tailscale/blob/main/feature/wakeonlan/wakeonlan.go);
+   the sleeping target's VPN alone is not sufficient. Check guest-network/client
+   isolation, VLAN boundaries and broadcast delivery if local wake fails.
+5. Enable [Tailscale Run unattended](https://tailscale.com/docs/how-to/run-unattended)
+   on Windows. Verify reachability after sign-out and reboot without logging in.
+   Start the inference service independently of a desktop session and verify that
+   any pre-boot unlock requirement does not block unattended reboot recovery.
+   Keep access on the private LAN/tailnet; no public WoL or inference port is needed.
+
+Capture these read-only diagnostics before changing power settings:
+
+```powershell
+powercfg /a
+powercfg /devicequery wake_programmable
+powercfg /devicequery wake_armed
+powercfg /lastwake
+```
+
+[Microsoft documents these commands](https://learn.microsoft.com/en-us/windows-hardware/design/device-experiences/powercfg-command-line-options).
+Record the available states and actual adapter names. Missing S3 or wake capability
+is a finding to investigate, not a reason to assume support.
+
+Acceptance is three successful wake/reconnect cycles for each intended power
+state, including one test from outside the home network through the local sender.
+Record OS/BIOS/driver versions, adapter/transport, state, sender, time to tailnet
+reachability and time to an inference health check. Verify one completed inference
+after wake and one after reboot without interactive login. Keep unsupported or
+untested states explicitly marked. If Wi-Fi-only wake fails, retain manual startup
+or an explicitly awake worker until a wired path is available.
+
+Prevent sleep while a job is active, persist progress before deliberate sleep or
+reboot, and resume queued work only after health checks. The M1 supervisor must
+remain awake and independent of this optional Windows worker for the entire paid
+run. No cloud launch, BIOS/Windows change or live wake test is performed by this
+documentation update. The US$20 cloud budget, retained volume and sealed final
+holdout remain unchanged; local electricity is outside the RunPod ledger.
 
 ## Phase 1: freeze inputs and establish the local baseline
 
@@ -255,6 +364,9 @@ holdout remains unused; a later promotion/holdout plan requires confirmed result
 
 ## Deliverables and execution checklist
 
+- [ ] Confirm Windows hardware/OS/drivers and benchmark the optional GGUF/Vulkan worker.
+- [ ] Verify intended wake states, remote LAN sender and unattended reboot/service recovery.
+- [ ] Keep the M1 budget supervisor awake independently of the Windows worker.
 - [ ] Freeze local source/compiler/model/data manifests and baseline scores.
 - [ ] Implement and validate bounded runner, mask checks, checkpoints and dual stop controls.
 - [ ] Re-read prices, account headroom, volume free space and EU-RO-1 capacity.
