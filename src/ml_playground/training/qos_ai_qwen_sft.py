@@ -149,6 +149,7 @@ def train(args):
   torch.manual_seed(args.seed)
   data = torch.load(args.data, weights_only=True); examples = data['examples']
   plan = optimizer_plan(len(examples), args.batch_size, args.accumulation, 1, args.seed)
+  if args.max_updates: plan = plan[:args.max_updates]  # a prefix of the same seed-7 order; the schedule spans the prefix
   model = Qwen3_5ForConditionalGeneration.from_pretrained(args.model, dtype=torch.float32).cuda()
   for p in model.model.visual.parameters(): p.requires_grad_(False)
   model.gradient_checkpointing_enable(gradient_checkpointing_kwargs={'use_reentrant': False})
@@ -157,8 +158,12 @@ def train(args):
   opt = torch.optim.AdamW(params, lr=args.learning_rate, betas=(.9, .95), weight_decay=.1, fused=True)
   pad = args.pad_id; lm = model.model.language_model; head = model.lm_head
   status = Path(args.output) / 'status.json'; Path(args.output).mkdir(parents=True, exist_ok=True)
-  history = []; started = time.perf_counter(); tokens_seen = 0
+  history = []; started = time.perf_counter(); tokens_seen = 0; stopped_early = False
+  memory = lambda: {'peak_allocated_gb': round(torch.cuda.max_memory_allocated() / 2**30, 2),
+                    'peak_reserved_gb': round(torch.cuda.max_memory_reserved() / 2**30, 2)}
   for index, group in enumerate(plan):
+    if args.deadline_minutes and time.perf_counter() - started > args.deadline_minutes * 60:
+      stopped_early = True; print(json.dumps({'stopped_early_at_step': index}), flush=True); break
     step = index + 1; lr = rate(args.learning_rate, step, len(plan), 20)
     for g in opt.param_groups: g['lr'] = lr
     known = sum(sum(examples[i][1][1:]) for b in group['batches'] for i in b)
@@ -182,12 +187,15 @@ def train(args):
     opt.step(); opt.zero_grad(set_to_none=True)
     history.append({'step': step, 'loss': total / known, 'learning_rate': lr, 'gradient_norm': norm, 'target_tokens': known})
     if step % 50 == 0 or step == len(plan):
-      row = {**history[-1], 'total_steps': len(plan), 'tokens_per_second': tokens_seen / (time.perf_counter() - started)}
+      row = {**history[-1], 'total_steps': len(plan), 'tokens_per_second': tokens_seen / (time.perf_counter() - started),
+             'seconds': round(time.perf_counter() - started), **memory()}
       status.write_text(json.dumps(row)); print(json.dumps(row), flush=True)
   model.config.use_cache = True
   model.to(torch.bfloat16)  # generation runs in bf16; halves the artifact to pull
   model.save_pretrained(Path(args.output) / 'model', safe_serialization=True)
-  (Path(args.output) / 'result.json').write_text(json.dumps({'steps': len(plan), 'seed': args.seed, 'learning_rate': args.learning_rate,
+  (Path(args.output) / 'result.json').write_text(json.dumps({'steps': len(history), 'planned_steps': len(plan),
+    'stopped_early': stopped_early, 'training_seconds': round(time.perf_counter() - started), 'tokens_seen': tokens_seen,
+    **memory(), 'seed': args.seed, 'learning_rate': args.learning_rate,
     'batch_size': args.batch_size, 'accumulation': args.accumulation, 'token_budget': args.token_budget,
     'target_budget': args.target_budget, 'history': history}) + '\n')
 
@@ -260,6 +268,8 @@ if __name__ == '__main__':
   c.add_argument('--seed', type=int, default=7, help='data order and initialization of the training run')
   c.add_argument('--token-budget', type=int, default=2048, help='padded tokens per micro-batch')
   c.add_argument('--target-budget', type=int, default=1024, help='answer tokens per micro-batch')
+  c.add_argument('--max-updates', type=int, default=0, help='train only the first N updates (pilot runs; 0 = all)')
+  c.add_argument('--deadline-minutes', type=float, default=0, help='stop training after this long and save (0 = none)')
   c = s.add_parser('generate'); c.add_argument('--model', required=True); c.add_argument('--tokenizer', default=QWEN)
   c.add_argument('--prompts', required=True); c.add_argument('--output', required=True); c.add_argument('--batch-size', type=int, default=32)
   c = s.add_parser('assemble'); c.add_argument('--answers', required=True); c.add_argument('--output', required=True); c.add_argument('--label', required=True)

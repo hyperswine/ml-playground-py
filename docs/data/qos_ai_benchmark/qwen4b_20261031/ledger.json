@@ -1,0 +1,13 @@
+{
+  "rate_usd_per_hour": {"RTX PRO 6000 Blackwell Server Edition, SECURE, EU-RO-1": 2.49, "cpu3c x4, SECURE, EU-RO-1": 0.12},
+  "volume": {"id": "xewpn3z8za", "size_gb": 40, "used_gb_2026_10_31": 37, "retained": true},
+  "pods": [
+    {"id": "cu2bno377d6x6z", "purpose": "pilot, 721 of 2,885 updates", "total_usd": 1.5831, "outcome": "weights pulled and hash-verified"},
+    {"id": "w5prf7vb17ggm5", "purpose": "full pass, attempt 1", "total_usd": 2.7478, "outcome": "trained 2,885 updates; weights lost (pull truncated, volume copy did not fit, container disk wiped on stop)"},
+    {"id": "pw1rrdwzq3mk47", "purpose": "CPU pod to inspect the volume", "total_usd": 0.0029, "outcome": "confirmed no weights on the volume"},
+    {"id": "zvm3m9z60td63f", "purpose": "full pass, attempt 2", "total_usd": 4.5240, "outcome": "trained 2,885 updates; weights pulled and hash-verified"}
+  ],
+  "total_usd": 8.8578,
+  "source": "RunPod list-pod-billing, day bucket 2026-10-31 UTC, read 2026-10-31T21:20Z",
+  "all_pods_deleted": true
+}

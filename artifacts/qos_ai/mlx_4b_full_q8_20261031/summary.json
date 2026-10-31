@@ -1,0 +1,12 @@
+{
+ "complete_48": 8,
+ "programs_correct": 5,
+ "stated_outputs": 9,
+ "by_kind": {
+  "generate": 0,
+  "nochange": 3,
+  "output": 5,
+  "repair": 0
+ },
+ "guard_strict_trace_24": 24
+}

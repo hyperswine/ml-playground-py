@@ -3,12 +3,16 @@
 # evaluation prompt, before and after. Network volume xewpn3z8za at /workspace is read, never pruned; outputs go to
 # the pod's local disk, small receipts and answers to /workspace/qos_ai_qwen_sft.
 # flash-linear-attention is pinned: 0.6.0 (2026-10-23) needs a newer Triton than the image's.
-# Self-stop via pod-scoped runpodctl on completion, failure and HARD_CAP_MINUTES; WAIT_MINUTES bounds the pull wait.
+# Self-stop via pod-scoped runpodctl on completion, failure and HARD_CAP_MINUTES. WAIT_MINUTES bounds the pull wait only
+# when the weights are also kept on the volume; otherwise the pod waits for the pull until HARD_CAP_MINUTES, because
+# its local disk (the only copy) is wiped when it stops.
 # EXTRA_ROWS (space-separated .jsonl.xz files in the bundle) are appended after conversion (`merge`, options in
 # MERGE_FLAGS, e.g. '--steps-first --closed-book-pairs').
 # TRAIN_FLAGS go to `train` (e.g. larger --token-budget on big GPUs; the updates are the same).
 # BASE_MODEL picks the Qwen3.5 size (same tokenizer for 0.8B and 2B); KEEP_ON_VOLUME=1 also copies the fine-tuned
-# weights to $VOL/model when the volume has room, so they survive the pod stopping.
+# weights to $VOL/model when the volume has room, so they survive the pod stopping. df reports the whole shared
+# filesystem, not the volume's quota, so set VOL_QUOTA_GB to the volume's size for a real space check.
+# SKIP_TUNED_GEN=1 skips answering on the pod (answers are then generated locally from the pulled weights).
 set -u
 export $(tr '\0' '\n' < /proc/1/environ | grep -E '^RUNPOD_(API_KEY|POD_ID)=' | xargs)
 cd "$(dirname "$0")"
@@ -57,15 +61,21 @@ fi
 phase train
 python3 qos_ai_qwen_sft.py train --data "$LOCAL/qwen_sft.pt" --model "$BASE_MODEL" --output "$LOCAL/run" --seed "${SEED:-7}" ${TRAIN_FLAGS:-} > "$LOCAL/train.log" 2>&1 || fail "train (train.log)"
 cp "$LOCAL/run/result.json" "$VOL/train_result.json"
+if [ "${SKIP_TUNED_GEN:-0}" != "1" ]; then
 phase generate_tuned
 python3 qos_ai_qwen_sft.py generate --model "$LOCAL/run/model" --prompts prompts.jsonl --output "$LOCAL/tuned_answers.jsonl" \
   > "$LOCAL/generate_tuned.log" 2>&1 || fail "generate tuned (generate_tuned.log)"
-cp "$LOCAL/tuned_answers.jsonl" "$LOCAL"/*.log "$VOL/"
+cp "$LOCAL/tuned_answers.jsonl" "$VOL/"
+fi
+cp "$LOCAL"/*.log "$VOL/"
 (cd "$LOCAL/run/model" && sha256sum * > ../model.sha256) && cp "$LOCAL/run/model.sha256" "$VOL/"
 if [ "${KEEP_ON_VOLUME:-0}" = "1" ]; then
   need=$(( $(du -sk "$LOCAL/run/model" | cut -f1) + 1048576 )); have=$(df -Pk "$VOL" | awk 'NR==2 {print $4}')
+  if [ -n "${VOL_QUOTA_GB:-}" ]; then
+    left=$(( VOL_QUOTA_GB * 1048576 - $(du -sk /workspace | cut -f1) )); [ "$left" -lt "$have" ] && have=$left
+  fi
   if [ "$have" -gt "$need" ] && cp -r "$LOCAL/run/model" "$VOL/model" && (cd "$VOL/model" && sha256sum -c --quiet ../model.sha256); then
-    stamp "weights kept on the volume"
+    stamp "weights kept on the volume"; KEPT=1
   else stamp "weights not kept on the volume (space $have KB, need $need KB)"; rm -rf "$VOL/model"; fi
 fi
 touch "$LOCAL/READY"
@@ -74,7 +84,7 @@ phase wait_for_pulls
 date +%s > "$LOCAL/WAIT_STARTED"
 until [ -f "$LOCAL/PULLED" ]; do
   [ $(( $(date +%s) - START )) -gt $(( (HARD_CAP_MINUTES - 5) * 60 )) ] && { stamp "pull wait hit the hard cap"; break; }
-  [ $(( $(date +%s) - $(cat "$LOCAL/WAIT_STARTED") )) -gt $(( WAIT_MINUTES * 60 )) ] && { stamp "pull wait timed out"; break; }
+  [ "${KEPT:-0}" = 1 ] && [ $(( $(date +%s) - $(cat "$LOCAL/WAIT_STARTED") )) -gt $(( WAIT_MINUTES * 60 )) ] && { stamp "pull wait timed out"; break; }
   sleep 20
 done
 echo "{\"phase\":\"complete\",\"pulled\":$( [ -f "$LOCAL/PULLED" ] && echo true || echo false )}" > "$VOL/job_status.json"

@@ -1,0 +1,116 @@
+{
+  "models": {
+    "2b_round4_mlx_q8": {
+      "frozen_sol_360": 341,
+      "programs_111": 111,
+      "multi_18": 18,
+      "dev_lexical_90": 51,
+      "dev_outputs_33": 30,
+      "applied_repairs_48": 46,
+      "repair_plus_output_48": 35,
+      "no_change_plus_output_24": 19,
+      "gen_wording_48": 43,
+      "gen_inputs_48": 42,
+      "gen_combinations_48": 41,
+      "strict_trace_120": 108,
+      "coding_complete_48": 4,
+      "coding_programs_36": 21,
+      "coding_stated_outputs": 4,
+      "coding_by_kind": {
+        "generate": 1,
+        "nochange": 0,
+        "output": 3,
+        "repair": 0
+      },
+      "guard_strict_trace_24": 20,
+      "note": "coding_by_kind is from the llama.cpp q8_0 run on the Windows PC, which matched the MLX totals (4/48, 21/36, 4); its guard was 22/24 against MLX 20/24"
+    },
+    "4b_untuned_llama_q8_0": {
+      "coding_complete_48": 1,
+      "coding_programs_36": 11,
+      "coding_stated_outputs": 2,
+      "coding_by_kind": {
+        "generate": 0,
+        "nochange": 1,
+        "output": 0,
+        "repair": 0
+      },
+      "guard_strict_trace_24": 0,
+      "note": "740-prompt run stopped partway; no frozen/benchmark scores"
+    },
+    "4b_pilot_mlx_q8": {
+      "frozen_sol_360": 338,
+      "programs_111": 108,
+      "multi_18": 18,
+      "dev_lexical_90": 55,
+      "dev_outputs_33": 33,
+      "working_generation_24": 24,
+      "applied_repairs_48": 48,
+      "repair_plus_output_48": 41,
+      "no_change_plus_output_24": 21,
+      "gen_wording_48": 42,
+      "gen_inputs_48": 46,
+      "gen_combinations_48": 44,
+      "strict_trace_120": 99,
+      "coding_complete_48": 6,
+      "coding_programs_36": 7,
+      "coding_stated_outputs": 18,
+      "coding_by_kind": {
+        "generate": 0,
+        "nochange": 0,
+        "output": 6,
+        "repair": 0
+      },
+      "guard_strict_trace_24": 23
+    },
+    "4b_full_mlx_q8": {
+      "frozen_sol_360": 346,
+      "frozen_by_set": {
+        "fresh": 114,
+        "held_pairs": 117,
+        "big_numbers": 115
+      },
+      "programs_111": 110,
+      "multi_18": 18,
+      "multi_cases": 108,
+      "dev_lexical_90": 63,
+      "dev_outputs_33": 33,
+      "working_generation_24": 24,
+      "applied_repairs_48": 48,
+      "repair_plus_output_48": 42,
+      "no_change_plus_output_24": 21,
+      "gen_wording_48": 46,
+      "gen_inputs_48": 45,
+      "gen_combinations_48": 45,
+      "strict_trace_120": 110,
+      "coding_complete_48": 8,
+      "coding_programs_36": 5,
+      "coding_stated_outputs": 9,
+      "coding_by_kind": {
+        "generate": 0,
+        "nochange": 3,
+        "output": 5,
+        "repair": 0
+      },
+      "guard_strict_trace_24": 24,
+      "unfinished_740": 1,
+      "mean_answer_tokens_740": 35.94
+    }
+  },
+  "full_model": {
+    "bf16_sha256": "22fe0dbc8d066634049e1f28e7ae7e3202ee969c4cee4fa5724fce538a47074c",
+    "attempt1_bf16_sha256_lost": "65534641a7549003605eda4f36aafbf451cbc3dddb78b029d9cc4745cc391da0",
+    "base": "Qwen/Qwen3.5-4B@851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+    "seed": 7,
+    "updates": 2885
+  },
+  "m1_mlx_q8_runtime": {
+    "convert_seconds": 9,
+    "size_gb": 4.2,
+    "dev_48_seconds": 345,
+    "guard_24_seconds": 107,
+    "prompts_740_seconds": 2517,
+    "overall_tokens_per_second_740": 10.6,
+    "peak_memory_footprint_gb": 5.53
+  }
+}

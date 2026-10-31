@@ -1,0 +1,24 @@
+{
+  "checkpoint_sha256": "mlx-4b-pilot-q8",
+  "no_repeat": 0,
+  "dev_lexical_90": 55,
+  "dev_outputs_33": 33,
+  "working_generation_24": 24,
+  "applied_repairs_48": 48,
+  "repair_plus_output_48": 41,
+  "no_change_plus_output_24": 21,
+  "gen_wording_48": 42,
+  "gen_inputs_48": 46,
+  "gen_combinations_48": 44,
+  "strict_trace_120": 99,
+  "finished": {
+    "development": 89,
+    "coding": 96,
+    "generalization": 144
+  },
+  "severe_loops": {
+    "development": 0,
+    "coding": 0,
+    "generalization": 0
+  }
+}
