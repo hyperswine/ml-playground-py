@@ -13,7 +13,7 @@
 # idle timer cannot suspend a long job; the timer applies again once the job ends.
 # Wake works only from sleep over Wi-Fi (not from shutdown); the wired port's MAC is included for when a cable is in.
 set -u
-HOST=${PC_HOST:-100.100.159.39}          # Tailscale address of swinepcw
+HOST=${PC_HOST:-192.168.0.210}           # home-network address of swinepcw (reserved on the router; Tailscale 100.100.159.39 is unreliable)
 LAN_IP=${PC_LAN_IP:-192.168.0.210}       # last known home-network address
 USER_NAME=${PC_USER:-capta}
 MACS=${PC_MACS:-"B0-A4-60-EA-AE-FC 2C-F0-5D-D6-03-07"}   # Wi-Fi, wired Realtek 2.5GbE
