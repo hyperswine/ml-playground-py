@@ -1,0 +1,976 @@
+{
+ "report": {
+  "engine": "llama.cpp",
+  "url": "http://127.0.0.1:18080",
+  "n": 120,
+  "identical": 109,
+  "same_first_line": 114,
+  "seconds": 70.5,
+  "seconds_per_answer": 0.59,
+  "generated_tokens": 4165,
+  "median_decode_tokens_per_s": 80.98076706782139,
+  "median_prompt_tokens_per_s": 672.2608372048354
+ },
+ "answers": [
+  {
+   "id": "gen/general-combinations-941-take_filter-10-generate-w0",
+   "local": "```sol\nvalue = List.sum (List.filter (fn x -> x >= 13) (List.take 0 [(-10), 3, 24, 21])).\n> print (str value).\n```\nSteps: prefix=[]; kept=[]; result=0.\nIt prints 0.",
+   "pod": "```sol\nvalue = List.sum (List.filter (fn x -> x >= 13) (List.take 0 [(-10), 3, 24, 21])).\n> print (str value).\n```\nSteps: prefix=[]; kept=[]; result=0.\nIt prints 0.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/big_numbers-018",
+   "local": "```sol\n> print (str ((List.rev (List.map (fn x -> x - 6) [42, 40, 108, 43, 74, (-22)])) ! 5)).\n```\nSteps: map=[36, 34, 102, 37, 68, -28]; rev=[-28, 68, 37, 102, 34, 36]; index=36.\nIt prints 36.",
+   "pod": "```sol\n> print (str ((List.rev (List.map (fn x -> x - 6) [42, 40, 108, 43, 74, (-22)])) ! 5)).\n```\nSteps: map=[36, 34, 102, 37, 68, -28]; rev=[-28, 68, 37, 102, 34, 36]; index=36.\nIt prints 36.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "dev/fact-host-build-2",
+   "local": "No. A Base host build produces an ordinary executable for the host machine, using the machine's libc and standard libraries. A QOS app image is built separately and linked against the QOS runtime.",
+   "pod": "No. A Base host build produces an ordinary executable for the host machine, using the machine's libc and standard libraries. A QOS app image is a separate product built with `qos.py build --app`, which links the QOS runtime and QOS HAL against the same Base image.",
+   "identical": false,
+   "same_first_line": false,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/big_numbers-022",
+   "local": "It prints [9].",
+   "pod": "It prints [9, 47].",
+   "identical": false,
+   "same_first_line": false,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/big_numbers-081",
+   "local": "```sol\n> print (str (List.take 1 (List.drop 1 [54, 99, 149, 123, 10]))).\n```\nSteps: drop=[99, 149, 123, 10]; take=[99].\nIt prints [99].",
+   "pod": "```sol\n> print (str (List.take 1 (List.drop 1 [54, 99, 149, 123, 10]))).\n```\nSteps: drop=[99, 149, 123, 10]; take=[99].\nIt prints [99].",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "dev/output-string-slice-3",
+   "local": "It prints cde.",
+   "pod": "It prints cde.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "coding/codingdiag-991-take-0-repair_program",
+   "local": "```sol\nresult = List.sum (List.take 1 [27, 23, 31]).\n> print (str result).\n```\nIt prints 27.",
+   "pod": "```sol\nresult = List.sum (List.take 1 [27, 23, 31]).\n> print (str result).\n```\nIt prints 27.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/fresh-010",
+   "local": "```sol\n> print (str ((-17) >= 4)).\n```\nIt prints False.",
+   "pod": "```sol\n> print (str ((-17) >= 4)).\n```\nIt prints False.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/big_numbers-029",
+   "local": "It prints True.",
+   "pod": "It prints True.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/held_pairs-103",
+   "local": "```sol\n> print (str (List.take 1 (List.filter (fn x -> x < 36) (List.range (-3) (-1))))).\n```\nSteps: range=[-3, -2, -1]; filter=[-3, -2, -1]; take=[-3].\nIt prints [-3].",
+   "pod": "```sol\n> print (str (List.take 1 (List.filter (fn x -> x < 36) (List.range (-3) (-1))))).\n```\nSteps: range=[-3, -2, -1]; filter=[-3, -2, -1]; take=[-3].\nIt prints [-3].",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/fresh-007",
+   "local": "Steps: join=copper sol window; upper=COPPER SOL WINDOW.\nIt prints COPPER SOL WINDOW.",
+   "pod": "Steps: join=copper sol window; upper=COPPER SOL WINDOW.\nIt prints COPPER SOL WINDOW.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/held_pairs-049",
+   "local": "```sol\n> print (str (List.zip (List.drop 1 (List.filter (fn x -> x >= 32) [48, 47])) (List.map (fn x -> x - 1) (List.filter (fn x -> x <= (-40)) (List.range 0 5))))).\n```\nSteps: filter=[48, 47]; drop=[47]; range=[0, 1, 2, 3, 4, 5]; filter2=[]; map=[]; zip=[].\nIt prints [].",
+   "pod": "```sol\n> print (str (List.zip (List.drop 1 (List.filter (fn x -> x >= 32) [48, 47])) (List.map (fn x -> x - 1) (List.filter (fn x -> x <= (-40)) (List.range 0 5))))).\n```\nSteps: filter=[48, 47]; drop=[47]; range=[0, 1, 2, 3, 4, 5]; filter2=[]; map=[]; zip=[].\nIt prints [].",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/held_pairs-093",
+   "local": "Steps: map=[-32, 27, 36, 55, -18]; any=False.\nIt prints False.",
+   "pod": "Steps: map=[-32, 27, 36, 55, -18]; any=False.\nIt prints False.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "coding/codingdiag-991-byte-1-repair_program",
+   "local": "```sol\nresult = Str.at \"Maple\" 0.\n> print (str result).\n```\nIt prints 67.",
+   "pod": "```sol\nresult = Str.at \"Maple\" 0.\n> print (str result).\n```\nIt prints 67.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/big_numbers-056",
+   "local": "```sol\n> print (str (List.filter (fn x -> x < 27) [87, 146, 90])).\n```\nIt prints [].",
+   "pod": "```sol\n> print (str (List.filter (fn x -> x < 27) [87, 146, 90])).\n```\nIt prints [].",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/fresh-084",
+   "local": "```sol\n> print (str ((if List.all (fn x -> x <= (-29)) [(-13), 51, 22, 11, 51] then (-14) else Numeric.abs 53) < (-8))).\n```\nSteps: all=False; abs=53; if=53; cmp=False.\nIt prints False.",
+   "pod": "```sol\n> print (str ((if List.all (fn x -> x <= (-29)) [(-13), 51, 22, 11, 51] then (-14) else Numeric.abs 53) < (-8))).\n```\nSteps: all=False; abs=53; if=53; cmp=False.\nIt prints False.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/held_pairs-001",
+   "local": "```sol\n> print (Str.upper (Str.slice (Str.slice \"window\" 0 1) 4 9)).\n```\nSteps: slice=w; slice2=; upper=.\nIt prints .",
+   "pod": "```sol\n> print (Str.upper (Str.slice (Str.slice \"window\" 0 1) 4 9)).\n```\nSteps: slice=w; slice2=; upper=.\nIt prints .",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/fresh-001",
+   "local": "Steps: range=[-5, -4, -3, -2, -1, 0]; take=[-5, -4, -3, -2].\nIt prints [-5, -4, -3, -2].",
+   "pod": "Steps: range=[-5, -4, -3, -2, -1, 0]; take=[-5, -4, -3, -2].\nIt prints [-5, -4, -3, -2].",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/big_numbers-082",
+   "local": "Steps: max=40; index=123; cmp=False.\nIt prints False.",
+   "pod": "Steps: max=40; index=123; cmp=False.\nIt prints False.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/big_numbers-108",
+   "local": "Steps: map=[306, 123, 315, 405, 414]; drop=[414]; last=414.\nIt prints 414.",
+   "pod": "Steps: map=[306, 123, 315, 405, 414]; drop=[414]; last=414.\nIt prints 414.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "multi/filter_map_sum-p1",
+   "local": "```sol\nList.sum (List.map (fn x -> x * k) (List.filter (fn x -> x > limit) xs))\n```\nFor xs = [48, 59, 29, 40, 29], k = 0 and limit = 29 it evaluates to 0.",
+   "pod": "```sol\nList.sum (List.map (fn x -> x * k) (List.filter (fn x -> x > limit) xs))\n```\nFor xs = [48, 29, 20, 29, 29], k = 0 and limit = 29 it evaluates to 0.",
+   "identical": false,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/fresh-053",
+   "local": "Steps: max=58; div=29.\nIt prints 29.",
+   "pod": "Steps: max=58; div=29.\nIt prints 29.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/held_pairs-097",
+   "local": "```sol\n> print (str (List.any (fn x -> x == 0) (List.map (fn x -> x + 2) [(-31), (-21), (-33)]))).\n```\nSteps: map=[-29, -19, -31]; any=False.\nIt prints False.",
+   "pod": "```sol\n> print (str (List.any (fn x -> x == 0) (List.map (fn x -> x + 2) [(-31), (-21), (-33)]))).\n```\nSteps: map=[-29, -19, -31]; any=False.\nIt prints False.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/fresh-113",
+   "local": "Steps: add=-15; add2=41; min=-15.\nIt prints -15.",
+   "pod": "Steps: add=-15; add2=41; min=-15.\nIt prints -15.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "coding/codingdiag-991-length-1-repair_program",
+   "local": "```sol\nresult = Str.len \"Maple\".\n> print (str result).\n```\nIt prints 5.",
+   "pod": "```sol\nresult = Str.len \"Maple\".\n> print (str result).\n```\nIt prints 5.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "dev/fact-option-result-2",
+   "local": "False. Option is a record, so it carries a named field, not a diagnostic string.",
+   "pod": "False. Option is a record, not a constructor: {has, get, set, vals}. A missing key is Err \"no such key\", an invalid value is Err \"not an option\".",
+   "identical": false,
+   "same_first_line": false,
+   "stop_type": "eos"
+  },
+  {
+   "id": "gen/general-combinations-941-map_reverse-19-output_only-w0",
+   "local": "104",
+   "pod": "104",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/big_numbers-039",
+   "local": "It prints [(104, 94), (37, 124)].",
+   "pod": "It prints [(104, 94), (37, 124)].",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/big_numbers-040",
+   "local": "Steps: range=[9, 10, 11, 12]; zip=[(78, 9), (12, 10), (3, 11), (-5, 12)].\nIt prints [(78, 9), (12, 10), (3, 11), (-5, 12)].",
+   "pod": "Steps: range=[9, 10, 11, 12]; zip=[(78, 9), (12, 10), (3, 11), (-5, 12)].\nIt prints [(78, 9), (12, 10), (3, 11), (-5, 12)].",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "multi/map_sum-p1",
+   "local": "```sol\nList.sum (List.map (fn x -> x * k) xs)\n```\nFor xs = [48, 59, 40, 59], k = 0 and limit = 40 it evaluates to 0.",
+   "pod": "```sol\nList.sum (List.map (fn x -> x * k) xs)\n```\nFor xs = [45, 29, 20, 40, 29], k = 0 and limit = 29 it evaluates to 0.",
+   "identical": false,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/probe-t2-last",
+   "local": "Steps: range=[1, 2, 3, 4, 5, 6, 7]; last=7.\nIt prints 7.",
+   "pod": "Steps: range=[1, 2, 3, 4, 5, 6, 7]; last=7.\nIt prints 7.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/big_numbers-050",
+   "local": "It prints -117.",
+   "pod": "It prints -117.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "coding/codingdiag-991-range-26-repair_program",
+   "local": "```sol\nresult = List.sum (List.range 10 17).\n> print (str result).\n```\nIt prints 119.",
+   "pod": "```sol\nresult = List.sum (List.range 10 17).\n> print (str result).\n```\nIt prints 119.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "dev/output-list-filter-1",
+   "local": "Steps: filter=[3, 4]; sum=7.\nIt prints 7.",
+   "pod": "Steps: filter=[3, 4]; sum=7.\nIt prints 7.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "coding/codingdiag-991-length-0-correct_check",
+   "local": "No change needed. It prints 5.",
+   "pod": "No change needed. It prints 5.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/fresh-006",
+   "local": "```sol\n> print (Str.slice (Str.slice \"lamp\" 4 9) 1 5).\n```\nSteps: slice=p; slice2=.\nIt prints .",
+   "pod": "```sol\n> print (Str.slice (Str.slice \"lamp\" 4 9) 1 5).\n```\nSteps: slice=p; slice2=.\nIt prints .",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/big_numbers-002",
+   "local": "Steps: last=139; div=0; add=139.\nIt prints 139.",
+   "pod": "Steps: last=139; div=0; add=139.\nIt prints 139.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "dev/fact-json-trailing-2",
+   "local": "No. The parser refuses trailing text after a value and reports Err \"expected a key after key at line {line}, column {column}\".",
+   "pod": "No. The parser refuses trailing text after a value and reports Err \"expected a value at column X\".",
+   "identical": false,
+   "same_first_line": false,
+   "stop_type": "eos"
+  },
+  {
+   "id": "gen/general-inputs-941-missing-2-no_change-w0",
+   "local": "No change needed. Steps: needle=126; result=-1.\nIt prints -1.",
+   "pod": "No change needed. Steps: needle=126; result=-1.\nIt prints -1.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "dev/output-list-reverse-3",
+   "local": "Steps: rev=[6, 5, 4]; index=6.\nIt prints 6.",
+   "pod": "Steps: rev=[6, 5, 4]; index=6.\nIt prints 6.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "gen/general-combinations-941-map_filter-28-repair_expr-w0",
+   "local": "`List.sum (List.filter (fn x -> x >= 16) (List.map (fn x -> x * (-3)) [29, (-17)]))`\nSteps: products=[-87, 51]; kept=[51]; result=51.\nIt prints 51.",
+   "pod": "`List.sum (List.filter (fn x -> x >= 16) (List.map (fn x -> x * (-3)) [29, (-17)]))`\nSteps: products=[-87, 51]; kept=[51]; result=51.\nIt prints 51.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "gen/general-wording-419-map-0-output_only-w1",
+   "local": "54",
+   "pod": "54",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "gen/general-combinations-941-take_filter-8-repair_program-w0",
+   "local": "```sol\nresult = List.sum (List.filter (fn x -> x >= (-2)) (List.take 2 [33, (-1)])).\n> print (str result).\n```\nSteps: prefix=[33, -1]; kept=[33, -1]; result=32.\nIt prints 32.",
+   "pod": "```sol\nresult = List.sum (List.filter (fn x -> x >= (-2)) (List.take 2 [33, (-1)])).\n> print (str result).\n```\nSteps: prefix=[33, -1]; kept=[33, -1]; result=32.\nIt prints 32.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/fresh-095",
+   "local": "```sol\n> print (str (List.map (fn x -> x * (-4)) (List.map (fn x -> x + 6) [(-8), 58]))).\n```\nSteps: map=[-2, 64]; map2=[8, -256].\nIt prints [8, -256].",
+   "pod": "```sol\n> print (str (List.map (fn x -> x * (-4)) (List.map (fn x -> x + 6) [(-8), 58]))).\n```\nSteps: map=[-2, 64]; map2=[8, -256].\nIt prints [8, -256].",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "dev/fact-qos-pin-3",
+   "local": "This command pins the fprisc checkout to a specific commit hash, ensuring that subsequent builds use the exact same compiler and runtime versions. The pin is stored in the `fprisc.lock.json` file, which is then checked by `./qos.py fprisc --pin` to verify the current state.\n\n```python\n# Example usage\nqos.py fprisc --pin\n```",
+   "pod": "This command pins the fprisc checkout to a specific commit hash, ensuring that subsequent builds use the exact same compiler and runtime versions. The command writes the hash to a file named `fprisc.lock.json` in the project root, which is then used by `qos.py` to resolve the compiler and runtime dependencies.\n\n```python\n# Example usage\nqos.py fprisc --pin record\n```",
+   "identical": false,
+   "same_first_line": false,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/probe-c-no-shell",
+   "local": "No. Sol executes programs directly through the VM without shell interpretation, glob expansion, or command-line argument parsing.",
+   "pod": "No. Sol executes programs directly through the VM without shell interpretation, glob expansion, or command-line argument parsing.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "coding/codingdiag-991-map-0-repair_inline",
+   "local": "Use `List.sum (List.map (fn x -> x * 2) [10, 24])`. It prints 88.",
+   "pod": "Use `List.sum (List.map (fn x -> x * 2) [10, 24])`. It prints 88.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/held_pairs-117",
+   "local": "Steps: range=[-4]; filter=[-4]; all=False.\nIt prints False.",
+   "pod": "Steps: range=[-4]; filter=[-4]; all=False.\nIt prints False.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "gen/general-inputs-941-range-0-no_change-w0",
+   "local": "No change needed. Steps: values=[22]; result=22.\nIt prints 22.",
+   "pod": "No change needed. Steps: values=[22]; result=22.\nIt prints 22.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/held_pairs-090",
+   "local": "Steps: sum=132; abs=132; add=103.\nIt prints 103.",
+   "pod": "Steps: sum=132; abs=132; add=103.\nIt prints 103.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/fresh-055",
+   "local": "Steps: filter=[-5, -2]; any=False.\nIt prints False.",
+   "pod": "Steps: filter=[-5, -2]; any=False.\nIt prints False.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/held_pairs-064",
+   "local": "Steps: slice=do; upper=DO.\nIt prints DO.",
+   "pod": "Steps: slice=do; upper=DO.\nIt prints DO.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/held_pairs-118",
+   "local": "Steps: slice=en; upper=EN.\nIt prints EN.",
+   "pod": "Steps: slice=en; upper=EN.\nIt prints EN.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/big_numbers-027",
+   "local": "Steps: rev=[11, 119, -2]; all=False.\nIt prints False.",
+   "pod": "Steps: rev=[11, 119, -2]; all=False.\nIt prints False.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "dev/fact-binary-endian-1",
+   "local": "Binary.u16le combines two bytes at an offset by first extracting the first byte using `u16be` and then extracting the second byte using `u16be` on the result of the first operation. This is achieved by chaining the `u16be` function with the `u16be` function, where the first call reads the byte at the specified offset and the second call reads the byte at the next offset.\n\n```sol\nu16le offset = u16be offset.\n```",
+   "pod": "Binary.u16le combines two bytes at an offset by first extracting the first byte using `u16be` and then extracting the second byte using `u16be` on the result of the first operation. The `u16be` function converts a 16-bit value to big-endian format by masking the lower 16 bits and shifting them left by 16 positions.\n\n```sol\nu16le a b = u16be (u16be a b).\n```",
+   "identical": false,
+   "same_first_line": false,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/fresh-041",
+   "local": "Steps: upper=COPPER; slice=OPPER.\nIt prints OPPER.",
+   "pod": "Steps: upper=COPPER; slice=OPPER.\nIt prints OPPER.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/big_numbers-034",
+   "local": "```sol\n> print (str (List.all (fn x -> x == 6) [85, 70])).\n```\nIt prints False.",
+   "pod": "```sol\n> print (str (List.all (fn x -> x == 6) [85, 70])).\n```\nIt prints False.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "coding/codingdiag-991-min-0-correct_check",
+   "local": "No change needed. It prints 4.",
+   "pod": "No change needed. It prints 4.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "gen/general-inputs-941-take-1-generate-w0",
+   "local": "```sol\ntotal = List.sum (List.take 1 [19, (-17), 29]).\n> print (str total).\n```\nSteps: prefix=[19]; result=19.\nIt prints 19.",
+   "pod": "```sol\ntotal = List.sum (List.take 1 [19, (-17), 29]).\n> print (str total).\n```\nSteps: prefix=[19]; result=19.\nIt prints 19.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/fresh-114",
+   "local": "It prints [].",
+   "pod": "It prints [].",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "gen/general-combinations-941-take_filter-18-generate-w0",
+   "local": "```sol\nvalue = List.sum (List.filter (fn x -> x >= (-2)) (List.take 3 [(-22), 22, (-8), 11])).\n> print (str value).\n```\nSteps: prefix=[-22, 22, -8]; kept=[22]; result=22.\nIt prints 22.",
+   "pod": "```sol\nvalue = List.sum (List.filter (fn x -> x >= (-2)) (List.take 3 [(-22), 22, (-8), 11])).\n> print (str value).\n```\nSteps: prefix=[-22, 22, -8]; kept=[22]; result=22.\nIt prints 22.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/big_numbers-095",
+   "local": "Steps: filter=[]; filter2=[].\nIt prints [].",
+   "pod": "Steps: filter=[]; filter2=[].\nIt prints [].",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "dev/output-string-first-byte-3",
+   "local": "It prints 65.",
+   "pod": "It prints 65.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "multi/branch_max-p0",
+   "local": "```sol\nif k > 0 then Numeric.max k (List.sum xs) else Numeric.abs (List.sum xs)\n```\nFor xs = [48, 59, 48, 48], k = 0 and limit = 48 it evaluates to 174.",
+   "pod": "```sol\nif k > 0 then Numeric.max k (List.sum xs) else Numeric.abs (List.sum xs)\n```\nFor xs = [48, 59, 48, 29], k = 0 and limit = 29 it evaluates to 174.",
+   "identical": false,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "coding/codingdiag-991-sum-2-repair_program",
+   "local": "```sol\nresult = List.sum [24, 21, 22, 4].\n> print (str result).\n```\nIt prints 71.",
+   "pod": "```sol\nresult = List.sum [24, 21, 22, 4].\n> print (str result).\n```\nIt prints 71.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "gen/general-wording-419-range-0-output_only-w1",
+   "local": "36",
+   "pod": "36",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/probe-c-args",
+   "local": "A Sol script receives command-line arguments as a list via the `args` function, where the first element is the script's name and subsequent elements are the arguments provided by the shell. The script can access these arguments directly in its logic.\n\n```sol\nargs Unit\n```",
+   "pod": "A Sol script receives command-line arguments as a list via the `args` function, where the first element is the script's name and subsequent elements are the arguments provided by the shell. The script can access these arguments directly in its logic.\n\n```sol\nargs Unit\n```",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/big_numbers-035",
+   "local": "```sol\n> print (str (List.rev (List.drop 2 [136, (-3), (-38), 73, 80]))).\n```\nSteps: drop=[-38, 73, 80]; rev=[80, 73, -38].\nIt prints [80, 73, -38].",
+   "pod": "```sol\n> print (str (List.rev (List.drop 2 [136, (-3), (-38), 73, 80]))).\n```\nSteps: drop=[-38, 73, 80]; rev=[80, 73, -38].\nIt prints [80, 73, -38].",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/fresh-119",
+   "local": "Steps: div=-5; div2=11; min=-5.\nIt prints -5.",
+   "pod": "Steps: div=-5; div2=11; min=-5.\nIt prints -5.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "gen/general-inputs-941-slice-4-output_only-w0",
+   "local": "orlc",
+   "pod": "orlc",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/big_numbers-017",
+   "local": "It prints False.",
+   "pod": "It prints False.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "gen/general-wording-419-length-5-generate-w1",
+   "local": "```sol\ntotal = Str.len \"resnedoq\".\n> print (str total).\n```\nSteps: text=\"resnedoq\"; result=8.\nIt prints 8.",
+   "pod": "```sol\ntotal = Str.len \"resnedoq\".\n> print (str total).\n```\nSteps: text=\"resnedoq\"; result=8.\nIt prints 8.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "coding/codingdiag-991-slice-1-generate",
+   "local": "```sol\n> print (Str.slice \"Maple\" 1 4).\n```\nIt prints aple.",
+   "pod": "```sol\n> print (Str.slice \"Maple\" 1 4).\n```\nIt prints aple.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/probe-t2-upper",
+   "local": "It prints SOL.",
+   "pod": "It prints SOL.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/big_numbers-055",
+   "local": "It prints False.",
+   "pod": "It prints False.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "coding/codingdiag-991-byte-1-generate",
+   "local": "```sol\nresult = Str.at \"Maple\" 0.\n> print (str result).\n```",
+   "pod": "```sol\nresult = Str.at \"Maple\" 0.\n> print (str result).\n```",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "gen/general-wording-419-reverse-2-repair_expr-w1",
+   "local": "`(List.rev [(-14), (-21), 36, (-12)]) ! 0`\nSteps: reversed=[-12, 36, -21, -14]; result=-12.\nIt prints -12.",
+   "pod": "`(List.rev [(-14), (-21), 36, (-12)]) ! 0`\nSteps: reversed=[-12, 36, -21, -14]; result=-12.\nIt prints -12.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "coding/codingdiag-991-slice-0-generate",
+   "local": "```sol\n> print (Str.slice \"Grape\" 0 2).\n```\nIt prints Gr.",
+   "pod": "```sol\n> print (Str.slice \"Grape\" 0 2).\n```\nIt prints Gr.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/big_numbers-010",
+   "local": "Steps: range=[1, 2, 3, 4, 5]; all=True; if=-12; mul=-12.\nIt prints -12.",
+   "pod": "Steps: range=[1, 2, 3, 4, 5]; all=True; if=-12; mul=-12.\nIt prints -12.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "coding/codingdiag-991-clamp-0-repair_inline",
+   "local": "Use `Numeric.clamp 4 13 0`. It prints 4.",
+   "pod": "Use `Numeric.clamp 4 13 0`. It prints 4.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "gen/general-inputs-941-length-4-generate-w0",
+   "local": "```sol\nresult = Str.len \"nqygsdn\".\n> print (str result).\n```\nSteps: text=\"nqygsdn\"; result=7.\nIt prints 7.",
+   "pod": "```sol\nresult = Str.len \"nqygsdn\".\n> print (str result).\n```\nSteps: text=\"nqygsdn\"; result=7.\nIt prints 7.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/held_pairs-046",
+   "local": "Steps: range=[-2, -1, 0, 1, 2, 3, 4]; filter=[].\nIt prints [].",
+   "pod": "Steps: range=[-2, -1, 0, 1, 2, 3, 4]; filter=[].\nIt prints [].",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "coding/codingdiag-991-sum-2-correct_check",
+   "local": "No change needed. It prints 71.",
+   "pod": "No change needed. It prints 71.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/probe-t2-max",
+   "local": "It prints 14.",
+   "pod": "It prints 14.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "gen/general-combinations-941-take_filter-0-repair_expr-w0",
+   "local": "`List.sum (List.filter (fn x -> x >= (-9)) (List.take 0 [15, (-20)]))`\nSteps: prefix=[]; kept=[]; result=0.\nIt prints 0.",
+   "pod": "`List.sum (List.filter (fn x -> x >= (-9)) (List.take 0 [15, (-20)]))`\nSteps: prefix=[]; kept=[]; result=0.\nIt prints 0.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/fresh-017",
+   "local": "It prints 111.",
+   "pod": "It prints 111.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "gen/general-wording-419-take-4-no_change-w1",
+   "local": "No change needed. Steps: prefix=[22]; result=22.\nIt prints 22.",
+   "pod": "No change needed. Steps: prefix=[22]; result=22.\nIt prints 22.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/big_numbers-030",
+   "local": "It prints 122.",
+   "pod": "It prints 122.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/held_pairs-087",
+   "local": "Steps: map=[-14, 43, 24, 9, -24, 58]; any=False; abs=59; if=14.\nIt prints 14.",
+   "pod": "Steps: map=[-14, 43, 24, 9, -24, 58]; any=False; abs=59; if=14.\nIt prints 14.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/held_pairs-113",
+   "local": "```sol\n> print (str (List.any (fn x -> x == (-3)) (List.map (fn x -> x * 6) [(-38), 16, (-13), (-35), 2]))).\n```\nSteps: map=[-228, 96, -78, -210, 12]; any=False.\nIt prints False.",
+   "pod": "```sol\n> print (str (List.any (fn x -> x == (-3)) (List.map (fn x -> x * 6) [(-38), 16, (-13), (-35), 2]))).\n```\nSteps: map=[-228, 96, -78, -210, 12]; any=False.\nIt prints False.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "dev/fact-profiles-3",
+   "local": "The default profile is `base`. A file that declares no profile uses `base`.",
+   "pod": "The default profile is `base`. A file that declares no profile uses `base`.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/fresh-105",
+   "local": "Steps: drop=[38, 26]; filter=[38, 26].\nIt prints [38, 26].",
+   "pod": "Steps: drop=[38, 26]; filter=[38, 26].\nIt prints [38, 26].",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "gen/general-wording-419-missing-2-repair_expr-w1",
+   "local": "`Str.find 126 \"llusl\"`\nSteps: needle=126; result=-1.\nIt prints -1.",
+   "pod": "`Str.find 126 \"llusl\"`\nSteps: needle=126; result=-1.\nIt prints -1.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "multi/signed_branch-p2",
+   "local": "```sol\nif k > 0 then List.sum (List.map (fn x -> x * k) xs) else List.sum xs\n```\nFor xs = [48, 59, 40, 29, 20], k = 0 it evaluates to 196.",
+   "pod": "```sol\nif k > 0 then List.sum (List.map (fn x -> x * k) xs) else List.sum xs\n```\nFor xs = [39, 48, 10, 29, 20], k = 0 it evaluates to 146.",
+   "identical": false,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "dev/output-list-take-1",
+   "local": "Steps: take=[5, 6]; sum=11.\nIt prints 11.",
+   "pod": "Steps: take=[5, 6]; sum=11.\nIt prints 11.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/probe-t1-slice",
+   "local": "It prints rail.",
+   "pod": "It prints rail.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "coding/codingdiag-991-filter-6-generate",
+   "local": "```sol\nresult = List.sum (List.filter (fn x -> x >= 9) [7, 9, 10, 16]).\n> print (str result).\n```",
+   "pod": "```sol\nresult = List.sum (List.filter (fn x -> x >= 9) [7, 9, 10, 16]).\n> print (str result).\n```",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "gen/general-combinations-941-map_reverse-2-output_only-w0",
+   "local": "86",
+   "pod": "86",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "gen/general-combinations-941-take_filter-3-generate-w0",
+   "local": "```sol\nanswer = List.sum (List.filter (fn x -> x >= 2) (List.take 3 [(-17), 0, (-7), (-14), (-13)])).\n> print (str answer).\n```\nSteps: prefix=[-17, 0, -7]; result=0.\nIt prints 0.",
+   "pod": "```sol\nanswer = List.sum (List.filter (fn x -> x >= 2) (List.take 3 [(-17), 0, (-7), (-14), (-13)])).\n> print (str answer).\n```\nSteps: prefix=[-17, 0, -7]; result=0.\nIt prints 0.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "coding/codingdiag-991-missing-1-generate",
+   "local": "```sol\nresult = Str.find 126 \"Maple\".\n> print (str result).\n```",
+   "pod": "```sol\nresult = Str.find 126 \"Maple\".\n> print (str result).\n```",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/fresh-034",
+   "local": "It prints False.",
+   "pod": "It prints False.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "multi/map_sum-p0",
+   "local": "```sol\nList.sum (List.map (fn x -> x * k) xs)\n```\nFor xs = [48, 59, 48, 59], k = 0 and limit = 59 it evaluates to 0.",
+   "pod": "```sol\nList.sum (List.map (fn x -> x * k) xs)\n```\nFor xs = [48, 59, 29, 20, 12], k = 0 and limit = 29 it evaluates to 0.",
+   "identical": false,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "coding/codingdiag-991-slice-1-repair_program",
+   "local": "```sol\nresult = Str.slice \"Maple\" 1 4.\n> print (str result).\n```\nIt prints aple.",
+   "pod": "```sol\nresult = Str.slice \"Maple\" 1 4.\n> print (str result).\n```\nIt prints aple.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/fresh-004",
+   "local": "It prints [1, 2, 3, 4, 5].",
+   "pod": "It prints [1, 2, 3, 4, 5].",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "gen/general-wording-419-min-3-repair_program-w1",
+   "local": "```sol\nresult = Numeric.min 39 (-9).\n> print (str result).\n```\nSteps: left=39; right=-9; result=-9.\nIt prints -9.",
+   "pod": "```sol\nresult = Numeric.min 39 (-9).\n> print (str result).\n```\nSteps: left=39; right=-9; result=-9.\nIt prints -9.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/held_pairs-096",
+   "local": "Steps: map=[8, 96]; sum=104; abs=104.\nIt prints 104.",
+   "pod": "Steps: map=[8, 96]; sum=104; abs=104.\nIt prints 104.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/big_numbers-119",
+   "local": "It prints 620.",
+   "pod": "It prints 620.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/big_numbers-063",
+   "local": "Steps: take=[81, 70]; map=[405, 350].\nIt prints [405, 350].",
+   "pod": "Steps: take=[81, 70]; map=[405, 350].\nIt prints [405, 350].",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/held_pairs-016",
+   "local": "Steps: range=[10, 11, 12, 13]; rev=[13, 12, 11, 10]; take=[13]; range2=[6, 7]; filter=[6, 7]; filter2=[6, 7]; zip=[(13, 6)].\nIt prints [(13, 6)].",
+   "pod": "Steps: range=[10, 11, 12, 13]; rev=[13, 12, 11, 10]; take=[13]; range2=[6, 7]; filter=[6, 7]; filter2=[6, 7]; zip=[(13, 6)].\nIt prints [(13, 6)].",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/big_numbers-078",
+   "local": "It prints True.",
+   "pod": "It prints True.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "coding/codingdiag-991-range-26-repair_inline",
+   "local": "Use `List.sum (List.range 10 17)`. It prints 84.",
+   "pod": "Use `List.sum (List.range 10 17)`. It prints 84.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/big_numbers-043",
+   "local": "It prints 211.",
+   "pod": "It prints 211.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "gen/general-wording-419-min-1-output_trace-w1",
+   "local": "Steps: left=15; right=-30; result=-30.\nIt prints -30.",
+   "pod": "Steps: left=15; right=-30; result=-30.\nIt prints -30.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/big_numbers-113",
+   "local": "```sol\n> print (str (List.all (fn x -> x <= (-24)) [102, (-40), 36, 101, (-1)])).\n```\nIt prints False.",
+   "pod": "```sol\n> print (str (List.all (fn x -> x <= (-24)) [102, (-40), 36, 101, (-1)])).\n```\nIt prints False.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/probe-t2-any",
+   "local": "It prints True.",
+   "pod": "It prints True.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "solgen/probe-t2-abs",
+   "local": "It prints 41.",
+   "pod": "It prints 41.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "gen/general-combinations-941-map_reverse-17-no_change-w0",
+   "local": "No change needed. Steps: products=[124, 132, 156]; reversed=[156, 132, 124]; result=156.\nIt prints 156.",
+   "pod": "No change needed. Steps: products=[124, 132, 156]; reversed=[156, 132, 124]; result=156.\nIt prints 156.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "dev/fact-binary-offset-3",
+   "local": "Offsets are zero-based.",
+   "pod": "Offsets are zero-based.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "dev/output-list-map-1",
+   "local": "Steps: map=[2, 4, 6]; sum=12.\nIt prints 12.",
+   "pod": "Steps: map=[2, 4, 6]; sum=12.\nIt prints 12.",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  },
+  {
+   "id": "gen/general-inputs-941-min-0-output_only-w0",
+   "local": "3",
+   "pod": "3",
+   "identical": true,
+   "same_first_line": true,
+   "stop_type": "eos"
+  }
+ ]
+}

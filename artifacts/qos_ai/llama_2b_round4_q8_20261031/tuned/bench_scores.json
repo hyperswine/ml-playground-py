@@ -1,0 +1,24 @@
+{
+  "checkpoint_sha256": "llama-2b-round4-q8",
+  "no_repeat": 0,
+  "dev_lexical_90": 52,
+  "dev_outputs_33": 30,
+  "working_generation_24": 24,
+  "applied_repairs_48": 46,
+  "repair_plus_output_48": 35,
+  "no_change_plus_output_24": 18,
+  "gen_wording_48": 43,
+  "gen_inputs_48": 44,
+  "gen_combinations_48": 41,
+  "strict_trace_120": 110,
+  "finished": {
+    "development": 90,
+    "coding": 96,
+    "generalization": 144
+  },
+  "severe_loops": {
+    "development": 0,
+    "coding": 0,
+    "generalization": 0
+  }
+}

@@ -76,6 +76,9 @@ adapter-training alternatives, not drop-in replacements for this full-SFT recipe
 
 ## Windows worker and Wake-on-LAN
 
+Verified on 2026-10-31: Wi-Fi wake from sleep, GPU offload, matching outputs and throughput for the 2B; see
+[the Windows PC report](2026-10-31-WINDOWS-PC-INFERENCE.md). The notes below predate those measurements.
+
 Added: 2026-10-31T10:35:20+11:00 (Australia/Sydney).
 These are owner-reported specifications and vendor-documentation checks, not a
 live inventory or a successful remote-wake test. Windows version/build, exact

@@ -1,0 +1,114 @@
+#!/bin/bash
+# pc: wake, use and sleep the Windows PC "swinepcw" from the M1.
+#
+#   pc status            is it awake? (SSH port over Tailscale) and when it last booted
+#   pc wake              send Wake-on-LAN magic packets until SSH answers (up to PC_WAKE_TIMEOUT seconds)
+#   pc ssh [args]        wake, then ssh in (cmd.exe shell)
+#   pc run COMMAND...    wake, then run COMMAND (cmd.exe syntax) while the PC is kept awake; exit code is passed on
+#   pc wsl COMMAND...    wake, then run COMMAND in WSL Ubuntu (bash -lc) while the PC is kept awake
+#   pc ps < script.ps1   wake, then run a PowerShell script from stdin while the PC is kept awake
+#   pc sleep             put the PC to sleep (S3); Windows also sleeps it after 45 idle minutes
+#
+# "Kept awake" holds SetThreadExecutionState(ES_CONTINUOUS | ES_SYSTEM_REQUIRED) for the job's lifetime, so the
+# idle timer cannot suspend a long job; the timer applies again once the job ends.
+# Wake works only from sleep over Wi-Fi (not from shutdown); the wired port's MAC is included for when a cable is in.
+set -u
+HOST=${PC_HOST:-100.100.159.39}          # Tailscale address of swinepcw
+LAN_IP=${PC_LAN_IP:-192.168.0.210}       # last known home-network address
+USER_NAME=${PC_USER:-capta}
+MACS=${PC_MACS:-"B0-A4-60-EA-AE-FC 2C-F0-5D-D6-03-07"}   # Wi-Fi, wired Realtek 2.5GbE
+TIMEOUT=${PC_WAKE_TIMEOUT:-120}
+OPTS=(-o ConnectTimeout=10 -o ServerAliveInterval=30)
+
+up() { nc -z -G 3 "$HOST" 22 >/dev/null 2>&1; }
+
+magic() {
+  python3 - "$LAN_IP" $MACS <<'EOF'
+import socket, sys
+ip, macs = sys.argv[1], sys.argv[2:]
+s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM); s.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
+for mac in macs:
+  packet = b'\xff' * 6 + bytes.fromhex(mac.replace('-', '').replace(':', '')) * 16
+  for addr in ('192.168.0.255', '255.255.255.255', ip):
+    for port in (9, 7):
+      try: s.sendto(packet, (addr, port))
+      except OSError: pass
+EOF
+}
+
+wake() {
+  up && return 0
+  echo "pc: waking swinepcw..." >&2
+  local start last=0 now
+  start=$(date +%s)
+  while ! up; do
+    now=$(date +%s)
+    if (( now - start > TIMEOUT )); then
+      echo "pc: no answer after ${TIMEOUT}s (asleep on Wi-Fi? shut down? press a key on the PC)" >&2; return 1
+    fi
+    if (( now - last >= 15 )); then magic; last=$now; fi
+    sleep 3
+  done
+  echo "pc: awake after $(( $(date +%s) - start ))s" >&2
+}
+
+# Run a PowerShell script (stdin) on the PC; quoting-safe via -EncodedCommand. With keep_awake=1 the system stays
+# awake until the script ends.
+run_ps() {
+  local keep_awake=$1 body head tail script encoded
+  body=$(cat)
+  head='$ProgressPreference = "SilentlyContinue"'; tail=''
+  if [ "$keep_awake" = 1 ]; then
+    head=$head$'\n'$(cat <<'PS'
+Add-Type -Namespace PcHelper -Name Power -MemberDefinition '[DllImport("kernel32.dll")] public static extern uint SetThreadExecutionState(uint f);'
+[void][PcHelper.Power]::SetThreadExecutionState([uint32]2147483649)
+$global:LASTEXITCODE = 0
+try {
+PS
+)
+    tail=$(cat <<'PS'
+} finally { [void][PcHelper.Power]::SetThreadExecutionState([uint32]2147483648) }
+exit $LASTEXITCODE
+PS
+)
+  fi
+  script="$head"$'\n'"$body"$'\n'"$tail"
+  encoded=$(printf '%s' "$script" | iconv -t UTF-16LE | base64 | tr -d '\n')
+  ssh -o BatchMode=yes "${OPTS[@]}" "$USER_NAME@$HOST" "powershell -NoProfile -NonInteractive -EncodedCommand $encoded"
+}
+
+b64() { printf '%s' "$*" | base64 | tr -d '\n'; }
+
+cmd=${1:-status}; shift || true
+case "$cmd" in
+  status)
+    if up; then
+      echo "swinepcw: awake"
+      echo '"last boot: " + (Get-CimInstance Win32_OperatingSystem).LastBootUpTime' | run_ps 0 2>/dev/null | tr -d '\r'
+    else
+      echo "swinepcw: asleep or offline"; exit 1
+    fi ;;
+  wake) wake ;;
+  ssh) wake && exec ssh "${OPTS[@]}" "$USER_NAME@$HOST" "$@" ;;
+  run)
+    [ $# -gt 0 ] || { echo "usage: pc run COMMAND..." >&2; exit 2; }
+    wake || exit 1
+    printf '%s\n' "\$c = [Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('$(b64 "$@")'))" '& cmd.exe /d /s /c $c' | run_ps 1 ;;
+  wsl)
+    [ $# -gt 0 ] || { echo "usage: pc wsl COMMAND..." >&2; exit 2; }
+    wake || exit 1
+    # Base64 to a temp script inside WSL: PowerShell 5.1 does not escape embedded quotes for native programs, and
+    # --exec stops wsl.exe re-parsing the command through the default shell.
+    printf '%s\n' "\$c = 'f=\$(mktemp); echo $(b64 "$@") | base64 -d > \$f; bash -l \$f; rc=\$?; rm -f \$f; exit \$rc'" '& wsl.exe -d Ubuntu --exec bash -c $c' | run_ps 1 ;;
+  ps) wake || exit 1; run_ps 1 ;;
+  sleep)
+    up || { echo "swinepcw: already asleep or offline"; exit 0; }
+    echo "pc: putting swinepcw to sleep" >&2
+    # The SSH session dies when the PC suspends, so run it in the background and stop waiting after a few seconds.
+    echo 'Add-Type -AssemblyName System.Windows.Forms; [void][System.Windows.Forms.Application]::SetSuspendState([System.Windows.Forms.PowerState]::Suspend, $false, $false)' \
+      | run_ps 0 >/dev/null 2>&1 &
+    job=$!; disown "$job" 2>/dev/null; sleep 8; kill "$job" 2>/dev/null
+    for _ in $(seq 1 20); do up || { echo "swinepcw: asleep"; exit 0; }; sleep 3; done
+    echo "pc: still answering after 60s" >&2; exit 1 ;;
+  *) sed -n '2,13p' "$0" | sed 's/^# \{0,1\}//'; exit 2 ;;
+esac

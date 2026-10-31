@@ -144,7 +144,10 @@
     "mac/audit_qwen_trace_values.py": "scripts/mac/audit_qwen_trace_values.py",
     "mac/run_qwen_controlled_confirmation.py": "scripts/mac/run_qwen_controlled_confirmation.py",
     "mac/qwen_internals.py": "scripts/mac/qwen_internals.py",
-    "mac/score_qwen_internals_probe.py": "scripts/mac/score_qwen_internals_probe.py"
+    "mac/score_qwen_internals_probe.py": "scripts/mac/score_qwen_internals_probe.py",
+    "pc/pc": "scripts/pc/pc",
+    "windows/llama_check.py": "scripts/windows/llama_check.py",
+    "windows/llama_answers.py": "scripts/windows/llama_answers.py"
   },
   "files": {
     "qos_ai_557m.json": "configs/qos_ai_557m.json",

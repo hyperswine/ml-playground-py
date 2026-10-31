@@ -1,0 +1,2633 @@
+[
+ {
+  "id": "fresh-000",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-001",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-002",
+  "stratum": "fresh",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-003",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-004",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-005",
+  "stratum": "fresh",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-006",
+  "stratum": "fresh",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-007",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-008",
+  "stratum": "fresh",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-009",
+  "stratum": "fresh",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-010",
+  "stratum": "fresh",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-011",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-012",
+  "stratum": "fresh",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-013",
+  "stratum": "fresh",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-014",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-015",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-016",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-017",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-018",
+  "stratum": "fresh",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-019",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-020",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-021",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-022",
+  "stratum": "fresh",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-023",
+  "stratum": "fresh",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-024",
+  "stratum": "fresh",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-025",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-026",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-027",
+  "stratum": "fresh",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-028",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-029",
+  "stratum": "fresh",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-030",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-031",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-032",
+  "stratum": "fresh",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-033",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-034",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-035",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-036",
+  "stratum": "fresh",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-037",
+  "stratum": "fresh",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-038",
+  "stratum": "fresh",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-039",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": false,
+  "correct": false
+ },
+ {
+  "id": "fresh-040",
+  "stratum": "fresh",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-041",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-042",
+  "stratum": "fresh",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-043",
+  "stratum": "fresh",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-044",
+  "stratum": "fresh",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-045",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-046",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": false,
+  "correct": false
+ },
+ {
+  "id": "fresh-047",
+  "stratum": "fresh",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-048",
+  "stratum": "fresh",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-049",
+  "stratum": "fresh",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-050",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-051",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-052",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-053",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-054",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-055",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-056",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-057",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-058",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-059",
+  "stratum": "fresh",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-060",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-061",
+  "stratum": "fresh",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-062",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": false,
+  "correct": false
+ },
+ {
+  "id": "fresh-063",
+  "stratum": "fresh",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-064",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-065",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-066",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-067",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-068",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-069",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": false,
+  "correct": false
+ },
+ {
+  "id": "fresh-070",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-071",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-072",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-073",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-074",
+  "stratum": "fresh",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-075",
+  "stratum": "fresh",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-076",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-077",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-078",
+  "stratum": "fresh",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-079",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": false,
+  "correct": false
+ },
+ {
+  "id": "fresh-080",
+  "stratum": "fresh",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-081",
+  "stratum": "fresh",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-082",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-083",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-084",
+  "stratum": "fresh",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-085",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-086",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-087",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-088",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-089",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-090",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-091",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": false,
+  "correct": false
+ },
+ {
+  "id": "fresh-092",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-093",
+  "stratum": "fresh",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-094",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-095",
+  "stratum": "fresh",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-096",
+  "stratum": "fresh",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-097",
+  "stratum": "fresh",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-098",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-099",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-100",
+  "stratum": "fresh",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-101",
+  "stratum": "fresh",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-102",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-103",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-104",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-105",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-106",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": false,
+  "correct": false
+ },
+ {
+  "id": "fresh-107",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-108",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-109",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-110",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-111",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-112",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": false,
+  "correct": false
+ },
+ {
+  "id": "fresh-113",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-114",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-115",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-116",
+  "stratum": "fresh",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-117",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-118",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "fresh-119",
+  "stratum": "fresh",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-000",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-001",
+  "stratum": "held_pairs",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-002",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-003",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-004",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-005",
+  "stratum": "held_pairs",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-006",
+  "stratum": "held_pairs",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-007",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-008",
+  "stratum": "held_pairs",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-009",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-010",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-011",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-012",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-013",
+  "stratum": "held_pairs",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-014",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-015",
+  "stratum": "held_pairs",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-016",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-017",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-018",
+  "stratum": "held_pairs",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-019",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-020",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-021",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-022",
+  "stratum": "held_pairs",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-023",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-024",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-025",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-026",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-027",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-028",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-029",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-030",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-031",
+  "stratum": "held_pairs",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-032",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-033",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-034",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-035",
+  "stratum": "held_pairs",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-036",
+  "stratum": "held_pairs",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-037",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-038",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-039",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-040",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-041",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-042",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-043",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-044",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-045",
+  "stratum": "held_pairs",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-046",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-047",
+  "stratum": "held_pairs",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-048",
+  "stratum": "held_pairs",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-049",
+  "stratum": "held_pairs",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-050",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-051",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-052",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-053",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-054",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-055",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-056",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-057",
+  "stratum": "held_pairs",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-058",
+  "stratum": "held_pairs",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": false,
+  "correct": false
+ },
+ {
+  "id": "held_pairs-059",
+  "stratum": "held_pairs",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-060",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-061",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-062",
+  "stratum": "held_pairs",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-063",
+  "stratum": "held_pairs",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-064",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-065",
+  "stratum": "held_pairs",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-066",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-067",
+  "stratum": "held_pairs",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-068",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-069",
+  "stratum": "held_pairs",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-070",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": false,
+  "correct": false
+ },
+ {
+  "id": "held_pairs-071",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-072",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-073",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-074",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-075",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-076",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-077",
+  "stratum": "held_pairs",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-078",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-079",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-080",
+  "stratum": "held_pairs",
+  "kind": "generate",
+  "stated_ok": false,
+  "program_ok": true,
+  "correct": false
+ },
+ {
+  "id": "held_pairs-081",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-082",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-083",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-084",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-085",
+  "stratum": "held_pairs",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-086",
+  "stratum": "held_pairs",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-087",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-088",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-089",
+  "stratum": "held_pairs",
+  "kind": "generate",
+  "stated_ok": false,
+  "program_ok": true,
+  "correct": false
+ },
+ {
+  "id": "held_pairs-090",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-091",
+  "stratum": "held_pairs",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-092",
+  "stratum": "held_pairs",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-093",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-094",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-095",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-096",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-097",
+  "stratum": "held_pairs",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-098",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-099",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-100",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-101",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-102",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-103",
+  "stratum": "held_pairs",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-104",
+  "stratum": "held_pairs",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-105",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-106",
+  "stratum": "held_pairs",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-107",
+  "stratum": "held_pairs",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-108",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-109",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-110",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-111",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-112",
+  "stratum": "held_pairs",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-113",
+  "stratum": "held_pairs",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-114",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-115",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-116",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-117",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-118",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "held_pairs-119",
+  "stratum": "held_pairs",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-000",
+  "stratum": "big_numbers",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-001",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-002",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-003",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-004",
+  "stratum": "big_numbers",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-005",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-006",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-007",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-008",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-009",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-010",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-011",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-012",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-013",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-014",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-015",
+  "stratum": "big_numbers",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-016",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-017",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-018",
+  "stratum": "big_numbers",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-019",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-020",
+  "stratum": "big_numbers",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-021",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-022",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": false,
+  "correct": false
+ },
+ {
+  "id": "big_numbers-023",
+  "stratum": "big_numbers",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-024",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-025",
+  "stratum": "big_numbers",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-026",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-027",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-028",
+  "stratum": "big_numbers",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-029",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-030",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-031",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-032",
+  "stratum": "big_numbers",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-033",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": false,
+  "correct": false
+ },
+ {
+  "id": "big_numbers-034",
+  "stratum": "big_numbers",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-035",
+  "stratum": "big_numbers",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-036",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-037",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-038",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": false,
+  "correct": false
+ },
+ {
+  "id": "big_numbers-039",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-040",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-041",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-042",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-043",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-044",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-045",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-046",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-047",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-048",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-049",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-050",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-051",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-052",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-053",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-054",
+  "stratum": "big_numbers",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-055",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-056",
+  "stratum": "big_numbers",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-057",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-058",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-059",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-060",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-061",
+  "stratum": "big_numbers",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-062",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-063",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-064",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-065",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": false,
+  "correct": false
+ },
+ {
+  "id": "big_numbers-066",
+  "stratum": "big_numbers",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-067",
+  "stratum": "big_numbers",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-068",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-069",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-070",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-071",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-072",
+  "stratum": "big_numbers",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-073",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-074",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-075",
+  "stratum": "big_numbers",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-076",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-077",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-078",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-079",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-080",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": false,
+  "correct": false
+ },
+ {
+  "id": "big_numbers-081",
+  "stratum": "big_numbers",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-082",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-083",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": false,
+  "correct": false
+ },
+ {
+  "id": "big_numbers-084",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-085",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-086",
+  "stratum": "big_numbers",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-087",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-088",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-089",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-090",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-091",
+  "stratum": "big_numbers",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-092",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-093",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-094",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-095",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-096",
+  "stratum": "big_numbers",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-097",
+  "stratum": "big_numbers",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-098",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-099",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-100",
+  "stratum": "big_numbers",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-101",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-102",
+  "stratum": "big_numbers",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-103",
+  "stratum": "big_numbers",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-104",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-105",
+  "stratum": "big_numbers",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-106",
+  "stratum": "big_numbers",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-107",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-108",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-109",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-110",
+  "stratum": "big_numbers",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-111",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-112",
+  "stratum": "big_numbers",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-113",
+  "stratum": "big_numbers",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-114",
+  "stratum": "big_numbers",
+  "kind": "repair",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-115",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": false,
+  "correct": false
+ },
+ {
+  "id": "big_numbers-116",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-117",
+  "stratum": "big_numbers",
+  "kind": "generate",
+  "stated_ok": true,
+  "program_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-118",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ },
+ {
+  "id": "big_numbers-119",
+  "stratum": "big_numbers",
+  "kind": "output",
+  "stated_ok": true,
+  "correct": true
+ }
+]

@@ -1,0 +1,2354 @@
+[
+ {
+  "id": "fresh-000",
+  "answer": "Steps: index=58; div=9; add=66.\nIt prints 66.",
+  "finished": true,
+  "tokens": 24
+ },
+ {
+  "id": "fresh-001",
+  "answer": "Steps: range=[-5, -4, -3, -2, -1, 0]; take=[-5, -4, -3, -2].\nIt prints [-5, -4, -3, -2].",
+  "finished": true,
+  "tokens": 52
+ },
+ {
+  "id": "fresh-002",
+  "answer": "```sol\n> print (str (if 16 < (Numeric.abs 4) then Str.find 104 \"harbor\" else [(-25), 55, 2, 52] ! 3)).\n```\nSteps: abs=4; cmp=False; find=1; index=52; if=52.\nIt prints 52.",
+  "finished": true,
+  "tokens": 85
+ },
+ {
+  "id": "fresh-003",
+  "answer": "Steps: mod=2; sum=157; div=19; max=19.\nIt prints 19.",
+  "finished": true,
+  "tokens": 30
+ },
+ {
+  "id": "fresh-004",
+  "answer": "It prints [1, 2, 3, 4, 5].",
+  "finished": true,
+  "tokens": 18
+ },
+ {
+  "id": "fresh-005",
+  "answer": "```sol\n> print (Str.trim \"   copper   \").\n```\nIt prints copper.",
+  "finished": true,
+  "tokens": 21
+ },
+ {
+  "id": "fresh-006",
+  "answer": "```sol\n> print (Str.slice (Str.slice \"lamp\" 4 9) 1 5).\n```\nSteps: slice=p; slice2=.\nIt prints .",
+  "finished": true,
+  "tokens": 40
+ },
+ {
+  "id": "fresh-007",
+  "answer": "Steps: join=copper sol window; upper=COPPER SOL WINDOW.\nIt prints COPPER SOL WINDOW.",
+  "finished": true,
+  "tokens": 24
+ },
+ {
+  "id": "fresh-008",
+  "answer": "```sol\n> print (str (List.rev [30, 34, (-17)])).\n```\nIt prints [-17, 34, 30].",
+  "finished": true,
+  "tokens": 41
+ },
+ {
+  "id": "fresh-009",
+  "answer": "```sol\n> print (str (List.all (fn x -> x <= (-39)) [(-30), (-38)])).\n```\nIt prints False.",
+  "finished": true,
+  "tokens": 38
+ },
+ {
+  "id": "fresh-010",
+  "answer": "```sol\n> print (str ((-17) >= 4)).\n```\nIt prints False.",
+  "finished": true,
+  "tokens": 24
+ },
+ {
+  "id": "fresh-011",
+  "answer": "It prints 44.",
+  "finished": true,
+  "tokens": 7
+ },
+ {
+  "id": "fresh-012",
+  "answer": "```sol\n> print (str (List.drop 2 [(-1), 9])).\n```\nIt prints [].",
+  "finished": true,
+  "tokens": 26
+ },
+ {
+  "id": "fresh-013",
+  "answer": "```sol\n> print (str (List.filter (fn x -> x > 52) [(-38), 10, (-22)])).\n```\nIt prints [].",
+  "finished": true,
+  "tokens": 41
+ },
+ {
+  "id": "fresh-014",
+  "answer": "It prints thunderkernel.",
+  "finished": true,
+  "tokens": 6
+ },
+ {
+  "id": "fresh-015",
+  "answer": "It prints [-16, -37, -4].",
+  "finished": true,
+  "tokens": 14
+ },
+ {
+  "id": "fresh-016",
+  "answer": "Steps: any=False; range=[8, 9, 10, 11, 12]; take=[8]; sum=8; if=8.\nIt prints 8.",
+  "finished": true,
+  "tokens": 43
+ },
+ {
+  "id": "fresh-017",
+  "answer": "It prints 111.",
+  "finished": true,
+  "tokens": 8
+ },
+ {
+  "id": "fresh-018",
+  "answer": "```sol\n> print (str (List.filter (fn x -> x != (-28)) [60, (-23), 3, 14, (-13), (-6)])).\n```\nIt prints [60, -23, 3, 14, -13, -6].",
+  "finished": true,
+  "tokens": 71
+ },
+ {
+  "id": "fresh-019",
+  "answer": "Steps: abs=35; cmp=False.\nIt prints False.",
+  "finished": true,
+  "tokens": 16
+ },
+ {
+  "id": "fresh-020",
+  "answer": "It prints MAPLE.",
+  "finished": true,
+  "tokens": 6
+ },
+ {
+  "id": "fresh-021",
+  "answer": "It prints 108.",
+  "finished": true,
+  "tokens": 8
+ },
+ {
+  "id": "fresh-022",
+  "answer": "```sol\n> print (str (Numeric.clamp (-24) 3 35)).\n```\nIt prints 3.",
+  "finished": true,
+  "tokens": 30
+ },
+ {
+  "id": "fresh-023",
+  "answer": "```sol\n> print (str (List.any (fn x -> x > 60) (List.take 2 [32, 28, (-26), 18]))).\n```\nSteps: take=[32, 28]; any=False.\nIt prints False.",
+  "finished": true,
+  "tokens": 65
+ },
+ {
+  "id": "fresh-024",
+  "answer": "```sol\n> print (str (List.sum (List.range (-2) 4))).\n```\nSteps: range=[-2, -1, 0, 1, 2, 3, 4]; sum=7.\nIt prints 7.",
+  "finished": true,
+  "tokens": 58
+ },
+ {
+  "id": "fresh-025",
+  "answer": "It prints STONE.",
+  "finished": true,
+  "tokens": 6
+ },
+ {
+  "id": "fresh-026",
+  "answer": "Steps: at=118; sub=118.\nIt prints 118.",
+  "finished": true,
+  "tokens": 23
+ },
+ {
+  "id": "fresh-027",
+  "answer": "```sol\n> print (str (52 - 36)).\n```\nIt prints 16.",
+  "finished": true,
+  "tokens": 25
+ },
+ {
+  "id": "fresh-028",
+  "answer": "Steps: rev=[-13, -8]; last=-8.\nIt prints -8.",
+  "finished": true,
+  "tokens": 22
+ },
+ {
+  "id": "fresh-029",
+  "answer": "```sol\n> print (str (((Numeric.min (-1) (-15)) % 5) >= (56 + ((-11) * 3)))).\n```\nSteps: min=-15; mod=0; mul=-33; add=23; cmp=False.\nIt prints False.",
+  "finished": true,
+  "tokens": 69
+ },
+ {
+  "id": "fresh-030",
+  "answer": "It prints -11.",
+  "finished": true,
+  "tokens": 7
+ },
+ {
+  "id": "fresh-031",
+  "answer": "Steps: range=[2, 3, 4, 5]; last=5.\nIt prints 5.",
+  "finished": true,
+  "tokens": 26
+ },
+ {
+  "id": "fresh-032",
+  "answer": "```sol\n> print (str (23 % 9)).\n```\nIt prints 5.",
+  "finished": true,
+  "tokens": 23
+ },
+ {
+  "id": "fresh-033",
+  "answer": "Steps: range=[0, 1]; all=False.\nIt prints False.",
+  "finished": true,
+  "tokens": 18
+ },
+ {
+  "id": "fresh-034",
+  "answer": "It prints False.",
+  "finished": true,
+  "tokens": 5
+ },
+ {
+  "id": "fresh-035",
+  "answer": "It prints SILVER.",
+  "finished": true,
+  "tokens": 6
+ },
+ {
+  "id": "fresh-036",
+  "answer": "```sol\n> print (str ((Numeric.min 15 (List.sum [(-8), 59, (-32)])) >= (Str.find 122 \"signal\"))).\n```\nSteps: sum=19; min=15; find=11; cmp=True.\nIt prints True.",
+  "finished": true,
+  "tokens": 70
+ },
+ {
+  "id": "fresh-037",
+  "answer": "```sol\n> print (str (List.drop 1 (List.filter (fn x -> x == (-24)) (List.map (fn x -> x * (-2)) [33, (-38), (-33), 48, 5])))).\n```\nSteps: map=[-66, 76, 66, -96, -10]; filter=[]; drop=[].\nIt prints [].",
+  "finished": true,
+  "tokens": 95
+ },
+ {
+  "id": "fresh-038",
+  "answer": "```sol\n> print (str ((-29) / 5)).\n```\nIt prints -5.",
+  "finished": true,
+  "tokens": 25
+ },
+ {
+  "id": "fresh-039",
+  "answer": "It prints 1.",
+  "finished": true,
+  "tokens": 6
+ },
+ {
+  "id": "fresh-040",
+  "answer": "```sol\n> print (str (Numeric.abs (31 * 10))).\n```\nSteps: mul=310; abs=310.\nIt prints 310.",
+  "finished": true,
+  "tokens": 44
+ },
+ {
+  "id": "fresh-041",
+  "answer": "Steps: upper=COPPER; slice=OPPER.\nIt prints OPPER.",
+  "finished": true,
+  "tokens": 19
+ },
+ {
+  "id": "fresh-042",
+  "answer": "```sol\n> print (str ((49 % 9) == ((List.rev [(-21), (-8), 14]) ! 0))).\n```\nSteps: mod=4; rev=[14, -8, -21]; index=14; cmp=False.\nIt prints False.",
+  "finished": true,
+  "tokens": 69
+ },
+ {
+  "id": "fresh-043",
+  "answer": "```sol\n> print (str (List.drop 2 (List.take 0 (List.filter (fn x -> x >= 40) [27, (-29)])))).\n```\nSteps: filter=[]; take=[]; drop=[].\nIt prints [].",
+  "finished": true,
+  "tokens": 59
+ },
+ {
+  "id": "fresh-044",
+  "answer": "```sol\n> print (str (List.filter (fn x -> x <= 15) [16, (-10)])).\n```\nIt prints [-10].",
+  "finished": true,
+  "tokens": 39
+ },
+ {
+  "id": "fresh-045",
+  "answer": "It prints 111.",
+  "finished": true,
+  "tokens": 8
+ },
+ {
+  "id": "fresh-046",
+  "answer": "Steps: div=27; find=3; sub=24.\nIt prints 24.",
+  "finished": true,
+  "tokens": 24
+ },
+ {
+  "id": "fresh-047",
+  "answer": "```sol\n> print (str ((-1) + 34)).\n```\nIt prints 33.",
+  "finished": true,
+  "tokens": 26
+ },
+ {
+  "id": "fresh-048",
+  "answer": "```sol\n> print (str (List.any (fn x -> x >= 46) (List.drop 4 (List.map (fn x -> x * (-4)) [9, (-14), (-4), (-27), (-37), (-25)])))).\n```\nSteps: map=[-36, 56, 16, 108, 148, 100]; drop=[148, 100]; any=True.\nIt prints True.",
+  "finished": true,
+  "tokens": 115
+ },
+ {
+  "id": "fresh-049",
+  "answer": "```sol\n> print (str (((57 % 7) - 16) != ((3 / 9) % 3))).\n```\nSteps: mod=1; sub=-15; div=0; mod2=0; cmp=True.\nIt prints True.",
+  "finished": true,
+  "tokens": 62
+ },
+ {
+  "id": "fresh-050",
+  "answer": "It prints silver.",
+  "finished": true,
+  "tokens": 5
+ },
+ {
+  "id": "fresh-051",
+  "answer": "Steps: drop=[]; zip=[].\nIt prints [].",
+  "finished": true,
+  "tokens": 13
+ },
+ {
+  "id": "fresh-052",
+  "answer": "It prints [-164, -172, 12].",
+  "finished": true,
+  "tokens": 17
+ },
+ {
+  "id": "fresh-053",
+  "answer": "Steps: max=58; div=29.\nIt prints 29.",
+  "finished": true,
+  "tokens": 20
+ },
+ {
+  "id": "fresh-054",
+  "answer": "It prints -40.",
+  "finished": true,
+  "tokens": 7
+ },
+ {
+  "id": "fresh-055",
+  "answer": "Steps: filter=[-5, -2]; any=False.\nIt prints False.",
+  "finished": true,
+  "tokens": 19
+ },
+ {
+  "id": "fresh-056",
+  "answer": "It prints FALCON.",
+  "finished": true,
+  "tokens": 7
+ },
+ {
+  "id": "fresh-057",
+  "answer": "It prints [-7, 38].",
+  "finished": true,
+  "tokens": 10
+ },
+ {
+  "id": "fresh-058",
+  "answer": "Steps: min=-31; abs=31; mul=-124.\nIt prints -124.",
+  "finished": true,
+  "tokens": 27
+ },
+ {
+  "id": "fresh-059",
+  "answer": "```sol\n> print (Str.slice (Str.join \"\" [\"lamp\", \"falcon\"]) 2 5).\n```\nSteps: join=lampfalcon; slice=mpf.\nIt prints mpf.",
+  "finished": true,
+  "tokens": 47
+ },
+ {
+  "id": "fresh-060",
+  "answer": "It prints True.",
+  "finished": true,
+  "tokens": 5
+ },
+ {
+  "id": "fresh-061",
+  "answer": "```sol\n> print (str ((List.map (fn x -> x + 6) (List.range (-5) 1)) ! 0)).\n```\nSteps: range=[-5, -4, -3, -2, -1, 0, 1]; map=[1, 2, 3, 4, 5, 6, 7]; index=1.\nIt prints 1.",
+  "finished": true,
+  "tokens": 93
+ },
+ {
+  "id": "fresh-062",
+  "answer": "It prints 1.",
+  "finished": true,
+  "tokens": 6
+ },
+ {
+  "id": "fresh-063",
+  "answer": "```sol\n> print (str (Numeric.abs (-4))).\n```\nIt prints 4.",
+  "finished": true,
+  "tokens": 22
+ },
+ {
+  "id": "fresh-064",
+  "answer": "It prints [(0, -37), (9, -39), (34, 9)].",
+  "finished": true,
+  "tokens": 24
+ },
+ {
+  "id": "fresh-065",
+  "answer": "It prints -3.",
+  "finished": true,
+  "tokens": 6
+ },
+ {
+  "id": "fresh-066",
+  "answer": "Steps: rev=[14, 28, 51]; map=[-42, -84, -153].\nIt prints [-42, -84, -153].",
+  "finished": true,
+  "tokens": 47
+ },
+ {
+  "id": "fresh-067",
+  "answer": "It prints [-21, -33].",
+  "finished": true,
+  "tokens": 11
+ },
+ {
+  "id": "fresh-068",
+  "answer": "It prints False.",
+  "finished": true,
+  "tokens": 5
+ },
+ {
+  "id": "fresh-069",
+  "answer": "It prints 1.",
+  "finished": true,
+  "tokens": 6
+ },
+ {
+  "id": "fresh-070",
+  "answer": "It prints [-33, 53, -7, 0, 54].",
+  "finished": true,
+  "tokens": 21
+ },
+ {
+  "id": "fresh-071",
+  "answer": "It prints False.",
+  "finished": true,
+  "tokens": 5
+ },
+ {
+  "id": "fresh-072",
+  "answer": "It prints 27.",
+  "finished": true,
+  "tokens": 7
+ },
+ {
+  "id": "fresh-073",
+  "answer": "It prints -32.",
+  "finished": true,
+  "tokens": 7
+ },
+ {
+  "id": "fresh-074",
+  "answer": "```sol\n> print (str (if List.all (fn x -> x == (-32)) (List.map (fn x -> x - 1) [(-39), 27, (-25), (-21), 0, 53]) then (54 % 8) + (List.last [(-23), (-34)]) else (6 * 11) + (19 - 36))).\n```\nSteps: map=[-40, 26, -26, -22, -1, 52]; all=False; mod=6; last=-34; add=-28; mul=66; sub=-17; add2=49; if=49.\nIt prints 49.",
+  "finished": true,
+  "tokens": 171
+ },
+ {
+  "id": "fresh-075",
+  "answer": "```sol\n> print (str (List.map (fn x -> x * (-2)) (List.map (fn x -> x + (-1)) (List.range (-3) 3)))).\n```\nSteps: range=[-3, -2, -1, 0, 1, 2, 3]; map=[-4, -3, -2, -1, 0, 1, 2]; map2=[8, 6, 4, 2, 0, -2, -4].\nIt prints [8, 6, 4, 2, 0, -2, -4].",
+  "finished": true,
+  "tokens": 140
+ },
+ {
+  "id": "fresh-076",
+  "answer": "Steps: filter=[-10]; filter2=[-10].\nIt prints [-10].",
+  "finished": true,
+  "tokens": 23
+ },
+ {
+  "id": "fresh-077",
+  "answer": "It prints [24, -30, -78, 110].",
+  "finished": true,
+  "tokens": 20
+ },
+ {
+  "id": "fresh-078",
+  "answer": "```sol\n> print (str (List.rev (List.rev [18, (-40), (-16), (-2)]))).\n```\nSteps: rev=[-2, -16, -40, 18]; rev2=[18, -40, -16, -2].\nIt prints [18, -40, -16, -2].",
+  "finished": true,
+  "tokens": 87
+ },
+ {
+  "id": "fresh-079",
+  "answer": "Steps: map=[168, 132, 120, -16, 108, 48]; filter=[].\nIt prints [].",
+  "finished": true,
+  "tokens": 39
+ },
+ {
+  "id": "fresh-080",
+  "answer": "```sol\n> print (str (List.rev [30, 58, (-20)])).\n```\nIt prints [-20, 58, 30].",
+  "finished": true,
+  "tokens": 41
+ },
+ {
+  "id": "fresh-081",
+  "answer": "```sol\n> print (str (List.sum [(-4), 44, 56, 45, (-38)])).\n```\nIt prints 103.",
+  "finished": true,
+  "tokens": 42
+ },
+ {
+  "id": "fresh-082",
+  "answer": "It prints maple copper thunder.",
+  "finished": true,
+  "tokens": 7
+ },
+ {
+  "id": "fresh-083",
+  "answer": "Steps: drop=[-38, -18, -7, 7]; drop2=[].\nIt prints [].",
+  "finished": true,
+  "tokens": 27
+ },
+ {
+  "id": "fresh-084",
+  "answer": "```sol\n> print (str ((if List.all (fn x -> x <= (-29)) [(-13), 51, 22, 11, 51] then (-14) else Numeric.abs 53) < (-8))).\n```\nSteps: all=False; abs=53; if=53; cmp=False.\nIt prints False.",
+  "finished": true,
+  "tokens": 85
+ },
+ {
+  "id": "fresh-085",
+  "answer": "Steps: map=[-150, 102, -180, 39, -138]; index=39; max=39.\nIt prints 39.",
+  "finished": true,
+  "tokens": 46
+ },
+ {
+  "id": "fresh-086",
+  "answer": "Steps: range=[7, 8, 9, 10, 11]; drop=[8, 9, 10, 11]; index=9.\nIt prints 9.",
+  "finished": true,
+  "tokens": 46
+ },
+ {
+  "id": "fresh-087",
+  "answer": "Steps: drop=[-13, 60, 57, 39, 3, 22]; rev=[22, 3, 39, 57, 60, -13].\nIt prints [22, 3, 39, 57, 60, -13].",
+  "finished": true,
+  "tokens": 78
+ },
+ {
+  "id": "fresh-088",
+  "answer": "Steps: index=-22; add=18.\nIt prints 18.",
+  "finished": true,
+  "tokens": 20
+ },
+ {
+  "id": "fresh-089",
+  "answer": "Steps: rev=[-1, 49, 21, -5, -6]; sum=58.\nIt prints 58.",
+  "finished": true,
+  "tokens": 34
+ },
+ {
+  "id": "fresh-090",
+  "answer": "It prints 120.",
+  "finished": true,
+  "tokens": 8
+ },
+ {
+  "id": "fresh-091",
+  "answer": "It prints 1.",
+  "finished": true,
+  "tokens": 6
+ },
+ {
+  "id": "fresh-092",
+  "answer": "It prints 0.",
+  "finished": true,
+  "tokens": 6
+ },
+ {
+  "id": "fresh-093",
+  "answer": "```sol\n> print (str (List.filter (fn x -> x == 32) [(-18), 47, (-26), (-12), 32, (-15)])).\n```\nIt prints [32].",
+  "finished": true,
+  "tokens": 56
+ },
+ {
+  "id": "fresh-094",
+  "answer": "It prints [55].",
+  "finished": true,
+  "tokens": 7
+ },
+ {
+  "id": "fresh-095",
+  "answer": "```sol\n> print (str (List.map (fn x -> x * (-4)) (List.map (fn x -> x + 6) [(-8), 58]))).\n```\nSteps: map=[-2, 64]; map2=[8, -256].\nIt prints [8, -256].",
+  "finished": true,
+  "tokens": 76
+ },
+ {
+  "id": "fresh-096",
+  "answer": "```sol\n> print (str (0 - (-9))).\n```\nIt prints 9.",
+  "finished": true,
+  "tokens": 22
+ },
+ {
+  "id": "fresh-097",
+  "answer": "```sol\n> print (Str.slice \"maple\" 3 4).\n```\nIt prints l.",
+  "finished": true,
+  "tokens": 25
+ },
+ {
+  "id": "fresh-098",
+  "answer": "Steps: drop=[-2, 30]; rev=[30, -2].\nIt prints [30, -2].",
+  "finished": true,
+  "tokens": 30
+ },
+ {
+  "id": "fresh-099",
+  "answer": "Steps: trim=basket; upper=BASKET; upper2=BASKET.\nIt prints BASKET.",
+  "finished": true,
+  "tokens": 25
+ },
+ {
+  "id": "fresh-100",
+  "answer": "```sol\n> print (str ((Numeric.max 8 ((-25) / 4)) % 6)).\n```\nSteps: div=-6; max=8; mod=2.\nIt prints 2.",
+  "finished": true,
+  "tokens": 49
+ },
+ {
+  "id": "fresh-101",
+  "answer": "```sol\n> print (str (List.sum (List.map (fn x -> x + 3) [8, 55, 31]))).\n```\nSteps: map=[11, 58, 34]; sum=103.\nIt prints 103.",
+  "finished": true,
+  "tokens": 67
+ },
+ {
+  "id": "fresh-102",
+  "answer": "Steps: all=False; if=49; add=14.\nIt prints 14.",
+  "finished": true,
+  "tokens": 23
+ },
+ {
+  "id": "fresh-103",
+  "answer": "Steps: filter=[]; all=True.\nIt prints True.",
+  "finished": true,
+  "tokens": 14
+ },
+ {
+  "id": "fresh-104",
+  "answer": "It prints p.",
+  "finished": true,
+  "tokens": 5
+ },
+ {
+  "id": "fresh-105",
+  "answer": "Steps: drop=[38, 26]; filter=[38, 26].\nIt prints [38, 26].",
+  "finished": true,
+  "tokens": 32
+ },
+ {
+  "id": "fresh-106",
+  "answer": "Steps: abs=2; find=3; mul=18; max=18.\nIt prints 18.",
+  "finished": true,
+  "tokens": 28
+ },
+ {
+  "id": "fresh-107",
+  "answer": "Steps: filter=[-17, 18]; drop=[].\nIt prints [].",
+  "finished": true,
+  "tokens": 20
+ },
+ {
+  "id": "fresh-108",
+  "answer": "It prints False.",
+  "finished": true,
+  "tokens": 5
+ },
+ {
+  "id": "fresh-109",
+  "answer": "Steps: abs=14; div=3; abs2=3.\nIt prints 3.",
+  "finished": true,
+  "tokens": 23
+ },
+ {
+  "id": "fresh-110",
+  "answer": "Steps: map=[-21, 36, 46, -30, 13]; map2=[-15, 42, 52, -24, 19].\nIt prints [-15, 42, 52, -24, 19].",
+  "finished": true,
+  "tokens": 71
+ },
+ {
+  "id": "fresh-111",
+  "answer": "Steps: range=[4, 5, 6, 7]; any=False.\nIt prints False.",
+  "finished": true,
+  "tokens": 24
+ },
+ {
+  "id": "fresh-112",
+  "answer": "Steps: find=3; mul=24.\nIt prints 24.",
+  "finished": true,
+  "tokens": 19
+ },
+ {
+  "id": "fresh-113",
+  "answer": "Steps: add=-15; add2=41; min=-15.\nIt prints -15.",
+  "finished": true,
+  "tokens": 26
+ },
+ {
+  "id": "fresh-114",
+  "answer": "It prints [].",
+  "finished": true,
+  "tokens": 4
+ },
+ {
+  "id": "fresh-115",
+  "answer": "It prints -31.",
+  "finished": true,
+  "tokens": 7
+ },
+ {
+  "id": "fresh-116",
+  "answer": "```sol\n> print (str (List.filter (fn x -> x != (-15)) [30, 18, 10])).\n```\nIt prints [30, 18, 10].",
+  "finished": true,
+  "tokens": 50
+ },
+ {
+  "id": "fresh-117",
+  "answer": "Steps: drop=[-2, 50]; map=[-5, 47]; filter=[].\nIt prints [].",
+  "finished": true,
+  "tokens": 28
+ },
+ {
+  "id": "fresh-118",
+  "answer": "Steps: range=[5, 6]; rev=[6, 5]; filter=[6, 5]; index=6.\nIt prints 6.",
+  "finished": true,
+  "tokens": 34
+ },
+ {
+  "id": "fresh-119",
+  "answer": "Steps: div=-5; div2=11; min=-5.\nIt prints -5.",
+  "finished": true,
+  "tokens": 23
+ },
+ {
+  "id": "held_pairs-000",
+  "answer": "Steps: rev=[56, 38]; drop=[]; map=[].\nIt prints [].",
+  "finished": true,
+  "tokens": 22
+ },
+ {
+  "id": "held_pairs-001",
+  "answer": "```sol\n> print (Str.upper (Str.slice (Str.slice \"window\" 0 1) 4 9)).\n```\nSteps: slice=w; slice2=; upper=.\nIt prints .",
+  "finished": true,
+  "tokens": 46
+ },
+ {
+  "id": "held_pairs-002",
+  "answer": "Steps: slice=e; upper=E.\nIt prints E.",
+  "finished": true,
+  "tokens": 14
+ },
+ {
+  "id": "held_pairs-003",
+  "answer": "Steps: range=[-2, -1, 0]; filter=[]; any=False.\nIt prints False.",
+  "finished": true,
+  "tokens": 25
+ },
+ {
+  "id": "held_pairs-004",
+  "answer": "Steps: sub=40; last=30; max=40; div=20.\nIt prints 20.",
+  "finished": true,
+  "tokens": 30
+ },
+ {
+  "id": "held_pairs-005",
+  "answer": "```sol\n> print (str (List.filter (fn x -> x < 21) (List.range (-3) 1))).\n```\nSteps: range=[-3, -2, -1, 0, 1]; filter=[-3, -2, -1, 0, 1].\nIt prints [-3, -2, -1, 0, 1].",
+  "finished": true,
+  "tokens": 87
+ },
+ {
+  "id": "held_pairs-006",
+  "answer": "```sol\n> print (str (List.drop 1 (List.rev [(-32), 32, (-9)]))).\n```\nSteps: rev=[-9, 32, -32]; drop=[32, -32].\nIt prints [32, -32].",
+  "finished": true,
+  "tokens": 67
+ },
+ {
+  "id": "held_pairs-007",
+  "answer": "Steps: range=[-3, -2, -1, 0]; filter=[]; rev=[]; all=True.\nIt prints True.",
+  "finished": true,
+  "tokens": 31
+ },
+ {
+  "id": "held_pairs-008",
+  "answer": "```sol\n> print (str (List.any (fn x -> x <= 56) (List.map (fn x -> x + (-2)) [15, 11, 15, 59]))).\n```\nSteps: map=[13, 9, 13, 57]; any=True.\nIt prints True.",
+  "finished": true,
+  "tokens": 79
+ },
+ {
+  "id": "held_pairs-009",
+  "answer": "Steps: map=[177, 123, 162, -114, -15]; any=True.\nIt prints True.",
+  "finished": true,
+  "tokens": 36
+ },
+ {
+  "id": "held_pairs-010",
+  "answer": "Steps: any=True; range=[4, 5]; last=5; mod=-2; max=5; range2=[5, 6, 7, 8]; index=8; sub=39; sub2=-31; if=5.\nIt prints 5.",
+  "finished": true,
+  "tokens": 64
+ },
+ {
+  "id": "held_pairs-011",
+  "answer": "Steps: map=[19, 33, 13]; map2=[16, 30, 10]; any=True.\nIt prints True.",
+  "finished": true,
+  "tokens": 38
+ },
+ {
+  "id": "held_pairs-012",
+  "answer": "Steps: range=[6, 7]; filter=[6, 7].\nIt prints [6, 7].",
+  "finished": true,
+  "tokens": 26
+ },
+ {
+  "id": "held_pairs-013",
+  "answer": "```sol\n> print (str (List.rev (List.drop 1 (List.rev [20, 3, 6])))).\n```\nSteps: rev=[6, 3, 20]; drop=[3, 20]; rev2=[20, 3].\nIt prints [20, 3].",
+  "finished": true,
+  "tokens": 73
+ },
+ {
+  "id": "held_pairs-014",
+  "answer": "Steps: rev=[-39, -5, -10, -26]; drop=[-10, -26].\nIt prints [-10, -26].",
+  "finished": true,
+  "tokens": 41
+ },
+ {
+  "id": "held_pairs-015",
+  "answer": "```sol\n> print (str (List.any (fn x -> x == 13) (List.map (fn x -> x - 0) (List.rev [43, (-1), 25])))).\n```\nSteps: rev=[25, -1, 43]; map=[25, -1, 43]; any=False.\nIt prints False.",
+  "finished": true,
+  "tokens": 85
+ },
+ {
+  "id": "held_pairs-016",
+  "answer": "Steps: range=[10, 11, 12, 13]; rev=[13, 12, 11, 10]; take=[13]; range2=[6, 7]; filter=[6, 7]; filter2=[6, 7]; zip=[(13, 6)].\nIt prints [(13, 6)].",
+  "finished": true,
+  "tokens": 84
+ },
+ {
+  "id": "held_pairs-017",
+  "answer": "Steps: range=[5, 6]; filter=[]; rev=[].\nIt prints [].",
+  "finished": true,
+  "tokens": 20
+ },
+ {
+  "id": "held_pairs-018",
+  "answer": "```sol\n> print (str (List.zip (List.map (fn x -> x + 1) [39, (-28)]) (List.filter (fn x -> x < 9) (List.range (-4) (-4))))).\n```\nSteps: map=[40, -27]; range=[-4]; filter=[-4]; zip=[(40, -4)].\nIt prints [(40, -4)].",
+  "finished": true,
+  "tokens": 96
+ },
+ {
+  "id": "held_pairs-019",
+  "answer": "Steps: range=[5, 6, 7, 8, 9]; filter=[]; zip=[].\nIt prints [].",
+  "finished": true,
+  "tokens": 29
+ },
+ {
+  "id": "held_pairs-020",
+  "answer": "Steps: sum=77; last=-12; max=77.\nIt prints 77.",
+  "finished": true,
+  "tokens": 25
+ },
+ {
+  "id": "held_pairs-021",
+  "answer": "Steps: map=[13, 3, 40, -32]; any=True.\nIt prints True.",
+  "finished": true,
+  "tokens": 27
+ },
+ {
+  "id": "held_pairs-022",
+  "answer": "```sol\n> print (str (List.filter (fn x -> x > (-7)) (List.take 1 (List.filter (fn x -> x <= (-2)) (List.range 7 9))))).\n```\nSteps: range=[7, 8, 9]; filter=[]; take=[]; filter2=[].\nIt prints [].",
+  "finished": true,
+  "tokens": 75
+ },
+ {
+  "id": "held_pairs-023",
+  "answer": "Steps: range=[-5, -4, -3, -2, -1, 0, 1]; filter=[-5, -4, -3, -2, -1, 0, 1]; filter2=[-5, -4, -3, -2, -1, 0, 1].\nIt prints [-5, -4, -3, -2, -1, 0, 1].",
+  "finished": true,
+  "tokens": 97
+ },
+ {
+  "id": "held_pairs-024",
+  "answer": "Steps: take=[-40, 50, -31]; filter=[-40, -31]; rev=[-26, -12]; drop=[]; zip=[].\nIt prints [].",
+  "finished": true,
+  "tokens": 47
+ },
+ {
+  "id": "held_pairs-025",
+  "answer": "Steps: map=[-36, 0]; any=False.\nIt prints False.",
+  "finished": true,
+  "tokens": 20
+ },
+ {
+  "id": "held_pairs-026",
+  "answer": "Steps: range=[-2, -1, 0, 1, 2, 3]; filter=[].\nIt prints [].",
+  "finished": true,
+  "tokens": 30
+ },
+ {
+  "id": "held_pairs-027",
+  "answer": "Steps: map=[38, 47, -21, 34, 50]; any=True.\nIt prints True.",
+  "finished": true,
+  "tokens": 32
+ },
+ {
+  "id": "held_pairs-028",
+  "answer": "Steps: range=[9, 10, 11, 12]; rev=[12, 11, 10, 9]; drop=[]; zip=[].\nIt prints [].",
+  "finished": true,
+  "tokens": 45
+ },
+ {
+  "id": "held_pairs-029",
+  "answer": "Steps: rev=[59, 15, 9, -35, -25]; drop=[15, 9, -35, -25].\nIt prints [15, 9, -35, -25].",
+  "finished": true,
+  "tokens": 57
+ },
+ {
+  "id": "held_pairs-030",
+  "answer": "Steps: map=[-14, -4]; any=False.\nIt prints False.",
+  "finished": true,
+  "tokens": 20
+ },
+ {
+  "id": "held_pairs-031",
+  "answer": "```sol\n> print (str (List.zip (List.filter (fn x -> x != (-21)) (List.range (-5) (-5))) (List.map (fn x -> x - 3) (List.range (-4) 2)))).\n```\nSteps: range=[-5]; filter=[-5]; range2=[-4, -3, -2, -1, 0, 1, 2]; map=[-7, -6, -5, -4, -3, -2, -1]; zip=[(-5, -7)].\nIt prints [(-5, -7)].",
+  "finished": true,
+  "tokens": 135
+ },
+ {
+  "id": "held_pairs-032",
+  "answer": "Steps: trim=signal; slice=al; upper=AL.\nIt prints AL.",
+  "finished": true,
+  "tokens": 20
+ },
+ {
+  "id": "held_pairs-033",
+  "answer": "Steps: map=[-31, 49]; any=True.\nIt prints True.",
+  "finished": true,
+  "tokens": 21
+ },
+ {
+  "id": "held_pairs-034",
+  "answer": "Steps: range=[9, 10, 11, 12, 13, 14]; filter=[]; any=False.\nIt prints False.",
+  "finished": true,
+  "tokens": 38
+ },
+ {
+  "id": "held_pairs-035",
+  "answer": "```sol\n> print (str (List.rev (List.filter (fn x -> x >= 33) (List.range 10 11)))).\n```\nSteps: range=[10, 11]; filter=[]; rev=[].\nIt prints [].",
+  "finished": true,
+  "tokens": 59
+ },
+ {
+  "id": "held_pairs-036",
+  "answer": "```sol\n> print (str (List.take 1 (List.filter (fn x -> x < (-25)) (List.range 5 8)))).\n```\nSteps: range=[5, 6, 7, 8]; filter=[]; take=[].\nIt prints [].",
+  "finished": true,
+  "tokens": 63
+ },
+ {
+  "id": "held_pairs-037",
+  "answer": "Steps: range=[5, 6, 7, 8, 9, 10, 11]; filter=[]; sum=0; clamp=0.\nIt prints 0.",
+  "finished": true,
+  "tokens": 44
+ },
+ {
+  "id": "held_pairs-038",
+  "answer": "Steps: slice=r; upper=R; slice2=.\nIt prints .",
+  "finished": true,
+  "tokens": 16
+ },
+ {
+  "id": "held_pairs-039",
+  "answer": "Steps: range=[0, 1, 2, 3, 4]; filter=[]; filter2=[].\nIt prints [].",
+  "finished": true,
+  "tokens": 30
+ },
+ {
+  "id": "held_pairs-040",
+  "answer": "Steps: slice=ple; upper=PLE.\nIt prints PLE.",
+  "finished": true,
+  "tokens": 17
+ },
+ {
+  "id": "held_pairs-041",
+  "answer": "Steps: range=[3, 4, 5, 6, 7, 8]; filter=[]; all=True.\nIt prints True.",
+  "finished": true,
+  "tokens": 33
+ },
+ {
+  "id": "held_pairs-042",
+  "answer": "Steps: map=[-27, -28, 40]; last=40; rev=[59, -39, 7, 45]; sum=72; max=72.\nIt prints 72.",
+  "finished": true,
+  "tokens": 55
+ },
+ {
+  "id": "held_pairs-043",
+  "answer": "Steps: range=[9, 10, 11]; filter=[9, 10, 11]; rev=[11, 10, 9]; filter2=[11, 10, 9].\nIt prints [11, 10, 9].",
+  "finished": true,
+  "tokens": 66
+ },
+ {
+  "id": "held_pairs-044",
+  "answer": "Steps: filter=[-10, -34, -24]; map=[-4, -28, -18]; any=True.\nIt prints True.",
+  "finished": true,
+  "tokens": 38
+ },
+ {
+  "id": "held_pairs-045",
+  "answer": "```sol\n> print (str (Numeric.abs (List.sum [55, 7, 11, 33, 7]))).\n```\nSteps: sum=113; abs=113.\nIt prints 113.",
+  "finished": true,
+  "tokens": 58
+ },
+ {
+  "id": "held_pairs-046",
+  "answer": "Steps: range=[-2, -1, 0, 1, 2, 3, 4]; filter=[].\nIt prints [].",
+  "finished": true,
+  "tokens": 33
+ },
+ {
+  "id": "held_pairs-047",
+  "answer": "```sol\n> print (str (List.drop 0 (List.rev [(-28), 56, 22, 40, 39]))).\n```\nSteps: rev=[39, 40, 22, 56, -28]; drop=[39, 40, 22, 56, -28].\nIt prints [39, 40, 22, 56, -28].",
+  "finished": true,
+  "tokens": 108
+ },
+ {
+  "id": "held_pairs-048",
+  "answer": "```sol\n> print (str (List.any (fn x -> x <= 40) (List.filter (fn x -> x <= (-26)) (List.range (-3) 2)))).\n```\nSteps: range=[-3, -2, -1, 0, 1, 2]; filter=[]; any=False.\nIt prints False.",
+  "finished": true,
+  "tokens": 80
+ },
+ {
+  "id": "held_pairs-049",
+  "answer": "```sol\n> print (str (List.zip (List.drop 1 (List.filter (fn x -> x >= 32) [48, 47])) (List.map (fn x -> x - 1) (List.filter (fn x -> x <= (-40)) (List.range 0 5))))).\n```\nSteps: filter=[48, 47]; drop=[47]; range=[0, 1, 2, 3, 4, 5]; filter2=[]; map=[]; zip=[].\nIt prints [].",
+  "finished": true,
+  "tokens": 123
+ },
+ {
+  "id": "held_pairs-050",
+  "answer": "Steps: range=[1, 2, 3, 4, 5]; filter=[1, 2, 3, 4, 5].\nIt prints [1, 2, 3, 4, 5].",
+  "finished": true,
+  "tokens": 53
+ },
+ {
+  "id": "held_pairs-051",
+  "answer": "Steps: range=[1, 2, 3, 4, 5]; filter=[].\nIt prints [].",
+  "finished": true,
+  "tokens": 26
+ },
+ {
+  "id": "held_pairs-052",
+  "answer": "Steps: map=[56, 60, -39, 15, -20]; any=True.\nIt prints True.",
+  "finished": true,
+  "tokens": 32
+ },
+ {
+  "id": "held_pairs-053",
+  "answer": "Steps: slice=ver; slice2=; upper=.\nIt prints .",
+  "finished": true,
+  "tokens": 17
+ },
+ {
+  "id": "held_pairs-054",
+  "answer": "Steps: range=[6, 7, 8]; filter=[]; filter2=[].\nIt prints [].",
+  "finished": true,
+  "tokens": 24
+ },
+ {
+  "id": "held_pairs-055",
+  "answer": "Steps: range=[7, 8, 9, 10, 11]; filter=[7, 8, 9, 10, 11]; take=[7, 8, 9, 10].\nIt prints [7, 8, 9, 10].",
+  "finished": true,
+  "tokens": 69
+ },
+ {
+  "id": "held_pairs-056",
+  "answer": "Steps: max=37; last=-14; max2=37.\nIt prints 37.",
+  "finished": true,
+  "tokens": 26
+ },
+ {
+  "id": "held_pairs-057",
+  "answer": "```sol\n> print (str (List.filter (fn x -> x > 12) (List.range 2 3))).\n```\nSteps: range=[2, 3]; filter=[].\nIt prints [].",
+  "finished": true,
+  "tokens": 48
+ },
+ {
+  "id": "held_pairs-058",
+  "answer": "```sol\n> print (Str.upper (Str.upper (Str.upper (Str.slice (Str.slice \"silver\" 3 6) 2 4))))).\n```\nSteps: slice=ver; slice2=r; upper=R; upper2=R; upper3=R.\nIt prints R.",
+  "finished": true,
+  "tokens": 64
+ },
+ {
+  "id": "held_pairs-059",
+  "answer": "```sol\n> print (str (List.any (fn x -> x > (-26)) (List.map (fn x -> x * 4) (List.range (-4) 1)))).\n```\nSteps: range=[-4, -3, -2, -1, 0, 1]; map=[-16, -12, -8, -4, 0, 4]; any=True.\nIt prints True.",
+  "finished": true,
+  "tokens": 98
+ },
+ {
+  "id": "held_pairs-060",
+  "answer": "Steps: drop=[52]; map=[0]; any=False.\nIt prints False.",
+  "finished": true,
+  "tokens": 20
+ },
+ {
+  "id": "held_pairs-061",
+  "answer": "Steps: range=[-2, -1, 0, 1, 2]; filter=[]; map=[]; filter2=[].\nIt prints [].",
+  "finished": true,
+  "tokens": 34
+ },
+ {
+  "id": "held_pairs-062",
+  "answer": "```sol\n> print (str (List.sum (List.filter (fn x -> x != (-22)) (List.range (-3) 1)))).\n```\nSteps: range=[-3, -2, -1, 0, 1]; filter=[-3, -2, -1, 0, 1]; sum=-5.\nIt prints -5.",
+  "finished": true,
+  "tokens": 83
+ },
+ {
+  "id": "held_pairs-063",
+  "answer": "```sol\n> print (str (List.filter (fn x -> x <= (-7)) (List.range (-4) 0))).\n```\nSteps: range=[-4, -3, -2, -1, 0]; filter=[].\nIt prints [].",
+  "finished": true,
+  "tokens": 58
+ },
+ {
+  "id": "held_pairs-064",
+  "answer": "Steps: slice=do; upper=DO.\nIt prints DO.",
+  "finished": true,
+  "tokens": 16
+ },
+ {
+  "id": "held_pairs-065",
+  "answer": "```sol\n> print (str (List.filter (fn x -> x != (-11)) (List.range (-4) (-2)))).\n```\nSteps: range=[-4, -3, -2]; filter=[-4, -3, -2].\nIt prints [-4, -3, -2].",
+  "finished": true,
+  "tokens": 70
+ },
+ {
+  "id": "held_pairs-066",
+  "answer": "Steps: range=[7]; filter=[].\nIt prints [].",
+  "finished": true,
+  "tokens": 14
+ },
+ {
+  "id": "held_pairs-067",
+  "answer": "```sol\n> print (str (List.drop 4 (List.rev [33, (-11), 51, 17, 42]))).\n```\nSteps: rev=[42, 17, 51, -11, 33]; drop=[33].\nIt prints [33].",
+  "finished": true,
+  "tokens": 75
+ },
+ {
+  "id": "held_pairs-068",
+  "answer": "Steps: map=[-10, -15, 1, 3, 2, -6]; sum=-25; take=[-24, 50, 23]; last=23; max=23.\nIt prints 23.",
+  "finished": true,
+  "tokens": 61
+ },
+ {
+  "id": "held_pairs-069",
+  "answer": "```sol\n> print (str (List.any (fn x -> x > (-4)) (List.map (fn x -> x + 6) [31, 25, 58, (-35), 58, 14]))).\n```\nSteps: map=[37, 31, 64, -29, 64, 20]; any=True.\nIt prints True.",
+  "finished": true,
+  "tokens": 95
+ },
+ {
+  "id": "held_pairs-070",
+  "answer": "Steps: slice=eado; upper=EADO.\nIt prints EADO.",
+  "finished": true,
+  "tokens": 18
+ },
+ {
+  "id": "held_pairs-071",
+  "answer": "Steps: range=[10, 11, 12, 13, 14, 15, 16]; filter=[10, 11, 12, 13, 14, 15, 16]; last=16; div=8.\nIt prints 8.",
+  "finished": true,
+  "tokens": 76
+ },
+ {
+  "id": "held_pairs-072",
+  "answer": "Steps: range=[8, 9]; filter=[]; map=[].\nIt prints [].",
+  "finished": true,
+  "tokens": 20
+ },
+ {
+  "id": "held_pairs-073",
+  "answer": "Steps: rev=[48, -28, 3, 51, 8, 35]; map=[52, -24, 7, 55, 12, 39]; any=True.\nIt prints True.",
+  "finished": true,
+  "tokens": 58
+ },
+ {
+  "id": "held_pairs-074",
+  "answer": "Steps: range=[10, 11, 12, 13, 14]; filter=[].\nIt prints [].",
+  "finished": true,
+  "tokens": 31
+ },
+ {
+  "id": "held_pairs-075",
+  "answer": "Steps: slice=r; slice2=; upper=.\nIt prints .",
+  "finished": true,
+  "tokens": 16
+ },
+ {
+  "id": "held_pairs-076",
+  "answer": "Steps: slice=ilver; upper=ILVER.\nIt prints ILVER.",
+  "finished": true,
+  "tokens": 18
+ },
+ {
+  "id": "held_pairs-077",
+  "answer": "```sol\n> print (Str.upper (Str.slice (Str.join \" \" [\"rocket\", \"meadow\", \"signal\"]) 4 6)).\n```\nSteps: join=rocket meadow signal; slice=et; upper=ET.\nIt prints ET.",
+  "finished": true,
+  "tokens": 57
+ },
+ {
+  "id": "held_pairs-078",
+  "answer": "Steps: map=[8, 44, -19, 1, 24]; any=True.\nIt prints True.",
+  "finished": true,
+  "tokens": 30
+ },
+ {
+  "id": "held_pairs-079",
+  "answer": "Steps: range=[7, 8, 9, 10, 11]; filter=[7, 8, 9, 10, 11].\nIt prints [7, 8, 9, 10, 11].",
+  "finished": true,
+  "tokens": 59
+ },
+ {
+  "id": "held_pairs-080",
+  "answer": "```sol\n> print (Str.upper (Str.upper (Str.slice \"basket\" 2 3))).\n```\nSteps: slice=k; upper=K; upper2=K.\nIt prints K.",
+  "finished": true,
+  "tokens": 46
+ },
+ {
+  "id": "held_pairs-081",
+  "answer": "Steps: slice=xel; upper=XEL.\nIt prints XEL.",
+  "finished": true,
+  "tokens": 18
+ },
+ {
+  "id": "held_pairs-082",
+  "answer": "Steps: range=[6, 7, 8, 9]; filter=[6, 7, 8, 9].\nIt prints [6, 7, 8, 9].",
+  "finished": true,
+  "tokens": 44
+ },
+ {
+  "id": "held_pairs-083",
+  "answer": "Steps: range=[8, 9, 10, 11, 12, 13, 14]; filter=[]; rev=[29, 39, -34, 39]; zip=[].\nIt prints [].",
+  "finished": true,
+  "tokens": 57
+ },
+ {
+  "id": "held_pairs-084",
+  "answer": "Steps: rev=[-4, 15, 40, 52, -31]; drop=[-4, 15, 40, 52, -31].\nIt prints [-4, 15, 40, 52, -31].",
+  "finished": true,
+  "tokens": 67
+ },
+ {
+  "id": "held_pairs-085",
+  "answer": "```sol\n> print (str (List.rev (List.filter (fn x -> x != 49) (List.range 8 14)))).\n```\nSteps: range=[8, 9, 10, 11, 12, 13, 14]; filter=[8, 9, 10, 11, 12, 13, 14]; rev=[14, 13, 12, 11, 10, 9, 8].\nIt prints [14, 13, 12, 11, 10, 9, 8].",
+  "finished": true,
+  "tokens": 149
+ },
+ {
+  "id": "held_pairs-086",
+  "answer": "```sol\n> print (str (List.map (fn x -> x - 1) (List.filter (fn x -> x < 44) (List.range (-3) (-2))))).\n```\nSteps: range=[-3, -2]; filter=[-3, -2]; map=[-4, -3].\nIt prints [-4, -3].",
+  "finished": true,
+  "tokens": 81
+ },
+ {
+  "id": "held_pairs-087",
+  "answer": "Steps: map=[-14, 43, 24, 9, -24, 58]; any=False; abs=59; if=14.\nIt prints 14.",
+  "finished": true,
+  "tokens": 48
+ },
+ {
+  "id": "held_pairs-088",
+  "answer": "Steps: range=[6, 7, 8, 9]; filter=[]; sum=0.\nIt prints 0.",
+  "finished": true,
+  "tokens": 29
+ },
+ {
+  "id": "held_pairs-089",
+  "answer": "```sol\n> print (str (Numeric.max (List.last [17, 10, 1]) (Str.find 122 \"signal\"))).\n```\nSteps: last=1; find=11; max=11.\nIt prints 11.",
+  "finished": true,
+  "tokens": 62
+ },
+ {
+  "id": "held_pairs-090",
+  "answer": "Steps: sum=132; abs=132; add=103.\nIt prints 103.",
+  "finished": true,
+  "tokens": 29
+ },
+ {
+  "id": "held_pairs-091",
+  "answer": "```sol\n> print (str (List.any (fn x -> x > (-17)) (List.map (fn x -> x * 3) [50, (-26), 51, 9, 11]))).\n```\nSteps: map=[150, -78, 153, 27, 33]; any=True.\nIt prints True.",
+  "finished": true,
+  "tokens": 89
+ },
+ {
+  "id": "held_pairs-092",
+  "answer": "```sol\n> print (str (List.any (fn x -> x > (-14)) (List.map (fn x -> x - 5) [20, 36]))).\n```\nSteps: map=[15, 31]; any=True.\nIt prints True.",
+  "finished": true,
+  "tokens": 64
+ },
+ {
+  "id": "held_pairs-093",
+  "answer": "Steps: map=[-32, 27, 36, 55, -18]; any=False.\nIt prints False.",
+  "finished": true,
+  "tokens": 33
+ },
+ {
+  "id": "held_pairs-094",
+  "answer": "Steps: range=[-4, -3, -2, -1, 0]; filter=[].\nIt prints [].",
+  "finished": true,
+  "tokens": 27
+ },
+ {
+  "id": "held_pairs-095",
+  "answer": "Steps: range=[0, 1, 2, 3]; filter=[0, 1, 2, 3].\nIt prints [0, 1, 2, 3].",
+  "finished": true,
+  "tokens": 44
+ },
+ {
+  "id": "held_pairs-096",
+  "answer": "Steps: map=[8, 96]; sum=104; abs=104.\nIt prints 104.",
+  "finished": true,
+  "tokens": 31
+ },
+ {
+  "id": "held_pairs-097",
+  "answer": "```sol\n> print (str (List.any (fn x -> x == 0) (List.map (fn x -> x + 2) [(-31), (-21), (-33)]))).\n```\nSteps: map=[-29, -19, -31]; any=False.\nIt prints False.",
+  "finished": true,
+  "tokens": 73
+ },
+ {
+  "id": "held_pairs-098",
+  "answer": "Steps: range=[-4, -3]; filter=[-3]; index=-3.\nIt prints -3.",
+  "finished": true,
+  "tokens": 26
+ },
+ {
+  "id": "held_pairs-099",
+  "answer": "Steps: range=[-1, 0, 1, 2]; filter=[-1, 0, 1, 2].\nIt prints [-1, 0, 1, 2].",
+  "finished": true,
+  "tokens": 46
+ },
+ {
+  "id": "held_pairs-100",
+  "answer": "Steps: range=[-2]; filter=[]; filter2=[].\nIt prints [].",
+  "finished": true,
+  "tokens": 19
+ },
+ {
+  "id": "held_pairs-101",
+  "answer": "Steps: sum=93; abs=93.\nIt prints 93.",
+  "finished": true,
+  "tokens": 20
+ },
+ {
+  "id": "held_pairs-102",
+  "answer": "Steps: slice=dow; upper=DOW.\nIt prints DOW.",
+  "finished": true,
+  "tokens": 17
+ },
+ {
+  "id": "held_pairs-103",
+  "answer": "```sol\n> print (str (List.take 1 (List.filter (fn x -> x < 36) (List.range (-3) (-1))))).\n```\nSteps: range=[-3, -2, -1]; filter=[-3, -2, -1]; take=[-3].\nIt prints [-3].",
+  "finished": true,
+  "tokens": 74
+ },
+ {
+  "id": "held_pairs-104",
+  "answer": "```sol\n> print (str (List.any (fn x -> x != 55) (List.map (fn x -> x + 6) (List.range (-1) 5)))).\n```\nSteps: range=[-1, 0, 1, 2, 3, 4, 5]; map=[5, 6, 7, 8, 9, 10, 11]; any=True.\nIt prints True.",
+  "finished": true,
+  "tokens": 103
+ },
+ {
+  "id": "held_pairs-105",
+  "answer": "Steps: map=[10, -19, 9]; any=True.\nIt prints True.",
+  "finished": true,
+  "tokens": 23
+ },
+ {
+  "id": "held_pairs-106",
+  "answer": "```sol\n> print (str (List.filter (fn x -> x <= 10) (List.range 6 9))).\n```\nSteps: range=[6, 7, 8, 9]; filter=[6, 7, 8, 9].\nIt prints [6, 7, 8, 9].",
+  "finished": true,
+  "tokens": 75
+ },
+ {
+  "id": "held_pairs-107",
+  "answer": "```sol\n> print (str (Numeric.max (List.last [59, 33, 55, 33, 3, (-12)]) (Str.at \"lamp\" 2))).\n```\nSteps: last=-12; at=109; max=109.\nIt prints 109.",
+  "finished": true,
+  "tokens": 76
+ },
+ {
+  "id": "held_pairs-108",
+  "answer": "Steps: range=[4, 5, 6]; last=6; cmp=False; if=2; max=6.\nIt prints 6.",
+  "finished": true,
+  "tokens": 34
+ },
+ {
+  "id": "held_pairs-109",
+  "answer": "Steps: filter=[]; map=[]; any=False.\nIt prints False.",
+  "finished": true,
+  "tokens": 17
+ },
+ {
+  "id": "held_pairs-110",
+  "answer": "Steps: rev=[18, 39, -3, 10, 21]; drop=[21]; any=False.\nIt prints False.",
+  "finished": true,
+  "tokens": 36
+ },
+ {
+  "id": "held_pairs-111",
+  "answer": "Steps: range=[0, 1, 2, 3, 4, 5, 6]; filter=[]; filter2=[].\nIt prints [].",
+  "finished": true,
+  "tokens": 36
+ },
+ {
+  "id": "held_pairs-112",
+  "answer": "```sol\n> print (str (List.sum (List.filter (fn x -> x >= (-26)) (List.range 4 4)))).\n```\nSteps: range=[4]; filter=[4]; sum=4.\nIt prints 4.",
+  "finished": true,
+  "tokens": 56
+ },
+ {
+  "id": "held_pairs-113",
+  "answer": "```sol\n> print (str (List.any (fn x -> x == (-3)) (List.map (fn x -> x * 6) [(-38), 16, (-13), (-35), 2]))).\n```\nSteps: map=[-228, 96, -78, -210, 12]; any=False.\nIt prints False.",
+  "finished": true,
+  "tokens": 90
+ },
+ {
+  "id": "held_pairs-114",
+  "answer": "Steps: map=[-12, -9, 23]; sum=2; abs=2.\nIt prints 2.",
+  "finished": true,
+  "tokens": 30
+ },
+ {
+  "id": "held_pairs-115",
+  "answer": "Steps: map=[-23, 35, 37, 28, -20, 35]; map2=[-29, 29, 31, 22, -26, 29]; any=True.\nIt prints True.",
+  "finished": true,
+  "tokens": 64
+ },
+ {
+  "id": "held_pairs-116",
+  "answer": "Steps: rev=[32, 23]; drop=[23]; map=[19].\nIt prints [19].",
+  "finished": true,
+  "tokens": 29
+ },
+ {
+  "id": "held_pairs-117",
+  "answer": "Steps: range=[-4]; filter=[-4]; all=False.\nIt prints False.",
+  "finished": true,
+  "tokens": 21
+ },
+ {
+  "id": "held_pairs-118",
+  "answer": "Steps: slice=en; upper=EN.\nIt prints EN.",
+  "finished": true,
+  "tokens": 15
+ },
+ {
+  "id": "held_pairs-119",
+  "answer": "Steps: range=[0, 1, 2, 3, 4, 5, 6]; filter=[].\nIt prints [].",
+  "finished": true,
+  "tokens": 32
+ },
+ {
+  "id": "big_numbers-000",
+  "answer": "```sol\n> print (str (List.filter (fn x -> x != 14) [62, (-32), 136, 64, (-6), 110])).\n```\nIt prints [62, -32, 136, 64, -6, 110].",
+  "finished": true,
+  "tokens": 76
+ },
+ {
+  "id": "big_numbers-001",
+  "answer": "It prints 15.",
+  "finished": true,
+  "tokens": 7
+ },
+ {
+  "id": "big_numbers-002",
+  "answer": "Steps: last=139; div=0; add=139.\nIt prints 139.",
+  "finished": true,
+  "tokens": 27
+ },
+ {
+  "id": "big_numbers-003",
+  "answer": "Steps: map=[17, 28, 106]; rev=[106, 28, 17].\nIt prints [106, 28, 17].",
+  "finished": true,
+  "tokens": 47
+ },
+ {
+  "id": "big_numbers-004",
+  "answer": "```sol\n> print (str (List.zip [(-33), 2, 147, 37, 54, 136] (List.range (-5) (-3)))).\n```\nSteps: range=[-5, -4, -3]; zip=[(-33, -5), (2, -4), (147, -3)].\nIt prints [(-33, -5), (2, -4), (147, -3)].",
+  "finished": true,
+  "tokens": 111
+ },
+ {
+  "id": "big_numbers-005",
+  "answer": "It prints 147.",
+  "finished": true,
+  "tokens": 8
+ },
+ {
+  "id": "big_numbers-006",
+  "answer": "It prints [-36, -16].",
+  "finished": true,
+  "tokens": 11
+ },
+ {
+  "id": "big_numbers-007",
+  "answer": "Steps: drop=[114, -36, -21]; all=False.\nIt prints False.",
+  "finished": true,
+  "tokens": 25
+ },
+ {
+  "id": "big_numbers-008",
+  "answer": "Steps: map=[40, -8, -15, 31, -29]; zip=[(40, 15), (-8, -39), (-15, 76), (31, 99), (-29, 63)].\nIt prints [(40, 15), (-8, -39), (-15, 76), (31, 99), (-29, 63)].",
+  "finished": true,
+  "tokens": 106
+ },
+ {
+  "id": "big_numbers-009",
+  "answer": "Steps: filter=[70, 143, 99, 85]; sum=397.\nIt prints 397.",
+  "finished": true,
+  "tokens": 35
+ },
+ {
+  "id": "big_numbers-010",
+  "answer": "Steps: range=[1, 2, 3, 4, 5]; all=True; if=-12; mul=-12.\nIt prints -12.",
+  "finished": true,
+  "tokens": 39
+ },
+ {
+  "id": "big_numbers-011",
+  "answer": "It prints 34.",
+  "finished": true,
+  "tokens": 7
+ },
+ {
+  "id": "big_numbers-012",
+  "answer": "It prints 73.",
+  "finished": true,
+  "tokens": 7
+ },
+ {
+  "id": "big_numbers-013",
+  "answer": "It prints [-3, 12, 34, -6, -1, 122].",
+  "finished": true,
+  "tokens": 25
+ },
+ {
+  "id": "big_numbers-014",
+  "answer": "It prints 137.",
+  "finished": true,
+  "tokens": 8
+ },
+ {
+  "id": "big_numbers-015",
+  "answer": "```sol\n> print (str (List.all (fn x -> x < 59) (List.map (fn x -> x + 0) (List.drop 0 [90, 42])))).\n```\nSteps: drop=[90, 42]; map=[90, 42]; all=False.\nIt prints False.",
+  "finished": true,
+  "tokens": 78
+ },
+ {
+  "id": "big_numbers-016",
+  "answer": "It prints 346.",
+  "finished": true,
+  "tokens": 8
+ },
+ {
+  "id": "big_numbers-017",
+  "answer": "It prints False.",
+  "finished": true,
+  "tokens": 5
+ },
+ {
+  "id": "big_numbers-018",
+  "answer": "```sol\n> print (str ((List.rev (List.map (fn x -> x - 6) [42, 40, 108, 43, 74, (-22)])) ! 5)).\n```\nSteps: map=[36, 34, 102, 37, 68, -28]; rev=[-28, 68, 37, 102, 34, 36]; index=36.\nIt prints 36.",
+  "finished": true,
+  "tokens": 123
+ },
+ {
+  "id": "big_numbers-019",
+  "answer": "Steps: take=[84, 29]; filter=[84, 29].\nIt prints [84, 29].",
+  "finished": true,
+  "tokens": 32
+ },
+ {
+  "id": "big_numbers-020",
+  "answer": "```sol\n> print (str (List.sum (List.take 0 [103, 17, 58, 124, (-26), 136]))).\n```\nSteps: take=[]; sum=0.\nIt prints 0.",
+  "finished": true,
+  "tokens": 62
+ },
+ {
+  "id": "big_numbers-021",
+  "answer": "It prints [-20, -110, -276, -222, -58].",
+  "finished": true,
+  "tokens": 26
+ },
+ {
+  "id": "big_numbers-022",
+  "answer": "It prints [9].",
+  "finished": true,
+  "tokens": 6
+ },
+ {
+  "id": "big_numbers-023",
+  "answer": "```sol\n> print (str (List.map (fn x -> x * 3) [18, 128, 125])).\n```\nIt prints [54, 384, 375].",
+  "finished": true,
+  "tokens": 53
+ },
+ {
+  "id": "big_numbers-024",
+  "answer": "It prints 72.",
+  "finished": true,
+  "tokens": 7
+ },
+ {
+  "id": "big_numbers-025",
+  "answer": "```sol\n> print (str (105 * (-5))).\n```\nIt prints -525.",
+  "finished": true,
+  "tokens": 26
+ },
+ {
+  "id": "big_numbers-026",
+  "answer": "Steps: filter=[15, -12]; map=[18, -9]; sum=9.\nIt prints 9.",
+  "finished": true,
+  "tokens": 30
+ },
+ {
+  "id": "big_numbers-027",
+  "answer": "Steps: rev=[11, 119, -2]; all=False.\nIt prints False.",
+  "finished": true,
+  "tokens": 24
+ },
+ {
+  "id": "big_numbers-028",
+  "answer": "```sol\n> print (str (Numeric.abs 110)).\n```\nIt prints 110.",
+  "finished": true,
+  "tokens": 26
+ },
+ {
+  "id": "big_numbers-029",
+  "answer": "It prints True.",
+  "finished": true,
+  "tokens": 5
+ },
+ {
+  "id": "big_numbers-030",
+  "answer": "It prints 122.",
+  "finished": true,
+  "tokens": 8
+ },
+ {
+  "id": "big_numbers-031",
+  "answer": "Steps: filter=[]; sum=0.\nIt prints 0.",
+  "finished": true,
+  "tokens": 16
+ },
+ {
+  "id": "big_numbers-032",
+  "answer": "```sol\n> print (str (Numeric.clamp (-39) 97 (Numeric.abs 25))).\n```\nSteps: abs=25; clamp=25.\nIt prints 25.",
+  "finished": true,
+  "tokens": 48
+ },
+ {
+  "id": "big_numbers-033",
+  "answer": "Steps: last=146; find=0; mod=0; min=0.\nIt prints 0.",
+  "finished": true,
+  "tokens": 27
+ },
+ {
+  "id": "big_numbers-034",
+  "answer": "```sol\n> print (str (List.all (fn x -> x == 6) [85, 70])).\n```\nIt prints False.",
+  "finished": true,
+  "tokens": 35
+ },
+ {
+  "id": "big_numbers-035",
+  "answer": "```sol\n> print (str (List.rev (List.drop 2 [136, (-3), (-38), 73, 80]))).\n```\nSteps: drop=[-38, 73, 80]; rev=[80, 73, -38].\nIt prints [80, 73, -38].",
+  "finished": true,
+  "tokens": 84
+ },
+ {
+  "id": "big_numbers-036",
+  "answer": "It prints [65, 86, 117].",
+  "finished": true,
+  "tokens": 16
+ },
+ {
+  "id": "big_numbers-037",
+  "answer": "It prints -40.",
+  "finished": true,
+  "tokens": 7
+ },
+ {
+  "id": "big_numbers-038",
+  "answer": "Steps: find=3; sub=-51; sub2=54; abs=54.\nIt prints 54.",
+  "finished": true,
+  "tokens": 30
+ },
+ {
+  "id": "big_numbers-039",
+  "answer": "It prints [(104, 94), (37, 124)].",
+  "finished": true,
+  "tokens": 21
+ },
+ {
+  "id": "big_numbers-040",
+  "answer": "Steps: range=[9, 10, 11, 12]; zip=[(78, 9), (12, 10), (3, 11), (-5, 12)].\nIt prints [(78, 9), (12, 10), (3, 11), (-5, 12)].",
+  "finished": true,
+  "tokens": 82
+ },
+ {
+  "id": "big_numbers-041",
+  "answer": "Steps: filter=[30]; take=[30]; rev=[30].\nIt prints [30].",
+  "finished": true,
+  "tokens": 25
+ },
+ {
+  "id": "big_numbers-042",
+  "answer": "Steps: add=108; clamp=90.\nIt prints 90.",
+  "finished": true,
+  "tokens": 21
+ },
+ {
+  "id": "big_numbers-043",
+  "answer": "It prints 211.",
+  "finished": true,
+  "tokens": 8
+ },
+ {
+  "id": "big_numbers-044",
+  "answer": "Steps: filter=[95, 65, 0, 31, 77]; take=[65, 0, 31]; map=[64, -1, 30].\nIt prints [64, -1, 30].",
+  "finished": true,
+  "tokens": 61
+ },
+ {
+  "id": "big_numbers-045",
+  "answer": "It prints 223.",
+  "finished": true,
+  "tokens": 8
+ },
+ {
+  "id": "big_numbers-046",
+  "answer": "Steps: filter=[-18, 144]; drop=[64, 77, 98, 106, 37]; zip=[(-18, 64), (144, 77)].\nIt prints [(-18, 64), (144, 77)].",
+  "finished": true,
+  "tokens": 76
+ },
+ {
+  "id": "big_numbers-047",
+  "answer": "Steps: map=[14, 50, 153]; rev=[41, 125, -13]; zip=[(14, 41), (50, 125), (153, -13)].\nIt prints [(14, 41), (50, 125), (153, -13)].",
+  "finished": true,
+  "tokens": 88
+ },
+ {
+  "id": "big_numbers-048",
+  "answer": "Steps: mul=-99; mod=-3.\nIt prints -3.",
+  "finished": true,
+  "tokens": 18
+ },
+ {
+  "id": "big_numbers-049",
+  "answer": "Steps: abs=95; mul=475.\nIt prints 475.",
+  "finished": true,
+  "tokens": 22
+ },
+ {
+  "id": "big_numbers-050",
+  "answer": "It prints -117.",
+  "finished": true,
+  "tokens": 8
+ },
+ {
+  "id": "big_numbers-051",
+  "answer": "Steps: all=False; if=-14.\nIt prints -14.",
+  "finished": true,
+  "tokens": 18
+ },
+ {
+  "id": "big_numbers-052",
+  "answer": "Steps: filter=[109, 78, 36, 15]; filter2=[109].\nIt prints [109].",
+  "finished": true,
+  "tokens": 36
+ },
+ {
+  "id": "big_numbers-053",
+  "answer": "Steps: map=[99, 59]; map2=[93, 53].\nIt prints [93, 53].",
+  "finished": true,
+  "tokens": 33
+ },
+ {
+  "id": "big_numbers-054",
+  "answer": "```sol\n> print (str (List.rev (List.map (fn x -> x * 2) [116, 40, 88, 74, (-25)]))).\n```\nSteps: map=[232, 80, 176, 148, -50]; rev=[-50, 148, 176, 80, 232].\nIt prints [-50, 148, 176, 80, 232].",
+  "finished": true,
+  "tokens": 125
+ },
+ {
+  "id": "big_numbers-055",
+  "answer": "It prints False.",
+  "finished": true,
+  "tokens": 5
+ },
+ {
+  "id": "big_numbers-056",
+  "answer": "```sol\n> print (str (List.filter (fn x -> x < 27) [87, 146, 90])).\n```\nIt prints [].",
+  "finished": true,
+  "tokens": 40
+ },
+ {
+  "id": "big_numbers-057",
+  "answer": "Steps: range=[9, 10, 11, 12]; sum=42; sub=-85.\nIt prints -85.",
+  "finished": true,
+  "tokens": 36
+ },
+ {
+  "id": "big_numbers-058",
+  "answer": "Steps: take=[-27, 79, 21]; index=-27.\nIt prints -27.",
+  "finished": true,
+  "tokens": 29
+ },
+ {
+  "id": "big_numbers-059",
+  "answer": "It prints 0.",
+  "finished": true,
+  "tokens": 6
+ },
+ {
+  "id": "big_numbers-060",
+  "answer": "Steps: map=[89, 149, 76, -22, 34, 13]; rev=[13, 34, -22, 76, 149, 89].\nIt prints [13, 34, -22, 76, 149, 89].",
+  "finished": true,
+  "tokens": 83
+ },
+ {
+  "id": "big_numbers-061",
+  "answer": "```sol\n> print (str (Numeric.abs 105)).\n```\nIt prints 105.",
+  "finished": true,
+  "tokens": 26
+ },
+ {
+  "id": "big_numbers-062",
+  "answer": "It prints [(24, 142), (33, 77)].",
+  "finished": true,
+  "tokens": 20
+ },
+ {
+  "id": "big_numbers-063",
+  "answer": "Steps: take=[81, 70]; map=[405, 350].\nIt prints [405, 350].",
+  "finished": true,
+  "tokens": 36
+ },
+ {
+  "id": "big_numbers-064",
+  "answer": "Steps: take=[73, 134, 146]; filter=[].\nIt prints [].",
+  "finished": true,
+  "tokens": 25
+ },
+ {
+  "id": "big_numbers-065",
+  "answer": "Steps: any=True; range=[-3, -2, -1, 0]; index=-1; any2=True; range2=[10, 11, 12, 13, 14]; if=-39; if2=-1; at=114; min=-1.\nIt prints -1.",
+  "finished": true,
+  "tokens": 76
+ },
+ {
+  "id": "big_numbers-066",
+  "answer": "```sol\n> print (str (Numeric.clamp (-30) (-2) (List.sum [(-30), 103, 10, 104]))).\n```\nSteps: sum=187; clamp=-2.\nIt prints -2.",
+  "finished": true,
+  "tokens": 63
+ },
+ {
+  "id": "big_numbers-067",
+  "answer": "```sol\n> print (str (List.map (fn x -> x - 5) [(-14), 144, 122, 21, 52])).\n```\nIt prints [-19, 139, 117, 16, 47].",
+  "finished": true,
+  "tokens": 70
+ },
+ {
+  "id": "big_numbers-068",
+  "answer": "It prints 12.",
+  "finished": true,
+  "tokens": 7
+ },
+ {
+  "id": "big_numbers-069",
+  "answer": "It prints 117.",
+  "finished": true,
+  "tokens": 8
+ },
+ {
+  "id": "big_numbers-070",
+  "answer": "Steps: abs=86; div=43; div2=5.\nIt prints 5.",
+  "finished": true,
+  "tokens": 24
+ },
+ {
+  "id": "big_numbers-071",
+  "answer": "It prints [15, 20, 143, -20, -16, 47].",
+  "finished": true,
+  "tokens": 28
+ },
+ {
+  "id": "big_numbers-072",
+  "answer": "```sol\n> print (str (List.zip [137, 98] [15, (-20), 141])).\n```\nIt prints [(137, 15), (98, -20)].",
+  "finished": true,
+  "tokens": 55
+ },
+ {
+  "id": "big_numbers-073",
+  "answer": "It prints 113.",
+  "finished": true,
+  "tokens": 8
+ },
+ {
+  "id": "big_numbers-074",
+  "answer": "It prints [34].",
+  "finished": true,
+  "tokens": 7
+ },
+ {
+  "id": "big_numbers-075",
+  "answer": "```sol\n> print (str ((Numeric.min (Numeric.min 146 114) (43 / 5)) - ((List.map (fn x -> x * (-2)) (List.range 5 7)) ! 0))).\n```\nSteps: min=114; div=8; min2=8; range=[5, 6, 7]; map=[-10, -12, -14]; index=-10; sub=18.\nIt prints 18.",
+  "finished": true,
+  "tokens": 116
+ },
+ {
+  "id": "big_numbers-076",
+  "answer": "It prints 76.",
+  "finished": true,
+  "tokens": 7
+ },
+ {
+  "id": "big_numbers-077",
+  "answer": "Steps: rev=[118, 133, 130, 53, 107]; all=False.\nIt prints False.",
+  "finished": true,
+  "tokens": 36
+ },
+ {
+  "id": "big_numbers-078",
+  "answer": "It prints True.",
+  "finished": true,
+  "tokens": 5
+ },
+ {
+  "id": "big_numbers-079",
+  "answer": "It prints [(49, 150), (-39, 16)].",
+  "finished": true,
+  "tokens": 20
+ },
+ {
+  "id": "big_numbers-080",
+  "answer": "Steps: sub=-14; min=40; max=40; find=1; sub2=39.\nIt prints 39.",
+  "finished": true,
+  "tokens": 35
+ },
+ {
+  "id": "big_numbers-081",
+  "answer": "```sol\n> print (str (List.take 1 (List.drop 1 [54, 99, 149, 123, 10]))).\n```\nSteps: drop=[99, 149, 123, 10]; take=[99].\nIt prints [99].",
+  "finished": true,
+  "tokens": 77
+ },
+ {
+  "id": "big_numbers-082",
+  "answer": "Steps: max=40; index=123; cmp=False.\nIt prints False.",
+  "finished": true,
+  "tokens": 22
+ },
+ {
+  "id": "big_numbers-083",
+  "answer": "Steps: find=3; abs=3.\nIt prints 3.",
+  "finished": true,
+  "tokens": 17
+ },
+ {
+  "id": "big_numbers-084",
+  "answer": "It prints False.",
+  "finished": true,
+  "tokens": 5
+ },
+ {
+  "id": "big_numbers-085",
+  "answer": "It prints [].",
+  "finished": true,
+  "tokens": 4
+ },
+ {
+  "id": "big_numbers-086",
+  "answer": "```sol\n> print (str (List.rev (List.filter (fn x -> x <= 91) [(-1), 106, 128, 83, 20, 46]))).\n```\nSteps: filter=[-1, 83, 20, 46]; rev=[46, 20, 83, -1].\nIt prints [46, 20, 83, -1].",
+  "finished": true,
+  "tokens": 107
+ },
+ {
+  "id": "big_numbers-087",
+  "answer": "It prints False.",
+  "finished": true,
+  "tokens": 5
+ },
+ {
+  "id": "big_numbers-088",
+  "answer": "It prints True.",
+  "finished": true,
+  "tokens": 5
+ },
+ {
+  "id": "big_numbers-089",
+  "answer": "It prints 74.",
+  "finished": true,
+  "tokens": 7
+ },
+ {
+  "id": "big_numbers-090",
+  "answer": "It prints 69.",
+  "finished": true,
+  "tokens": 7
+ },
+ {
+  "id": "big_numbers-091",
+  "answer": "```sol\n> print (str (List.filter (fn x -> x < 143) [105, 123, (-21)])).\n```\nIt prints [105, 123, -21].",
+  "finished": true,
+  "tokens": 56
+ },
+ {
+  "id": "big_numbers-092",
+  "answer": "Steps: drop=[37, -12, 27]; map=[35, -14, 25].\nIt prints [35, -14, 25].",
+  "finished": true,
+  "tokens": 44
+ },
+ {
+  "id": "big_numbers-093",
+  "answer": "Steps: all=False; take=[106]; index=106; if=47.\nIt prints 47.",
+  "finished": true,
+  "tokens": 30
+ },
+ {
+  "id": "big_numbers-094",
+  "answer": "It prints 29.",
+  "finished": true,
+  "tokens": 7
+ },
+ {
+  "id": "big_numbers-095",
+  "answer": "Steps: filter=[]; filter2=[].\nIt prints [].",
+  "finished": true,
+  "tokens": 14
+ },
+ {
+  "id": "big_numbers-096",
+  "answer": "```sol\n> print (str (List.all (fn x -> x == 120) (List.rev [138, 0, (-30), 9]))).\n```\nSteps: rev=[9, -30, 0, 138]; all=False.\nIt prints False.",
+  "finished": true,
+  "tokens": 70
+ },
+ {
+  "id": "big_numbers-097",
+  "answer": "```sol\n> print (str (List.any (fn x -> x <= (-21)) [127, 109])).\n```\nIt prints False.",
+  "finished": true,
+  "tokens": 38
+ },
+ {
+  "id": "big_numbers-098",
+  "answer": "It prints True.",
+  "finished": true,
+  "tokens": 5
+ },
+ {
+  "id": "big_numbers-099",
+  "answer": "Steps: sum=62; last=-28; add=34.\nIt prints 34.",
+  "finished": true,
+  "tokens": 25
+ },
+ {
+  "id": "big_numbers-100",
+  "answer": "```sol\n> print (str (if List.any (fn x -> x > (-18)) [49, 83, 0, 106, 103] then 4 * (-2) else 20)).\n```\nSteps: any=True; mul=-8; if=-8.\nIt prints -8.",
+  "finished": true,
+  "tokens": 77
+ },
+ {
+  "id": "big_numbers-101",
+  "answer": "It prints 142.",
+  "finished": true,
+  "tokens": 8
+ },
+ {
+  "id": "big_numbers-102",
+  "answer": "```sol\n> print (str (119 - 7)).\n```\nIt prints 112.",
+  "finished": true,
+  "tokens": 26
+ },
+ {
+  "id": "big_numbers-103",
+  "answer": "```sol\n> print (str (Str.find 111 \"rocket\")).\n```\nIt prints 1.",
+  "finished": true,
+  "tokens": 26
+ },
+ {
+  "id": "big_numbers-104",
+  "answer": "Steps: take=[117]; filter=[117].\nIt prints [117].",
+  "finished": true,
+  "tokens": 23
+ },
+ {
+  "id": "big_numbers-105",
+  "answer": "```sol\n> print (str (Numeric.abs ([25, 117] ! 1))).\n```\nSteps: index=117; abs=117.\nIt prints 117.",
+  "finished": true,
+  "tokens": 49
+ },
+ {
+  "id": "big_numbers-106",
+  "answer": "```sol\n> print (str (63 > 115)).\n```\nIt prints False.",
+  "finished": true,
+  "tokens": 24
+ },
+ {
+  "id": "big_numbers-107",
+  "answer": "Steps: drop=[62, 125, -4, -8]; any=True.\nIt prints True.",
+  "finished": true,
+  "tokens": 27
+ },
+ {
+  "id": "big_numbers-108",
+  "answer": "Steps: map=[306, 123, 315, 405, 414]; drop=[414]; last=414.\nIt prints 414.",
+  "finished": true,
+  "tokens": 49
+ },
+ {
+  "id": "big_numbers-109",
+  "answer": "Steps: drop=[-8, 117]; sum=109.\nIt prints 109.",
+  "finished": true,
+  "tokens": 27
+ },
+ {
+  "id": "big_numbers-110",
+  "answer": "```sol\n> print (str (128 + 117)).\n```\nIt prints 245.",
+  "finished": true,
+  "tokens": 28
+ },
+ {
+  "id": "big_numbers-111",
+  "answer": "Steps: take=[43, 91]; all=True.\nIt prints True.",
+  "finished": true,
+  "tokens": 20
+ },
+ {
+  "id": "big_numbers-112",
+  "answer": "```sol\n> print (str (List.rev (List.drop 1 [119, 35, 126, 73, 92]))).\n```\nSteps: drop=[35, 126, 73, 92]; rev=[92, 73, 126, 35].\nIt prints [92, 73, 126, 35].",
+  "finished": true,
+  "tokens": 100
+ },
+ {
+  "id": "big_numbers-113",
+  "answer": "```sol\n> print (str (List.all (fn x -> x <= (-24)) [102, (-40), 36, 101, (-1)])).\n```\nIt prints False.",
+  "finished": true,
+  "tokens": 50
+ },
+ {
+  "id": "big_numbers-114",
+  "answer": "```sol\n> print (str (List.filter (fn x -> x == 142) [41, (-16), 46, 123, 87, 0])).\n```\nIt prints [].",
+  "finished": true,
+  "tokens": 52
+ },
+ {
+  "id": "big_numbers-115",
+  "answer": "Steps: mod=3; cmp=True; if=117; min=3; find=3; mod2=3; cmp2=True.\nIt prints True.",
+  "finished": true,
+  "tokens": 38
+ },
+ {
+  "id": "big_numbers-116",
+  "answer": "It prints False.",
+  "finished": true,
+  "tokens": 5
+ },
+ {
+  "id": "big_numbers-117",
+  "answer": "```sol\n> print (str (85 < (-13))).\n```\nIt prints False.",
+  "finished": true,
+  "tokens": 23
+ },
+ {
+  "id": "big_numbers-118",
+  "answer": "Steps: range=[-3, -2, -1]; zip=[(78, -3), (20, -2), (13, -1)].\nIt prints [(78, -3), (20, -2), (13, -1)].",
+  "finished": true,
+  "tokens": 61
+ },
+ {
+  "id": "big_numbers-119",
+  "answer": "It prints 620.",
+  "finished": true,
+  "tokens": 8
+ },
+ {
+  "id": "probe-t1-map-sum",
+  "answer": "Steps: map=[10, 35, 20]; sum=65.\nIt prints 65.",
+  "finished": true,
+  "tokens": 28
+ },
+ {
+  "id": "probe-t1-range-sum",
+  "answer": "Steps: range=[3, 4, 5, 6]; sum=18.\nIt prints 18.",
+  "finished": true,
+  "tokens": 28
+ },
+ {
+  "id": "probe-t1-clamp",
+  "answer": "It prints 2.",
+  "finished": true,
+  "tokens": 6
+ },
+ {
+  "id": "probe-t1-rev-index",
+  "answer": "Steps: rev=[14, 13, 12, 11]; index=13.\nIt prints 13.",
+  "finished": true,
+  "tokens": 32
+ },
+ {
+  "id": "probe-t1-gen-double-sum",
+  "answer": "```sol\n> print (str (List.sum (List.map (fn x -> x * 2) [6, 1, 8]))).\n```\nSteps: map=[12, 2, 16]; sum=30.\nIt prints 30.",
+  "finished": true,
+  "tokens": 62
+ },
+ {
+  "id": "probe-t1-slice",
+  "answer": "It prints rail.",
+  "finished": true,
+  "tokens": 5
+ },
+ {
+  "id": "probe-t1-take-map",
+  "answer": "Steps: map=[6, 7, 8, 9]; take=[6, 7, 8].\nIt prints [6, 7, 8].",
+  "finished": true,
+  "tokens": 38
+ },
+ {
+  "id": "probe-t1-fix-index",
+  "answer": "```sol\n> print (str ([9, 4, 2] ! 0)).\n```\nIt prints 9.",
+  "finished": true,
+  "tokens": 29
+ },
+ {
+  "id": "probe-t2-upper",
+  "answer": "It prints SOL.",
+  "finished": true,
+  "tokens": 5
+ },
+ {
+  "id": "probe-t2-max",
+  "answer": "It prints 14.",
+  "finished": true,
+  "tokens": 7
+ },
+ {
+  "id": "probe-t2-abs",
+  "answer": "It prints 41.",
+  "finished": true,
+  "tokens": 7
+ },
+ {
+  "id": "probe-t2-any",
+  "answer": "It prints True.",
+  "finished": true,
+  "tokens": 5
+ },
+ {
+  "id": "probe-t2-all",
+  "answer": "It prints False.",
+  "finished": true,
+  "tokens": 5
+ },
+ {
+  "id": "probe-t2-join",
+  "answer": "It prints red, green.",
+  "finished": true,
+  "tokens": 7
+ },
+ {
+  "id": "probe-t2-zip",
+  "answer": "It prints [(1, 7), (2, 8), (3, 9)].",
+  "finished": true,
+  "tokens": 21
+ },
+ {
+  "id": "probe-t2-if",
+  "answer": "Steps: cmp=False; if=0.\nIt prints 0.",
+  "finished": true,
+  "tokens": 16
+ },
+ {
+  "id": "probe-t2-drop",
+  "answer": "It prints [30, 40].",
+  "finished": true,
+  "tokens": 11
+ },
+ {
+  "id": "probe-t2-last",
+  "answer": "Steps: range=[1, 2, 3, 4, 5, 6, 7]; last=7.\nIt prints 7.",
+  "finished": true,
+  "tokens": 35
+ },
+ {
+  "id": "probe-t2-trim",
+  "answer": "It prints hello world.",
+  "finished": true,
+  "tokens": 6
+ },
+ {
+  "id": "probe-t2-gen-filter",
+  "answer": "```sol\n> print (str (List.filter (fn x -> x > 5) [2, 9, 6, 1])).\n```\nIt prints [9, 6].",
+  "finished": true,
+  "tokens": 43
+ },
+ {
+  "id": "probe-t3-map-filter-sum",
+  "answer": "Steps: map=[2, 4, 6]; filter=[4, 6]; sum=10.\nIt prints 10.",
+  "finished": true,
+  "tokens": 32
+ },
+ {
+  "id": "probe-t3-clamp-sum",
+  "answer": "Steps: sum=7; clamp=5.\nIt prints 5.",
+  "finished": true,
+  "tokens": 17
+ },
+ {
+  "id": "probe-t3-rev-take",
+  "answer": "Steps: take=[8, 6]; rev=[6, 8].\nIt prints [6, 8].",
+  "finished": true,
+  "tokens": 26
+ },
+ {
+  "id": "probe-t3-binding-mod",
+  "answer": "Steps: mod=2; mul=6.\nIt prints 6.",
+  "finished": true,
+  "tokens": 17
+ },
+ {
+  "id": "probe-c-args",
+  "answer": "A Sol script receives command-line arguments as a list via the `args` function, where the first element is the script's name and subsequent elements are the arguments provided by the shell. The script can access these arguments directly in its logic.\n\n```sol\nargs Unit\n```",
+  "finished": true,
+  "tokens": 57
+ },
+ {
+  "id": "probe-c-conflict",
+  "answer": "The buffered writes of the script that conflicts are not flushed. The script that wins the conflict overwrites the file, and the script that lost the conflict sees its buffered writes as if they never happened.\n\n```sol\n# Script A: writes file, then sleeps\nwritePath @/tmp/sol-txn-a.txt \"A\"\nsleep 300\n\n# Script B: writes file, then sleeps\nwritePath @/tmp/sol-txn-b.txt \"B\"\nsleep 300\n```",
+  "finished": true,
+  "tokens": 108
+ },
+ {
+  "id": "probe-c-query-vs-aftercommit",
+  "answer": "Proc.query is used for read-only operations that do not require transactional rollback, whereas Proc.afterCommit is used for operations that must be executed after the transaction commits. For example, to safely read a file without side effects, you would use Proc.query:\n```sol\nProc.query {\n  read \"config.txt\"\n}\n```",
+  "finished": true,
+  "tokens": 70
+ },
+ {
+  "id": "probe-c-at-least-once",
+  "answer": "A command queued with Proc.afterCommit is idempotent, meaning it can be executed multiple times without causing errors or inconsistent states. This is necessary because the system cannot guarantee that a single execution of such a command will not trigger side effects or produce multiple identical results. For example, a script can safely re-run a cleanup command:\n```sol\nProc.afterCommit (P.spec [\"tar\", \"-czf\", target, \"--\", source])\n```",
+  "finished": true,
+  "tokens": 92
+ },
+ {
+  "id": "probe-c-runnow",
+  "answer": "Keeping Proc.runNow calls at the top level ensures that the script's own effects are visible to the caller, preventing them from being swallowed by a helper function. This is necessary because the caller must be able to inspect the script's own effects, as demonstrated by the `main` function in the reference where `Proc.runNow` is called directly to print a message. If the call were nested inside a helper, the caller would not see the effect, violating the requirement that the caller must inspect the script's own effects.\n\n```sol\nmain =\n  u = Proc.afterCommit (ProcessSpec [\"/bin/sh\", \"-c\", \"printf after\"] \"\" [] \"\" 2000);\n  _ = print \"before\";\n  Proc.runNow (ProcessSpec [\"/bin/sh\", \"-c\", \"printf now\"] \"\" [] \"\" 2000);\n  print \"after\".\n```",
+  "finished": true,
+  "tokens": 188
+ },
+ {
+  "id": "probe-c-brace",
+  "answer": "You must escape the curly brace by doubling it, as the parser treats a single curly brace as the start of a block. For example, to include a literal { in a string, you write `\"{\\\"x\\\"}\"`.",
+  "finished": true,
+  "tokens": 47
+ },
+ {
+  "id": "probe-c-json-parse",
+  "answer": "J.parse returns a value of type `Value` that represents a JSON object, array, string, number, boolean, or null. This value is then used to construct a `JArr` (array) or `JObj` (object) by calling `JArr` or `JObj` with the parsed value as an argument.\n\n```sol\nJ.parse \"true\"\n```",
+  "finished": true,
+  "tokens": 81
+ },
+ {
+  "id": "probe-c-no-shell",
+  "answer": "No. Sol executes programs directly through the VM without shell interpretation, glob expansion, or command-line argument parsing.",
+  "finished": true,
+  "tokens": 23
+ }
+]

@@ -1,0 +1,14 @@
+{
+  "checkpoint_sha256": "llama-2b-round4-q8",
+  "diagnostic_hash": "89326f530d3db0ea78e81c9c5728575d4235f41b9aa7515c6ba14e641b46a224",
+  "seed": 7,
+  "temperature": 0,
+  "top_k": 0,
+  "no_repeat": 0,
+  "max_new_tokens": 200,
+  "device": "cuda",
+  "count": 90,
+  "finished": 90,
+  "severe_loops": 0,
+  "mean_tokens": 0
+}
