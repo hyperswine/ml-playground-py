@@ -20,6 +20,14 @@ which listed wake, GPU offload, output correctness and throughput as unverified.
 SSH to the home-network address times out (Windows Firewall, likely a Public Wi-Fi profile); the Tailscale address
 works and routes directly over the LAN. No firewall rule was changed.
 
+**Update 2026-11-01: use the home-network address.** Tailscale on the PC failed twice while the PC itself stayed
+awake (home-network ping and file sharing answered, Tailscale showed it offline). The second time followed a reboot
+at 05:13. The owner then restarted Tailscale from the tray (stuck on "Starting"), restarted its service (slow, then
+Error 1053) and tried a repair install (stalled), so Tailscale is not working. The PC is always on the same private
+network as the M1, and 192.168.0.210 is reserved for it on the router. The owner marked the Wi-Fi as a Private
+network, which opened SSH on that address. Its host keys matched the ones already known for the Tailscale
+address. The `pc` helper now defaults to 192.168.0.210 (`PC_HOST` overrides).
+
 ## Remote wake
 
 Configured by the owner: MSI BIOS `Wake Up Event By [BIOS]`, `Resume By PCI-E Device [Enabled]`, `ErP Ready
